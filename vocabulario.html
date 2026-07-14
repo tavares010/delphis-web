@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paquetes de vocabulario extra — Delphis Method</title>
+<meta name="description" content="Paquetes de vocabulario temáticos con roleplay por IA: hostelería, viajes, deportes, escuela y más. Practica el inglés que realmente vas a usar.">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="cursor-glow" id="cursorGlow"></div>
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar" id="navbar">
+  <div class="container navbar__inner">
+    <a href="index.html" class="navbar__brand">
+      <img src="assets/logo.png" alt="Delphis Method" class="navbar__logo">
+      <span>Delphis <strong>Method</strong></span>
+    </a>
+
+    <nav class="navbar__links" id="navLinks">
+      <a href="index.html#inicio" class="nav-link">Inicio</a>
+      <a href="index.html#metodo" class="nav-link">Método</a>
+      <div class="nav-dropdown">
+        <span class="nav-dropdown__trigger">
+          Recursos
+          <span class="badge-mini"><span class="badge-mini__dot"></span>Gratis</span>
+          <svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <div class="nav-dropdown__menu">
+          <a href="ebook.html" class="nav-dropdown__item">
+            <span data-emoji>📖</span>
+            <div><strong>Ebook gratis "La Sed"</strong><small>Descarga por tiempo limitado</small></div>
+          </a>
+          <a href="vocabulario.html" class="nav-dropdown__item">
+            <span data-emoji>🧩</span>
+            <div><strong>Paquetes de vocabulario</strong><small>Hostelería, viajes, deportes y más</small></div>
+          </a>
+        </div>
+      </div>
+      <a href="index.html#nosotros" class="nav-link">Nosotros</a>
+      <a href="index.html#precios" class="nav-link">Precios</a>
+      <a href="index.html#testimonios" class="nav-link">Testimonios</a>
+      <a href="index.html#faq" class="nav-link">FAQ</a>
+    </nav>
+
+    <div class="navbar__actions">
+      <a href="index.html#comprar" class="btn btn--ghost">Iniciar sesión</a>
+      <a href="index.html#comprar" class="btn btn--primary"><span>Comprar ahora</span></a>
+      <button class="navbar__burger" id="burger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html#inicio" class="mobile-link">Inicio</a>
+  <a href="index.html#metodo" class="mobile-link">Método</a>
+  <a href="ebook.html" class="mobile-link">Ebook gratis 📖</a>
+  <a href="vocabulario.html" class="mobile-link">Vocabulario 🧩</a>
+  <a href="index.html#nosotros" class="mobile-link">Sobre Nosotros</a>
+  <a href="index.html#precios" class="mobile-link">Precios</a>
+  <a href="index.html#faq" class="mobile-link">FAQ</a>
+  <a href="index.html#comprar" class="btn btn--primary mobile-cta">Comprar ahora</a>
+</div>
+
+<main>
+<!-- ===== PAGE HERO ===== -->
+<section class="hero page-hero" id="inicio">
+  <div class="hero__bg">
+    <div class="blob blob--1"></div>
+    <div class="blob blob--2"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <div class="container page-hero__inner">
+    <div class="badge reveal-up">
+      <span class="badge__dot"></span>
+      Incluido en tus paquetes Pro y Premium
+    </div>
+    <h1 class="reveal-up">Vocabulario que sirve <span class="text-gradient">para la vida real</span></h1>
+    <p class="reveal-up delay-1">
+      Olvídate de listas de palabras sueltas. Cada paquete temático te enseña el vocabulario
+      exacto de una situación real y te deja practicarlo con roleplay conversacional por IA.
+    </p>
+    <div class="hero__cta reveal-up delay-2" style="justify-content:center; margin-top: 2.2rem;">
+      <a href="#paquetes" class="btn btn--primary btn--lg">
+        Ver todos los paquetes
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="index.html#precios" class="btn btn--outline btn--lg">Ver membresías</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PREVIEW BANNER ===== -->
+<section class="ebook-section">
+  <div class="container">
+    <div class="app-showcase__banner reveal-up">
+      <img src="assets/1.png" alt="Paquetes de vocabulario temáticos dentro de la app Delphis Method: hostelería, deportes, escuela y viajes" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ===== PAQUETES GRID ===== -->
+<section class="metodo" id="paquetes">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <span class="eyebrow">Paquetes disponibles</span>
+      <h2>Elige el contexto que necesitas dominar</h2>
+      <p>Cada paquete incluye vocabulario clave, frases útiles y escenarios de roleplay con IA
+        para practicar hasta que te salga natural.</p>
+    </div>
+
+    <div class="pack-grid">
+      <div class="pack-card reveal-up">
+        <div class="pack-card__top">
+          <div class="pack-card__icon" style="background:rgba(249,115,22,.15);">🍽️</div>
+          <span class="pack-card__status pack-card__status--live">Disponible</span>
+        </div>
+        <h4>Hostelería</h4>
+        <p>Vocabulario de restaurantes, bares y hoteles: pedidos, reservas y atención al cliente.</p>
+        <div class="pack-card__tags"><span>🎮 Jugar</span><span>🗣️ Roleplay</span></div>
+      </div>
+
+      <div class="pack-card reveal-up delay-1">
+        <div class="pack-card__top">
+          <div class="pack-card__icon" style="background:rgba(34,197,94,.15);">⚽</div>
+          <span class="pack-card__status pack-card__status--live">Disponible</span>
+        </div>
+        <h4>Deportes</h4>
+        <p>Fútbol, gimnasio y competiciones: comenta partidos y habla de entrenamiento en inglés.</p>
+        <div class="pack-card__tags"><span>🎮 Jugar</span><span>🗣️ Roleplay</span></div>
+      </div>
+
+      <div class="pack-card reveal-up delay-2">
+        <div class="pack-card__top">
+          <div class="pack-card__icon" style="background:rgba(139,92,246,.15);">🎓</div>
+          <span class="pack-card__status pack-card__status--live">Disponible</span>
+        </div>
+        <h4>Escuela</h4>
+        <p>Aula, exámenes y vida escolar: el vocabulario ideal para estudiantes e intercambios.</p>
+        <div class="pack-card__tags"><span>🎮 Jugar</span><span>🗣️ Roleplay</span></div>
+      </div>
+
+      <div class="pack-card reveal-up">
+        <div class="pack-card__top">
+          <div class="pack-card__icon" style="background:rgba(56,189,248,.15);">✈️</div>
+          <span class="pack-card__status pack-card__status--live">Disponible</span>
+        </div>
+        <h4>Viajes</h4>
+        <p>Aeropuertos, reservas y turismo: para que nunca te quedes sin palabras de viaje.</p>
+        <div class="pack-card__tags"><span>🎮 Jugar</span><span>🗣️ Roleplay</span></div>
+      </div>
+
+      <div class="pack-card reveal-up delay-1">
+        <div class="pack-card__top">
+          <div class="pack-card__icon" style="background:rgba(148,163,184,.15);">💼</div>
+          <span class="pack-card__status pack-card__status--soon">Próximamente</span>
+        </div>
+        <h4>Negocios</h4>
+        <p>Reuniones, presentaciones y networking para el inglés profesional del día a día.</p>
+        <div class="pack-card__tags"><span>🗣️ Roleplay</span></div>
+      </div>
+
+      <div class="pack-card reveal-up delay-2">
+        <div class="pack-card__top">
+          <div class="pack-card__icon" style="background:rgba(148,163,184,.15);">🩺</div>
+          <span class="pack-card__status pack-card__status--soon">Próximamente</span>
+        </div>
+        <h4>Salud</h4>
+        <p>Consultas médicas y emergencias: el vocabulario que necesitas si viajas o vives fuera.</p>
+        <div class="pack-card__tags"><span>🗣️ Roleplay</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ROLEPLAY EXPLAINER ===== -->
+<section class="nosotros">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <span class="eyebrow">Cómo funciona el roleplay</span>
+      <h2>Practica el peor momento para equivocarte, sin consecuencias</h2>
+    </div>
+
+    <div class="feature-grid">
+      <div class="feature-card reveal-up">
+        <div class="feature-card__icon">🎭</div>
+        <h4>Tú eliges el rol</h4>
+        <p>Por ejemplo, camarero/a en un restaurante mientras la IA hace de cliente exigente.</p>
+      </div>
+      <div class="feature-card reveal-up delay-1">
+        <div class="feature-card__icon">💬</div>
+        <h4>Conversación en tiempo real</h4>
+        <p>La IA improvisa como una persona real: pide, se queja, pregunta por alergias.</p>
+      </div>
+      <div class="feature-card reveal-up delay-2">
+        <div class="feature-card__icon">🎯</div>
+        <h4>Misiones con objetivo</h4>
+        <p>Completa retos concretos dentro de la conversación para desbloquear tu progreso.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="comprar" id="comprar">
+  <div class="comprar__bg"><div class="blob blob--4"></div></div>
+  <div class="container comprar__inner reveal-up">
+    <img src="assets/logo.png" alt="Delphis Method" class="comprar__logo">
+    <h2>Desbloquea todos los paquetes de vocabulario</h2>
+    <p>Los paquetes temáticos y el roleplay con IA están incluidos en las membresías Pro y Premium.</p>
+    <a href="index.html#precios" class="btn btn--primary btn--lg">Ver membresías</a>
+  </div>
+</section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <a href="index.html" class="navbar__brand">
+        <img src="assets/logo.png" alt="Delphis Method" class="navbar__logo">
+        <span>Delphis <strong>Method</strong></span>
+      </a>
+      <p>Aprende inglés con la precisión de la ciencia y la inteligencia artificial.</p>
+      <div class="footer__socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="TikTok">TT</a>
+        <a href="#" aria-label="YouTube">YT</a>
+        <a href="#" aria-label="X">X</a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h5>Producto</h5>
+      <a href="index.html#metodo">Método</a>
+      <a href="ebook.html">Ebook gratis</a>
+      <a href="vocabulario.html">Vocabulario</a>
+      <a href="index.html#precios">Precios</a>
+      <a href="index.html#faq">FAQ</a>
+    </div>
+    <div class="footer__col">
+      <h5>Compañía</h5>
+      <a href="index.html#nosotros">Sobre nosotros</a>
+      <a href="index.html#testimonios">Testimonios</a>
+      <a href="#">Carreras</a>
+      <a href="#">Prensa</a>
+    </div>
+    <div class="footer__col">
+      <h5>Legal</h5>
+      <a href="#">Privacidad</a>
+      <a href="#">Términos</a>
+      <a href="#">Cookies</a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>© 2026 Delphis Method. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
