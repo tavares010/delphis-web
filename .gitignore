@@ -1,0 +1,7 @@
+# APKs are too large for a normal git push to GitHub (100MB hard limit).
+# Host it as a GitHub Release asset instead and point descargar.html to that URL.
+*.apk
+
+# OS junk
+.DS_Store
+Thumbs.db

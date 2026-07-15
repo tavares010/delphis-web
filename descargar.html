@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Descargar Delphis Method (APK) y elegir plan</title>
+<meta name="description" content="Descarga el APK de Delphis Method para Android y elige tu membresía: Básico, Pro o Premium.">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="cursor-glow" id="cursorGlow"></div>
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar" id="navbar">
+  <div class="container navbar__inner">
+    <a href="index.html" class="navbar__brand">
+      <img src="assets/logo.png" alt="Delphis Method" class="navbar__logo">
+      <span>Delphis <strong>Method</strong></span>
+    </a>
+
+    <nav class="navbar__links" id="navLinks">
+      <a href="index.html#inicio" class="nav-link">Inicio</a>
+      <a href="index.html#metodo" class="nav-link">Método</a>
+      <div class="nav-dropdown">
+        <span class="nav-dropdown__trigger">
+          Recursos
+          <span class="badge-mini"><span class="badge-mini__dot"></span>Gratis</span>
+          <svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <div class="nav-dropdown__menu">
+          <a href="ebook.html" class="nav-dropdown__item">
+            <span data-emoji>📖</span>
+            <div><strong>Ebook gratis "La Sed"</strong><small>Descarga por tiempo limitado</small></div>
+          </a>
+          <a href="vocabulario.html" class="nav-dropdown__item">
+            <span data-emoji>🧩</span>
+            <div><strong>Paquetes de vocabulario</strong><small>Hostelería, viajes, deportes y más</small></div>
+          </a>
+        </div>
+      </div>
+      <a href="index.html#nosotros" class="nav-link">Nosotros</a>
+      <a href="index.html#testimonios" class="nav-link">Testimonios</a>
+      <a href="index.html#faq" class="nav-link">FAQ</a>
+    </nav>
+
+    <div class="navbar__actions">
+      <a href="index.html#comprar" class="btn btn--ghost">Iniciar sesión</a>
+      <a href="#planes" class="btn btn--primary"><span>Comprar ahora</span></a>
+      <button class="navbar__burger" id="burger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html#inicio" class="mobile-link">Inicio</a>
+  <a href="index.html#metodo" class="mobile-link">Método</a>
+  <a href="ebook.html" class="mobile-link">Ebook gratis 📖</a>
+  <a href="vocabulario.html" class="mobile-link">Vocabulario 🧩</a>
+  <a href="index.html#nosotros" class="mobile-link">Sobre Nosotros</a>
+  <a href="#planes" class="mobile-link">Precios</a>
+  <a href="index.html#faq" class="mobile-link">FAQ</a>
+  <a href="#descarga" class="btn btn--primary mobile-cta">Descargar app</a>
+</div>
+
+<main>
+<!-- ===== PAGE HERO ===== -->
+<section class="hero page-hero" id="descarga">
+  <div class="hero__bg">
+    <div class="blob blob--1"></div>
+    <div class="blob blob--2"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <div class="container page-hero__inner">
+    <div class="badge reveal-up">
+      <span class="badge__dot"></span>
+      Disponible para Android
+    </div>
+    <h1 class="reveal-up">Descarga <span class="text-gradient">Delphis Method</span> y empieza hoy</h1>
+    <p class="reveal-up delay-1">
+      Instala la app en tu Android, crea tu cuenta y elige el plan que más te convenga.
+      Todo el método científico e IA adaptativa, directo en tu bolsillo.
+    </p>
+
+    <div class="hero__cta reveal-up delay-2" style="justify-content:center; margin-top: 2.2rem;">
+      <a href="assets/app-release.apk" download class="btn btn--primary btn--lg">
+        Descargar APK
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 4v12m0 0l-5-5m5 5l5-5M5 20h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#planes" class="btn btn--outline btn--lg">Ver planes y precios</a>
+    </div>
+
+    <div class="comprar__badges reveal-up delay-3" style="margin-top: 2.2rem;">
+      <div class="mini-badge">📦 Versión 1.0.0</div>
+      <div class="mini-badge">💾 ~325 MB</div>
+      <div class="mini-badge">🤖 Requiere Android 8.0+</div>
+      <div class="mini-badge">🔒 Descarga directa y segura</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== APP PREVIEW ===== -->
+<section class="ebook-section">
+  <div class="container">
+    <div class="app-showcase__banner reveal-up">
+      <img src="assets/2.png" alt="Capturas de la app Delphis Method: dashboard, guía IA Delphi, niveles de estudio y roleplay conversacional" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ===== CÓMO INSTALAR ===== -->
+<section class="metodo">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <span class="eyebrow">Instalación en 3 pasos</span>
+      <h2>Listo para usar en menos de 2 minutos</h2>
+      <p>Como el APK se instala fuera de Google Play, Android puede pedirte un permiso extra la primera vez.</p>
+    </div>
+
+    <div class="feature-grid">
+      <div class="feature-card reveal-up">
+        <div class="feature-card__icon">📥</div>
+        <h4>1. Descarga el archivo</h4>
+        <p>Pulsa "Descargar APK" y espera a que termine la descarga en tu dispositivo Android.</p>
+      </div>
+      <div class="feature-card reveal-up delay-1">
+        <div class="feature-card__icon">⚙️</div>
+        <h4>2. Permite la instalación</h4>
+        <p>Si tu Android lo pide, activa "Permitir de esta fuente" en orígenes desconocidos y continúa.</p>
+      </div>
+      <div class="feature-card reveal-up delay-2">
+        <div class="feature-card__icon">🚀</div>
+        <h4>3. Abre y elige tu plan</h4>
+        <p>Crea tu cuenta, haz el diagnóstico inicial con IA y activa la membresía que prefieras.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PLANES / COMPRAR ===== -->
+<section class="precios" id="planes">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <span class="eyebrow">Membresías</span>
+      <h2>Elige el plan que impulse tu inglés</h2>
+      <p>Cancela cuando quieras. Todos los planes incluyen 7 días de garantía.</p>
+
+      <div class="billing-toggle">
+        <span class="billing-toggle__label active" id="labelMonthly">Mensual</span>
+        <button class="switch" id="billingSwitch" aria-label="Cambiar a facturación anual">
+          <span class="switch__knob"></span>
+        </button>
+        <span class="billing-toggle__label" id="labelYearly">Anual <span class="save-tag">Ahorra 30%</span></span>
+      </div>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="price-card reveal-up">
+        <h3>Básico</h3>
+        <p class="price-card__desc">Ideal para empezar tu camino en inglés.</p>
+        <div class="price-card__amount">
+          <span class="currency">$</span>
+          <span class="amount" data-monthly="9" data-yearly="6">9</span>
+          <span class="period">/mes</span>
+        </div>
+        <ul class="price-card__features">
+          <li>✔ Lecciones adaptativas con IA</li>
+          <li>✔ 15 min/día de práctica</li>
+          <li>✔ Repetición espaciada</li>
+          <li>✔ Seguimiento de progreso</li>
+          <li class="disabled">✘ Tutor de voz IA</li>
+          <li class="disabled">✘ Clases en vivo</li>
+        </ul>
+        <a href="index.html#comprar" class="btn btn--outline btn--block">Elegir Básico</a>
+      </div>
+
+      <div class="price-card price-card--featured reveal-up delay-1">
+        <div class="price-card__ribbon">Más popular</div>
+        <h3>Pro</h3>
+        <p class="price-card__desc">La experiencia completa de Delphis Method.</p>
+        <div class="price-card__amount">
+          <span class="currency">$</span>
+          <span class="amount" data-monthly="19" data-yearly="13">19</span>
+          <span class="period">/mes</span>
+        </div>
+        <ul class="price-card__features">
+          <li>✔ Todo lo del plan Básico</li>
+          <li>✔ Práctica ilimitada</li>
+          <li>✔ Tutor de voz IA 24/7</li>
+          <li>✔ Corrección de pronunciación</li>
+          <li>✔ Dashboard analítico avanzado</li>
+          <li class="disabled">✘ Clases en vivo grupales</li>
+        </ul>
+        <a href="index.html#comprar" class="btn btn--primary btn--block">Elegir Pro</a>
+      </div>
+
+      <div class="price-card reveal-up delay-2">
+        <h3>Premium</h3>
+        <p class="price-card__desc">Para quienes buscan resultados acelerados.</p>
+        <div class="price-card__amount">
+          <span class="currency">$</span>
+          <span class="amount" data-monthly="39" data-yearly="27">39</span>
+          <span class="period">/mes</span>
+        </div>
+        <ul class="price-card__features">
+          <li>✔ Todo lo del plan Pro</li>
+          <li>✔ 4 clases en vivo grupales/mes</li>
+          <li>✔ Plan de estudio 1:1 con IA</li>
+          <li>✔ Certificado de nivel</li>
+          <li>✔ Soporte prioritario</li>
+          <li>✔ Acceso anticipado a nuevas funciones</li>
+        </ul>
+        <a href="index.html#comprar" class="btn btn--outline btn--block">Elegir Premium</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="comprar">
+  <div class="comprar__bg"><div class="blob blob--4"></div></div>
+  <div class="container comprar__inner reveal-up">
+    <img src="assets/logo.png" alt="Delphis Method" class="comprar__logo">
+    <h2>Tu inglés no espera</h2>
+    <p>Descarga la app ahora mismo y activa tu plan en menos de 2 minutos.</p>
+    <a href="assets/app-release.apk" download class="btn btn--primary btn--lg">Descargar APK gratis</a>
+    <span class="comprar__note" style="display:block; margin-top: 1rem;">🔒 Descarga directa desde nuestro servidor</span>
+  </div>
+</section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <a href="index.html" class="navbar__brand">
+        <img src="assets/logo.png" alt="Delphis Method" class="navbar__logo">
+        <span>Delphis <strong>Method</strong></span>
+      </a>
+      <p>Aprende inglés con la precisión de la ciencia y la inteligencia artificial.</p>
+      <div class="footer__socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="TikTok">TT</a>
+        <a href="#" aria-label="YouTube">YT</a>
+        <a href="#" aria-label="X">X</a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h5>Producto</h5>
+      <a href="index.html#metodo">Método</a>
+      <a href="ebook.html">Ebook gratis</a>
+      <a href="vocabulario.html">Vocabulario</a>
+      <a href="#planes">Precios</a>
+      <a href="index.html#faq">FAQ</a>
+    </div>
+    <div class="footer__col">
+      <h5>Compañía</h5>
+      <a href="index.html#nosotros">Sobre nosotros</a>
+      <a href="index.html#testimonios">Testimonios</a>
+      <a href="#">Carreras</a>
+      <a href="#">Prensa</a>
+    </div>
+    <div class="footer__col">
+      <h5>Legal</h5>
+      <a href="#">Privacidad</a>
+      <a href="#">Términos</a>
+      <a href="#">Cookies</a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>© 2026 Delphis Method. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
