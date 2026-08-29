@@ -10,12 +10,15 @@ const CURSO_DESCRIPCIONES = {
   pt: '64 verbos y 16 estructuras traducidos al portugués real. El libro y los paquetes llegan pronto.',
 };
 
+// Fotos reales (Pexels) del lugar/idioma de cada curso — buscadas y
+// verificadas manualmente, no una consulta en vivo (así no depende de una
+// API key en el cliente ni de que Pexels esté disponible al cargar la web).
 const CURSO_COVER = {
-  en: 'linear-gradient(135deg, #0ea5e9, #0369a1)',
-  fr: 'linear-gradient(135deg, #818cf8, #4338ca)',
-  de: 'linear-gradient(135deg, #fbbf24, #b45309)',
-  it: 'linear-gradient(135deg, #34d399, #047857)',
-  pt: 'linear-gradient(135deg, #fb7185, #be123c)',
+  en: 'https://images.pexels.com/photos/17160708/pexels-photo-17160708.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=350&w=700',
+  fr: 'https://images.pexels.com/photos/16496484/pexels-photo-16496484.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=350&w=700',
+  de: 'https://images.pexels.com/photos/2570063/pexels-photo-2570063.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=350&w=700',
+  it: 'https://images.pexels.com/photos/27541217/pexels-photo-27541217.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=350&w=700',
+  pt: 'https://images.pexels.com/photos/16207032/pexels-photo-16207032.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=350&w=700',
 };
 
 function cursoTieneProgreso(cursoId) {
@@ -32,7 +35,7 @@ function renderCursos() {
     const enProgreso = cursoTieneProgreso(c.id);
     return `
       <div class="lang-card reveal-up visible ${esActivo ? 'equipped' : ''}">
-        <div class="lang-card__cover" style="background:${CURSO_COVER[c.id] || CURSO_COVER.en};">
+        <div class="lang-card__cover" style="background-image:url('${CURSO_COVER[c.id] || CURSO_COVER.en}');">
           <span class="lang-card__badge">3 niveles</span>
           ${esActivo ? '<span class="lang-card__status lang-card__status--live">Curso activo</span>'
             : (enProgreso ? '<span class="lang-card__status lang-card__status--new">Continuar</span>' : '')}

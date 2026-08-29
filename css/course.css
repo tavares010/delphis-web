@@ -425,10 +425,16 @@
 .lang-card.equipped { border-color: rgba(56,189,248,.5); }
 .lang-card__cover {
   position: relative;
-  height: 128px;
+  height: 156px;
   display: flex; align-items: center; justify-content: center;
+  background-size: cover; background-position: center;
 }
-.lang-card__flag { font-size: 3.2rem; filter: drop-shadow(0 6px 18px rgba(0,0,0,.35)); }
+.lang-card__cover::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(6,12,32,.35) 0%, rgba(6,12,32,.15) 45%, rgba(6,12,32,.75) 100%);
+}
+.lang-card__flag { position: relative; z-index: 1; font-size: 3.2rem; filter: drop-shadow(0 6px 18px rgba(0,0,0,.55)); }
+.lang-card__badge, .lang-card__status { z-index: 2; }
 .lang-card__badge {
   position: absolute; top: .8rem; left: .8rem;
   font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em;

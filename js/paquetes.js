@@ -8,24 +8,38 @@ const PACK_COLORS = {
   uber: 'rgba(148,163,184,.15)', comercio: 'rgba(236,72,153,.15)',
 };
 
+// Fotos reales (Pexels) por contexto, buscadas y verificadas manualmente.
+const PACK_COVER = {
+  hosteleria: 'https://images.pexels.com/photos/8732584/pexels-photo-8732584.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=350&w=700',
+  deportes: 'https://images.pexels.com/photos/8693567/pexels-photo-8693567.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=350&w=700',
+  escuela: 'https://images.pexels.com/photos/9159042/pexels-photo-9159042.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=350&w=700',
+  viajes: 'https://images.pexels.com/photos/6726195/pexels-photo-6726195.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=350&w=700',
+  negocios: 'https://images.pexels.com/photos/7693692/pexels-photo-7693692.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=350&w=700',
+  salud: 'https://images.pexels.com/photos/6129444/pexels-photo-6129444.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=350&w=700',
+  uber: 'https://images.pexels.com/photos/7263902/pexels-photo-7263902.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=350&w=700',
+  comercio: 'https://images.pexels.com/photos/8311880/pexels-photo-8311880.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=350&w=700',
+};
+
 function renderPackGrid(content) {
   const grid = document.getElementById('packGrid');
   grid.innerHTML = content.pkgCatalog.map(p => {
     const tieneFrases = !!(content.paquetesConFrases[p.id] && content.paquetesConFrases[p.id].length);
     return `
     <div class="pack-card reveal-up">
-      <div class="pack-card__top">
-        <div class="pack-card__icon" style="background:${PACK_COLORS[p.id] || 'rgba(148,163,184,.15)'};">${p.emoji}</div>
+      <div class="pack-card__cover" style="background-image:url('${PACK_COVER[p.id] || ''}');">
         <span class="pack-card__status ${tieneFrases ? 'pack-card__status--live' : 'pack-card__status--soon'}">${tieneFrases ? 'Disponible' : 'Próximamente'}</span>
       </div>
-      <h4>${p.name}</h4>
-      <p>${p.description}</p>
-      <div class="pack-card__tags"><span>📚 Estudiar</span><span>✅ Quiz</span><span>🎮 Jugar</span></div>
-      <div class="pack-card__cta" style="display:flex; flex-direction:column; gap:.6rem;">
-        ${tieneFrases
-          ? `<a href="leccion.html?tipo=paquete&id=${p.id}" class="btn btn--primary btn--block">Practicar</a>`
-          : `<span class="btn btn--outline btn--block" style="opacity:.5; pointer-events:none;">Próximamente</span>`}
-        <a href="roleplay.html?pkg=${p.id}" class="btn btn--outline btn--block">🎭 Roleplay con IA</a>
+      <div class="pack-card__body">
+        <div class="pack-card__icon" style="background:${PACK_COLORS[p.id] || 'rgba(148,163,184,.15)'};">${p.emoji}</div>
+        <h4>${p.name}</h4>
+        <p>${p.description}</p>
+        <div class="pack-card__tags"><span>📚 Estudiar</span><span>✅ Quiz</span><span>🎮 Jugar</span></div>
+        <div class="pack-card__cta" style="display:flex; flex-direction:column; gap:.6rem;">
+          ${tieneFrases
+            ? `<a href="leccion.html?tipo=paquete&id=${p.id}" class="btn btn--primary btn--block">Practicar</a>`
+            : `<span class="btn btn--outline btn--block" style="opacity:.5; pointer-events:none;">Próximamente</span>`}
+          <a href="roleplay.html?pkg=${p.id}" class="btn btn--outline btn--block">🎭 Roleplay con IA</a>
+        </div>
       </div>
     </div>
   `;
