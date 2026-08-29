@@ -123,15 +123,18 @@ function renderStudy(ctx) {
    QUIZ — opción múltiple con distractores reales (mismo verbo,
    otro tiempo verbal), 70% para aprobar, reintentos ilimitados
    =========================================================== */
+function distractoresDe(f, distractorPool, poolGlobal, content_, nivel) {
+  if (nivel === 2) return buildDistractoresParalelo(f, content_, distractorPool, poolGlobal);
+  if (nivel === 1) return buildDistractoresConfusion(f, distractorPool, poolGlobal, x => x.tenseRaw, TENSE_CONFUSION);
+  if (nivel === 3) return buildDistractoresConfusion(f, distractorPool, poolGlobal, x => x.estructuraRaw, ESTRUCTURA_CONFUSION);
+  return buildDistractores(f, distractorPool, poolGlobal);
+}
+
 function buildQuizQuestions(frases, distractorPool, poolGlobal, content_, nivel) {
   return frases.map(f => ({
     es: f.es,
     correcta: f.en,
-    opciones: shuffle([f.en, ...(
-      nivel === 2
-        ? buildDistractoresParalelo(f, content_, distractorPool, poolGlobal)
-        : buildDistractores(f, distractorPool, poolGlobal)
-    )]),
+    opciones: shuffle([f.en, ...distractoresDe(f, distractorPool, poolGlobal, content_, nivel)]),
   }));
 }
 

@@ -17,6 +17,32 @@ const TENSE_ES = {
   'Future simple': 'Futuro simple',
 };
 
+// Qué tiempos se confunden entre sí de verdad (pedagogía estándar de inglés)
+// — usado para que los distractores del quiz prioricen la opción más dura
+// de distinguir, en vez de una cualquiera al azar.
+const TENSE_CONFUSION = {
+  'Present simple': ['Present continuous', 'Present perfect'],
+  'Present continuous': ['Present simple', 'Going to'],
+  'Past simple': ['Present perfect', 'Going to'],
+  'Present perfect': ['Past simple', 'Present simple'],
+  'Going to': ['Future simple', 'Present continuous'],
+  'Future simple': ['Going to', 'Present perfect'],
+};
+
+// Lo mismo pero para las 8 estructuras de Nivel 3 — qué estructura se
+// confunde con cuál (los condicionales entre sí por cercanía, y los 3
+// tiempos avanzados sueltos con el condicional/perfecto más parecido).
+const ESTRUCTURA_CONFUSION = {
+  'Zero Conditional': ['First Conditional'],
+  'First Conditional': ['Zero Conditional', 'Second Conditional'],
+  'Second Conditional': ['First Conditional', 'Third Conditional', 'Mixed Conditional'],
+  'Third Conditional': ['Second Conditional', 'Mixed Conditional'],
+  'Mixed Conditional': ['Second Conditional', 'Third Conditional'],
+  'Present Perfect Continuous': ['Past Perfect'],
+  'Past Perfect': ['Present Perfect Continuous'],
+  'Future Continuous': ['Present Perfect Continuous'],
+};
+
 // El campo `verb` de los JSON (p.ej. "to be") es un identificador ESTABLE en
 // inglés que no se toca — de él sale el slug/id usado para el progreso, SRS
 // y el agrupado por verbo, igual en los 5 idiomas. Esta tabla solo traduce
@@ -199,6 +225,30 @@ function buildDistractores(frase, todasLasFrasesDelGrupo, poolGlobal) {
   return opciones;
 }
 
+// Distractores que PRIORIZAN el par más confuso de verdad (Nivel 1 y 3):
+// dentro del pool ya real (mismo verbo en Nivel 1, estructuras cercanas
+// en Nivel 3), pone primero los candidatos cuya "clave de confusión"
+// (tiempo verbal o estructura) está en TENSE_CONFUSION/ESTRUCTURA_CONFUSION
+// para la frase correcta, antes que el resto del pool o el pool global.
+function buildDistractoresConfusion(frase, pool, poolGlobal, groupKeyFn, confusionMap, max = 2) {
+  const claveCorrecta = groupKeyFn(frase);
+  const confusables = new Set((confusionMap[claveCorrecta] || []));
+  const candidatos = pool.filter(f => f.en !== frase.en);
+  const prioritarios = candidatos.filter(f => confusables.has(groupKeyFn(f)));
+  const resto = candidatos.filter(f => !confusables.has(groupKeyFn(f)));
+
+  let opciones = shuffleArr(prioritarios).slice(0, max).map(f => f.en);
+  if (opciones.length < max) {
+    const extra = shuffleArr(resto).map(f => f.en).filter(en => !opciones.includes(en));
+    opciones = opciones.concat(extra.slice(0, max - opciones.length));
+  }
+  if (opciones.length < max && poolGlobal) {
+    const extra = shuffleArr(poolGlobal.filter(en => en !== frase.en && !opciones.includes(en)));
+    opciones = opciones.concat(extra.slice(0, max - opciones.length));
+  }
+  return opciones;
+}
+
 // Distractores de PAR MÍNIMO (solo Nivel 2): la EXACTA misma frase base,
 // solo con el tiempo verbal cambiado (p.ej. correcta "Are you being kind?"
 // -> distractores "Have you been kind?" / "Were you kind?" / "Will you be
@@ -298,10 +348,11 @@ async function loadContent(cursoId) {
     const nivel3PorEstructura = {};
     level3Raw.forEach(x => {
       const id = slugify(x.verb);
-      if (!nivel3PorEstructura[id]) nivel3PorEstructura[id] = { id, nombre: NIVEL3_NOMBRES_ES[x.verb] || x.verb, frases: [] };
+      if (!nivel3PorEstructura[id]) nivel3PorEstructura[id] = { id, nombre: NIVEL3_NOMBRES_ES[x.verb] || x.verb, raw: x.verb, frases: [] };
       nivel3PorEstructura[id].frases.push({
         es: x.promptEs, en: x.translationEn, tiempo: NIVEL3_NOMBRES_ES[x.tense] || x.tense,
         tenseRaw: x.tense, audio: null, imagen: x.imageUrl || null,
+        estructuraId: id, estructuraRaw: x.verb,
       });
     });
     const nivel3PoolGlobal = level3Raw.map(x => x.translationEn);

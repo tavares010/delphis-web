@@ -130,7 +130,14 @@ function frasesDeLeccion(content, nodo) {
 // tiempo/parte — no solo las frases de esta lección puntual).
 function distractorPoolDeLeccion(content, nodo) {
   if (nodo.nivel === 1) return content.nivel1.porVerbo[nodo.verboId].frases;
-  if (nodo.nivel === 3) return content.nivel3.porEstructura[nodo.verboId].frases;
+  if (nodo.nivel === 3) {
+    const propia = content.nivel3.porEstructura[nodo.verboId];
+    const confusables = (ESTRUCTURA_CONFUSION[propia.raw] || []).flatMap(rawOtra => {
+      const otra = content.nivel3.porEstructura[slugify(rawOtra)];
+      return otra ? otra.frases : [];
+    });
+    return [...propia.frases, ...confusables];
+  }
   if (nodo.nivel === 2) {
     const pool = [];
     Object.keys(content.nivel2.byVerbTense).forEach(key => {
