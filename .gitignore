@@ -14,3 +14,6 @@ web_export/assets/*_stories/*.mp4
 # OS junk
 .DS_Store
 Thumbs.db
+
+# Firebase CLI local cache (deploy hash cache, not project config)
+.firebase/

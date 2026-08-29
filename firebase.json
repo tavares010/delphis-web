@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.git/**",
+      "**/.firebase/**",
+      "**/node_modules/**",
+      "**/*.py",
+      "**/*.apk",
+      "**/*.ipa",
+      "web_export/PROMPT.md",
+      "web_export/README.md"
+    ]
+  }
+}
