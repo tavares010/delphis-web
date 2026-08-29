@@ -123,17 +123,21 @@ function renderStudy(ctx) {
    QUIZ — opción múltiple con distractores reales (mismo verbo,
    otro tiempo verbal), 70% para aprobar, reintentos ilimitados
    =========================================================== */
-function buildQuizQuestions(frases, distractorPool, poolGlobal) {
+function buildQuizQuestions(frases, distractorPool, poolGlobal, content_, nivel) {
   return frases.map(f => ({
     es: f.es,
     correcta: f.en,
-    opciones: shuffle([f.en, ...buildDistractores(f, distractorPool, poolGlobal)]),
+    opciones: shuffle([f.en, ...(
+      nivel === 2
+        ? buildDistractoresParalelo(f, content_, distractorPool, poolGlobal)
+        : buildDistractores(f, distractorPool, poolGlobal)
+    )]),
   }));
 }
 
 function renderQuiz(ctx) {
   renderSteps('quiz', ['study']);
-  let questions = shuffle(buildQuizQuestions(ctx.frases, ctx.distractorPool, ctx.poolGlobal));
+  let questions = shuffle(buildQuizQuestions(ctx.frases, ctx.distractorPool, ctx.poolGlobal, ctx.content, ctx.nivel));
   let qi = 0;
   let correctCount = 0;
   let answered = false;
@@ -193,7 +197,7 @@ function renderQuiz(ctx) {
     `;
     qs('#btnQuizContinue').addEventListener('click', () => {
       if (pass) { ctx.onQuizPass(); renderGame(ctx); }
-      else { questions = shuffle(buildQuizQuestions(ctx.frases, ctx.distractorPool, ctx.poolGlobal)); qi = 0; correctCount = 0; drawQuestion(); }
+      else { questions = shuffle(buildQuizQuestions(ctx.frases, ctx.distractorPool, ctx.poolGlobal, ctx.content, ctx.nivel)); qi = 0; correctCount = 0; drawQuestion(); }
     });
   }
 
@@ -363,11 +367,12 @@ function initRepaso(content_, caminos, encontrado) {
     const frases = frasesDeLeccion(content_, ln);
     return frases[Math.floor(Math.random() * frases.length)];
   }).filter(Boolean);
-  const poolGlobal = poolGlobalDeNivel(content_, camino === caminos.nivel1 ? 1 : camino === caminos.nivel2 ? 2 : 3);
+  const nivelRepaso = camino === caminos.nivel1 ? 1 : camino === caminos.nivel2 ? 2 : 3;
+  const poolGlobal = poolGlobalDeNivel(content_, nivelRepaso);
 
   if (stepsWrap) stepsWrap.innerHTML = `<div class="lesson-step active"><span class="lesson-step__dot">🔁</span>Repaso acumulativo</div>`;
 
-  let questions = shuffle(buildQuizQuestions(frasesRepaso, frasesRepaso, poolGlobal));
+  let questions = shuffle(buildQuizQuestions(frasesRepaso, frasesRepaso, poolGlobal, content_, nivelRepaso));
   let qi = 0, correctCount = 0, answered = false;
 
   function drawQuestion() {
@@ -413,7 +418,7 @@ function initRepaso(content_, caminos, encontrado) {
     `;
     qs('#btnContinue').addEventListener('click', () => {
       if (pass) { marcarRepasoHecho(nodo.id); if (typeof pushNow === 'function') pushNow(); irACurriculo('✅ Repaso superado.'); }
-      else { questions = shuffle(buildQuizQuestions(frasesRepaso, frasesRepaso, poolGlobal)); qi = 0; correctCount = 0; drawQuestion(); }
+      else { questions = shuffle(buildQuizQuestions(frasesRepaso, frasesRepaso, poolGlobal, content_, nivelRepaso)); qi = 0; correctCount = 0; drawQuestion(); }
     });
   }
 
@@ -441,6 +446,7 @@ async function initLeccion(content_, caminos) {
     titulo: nodo.nombre,
     sub: nodo.sub || `Nivel ${nivel}`,
     frases, distractorPool, poolGlobal,
+    content: content_, nivel,
     speechLang: content_.curso.speechLang,
     onStudyDone: () => marcarLeccionEstudiada(nodo.id),
     onQuizPass: () => marcarLeccionQuizAprobado(nodo.id),

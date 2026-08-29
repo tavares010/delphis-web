@@ -78,7 +78,7 @@ function renderCaminoRows(camino, content, nivel) {
         html += `<div class="course-divider"><span>Bloque ${num}</span><strong>${label}</strong></div>`;
       } else {
         const pi = NIVEL2_PAREJAS.findIndex(p => p.id === groupKey);
-        label = NIVEL2_PAREJAS[pi].nombre; num = pi + 1;
+        label = NIVEL2_PAREJAS[pi].verbos.map(v => traducirVerbo(v, content.curso.id)).join(' / '); num = pi + 1;
         html += `<div class="course-divider"><span>Pareja ${num}</span><strong>${label}</strong></div>`;
       }
       lastGroup = groupKey;

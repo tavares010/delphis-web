@@ -411,6 +411,56 @@
 .pack-card { display: flex; flex-direction: column; }
 .pack-card__cta { margin-top: 1.2rem; }
 
+/* ---------- CURSOS (selector de idioma, tarjetas tipo catálogo) ---------- */
+.lang-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.6rem; }
+.lang-card {
+  background: rgba(255,255,255,.025);
+  border: 1px solid rgba(148,163,184,.12);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex; flex-direction: column;
+  transition: transform .4s var(--ease), border-color .4s, box-shadow .4s;
+}
+.lang-card:hover { transform: translateY(-6px); border-color: rgba(56,189,248,.35); box-shadow: var(--shadow-glow); }
+.lang-card.equipped { border-color: rgba(56,189,248,.5); }
+.lang-card__cover {
+  position: relative;
+  height: 128px;
+  display: flex; align-items: center; justify-content: center;
+}
+.lang-card__flag { font-size: 3.2rem; filter: drop-shadow(0 6px 18px rgba(0,0,0,.35)); }
+.lang-card__badge {
+  position: absolute; top: .8rem; left: .8rem;
+  font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em;
+  padding: .35em .8em; border-radius: 999px;
+  background: rgba(10,20,50,.55); backdrop-filter: blur(6px);
+  color: #fff;
+}
+.lang-card__status {
+  position: absolute; top: .8rem; right: .8rem;
+  font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em;
+  padding: .35em .8em; border-radius: 999px;
+}
+.lang-card__status--live { background: rgba(34,197,94,.85); color: #06210f; }
+.lang-card__status--new { background: rgba(255,255,255,.9); color: #0a1432; }
+.lang-card__body { padding: 1.4rem 1.6rem 1.6rem; display: flex; flex-direction: column; flex: 1; }
+.lang-card__body h4 { font-size: 1.15rem; margin-bottom: .4rem; }
+.lang-card__body p { color: var(--gray-400); font-size: .85rem; margin-bottom: 1rem; }
+.lang-card__meta { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.2rem; }
+.lang-card__meta span {
+  display: flex; align-items: center; gap: .35em;
+  font-size: .76rem; color: var(--gray-400);
+}
+.lang-card__foot {
+  margin-top: auto;
+  display: flex; align-items: center; justify-content: space-between; gap: .8rem;
+  padding-top: 1rem; border-top: 1px solid rgba(148,163,184,.12);
+}
+.lang-card__price { font-size: .82rem; color: var(--gray-300); font-weight: 600; }
+.lang-card__price small { display: block; font-weight: 400; color: var(--gray-500); font-size: .7rem; }
+@media (max-width: 900px) { .lang-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 620px) { .lang-grid { grid-template-columns: 1fr; } }
+
 /* ---------- PERFIL ---------- */
 .profile-grid { display: grid; grid-template-columns: .9fr 1.4fr; gap: 2rem; align-items: start; }
 .profile-card {

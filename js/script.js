@@ -75,6 +75,7 @@ const statNums = document.querySelectorAll('.stat__num');
 function animateCount(el) {
   const target = parseFloat(el.dataset.count);
   const decimal = el.dataset.decimal;
+  const prefix = el.dataset.prefix || '';
   const suffix = el.dataset.suffix || '';
   const duration = 1800;
   const start = performance.now();
@@ -88,7 +89,7 @@ function animateCount(el) {
     } else {
       value = Math.floor(value).toLocaleString('en-US');
     }
-    el.textContent = value + suffix;
+    el.textContent = prefix + value + suffix;
     if (progress < 1) requestAnimationFrame(tick);
   }
   requestAnimationFrame(tick);

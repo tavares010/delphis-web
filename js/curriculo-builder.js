@@ -69,8 +69,10 @@ function buildCamino(content) {
   // ---------- NIVEL 2 ----------
   const n2Lessons = [];
   NIVEL2_PAREJAS.forEach(pareja => {
+    const parejaNombre = pareja.verbos.map(v => traducirVerbo(v, content.curso.id)).join(' / ');
     pareja.verbos.forEach(verbo => {
       const verbId = slugify(verbo);
+      const verboLocal = traducirVerbo(verbo, content.curso.id);
       Object.keys(TENSE_ES).forEach(tenseRaw => {
         const key = `${verbId}__${tenseRaw}`;
         const frases = content.nivel2.byVerbTense[key] || [];
@@ -82,8 +84,8 @@ function buildCamino(content) {
             id: `n2-${verbId}-${slugify(tenseRaw)}-${pi + 1}`,
             verboId: verbId, tenseRaw,
             frases: frasesParte,
-            nombre: `${verbo} · ${TENSE_ES[tenseRaw]}`,
-            sub: partes.length > 1 ? `Parte ${pi + 1} de ${partes.length}` : pareja.nombre,
+            nombre: `${verboLocal} · ${TENSE_ES[tenseRaw]}`,
+            sub: partes.length > 1 ? `Parte ${pi + 1} de ${partes.length}` : parejaNombre,
             parejaId: pareja.id,
           });
         });

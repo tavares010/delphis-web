@@ -10,6 +10,14 @@ const CURSO_DESCRIPCIONES = {
   pt: '64 verbos y 16 estructuras traducidos al portugués real. El libro y los paquetes llegan pronto.',
 };
 
+const CURSO_COVER = {
+  en: 'linear-gradient(135deg, #0ea5e9, #0369a1)',
+  fr: 'linear-gradient(135deg, #818cf8, #4338ca)',
+  de: 'linear-gradient(135deg, #fbbf24, #b45309)',
+  it: 'linear-gradient(135deg, #34d399, #047857)',
+  pt: 'linear-gradient(135deg, #fb7185, #be123c)',
+};
+
 function cursoTieneProgreso(cursoId) {
   const all = curriculumLoadAll();
   const d = all[cursoId];
@@ -22,21 +30,27 @@ function renderCursos() {
   grid.innerHTML = CURSOS.map(c => {
     const esActivo = c.id === activo.id;
     const enProgreso = cursoTieneProgreso(c.id);
-    let badge = 'Empezar';
-    if (esActivo) badge = 'Curso activo';
-    else if (enProgreso) badge = 'Continuar';
     return `
-      <div class="pack-card reveal-up visible ${esActivo ? 'equipped' : ''}" style="${esActivo ? 'border-color:rgba(56,189,248,.5); background:rgba(56,189,248,.05);' : ''}">
-        <div class="pack-card__top">
-          <div class="pack-card__icon" style="background:rgba(56,189,248,.12); font-size:2rem;">${c.bandera}</div>
-          <span class="pack-card__status ${esActivo ? 'pack-card__status--live' : (enProgreso ? 'pack-card__status--live' : 'pack-card__status--soon')}">${badge}</span>
+      <div class="lang-card reveal-up visible ${esActivo ? 'equipped' : ''}">
+        <div class="lang-card__cover" style="background:${CURSO_COVER[c.id] || CURSO_COVER.en};">
+          <span class="lang-card__badge">3 niveles</span>
+          ${esActivo ? '<span class="lang-card__status lang-card__status--live">Curso activo</span>'
+            : (enProgreso ? '<span class="lang-card__status lang-card__status--new">Continuar</span>' : '')}
+          <span class="lang-card__flag">${c.bandera}</span>
         </div>
-        <h4>${c.nombre}</h4>
-        <p>${CURSO_DESCRIPCIONES[c.id] || ''}</p>
-        <div class="pack-card__cta">
-          <button class="btn ${esActivo ? 'btn--outline' : 'btn--primary'} btn--block" data-curso="${c.id}">
-            ${esActivo ? 'Ir al curso' : (enProgreso ? 'Continuar' : 'Empezar')}
-          </button>
+        <div class="lang-card__body">
+          <h4>${c.nombre}</h4>
+          <p>${CURSO_DESCRIPCIONES[c.id] || ''}</p>
+          <div class="lang-card__meta">
+            <span>🔤 64 verbos</span>
+            <span>🎓 8 estructuras avanzadas</span>
+          </div>
+          <div class="lang-card__foot">
+            <span class="lang-card__price">Bloque 1 gratis<small>membresía desde $9/mes</small></span>
+            <button class="btn ${esActivo ? 'btn--outline' : 'btn--primary'}" data-curso="${c.id}">
+              ${esActivo ? 'Ir al curso' : (enProgreso ? 'Continuar' : 'Empezar')}
+            </button>
+          </div>
         </div>
       </div>
     `;
