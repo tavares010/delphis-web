@@ -1,0 +1,319 @@
+1.
+
+Q: Hello. Are you the driver?
+A: Yes, I am.
+
+2.
+
+Q: Are you here for Julia?
+A: Yes, that’s me.
+
+3.
+
+Q: Where are you going today?
+A: To the airport, please.
+
+4.
+
+Q: Could you take me to this address?
+A: Of course.
+
+5.
+
+Q: Is this the correct address?
+A: Yes, that’s right.
+
+6.
+
+Q: Could you help me with my luggage?
+A: Certainly.
+
+7.
+
+Q: Can I put my suitcase in the trunk?
+A: Yes, I’ll open it for you.
+
+8.
+
+Q: Is everyone ready?
+A: Yes, let’s go.
+
+9.
+
+Q: How long will the journey take?
+A: About twenty minutes.
+
+10.
+
+Q: How much will it cost?
+A: Around €25.
+
+11.
+
+Q: Is there much traffic?
+A: Not at the moment.
+
+12.
+
+Q: What’s the fastest way to get there?
+A: I’ll take the motorway.
+
+13.
+
+Q: Could you avoid the toll roads?
+A: Of course.
+
+14.
+
+Q: Could you take the quickest route?
+A: Sure.
+
+15.
+
+Q: Can we stop at a petrol station?
+A: Yes, no problem.
+
+16.
+
+Q: Could we make a quick stop?
+A: Of course.
+
+17.
+
+Q: Could you turn the air conditioning on?
+A: Certainly.
+
+18.
+
+Q: Is the temperature okay?
+A: Yes, it’s perfect.
+
+19.
+
+Q: Could you turn the music down?
+A: Of course.
+
+20.
+
+Q: Would you like me to open the window?
+A: Yes, please.
+
+21.
+
+Q: Are we almost there?
+A: Yes, just five more minutes.
+
+22.
+
+Q: Could you drive a little slower?
+A: Of course.
+
+23.
+
+Q: Could you drop me off here?
+A: Certainly.
+
+24.
+
+Q: Is this okay?
+A: Yes, thank you.
+
+25.
+
+Q: Which street is it?
+A: Oxford Street.
+
+26.
+
+Q: Is it far from here?
+A: No, it’s quite close.
+
+27.
+
+Q: Should I turn left here?
+A: Yes, that’s right.
+
+28.
+
+Q: Should I turn right at the traffic lights?
+A: Yes, please.
+
+29.
+
+Q: Is the entrance on this side?
+A: Yes, it is.
+
+30.
+
+Q: Can you stop in front of the hotel?
+A: Of course.
+
+31.
+
+Q: Could you wait for me for a few minutes?
+A: Yes, no problem.
+
+32.
+
+Q: Will you be long?
+A: Just five minutes.
+
+33.
+
+Q: Which terminal are you going to?
+A: Terminal 2.
+
+34.
+
+Q: Are you catching a flight today?
+A: Yes, I am.
+
+35.
+
+Q: What time is your flight?
+A: At 4 p.m.
+
+36.
+
+Q: Are you staying at this hotel?
+A: Yes, I have a reservation.
+
+37.
+
+Q: Is this your hotel?
+A: Yes, thank you.
+
+38.
+
+Q: Do you need help with your bags?
+A: Yes, please.
+
+39.
+
+Q: Shall I leave your luggage here?
+A: Yes, that’s perfect.
+
+40.
+
+Q: Have a nice stay.
+A: Thank you.
+
+41.
+
+Q: Where are you from?
+A: I’m from Spain.
+
+42.
+
+Q: Is this your first time here?
+A: Yes, it is.
+
+43.
+
+Q: Are you here for work or on holiday?
+A: I’m here on holiday.
+
+44.
+
+Q: How long are you staying?
+A: For one week.
+
+45.
+
+Q: Have you visited this city before?
+A: No, I haven’t.
+
+46.
+
+Q: Do you like the city?
+A: Yes, it’s beautiful.
+
+47.
+
+Q: What’s the weather usually like here?
+A: It’s usually sunny.
+
+48.
+
+Q: Do you need any recommendations?
+A: Yes, I’d love some.
+
+49.
+
+Q: We’ve arrived.
+A: Thank you.
+
+50.
+
+Q: How much is the fare?
+A: It’s €18.50.
+
+51.
+
+Q: Can I pay by card?
+A: Yes, of course.
+
+52.
+
+Q: Do you accept cash?
+A: Yes, we do.
+
+53.
+
+Q: Would you like a receipt?
+A: Yes, please.
+
+54.
+
+Q: Can I pay through the app?
+A: Yes, that’s fine.
+
+55.
+
+Q: Keep the change.
+A: Thank you very much.
+
+56.
+
+Q: Everything was perfect. Thank you.
+A: I’m glad to hear that.
+
+57.
+
+Q: Thank you for the ride.
+A: You’re very welcome.
+
+58.
+
+Q: Have a great day!
+A: Thank you. You too.
+
+59.
+
+Q: Take care!
+A: Thanks, you too.
+
+60.
+
+Q: Have a safe trip!
+A: Thank you very much.
+
+61.
+
+Q: I hope you enjoy your stay.
+A: Thank you. I’m sure I will.
+
+62.
+
+Q: Thanks for choosing our service.
+A: My pleasure.
+
+63.
+
+Q: See you next time!
+A: See you!
+
+64.
+
+Q: Goodbye and have a wonderful day!
+A: Goodbye! Have a great day too.

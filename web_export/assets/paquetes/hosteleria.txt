@@ -1,0 +1,321 @@
+Oraciones hostelería 
+
+1.
+
+Q: Good evening. Do you have a reservation?
+A: Yes, under the name Smith.
+
+2.
+
+Q: How many people are in your party?
+A: There are four of us.
+
+3.
+
+Q: Would you like a table inside or outside?
+A: Outside, please.
+
+4.
+
+Q: Is this table okay for you?
+A: Yes, it’s perfect.
+
+5.
+
+Q: Can I take your coats?
+A: Yes, thank you.
+
+6.
+
+Q: Here are your menus. Would you like a drinks menu too?
+A: Yes, please.
+
+7.
+
+Q: Have you dined with us before?
+A: No, it’s our first time here.
+
+8.
+
+Q: Can I get you something to drink?
+A: Yes, I’d like a glass of water.
+
+9.
+
+Q: Would you like still or sparkling water?
+A: Still water, please.
+
+10.
+
+Q: Are you ready to order your drinks?
+A: Yes, I am.
+
+11.
+
+Q: What would you like to drink?
+A: I’d like a Coke, please.
+
+12.
+
+Q: Would you like a beer or a glass of wine?
+A: I’ll have a beer, please.
+
+13.
+
+Q: Are you ready to order?
+A: Yes, we are.
+
+14.
+
+Q: Would you like any starters?
+A: Yes, we’d like garlic bread.
+
+15.
+
+Q: Would you like some soup?
+A: Yes, I’ll have the tomato soup.
+
+16.
+
+Q: Would you like a salad as a starter?
+A: Yes, I’ll have the Caesar salad.
+
+17.
+
+Q: What would you like for your main course?
+A: I’ll have the grilled chicken.
+
+18.
+
+Q: Would you like the beef or the pork?
+A: I’ll have the beef.
+
+19.
+
+Q: How would you like your steak cooked?
+A: Medium rare, please.
+
+20.
+
+Q: Would you like lamb instead?
+A: No, I’ll have the steak.
+
+21.
+
+Q: Would you like fish or meat?
+A: I’ll have the salmon.
+
+22.
+
+Q: Would you like pasta?
+A: Yes, I’ll have the spaghetti carbonara.
+
+23.
+
+Q: Would you like pizza?
+A: Yes, I’ll have a pepperoni pizza.
+
+24.
+
+Q: Which burger would you like?
+A: I’ll have the cheeseburger.
+
+25.
+
+Q: Would you like fries or mashed potatoes?
+A: Fries, please.
+
+26.
+
+Q: Would you like rice or vegetables?
+A: Rice, please.
+
+27.
+
+Q: Would you like some vegetables with your meal?
+A: Yes, please.
+
+28.
+
+Q: Would you like any sauce?
+A: Yes, barbecue sauce, please.
+
+29.
+
+Q: Do you have any food allergies?
+A: Yes, I’m allergic to nuts.
+
+30.
+
+Q: Is everything okay with your meal?
+A: Yes, everything is delicious.
+
+31.
+
+Q: Is your steak cooked the way you wanted?
+A: Yes, it’s perfect.
+
+32.
+
+Q: Can I bring you some more bread?
+A: Yes, please.
+
+33.
+
+Q: Would you like another drink?
+A: Yes, another Coke, please.
+
+34.
+
+Q: Can I refill your water?
+A: Yes, please.
+
+35.
+
+Q: Do you need anything else?
+A: Could I have some ketchup, please?
+
+36.
+
+Q: Would you like some mayonnaise?
+A: Yes, please.
+
+37.
+
+Q: Can I get you some salt and pepper?
+A: Yes, thank you.
+
+38.
+
+Q: Are you enjoying your meal?
+A: Yes, very much.
+
+39.
+
+Q: Have you finished your main course?
+A: Yes, we have.
+
+40.
+
+Q: Can I clear your plates?
+A: Yes, of course.
+
+41.
+
+Q: Would you like to see the dessert menu?
+A: Yes, please.
+
+42.
+
+Q: What dessert would you recommend?
+A: The chocolate cake is very popular.
+
+43.
+
+Q: Would you like cheesecake?
+A: Yes, please.
+
+44.
+
+Q: Would you like ice cream?
+A: Yes, I’ll have vanilla ice cream.
+
+45.
+
+Q: Would you like apple pie?
+A: Yes, please.
+
+46.
+
+Q: Would you like coffee or tea?
+A: I’ll have a coffee.
+
+47.
+
+Q: How do you take your coffee?
+A: With milk and sugar.
+
+48.
+
+Q: Would you like an espresso?
+A: Yes, please.
+
+49.
+
+Q: Have you finished your dessert?
+A: Yes, thank you.
+
+50.
+
+Q: Was everything alright?
+A: Yes, everything was excellent.
+
+51.
+
+Q: Did you enjoy your meal?
+A: Yes, we did.
+
+52.
+
+Q: Would you like anything else?
+A: No, thank you.
+
+53.
+
+Q: Are you ready for the bill?
+A: Yes, we are.
+
+54.
+
+Q: Would you like the bill now?
+A: Yes, please.
+
+55.
+
+Q: Shall I bring the bill?
+A: Yes, thank you.
+
+56.
+
+Q: Would you like to pay together or separately?
+A: Together, please.
+
+57.
+
+Q: How would you like to pay?
+A: By card, please.
+
+58.
+
+Q: Would you like to pay in cash?
+A: No, by card.
+
+59.
+
+Q: Do you need a receipt?
+A: Yes, please.
+
+60.
+
+Q: Would you like to leave a tip?
+A: Yes, of course.
+
+61.
+
+Q: Thank you for dining with us.
+A: Thank you for the excellent service.
+
+62.
+
+Q: We hope to see you again soon.
+A: We will definitely come back.
+
+63.
+
+Q: Have a lovely evening.
+A: Thank you. You too.
+
+64.
+
+Q: Have a safe trip home.
+A: Thank you very much.

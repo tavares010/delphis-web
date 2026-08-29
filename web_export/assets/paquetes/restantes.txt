@@ -1,0 +1,659 @@
+1.
+
+Q: Hello. Can I help you?
+A: Yes, I’m looking for a dress.
+
+2.
+
+Q: What size do you need?
+A: Medium, please.
+
+3.
+
+Q: What colour are you looking for?
+A: Black.
+
+4.
+
+Q: Would you like to try it on?
+A: Yes, please.
+
+5.
+
+Q: Where are the fitting rooms?
+A: They’re over there.
+
+6.
+
+Q: Does it fit?
+A: Yes, it fits perfectly.
+
+7.
+
+Q: Is it too big?
+A: No, it’s just right.
+
+8.
+
+Q: Do you have this in a different size?
+A: Yes, I’ll bring you a smaller one.
+
+9.
+
+Q: Do you have this in blue?
+A: Yes, we do.
+
+10.
+
+Q: How much is this jacket?
+A: It’s €65.
+
+11.
+
+Q: Is it on sale?
+A: Yes, it’s 30% off.
+
+12.
+
+Q: I’ll take it.
+A: Great choice.
+
+13.
+
+Q: Can I pay by card?
+A: Yes, of course.
+
+14.
+
+Q: Would you like a bag?
+A: Yes, please.
+
+15.
+
+Q: Do you have the receipt?
+A: Yes, here it is.
+
+16.
+
+Q: Can I exchange this shirt?
+A: Yes, within 30 days.
+
+⸻
+
+🛒 SUPERMARKET
+
+17.
+
+Q: Excuse me, where is the bread?
+A: It’s in aisle three.
+
+18.
+
+Q: Where can I find the milk?
+A: In the dairy section.
+
+19.
+
+Q: Do you sell fresh fruit?
+A: Yes, over there.
+
+20.
+
+Q: Where are the eggs?
+A: Next to the butter.
+
+21.
+
+Q: Do you have any chicken?
+A: Yes, in the meat section.
+
+22.
+
+Q: Where is the pasta?
+A: Aisle five.
+
+23.
+
+Q: Do you have rice?
+A: Yes, several brands.
+
+24.
+
+Q: Where is the bottled water?
+A: At the end of the aisle.
+
+25.
+
+Q: Do you have orange juice?
+A: Yes, in the drinks section.
+
+26.
+
+Q: Where can I find coffee?
+A: On the next shelf.
+
+27.
+
+Q: Are these apples fresh?
+A: Yes, they arrived this morning.
+
+28.
+
+Q: Is this cheese on offer?
+A: Yes, it’s buy one, get one free.
+
+29.
+
+Q: Can I pay at the self-checkout?
+A: Yes, you can.
+
+30.
+
+Q: Do you need a loyalty card?
+A: No, I don’t have one.
+
+31.
+
+Q: Would you like a bag?
+A: No, thank you.
+
+32.
+
+Q: Can I pay in cash?
+A: Yes.
+
+⸻
+
+👟 SHOE STORE
+
+33.
+
+Q: Can I help you?
+A: Yes, I’m looking for a pair of trainers.
+
+34.
+
+Q: What size do you wear?
+A: Size 38, please.
+
+35.
+
+Q: Do you have these shoes in size 38?
+A: Let me check for you.
+
+36.
+
+Q: Can I try them on?
+A: Of course.
+
+37.
+
+Q: Do they fit?
+A: Yes, they’re very comfortable.
+
+38.
+
+Q: Do you have them in another colour?
+A: Yes, we have them in black and white.
+
+39.
+
+Q: Are these made of leather?
+A: Yes, they are.
+
+40.
+
+Q: I’ll take them.
+A: Excellent choice.
+
+⸻
+
+💊 PHARMACY
+
+41.
+
+Q: Can I help you?
+A: I need something for a headache.
+
+42.
+
+Q: Do you have a prescription?
+A: No, I don’t.
+
+43.
+
+Q: Do you have any painkillers?
+A: Yes, we do.
+
+44.
+
+Q: How often should I take these tablets?
+A: Twice a day.
+
+45.
+
+Q: Do you need anything else?
+A: Yes, a box of tissues.
+
+46.
+
+Q: Can I pay by card?
+A: Yes, of course.
+
+⸻
+
+📱 ELECTRONICS STORE
+
+47.
+
+Q: Can I help you?
+A: I’m looking for a new phone.
+
+48.
+
+Q: Which model are you interested in?
+A: The latest one.
+
+49.
+
+Q: Does it come with a charger?
+A: Yes, it does.
+
+50.
+
+Q: How much does it cost?
+A: It’s €799.
+
+51.
+
+Q: Does it have a warranty?
+A: Yes, a two-year warranty.
+
+52.
+
+Q: I’ll take it.
+A: Excellent choice.
+
+⸻
+
+🏪 BAZAAR / VARIETY STORE
+
+53.
+
+Q: Excuse me, where can I find batteries?
+A: They’re in aisle four.
+
+54.
+
+Q: Do you sell phone chargers?
+A: Yes, we have different types.
+
+55.
+
+Q: I’m looking for kitchen utensils. Where are they?
+A: They’re at the back of the store.
+
+56.
+
+Q: Do you have plastic storage boxes?
+A: Yes, they’re on the top shelf.
+
+57.
+
+Q: Where can I find cleaning products?
+A: They’re in aisle six.
+
+58.
+
+Q: Do you have paper towels?
+A: Yes, they’re near the toilet paper.
+
+59.
+
+Q: Do you sell light bulbs?
+A: Yes, they’re next to the extension cords.
+
+60.
+
+Q: Do you have gift bags?
+A: Yes, they’re next to the wrapping paper.
+
+61.
+
+Q: Where can I find notebooks?
+A: They’re in the stationery section.
+
+62.
+
+Q: Do you sell umbrellas?
+A: Yes, they’re by the entrance.
+
+63.
+
+Q: Do you have disposable cups and plates?
+A: Yes, they’re in the party supplies section.
+
+64.
+
+Q: Where can I find toys for children?
+A: They’re on the second floor.
+
+Oraciones Viaje 
+
+Q: Good morning. May I see your passport, please?
+A: Of course. Here it is.
+
+2.
+
+Q: Where are you flying today?
+A: I’m flying to London.
+
+3.
+
+Q: Do you have a reservation?
+A: Yes, I do.
+
+4.
+
+Q: Are you checking in any luggage?
+A: Yes, one suitcase.
+
+5.
+
+Q: Do you have any hand luggage?
+A: Yes, just this backpack.
+
+6.
+
+Q: Did you pack your bags yourself?
+A: Yes, I did.
+
+7.
+
+Q: Has anyone asked you to carry something?
+A: No, they haven’t.
+
+8.
+
+Q: Would you like a window or an aisle seat?
+A: A window seat, please.
+
+9.
+
+Q: Here’s your boarding pass.
+A: Thank you.
+
+10.
+
+Q: What time does boarding start?
+A: Boarding starts at 9:30.
+
+11.
+
+Q: Where is the security checkpoint?
+A: It’s straight ahead.
+
+12.
+
+Q: Could you put your bag on the belt, please?
+A: Of course.
+
+13.
+
+Q: Do I need to take off my shoes?
+A: Yes, please.
+
+14.
+
+Q: Can I take this bottle of water?
+A: No, liquids over 100 ml aren’t allowed.
+
+15.
+
+Q: Which gate is my flight leaving from?
+A: Gate 24.
+
+16.
+
+Q: Is the flight on time?
+A: Yes, it is.
+
+17.
+
+Q: Has boarding started?
+A: Yes, passengers can board now.
+
+18.
+
+Q: May I see your boarding pass?
+A: Here you are.
+
+19.
+
+Q: Welcome aboard. Where is my seat?
+A: It’s in row 18, seat A.
+
+20.
+
+Q: Could you help me with my suitcase?
+A: Certainly.
+
+21.
+
+Q: Can I put my backpack under the seat?
+A: Yes, you can.
+
+22.
+
+Q: Please fasten your seatbelt.
+A: Okay.
+
+23.
+
+Q: Would you like something to drink?
+A: Yes, a coffee, please.
+
+24.
+
+Q: Would you like something to eat?
+A: Yes, a sandwich, please.
+
+25.
+
+Q: Would you like tea or coffee?
+A: Tea, please.
+
+26.
+
+Q: Is this seat taken?
+A: No, it’s free.
+
+27.
+
+Q: How long is the flight?
+A: About three hours.
+
+28.
+
+Q: What time will we arrive?
+A: Around 2 p.m.
+
+29.
+
+Q: Welcome to Spain. Is this your first visit?
+A: Yes, it is.
+
+30.
+
+Q: What’s the purpose of your visit?
+A: I’m here on holiday.
+
+31.
+
+Q: How long are you staying?
+A: For one week.
+
+32.
+
+Q: Where will you be staying?
+A: At the Central Hotel.
+
+33.
+
+Q: Do you have anything to declare?
+A: No, I don’t.
+
+34.
+
+Q: Where can I collect my luggage?
+A: At baggage claim number 5.
+
+35.
+
+Q: Is this your suitcase?
+A: Yes, it is.
+
+36.
+
+Q: Excuse me, where is the taxi rank?
+A: It’s outside the terminal.
+
+37.
+
+Q: Where can I buy a train ticket?
+A: At the ticket office.
+
+38.
+
+Q: Which train goes to the city centre?
+A: Platform 3.
+
+39.
+
+Q: How much is a ticket to the city centre?
+A: It’s ten euros.
+
+40.
+
+Q: Does this bus go to the city centre?
+A: Yes, it does.
+
+41.
+
+Q: Where should I get off?
+A: At the last stop.
+
+42.
+
+Q: Could you call me a taxi?
+A: Certainly.
+
+43.
+
+Q: How long does it take to get there?
+A: About twenty minutes.
+
+44.
+
+Q: Hello. I have a reservation.
+A: Welcome. What’s your name?
+
+45.
+
+Q: It’s under the name Johnson .
+A: Thank you. I found your booking.
+
+46.
+
+Q: May I see your passport, please?
+A: Of course.
+
+47.
+
+Q: What time is check-out?
+A: At 11 a.m.
+
+48.
+
+Q: Is breakfast included?
+A: Yes, it is.
+
+49.
+
+Q: What time is breakfast served?
+A: From 7 to 10 a.m.
+
+50.
+
+Q: Is there free Wi-Fi?
+A: Yes, throughout the hotel.
+
+51.
+
+Q: Could I have the room key, please?
+A: Here you are.
+
+52.
+
+Q: Where is the lift?
+A: It’s around the corner.
+
+53.
+
+Q: Could you recommend a good restaurant?
+A: Yes, there’s one nearby.
+
+54.
+
+Q: How can I get to the city centre?
+A: You can take the metro.
+
+55.
+
+Q: Where is the nearest metro station?
+A: Two minutes from here.
+
+56.
+
+Q: How much is a day pass?
+A: It’s eight euros.
+
+57.
+
+Q: Which bus goes to the museum?
+A: Bus number 15.
+
+58.
+
+Q: Is it within walking distance?
+A: Yes, it’s only ten minutes away.
+
+59.
+
+Q: Could you show me this address on the map?
+A: Of course.
+
+60.
+
+Q: Where can I buy souvenirs?
+A: There’s a gift shop nearby.
+
+61.
+
+Q: What places do you recommend visiting?
+A: The old town and the cathedral.
+
+62.
+
+Q: Could you take a picture of us?
+A: Of course.
+
+63.
+
+Q: What time does the airport bus leave?
+A: Every thirty minutes.
+
+64.
+
+Q: Have a safe flight home.
+A: Thank you very much.

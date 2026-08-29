@@ -1,0 +1,19 @@
+{
+  "name": "delphis-roleplay-proxy",
+  "version": "1.0.0",
+  "description": "Proxy backend para el motor de roleplay por voz de Delphis Academy",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^13.0.0",
+    "stripe": "^17.0.0"
+  }
+}

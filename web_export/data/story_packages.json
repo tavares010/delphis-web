@@ -1,0 +1,3940 @@
+{
+  "hosteleria": [
+    {
+      "number": 1,
+      "title": "El cliente con reserva en un restaurante de lujo",
+      "videoAsset": "assets/hosteleria_stories/history1.mp4",
+      "videoAssetSub": "assets/hosteleria_stories/story1sub.mp4",
+      "thumbnailAsset": "assets/hosteleria_stories/thumb1.jpg",
+      "vocab": [
+        {
+          "termEn": "doorman",
+          "translationEs": "portero"
+        },
+        {
+          "termEn": "booked this place weeks in advance",
+          "translationEs": "reservado con semanas de antelación"
+        },
+        {
+          "termEn": "Relief washed over him",
+          "translationEs": "sintió alivio"
+        },
+        {
+          "termEn": "leather-bound menus",
+          "translationEs": "menús encuadernados en piel"
+        }
+      ],
+      "challengeSentence": {
+        "en": "The doorman held the leather-bound menus.",
+        "es": "El portero sostenía los menús encuadernados en piel."
+      },
+      "lines": [
+        {
+          "speaker": null,
+          "en": "Michael straightened his jacket as he stepped out of the taxi.",
+          "es": "Michael se enderezó la chaqueta al bajar del taxi.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "The restaurant in front of him looked exactly as elegant as everyone had described — soft golden lights glowing behind tall glass windows, and a doorman standing perfectly still beside a discreet brass sign.",
+          "es": "El restaurante frente a él era tan elegante como todos habían dicho: luces doradas y suaves brillando tras altos ventanales, y un portero inmóvil junto a un discreto cartel de latón.",
+          "vocabTerms": [
+            "doorman"
+          ]
+        },
+        {
+          "speaker": null,
+          "en": "Tonight was his wedding anniversary, and he had booked this place weeks in advance.",
+          "es": "Esa noche era su aniversario de bodas, y había reservado ese lugar con semanas de antelación.",
+          "vocabTerms": [
+            "booked this place weeks in advance"
+          ]
+        },
+        {
+          "speaker": null,
+          "en": "He walked inside, and a hostess in a black dress greeted him with a polished smile.",
+          "es": "Entró, y una anfitriona vestida de negro lo recibió con una sonrisa impecable.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Hostess",
+          "en": "Good evening, sir. Welcome to Le Château. Do you have a reservation?",
+          "es": "Buenas noches, señor. Bienvenido a Le Château. ¿Tiene reserva?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Michael",
+          "en": "Yes, I do. It should be under the name Carter, for two, at 8 o'clock.",
+          "es": "Sí, la tengo. Debería estar a nombre de Carter, para dos, a las 8 en punto.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "The hostess glanced down at her tablet, scrolling for a moment.",
+          "es": "La anfitriona miró su tableta un momento, desplazando la pantalla.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Hostess",
+          "en": "Ah, yes, Mr. Carter. I see it right here — table by the window, as requested.",
+          "es": "Ah, sí, señor Carter. Aquí está, mesa junto a la ventana, tal como pidió.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Michael",
+          "en": "That's perfect, thank you.",
+          "es": "Eso es perfecto, gracias.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Relief washed over him.",
+          "es": "Sintió alivio.",
+          "vocabTerms": [
+            "Relief washed over him"
+          ]
+        },
+        {
+          "speaker": "Hostess",
+          "en": "Will the rest of your party be joining you shortly?",
+          "es": "¿El resto de su grupo se unirá pronto?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Michael",
+          "en": "My wife should arrive any minute now.",
+          "es": "Mi esposa debería llegar en cualquier momento.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Hostess",
+          "en": "Wonderful. Would you like to be seated now, or wait for her at the bar?",
+          "es": "¿Quiere que lo sienten ya, o prefiere esperarla en la barra?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Michael",
+          "en": "I think I'll wait for her here, if that's alright.",
+          "es": "Creo que la esperaré aquí, si no hay problema.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Hostess",
+          "en": "Of course, take your time. I'll let you know the moment your table is ready.",
+          "es": "Por supuesto, tómese su tiempo. Le avisaré en cuanto su mesa esté lista.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "A few minutes later, his wife walked through the door, and Michael's face lit up.",
+          "es": "Unos minutos después, su esposa cruzó la puerta, y el rostro de Michael se iluminó.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "The hostess smiled at the two of them and picked up two leather-bound menus.",
+          "es": "La anfitriona les sonrió a los dos y tomó dos menús encuadernados en piel.",
+          "vocabTerms": [
+            "leather-bound menus"
+          ]
+        },
+        {
+          "speaker": "Hostess",
+          "en": "Right this way, Mr. and Mrs. Carter. Happy anniversary.",
+          "es": "Por aquí, señor y señora Carter. Feliz aniversario.",
+          "vocabTerms": []
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Alguien pidiendo una bebida en un bar",
+      "videoAsset": "assets/hosteleria_stories/story2.mp4",
+      "videoAssetSub": "assets/hosteleria_stories/story2sub.mp4",
+      "thumbnailAsset": "assets/hosteleria_stories/thumb2.jpg",
+      "vocab": [
+        {
+          "termEn": "the low hum of conversation",
+          "translationEs": "el murmullo de conversación"
+        },
+        {
+          "termEn": "smiled knowingly",
+          "translationEs": "sonrió con complicidad"
+        },
+        {
+          "termEn": "Rough week, huh?",
+          "translationEs": "semana dura"
+        },
+        {
+          "termEn": "That's what I'm here for",
+          "translationEs": "para eso estoy"
+        }
+      ],
+      "challengeSentence": {
+        "en": "He smiled knowingly. Rough week, huh?",
+        "es": "Sonrió con complicidad. Semana dura, ¿eh?"
+      },
+      "lines": [
+        {
+          "speaker": null,
+          "en": "The bar was dimly lit, filled with the low hum of conversation and the clinking of glasses.",
+          "es": "El bar estaba en penumbra, lleno del murmullo de conversación y el tintineo de los vasos.",
+          "vocabTerms": [
+            "the low hum of conversation"
+          ]
+        },
+        {
+          "speaker": null,
+          "en": "Sarah slid onto a stool near the counter, still wearing her work clothes after a long Friday shift.",
+          "es": "Sarah se sentó en un taburete junto a la barra, todavía con la ropa de trabajo tras un largo turno de viernes.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "She caught the bartender's eye and gave a small wave.",
+          "es": "Captó la mirada del camarero y lo saludó con la mano.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Bartender",
+          "en": "What can I get you tonight?",
+          "es": "¿Qué le sirvo esta noche?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Sarah",
+          "en": "Honestly, I've had a really long week. What would you recommend?",
+          "es": "La verdad, he tenido una semana muy larga. ¿Qué me recomienda?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "The bartender smiled knowingly.",
+          "es": "El camarero sonrió con complicidad.",
+          "vocabTerms": [
+            "smiled knowingly"
+          ]
+        },
+        {
+          "speaker": "Bartender",
+          "en": "If you want something relaxing, I'd suggest an Old Fashioned. It's smooth, not too sweet.",
+          "es": "Si quiere algo relajante, le recomiendo un Old Fashioned. Es suave, no muy dulce.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Sarah",
+          "en": "That sounds perfect.",
+          "es": "Suena perfecto.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Bartender",
+          "en": "Any preference on the whiskey? We have a few options — bourbon or rye.",
+          "es": "¿Alguna preferencia de whisky? Tenemos un par de opciones: bourbon o rye.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Sarah",
+          "en": "Bourbon, please.",
+          "es": "Bourbon, por favor.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Bartender",
+          "en": "There you go — one Old Fashioned.",
+          "es": "Aquí tiene, un Old Fashioned.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Sarah",
+          "en": "Wow, that's exactly what I needed.",
+          "es": "Vaya, esto es justo lo que necesitaba.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Bartender",
+          "en": "Rough week, huh?",
+          "es": "Semana dura, ¿eh?",
+          "vocabTerms": [
+            "Rough week, huh?"
+          ]
+        },
+        {
+          "speaker": "Sarah",
+          "en": "You have no idea. But this is helping already.",
+          "es": "Ni te lo imaginas. Pero esto ya está ayudando.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Bartender",
+          "en": "That's what I'm here for.",
+          "es": "Para eso estoy.",
+          "vocabTerms": [
+            "That's what I'm here for"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Un camarero en un restaurante con mucho movimiento",
+      "videoAsset": "assets/hosteleria_stories/story3.mp4",
+      "videoAssetSub": "assets/hosteleria_stories/story3sub.mp4",
+      "thumbnailAsset": "assets/hosteleria_stories/thumb3.jpg",
+      "vocab": [
+        {
+          "termEn": "under his care",
+          "translationEs": "a su cargo"
+        },
+        {
+          "termEn": "practiced ease",
+          "translationEs": "soltura por la práctica"
+        },
+        {
+          "termEn": "weaving smoothly",
+          "translationEs": "esquivando con soltura"
+        },
+        {
+          "termEn": "a hand had just gone up",
+          "translationEs": "alguien había levantado la mano"
+        }
+      ],
+      "challengeSentence": {
+        "en": "He kept every table under his care.",
+        "es": "Mantenía todas las mesas a su cargo."
+      },
+      "lines": [
+        {
+          "speaker": null,
+          "en": "It was a Friday night, and the restaurant was completely full.",
+          "es": "Era viernes por la noche, y el restaurante estaba completamente lleno.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Tom, one of the senior waiters, had six tables under his care, and he moved between them with practiced ease, balancing plates and remembering orders without ever writing them down.",
+          "es": "Tom, uno de los camareros veteranos, tenía seis mesas a su cargo, y se movía entre ellas con soltura por la práctica, equilibrando platos y recordando los pedidos sin anotarlos nunca.",
+          "vocabTerms": [
+            "under his care",
+            "practiced ease"
+          ]
+        },
+        {
+          "speaker": null,
+          "en": "He arrived at table 14, where a young couple was celebrating a birthday.",
+          "es": "Llegó a la mesa 14, donde una pareja joven celebraba un cumpleaños.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Tom",
+          "en": "Happy birthday! Are you two ready to order your mains, or do you need another minute?",
+          "es": "¡Feliz cumpleaños! ¿Ya están listos para pedir el plato principal, o necesitan otro minuto?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Man",
+          "en": "We're ready. She'll have the lobster ravioli, and I'll have the duck breast.",
+          "es": "Estamos listos. Ella va a tomar el ravioli de langosta, y yo la pechuga de pato.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Tom",
+          "en": "Excellent choices. And how would you like the duck cooked?",
+          "es": "Excelente elección. ¿Y cómo quiere el pato, el punto de cocción?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Man",
+          "en": "Medium, please.",
+          "es": "Al punto, por favor.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Tom",
+          "en": "Perfect. I'll put that order in right away.",
+          "es": "Perfecto. Pongo el pedido ahora mismo.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Tom smiled and turned toward the kitchen, weaving smoothly between tables, careful not to bump into another waiter carrying a tray of drinks.",
+          "es": "Tom sonrió y se dirigió a la cocina, esquivando con soltura entre las mesas, con cuidado de no chocar con otro camarero que llevaba una bandeja de bebidas.",
+          "vocabTerms": [
+            "weaving smoothly"
+          ]
+        },
+        {
+          "speaker": null,
+          "en": "Fifteen minutes later, he returned with both plates balanced expertly on one arm.",
+          "es": "Quince minutos después, volvió con ambos platos equilibrados con destreza sobre un brazo.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Tom",
+          "en": "Lobster ravioli for you, and duck breast, medium, for you.",
+          "es": "Ravioli de langosta para usted, y pechuga de pato al punto para usted.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Woman",
+          "en": "This looks amazing.",
+          "es": "Esto tiene una pinta increíble.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Tom",
+          "en": "Enjoy, and let me know if you need anything at all.",
+          "es": "Que lo disfruten, y avísenme si necesitan cualquier cosa.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "He glanced quickly toward table 9, where a hand had just gone up.",
+          "es": "Miró rápidamente hacia la mesa 9, donde alguien acababa de levantar la mano.",
+          "vocabTerms": [
+            "a hand had just gone up"
+          ]
+        },
+        {
+          "speaker": null,
+          "en": "He was already moving before he even finished the sentence.",
+          "es": "Ya se estaba moviendo antes de terminar la frase.",
+          "vocabTerms": []
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Un cocinero durante el turno de cena",
+      "videoAsset": "assets/hosteleria_stories/story4.mp4",
+      "videoAssetSub": "assets/hosteleria_stories/story4sub.mp4",
+      "thumbnailAsset": "assets/hosteleria_stories/thumb4.jpg",
+      "vocab": [
+        {
+          "termEn": "controlled chaos",
+          "translationEs": "caos controlado"
+        },
+        {
+          "termEn": "searing with a satisfying hiss",
+          "translationEs": "chisporroteando de forma satisfactoria"
+        },
+        {
+          "termEn": "A runner",
+          "translationEs": "persona que lleva los platos de cocina a sala"
+        },
+        {
+          "termEn": "three steps ahead",
+          "translationEs": "tres pasos por delante"
+        }
+      ],
+      "challengeSentence": {
+        "en": "The kitchen was controlled chaos.",
+        "es": "La cocina era un caos controlado."
+      },
+      "lines": [
+        {
+          "speaker": null,
+          "en": "The kitchen was a symphony of controlled chaos — knives tapping against cutting boards, flames rising from the stove, and the constant beeping of timers.",
+          "es": "La cocina era una sinfonía de caos controlado: cuchillos golpeando las tablas de cortar, llamas subiendo de los fogones, y el pitido constante de los temporizadores.",
+          "vocabTerms": [
+            "controlled chaos"
+          ]
+        },
+        {
+          "speaker": null,
+          "en": "Chef Marco stood at the center of it all, calling out instructions with the calm authority of someone who had done this a thousand times before.",
+          "es": "El chef Marco estaba en el centro de todo, dando instrucciones con la autoridad tranquila de quien lo ha hecho mil veces.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Marco",
+          "en": "Order in, table 8! Two risottos, one steak, medium-well.",
+          "es": "¡Pedido para la mesa 8! Dos risottos, un filete, tirando a hecho.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Cocina",
+          "en": "Yes, chef!",
+          "es": "¡Sí, chef!",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "He turned to his line cook, Elena, who was plating a dish with careful precision.",
+          "es": "Se giró hacia su cocinera de línea, Elena, que emplataba un plato con precisión cuidadosa.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Marco",
+          "en": "How's that risotto coming along?",
+          "es": "¿Cómo va ese risotto?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Elena",
+          "en": "Two minutes out, chef.",
+          "es": "Dos minutos, chef.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Marco nodded, satisfied, then glanced toward the grill, where the steak was searing with a satisfying hiss.",
+          "es": "Marco asintió, satisfecho, y miró hacia la parrilla, donde el filete chisporroteaba de forma satisfactoria.",
+          "vocabTerms": [
+            "searing with a satisfying hiss"
+          ]
+        },
+        {
+          "speaker": "Marco",
+          "en": "Flip it now. We want a nice crust.",
+          "es": "Dale la vuelta ya. Queremos una buena costra.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "The grill cook obeyed instantly, and the smell of caramelized meat filled the air.",
+          "es": "El parrillero obedeció al instante, y el olor a carne caramelizada llenó el ambiente.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "A runner appeared at the pass, ready to take the next finished plates.",
+          "es": "Un runner apareció junto al pase, listo para llevarse los siguientes platos terminados.",
+          "vocabTerms": [
+            "A runner"
+          ]
+        },
+        {
+          "speaker": "Marco",
+          "en": "Table 8 risottos are up.",
+          "es": "¡Los risottos de la mesa 8 están listos!",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "He inspected each plate quickly — a drizzle of oil here, a sprig of basil there — before nodding his approval.",
+          "es": "Inspeccionó cada plato rápidamente — un chorrito de aceite aquí, una ramita de albahaca allá — antes de dar su aprobación.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Marco",
+          "en": "Beautiful. Send it.",
+          "es": "Precioso. Que salga.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "As the plates disappeared through the swinging door, Marco was already looking at the next ticket, his mind three steps ahead, as always.",
+          "es": "Mientras los platos desaparecían tras la puerta batiente, Marco ya estaba mirando el siguiente pedido, con la mente tres pasos por delante, como siempre.",
+          "vocabTerms": [
+            "three steps ahead"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Un mesero atendiendo a un cliente solitario",
+      "videoAsset": "assets/hosteleria_stories/story5.mp4",
+      "videoAssetSub": "assets/hosteleria_stories/story5sub.mp4",
+      "thumbnailAsset": "assets/hosteleria_stories/thumb5.jpg",
+      "vocab": [
+        {
+          "termEn": "Just one tonight?",
+          "translationEs": "¿solo uno esta noche?"
+        },
+        {
+          "termEn": "Thank you for noticing",
+          "translationEs": "gracias por darte cuenta"
+        },
+        {
+          "termEn": "rich, but not overwhelming",
+          "translationEs": "con sabor intenso pero no empalagoso"
+        }
+      ],
+      "challengeSentence": {
+        "en": "Just one tonight? It's rich, but not overwhelming.",
+        "es": "¿Solo uno esta noche? Tiene sabor intenso pero no empalagoso."
+      },
+      "lines": [
+        {
+          "speaker": null,
+          "en": "Daniel walked into the small noodle restaurant alone, still wearing his headphones from the subway ride.",
+          "es": "Daniel entró solo en el pequeño restaurante de fideos, todavía con los auriculares puestos del viaje en metro.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "It had been a stressful day at work, and all he wanted was a warm bowl of soup and a quiet corner to sit in.",
+          "es": "Había sido un día estresante en el trabajo, y lo único que quería era un tazón de sopa caliente y un rincón tranquilo donde sentarse.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "A waiter, whose name tag read \"Kevin,\" approached with a friendly nod.",
+          "es": "Un camarero, cuya placa decía \"Kevin\", se acercó con un gesto amistoso.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Kevin",
+          "en": "Just one tonight?",
+          "es": "¿Solo uno esta noche?",
+          "vocabTerms": [
+            "Just one tonight?"
+          ]
+        },
+        {
+          "speaker": "Daniel",
+          "en": "Yes, just me.",
+          "es": "Sí, solo yo.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Kevin",
+          "en": "No problem, right this way. Is this okay, or would you prefer somewhere else?",
+          "es": "Sin problema, por aquí. ¿Le parece bien esta mesa, o prefiere otro sitio?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Daniel",
+          "en": "This is perfect, actually. Thank you for noticing.",
+          "es": "La verdad, esta mesa es perfecta. Gracias por darte cuenta.",
+          "vocabTerms": [
+            "Thank you for noticing"
+          ]
+        },
+        {
+          "speaker": "Kevin",
+          "en": "Take your time. Can I start you off with something to drink?",
+          "es": "Tómese su tiempo. ¿Le traigo algo de beber para empezar?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Daniel",
+          "en": "Just water for now, thanks.",
+          "es": "Solo agua por ahora, gracias.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Kevin",
+          "en": "Have you decided, or do you need a recommendation?",
+          "es": "¿Ya se ha decidido, o necesita una recomendación?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Daniel",
+          "en": "Actually, a recommendation would be great.",
+          "es": "La verdad, una recomendación me vendría genial.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Kevin",
+          "en": "The spicy miso ramen is my personal favorite. It's rich, but not overwhelming, and the noodles are made fresh here.",
+          "es": "El ramen picante de miso es mi favorito personal. Tiene sabor intenso pero no empalagoso, y los fideos se hacen frescos aquí.",
+          "vocabTerms": [
+            "rich, but not overwhelming"
+          ]
+        },
+        {
+          "speaker": "Daniel",
+          "en": "That sounds exactly like what I need tonight.",
+          "es": "Suena justo a lo que necesito esta noche.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Kevin",
+          "en": "Coming right up.",
+          "es": "Enseguida se lo traigo.",
+          "vocabTerms": []
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Un repartidor entregando un pedido",
+      "videoAsset": "assets/hosteleria_stories/story6.mp4",
+      "videoAssetSub": "assets/hosteleria_stories/story6sub.mp4",
+      "thumbnailAsset": "assets/hosteleria_stories/thumb6.jpg",
+      "vocab": [
+        {
+          "termEn": "He rang the buzzer",
+          "translationEs": "tocó el timbre"
+        },
+        {
+          "termEn": "a voice crackled through the speaker",
+          "translationEs": "una voz sonó entrecortada por el altavoz"
+        },
+        {
+          "termEn": "I'm starving",
+          "translationEs": "me muero de hambre"
+        },
+        {
+          "termEn": "stay dry",
+          "translationEs": "no te mojes"
+        }
+      ],
+      "challengeSentence": {
+        "en": "I'm starving! Please stay dry.",
+        "es": "¡Me muero de hambre! Por favor, no te mojes."
+      },
+      "lines": [
+        {
+          "speaker": null,
+          "en": "Rain tapped gently against Alex's helmet as he pulled up outside an apartment building, balancing a large delivery bag on his back.",
+          "es": "La lluvia golpeaba suavemente el casco de Alex mientras se detenía frente a un edificio de apartamentos, con una gran bolsa de reparto a la espalda.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "He checked his phone one more time to confirm the address before locking his bike and heading toward the entrance.",
+          "es": "Revisó el móvil una vez más para confirmar la dirección antes de asegurar la bicicleta y dirigirse a la entrada.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "He rang the buzzer for apartment 4B, and a moment later, a voice crackled through the speaker.",
+          "es": "Tocó el timbre del apartamento 4B, y un momento después, una voz sonó entrecortada por el altavoz.",
+          "vocabTerms": [
+            "He rang the buzzer",
+            "a voice crackled through the speaker"
+          ]
+        },
+        {
+          "speaker": "Voz",
+          "en": "Hello?",
+          "es": "¿Hola?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Alex",
+          "en": "Hi, delivery for apartment 4B.",
+          "es": "Hola, reparto para el apartamento 4B.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Voz",
+          "en": "Coming down!",
+          "es": "¡Ya bajo!",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "A minute later, a woman in pajamas and a cozy sweater opened the door, looking relieved to see him.",
+          "es": "Un minuto después, una mujer en pijama y con un jersey acogedor abrió la puerta, visiblemente aliviada al verlo.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Mujer",
+          "en": "Oh, thank goodness, I'm starving.",
+          "es": "Ay, menos mal, me muero de hambre.",
+          "vocabTerms": [
+            "I'm starving"
+          ]
+        },
+        {
+          "speaker": "Alex",
+          "en": "One large pepperoni pizza and a side of garlic bread.",
+          "es": "Una pizza grande de pepperoni y una ración de pan de ajo.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Mujer",
+          "en": "That's exactly right. How much do I owe you?",
+          "es": "Exacto. ¿Cuánto le debo?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Alex",
+          "en": "It's already paid online, but if you'd like to add a tip, there's an option in the app.",
+          "es": "Ya está pagado en línea, pero si quiere dejar propina, hay una opción en la aplicación.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Mujer",
+          "en": "Oh, I already did that. Thank you so much for coming out in this weather.",
+          "es": "Ah, ya lo hice. Muchísimas gracias por venir con este tiempo.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Alex",
+          "en": "No problem at all, that's the job. Enjoy your pizza!",
+          "es": "No hay ningún problema, es el trabajo. ¡Que disfrute la pizza!",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Mujer",
+          "en": "You too — stay dry out there!",
+          "es": "Usted también, ¡no se moje ahí fuera!",
+          "vocabTerms": [
+            "stay dry"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Un crítico gastronómico cenando de incógnito",
+      "videoAsset": "assets/hosteleria_stories/story7.mp4",
+      "videoAssetSub": "assets/hosteleria_stories/story7sub.mp4",
+      "thumbnailAsset": "assets/hosteleria_stories/thumb7.jpg",
+      "vocab": [
+        {
+          "termEn": "dined anonymously",
+          "translationEs": "cenó de forma anónima"
+        },
+        {
+          "termEn": "a bit of a commitment",
+          "translationEs": "requiere cierto compromiso"
+        },
+        {
+          "termEn": "attentive without being intrusive",
+          "translationEs": "atento sin ser invasivo"
+        }
+      ],
+      "challengeSentence": {
+        "en": "She dined anonymously that night.",
+        "es": "Esa noche cenó de forma anónima."
+      },
+      "lines": [
+        {
+          "speaker": null,
+          "en": "Elizabeth sat quietly at a corner table, notebook hidden discreetly in her bag.",
+          "es": "Elizabeth se sentó en silencio en una mesa de la esquina, con la libreta escondida discretamente en el bolso.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "As a food critic, she always dined anonymously, careful never to reveal her identity to the staff.",
+          "es": "Como crítica gastronómica, siempre cenaba de forma anónima, cuidando de no revelar nunca su identidad al personal.",
+          "vocabTerms": [
+            "dined anonymously"
+          ]
+        },
+        {
+          "speaker": null,
+          "en": "Tonight, she had come to review a new restaurant that everyone in the city was talking about.",
+          "es": "Esa noche había ido a reseñar un restaurante nuevo del que todos en la ciudad hablaban.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "The waiter approached, unaware of who she really was.",
+          "es": "El camarero se acercó, sin saber quién era ella en realidad.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Camarero",
+          "en": "Good evening, welcome. Can I start you off with something to drink?",
+          "es": "Buenas noches, bienvenida. ¿Le traigo algo de beber para empezar?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Elizabeth",
+          "en": "Just sparkling water for now, thank you.",
+          "es": "Solo agua con gas por ahora, gracias.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "She glanced subtly around the room, taking mental notes of the lighting, the noise level, and the way the staff moved between tables.",
+          "es": "Echó un vistazo discreto por la sala, tomando notas mentales de la iluminación, el nivel de ruido y cómo se movía el personal entre las mesas.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Camarero",
+          "en": "Of course. Have you had a chance to look at the menu, or would you like a few recommendations?",
+          "es": "¿Ha podido mirar la carta, o prefiere algunas recomendaciones?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Elizabeth",
+          "en": "I'd love a recommendation, actually.",
+          "es": "La verdad, me encantaría una recomendación.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Camarero",
+          "en": "Our chef's tasting menu is incredible tonight — five courses, each one a little surprise. It's a bit of a commitment, but well worth it.",
+          "es": "El menú degustación del chef está increíble esta noche: cinco platos, cada uno una pequeña sorpresa. Requiere cierto compromiso, pero vale mucho la pena.",
+          "vocabTerms": [
+            "a bit of a commitment"
+          ]
+        },
+        {
+          "speaker": "Elizabeth",
+          "en": "I'll trust you on that.",
+          "es": "Confiaré en usted.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Over the next two hours, she tasted every course carefully, jotting brief notes under the table between bites.",
+          "es": "Durante las siguientes dos horas, probó cada plato con cuidado, tomando breves notas bajo la mesa entre bocado y bocado.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "The food was thoughtful, the service attentive without being intrusive — exactly the kind of detail she looked for.",
+          "es": "La comida era cuidada, el servicio atento sin ser invasivo: exactamente el tipo de detalle que ella buscaba.",
+          "vocabTerms": [
+            "attentive without being intrusive"
+          ]
+        },
+        {
+          "speaker": null,
+          "en": "As she left, she caught the manager's eye and gave a small, knowing smile.",
+          "es": "Al salir, cruzó la mirada con el gerente y le dedicó una pequeña sonrisa cómplice.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "He would find out tomorrow, when the review came out, just how good tonight really was.",
+          "es": "Él lo descubriría al día siguiente, cuando se publicara la reseña, lo verdaderamente buena que había sido esa noche.",
+          "vocabTerms": []
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Un cliente celebrando algo especial con su familia",
+      "videoAsset": "assets/hosteleria_stories/story8.mp4",
+      "videoAssetSub": "assets/hosteleria_stories/story8sub.mp4",
+      "thumbnailAsset": "assets/hosteleria_stories/thumb8.jpg",
+      "vocab": [
+        {
+          "termEn": "buzzed with warm energy",
+          "translationEs": "bullía de buen ambiente"
+        },
+        {
+          "termEn": "clearly moved",
+          "translationEs": "visiblemente emocionada"
+        },
+        {
+          "termEn": "checked in often",
+          "translationEs": "pasaba a preguntar a menudo"
+        },
+        {
+          "termEn": "wiped a tear from his eye",
+          "translationEs": "se secó una lágrima"
+        }
+      ],
+      "challengeSentence": {
+        "en": "The room buzzed with warm energy.",
+        "es": "La sala bullía de buen ambiente."
+      },
+      "lines": [
+        {
+          "speaker": null,
+          "en": "The restaurant buzzed with warm energy as the Turner family arrived, all dressed a little nicer than usual.",
+          "es": "El restaurante bullía de buen ambiente cuando llegó la familia Turner, todos vestidos un poco más elegantes de lo habitual.",
+          "vocabTerms": [
+            "buzzed with warm energy"
+          ]
+        },
+        {
+          "speaker": null,
+          "en": "It was Grandpa Turner's 80th birthday, and three generations had come together to celebrate.",
+          "es": "Era el 80 cumpleaños del abuelo Turner, y tres generaciones se habían reunido para celebrarlo.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "The hostess led them to a long table already decorated with a small \"Happy Birthday\" sign, arranged in advance by Grandpa Turner's daughter.",
+          "es": "La anfitriona los llevó a una mesa larga ya decorada con un pequeño cartel de \"Feliz Cumpleaños\", preparado de antemano por la hija del abuelo Turner.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Hija",
+          "en": "Everything looks wonderful, thank you so much for setting this up.",
+          "es": "Todo se ve maravilloso, muchísimas gracias por organizar esto.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "She was clearly moved.",
+          "es": "Estaba visiblemente emocionada.",
+          "vocabTerms": [
+            "clearly moved"
+          ]
+        },
+        {
+          "speaker": "Hostess",
+          "en": "It was our pleasure. Your waiter will be right with you.",
+          "es": "Fue un placer. Su camarero vendrá enseguida.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Moments later, a waiter named Chris arrived, immediately noticing the birthday decorations.",
+          "es": "Momentos después, llegó un camarero llamado Chris, que enseguida notó la decoración de cumpleaños.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Chris",
+          "en": "Well, this looks like a special occasion! Happy birthday to whoever's celebrating.",
+          "es": "¡Vaya, esto parece una ocasión especial! Feliz cumpleaños a quien lo esté celebrando.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Abuelo Turner",
+          "en": "That would be me.",
+          "es": "Ese sería yo.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Chris",
+          "en": "Happy 80th! We'll definitely take good care of you tonight. Can I start everyone off with some drinks?",
+          "es": "¡Feliz 80 cumpleaños! Esta noche los vamos a cuidar muy bien. ¿Les traigo algo de beber para empezar?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Orders went around the table — sparkling cider for the kids, wine for the adults, and a special non-alcoholic cocktail for the birthday man, made just the way he liked it.",
+          "es": "Los pedidos fueron dando la vuelta a la mesa: sidra sin alcohol para los niños, vino para los adultos, y un cóctel especial sin alcohol para el cumpleañero, preparado justo como a él le gustaba.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Throughout the evening, Chris checked in often but never intrusively, and near the end of the meal, the kitchen staff surprised the table with a small cake, candles flickering as the whole restaurant joined in singing.",
+          "es": "A lo largo de la noche, Chris pasaba a preguntar a menudo pero sin ser molesto, y cerca del final de la comida, el personal de cocina sorprendió a la mesa con una pequeña tarta, con las velas titilando mientras todo el restaurante se unía a cantar.",
+          "vocabTerms": [
+            "checked in often"
+          ]
+        },
+        {
+          "speaker": null,
+          "en": "Grandpa Turner wiped a tear from his eye, looking around at his family.",
+          "es": "El abuelo Turner se secó una lágrima, mirando a su familia alrededor.",
+          "vocabTerms": [
+            "wiped a tear from his eye"
+          ]
+        },
+        {
+          "speaker": "Abuelo Turner",
+          "en": "This is exactly how I wanted to spend today.",
+          "es": "Así es exactamente como quería pasar hoy.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Nobody at the table could disagree.",
+          "es": "Nadie en la mesa podía llevarle la contraria.",
+          "vocabTerms": []
+        }
+      ]
+    }
+  ],
+  "comercio": [
+    {
+      "number": 1,
+      "title": "Comprando un vestido en una tienda de ropa",
+      "videoAsset": null,
+      "videoAssetSub": null,
+      "thumbnailAsset": "assets/comercio_stories/cover1.png",
+      "vocab": [
+        {
+          "termEn": "boutique",
+          "translationEs": "tienda de ropa pequeña"
+        },
+        {
+          "termEn": "draped over her arm",
+          "translationEs": "colgados del brazo"
+        },
+        {
+          "termEn": "ringing up the sale",
+          "translationEs": "cobrando la compra"
+        }
+      ],
+      "challengeSentence": {
+        "en": "The assistant kept ringing up sales at the boutique.",
+        "es": "La dependienta seguía cobrando ventas en la boutique."
+      },
+      "lines": [
+        {
+          "speaker": null,
+          "en": "Claire wandered into the boutique on her lunch break, eyeing the mannequins in the window.",
+          "es": "Claire entró en la boutique durante su hora de comer, mirando los maniquís del escaparate.",
+          "vocabTerms": [
+            "boutique"
+          ]
+        },
+        {
+          "speaker": null,
+          "en": "She had a wedding to attend next month and still hadn't found anything to wear.",
+          "es": "Tenía una boda a la que asistir el mes siguiente y todavía no había encontrado nada que ponerse.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "A shop assistant approached with a friendly smile.",
+          "es": "Una dependienta se acercó con una sonrisa amable.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Dependienta",
+          "en": "Hello. Can I help you?",
+          "es": "Hola. ¿Puedo ayudarla?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Claire",
+          "en": "Yes, I'm looking for a dress.",
+          "es": "Sí, estoy buscando un vestido.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Dependienta",
+          "en": "Of course. What size do you need?",
+          "es": "Claro. ¿Qué talla necesita?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Claire",
+          "en": "Medium, please.",
+          "es": "Mediana, por favor.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Dependienta",
+          "en": "And what colour are you looking for?",
+          "es": "¿Y de qué color la busca?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Claire",
+          "en": "Black, if you have something elegant.",
+          "es": "Negro, si tienen algo elegante.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "The assistant returned a moment later with two options draped over her arm.",
+          "es": "La dependienta volvió un momento después con dos opciones colgadas del brazo.",
+          "vocabTerms": [
+            "draped over her arm"
+          ]
+        },
+        {
+          "speaker": "Dependienta",
+          "en": "Would you like to try one on?",
+          "es": "¿Quiere probarse uno?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Claire",
+          "en": "Yes, please.",
+          "es": "Sí, por favor.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Dependienta",
+          "en": "The fitting rooms are just over there.",
+          "es": "Los probadores están justo ahí.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "A few minutes later, Claire stepped out, smoothing the fabric over her hips.",
+          "es": "Unos minutos después, Claire salió, alisándose la tela sobre las caderas.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Dependienta",
+          "en": "Does it fit?",
+          "es": "¿Le queda bien?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Claire",
+          "en": "Yes, it fits perfectly. Actually, do you have this in a different size, just to compare?",
+          "es": "Sí, me queda perfecto. En realidad, ¿tienen esto en otra talla, solo para comparar?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Dependienta",
+          "en": "Yes, I'll bring you a smaller one.",
+          "es": "Sí, le traigo una más pequeña.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "After trying both, Claire was certain.",
+          "es": "Después de probarse los dos, Claire estaba segura.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Claire",
+          "en": "I'll take it.",
+          "es": "Me lo llevo.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Dependienta",
+          "en": "Great choice.",
+          "es": "Buena elección.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Claire",
+          "en": "Can I pay by card?",
+          "es": "¿Puedo pagar con tarjeta?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Dependienta",
+          "en": "Yes, of course.",
+          "es": "Sí, por supuesto.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "The assistant rang up the sale.",
+          "es": "La dependienta cobró la compra.",
+          "vocabTerms": [
+            "ringing up the sale"
+          ]
+        },
+        {
+          "speaker": "Dependienta",
+          "en": "Would you like a bag?",
+          "es": "¿Quiere una bolsa?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Claire",
+          "en": "Yes, please.",
+          "es": "Sí, por favor.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "A moment later she walked out with her new dress, already imagining the wedding.",
+          "es": "Un momento después salió con su vestido nuevo, ya imaginándose la boda.",
+          "vocabTerms": []
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Una compra rápida en el supermercado",
+      "videoAsset": null,
+      "videoAssetSub": null,
+      "thumbnailAsset": "assets/comercio_stories/cover2.png",
+      "vocab": [
+        {
+          "termEn": "aisle",
+          "translationEs": "pasillo"
+        },
+        {
+          "termEn": "dairy section",
+          "translationEs": "sección de lácteos"
+        },
+        {
+          "termEn": "stocking shelves",
+          "translationEs": "reponiendo estantes"
+        },
+        {
+          "termEn": "checking items off his list",
+          "translationEs": "tachando cosas de su lista"
+        }
+      ],
+      "challengeSentence": {
+        "en": "The milk is in the dairy section, past aisle three.",
+        "es": "La leche está en la sección de lácteos, tras el pasillo tres."
+      },
+      "lines": [
+        {
+          "speaker": null,
+          "en": "It was Sunday evening, and David had promised to cook dinner for his in-laws.",
+          "es": "Era domingo por la tarde, y David había prometido cocinar la cena para sus suegros.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "The only problem was that he had no idea where anything was in this particular supermarket.",
+          "es": "El único problema era que no tenía ni idea de dónde estaba nada en ese supermercado en concreto.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "He grabbed a basket and stopped a passing employee.",
+          "es": "Cogió una cesta y paró a un empleado que pasaba.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "David",
+          "en": "Excuse me, where is the bread?",
+          "es": "Disculpe, ¿dónde está el pan?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Empleada",
+          "en": "It's in aisle three.",
+          "es": "Está en el pasillo tres.",
+          "vocabTerms": [
+            "aisle"
+          ]
+        },
+        {
+          "speaker": "David",
+          "en": "Thank you. And where can I find the milk?",
+          "es": "Gracias. ¿Y dónde puedo encontrar la leche?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Empleada",
+          "en": "In the dairy section, just past the bread.",
+          "es": "En la sección de lácteos, justo después del pan.",
+          "vocabTerms": [
+            "dairy section"
+          ]
+        },
+        {
+          "speaker": null,
+          "en": "David nodded gratefully and moved on. A little later, he stopped another employee stocking shelves.",
+          "es": "David asintió agradecido y siguió adelante. Un poco después, paró a otro empleado que estaba reponiendo estantes.",
+          "vocabTerms": [
+            "stocking shelves"
+          ]
+        },
+        {
+          "speaker": "David",
+          "en": "Do you sell fresh fruit?",
+          "es": "¿Venden fruta fresca?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Empleado",
+          "en": "Yes, over there.",
+          "es": "Sí, por allí.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "David picked up some apples, then hesitated.",
+          "es": "David cogió unas manzanas y dudó.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "David",
+          "en": "Are these apples fresh?",
+          "es": "¿Estas manzanas son frescas?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Empleado",
+          "en": "Yes, they arrived this morning.",
+          "es": "Sí, llegaron esta mañana.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Relieved, David continued through the store, checking items off his list one by one.",
+          "es": "Aliviado, David siguió recorriendo la tienda, tachando cosas de su lista una a una.",
+          "vocabTerms": [
+            "checking items off his list"
+          ]
+        },
+        {
+          "speaker": null,
+          "en": "Near the meat counter, he paused.",
+          "es": "Cerca del mostrador de carne, se detuvo.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "David",
+          "en": "Do you have any chicken?",
+          "es": "¿Tienen pollo?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Empleada",
+          "en": "Yes, in the meat section, right behind you.",
+          "es": "Sí, en la sección de carne, justo detrás de usted.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Finally, basket full, David made his way to the checkout.",
+          "es": "Finalmente, con la cesta llena, David se dirigió a la caja.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "David",
+          "en": "Can I pay at the self-checkout?",
+          "es": "¿Puedo pagar en la caja de autopago?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Cajera",
+          "en": "Yes, you can.",
+          "es": "Sí, puede.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Máquina",
+          "en": "Do you need a loyalty card?",
+          "es": "¿Necesita una tarjeta de fidelización?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "David",
+          "en": "No, I don't have one.",
+          "es": "No, no tengo.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "He tapped the skip button before paying in cash and heading home, just in time to start cooking.",
+          "es": "Pulsó el botón de omitir antes de pagar en efectivo y volver a casa, justo a tiempo para empezar a cocinar.",
+          "vocabTerms": []
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Comprando zapatillas nuevas",
+      "videoAsset": null,
+      "videoAssetSub": null,
+      "thumbnailAsset": "assets/comercio_stories/cover3.png",
+      "vocab": [
+        {
+          "termEn": "putting off",
+          "translationEs": "posponiendo"
+        },
+        {
+          "termEn": "fell apart",
+          "translationEs": "se rompió/deshizo"
+        },
+        {
+          "termEn": "loosen the laces",
+          "translationEs": "aflojar los cordones"
+        },
+        {
+          "termEn": "testing the fit",
+          "translationEs": "probando cómo le quedaban"
+        }
+      ],
+      "challengeSentence": {
+        "en": "He had been putting off buying new laces.",
+        "es": "Había estado posponiendo comprar cordones nuevos."
+      },
+      "lines": [
+        {
+          "speaker": null,
+          "en": "Lucas had been putting off buying new running shoes for months, but after his old pair fell apart mid-run, he finally walked into the sports store determined to fix the problem.",
+          "es": "Lucas llevaba meses posponiendo la compra de zapatillas de correr nuevas, pero después de que su par viejo se deshiciera a mitad de una carrera, finalmente entró en la tienda de deportes decidido a arreglar el problema.",
+          "vocabTerms": [
+            "putting off",
+            "fell apart"
+          ]
+        },
+        {
+          "speaker": "Vendedor",
+          "en": "Can I help you?",
+          "es": "¿Puedo ayudarlo?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Lucas",
+          "en": "Yes, I'm looking for a pair of trainers.",
+          "es": "Sí, estoy buscando unas zapatillas deportivas.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Vendedor",
+          "en": "What size do you wear?",
+          "es": "¿Qué talla usa?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Lucas",
+          "en": "Size 38, please.",
+          "es": "Talla 38, por favor.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Vendedor",
+          "en": "Let me check for you.",
+          "es": "Déjeme comprobarlo.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "He disappeared into the back for a moment before returning with a box.",
+          "es": "Desapareció un momento en la trastienda y volvió con una caja.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Vendedor",
+          "en": "Here you go. Do you have these shoes in size 38? Yes, we do.",
+          "es": "Aquí tiene. ¿Tienen estas zapatillas en talla 38? Sí, sí tenemos.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Lucas laughed a little at himself.",
+          "es": "Lucas se rio un poco de sí mismo.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Lucas",
+          "en": "Can I try them on?",
+          "es": "¿Puedo probármelas?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Vendedor",
+          "en": "Of course.",
+          "es": "Por supuesto.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "He knelt down to help loosen the laces.",
+          "es": "Se arrodilló para ayudar a aflojar los cordones.",
+          "vocabTerms": [
+            "loosen the laces"
+          ]
+        },
+        {
+          "speaker": null,
+          "en": "Lucas walked a few steps across the store, testing the fit.",
+          "es": "Lucas caminó unos pasos por la tienda, probando cómo le quedaban.",
+          "vocabTerms": [
+            "testing the fit"
+          ]
+        },
+        {
+          "speaker": "Vendedor",
+          "en": "Do they fit?",
+          "es": "¿Le quedan bien?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Lucas",
+          "en": "Yes, they're very comfortable.",
+          "es": "Sí, son muy cómodas.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Lucas",
+          "en": "Do you have them in another colour, though? I'm not sure about this blue.",
+          "es": "¿Las tienen en otro color, aun así? No estoy seguro de este azul.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Vendedor",
+          "en": "Yes, we have them in black and white as well.",
+          "es": "Sí, también las tenemos en negro y en blanco.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Lucas examined the black pair closely.",
+          "es": "Lucas examinó de cerca el par negro.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Lucas",
+          "en": "Are these made of leather?",
+          "es": "¿Están hechas de piel?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Vendedor",
+          "en": "Yes, they are.",
+          "es": "Sí, lo están.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Lucas",
+          "en": "I'll take them.",
+          "es": "Me las llevo.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Vendedor",
+          "en": "Excellent choice.",
+          "es": "Excelente elección.",
+          "vocabTerms": []
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Una visita rápida a la farmacia",
+      "videoAsset": null,
+      "videoAssetSub": null,
+      "thumbnailAsset": "assets/comercio_stories/cover4.png",
+      "vocab": [
+        {
+          "termEn": "pounding",
+          "translationEs": "palpitando, dando punzadas"
+        },
+        {
+          "termEn": "rubbing her temples",
+          "translationEs": "frotándose las sienes"
+        },
+        {
+          "termEn": "coming down with something",
+          "translationEs": "empezando a ponerse enferma"
+        }
+      ],
+      "challengeSentence": {
+        "en": "Her head was pounding — she was coming down with something.",
+        "es": "Le palpitaba la cabeza: estaba empezando a ponerse enferma."
+      },
+      "lines": [
+        {
+          "speaker": null,
+          "en": "Emily had been fighting a headache all afternoon, and by the time she got off work, it was pounding hard enough that she stopped at the pharmacy on her way home.",
+          "es": "Emily llevaba toda la tarde luchando contra un dolor de cabeza, y cuando salió del trabajo, le palpitaba tan fuerte que paró en la farmacia de camino a casa.",
+          "vocabTerms": [
+            "pounding"
+          ]
+        },
+        {
+          "speaker": "Farmacéutico",
+          "en": "Can I help you?",
+          "es": "¿Puedo ayudarla?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Emily approached the counter, rubbing her temples.",
+          "es": "Emily se acercó al mostrador, frotándose las sienes.",
+          "vocabTerms": [
+            "rubbing her temples"
+          ]
+        },
+        {
+          "speaker": "Emily",
+          "en": "I need something for a headache.",
+          "es": "Necesito algo para el dolor de cabeza.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Farmacéutico",
+          "en": "Do you have a prescription?",
+          "es": "¿Tiene receta?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Emily",
+          "en": "No, I don't.",
+          "es": "No, no tengo.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Farmacéutico",
+          "en": "That's alright. Do you have any painkillers at home already, or would you like a recommendation?",
+          "es": "No pasa nada. ¿Tiene ya analgésicos en casa, o quiere una recomendación?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Emily",
+          "en": "A recommendation would be great.",
+          "es": "Una recomendación me vendría genial.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Farmacéutico",
+          "en": "We have these tablets, they work quite well.",
+          "es": "Tenemos estas pastillas, funcionan bastante bien.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Emily",
+          "en": "How often should I take these?",
+          "es": "¿Cada cuánto debo tomarlas?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Farmacéutico",
+          "en": "Twice a day, ideally with food.",
+          "es": "Dos veces al día, idealmente con comida.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Emily",
+          "en": "Perfect, thank you.",
+          "es": "Perfecto, gracias.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Farmacéutico",
+          "en": "Do you need anything else?",
+          "es": "¿Necesita algo más?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Emily",
+          "en": "Yes, actually — a box of tissues, please. I think I'm coming down with something too.",
+          "es": "La verdad es que sí, una caja de pañuelos, por favor. Creo que también estoy empezando a ponerme enferma.",
+          "vocabTerms": [
+            "coming down with something"
+          ]
+        },
+        {
+          "speaker": "Emily",
+          "en": "Can I pay by card?",
+          "es": "¿Puedo pagar con tarjeta?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Farmacéutico",
+          "en": "Yes, of course.",
+          "es": "Sí, por supuesto.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "A few minutes later, Emily walked out with her small bag, already feeling a little better just knowing relief was on the way.",
+          "es": "Unos minutos después, Emily salió con su pequeña bolsa, sintiéndose ya un poco mejor solo con saber que el alivio estaba en camino.",
+          "vocabTerms": []
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Comprando un teléfono nuevo",
+      "videoAsset": null,
+      "videoAssetSub": null,
+      "thumbnailAsset": "assets/comercio_stories/cover5.png",
+      "vocab": [
+        {
+          "termEn": "cracked one too many times",
+          "translationEs": "se rompió demasiadas veces"
+        },
+        {
+          "termEn": "winced slightly",
+          "translationEs": "hizo una mueca"
+        },
+        {
+          "termEn": "manufacturing defects",
+          "translationEs": "defectos de fábrica"
+        },
+        {
+          "termEn": "itching to",
+          "translationEs": "con muchas ganas de"
+        }
+      ],
+      "challengeSentence": {
+        "en": "The warranty covers manufacturing defects only.",
+        "es": "La garantía cubre solo defectos de fábrica."
+      },
+      "lines": [
+        {
+          "speaker": null,
+          "en": "Marcus had saved up for months, and today was finally the day — his old phone's screen had cracked one too many times, and he was ready for an upgrade.",
+          "es": "Marcus llevaba meses ahorrando, y hoy por fin era el día: la pantalla de su teléfono viejo se había roto demasiadas veces, y estaba listo para una mejora.",
+          "vocabTerms": [
+            "cracked one too many times"
+          ]
+        },
+        {
+          "speaker": "Vendedora",
+          "en": "Can I help you?",
+          "es": "¿Puedo ayudarlo?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Marcus",
+          "en": "I'm looking for a new phone.",
+          "es": "Estoy buscando un teléfono nuevo.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Vendedora",
+          "en": "Which model are you interested in?",
+          "es": "¿Qué modelo le interesa?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Marcus",
+          "en": "The latest one, I think.",
+          "es": "El más nuevo, creo.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Vendedora",
+          "en": "Great choice, it's very popular right now.",
+          "es": "Buena elección, es muy popular ahora mismo.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Marcus",
+          "en": "Does it come with a charger?",
+          "es": "¿Viene con cargador?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Vendedora",
+          "en": "Yes, it does.",
+          "es": "Sí, viene.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Marcus",
+          "en": "How much does it cost?",
+          "es": "¿Cuánto cuesta?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Vendedora",
+          "en": "It's €799.",
+          "es": "Son 799 €.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Marcus winced slightly but nodded.",
+          "es": "Marcus hizo una mueca, pero asintió.",
+          "vocabTerms": [
+            "winced slightly"
+          ]
+        },
+        {
+          "speaker": "Marcus",
+          "en": "Does it have a warranty?",
+          "es": "¿Tiene garantía?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Vendedora",
+          "en": "Yes, a two-year warranty. That covers manufacturing defects and includes free repairs if anything goes wrong.",
+          "es": "Sí, dos años de garantía. Cubre defectos de fábrica e incluye reparaciones gratis si algo falla.",
+          "vocabTerms": [
+            "manufacturing defects"
+          ]
+        },
+        {
+          "speaker": "Marcus",
+          "en": "I'll take it.",
+          "es": "Me lo llevo.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Vendedora",
+          "en": "Excellent choice.",
+          "es": "Excelente elección.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Fifteen minutes later, Marcus walked out of the store holding his new phone, already itching to set it up the moment he got home.",
+          "es": "Quince minutos después, Marcus salió de la tienda con su teléfono nuevo, ya con muchas ganas de configurarlo en cuanto llegara a casa.",
+          "vocabTerms": [
+            "itching to"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Buscando artículos para una fiesta en el bazar",
+      "videoAsset": null,
+      "videoAssetSub": null,
+      "thumbnailAsset": "assets/comercio_stories/cover6.png",
+      "vocab": [
+        {
+          "termEn": "streamers",
+          "translationEs": "serpentinas"
+        },
+        {
+          "termEn": "rounded the corner",
+          "translationEs": "dobló la esquina"
+        },
+        {
+          "termEn": "mentally checking off her list",
+          "translationEs": "repasando mentalmente su lista"
+        }
+      ],
+      "challengeSentence": {
+        "en": "She rounded the corner looking for streamers.",
+        "es": "Dobló la esquina buscando serpentinas."
+      },
+      "lines": [
+        {
+          "speaker": null,
+          "en": "Natalie had exactly one hour before she needed to start decorating for her daughter's birthday party, and her shopping list was longer than she expected.",
+          "es": "A Natalie le quedaba exactamente una hora antes de tener que empezar a decorar para la fiesta de cumpleaños de su hija, y su lista de compras era más larga de lo que esperaba.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Natalie",
+          "en": "Excuse me, where can I find gift bags?",
+          "es": "Disculpe, ¿dónde puedo encontrar bolsas de regalo?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Empleado",
+          "en": "They're next to the wrapping paper, aisle two.",
+          "es": "Están junto al papel de regalo, pasillo dos.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Natalie",
+          "en": "Perfect, thank you. Do you also sell disposable cups and plates?",
+          "es": "Perfecto, gracias. ¿También venden vasos y platos desechables?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Empleado",
+          "en": "Yes, they're in the party supplies section, just around the corner.",
+          "es": "Sí, están en la sección de fiestas, justo doblando la esquina.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Natalie hurried over, grabbing colorful plates and cups decorated with balloons.",
+          "es": "Natalie fue corriendo, cogiendo platos y vasos de colores decorados con globos.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Natalie",
+          "en": "Do you have balloons and streamers too?",
+          "es": "¿Tienen también globos y serpentinas?",
+          "vocabTerms": [
+            "streamers"
+          ]
+        },
+        {
+          "speaker": "Empleada",
+          "en": "Yes, they're near the party supplies section as well.",
+          "es": "Sí, también están cerca de la sección de fiestas.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "As she rounded the corner, Natalie spotted a shelf of batteries.",
+          "es": "Al doblar la esquina, Natalie vio un estante de pilas.",
+          "vocabTerms": [
+            "rounded the corner"
+          ]
+        },
+        {
+          "speaker": "Natalie",
+          "en": "Excuse me, where can I find batteries? I need some for the kids' toys.",
+          "es": "Disculpe, ¿dónde puedo encontrar pilas? Necesito unas para los juguetes de los niños.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Empleado",
+          "en": "They're in aisle four.",
+          "es": "Están en el pasillo cuatro.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Finally, arms full, Natalie made her way to the register, mentally checking off her list.",
+          "es": "Finalmente, con los brazos llenos, Natalie se dirigió a la caja, repasando mentalmente su lista.",
+          "vocabTerms": [
+            "mentally checking off her list"
+          ]
+        },
+        {
+          "speaker": "Natalie",
+          "en": "I think that's everything.",
+          "es": "Creo que ya está todo.",
+          "vocabTerms": []
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Cambiando una camisa en la tienda",
+      "videoAsset": null,
+      "videoAssetSub": null,
+      "thumbnailAsset": "assets/comercio_stories/cover7.png",
+      "vocab": [
+        {
+          "termEn": "pulling it out of the bag",
+          "translationEs": "sacándolo de la bolsa"
+        },
+        {
+          "termEn": "within 30 days",
+          "translationEs": "dentro de 30 días"
+        },
+        {
+          "termEn": "a relief",
+          "translationEs": "un alivio"
+        },
+        {
+          "termEn": "processing the exchange",
+          "translationEs": "procesando el cambio"
+        }
+      ],
+      "challengeSentence": {
+        "en": "Exchanges are only accepted within 30 days.",
+        "es": "Los cambios solo se aceptan dentro de 30 días."
+      },
+      "lines": [
+        {
+          "speaker": null,
+          "en": "Jonathan walked back into the store holding a small bag, feeling slightly embarrassed.",
+          "es": "Jonathan volvió a entrar en la tienda con una pequeña bolsa, sintiéndose algo avergonzado.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "He had bought a shirt for his brother's birthday, but it turned out to be the wrong size.",
+          "es": "Había comprado una camisa para el cumpleaños de su hermano, pero resultó ser la talla equivocada.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Dependienta",
+          "en": "Hello, can I help you?",
+          "es": "Hola, ¿puedo ayudarlo?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Jonathan pulled the shirt out of the bag.",
+          "es": "Jonathan sacó la camisa de la bolsa.",
+          "vocabTerms": [
+            "pulling it out of the bag"
+          ]
+        },
+        {
+          "speaker": "Jonathan",
+          "en": "Yes, can I exchange this shirt? It's the wrong size.",
+          "es": "Sí, ¿puedo cambiar esta camisa? Es la talla equivocada.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Dependienta",
+          "en": "Of course, do you have the receipt?",
+          "es": "Claro, ¿tiene el recibo?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Jonathan",
+          "en": "Yes, here it is.",
+          "es": "Sí, aquí está.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Dependienta",
+          "en": "No problem, exchanges are accepted within 30 days, and this was purchased last week.",
+          "es": "Sin problema, los cambios se aceptan dentro de 30 días, y esto se compró la semana pasada.",
+          "vocabTerms": [
+            "within 30 days"
+          ]
+        },
+        {
+          "speaker": "Jonathan",
+          "en": "That's a relief.",
+          "es": "Eso es un alivio.",
+          "vocabTerms": [
+            "a relief"
+          ]
+        },
+        {
+          "speaker": "Dependienta",
+          "en": "What size do you need instead?",
+          "es": "¿Qué talla necesita en su lugar?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Jonathan",
+          "en": "Large, please, instead of medium.",
+          "es": "Grande, por favor, en vez de mediana.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "She disappeared for a moment and returned with the correct size.",
+          "es": "Desapareció un momento y volvió con la talla correcta.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Dependienta",
+          "en": "Would you like to check that it looks right?",
+          "es": "¿Quiere comprobar que le queda bien?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Jonathan",
+          "en": "Sure. Yes, this looks much better.",
+          "es": "Claro. Sí, esto se ve mucho mejor.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "She processed the exchange at the register.",
+          "es": "Ella procesó el cambio en la caja.",
+          "vocabTerms": [
+            "processing the exchange"
+          ]
+        },
+        {
+          "speaker": "Dependienta",
+          "en": "Is there anything else I can help you with today?",
+          "es": "¿Hay algo más en lo que pueda ayudarlo hoy?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Jonathan",
+          "en": "Actually, yes — do you have this in blue as well? I think I might get one for myself too.",
+          "es": "La verdad es que sí: ¿también la tienen en azul? Creo que igual me llevo una para mí también.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Dependienta",
+          "en": "Yes, we do.",
+          "es": "Sí, tenemos.",
+          "vocabTerms": []
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Autopago en el supermercado",
+      "videoAsset": null,
+      "videoAssetSub": null,
+      "thumbnailAsset": "assets/comercio_stories/cover8.png",
+      "vocab": [
+        {
+          "termEn": "juggling",
+          "translationEs": "haciendo malabares con varias cosas a la vez"
+        },
+        {
+          "termEn": "popped up",
+          "translationEs": "apareció de repente"
+        },
+        {
+          "termEn": "on offer",
+          "translationEs": "de oferta"
+        },
+        {
+          "termEn": "buy one, get one free",
+          "translationEs": "compra uno, llévate otro gratis"
+        }
+      ],
+      "challengeSentence": {
+        "en": "A message popped up — the cheese was on offer.",
+        "es": "Apareció un mensaje: el queso estaba de oferta."
+      },
+      "lines": [
+        {
+          "speaker": null,
+          "en": "Hannah was in a hurry, juggling her phone, her wallet, and a small basket of groceries as she headed toward the self-checkout machines.",
+          "es": "Hannah tenía prisa, haciendo malabares con el móvil, la cartera y una pequeña cesta de la compra mientras se dirigía a las cajas de autopago.",
+          "vocabTerms": [
+            "juggling"
+          ]
+        },
+        {
+          "speaker": null,
+          "en": "She scanned her items quickly — bread, cheese, a bottle of water — before a small message popped up on the screen asking about a loyalty card.",
+          "es": "Escaneó sus artículos rápidamente (pan, queso, una botella de agua) antes de que apareciera de repente un mensaje en la pantalla preguntando por una tarjeta de fidelización.",
+          "vocabTerms": [
+            "popped up"
+          ]
+        },
+        {
+          "speaker": "Empleado",
+          "en": "Do you need a loyalty card?",
+          "es": "¿Necesita una tarjeta de fidelización?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Hannah",
+          "en": "No, I don't have one.",
+          "es": "No, no tengo.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Empleado",
+          "en": "No problem, just continue whenever you’re ready.",
+          "es": "Sin problema, continúe cuando esté lista.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Hannah",
+          "en": "Sorry, quick question — is this cheese on offer?",
+          "es": "Perdone, una pregunta rápida: ¿este queso está de oferta?",
+          "vocabTerms": [
+            "on offer"
+          ]
+        },
+        {
+          "speaker": "Empleado",
+          "en": "Let me check. Yes, it's buy one, get one free.",
+          "es": "Déjeme comprobarlo. Sí, es compra uno, llévate otro gratis.",
+          "vocabTerms": [
+            "buy one, get one free"
+          ]
+        },
+        {
+          "speaker": "Hannah",
+          "en": "Oh, perfect, let me grab another one then.",
+          "es": "Ah, perfecto, entonces cojo otro.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "She finished scanning everything and looked at the payment screen.",
+          "es": "Terminó de escanear todo y miró la pantalla de pago.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Hannah",
+          "en": "Can I pay in cash?",
+          "es": "¿Puedo pagar en efectivo?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Empleado",
+          "en": "Yes, the machine accepts cash and card.",
+          "es": "Sí, la máquina acepta efectivo y tarjeta.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Hannah inserted her coins and notes, watched the change drop into the tray, and gathered her bags.",
+          "es": "Hannah introdujo sus monedas y billetes, vio caer el cambio en la bandeja, y recogió sus bolsas.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Máquina",
+          "en": "Would you like a bag?",
+          "es": "¿Quiere una bolsa?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Hannah",
+          "en": "No, thank you, I brought my own.",
+          "es": "No, gracias, he traído la mía.",
+          "vocabTerms": []
+        }
+      ]
+    }
+  ],
+  "viajes": [
+    {
+      "number": 1,
+      "title": "Facturación en el aeropuerto",
+      "videoAsset": null,
+      "videoAssetSub": null,
+      "thumbnailAsset": "assets/viajes_stories/cover1.png",
+      "vocab": [
+        {
+          "termEn": "wheeled her suitcase",
+          "translationEs": "arrastró su maleta con ruedas"
+        },
+        {
+          "termEn": "a formality",
+          "translationEs": "una formalidad"
+        },
+        {
+          "termEn": "scale",
+          "translationEs": "báscula"
+        },
+        {
+          "termEn": "tucking",
+          "translationEs": "guardando con cuidado"
+        }
+      ],
+      "challengeSentence": {
+        "en": "She tucked her passport away — just a formality.",
+        "es": "Guardó el pasaporte con cuidado, solo una formalidad."
+      },
+      "lines": [
+        {
+          "speaker": null,
+          "en": "Rachel arrived at the airport two hours early, just as everyone had advised her for an international flight.",
+          "es": "Rachel llegó al aeropuerto con dos horas de antelación, tal y como todos le habían aconsejado para un vuelo internacional.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "She wheeled her suitcase toward the check-in counter, passport in hand.",
+          "es": "Arrastró su maleta con ruedas hacia el mostrador de facturación, con el pasaporte en la mano.",
+          "vocabTerms": [
+            "wheeled her suitcase"
+          ]
+        },
+        {
+          "speaker": "Agente",
+          "en": "Good morning. May I see your passport, please?",
+          "es": "Buenos días. ¿Me enseña el pasaporte, por favor?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Rachel",
+          "en": "Of course. Here it is.",
+          "es": "Claro. Aquí está.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Agente",
+          "en": "Where are you flying today?",
+          "es": "¿Adónde vuela hoy?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Rachel",
+          "en": "I'm flying to London.",
+          "es": "Vuelo a Londres.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Agente",
+          "en": "Do you have a reservation?",
+          "es": "¿Tiene una reserva?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Rachel",
+          "en": "Yes, I do.",
+          "es": "Sí, la tengo.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Agente",
+          "en": "Are you checking in any luggage?",
+          "es": "¿Va a facturar equipaje?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Rachel",
+          "en": "Yes, one suitcase.",
+          "es": "Sí, una maleta.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Rachel lifted it onto the scale.",
+          "es": "Rachel la levantó sobre la báscula.",
+          "vocabTerms": [
+            "scale"
+          ]
+        },
+        {
+          "speaker": "Agente",
+          "en": "And do you have any hand luggage?",
+          "es": "¿Y lleva equipaje de mano?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Rachel",
+          "en": "Yes, just this backpack.",
+          "es": "Sí, solo esta mochila.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Agente",
+          "en": "Did you pack your bags yourself?",
+          "es": "¿Hizo usted misma el equipaje?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Rachel",
+          "en": "Yes, I did.",
+          "es": "Sí, lo hice yo.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Agente",
+          "en": "Has anyone asked you to carry something for them?",
+          "es": "¿Alguien le ha pedido que lleve algo por él?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Rachel",
+          "en": "No, they haven't.",
+          "es": "No, nadie.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Agente",
+          "en": "Would you like a window or an aisle seat?",
+          "es": "¿Prefiere ventanilla o pasillo?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Rachel",
+          "en": "A window seat, please.",
+          "es": "Ventanilla, por favor.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Agente",
+          "en": "Here's your boarding pass. Boarding starts at 9:30, gate 24.",
+          "es": "Aquí tiene su tarjeta de embarque. El embarque empieza a las 9:30, puerta 24.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Rachel tucked the pass safely into her passport before heading toward security, her excitement building with every step.",
+          "es": "Rachel guardó la tarjeta con cuidado dentro del pasaporte antes de dirigirse a seguridad, con la emoción creciendo a cada paso.",
+          "vocabTerms": [
+            "tucking"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Pasando el control de seguridad",
+      "videoAsset": null,
+      "videoAssetSub": null,
+      "thumbnailAsset": "assets/viajes_stories/cover2.png",
+      "vocab": [
+        {
+          "termEn": "shuffled forward",
+          "translationEs": "avanzó arrastrando los pies"
+        },
+        {
+          "termEn": "hoisting",
+          "translationEs": "levantando/subiendo algo pesado"
+        },
+        {
+          "termEn": "reluctantly",
+          "translationEs": "de mala gana"
+        },
+        {
+          "termEn": "departure boards",
+          "translationEs": "paneles de salidas"
+        }
+      ],
+      "challengeSentence": {
+        "en": "He checked the departure boards, still shuffling forward.",
+        "es": "Miró los paneles de salidas, todavía avanzando arrastrando los pies."
+      },
+      "lines": [
+        {
+          "speaker": null,
+          "en": "The security line moved slowly, and Peter shuffled forward with his shoes half untied, trying to keep his boarding pass from slipping out of his hand.",
+          "es": "La cola de seguridad avanzaba despacio, y Peter iba arrastrando los pies con los zapatos medio desatados, intentando que la tarjeta de embarque no se le cayera de la mano.",
+          "vocabTerms": [
+            "shuffled forward"
+          ]
+        },
+        {
+          "speaker": "Oficial",
+          "en": "Could you put your bag on the belt, please?",
+          "es": "¿Puede poner su bolsa en la cinta, por favor?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Peter hoisted his backpack onto the conveyor belt.",
+          "es": "Peter levantó la mochila y la puso sobre la cinta.",
+          "vocabTerms": [
+            "hoisting"
+          ]
+        },
+        {
+          "speaker": "Peter",
+          "en": "Do I need to take off my shoes?",
+          "es": "¿Tengo que quitarme los zapatos?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Oficial",
+          "en": "Yes, please, and any belts or jackets too.",
+          "es": "Sí, por favor, y también los cinturones o chaquetas.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Peter placed everything into a plastic tray, along with his phone and a small bottle of water he had forgotten about.",
+          "es": "Peter puso todo en una bandeja de plástico, junto con el móvil y una botella de agua que se le había olvidado.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Peter",
+          "en": "Can I take this bottle of water through?",
+          "es": "¿Puedo pasar esta botella de agua?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Oficial",
+          "en": "No, sorry, liquids over 100 ml aren't allowed.",
+          "es": "No, lo siento, no se permiten líquidos de más de 100 ml.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Reluctantly, Peter tossed the bottle away and stepped through the scanner.",
+          "es": "De mala gana, Peter tiró la botella y pasó por el escáner.",
+          "vocabTerms": [
+            "reluctantly"
+          ]
+        },
+        {
+          "speaker": "Peter",
+          "en": "Which gate is my flight leaving from?",
+          "es": "¿De qué puerta sale mi vuelo?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Empleada",
+          "en": "Let me check your boarding pass… Gate 24.",
+          "es": "Déjeme mirar su tarjeta de embarque… Puerta 24.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Peter",
+          "en": "Is the flight on time?",
+          "es": "¿El vuelo va puntual?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Empleada",
+          "en": "Yes, it is.",
+          "es": "Sí, va puntual.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Relieved, Peter jogged toward the gate, arriving just as an announcement echoed through the terminal, checking the departure boards one last time.",
+          "es": "Aliviado, Peter trotó hacia la puerta, llegando justo cuando un anuncio resonó por la terminal, mirando los paneles de salidas una última vez.",
+          "vocabTerms": [
+            "departure boards"
+          ]
+        },
+        {
+          "speaker": "Megafonía",
+          "en": "Has boarding started? Yes, passengers can board now.",
+          "es": "¿Ha empezado el embarque? Sí, los pasajeros ya pueden embarcar.",
+          "vocabTerms": []
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Embarcando y durante el vuelo",
+      "videoAsset": null,
+      "videoAssetSub": null,
+      "thumbnailAsset": "assets/viajes_stories/cover3.png",
+      "vocab": [
+        {
+          "termEn": "overhead compartment",
+          "translationEs": "compartimento superior del avión"
+        },
+        {
+          "termEn": "cruising altitude",
+          "translationEs": "altitud de crucero"
+        },
+        {
+          "termEn": "right on cue",
+          "translationEs": "justo en el momento perfecto"
+        }
+      ],
+      "challengeSentence": {
+        "en": "They reached cruising altitude right on cue.",
+        "es": "Alcanzaron la altitud de crucero justo en el momento perfecto."
+      },
+      "lines": [
+        {
+          "speaker": null,
+          "en": "Sophie stepped onto the plane, boarding pass in hand, greeted immediately by a smiling flight attendant.",
+          "es": "Sophie subió al avión con la tarjeta de embarque en la mano, recibida enseguida por una auxiliar de vuelo sonriente.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Auxiliar",
+          "en": "Welcome aboard. May I see your boarding pass?",
+          "es": "Bienvenida a bordo. ¿Me enseña su tarjeta de embarque?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Sophie",
+          "en": "Here you are.",
+          "es": "Aquí tiene.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Auxiliar",
+          "en": "It's row 18, seat A, just down this way.",
+          "es": "Es la fila 18, asiento A, por aquí.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Sophie",
+          "en": "Could you help me with my suitcase?",
+          "es": "¿Podría ayudarme con la maleta?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Sophie struggled slightly with the overhead compartment.",
+          "es": "Sophie tuvo un poco de dificultad con el compartimento superior.",
+          "vocabTerms": [
+            "overhead compartment"
+          ]
+        },
+        {
+          "speaker": "Auxiliar",
+          "en": "Certainly.",
+          "es": "Por supuesto.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Sophie settled into her window seat, tucking her backpack beneath the seat in front of her.",
+          "es": "Sophie se acomodó en su asiento de ventanilla, metiendo la mochila bajo el asiento de delante.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Pasajero",
+          "en": "Is this seat taken?",
+          "es": "¿Está ocupado este asiento?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Sophie",
+          "en": "No, it's free.",
+          "es": "No, está libre.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Auxiliar",
+          "en": "Please fasten your seatbelt.",
+          "es": "Por favor, abróchense el cinturón de seguridad.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Once they reached cruising altitude, the attendant came around with a cart.",
+          "es": "Una vez alcanzaron la altitud de crucero, la auxiliar pasó con el carrito.",
+          "vocabTerms": [
+            "cruising altitude"
+          ]
+        },
+        {
+          "speaker": "Auxiliar",
+          "en": "Would you like something to drink?",
+          "es": "¿Quiere algo de beber?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Sophie",
+          "en": "Yes, a coffee, please.",
+          "es": "Sí, un café, por favor.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Auxiliar",
+          "en": "And would you like something to eat? We have sandwiches available.",
+          "es": "¿Y quiere algo de comer? Tenemos sándwiches disponibles.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Sophie's stomach growled right on cue.",
+          "es": "El estómago de Sophie rugió justo en el momento perfecto.",
+          "vocabTerms": [
+            "right on cue"
+          ]
+        },
+        {
+          "speaker": "Sophie",
+          "en": "Yes, a sandwich, please.",
+          "es": "Sí, un sándwich, por favor.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Sophie",
+          "en": "How long is the flight?",
+          "es": "¿Cuánto dura el vuelo?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Pasajero",
+          "en": "About three hours, I believe. We should arrive around 2 p.m.",
+          "es": "Unas tres horas, creo. Deberíamos llegar sobre las 2 de la tarde.",
+          "vocabTerms": []
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Pasando por inmigración y aduana",
+      "videoAsset": null,
+      "videoAssetSub": null,
+      "thumbnailAsset": "assets/viajes_stories/cover4.png",
+      "vocab": [
+        {
+          "termEn": "booth",
+          "translationEs": "cabina/mostrador"
+        },
+        {
+          "termEn": "stamped",
+          "translationEs": "selló"
+        },
+        {
+          "termEn": "waved through",
+          "translationEs": "le hicieron pasar con un gesto"
+        },
+        {
+          "termEn": "carousel",
+          "translationEs": "cinta transportadora de equipaje"
+        }
+      ],
+      "challengeSentence": {
+        "en": "The officer stamped his passport and waved him through.",
+        "es": "El oficial le selló el pasaporte y le hizo pasar con un gesto."
+      },
+      "lines": [
+        {
+          "speaker": null,
+          "en": "After a long flight, Daniel finally stepped off the plane, following the signs toward immigration, his passport already in hand from years of experience traveling.",
+          "es": "Después de un vuelo largo, Daniel por fin bajó del avión, siguiendo los carteles hacia inmigración, con el pasaporte ya en la mano por años de experiencia viajando.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "He approached the booth, and the officer looked up.",
+          "es": "Se acercó a la cabina, y el oficial levantó la vista.",
+          "vocabTerms": [
+            "booth"
+          ]
+        },
+        {
+          "speaker": "Oficial",
+          "en": "Welcome to Spain. Is this your first visit?",
+          "es": "Bienvenido a España. ¿Es su primera visita?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Daniel",
+          "en": "Yes, it is.",
+          "es": "Sí, lo es.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Oficial",
+          "en": "What's the purpose of your visit?",
+          "es": "¿Cuál es el motivo de su visita?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Daniel",
+          "en": "I'm here on holiday.",
+          "es": "Estoy aquí de vacaciones.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Oficial",
+          "en": "How long are you staying?",
+          "es": "¿Cuánto tiempo se queda?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Daniel",
+          "en": "For one week.",
+          "es": "Una semana.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Oficial",
+          "en": "And where will you be staying?",
+          "es": "¿Y dónde se va a alojar?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Daniel",
+          "en": "At the Central Hotel.",
+          "es": "En el Hotel Central.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "The officer stamped his passport and slid it back.",
+          "es": "El oficial le selló el pasaporte y se lo devolvió.",
+          "vocabTerms": [
+            "stamped"
+          ]
+        },
+        {
+          "speaker": "Oficial",
+          "en": "Enjoy your stay.",
+          "es": "Que disfrute su estancia.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Daniel thanked him and continued on toward customs, where another officer stood near a large sign.",
+          "es": "Daniel le dio las gracias y siguió hacia aduanas, donde otro oficial estaba junto a un gran cartel.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Oficial",
+          "en": "Do you have anything to declare?",
+          "es": "¿Tiene algo que declarar?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Daniel",
+          "en": "No, I don't.",
+          "es": "No, no tengo nada.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Waved through, Daniel made his way toward the baggage claim area, checking the screens for his flight number.",
+          "es": "Tras hacerle pasar con un gesto, Daniel se dirigió a la zona de recogida de equipajes, mirando las pantallas para encontrar su número de vuelo.",
+          "vocabTerms": [
+            "waved through"
+          ]
+        },
+        {
+          "speaker": "Daniel",
+          "en": "Where can I collect my luggage?",
+          "es": "¿Dónde puedo recoger mi equipaje?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Empleada",
+          "en": "At baggage claim number 5.",
+          "es": "En la cinta número 5.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "A few minutes later, Daniel spotted his suitcase circling the carousel.",
+          "es": "Unos minutos después, Daniel vio su maleta dando vueltas en la cinta.",
+          "vocabTerms": [
+            "carousel"
+          ]
+        },
+        {
+          "speaker": "Oficial",
+          "en": "Is this your suitcase?",
+          "es": "¿Es esta su maleta?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Daniel",
+          "en": "Yes, it is.",
+          "es": "Sí, lo es.",
+          "vocabTerms": []
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Buscando taxi y comprando un billete de tren",
+      "videoAsset": null,
+      "videoAssetSub": null,
+      "thumbnailAsset": "assets/viajes_stories/cover5.png",
+      "vocab": [
+        {
+          "termEn": "disoriented",
+          "translationEs": "desorientada"
+        },
+        {
+          "termEn": "taxi rank",
+          "translationEs": "parada de taxis"
+        },
+        {
+          "termEn": "conductor",
+          "translationEs": "revisor del tren"
+        },
+        {
+          "termEn": "blur past",
+          "translationEs": "pasar borroso, rápido"
+        }
+      ],
+      "challengeSentence": {
+        "en": "The conductor pointed toward the taxi rank.",
+        "es": "El revisor señaló hacia la parada de taxis."
+      },
+      "lines": [
+        {
+          "speaker": null,
+          "en": "Outside the terminal, Isabelle stood for a moment, disoriented by the noise and unfamiliar signs, before spotting a row of parked cars.",
+          "es": "Fuera de la terminal, Isabelle se quedó un momento desorientada por el ruido y los carteles desconocidos, hasta que vio una fila de coches aparcados.",
+          "vocabTerms": [
+            "disoriented"
+          ]
+        },
+        {
+          "speaker": "Isabelle",
+          "en": "Excuse me, where is the taxi rank?",
+          "es": "Disculpe, ¿dónde está la parada de taxis?",
+          "vocabTerms": [
+            "taxi rank"
+          ]
+        },
+        {
+          "speaker": "Trabajador",
+          "en": "It's just outside the terminal, to your left.",
+          "es": "Está justo fuera de la terminal, a su izquierda.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Isabelle",
+          "en": "Where can I buy a train ticket instead?",
+          "es": "¿Dónde puedo comprar un billete de tren en su lugar?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Trabajador",
+          "en": "At the ticket office, just past those doors.",
+          "es": "En la taquilla, pasando esas puertas.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Isabelle",
+          "en": "Which train goes to the city centre?",
+          "es": "¿Qué tren va al centro de la ciudad?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Empleado",
+          "en": "Platform 3.",
+          "es": "Andén 3.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Isabelle",
+          "en": "How much is a ticket?",
+          "es": "¿Cuánto cuesta un billete?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Empleado",
+          "en": "It's ten euros.",
+          "es": "Son diez euros.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "She made her way to the platform, boarding the train just as the doors were about to close.",
+          "es": "Se dirigió al andén, subiendo al tren justo cuando las puertas estaban a punto de cerrarse.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Isabelle",
+          "en": "Excuse me, does this train go all the way to the city centre?",
+          "es": "Disculpe, ¿este tren llega hasta el centro de la ciudad?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "A conductor walked by checking tickets.",
+          "es": "Un revisor pasó comprobando billetes.",
+          "vocabTerms": [
+            "conductor"
+          ]
+        },
+        {
+          "speaker": "Revisor",
+          "en": "Yes, it does.",
+          "es": "Sí, llega.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Isabelle",
+          "en": "Where should I get off?",
+          "es": "¿Dónde debería bajarme?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Revisor",
+          "en": "At the last stop.",
+          "es": "En la última parada.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Isabelle relaxed into her seat, watching the unfamiliar city blur past the window, relieved to finally be on her way.",
+          "es": "Isabelle se relajó en su asiento, viendo la ciudad desconocida pasar borrosa tras la ventana, aliviada de estar por fin en camino.",
+          "vocabTerms": [
+            "blur past"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Registrándose en el hotel",
+      "videoAsset": null,
+      "videoAssetSub": null,
+      "thumbnailAsset": "assets/viajes_stories/cover6.png",
+      "vocab": [
+        {
+          "termEn": "front desk",
+          "translationEs": "mostrador de recepción"
+        },
+        {
+          "termEn": "folder",
+          "translationEs": "carpeta"
+        },
+        {
+          "termEn": "sleeping in",
+          "translationEs": "dormir hasta tarde"
+        },
+        {
+          "termEn": "settled",
+          "translationEs": "instalado, acomodado"
+        }
+      ],
+      "challengeSentence": {
+        "en": "He left the folder on the front desk.",
+        "es": "Dejó la carpeta en el mostrador de recepción."
+      },
+      "lines": [
+        {
+          "speaker": null,
+          "en": "After a long day of travel, Marco finally reached the hotel lobby, dragging his suitcase behind him and desperate to sit down.",
+          "es": "Tras un largo día de viaje, Marco por fin llegó al vestíbulo del hotel, arrastrando la maleta y con muchas ganas de sentarse.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "He approached the front desk.",
+          "es": "Se acercó al mostrador de recepción.",
+          "vocabTerms": [
+            "front desk"
+          ]
+        },
+        {
+          "speaker": "Marco",
+          "en": "Hello. I have a reservation.",
+          "es": "Hola. Tengo una reserva.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Recepcionista",
+          "en": "Welcome. What's your name?",
+          "es": "Bienvenido. ¿Cuál es su nombre?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Marco",
+          "en": "It's under the name Johnson.",
+          "es": "Está a nombre de Johnson.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Recepcionista",
+          "en": "Thank you. I found your booking. May I see your passport, please?",
+          "es": "Gracias. He encontrado su reserva. ¿Me enseña el pasaporte, por favor?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Marco",
+          "en": "Of course.",
+          "es": "Claro.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "She processed the check-in and slid a small folder across the counter.",
+          "es": "Ella procesó el registro y le pasó una pequeña carpeta por el mostrador.",
+          "vocabTerms": [
+            "folder"
+          ]
+        },
+        {
+          "speaker": "Marco",
+          "en": "Could I have the room key, please?",
+          "es": "¿Me da la llave de la habitación, por favor?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Recepcionista",
+          "en": "Here you are. Your room is on the fifth floor.",
+          "es": "Aquí tiene. Su habitación está en el quinto piso.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Marco",
+          "en": "Where is the lift?",
+          "es": "¿Dónde está el ascensor?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Recepcionista",
+          "en": "It's around the corner, just past the seating area.",
+          "es": "Está doblando la esquina, pasando la zona de asientos.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Marco",
+          "en": "One more thing — what time is breakfast served?",
+          "es": "Una cosa más: ¿a qué hora se sirve el desayuno?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Recepcionista",
+          "en": "From 7 to 10 a.m., and yes, it's included in your reservation.",
+          "es": "De 7 a 10 de la mañana, y sí, está incluido en su reserva.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Marco was already looking forward to sleeping in.",
+          "es": "Marco ya estaba deseando dormir hasta tarde.",
+          "vocabTerms": [
+            "sleeping in"
+          ]
+        },
+        {
+          "speaker": "Marco",
+          "en": "Is there free Wi-Fi?",
+          "es": "¿Hay wifi gratis?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Recepcionista",
+          "en": "Yes, throughout the hotel. The password is on the folder.",
+          "es": "Sí, en todo el hotel. La contraseña está en la carpeta.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Marco headed toward the lift, exhausted but relieved to be settled.",
+          "es": "Marco se dirigió al ascensor, agotado pero aliviado de estar ya instalado.",
+          "vocabTerms": [
+            "settled"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Pidiendo recomendaciones y moviéndose por la ciudad",
+      "videoAsset": null,
+      "videoAssetSub": null,
+      "thumbnailAsset": "assets/viajes_stories/cover7.png",
+      "vocab": [
+        {
+          "termEn": "concierge",
+          "translationEs": "conserje"
+        },
+        {
+          "termEn": "circling it on her map",
+          "translationEs": "rodeándolo en el mapa"
+        },
+        {
+          "termEn": "must-sees",
+          "translationEs": "lugares imprescindibles"
+        },
+        {
+          "termEn": "wandering",
+          "translationEs": "paseando sin rumbo fijo"
+        }
+      ],
+      "challengeSentence": {
+        "en": "The concierge circled the must-sees on her map.",
+        "es": "El conserje rodeó los lugares imprescindibles en su mapa."
+      },
+      "lines": [
+        {
+          "speaker": null,
+          "en": "The next morning, Amelia approached the concierge desk, map in hand, ready to explore the city for the first time.",
+          "es": "A la mañana siguiente, Amelia se acercó al mostrador de conserjería, mapa en mano, lista para explorar la ciudad por primera vez.",
+          "vocabTerms": [
+            "concierge"
+          ]
+        },
+        {
+          "speaker": "Amelia",
+          "en": "Good morning. Could you recommend a good restaurant nearby?",
+          "es": "Buenos días. ¿Podría recomendarme un buen restaurante cerca de aquí?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Conserje",
+          "en": "There's a wonderful one just around the corner.",
+          "es": "Hay uno maravilloso justo a la vuelta de la esquina.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "The concierge circled it on her map.",
+          "es": "El conserje lo rodeó en su mapa.",
+          "vocabTerms": [
+            "circling it on her map"
+          ]
+        },
+        {
+          "speaker": "Amelia",
+          "en": "Thank you. How can I get to the city centre from here?",
+          "es": "Gracias. ¿Cómo puedo llegar al centro desde aquí?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Conserje",
+          "en": "You can take the metro. The nearest station is just two minutes from here.",
+          "es": "Puede coger el metro. La estación más cercana está a solo dos minutos.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Amelia",
+          "en": "How much is a day pass?",
+          "es": "¿Cuánto cuesta un bono de un día?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Conserje",
+          "en": "It's eight euros, and it covers the whole day.",
+          "es": "Son ocho euros, y cubre todo el día.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Amelia",
+          "en": "Perfect. And which bus goes to the museum I wanted to see?",
+          "es": "Perfecto. ¿Y qué autobús va al museo que quería ver?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Conserje",
+          "en": "Bus number 15 goes directly there. Though honestly, it’s within walking distance too — only about ten minutes away.",
+          "es": "El autobús número 15 va directo. Aunque, la verdad, también se puede ir andando: solo unos diez minutos.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Amelia",
+          "en": "Oh, even better. Could you show me this address on the map?",
+          "es": "Ah, mejor todavía. ¿Podría enseñarme esta dirección en el mapa?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Amelia",
+          "en": "One last thing — what places do you recommend visiting while I’m here?",
+          "es": "Una última cosa: ¿qué lugares me recomienda visitar mientras estoy aquí?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Conserje",
+          "en": "The old town and the cathedral are must-sees. And later, if you want souvenirs, there’s a lovely gift shop nearby too.",
+          "es": "El casco antiguo y la catedral son imprescindibles. Y luego, si quiere recuerdos, hay una tienda de regalos preciosa cerca también.",
+          "vocabTerms": [
+            "must-sees"
+          ]
+        },
+        {
+          "speaker": null,
+          "en": "Amelia thanked her warmly, folding the map with a growing sense of excitement, ready to spend the whole day wandering the city on foot.",
+          "es": "Amelia le dio las gracias con cariño, doblando el mapa con creciente ilusión, lista para pasar todo el día paseando sin rumbo fijo por la ciudad.",
+          "vocabTerms": [
+            "wandering"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Un fin de semana explorando la ciudad",
+      "videoAsset": null,
+      "videoAssetSub": null,
+      "thumbnailAsset": "assets/viajes_stories/cover8.png",
+      "vocab": [
+        {
+          "termEn": "must-sees",
+          "translationEs": "lugares imprescindibles"
+        },
+        {
+          "termEn": "day pass",
+          "translationEs": "bono de un día"
+        },
+        {
+          "termEn": "within walking distance",
+          "translationEs": "se puede ir andando"
+        }
+      ],
+      "challengeSentence": {
+        "en": "The museum was within walking distance of the hotel.",
+        "es": "El museo se podía ir andando desde el hotel."
+      },
+      "lines": [
+        {
+          "speaker": null,
+          "en": "Amelia bought a day pass and set off toward the old town, the must-sees circled carefully on her map.",
+          "es": "Amelia compró un bono de un día y se puso en camino hacia el casco antiguo, con los lugares imprescindibles marcados con cuidado en su mapa.",
+          "vocabTerms": [
+            "day pass",
+            "must-sees"
+          ]
+        },
+        {
+          "speaker": null,
+          "en": "She stopped a passerby near the cathedral, map open in her hands.",
+          "es": "Paró a un transeúnte cerca de la catedral, con el mapa abierto en las manos.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Amelia",
+          "en": "Excuse me, is the gift shop within walking distance from here?",
+          "es": "Disculpe, ¿se puede ir andando a la tienda de regalos desde aquí?",
+          "vocabTerms": [
+            "within walking distance"
+          ]
+        },
+        {
+          "speaker": "Transeúnte",
+          "en": "Yes, just five minutes that way.",
+          "es": "Sí, a solo cinco minutos por ahí.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Amelia",
+          "en": "Thank you so much.",
+          "es": "Muchísimas gracias.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "She followed the directions, stopping every so often to take a photo, in no hurry to finish the day.",
+          "es": "Siguió las indicaciones, parando de vez en cuando para hacer una foto, sin prisa por terminar el día.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Amelia",
+          "en": "Excuse me, do you sell postcards here?",
+          "es": "Disculpe, ¿venden postales aquí?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Dependiente",
+          "en": "Yes, right by the entrance.",
+          "es": "Sí, justo junto a la entrada.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Amelia",
+          "en": "I'll take three of these, please.",
+          "es": "Me llevo tres de estas, por favor.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Dependiente",
+          "en": "Great choice. Anything else?",
+          "es": "Buena elección. ¿Algo más?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Amelia",
+          "en": "No, that’s everything, thank you.",
+          "es": "No, eso es todo, gracias.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "By the time she made it back to the hotel, her feet ached, but she was already planning tomorrow’s route.",
+          "es": "Cuando por fin volvió al hotel, le dolían los pies, pero ya estaba planeando la ruta de mañana.",
+          "vocabTerms": []
+        }
+      ]
+    }
+  ],
+  "uber": [
+    {
+      "number": 1,
+      "title": "Recogida y camino al aeropuerto",
+      "videoAsset": null,
+      "videoAssetSub": null,
+      "thumbnailAsset": "assets/uber_stories/cover1.png",
+      "vocab": [
+        {
+          "termEn": "license plate",
+          "translationEs": "matrícula"
+        },
+        {
+          "termEn": "pulled up",
+          "translationEs": "se detuvo/paró junto a la acera"
+        },
+        {
+          "termEn": "the trunk",
+          "translationEs": "el maletero"
+        },
+        {
+          "termEn": "merging",
+          "translationEs": "incorporándose al tráfico"
+        }
+      ],
+      "challengeSentence": {
+        "en": "The car pulled up and he checked the license plate.",
+        "es": "El coche se detuvo junto a la acera y comprobó la matrícula."
+      },
+      "lines": [
+        {
+          "speaker": null,
+          "en": "Julia stood outside her apartment building, scanning the street for a silver car matching the license plate on her app.",
+          "es": "Julia esperaba fuera de su edificio, buscando en la calle un coche plateado que coincidiera con la matrícula de la aplicación.",
+          "vocabTerms": [
+            "license plate"
+          ]
+        },
+        {
+          "speaker": null,
+          "en": "When it pulled up, she leaned toward the window cautiously.",
+          "es": "Cuando se detuvo junto a la acera, se acercó a la ventanilla con cautela.",
+          "vocabTerms": [
+            "pulled up"
+          ]
+        },
+        {
+          "speaker": "Julia",
+          "en": "Hello. Are you the driver?",
+          "es": "Hola. ¿Es usted el conductor?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Conductor",
+          "en": "Yes, I am. Are you here for Julia?",
+          "es": "Sí, soy yo. ¿Es usted Julia?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Julia",
+          "en": "Yes, that's me.",
+          "es": "Sí, soy yo.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Conductor",
+          "en": "Where are you going today?",
+          "es": "¿Adónde va hoy?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Julia",
+          "en": "To the airport, please.",
+          "es": "Al aeropuerto, por favor.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Julia",
+          "en": "Could you help me with my luggage?",
+          "es": "¿Podría ayudarme con el equipaje?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Conductor",
+          "en": "Certainly.",
+          "es": "Por supuesto.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "He stepped out to load it into the trunk.",
+          "es": "Se bajó para cargarlo en el maletero.",
+          "vocabTerms": [
+            "the trunk"
+          ]
+        },
+        {
+          "speaker": "Julia",
+          "en": "Can I put my suitcase in the trunk myself?",
+          "es": "¿Puedo poner yo misma la maleta en el maletero?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Conductor",
+          "en": "No need, I'll open it for you.",
+          "es": "No hace falta, se lo abro yo.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Conductor",
+          "en": "Is everyone ready?",
+          "es": "¿Están todos listos?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Julia",
+          "en": "Yes, let's go.",
+          "es": "Sí, vámonos.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Julia",
+          "en": "How long will the journey take?",
+          "es": "¿Cuánto va a durar el trayecto?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Conductor",
+          "en": "About twenty minutes.",
+          "es": "Unos veinte minutos.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Julia",
+          "en": "How much will it cost?",
+          "es": "¿Cuánto va a costar?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Conductor",
+          "en": "Around €25.",
+          "es": "Unos 25 €.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Julia",
+          "en": "Is there much traffic today?",
+          "es": "¿Hay mucho tráfico hoy?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Not at the moment, we should be fine, he said reassuringly, merging smoothly onto the main road toward the motorway.",
+          "es": "No, ahora mismo no, todo irá bien, dijo para tranquilizarla, incorporándose con suavidad a la vía principal hacia la autopista.",
+          "vocabTerms": [
+            "merging"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Durante el trayecto",
+      "videoAsset": null,
+      "videoAssetSub": null,
+      "thumbnailAsset": "assets/uber_stories/cover2.png",
+      "vocab": [
+        {
+          "termEn": "steady pace",
+          "translationEs": "ritmo constante"
+        },
+        {
+          "termEn": "toll roads",
+          "translationEs": "autopistas de peaje"
+        },
+        {
+          "termEn": "rolled her shoulders",
+          "translationEs": "estiró los hombros"
+        },
+        {
+          "termEn": "breeze",
+          "translationEs": "brisa"
+        }
+      ],
+      "challengeSentence": {
+        "en": "She rolled her shoulders, enjoying the cool breeze.",
+        "es": "Estiró los hombros, disfrutando de la brisa fresca."
+      },
+      "lines": [
+        {
+          "speaker": null,
+          "en": "As the car settled into a steady pace on the motorway, Julia finally relaxed a little, though she kept glancing at the time.",
+          "es": "Cuando el coche cogió un ritmo constante en la autopista, Julia por fin se relajó un poco, aunque seguía mirando la hora de reojo.",
+          "vocabTerms": [
+            "steady pace"
+          ]
+        },
+        {
+          "speaker": "Julia",
+          "en": "What's the fastest way to get there?",
+          "es": "¿Cuál es la forma más rápida de llegar?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Conductor",
+          "en": "I'll take the motorway, it should be quickest.",
+          "es": "Voy a coger la autopista, debería ser lo más rápido.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Julia",
+          "en": "Could you avoid the toll roads, if possible?",
+          "es": "¿Podría evitar las autopistas de peaje, si es posible?",
+          "vocabTerms": [
+            "toll roads"
+          ]
+        },
+        {
+          "speaker": "Conductor",
+          "en": "Of course.",
+          "es": "Por supuesto.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Julia",
+          "en": "Could you take the quickest route regardless, though? I really can't miss this flight.",
+          "es": "Aunque, ¿podría tomar la ruta más rápida de todas formas? De verdad no puedo perder este vuelo.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Conductor",
+          "en": "Sure, no problem.",
+          "es": "Claro, sin problema.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Julia",
+          "en": "Could you turn the air conditioning on? It’s a bit warm back here.",
+          "es": "¿Podría poner el aire acondicionado? Hace un poco de calor aquí atrás.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Conductor",
+          "en": "Certainly. Is the temperature okay now?",
+          "es": "Por supuesto. ¿Está bien la temperatura ahora?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Julia",
+          "en": "Yes, it's perfect, thank you.",
+          "es": "Sí, está perfecta, gracias.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Julia",
+          "en": "Could you turn the music down just a little?",
+          "es": "¿Podría bajar un poco la música?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Conductor",
+          "en": "Of course.",
+          "es": "Por supuesto.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "A little later, she rolled her shoulders, feeling the need for some fresh air.",
+          "es": "Un poco después, estiró los hombros, sintiendo la necesidad de aire fresco.",
+          "vocabTerms": [
+            "rolled her shoulders"
+          ]
+        },
+        {
+          "speaker": "Conductor",
+          "en": "Would you like me to open the window?",
+          "es": "¿Quiere que abra la ventanilla?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Julia",
+          "en": "Yes, please.",
+          "es": "Sí, por favor.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "The cool breeze immediately helped her nerves settle as the airport signs began appearing along the motorway.",
+          "es": "La brisa fresca la ayudó enseguida a calmar los nervios mientras empezaban a aparecer los carteles del aeropuerto en la autopista.",
+          "vocabTerms": [
+            "breeze"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Llegando al hotel",
+      "videoAsset": null,
+      "videoAssetSub": null,
+      "thumbnailAsset": "assets/uber_stories/cover3.png",
+      "vocab": [
+        {
+          "termEn": "easing off the accelerator",
+          "translationEs": "aflojando el acelerador"
+        },
+        {
+          "termEn": "recognizing",
+          "translationEs": "reconociendo"
+        },
+        {
+          "termEn": "pulling up smoothly",
+          "translationEs": "deteniéndose con suavidad"
+        }
+      ],
+      "challengeSentence": {
+        "en": "He pulled up smoothly, easing off the accelerator.",
+        "es": "Se detuvo con suavidad, aflojando el acelerador."
+      },
+      "lines": [
+        {
+          "speaker": null,
+          "en": "On a different day, a young couple climbed into the back seat of another Uber, tired after a long flight and eager to reach their hotel.",
+          "es": "En otro día, una pareja joven subió al asiento trasero de otro Uber, cansados tras un vuelo largo y con ganas de llegar al hotel.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Mujer",
+          "en": "Are we almost there?",
+          "es": "¿Estamos casi llegando?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Conductor",
+          "en": "Yes, just five more minutes.",
+          "es": "Sí, cinco minutos más.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Marido",
+          "en": "Could you drive a little slower through here? I think I saw our turn.",
+          "es": "¿Podría conducir un poco más despacio por aquí? Creo que he visto nuestro giro.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "The driver eased off the accelerator.",
+          "es": "El conductor aflojó el acelerador.",
+          "vocabTerms": [
+            "easing off the accelerator"
+          ]
+        },
+        {
+          "speaker": "Conductor",
+          "en": "Should I turn left here?",
+          "es": "¿Giro a la izquierda aquí?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Marido",
+          "en": "Yes, that's right.",
+          "es": "Sí, así es.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Conductor",
+          "en": "Should I turn right at the traffic lights?",
+          "es": "¿Giro a la derecha en el semáforo?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Mujer",
+          "en": "Yes, please.",
+          "es": "Sí, por favor.",
+          "vocabTerms": [
+            "recognizing"
+          ]
+        },
+        {
+          "speaker": "Conductor",
+          "en": "Is the entrance on this side?",
+          "es": "¿La entrada está de este lado?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Mujer",
+          "en": "Yes, it is.",
+          "es": "Sí, lo está.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Marido",
+          "en": "Can you stop in front of the hotel?",
+          "es": "¿Puede parar delante del hotel?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "The driver pulled up smoothly beside the entrance.",
+          "es": "El conductor se detuvo con suavidad junto a la entrada.",
+          "vocabTerms": [
+            "pulling up smoothly"
+          ]
+        },
+        {
+          "speaker": "Conductor",
+          "en": "Are you staying at this hotel?",
+          "es": "¿Se alojan en este hotel?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Mujer",
+          "en": "Yes, we have a reservation.",
+          "es": "Sí, tenemos una reserva.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Conductor",
+          "en": "Do you need help with your bags?",
+          "es": "¿Necesitan ayuda con las maletas?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Mujer",
+          "en": "Yes, please.",
+          "es": "Sí, por favor.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Conductor",
+          "en": "Shall I leave your luggage here? Have a nice stay.",
+          "es": "¿Dejo el equipaje aquí? Que tengan una buena estancia.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Mujer",
+          "en": "Thank you.",
+          "es": "Gracias.",
+          "vocabTerms": []
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Pago y despedida",
+      "videoAsset": null,
+      "videoAssetSub": null,
+      "thumbnailAsset": "assets/uber_stories/cover4.png",
+      "vocab": [
+        {
+          "termEn": "the fare",
+          "translationEs": "la tarifa del trayecto"
+        },
+        {
+          "termEn": "keep the change",
+          "translationEs": "quédate con el cambio"
+        },
+        {
+          "termEn": "genuinely touched",
+          "translationEs": "verdaderamente emocionado/agradecido"
+        }
+      ],
+      "challengeSentence": {
+        "en": "He paid the fare and said to keep the change.",
+        "es": "Pagó la tarifa y dijo que se quedara con el cambio."
+      },
+      "lines": [
+        {
+          "speaker": null,
+          "en": "As the ride came to an end, the driver glanced in the mirror at his passenger, a friendly older man who had been chatting the whole way about his trip.",
+          "es": "Cuando el trayecto llegaba a su fin, el conductor miró por el espejo a su pasajero, un señor mayor y simpático que había estado charlando todo el camino sobre su viaje.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Conductor",
+          "en": "Where are you from?",
+          "es": "¿De dónde es usted?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Hombre",
+          "en": "I'm from Spain.",
+          "es": "Soy de España.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Conductor",
+          "en": "Is this your first time here?",
+          "es": "¿Es su primera vez aquí?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Hombre",
+          "en": "Yes, it is.",
+          "es": "Sí, lo es.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Conductor",
+          "en": "Are you here for work or on holiday?",
+          "es": "¿Está aquí por trabajo o de vacaciones?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Hombre",
+          "en": "I'm here on holiday. For one week.",
+          "es": "Estoy de vacaciones. Una semana.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Conductor",
+          "en": "Have you visited this city before?",
+          "es": "¿Había visitado esta ciudad antes?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Hombre",
+          "en": "No, I haven't. It's beautiful.",
+          "es": "No, no la había visitado. Es preciosa.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Conductor",
+          "en": "What's the weather usually like here?",
+          "es": "¿Qué tiempo suele hacer aquí?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Conductor",
+          "en": "It's usually sunny, you got lucky this week.",
+          "es": "Normalmente hace sol, ha tenido suerte esta semana.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": null,
+          "en": "Finally, the car pulled up at the destination.",
+          "es": "Finalmente, el coche se detuvo en el destino.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Conductor",
+          "en": "We've arrived.",
+          "es": "Hemos llegado.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Hombre",
+          "en": "Thank you. How much is the fare?",
+          "es": "Gracias. ¿Cuánto es la tarifa?",
+          "vocabTerms": [
+            "the fare"
+          ]
+        },
+        {
+          "speaker": "Conductor",
+          "en": "It's €18.50.",
+          "es": "Son 18,50 €.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Hombre",
+          "en": "Can I pay by card?",
+          "es": "¿Puedo pagar con tarjeta?",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Conductor",
+          "en": "Yes, of course, though we also accept cash if you prefer.",
+          "es": "Sí, por supuesto, aunque también aceptamos efectivo si lo prefiere.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Hombre",
+          "en": "I'll pay through the app, actually. Keep the change.",
+          "es": "La verdad, voy a pagar por la aplicación. Quédese con el cambio.",
+          "vocabTerms": [
+            "keep the change"
+          ]
+        },
+        {
+          "speaker": null,
+          "en": "Thank you very much, the driver said, genuinely touched.",
+          "es": "Muchas gracias, dijo el conductor, verdaderamente emocionado.",
+          "vocabTerms": [
+            "genuinely touched"
+          ]
+        },
+        {
+          "speaker": "Hombre",
+          "en": "Everything was perfect, thank you for the ride.",
+          "es": "Todo fue perfecto, gracias por el trayecto.",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Conductor",
+          "en": "You're very welcome. Have a great day!",
+          "es": "De nada. ¡Que tenga un buen día!",
+          "vocabTerms": []
+        },
+        {
+          "speaker": "Hombre",
+          "en": "Thank you, you too. Have a safe trip!",
+          "es": "Gracias, igualmente. ¡Buen viaje!",
+          "vocabTerms": []
+        }
+      ]
+    }
+  ]
+}

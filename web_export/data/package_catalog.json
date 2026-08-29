@@ -1,0 +1,50 @@
+[
+  {
+    "id": "hosteleria",
+    "name": "Hostelería",
+    "description": "Vocabulario de restaurantes, bares y hoteles",
+    "emoji": "🍽️"
+  },
+  {
+    "id": "deportes",
+    "name": "Deportes",
+    "description": "Fútbol, gimnasio y competiciones",
+    "emoji": "⚽"
+  },
+  {
+    "id": "escuela",
+    "name": "Escuela",
+    "description": "Aula, exámenes y vida escolar",
+    "emoji": "🎓"
+  },
+  {
+    "id": "viajes",
+    "name": "Viajes",
+    "description": "Aeropuertos, reservas y turismo",
+    "emoji": "✈️"
+  },
+  {
+    "id": "negocios",
+    "name": "Negocios",
+    "description": "Reuniones, oficina y correos",
+    "emoji": "💰"
+  },
+  {
+    "id": "salud",
+    "name": "Salud",
+    "description": "Médico, farmacia y urgencias",
+    "emoji": "🌡️"
+  },
+  {
+    "id": "uber",
+    "name": "Uber / Taxi",
+    "description": "Conductor, direcciones y trayectos",
+    "emoji": "🚕"
+  },
+  {
+    "id": "comercio",
+    "name": "Comercio",
+    "description": "Tiendas, supermercado, farmacia y viajes",
+    "emoji": "🎁"
+  }
+]

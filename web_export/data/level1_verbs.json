@@ -1,0 +1,3395 @@
+[
+  {
+    "index": 0,
+    "verb": "to be",
+    "tense": "Present continuous",
+    "promptEs": "Estamos siendo egoístas.",
+    "translationEn": "We are being selfish.",
+    "imageUrl": "https://images.pexels.com/photos/2821823/pexels-photo-2821823.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/0.mp3"
+  },
+  {
+    "index": 1,
+    "verb": "to be",
+    "tense": "Present perfect",
+    "promptEs": "Hemos estado en Marruecos.",
+    "translationEn": "We have been to Morocco.",
+    "imageUrl": "https://images.pexels.com/photos/38112369/pexels-photo-38112369.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/1.mp3"
+  },
+  {
+    "index": 2,
+    "verb": "to be",
+    "tense": "Past simple",
+    "promptEs": "Éramos jóvenes.",
+    "translationEn": "We were young.",
+    "imageUrl": "https://images.pexels.com/photos/37861762/pexels-photo-37861762.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/2.mp3"
+  },
+  {
+    "index": 3,
+    "verb": "to be",
+    "tense": "Future simple",
+    "promptEs": "Seremos rápidos.",
+    "translationEn": "We will be fast.",
+    "imageUrl": "https://images.pexels.com/photos/7534436/pexels-photo-7534436.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/3.mp3"
+  },
+  {
+    "index": 4,
+    "verb": "to be",
+    "tense": "Going to",
+    "promptEs": "Vamos a llegar tarde.",
+    "translationEn": "We are going to be late.",
+    "imageUrl": "https://images.pexels.com/photos/11790890/pexels-photo-11790890.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/4.mp3"
+  },
+  {
+    "index": 5,
+    "verb": "to be",
+    "tense": "Present simple",
+    "promptEs": "Somos rápidos.",
+    "translationEn": "We are fast.",
+    "imageUrl": "https://images.pexels.com/photos/7534436/pexels-photo-7534436.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/5.mp3"
+  },
+  {
+    "index": 6,
+    "verb": "to have",
+    "tense": "Present continuous",
+    "promptEs": "Estoy desayunando.",
+    "translationEn": "I am having breakfast.",
+    "imageUrl": "https://images.pexels.com/photos/8510654/pexels-photo-8510654.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/6.mp3"
+  },
+  {
+    "index": 7,
+    "verb": "to have",
+    "tense": "Present perfect",
+    "promptEs": "He tenido suficiente.",
+    "translationEn": "I have had enough.",
+    "imageUrl": "https://images.pexels.com/photos/8110779/pexels-photo-8110779.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/7.mp3"
+  },
+  {
+    "index": 8,
+    "verb": "to have",
+    "tense": "Past simple",
+    "promptEs": "Tomé un café.",
+    "translationEn": "I had a coffee.",
+    "imageUrl": "https://images.pexels.com/photos/997670/pexels-photo-997670.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/8.mp3"
+  },
+  {
+    "index": 9,
+    "verb": "to have",
+    "tense": "Future simple",
+    "promptEs": "Tendré una reunión.",
+    "translationEn": "I will have a meeting.",
+    "imageUrl": "https://images.pexels.com/photos/8070723/pexels-photo-8070723.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/9.mp3"
+  },
+  {
+    "index": 10,
+    "verb": "to have",
+    "tense": "Going to",
+    "promptEs": "Voy a almorzar.",
+    "translationEn": "I am going to have lunch.",
+    "imageUrl": "https://images.pexels.com/photos/28935581/pexels-photo-28935581.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/10.mp3"
+  },
+  {
+    "index": 11,
+    "verb": "to have",
+    "tense": "Present simple",
+    "promptEs": "Tengo un perro.",
+    "translationEn": "I have a dog.",
+    "imageUrl": "https://images.pexels.com/photos/144608/pexels-photo-144608.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/11.mp3"
+  },
+  {
+    "index": 12,
+    "verb": "to can",
+    "tense": "Present simple",
+    "promptEs": "Puedes ayudarme.",
+    "translationEn": "You can help me.",
+    "imageUrl": "https://images.pexels.com/photos/5961630/pexels-photo-5961630.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/12.mp3"
+  },
+  {
+    "index": 13,
+    "verb": "to can",
+    "tense": "Present perfect",
+    "promptEs": "Has podido hacerlo.",
+    "translationEn": "You have been able to do it.",
+    "imageUrl": "https://images.pexels.com/photos/9571866/pexels-photo-9571866.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/13.mp3"
+  },
+  {
+    "index": 14,
+    "verb": "to can",
+    "tense": "Past simple",
+    "promptEs": "Podías trabajar.",
+    "translationEn": "You could work.",
+    "imageUrl": "https://images.pexels.com/photos/34123/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/14.mp3"
+  },
+  {
+    "index": 15,
+    "verb": "to can",
+    "tense": "Future simple",
+    "promptEs": "Podrás hablar.",
+    "translationEn": "You will be able to speak.",
+    "imageUrl": "https://images.pexels.com/photos/8107287/pexels-photo-8107287.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/15.mp3"
+  },
+  {
+    "index": 16,
+    "verb": "to can",
+    "tense": "Going to",
+    "promptEs": "Vas a poder escuchar.",
+    "translationEn": "You are going to be able to hear.",
+    "imageUrl": "https://images.pexels.com/photos/134402/pexels-photo-134402.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/16.mp3"
+  },
+  {
+    "index": 17,
+    "verb": "to know",
+    "tense": "Present simple",
+    "promptEs": "Ellos saben la verdad.",
+    "translationEn": "They know the truth.",
+    "imageUrl": "https://images.pexels.com/photos/6037812/pexels-photo-6037812.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/17.mp3"
+  },
+  {
+    "index": 18,
+    "verb": "to know",
+    "tense": "Present perfect",
+    "promptEs": "Ellos han sabido del problema.",
+    "translationEn": "They have known about the problem.",
+    "imageUrl": "https://images.pexels.com/photos/2882509/pexels-photo-2882509.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/18.mp3"
+  },
+  {
+    "index": 19,
+    "verb": "to know",
+    "tense": "Past simple",
+    "promptEs": "Ellos se conocían.",
+    "translationEn": "They knew each other.",
+    "imageUrl": "https://images.pexels.com/photos/11203949/pexels-photo-11203949.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/19.mp3"
+  },
+  {
+    "index": 20,
+    "verb": "to know",
+    "tense": "Future simple",
+    "promptEs": "Ellos no sabrán la respuesta.",
+    "translationEn": "They won't know the answer.",
+    "imageUrl": "https://images.pexels.com/photos/208494/pexels-photo-208494.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/20.mp3"
+  },
+  {
+    "index": 21,
+    "verb": "to know",
+    "tense": "Going to",
+    "promptEs": "Ellos van a saber lo que pasó.",
+    "translationEn": "They are going to know what happened.",
+    "imageUrl": "https://images.pexels.com/photos/15835599/pexels-photo-15835599.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/21.mp3"
+  },
+  {
+    "index": 22,
+    "verb": "to want",
+    "tense": "Present simple",
+    "promptEs": "Quieres chocolate.",
+    "translationEn": "You want chocolate.",
+    "imageUrl": "https://images.pexels.com/photos/4113305/pexels-photo-4113305.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/22.mp3"
+  },
+  {
+    "index": 23,
+    "verb": "to want",
+    "tense": "Present perfect",
+    "promptEs": "Has querido un coche.",
+    "translationEn": "You have wanted a car.",
+    "imageUrl": "https://images.pexels.com/photos/13058812/pexels-photo-13058812.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/23.mp3"
+  },
+  {
+    "index": 24,
+    "verb": "to want",
+    "tense": "Past simple",
+    "promptEs": "Querías este trabajo.",
+    "translationEn": "You wanted this job.",
+    "imageUrl": "https://images.pexels.com/photos/5598292/pexels-photo-5598292.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/24.mp3"
+  },
+  {
+    "index": 25,
+    "verb": "to want",
+    "tense": "Future simple",
+    "promptEs": "Querrás una casa.",
+    "translationEn": "You will want a house.",
+    "imageUrl": "https://images.pexels.com/photos/8963083/pexels-photo-8963083.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/25.mp3"
+  },
+  {
+    "index": 26,
+    "verb": "to want",
+    "tense": "Going to",
+    "promptEs": "Vas a querer tiempo libre.",
+    "translationEn": "You are going to want free time.",
+    "imageUrl": "https://images.pexels.com/photos/7555188/pexels-photo-7555188.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/26.mp3"
+  },
+  {
+    "index": 27,
+    "verb": "to need",
+    "tense": "Present simple",
+    "promptEs": "Él necesita ropa.",
+    "translationEn": "He needs clothes.",
+    "imageUrl": "https://images.pexels.com/photos/34222316/pexels-photo-34222316.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/27.mp3"
+  },
+  {
+    "index": 28,
+    "verb": "to need",
+    "tense": "Present perfect",
+    "promptEs": "Él ha necesitado ayuda.",
+    "translationEn": "He has needed help.",
+    "imageUrl": "https://images.pexels.com/photos/8078392/pexels-photo-8078392.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/28.mp3"
+  },
+  {
+    "index": 29,
+    "verb": "to need",
+    "tense": "Past simple",
+    "promptEs": "Él necesitaba dinero.",
+    "translationEn": "He needed money.",
+    "imageUrl": "https://images.pexels.com/photos/7927581/pexels-photo-7927581.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/29.mp3"
+  },
+  {
+    "index": 30,
+    "verb": "to need",
+    "tense": "Future simple",
+    "promptEs": "Él necesitará un descanso.",
+    "translationEn": "He will need a break.",
+    "imageUrl": "https://images.pexels.com/photos/9830110/pexels-photo-9830110.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/30.mp3"
+  },
+  {
+    "index": 31,
+    "verb": "to need",
+    "tense": "Going to",
+    "promptEs": "Él va a necesitar una niñera.",
+    "translationEn": "He is going to need a babysitter.",
+    "imageUrl": "https://images.pexels.com/photos/755049/pexels-photo-755049.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/31.mp3"
+  },
+  {
+    "index": 32,
+    "verb": "to go",
+    "tense": "Present continuous",
+    "promptEs": "Ella va al trabajo.",
+    "translationEn": "She is going to work.",
+    "imageUrl": "https://images.pexels.com/photos/34123/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/32.mp3"
+  },
+  {
+    "index": 33,
+    "verb": "to go",
+    "tense": "Present perfect",
+    "promptEs": "Ella ha ido al supermercado.",
+    "translationEn": "She has gone to the supermarket.",
+    "imageUrl": "https://images.pexels.com/photos/1722380/pexels-photo-1722380.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/33.mp3"
+  },
+  {
+    "index": 34,
+    "verb": "to go",
+    "tense": "Past simple",
+    "promptEs": "Ella fue al centro comercial.",
+    "translationEn": "She went to the mall.",
+    "imageUrl": "https://images.pexels.com/photos/33803366/pexels-photo-33803366.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/34.mp3"
+  },
+  {
+    "index": 35,
+    "verb": "to go",
+    "tense": "Future simple",
+    "promptEs": "Ella irá con él.",
+    "translationEn": "She will go with him.",
+    "imageUrl": "https://images.pexels.com/photos/32070136/pexels-photo-32070136.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/35.mp3"
+  },
+  {
+    "index": 36,
+    "verb": "to go",
+    "tense": "Going to",
+    "promptEs": "Ella va a ir al cine.",
+    "translationEn": "She is going to go to the cinema.",
+    "imageUrl": "https://images.pexels.com/photos/7234451/pexels-photo-7234451.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/36.mp3"
+  },
+  {
+    "index": 37,
+    "verb": "to go",
+    "tense": "Present simple",
+    "promptEs": "Ella va a la escuela.",
+    "translationEn": "She goes to school.",
+    "imageUrl": "https://images.pexels.com/photos/31185765/pexels-photo-31185765.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/37.mp3"
+  },
+  {
+    "index": 38,
+    "verb": "to do",
+    "tense": "Present continuous",
+    "promptEs": "Estoy haciendo los deberes.",
+    "translationEn": "I am doing my homework.",
+    "imageUrl": "https://images.pexels.com/photos/5303550/pexels-photo-5303550.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/38.mp3"
+  },
+  {
+    "index": 39,
+    "verb": "to do",
+    "tense": "Present perfect",
+    "promptEs": "He fregado los platos.",
+    "translationEn": "I have done the dishes.",
+    "imageUrl": "https://images.pexels.com/photos/15040068/pexels-photo-15040068.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/39.mp3"
+  },
+  {
+    "index": 40,
+    "verb": "to do",
+    "tense": "Past simple",
+    "promptEs": "Hice la compra.",
+    "translationEn": "I did the shopping.",
+    "imageUrl": "https://images.pexels.com/photos/264502/pexels-photo-264502.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/40.mp3"
+  },
+  {
+    "index": 41,
+    "verb": "to do",
+    "tense": "Future simple",
+    "promptEs": "Haré la colada.",
+    "translationEn": "I will do the laundry.",
+    "imageUrl": "https://images.pexels.com/photos/2927523/pexels-photo-2927523.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/41.mp3"
+  },
+  {
+    "index": 42,
+    "verb": "to do",
+    "tense": "Going to",
+    "promptEs": "Voy a hacer el curso.",
+    "translationEn": "I am going to do the course.",
+    "imageUrl": "https://images.pexels.com/photos/7983565/pexels-photo-7983565.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/42.mp3"
+  },
+  {
+    "index": 43,
+    "verb": "to do",
+    "tense": "Present simple",
+    "promptEs": "Hago ejercicio.",
+    "translationEn": "I do exercise.",
+    "imageUrl": "https://images.pexels.com/photos/15917308/pexels-photo-15917308.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/43.mp3"
+  },
+  {
+    "index": 44,
+    "verb": "to get",
+    "tense": "Present continuous",
+    "promptEs": "Te estás cansando.",
+    "translationEn": "You are getting tired.",
+    "imageUrl": "https://images.pexels.com/photos/4712407/pexels-photo-4712407.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/44.mp3"
+  },
+  {
+    "index": 45,
+    "verb": "to get",
+    "tense": "Present perfect",
+    "promptEs": "Has conseguido dinero.",
+    "translationEn": "You have got money.",
+    "imageUrl": "https://images.pexels.com/photos/928187/pexels-photo-928187.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/45.mp3"
+  },
+  {
+    "index": 46,
+    "verb": "to get",
+    "tense": "Past simple",
+    "promptEs": "Conseguiste el trabajo.",
+    "translationEn": "You got the job.",
+    "imageUrl": "https://images.pexels.com/photos/7061769/pexels-photo-7061769.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/46.mp3"
+  },
+  {
+    "index": 47,
+    "verb": "to get",
+    "tense": "Future simple",
+    "promptEs": "Te pondrás más delgado.",
+    "translationEn": "You will get slimmer.",
+    "imageUrl": "https://images.pexels.com/photos/7432/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/47.mp3"
+  },
+  {
+    "index": 48,
+    "verb": "to get",
+    "tense": "Going to",
+    "promptEs": "Te vas a recuperar.",
+    "translationEn": "You are going to get better.",
+    "imageUrl": "https://images.pexels.com/photos/8110784/pexels-photo-8110784.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/48.mp3"
+  },
+  {
+    "index": 49,
+    "verb": "to get",
+    "tense": "Present simple",
+    "promptEs": "Recibes correos electrónicos.",
+    "translationEn": "You get emails.",
+    "imageUrl": "https://images.pexels.com/photos/19891092/pexels-photo-19891092.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/49.mp3"
+  },
+  {
+    "index": 50,
+    "verb": "to make",
+    "tense": "Present continuous",
+    "promptEs": "Están haciendo un pastel.",
+    "translationEn": "They are making a cake.",
+    "imageUrl": "https://images.pexels.com/photos/8477783/pexels-photo-8477783.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/50.mp3"
+  },
+  {
+    "index": 51,
+    "verb": "to make",
+    "tense": "Present perfect",
+    "promptEs": "Han cometido errores.",
+    "translationEn": "They have made mistakes.",
+    "imageUrl": "https://images.pexels.com/photos/8363153/pexels-photo-8363153.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/51.mp3"
+  },
+  {
+    "index": 52,
+    "verb": "to make",
+    "tense": "Past simple",
+    "promptEs": "Hicieron progresos.",
+    "translationEn": "They made progress.",
+    "imageUrl": "https://images.pexels.com/photos/38459240/pexels-photo-38459240.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/52.mp3"
+  },
+  {
+    "index": 53,
+    "verb": "to make",
+    "tense": "Future simple",
+    "promptEs": "Harán la cena.",
+    "translationEn": "They will make dinner.",
+    "imageUrl": "https://images.pexels.com/photos/15093486/pexels-photo-15093486.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/53.mp3"
+  },
+  {
+    "index": 54,
+    "verb": "to make",
+    "tense": "Going to",
+    "promptEs": "Van a crear una página web.",
+    "translationEn": "They are going to make a website.",
+    "imageUrl": "https://images.pexels.com/photos/326514/pexels-photo-326514.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/54.mp3"
+  },
+  {
+    "index": 55,
+    "verb": "to make",
+    "tense": "Present simple",
+    "promptEs": "Preparan el almuerzo.",
+    "translationEn": "They make lunch.",
+    "imageUrl": "https://images.pexels.com/photos/10755732/pexels-photo-10755732.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/55.mp3"
+  },
+  {
+    "index": 56,
+    "verb": "to follow",
+    "tense": "Present continuous",
+    "promptEs": "Él la está siguiendo.",
+    "translationEn": "He is following her.",
+    "imageUrl": "https://images.pexels.com/photos/249100/pexels-photo-249100.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/56.mp3"
+  },
+  {
+    "index": 57,
+    "verb": "to follow",
+    "tense": "Present perfect",
+    "promptEs": "Él ha seguido la ley.",
+    "translationEn": "He has followed the law.",
+    "imageUrl": "https://images.pexels.com/photos/4049526/pexels-photo-4049526.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/57.mp3"
+  },
+  {
+    "index": 58,
+    "verb": "to follow",
+    "tense": "Past simple",
+    "promptEs": "Él siguió las normas.",
+    "translationEn": "He followed the rules.",
+    "imageUrl": "https://images.pexels.com/photos/4027658/pexels-photo-4027658.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/58.mp3"
+  },
+  {
+    "index": 59,
+    "verb": "to follow",
+    "tense": "Future simple",
+    "promptEs": "Él seguirá tu consejo.",
+    "translationEn": "He will follow your advice.",
+    "imageUrl": "https://images.pexels.com/photos/5961651/pexels-photo-5961651.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/59.mp3"
+  },
+  {
+    "index": 60,
+    "verb": "to follow",
+    "tense": "Going to",
+    "promptEs": "Él va a seguir las instrucciones.",
+    "translationEn": "He is going to follow the instructions.",
+    "imageUrl": "https://images.pexels.com/photos/31904885/pexels-photo-31904885.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/60.mp3"
+  },
+  {
+    "index": 61,
+    "verb": "to follow",
+    "tense": "Present simple",
+    "promptEs": "Él te sigue.",
+    "translationEn": "He follows you.",
+    "imageUrl": "https://images.pexels.com/photos/249100/pexels-photo-249100.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/61.mp3"
+  },
+  {
+    "index": 62,
+    "verb": "to take",
+    "tense": "Present continuous",
+    "promptEs": "Estoy tomando las pastillas.",
+    "translationEn": "I am taking the pills.",
+    "imageUrl": "https://images.pexels.com/photos/11363786/pexels-photo-11363786.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/62.mp3"
+  },
+  {
+    "index": 63,
+    "verb": "to take",
+    "tense": "Present perfect",
+    "promptEs": "He tomado el autobús.",
+    "translationEn": "I have taken the bus.",
+    "imageUrl": "https://images.pexels.com/photos/16129948/pexels-photo-16129948.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/63.mp3"
+  },
+  {
+    "index": 64,
+    "verb": "to take",
+    "tense": "Past simple",
+    "promptEs": "Saqué fotos.",
+    "translationEn": "I took photos.",
+    "imageUrl": "https://images.pexels.com/photos/1449672/pexels-photo-1449672.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/64.mp3"
+  },
+  {
+    "index": 65,
+    "verb": "to take",
+    "tense": "Future simple",
+    "promptEs": "Llevaré un paraguas.",
+    "translationEn": "I will take an umbrella.",
+    "imageUrl": "https://images.pexels.com/photos/5927565/pexels-photo-5927565.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/65.mp3"
+  },
+  {
+    "index": 66,
+    "verb": "to take",
+    "tense": "Going to",
+    "promptEs": "Voy a tomar un avión.",
+    "translationEn": "I am going to take a plane.",
+    "imageUrl": "https://images.pexels.com/photos/35237013/pexels-photo-35237013.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/66.mp3"
+  },
+  {
+    "index": 67,
+    "verb": "to take",
+    "tense": "Present simple",
+    "promptEs": "Tomo clases.",
+    "translationEn": "I take lessons.",
+    "imageUrl": "https://images.pexels.com/photos/5905465/pexels-photo-5905465.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/67.mp3"
+  },
+  {
+    "index": 68,
+    "verb": "to begin",
+    "tense": "Present continuous",
+    "promptEs": "Estoy empezando a disfrutar.",
+    "translationEn": "I am beginning to enjoy.",
+    "imageUrl": "https://images.pexels.com/photos/33802177/pexels-photo-33802177.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/68.mp3"
+  },
+  {
+    "index": 69,
+    "verb": "to begin",
+    "tense": "Present perfect",
+    "promptEs": "He comenzado la lección.",
+    "translationEn": "I have begun the lesson.",
+    "imageUrl": "https://images.pexels.com/photos/35548841/pexels-photo-35548841.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/69.mp3"
+  },
+  {
+    "index": 70,
+    "verb": "to begin",
+    "tense": "Past simple",
+    "promptEs": "Empecé a llorar.",
+    "translationEn": "I began to cry.",
+    "imageUrl": "https://images.pexels.com/photos/47090/baby-tears-small-child-sad-47090.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/70.mp3"
+  },
+  {
+    "index": 71,
+    "verb": "to begin",
+    "tense": "Future simple",
+    "promptEs": "Empezaré el proyecto.",
+    "translationEn": "I will begin the project.",
+    "imageUrl": "https://images.pexels.com/photos/6480812/pexels-photo-6480812.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/71.mp3"
+  },
+  {
+    "index": 72,
+    "verb": "to begin",
+    "tense": "Going to",
+    "promptEs": "Voy a empezar mi nuevo trabajo.",
+    "translationEn": "I am going to begin my new job.",
+    "imageUrl": "https://images.pexels.com/photos/31713452/pexels-photo-31713452.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/72.mp3"
+  },
+  {
+    "index": 73,
+    "verb": "to begin",
+    "tense": "Present simple",
+    "promptEs": "Empiezo mi entrenamiento.",
+    "translationEn": "I begin my workout.",
+    "imageUrl": "https://images.pexels.com/photos/4498573/pexels-photo-4498573.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/73.mp3"
+  },
+  {
+    "index": 74,
+    "verb": "to come",
+    "tense": "Present continuous",
+    "promptEs": "Vienes esta noche.",
+    "translationEn": "You are coming tonight.",
+    "imageUrl": "https://images.pexels.com/photos/5961731/pexels-photo-5961731.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/74.mp3"
+  },
+  {
+    "index": 75,
+    "verb": "to come",
+    "tense": "Present perfect",
+    "promptEs": "Has recorrido un largo camino.",
+    "translationEn": "You have come a long way.",
+    "imageUrl": "https://images.pexels.com/photos/1930422/pexels-photo-1930422.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/75.mp3"
+  },
+  {
+    "index": 76,
+    "verb": "to come",
+    "tense": "Past simple",
+    "promptEs": "Viniste a la fiesta.",
+    "translationEn": "You came to the party.",
+    "imageUrl": "https://images.pexels.com/photos/23495683/pexels-photo-23495683.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/76.mp3"
+  },
+  {
+    "index": 77,
+    "verb": "to come",
+    "tense": "Future simple",
+    "promptEs": "Vendrás pronto.",
+    "translationEn": "You will come early.",
+    "imageUrl": "https://images.pexels.com/photos/9126247/pexels-photo-9126247.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/77.mp3"
+  },
+  {
+    "index": 78,
+    "verb": "to come",
+    "tense": "Going to",
+    "promptEs": "Vas a venir preparado.",
+    "translationEn": "You are going to come prepared.",
+    "imageUrl": "https://images.pexels.com/photos/5491062/pexels-photo-5491062.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/78.mp3"
+  },
+  {
+    "index": 79,
+    "verb": "to come",
+    "tense": "Present simple",
+    "promptEs": "Eres de España.",
+    "translationEn": "You come from Spain.",
+    "imageUrl": "https://images.pexels.com/photos/8430378/pexels-photo-8430378.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/79.mp3"
+  },
+  {
+    "index": 80,
+    "verb": "to give",
+    "tense": "Present continuous",
+    "promptEs": "Estás dando oportunidades.",
+    "translationEn": "You are giving chances.",
+    "imageUrl": "https://images.pexels.com/photos/32240409/pexels-photo-32240409.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/80.mp3"
+  },
+  {
+    "index": 81,
+    "verb": "to give",
+    "tense": "Present perfect",
+    "promptEs": "Has dado información.",
+    "translationEn": "You have given information.",
+    "imageUrl": "https://images.pexels.com/photos/2882571/pexels-photo-2882571.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/81.mp3"
+  },
+  {
+    "index": 82,
+    "verb": "to give",
+    "tense": "Past simple",
+    "promptEs": "Diste algunos juguetes.",
+    "translationEn": "You gave some toys.",
+    "imageUrl": "https://images.pexels.com/photos/19305990/pexels-photo-19305990.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/82.mp3"
+  },
+  {
+    "index": 83,
+    "verb": "to give",
+    "tense": "Future simple",
+    "promptEs": "Darás regalos.",
+    "translationEn": "You will give presents.",
+    "imageUrl": "https://images.pexels.com/photos/6334690/pexels-photo-6334690.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/83.mp3"
+  },
+  {
+    "index": 84,
+    "verb": "to give",
+    "tense": "Going to",
+    "promptEs": "Vas a dar apoyo.",
+    "translationEn": "You are going to give support.",
+    "imageUrl": "https://images.pexels.com/photos/7345444/pexels-photo-7345444.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/84.mp3"
+  },
+  {
+    "index": 85,
+    "verb": "to give",
+    "tense": "Present simple",
+    "promptEs": "Das mucho.",
+    "translationEn": "You give a lot.",
+    "imageUrl": "https://images.pexels.com/photos/10844847/pexels-photo-10844847.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/85.mp3"
+  },
+  {
+    "index": 86,
+    "verb": "to use",
+    "tense": "Present continuous",
+    "promptEs": "Estoy usando tu teléfono.",
+    "translationEn": "I am using your phone.",
+    "imageUrl": "https://images.pexels.com/photos/17801590/pexels-photo-17801590.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/86.mp3"
+  },
+  {
+    "index": 87,
+    "verb": "to use",
+    "tense": "Present perfect",
+    "promptEs": "He usado su ordenador.",
+    "translationEn": "I have used his computer.",
+    "imageUrl": "https://images.pexels.com/photos/5745519/pexels-photo-5745519.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/87.mp3"
+  },
+  {
+    "index": 88,
+    "verb": "to use",
+    "tense": "Past simple",
+    "promptEs": "Usé un traductor.",
+    "translationEn": "I used a translator.",
+    "imageUrl": "https://images.pexels.com/photos/267669/pexels-photo-267669.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/88.mp3"
+  },
+  {
+    "index": 89,
+    "verb": "to use",
+    "tense": "Future simple",
+    "promptEs": "Usaré el coche.",
+    "translationEn": "I will use the car.",
+    "imageUrl": "https://images.pexels.com/photos/38513238/pexels-photo-38513238.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/89.mp3"
+  },
+  {
+    "index": 90,
+    "verb": "to use",
+    "tense": "Going to",
+    "promptEs": "Voy a usar los ahorros.",
+    "translationEn": "I am going to use the savings.",
+    "imageUrl": "https://images.pexels.com/photos/7680560/pexels-photo-7680560.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/90.mp3"
+  },
+  {
+    "index": 91,
+    "verb": "to use",
+    "tense": "Present simple",
+    "promptEs": "Uso la tarjeta de crédito.",
+    "translationEn": "I use credit card.",
+    "imageUrl": "https://images.pexels.com/photos/4841691/pexels-photo-4841691.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/91.mp3"
+  },
+  {
+    "index": 92,
+    "verb": "to find",
+    "tense": "Present continuous",
+    "promptEs": "Estamos encontrando errores.",
+    "translationEn": "We are finding mistakes.",
+    "imageUrl": "https://images.pexels.com/photos/15223238/pexels-photo-15223238.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/92.mp3"
+  },
+  {
+    "index": 93,
+    "verb": "to find",
+    "tense": "Present perfect",
+    "promptEs": "He encontrado las llaves.",
+    "translationEn": "I have found the keys.",
+    "imageUrl": "https://images.pexels.com/photos/12753554/pexels-photo-12753554.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/93.mp3"
+  },
+  {
+    "index": 94,
+    "verb": "to find",
+    "tense": "Past simple",
+    "promptEs": "Encontré un sitio.",
+    "translationEn": "I found a spot.",
+    "imageUrl": "https://images.pexels.com/photos/38817213/pexels-photo-38817213.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/94.mp3"
+  },
+  {
+    "index": 95,
+    "verb": "to find",
+    "tense": "Future simple",
+    "promptEs": "Encontraré las gafas.",
+    "translationEn": "I will find the glasses.",
+    "imageUrl": "https://images.pexels.com/photos/906055/pexels-photo-906055.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/95.mp3"
+  },
+  {
+    "index": 96,
+    "verb": "to find",
+    "tense": "Going to",
+    "promptEs": "Voy a encontrar las respuestas.",
+    "translationEn": "I am going to find the answers.",
+    "imageUrl": "https://images.pexels.com/photos/208494/pexels-photo-208494.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/96.mp3"
+  },
+  {
+    "index": 97,
+    "verb": "to find",
+    "tense": "Present simple",
+    "promptEs": "Encuentro dinero.",
+    "translationEn": "I find money.",
+    "imageUrl": "https://images.pexels.com/photos/906055/pexels-photo-906055.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/97.mp3"
+  },
+  {
+    "index": 98,
+    "verb": "to tell",
+    "tense": "Present continuous",
+    "promptEs": "Estamos diciendo la verdad.",
+    "translationEn": "We are telling the truth.",
+    "imageUrl": "https://images.pexels.com/photos/3952221/pexels-photo-3952221.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/98.mp3"
+  },
+  {
+    "index": 99,
+    "verb": "to tell",
+    "tense": "Present perfect",
+    "promptEs": "Hemos contado todo.",
+    "translationEn": "We have told everything.",
+    "imageUrl": "https://images.pexels.com/photos/10767940/pexels-photo-10767940.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/99.mp3"
+  },
+  {
+    "index": 100,
+    "verb": "to tell",
+    "tense": "Past simple",
+    "promptEs": "Le dijimos a nuestros padres.",
+    "translationEn": "We told our parents.",
+    "imageUrl": "https://images.pexels.com/photos/7946326/pexels-photo-7946326.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/100.mp3"
+  },
+  {
+    "index": 101,
+    "verb": "to tell",
+    "tense": "Future simple",
+    "promptEs": "Contaremos las noticias.",
+    "translationEn": "We will tell the news.",
+    "imageUrl": "https://images.pexels.com/photos/3944425/pexels-photo-3944425.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/101.mp3"
+  },
+  {
+    "index": 102,
+    "verb": "to tell",
+    "tense": "Going to",
+    "promptEs": "Se lo vamos a contar a todos.",
+    "translationEn": "We are going to tell everyone.",
+    "imageUrl": "https://images.pexels.com/photos/8088500/pexels-photo-8088500.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/102.mp3"
+  },
+  {
+    "index": 103,
+    "verb": "to tell",
+    "tense": "Present simple",
+    "promptEs": "Contamos una historia.",
+    "translationEn": "We tell a story.",
+    "imageUrl": "https://images.pexels.com/photos/8317825/pexels-photo-8317825.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/103.mp3"
+  },
+  {
+    "index": 104,
+    "verb": "to listen",
+    "tense": "Present continuous",
+    "promptEs": "Estás escuchando con atención.",
+    "translationEn": "You are listening carefully.",
+    "imageUrl": "https://images.pexels.com/photos/3779448/pexels-photo-3779448.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/104.mp3"
+  },
+  {
+    "index": 105,
+    "verb": "to listen",
+    "tense": "Present perfect",
+    "promptEs": "Has escuchado la radio.",
+    "translationEn": "You have listened to the radio.",
+    "imageUrl": "https://images.pexels.com/photos/9295/vintage-music-business-shop.jpg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/105.mp3"
+  },
+  {
+    "index": 106,
+    "verb": "to listen",
+    "tense": "Past simple",
+    "promptEs": "Escuchaste al profesor.",
+    "translationEn": "You listened the teacher.",
+    "imageUrl": "https://images.pexels.com/photos/5212340/pexels-photo-5212340.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/106.mp3"
+  },
+  {
+    "index": 107,
+    "verb": "to listen",
+    "tense": "Future simple",
+    "promptEs": "Escucharás a tu madre.",
+    "translationEn": "You will listen to your mom.",
+    "imageUrl": "https://images.pexels.com/photos/4971147/pexels-photo-4971147.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/107.mp3"
+  },
+  {
+    "index": 108,
+    "verb": "to listen",
+    "tense": "Going to",
+    "promptEs": "Me vas a escuchar.",
+    "translationEn": "You are going to listen to me.",
+    "imageUrl": "https://images.pexels.com/photos/3779448/pexels-photo-3779448.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/108.mp3"
+  },
+  {
+    "index": 109,
+    "verb": "to listen",
+    "tense": "Present simple",
+    "promptEs": "Le escuchas a él.",
+    "translationEn": "You listen to him.",
+    "imageUrl": "https://images.pexels.com/photos/3779448/pexels-photo-3779448.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/109.mp3"
+  },
+  {
+    "index": 110,
+    "verb": "to organize",
+    "tense": "Present continuous",
+    "promptEs": "Estás organizando tu habitación.",
+    "translationEn": "You are organizing your room.",
+    "imageUrl": "https://images.pexels.com/photos/36906953/pexels-photo-36906953.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/110.mp3"
+  },
+  {
+    "index": 111,
+    "verb": "to organize",
+    "tense": "Present perfect",
+    "promptEs": "Has organizado el evento.",
+    "translationEn": "You have organized the event.",
+    "imageUrl": "https://images.pexels.com/photos/50675/banquet-wedding-society-deco-50675.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/111.mp3"
+  },
+  {
+    "index": 112,
+    "verb": "to organize",
+    "tense": "Past simple",
+    "promptEs": "Organizaste tus cosas.",
+    "translationEn": "You organized your things.",
+    "imageUrl": "https://images.pexels.com/photos/6193920/pexels-photo-6193920.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/112.mp3"
+  },
+  {
+    "index": 113,
+    "verb": "to organize",
+    "tense": "Future simple",
+    "promptEs": "Organizarás los documentos.",
+    "translationEn": "You will organize the documents.",
+    "imageUrl": "https://images.pexels.com/photos/4792286/pexels-photo-4792286.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/113.mp3"
+  },
+  {
+    "index": 114,
+    "verb": "to organize",
+    "tense": "Going to",
+    "promptEs": "Vas a organizar la reunión.",
+    "translationEn": "You are going to organize the meeting.",
+    "imageUrl": "https://images.pexels.com/photos/10347152/pexels-photo-10347152.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/114.mp3"
+  },
+  {
+    "index": 115,
+    "verb": "to organize",
+    "tense": "Present simple",
+    "promptEs": "Organizas la casa.",
+    "translationEn": "You organize the house.",
+    "imageUrl": "https://images.pexels.com/photos/34558042/pexels-photo-34558042.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/115.mp3"
+  },
+  {
+    "index": 116,
+    "verb": "to become",
+    "tense": "Present continuous",
+    "promptEs": "Ella se está volviendo más responsable.",
+    "translationEn": "She is becoming more responsible.",
+    "imageUrl": "https://images.pexels.com/photos/5961713/pexels-photo-5961713.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/116.mp3"
+  },
+  {
+    "index": 117,
+    "verb": "to become",
+    "tense": "Present perfect",
+    "promptEs": "Ella se ha convertido en madre.",
+    "translationEn": "She has become a father.",
+    "imageUrl": "https://images.pexels.com/photos/69096/pexels-photo-69096.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/117.mp3"
+  },
+  {
+    "index": 118,
+    "verb": "to become",
+    "tense": "Past simple",
+    "promptEs": "Ella se convirtió en chef.",
+    "translationEn": "She became a chef.",
+    "imageUrl": "https://images.pexels.com/photos/4590943/pexels-photo-4590943.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/118.mp3"
+  },
+  {
+    "index": 119,
+    "verb": "to become",
+    "tense": "Future simple",
+    "promptEs": "Ella se convertirá en arquitecta.",
+    "translationEn": "She will become an architect.",
+    "imageUrl": "https://images.pexels.com/photos/6615107/pexels-photo-6615107.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/119.mp3"
+  },
+  {
+    "index": 120,
+    "verb": "to become",
+    "tense": "Going to",
+    "promptEs": "Ella va a tener éxito.",
+    "translationEn": "She is going to become successful.",
+    "imageUrl": "https://images.pexels.com/photos/5961713/pexels-photo-5961713.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/120.mp3"
+  },
+  {
+    "index": 121,
+    "verb": "to become",
+    "tense": "Present simple",
+    "promptEs": "Ella se vuelve famosa.",
+    "translationEn": "She becomes famous.",
+    "imageUrl": "https://images.pexels.com/photos/8198560/pexels-photo-8198560.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/121.mp3"
+  },
+  {
+    "index": 122,
+    "verb": "to leave",
+    "tense": "Present continuous",
+    "promptEs": "Ellos se están yendo ahora.",
+    "translationEn": "They are leaving now.",
+    "imageUrl": "https://images.pexels.com/photos/5939144/pexels-photo-5939144.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/122.mp3"
+  },
+  {
+    "index": 123,
+    "verb": "to leave",
+    "tense": "Present perfect",
+    "promptEs": "Ellos han dejado un mensaje.",
+    "translationEn": "They have left a message.",
+    "imageUrl": "https://images.pexels.com/photos/235975/pexels-photo-235975.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/123.mp3"
+  },
+  {
+    "index": 124,
+    "verb": "to leave",
+    "tense": "Past simple",
+    "promptEs": "Ellos se fueron ayer.",
+    "translationEn": "They left yesterday.",
+    "imageUrl": "https://images.pexels.com/photos/36275141/pexels-photo-36275141.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/124.mp3"
+  },
+  {
+    "index": 125,
+    "verb": "to leave",
+    "tense": "Future simple",
+    "promptEs": "Ellos dejarán la ciudad.",
+    "translationEn": "They will leave the city.",
+    "imageUrl": "https://images.pexels.com/photos/14754006/pexels-photo-14754006.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/125.mp3"
+  },
+  {
+    "index": 126,
+    "verb": "to leave",
+    "tense": "Going to",
+    "promptEs": "Ellos se van a ir pronto.",
+    "translationEn": "They are going to leave soon.",
+    "imageUrl": "https://images.pexels.com/photos/5498399/pexels-photo-5498399.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/126.mp3"
+  },
+  {
+    "index": 127,
+    "verb": "to leave",
+    "tense": "Present simple",
+    "promptEs": "Él se va a las 3.",
+    "translationEn": "He leaves at 3.",
+    "imageUrl": "https://images.pexels.com/photos/38746324/pexels-photo-38746324.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/127.mp3"
+  },
+  {
+    "index": 128,
+    "verb": "to work",
+    "tense": "Present continuous",
+    "promptEs": "Estoy trabajando duro.",
+    "translationEn": "I am working hard.",
+    "imageUrl": "https://images.pexels.com/photos/33854499/pexels-photo-33854499.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/128.mp3"
+  },
+  {
+    "index": 129,
+    "verb": "to work",
+    "tense": "Present perfect",
+    "promptEs": "He trabajado con James.",
+    "translationEn": "I have worked with James.",
+    "imageUrl": "https://images.pexels.com/photos/32009631/pexels-photo-32009631.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/129.mp3"
+  },
+  {
+    "index": 130,
+    "verb": "to work",
+    "tense": "Past simple",
+    "promptEs": "Trabajé en un museo.",
+    "translationEn": "I worked in a museum.",
+    "imageUrl": "https://images.pexels.com/photos/33883996/pexels-photo-33883996.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/130.mp3"
+  },
+  {
+    "index": 131,
+    "verb": "to work",
+    "tense": "Future simple",
+    "promptEs": "Trabajaré mañana.",
+    "translationEn": "I will work tomorrow.",
+    "imageUrl": "https://images.pexels.com/photos/9818345/pexels-photo-9818345.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/131.mp3"
+  },
+  {
+    "index": 132,
+    "verb": "to work",
+    "tense": "Going to",
+    "promptEs": "Voy a trabajar duro.",
+    "translationEn": "I am going to work hard.",
+    "imageUrl": "https://images.pexels.com/photos/9258892/pexels-photo-9258892.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/132.mp3"
+  },
+  {
+    "index": 133,
+    "verb": "to work",
+    "tense": "Present simple",
+    "promptEs": "Trabajo en un hotel.",
+    "translationEn": "I work in a hotel.",
+    "imageUrl": "https://images.pexels.com/photos/5371558/pexels-photo-5371558.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/133.mp3"
+  },
+  {
+    "index": 134,
+    "verb": "to feel",
+    "tense": "Present simple",
+    "promptEs": "Nos sentimos mejor.",
+    "translationEn": "We feel better.",
+    "imageUrl": "https://images.pexels.com/photos/38494896/pexels-photo-38494896.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/134.mp3"
+  },
+  {
+    "index": 135,
+    "verb": "to feel",
+    "tense": "Present perfect",
+    "promptEs": "Nos hemos sentido cansados.",
+    "translationEn": "We have felt tired.",
+    "imageUrl": "https://images.pexels.com/photos/36713392/pexels-photo-36713392.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/135.mp3"
+  },
+  {
+    "index": 136,
+    "verb": "to feel",
+    "tense": "Past simple",
+    "promptEs": "Nos sentimos nerviosos.",
+    "translationEn": "We felt nervous.",
+    "imageUrl": "https://images.pexels.com/photos/8458988/pexels-photo-8458988.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/136.mp3"
+  },
+  {
+    "index": 137,
+    "verb": "to feel",
+    "tense": "Future simple",
+    "promptEs": "Nos sentiremos emocionados.",
+    "translationEn": "We will feel excited.",
+    "imageUrl": "https://images.pexels.com/photos/6150589/pexels-photo-6150589.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/137.mp3"
+  },
+  {
+    "index": 138,
+    "verb": "to feel",
+    "tense": "Going to",
+    "promptEs": "Vamos a sentir la presión.",
+    "translationEn": "We are going to feel the pressure.",
+    "imageUrl": "https://images.pexels.com/photos/7699410/pexels-photo-7699410.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/138.mp3"
+  },
+  {
+    "index": 139,
+    "verb": "to feel",
+    "tense": "Present simple",
+    "promptEs": "Nos sentimos felices.",
+    "translationEn": "We feel happy.",
+    "imageUrl": "https://images.pexels.com/photos/34981845/pexels-photo-34981845.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/139.mp3"
+  },
+  {
+    "index": 140,
+    "verb": "to fly",
+    "tense": "Present continuous",
+    "promptEs": "Estás volando a Londres.",
+    "translationEn": "You are flying to London.",
+    "imageUrl": "https://images.pexels.com/photos/14197336/pexels-photo-14197336.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/140.mp3"
+  },
+  {
+    "index": 141,
+    "verb": "to fly",
+    "tense": "Present perfect",
+    "promptEs": "Has volado durante 6 horas.",
+    "translationEn": "You have flown for 6 hours.",
+    "imageUrl": "https://images.pexels.com/photos/1238965/pexels-photo-1238965.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/141.mp3"
+  },
+  {
+    "index": 142,
+    "verb": "to fly",
+    "tense": "Past simple",
+    "promptEs": "Volaste demasiado alto.",
+    "translationEn": "You flew too high.",
+    "imageUrl": "https://images.pexels.com/photos/33990053/pexels-photo-33990053.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/142.mp3"
+  },
+  {
+    "index": 143,
+    "verb": "to fly",
+    "tense": "Future simple",
+    "promptEs": "Volarás en avión.",
+    "translationEn": "You will fly in a plane.",
+    "imageUrl": "https://images.pexels.com/photos/37644602/pexels-photo-37644602.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/143.mp3"
+  },
+  {
+    "index": 144,
+    "verb": "to fly",
+    "tense": "Going to",
+    "promptEs": "Vas a volar a Nueva York.",
+    "translationEn": "You are going to fly to New York.",
+    "imageUrl": "https://images.pexels.com/photos/2179612/pexels-photo-2179612.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/144.mp3"
+  },
+  {
+    "index": 145,
+    "verb": "to fly",
+    "tense": "Present simple",
+    "promptEs": "Vuelas por trabajo.",
+    "translationEn": "You fly for work.",
+    "imageUrl": "https://images.pexels.com/photos/19976827/pexels-photo-19976827.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/145.mp3"
+  },
+  {
+    "index": 146,
+    "verb": "to ask",
+    "tense": "Present continuous",
+    "promptEs": "Estás pidiendo ayuda.",
+    "translationEn": "You are asking for help.",
+    "imageUrl": "https://images.pexels.com/photos/7478852/pexels-photo-7478852.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/146.mp3"
+  },
+  {
+    "index": 147,
+    "verb": "to ask",
+    "tense": "Present perfect",
+    "promptEs": "Has hecho preguntas.",
+    "translationEn": "You have asked questions.",
+    "imageUrl": "https://images.pexels.com/photos/2646533/pexels-photo-2646533.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/147.mp3"
+  },
+  {
+    "index": 148,
+    "verb": "to ask",
+    "tense": "Past simple",
+    "promptEs": "Pediste más tiempo.",
+    "translationEn": "You asked for more time.",
+    "imageUrl": "https://images.pexels.com/photos/5060806/pexels-photo-5060806.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/148.mp3"
+  },
+  {
+    "index": 149,
+    "verb": "to ask",
+    "tense": "Future simple",
+    "promptEs": "Pedirás dinero.",
+    "translationEn": "You will ask for money.",
+    "imageUrl": "https://images.pexels.com/photos/928187/pexels-photo-928187.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/149.mp3"
+  },
+  {
+    "index": 150,
+    "verb": "to ask",
+    "tense": "Going to",
+    "promptEs": "Vas a pedir postre.",
+    "translationEn": "You are going to ask for dessert.",
+    "imageUrl": "https://images.pexels.com/photos/7491913/pexels-photo-7491913.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/150.mp3"
+  },
+  {
+    "index": 151,
+    "verb": "to ask",
+    "tense": "Present simple",
+    "promptEs": "Le preguntas al profesor.",
+    "translationEn": "You ask the teacher.",
+    "imageUrl": "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/151.mp3"
+  },
+  {
+    "index": 152,
+    "verb": "to marry",
+    "tense": "Present continuous",
+    "promptEs": "Él se está casando con su prometida.",
+    "translationEn": "He is marrying his fiance.",
+    "imageUrl": "https://images.pexels.com/photos/3292701/pexels-photo-3292701.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/152.mp3"
+  },
+  {
+    "index": 153,
+    "verb": "to marry",
+    "tense": "Present perfect",
+    "promptEs": "Él se ha casado con Julie.",
+    "translationEn": "He has married Julie.",
+    "imageUrl": "https://images.pexels.com/photos/38020820/pexels-photo-38020820.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/153.mp3"
+  },
+  {
+    "index": 154,
+    "verb": "to marry",
+    "tense": "Past simple",
+    "promptEs": "Él se casó el verano pasado.",
+    "translationEn": "He married last summer.",
+    "imageUrl": "https://images.pexels.com/photos/29002728/pexels-photo-29002728.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/154.mp3"
+  },
+  {
+    "index": 155,
+    "verb": "to marry",
+    "tense": "Future simple",
+    "promptEs": "Él se casará con Julie.",
+    "translationEn": "He will marry Julie.",
+    "imageUrl": "https://images.pexels.com/photos/3975613/pexels-photo-3975613.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/155.mp3"
+  },
+  {
+    "index": 156,
+    "verb": "to marry",
+    "tense": "Going to",
+    "promptEs": "Él se va a casar con mi hija.",
+    "translationEn": "He is going to marry my daughter.",
+    "imageUrl": "https://images.pexels.com/photos/3292701/pexels-photo-3292701.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/156.mp3"
+  },
+  {
+    "index": 157,
+    "verb": "to marry",
+    "tense": "Present simple",
+    "promptEs": "Él se casa con ella.",
+    "translationEn": "He marries her.",
+    "imageUrl": "https://images.pexels.com/photos/3292695/pexels-photo-3292695.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/157.mp3"
+  },
+  {
+    "index": 158,
+    "verb": "to try",
+    "tense": "Present continuous",
+    "promptEs": "Ella está intentando llamarla.",
+    "translationEn": "She is trying to call her.",
+    "imageUrl": "https://images.pexels.com/photos/7964504/pexels-photo-7964504.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/158.mp3"
+  },
+  {
+    "index": 159,
+    "verb": "to try",
+    "tense": "Present perfect",
+    "promptEs": "Ella ha probado el pastel.",
+    "translationEn": "She has tried the cake.",
+    "imageUrl": "https://images.pexels.com/photos/5709933/pexels-photo-5709933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/159.mp3"
+  },
+  {
+    "index": 160,
+    "verb": "to try",
+    "tense": "Past simple",
+    "promptEs": "Ella hizo lo mejor que pudo.",
+    "translationEn": "She tried his best.",
+    "imageUrl": "https://images.pexels.com/photos/10100980/pexels-photo-10100980.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/160.mp3"
+  },
+  {
+    "index": 161,
+    "verb": "to try",
+    "tense": "Future simple",
+    "promptEs": "Ella intentará llamarte.",
+    "translationEn": "She will try calling you.",
+    "imageUrl": "https://images.pexels.com/photos/3768880/pexels-photo-3768880.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/161.mp3"
+  },
+  {
+    "index": 162,
+    "verb": "to try",
+    "tense": "Going to",
+    "promptEs": "Ella lo va a intentar una vez más.",
+    "translationEn": "She is going to try once more.",
+    "imageUrl": "https://images.pexels.com/photos/15387083/pexels-photo-15387083.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/162.mp3"
+  },
+  {
+    "index": 163,
+    "verb": "to try",
+    "tense": "Present simple",
+    "promptEs": "Ella lo intenta todo.",
+    "translationEn": "She tries everything.",
+    "imageUrl": "https://images.pexels.com/photos/6005376/pexels-photo-6005376.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/163.mp3"
+  },
+  {
+    "index": 164,
+    "verb": "to run",
+    "tense": "Present continuous",
+    "promptEs": "Estoy corriendo con Paul.",
+    "translationEn": "I am running with Paul.",
+    "imageUrl": "https://images.pexels.com/photos/1011160/pexels-photo-1011160.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/164.mp3"
+  },
+  {
+    "index": 165,
+    "verb": "to run",
+    "tense": "Present perfect",
+    "promptEs": "He corrido en el parque.",
+    "translationEn": "I have run in the park.",
+    "imageUrl": "https://images.pexels.com/photos/28735804/pexels-photo-28735804.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/165.mp3"
+  },
+  {
+    "index": 166,
+    "verb": "to run",
+    "tense": "Past simple",
+    "promptEs": "Corrí una maratón.",
+    "translationEn": "I ran a marathon.",
+    "imageUrl": "https://images.pexels.com/photos/10226364/pexels-photo-10226364.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/166.mp3"
+  },
+  {
+    "index": 167,
+    "verb": "to run",
+    "tense": "Future simple",
+    "promptEs": "Correré más rápido.",
+    "translationEn": "I will run quicker.",
+    "imageUrl": "https://images.pexels.com/photos/421160/pexels-photo-421160.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/167.mp3"
+  },
+  {
+    "index": 168,
+    "verb": "to run",
+    "tense": "Going to",
+    "promptEs": "Voy a correr en los Juegos Olímpicos.",
+    "translationEn": "I am going to run in the Olympics.",
+    "imageUrl": "https://images.pexels.com/photos/3766204/pexels-photo-3766204.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/168.mp3"
+  },
+  {
+    "index": 169,
+    "verb": "to run",
+    "tense": "Present simple",
+    "promptEs": "Corro todos los días.",
+    "translationEn": "I run everyday.",
+    "imageUrl": "https://images.pexels.com/photos/16514711/pexels-photo-16514711.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/169.mp3"
+  },
+  {
+    "index": 170,
+    "verb": "to remain",
+    "tense": "Present simple",
+    "promptEs": "Me quedo en silencio.",
+    "translationEn": "I remain silent.",
+    "imageUrl": "https://images.pexels.com/photos/7215944/pexels-photo-7215944.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/170.mp3"
+  },
+  {
+    "index": 171,
+    "verb": "to remain",
+    "tense": "Present perfect",
+    "promptEs": "He permanecido tranquilo.",
+    "translationEn": "I have remained calm.",
+    "imageUrl": "https://images.pexels.com/photos/6025791/pexels-photo-6025791.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/171.mp3"
+  },
+  {
+    "index": 172,
+    "verb": "to remain",
+    "tense": "Past simple",
+    "promptEs": "Permanecí fuerte.",
+    "translationEn": "I remained strong.",
+    "imageUrl": "https://images.pexels.com/photos/4730131/pexels-photo-4730131.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/172.mp3"
+  },
+  {
+    "index": 173,
+    "verb": "to remain",
+    "tense": "Future simple",
+    "promptEs": "Permaneceré paciente.",
+    "translationEn": "I will remain patient.",
+    "imageUrl": "https://images.pexels.com/photos/6129035/pexels-photo-6129035.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/173.mp3"
+  },
+  {
+    "index": 174,
+    "verb": "to remain",
+    "tense": "Going to",
+    "promptEs": "Voy a quedarme en casa.",
+    "translationEn": "I am going to remain at home.",
+    "imageUrl": "https://images.pexels.com/photos/12194940/pexels-photo-12194940.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/174.mp3"
+  },
+  {
+    "index": 175,
+    "verb": "to show",
+    "tense": "Present continuous",
+    "promptEs": "Estamos enseñando la casa.",
+    "translationEn": "We are showing the house.",
+    "imageUrl": "https://images.pexels.com/photos/8815820/pexels-photo-8815820.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/175.mp3"
+  },
+  {
+    "index": 176,
+    "verb": "to show",
+    "tense": "Present perfect",
+    "promptEs": "Hemos mostrado los resultados.",
+    "translationEn": "We have shown the results.",
+    "imageUrl": "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/176.mp3"
+  },
+  {
+    "index": 177,
+    "verb": "to show",
+    "tense": "Past simple",
+    "promptEs": "Mostramos las fotos.",
+    "translationEn": "We showed the pictures.",
+    "imageUrl": "https://images.pexels.com/photos/33511458/pexels-photo-33511458.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/177.mp3"
+  },
+  {
+    "index": 178,
+    "verb": "to show",
+    "tense": "Future simple",
+    "promptEs": "Mostraremos el camino.",
+    "translationEn": "We will show the way.",
+    "imageUrl": "https://images.pexels.com/photos/35885093/pexels-photo-35885093.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/178.mp3"
+  },
+  {
+    "index": 179,
+    "verb": "to show",
+    "tense": "Going to",
+    "promptEs": "Vamos a mostrar nuestro apoyo.",
+    "translationEn": "We are going to show our support.",
+    "imageUrl": "https://images.pexels.com/photos/7697339/pexels-photo-7697339.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/179.mp3"
+  },
+  {
+    "index": 180,
+    "verb": "to show",
+    "tense": "Present simple",
+    "promptEs": "Mostramos amabilidad.",
+    "translationEn": "We show kindness.",
+    "imageUrl": "https://images.pexels.com/photos/33802172/pexels-photo-33802172.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/180.mp3"
+  },
+  {
+    "index": 181,
+    "verb": "to fall",
+    "tense": "Present continuous",
+    "promptEs": "Ellos se están quedando dormidos.",
+    "translationEn": "They are falling asleep.",
+    "imageUrl": "https://images.pexels.com/photos/8460130/pexels-photo-8460130.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/181.mp3"
+  },
+  {
+    "index": 182,
+    "verb": "to fall",
+    "tense": "Present perfect",
+    "promptEs": "Ellos han caído por las escaleras.",
+    "translationEn": "They have fallen downstairs.",
+    "imageUrl": "https://images.pexels.com/photos/9452447/pexels-photo-9452447.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/182.mp3"
+  },
+  {
+    "index": 183,
+    "verb": "to fall",
+    "tense": "Past simple",
+    "promptEs": "Ellos se desmoronaron.",
+    "translationEn": "They fell apart.",
+    "imageUrl": "https://images.pexels.com/photos/14852966/pexels-photo-14852966.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/183.mp3"
+  },
+  {
+    "index": 184,
+    "verb": "to fall",
+    "tense": "Future simple",
+    "promptEs": "Ellos caerán en la trampa.",
+    "translationEn": "They will fall into the trap.",
+    "imageUrl": "https://images.pexels.com/photos/19238498/pexels-photo-19238498.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/184.mp3"
+  },
+  {
+    "index": 185,
+    "verb": "to fall",
+    "tense": "Going to",
+    "promptEs": "Ellos se van a enamorar.",
+    "translationEn": "They are going to fall in love.",
+    "imageUrl": "https://images.pexels.com/photos/10438016/pexels-photo-10438016.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/185.mp3"
+  },
+  {
+    "index": 186,
+    "verb": "to fall",
+    "tense": "Present simple",
+    "promptEs": "Ellos se caen fácilmente.",
+    "translationEn": "They fall easily.",
+    "imageUrl": "https://images.pexels.com/photos/1060330/pexels-photo-1060330.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/186.mp3"
+  },
+  {
+    "index": 187,
+    "verb": "to hold",
+    "tense": "Present continuous",
+    "promptEs": "Estás sosteniendo un vaso.",
+    "translationEn": "You are holding a glass.",
+    "imageUrl": "https://images.pexels.com/photos/27175786/pexels-photo-27175786.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/187.mp3"
+  },
+  {
+    "index": 188,
+    "verb": "to hold",
+    "tense": "Present perfect",
+    "promptEs": "Has sostenido al bebé.",
+    "translationEn": "You have held the baby.",
+    "imageUrl": "https://images.pexels.com/photos/11968315/pexels-photo-11968315.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/188.mp3"
+  },
+  {
+    "index": 189,
+    "verb": "to hold",
+    "tense": "Past simple",
+    "promptEs": "Sostuviste el trofeo.",
+    "translationEn": "You held the trophy.",
+    "imageUrl": "https://images.pexels.com/photos/6565255/pexels-photo-6565255.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/189.mp3"
+  },
+  {
+    "index": 190,
+    "verb": "to hold",
+    "tense": "Future simple",
+    "promptEs": "Batirás el récord.",
+    "translationEn": "You will hold the record.",
+    "imageUrl": "https://images.pexels.com/photos/3328881/pexels-photo-3328881.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/190.mp3"
+  },
+  {
+    "index": 191,
+    "verb": "to hold",
+    "tense": "Going to",
+    "promptEs": "Vas a mantener esta posición.",
+    "translationEn": "You are going to hold this position.",
+    "imageUrl": "https://images.pexels.com/photos/8462944/pexels-photo-8462944.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/191.mp3"
+  },
+  {
+    "index": 192,
+    "verb": "to hold",
+    "tense": "Present simple",
+    "promptEs": "Aguantas la puerta.",
+    "translationEn": "You hold the door.",
+    "imageUrl": "https://images.pexels.com/photos/8266809/pexels-photo-8266809.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/192.mp3"
+  },
+  {
+    "index": 193,
+    "verb": "to apply",
+    "tense": "Present continuous",
+    "promptEs": "Ellos están solicitando un trabajo.",
+    "translationEn": "They are applying for a job.",
+    "imageUrl": "https://images.pexels.com/photos/8441817/pexels-photo-8441817.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/193.mp3"
+  },
+  {
+    "index": 194,
+    "verb": "to apply",
+    "tense": "Present perfect",
+    "promptEs": "Ellos han solicitado un visado.",
+    "translationEn": "They have applied for a visa.",
+    "imageUrl": "https://images.pexels.com/photos/8061952/pexels-photo-8061952.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/194.mp3"
+  },
+  {
+    "index": 195,
+    "verb": "to apply",
+    "tense": "Past simple",
+    "promptEs": "Ellos solicitaron una beca.",
+    "translationEn": "They applied for a scholarship.",
+    "imageUrl": "https://images.pexels.com/photos/28143423/pexels-photo-28143423.png?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/195.mp3"
+  },
+  {
+    "index": 196,
+    "verb": "to apply",
+    "tense": "Future simple",
+    "promptEs": "Ellos solicitarán un préstamo.",
+    "translationEn": "They will apply for a loan.",
+    "imageUrl": "https://images.pexels.com/photos/8292888/pexels-photo-8292888.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/196.mp3"
+  },
+  {
+    "index": 197,
+    "verb": "to apply",
+    "tense": "Going to",
+    "promptEs": "Ellos van a aplicarse protector solar.",
+    "translationEn": "They are going to apply sunscreen.",
+    "imageUrl": "https://images.pexels.com/photos/8157148/pexels-photo-8157148.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/197.mp3"
+  },
+  {
+    "index": 198,
+    "verb": "to apply",
+    "tense": "Present simple",
+    "promptEs": "Ellos ejercen presión.",
+    "translationEn": "They apply pressure.",
+    "imageUrl": "https://images.pexels.com/photos/29994840/pexels-photo-29994840.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/198.mp3"
+  },
+  {
+    "index": 199,
+    "verb": "to see",
+    "tense": "Present continuous",
+    "promptEs": "Él está viendo a un terapeuta.",
+    "translationEn": "He is seeing a therapist.",
+    "imageUrl": "https://images.pexels.com/photos/9064679/pexels-photo-9064679.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/199.mp3"
+  },
+  {
+    "index": 200,
+    "verb": "to see",
+    "tense": "Present perfect",
+    "promptEs": "Él ha visto la película.",
+    "translationEn": "He has seen the movie.",
+    "imageUrl": "https://images.pexels.com/photos/8273628/pexels-photo-8273628.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/200.mp3"
+  },
+  {
+    "index": 201,
+    "verb": "to see",
+    "tense": "Past simple",
+    "promptEs": "Él la vio.",
+    "translationEn": "He saw her.",
+    "imageUrl": "https://images.pexels.com/photos/20141374/pexels-photo-20141374.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/201.mp3"
+  },
+  {
+    "index": 202,
+    "verb": "to see",
+    "tense": "Future simple",
+    "promptEs": "Él irá al médico.",
+    "translationEn": "He will see the doctor.",
+    "imageUrl": "https://images.pexels.com/photos/5996604/pexels-photo-5996604.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/202.mp3"
+  },
+  {
+    "index": 203,
+    "verb": "to see",
+    "tense": "Going to",
+    "promptEs": "Él va a ver a su novia.",
+    "translationEn": "He is going to see his girlfriend.",
+    "imageUrl": "https://images.pexels.com/photos/10893298/pexels-photo-10893298.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/203.mp3"
+  },
+  {
+    "index": 204,
+    "verb": "to see",
+    "tense": "Present simple",
+    "promptEs": "Él ve el valor.",
+    "translationEn": "He sees the value.",
+    "imageUrl": "https://images.pexels.com/photos/33137139/pexels-photo-33137139.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/204.mp3"
+  },
+  {
+    "index": 205,
+    "verb": "to let",
+    "tense": "Present continuous",
+    "promptEs": "Lo estamos dejando quedarse.",
+    "translationEn": "We are letting him stay.",
+    "imageUrl": "https://images.pexels.com/photos/6657494/pexels-photo-6657494.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/205.mp3"
+  },
+  {
+    "index": 206,
+    "verb": "to let",
+    "tense": "Present perfect",
+    "promptEs": "La hemos dejado hablar.",
+    "translationEn": "We have let her speak.",
+    "imageUrl": "https://images.pexels.com/photos/704767/pexels-photo-704767.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/206.mp3"
+  },
+  {
+    "index": 207,
+    "verb": "to let",
+    "tense": "Past simple",
+    "promptEs": "Los dejamos entrar.",
+    "translationEn": "We let them enter.",
+    "imageUrl": "https://images.pexels.com/photos/2022651/pexels-photo-2022651.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/207.mp3"
+  },
+  {
+    "index": 208,
+    "verb": "to let",
+    "tense": "Future simple",
+    "promptEs": "Dejaremos conducir a John.",
+    "translationEn": "We will let John drive.",
+    "imageUrl": "https://images.pexels.com/photos/34148055/pexels-photo-34148055.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/208.mp3"
+  },
+  {
+    "index": 209,
+    "verb": "to let",
+    "tense": "Going to",
+    "promptEs": "Te vamos a dejar elegir.",
+    "translationEn": "We are going to let you choose.",
+    "imageUrl": "https://images.pexels.com/photos/8407022/pexels-photo-8407022.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/209.mp3"
+  },
+  {
+    "index": 210,
+    "verb": "to let",
+    "tense": "Present simple",
+    "promptEs": "Los dejamos ayudar.",
+    "translationEn": "We let them help.",
+    "imageUrl": "https://images.pexels.com/photos/7564188/pexels-photo-7564188.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/210.mp3"
+  },
+  {
+    "index": 211,
+    "verb": "to bring",
+    "tense": "Present continuous",
+    "promptEs": "Estoy trayendo aperitivos.",
+    "translationEn": "I am bringing snacks.",
+    "imageUrl": "https://images.pexels.com/photos/6004699/pexels-photo-6004699.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/211.mp3"
+  },
+  {
+    "index": 212,
+    "verb": "to bring",
+    "tense": "Present perfect",
+    "promptEs": "He traído mi portátil.",
+    "translationEn": "I have brought my laptop.",
+    "imageUrl": "https://images.pexels.com/photos/20432893/pexels-photo-20432893.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/212.mp3"
+  },
+  {
+    "index": 213,
+    "verb": "to bring",
+    "tense": "Past simple",
+    "promptEs": "Traje un regalo.",
+    "translationEn": "I brought a gift.",
+    "imageUrl": "https://images.pexels.com/photos/27087040/pexels-photo-27087040.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/213.mp3"
+  },
+  {
+    "index": 214,
+    "verb": "to bring",
+    "tense": "Future simple",
+    "promptEs": "Traeré a un amigo.",
+    "translationEn": "I will bring a friend.",
+    "imageUrl": "https://images.pexels.com/photos/4172964/pexels-photo-4172964.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/214.mp3"
+  },
+  {
+    "index": 215,
+    "verb": "to bring",
+    "tense": "Going to",
+    "promptEs": "Voy a traer el postre.",
+    "translationEn": "I am going to bring dessert.",
+    "imageUrl": "https://images.pexels.com/photos/4887827/pexels-photo-4887827.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/215.mp3"
+  },
+  {
+    "index": 216,
+    "verb": "to bring",
+    "tense": "Present simple",
+    "promptEs": "Traigo todo.",
+    "translationEn": "I bring everything.",
+    "imageUrl": "https://images.pexels.com/photos/34927029/pexels-photo-34927029.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/216.mp3"
+  },
+  {
+    "index": 217,
+    "verb": "to like",
+    "tense": "Present simple",
+    "promptEs": "Te gusta el pescado.",
+    "translationEn": "You like fish.",
+    "imageUrl": "https://images.pexels.com/photos/12349154/pexels-photo-12349154.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/217.mp3"
+  },
+  {
+    "index": 218,
+    "verb": "to like",
+    "tense": "Present perfect",
+    "promptEs": "Te ha gustado la idea.",
+    "translationEn": "You have liked the idea.",
+    "imageUrl": "https://images.pexels.com/photos/1314410/pexels-photo-1314410.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/218.mp3"
+  },
+  {
+    "index": 219,
+    "verb": "to like",
+    "tense": "Past simple",
+    "promptEs": "Te gustó el programa.",
+    "translationEn": "You liked the show.",
+    "imageUrl": "https://images.pexels.com/photos/33317327/pexels-photo-33317327.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/219.mp3"
+  },
+  {
+    "index": 220,
+    "verb": "to like",
+    "tense": "Future simple",
+    "promptEs": "Te gustará la comida.",
+    "translationEn": "You will like the food.",
+    "imageUrl": "https://images.pexels.com/photos/33500311/pexels-photo-33500311.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/220.mp3"
+  },
+  {
+    "index": 221,
+    "verb": "to like",
+    "tense": "Going to",
+    "promptEs": "Te va a gustar el juego.",
+    "translationEn": "You are going to like the game.",
+    "imageUrl": "https://images.pexels.com/photos/35316794/pexels-photo-35316794.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/221.mp3"
+  },
+  {
+    "index": 222,
+    "verb": "to like",
+    "tense": "Present simple",
+    "promptEs": "Te gusta el viaje.",
+    "translationEn": "You like the trip.",
+    "imageUrl": "https://images.pexels.com/photos/38270787/pexels-photo-38270787.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/222.mp3"
+  },
+  {
+    "index": 223,
+    "verb": "to help",
+    "tense": "Present continuous",
+    "promptEs": "Ellos nos están ayudando.",
+    "translationEn": "They are helping us.",
+    "imageUrl": "https://images.pexels.com/photos/6647015/pexels-photo-6647015.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/223.mp3"
+  },
+  {
+    "index": 224,
+    "verb": "to help",
+    "tense": "Present perfect",
+    "promptEs": "Ellos han ayudado mucho.",
+    "translationEn": "They have helped a lot.",
+    "imageUrl": "https://images.pexels.com/photos/6646771/pexels-photo-6646771.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/224.mp3"
+  },
+  {
+    "index": 225,
+    "verb": "to help",
+    "tense": "Past simple",
+    "promptEs": "Ellos ayudaron a los niños.",
+    "translationEn": "They helped the children.",
+    "imageUrl": "https://images.pexels.com/photos/9090750/pexels-photo-9090750.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/225.mp3"
+  },
+  {
+    "index": 226,
+    "verb": "to help",
+    "tense": "Future simple",
+    "promptEs": "Ellos ayudarán mañana.",
+    "translationEn": "They will help tomorrow.",
+    "imageUrl": "https://images.pexels.com/photos/8850723/pexels-photo-8850723.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/226.mp3"
+  },
+  {
+    "index": 227,
+    "verb": "to help",
+    "tense": "Going to",
+    "promptEs": "Ellos me van a ayudar.",
+    "translationEn": "They are going to help me.",
+    "imageUrl": "https://images.pexels.com/photos/5961630/pexels-photo-5961630.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/227.mp3"
+  },
+  {
+    "index": 228,
+    "verb": "to help",
+    "tense": "Present simple",
+    "promptEs": "Ellos ayudan a las familias.",
+    "translationEn": "They help families.",
+    "imageUrl": "https://images.pexels.com/photos/8042500/pexels-photo-8042500.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/228.mp3"
+  },
+  {
+    "index": 229,
+    "verb": "to start",
+    "tense": "Present continuous",
+    "promptEs": "Ella está empezando el colegio.",
+    "translationEn": "She is starting school.",
+    "imageUrl": "https://images.pexels.com/photos/8423939/pexels-photo-8423939.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/229.mp3"
+  },
+  {
+    "index": 230,
+    "verb": "to start",
+    "tense": "Present perfect",
+    "promptEs": "Ella ha empezado a entrenar.",
+    "translationEn": "She has started training.",
+    "imageUrl": "https://images.pexels.com/photos/2646531/pexels-photo-2646531.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/230.mp3"
+  },
+  {
+    "index": 231,
+    "verb": "to start",
+    "tense": "Past simple",
+    "promptEs": "Ella empezó pronto.",
+    "translationEn": "She started early.",
+    "imageUrl": "https://images.pexels.com/photos/9641778/pexels-photo-9641778.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/231.mp3"
+  },
+  {
+    "index": 232,
+    "verb": "to start",
+    "tense": "Future simple",
+    "promptEs": "Ella empezará a las 2.",
+    "translationEn": "She will start at 2.",
+    "imageUrl": "https://images.pexels.com/photos/8533635/pexels-photo-8533635.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/232.mp3"
+  },
+  {
+    "index": 233,
+    "verb": "to start",
+    "tense": "Going to",
+    "promptEs": "Ella va a montar un negocio.",
+    "translationEn": "She is going to start a business.",
+    "imageUrl": "https://images.pexels.com/photos/6956183/pexels-photo-6956183.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/233.mp3"
+  },
+  {
+    "index": 234,
+    "verb": "to start",
+    "tense": "Present simple",
+    "promptEs": "Ella empieza ahora.",
+    "translationEn": "She starts now.",
+    "imageUrl": "https://images.pexels.com/photos/2646531/pexels-photo-2646531.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/234.mp3"
+  },
+  {
+    "index": 235,
+    "verb": "to call",
+    "tense": "Present continuous",
+    "promptEs": "Ellos están llamando a Monica.",
+    "translationEn": "They are calling Monica.",
+    "imageUrl": "https://images.pexels.com/photos/7841805/pexels-photo-7841805.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/235.mp3"
+  },
+  {
+    "index": 236,
+    "verb": "to call",
+    "tense": "Present perfect",
+    "promptEs": "Ellos han llamado a la policía.",
+    "translationEn": "They have called the police.",
+    "imageUrl": "https://images.pexels.com/photos/31516244/pexels-photo-31516244.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/236.mp3"
+  },
+  {
+    "index": 237,
+    "verb": "to call",
+    "tense": "Past simple",
+    "promptEs": "Ellos te llamaron.",
+    "translationEn": "They called you.",
+    "imageUrl": "https://images.pexels.com/photos/8526710/pexels-photo-8526710.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/237.mp3"
+  },
+  {
+    "index": 238,
+    "verb": "to call",
+    "tense": "Future simple",
+    "promptEs": "Ellos devolverán la llamada.",
+    "translationEn": "They will call back.",
+    "imageUrl": "https://images.pexels.com/photos/7658369/pexels-photo-7658369.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/238.mp3"
+  },
+  {
+    "index": 239,
+    "verb": "to call",
+    "tense": "Going to",
+    "promptEs": "Ellos me van a llamar.",
+    "translationEn": "They are going to call me.",
+    "imageUrl": "https://images.pexels.com/photos/41372/call-communication-contact-face-41372.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/239.mp3"
+  },
+  {
+    "index": 240,
+    "verb": "to call",
+    "tense": "Present simple",
+    "promptEs": "Ellos llaman todos los días.",
+    "translationEn": "They call everyday.",
+    "imageUrl": "https://images.pexels.com/photos/6964158/pexels-photo-6964158.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/240.mp3"
+  },
+  {
+    "index": 241,
+    "verb": "to forget",
+    "tense": "Present continuous",
+    "promptEs": "Me estoy olvidando de todo.",
+    "translationEn": "I am forgetting everything.",
+    "imageUrl": "https://images.pexels.com/photos/6005376/pexels-photo-6005376.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/241.mp3"
+  },
+  {
+    "index": 242,
+    "verb": "to forget",
+    "tense": "Present perfect",
+    "promptEs": "He olvidado tu cumpleaños.",
+    "translationEn": "I have forgotten your birthday.",
+    "imageUrl": "https://images.pexels.com/photos/27176823/pexels-photo-27176823.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/242.mp3"
+  },
+  {
+    "index": 243,
+    "verb": "to forget",
+    "tense": "Past simple",
+    "promptEs": "Me olvidé las llaves.",
+    "translationEn": "I forgot the keys.",
+    "imageUrl": "https://images.pexels.com/photos/14721/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/243.mp3"
+  },
+  {
+    "index": 244,
+    "verb": "to forget",
+    "tense": "Future simple",
+    "promptEs": "Me olvidaré de las normas.",
+    "translationEn": "I will forget the rules.",
+    "imageUrl": "https://images.pexels.com/photos/17541170/pexels-photo-17541170.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/244.mp3"
+  },
+  {
+    "index": 245,
+    "verb": "to forget",
+    "tense": "Going to",
+    "promptEs": "Me voy a olvidar el bolso.",
+    "translationEn": "I am going to forget my bag.",
+    "imageUrl": "https://images.pexels.com/photos/9595285/pexels-photo-9595285.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/245.mp3"
+  },
+  {
+    "index": 246,
+    "verb": "to forget",
+    "tense": "Present simple",
+    "promptEs": "Me olvido de los nombres.",
+    "translationEn": "I forget names.",
+    "imageUrl": "https://images.pexels.com/photos/35304252/pexels-photo-35304252.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/246.mp3"
+  },
+  {
+    "index": 247,
+    "verb": "to avoid",
+    "tense": "Present continuous",
+    "promptEs": "Lo estamos evitando.",
+    "translationEn": "We are avoiding him.",
+    "imageUrl": "https://images.pexels.com/photos/8560709/pexels-photo-8560709.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/247.mp3"
+  },
+  {
+    "index": 248,
+    "verb": "to avoid",
+    "tense": "Present perfect",
+    "promptEs": "Hemos evitado problemas.",
+    "translationEn": "We have avoided trouble.",
+    "imageUrl": "https://images.pexels.com/photos/7273297/pexels-photo-7273297.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/248.mp3"
+  },
+  {
+    "index": 249,
+    "verb": "to avoid",
+    "tense": "Past simple",
+    "promptEs": "Evitamos el tráfico.",
+    "translationEn": "We avoided traffic.",
+    "imageUrl": "https://images.pexels.com/photos/34793044/pexels-photo-34793044.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/249.mp3"
+  },
+  {
+    "index": 250,
+    "verb": "to avoid",
+    "tense": "Future simple",
+    "promptEs": "Evitaremos el conflicto.",
+    "translationEn": "We will avoid conflict.",
+    "imageUrl": "https://images.pexels.com/photos/8560709/pexels-photo-8560709.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/250.mp3"
+  },
+  {
+    "index": 251,
+    "verb": "to avoid",
+    "tense": "Going to",
+    "promptEs": "Vamos a evitar la multitud.",
+    "translationEn": "We are going to avoid the crowd.",
+    "imageUrl": "https://images.pexels.com/photos/3453067/pexels-photo-3453067.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/251.mp3"
+  },
+  {
+    "index": 252,
+    "verb": "to avoid",
+    "tense": "Present simple",
+    "promptEs": "Evitamos las discusiones.",
+    "translationEn": "We avoid arguments.",
+    "imageUrl": "https://images.pexels.com/photos/4308049/pexels-photo-4308049.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/252.mp3"
+  },
+  {
+    "index": 253,
+    "verb": "to move",
+    "tense": "Present continuous",
+    "promptEs": "Te estás moviendo rápido.",
+    "translationEn": "You are moving fast.",
+    "imageUrl": "https://images.pexels.com/photos/36447640/pexels-photo-36447640.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/253.mp3"
+  },
+  {
+    "index": 254,
+    "verb": "to move",
+    "tense": "Present perfect",
+    "promptEs": "Has movido la mesa.",
+    "translationEn": "You have moved the table.",
+    "imageUrl": "https://images.pexels.com/photos/4554414/pexels-photo-4554414.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/254.mp3"
+  },
+  {
+    "index": 255,
+    "verb": "to move",
+    "tense": "Past simple",
+    "promptEs": "Te mudaste.",
+    "translationEn": "You moved away.",
+    "imageUrl": "https://images.pexels.com/photos/4245981/pexels-photo-4245981.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/255.mp3"
+  },
+  {
+    "index": 256,
+    "verb": "to move",
+    "tense": "Future simple",
+    "promptEs": "Te mudarás al piso de arriba.",
+    "translationEn": "You will move upstairs.",
+    "imageUrl": "https://images.pexels.com/photos/12884282/pexels-photo-12884282.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/256.mp3"
+  },
+  {
+    "index": 257,
+    "verb": "to move",
+    "tense": "Going to",
+    "promptEs": "Vas a mover cajas.",
+    "translationEn": "You are going to move boxes.",
+    "imageUrl": "https://images.pexels.com/photos/7203849/pexels-photo-7203849.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/257.mp3"
+  },
+  {
+    "index": 258,
+    "verb": "to move",
+    "tense": "Present simple",
+    "promptEs": "Mueves muebles.",
+    "translationEn": "You move furniture.",
+    "imageUrl": "https://images.pexels.com/photos/7217839/pexels-photo-7217839.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/258.mp3"
+  },
+  {
+    "index": 259,
+    "verb": "to play",
+    "tense": "Present continuous",
+    "promptEs": "Ella está jugando al ajedrez.",
+    "translationEn": "She is playing chess.",
+    "imageUrl": "https://images.pexels.com/photos/13799330/pexels-photo-13799330.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/259.mp3"
+  },
+  {
+    "index": 260,
+    "verb": "to play",
+    "tense": "Present perfect",
+    "promptEs": "Ella ha tocado el piano.",
+    "translationEn": "She has played the piano.",
+    "imageUrl": "https://images.pexels.com/photos/17223179/pexels-photo-17223179.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/260.mp3"
+  },
+  {
+    "index": 261,
+    "verb": "to play",
+    "tense": "Past simple",
+    "promptEs": "Ella jugó al tenis.",
+    "translationEn": "She played tennis.",
+    "imageUrl": "https://images.pexels.com/photos/6292755/pexels-photo-6292755.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/261.mp3"
+  },
+  {
+    "index": 262,
+    "verb": "to play",
+    "tense": "Future simple",
+    "promptEs": "Ella jugará dentro de casa.",
+    "translationEn": "She will play inside.",
+    "imageUrl": "https://images.pexels.com/photos/7114192/pexels-photo-7114192.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/262.mp3"
+  },
+  {
+    "index": 263,
+    "verb": "to play",
+    "tense": "Going to",
+    "promptEs": "Ella va a jugar sola.",
+    "translationEn": "She is going to play alone.",
+    "imageUrl": "https://images.pexels.com/photos/34954610/pexels-photo-34954610.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/263.mp3"
+  },
+  {
+    "index": 264,
+    "verb": "to play",
+    "tense": "Present simple",
+    "promptEs": "Ella juega al fútbol.",
+    "translationEn": "She plays soccer.",
+    "imageUrl": "https://images.pexels.com/photos/36871438/pexels-photo-36871438.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/264.mp3"
+  },
+  {
+    "index": 265,
+    "verb": "to pay",
+    "tense": "Present continuous",
+    "promptEs": "Él está pagando la cuenta.",
+    "translationEn": "He is paying the bill.",
+    "imageUrl": "https://images.pexels.com/photos/4968499/pexels-photo-4968499.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/265.mp3"
+  },
+  {
+    "index": 266,
+    "verb": "to pay",
+    "tense": "Present perfect",
+    "promptEs": "Él ha pagado el almuerzo.",
+    "translationEn": "He has paid for lunch.",
+    "imageUrl": "https://images.pexels.com/photos/5999864/pexels-photo-5999864.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/266.mp3"
+  },
+  {
+    "index": 267,
+    "verb": "to pay",
+    "tense": "Past simple",
+    "promptEs": "Él pagó con tarjeta.",
+    "translationEn": "He paid by card.",
+    "imageUrl": "https://images.pexels.com/photos/15556066/pexels-photo-15556066.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/267.mp3"
+  },
+  {
+    "index": 268,
+    "verb": "to pay",
+    "tense": "Future simple",
+    "promptEs": "Él le pagará al conductor.",
+    "translationEn": "He will pay the driver.",
+    "imageUrl": "https://images.pexels.com/photos/6529683/pexels-photo-6529683.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/268.mp3"
+  },
+  {
+    "index": 269,
+    "verb": "to pay",
+    "tense": "Going to",
+    "promptEs": "Él va a pagar los impuestos.",
+    "translationEn": "He is going to pay the taxes.",
+    "imageUrl": "https://images.pexels.com/photos/8970286/pexels-photo-8970286.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/269.mp3"
+  },
+  {
+    "index": 270,
+    "verb": "to pay",
+    "tense": "Present simple",
+    "promptEs": "Él paga el alquiler.",
+    "translationEn": "He pays the rent.",
+    "imageUrl": "https://images.pexels.com/photos/31974125/pexels-photo-31974125.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/270.mp3"
+  },
+  {
+    "index": 271,
+    "verb": "to hear",
+    "tense": "Present simple",
+    "promptEs": "Ellos escuchan música.",
+    "translationEn": "They hear music.",
+    "imageUrl": "https://images.pexels.com/photos/9930759/pexels-photo-9930759.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/271.mp3"
+  },
+  {
+    "index": 272,
+    "verb": "to hear",
+    "tense": "Present perfect",
+    "promptEs": "Ellos han escuchado un ruido.",
+    "translationEn": "They have heard a noise.",
+    "imageUrl": "https://images.pexels.com/photos/744922/pexels-photo-744922.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/272.mp3"
+  },
+  {
+    "index": 273,
+    "verb": "to hear",
+    "tense": "Past simple",
+    "promptEs": "Ellos oyeron voces.",
+    "translationEn": "They heard voices.",
+    "imageUrl": "https://images.pexels.com/photos/6257061/pexels-photo-6257061.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/273.mp3"
+  },
+  {
+    "index": 274,
+    "verb": "to hear",
+    "tense": "Future simple",
+    "promptEs": "Ellos oirán las campanas.",
+    "translationEn": "They will hear the bells.",
+    "imageUrl": "https://images.pexels.com/photos/33435831/pexels-photo-33435831.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/274.mp3"
+  },
+  {
+    "index": 275,
+    "verb": "to hear",
+    "tense": "Going to",
+    "promptEs": "Ellos van a escuchar gritos.",
+    "translationEn": "They are going to hear shouting.",
+    "imageUrl": "https://images.pexels.com/photos/5935755/pexels-photo-5935755.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/275.mp3"
+  },
+  {
+    "index": 276,
+    "verb": "to believe",
+    "tense": "Present simple",
+    "promptEs": "Creo en Dios.",
+    "translationEn": "I believe in God.",
+    "imageUrl": "https://images.pexels.com/photos/8383664/pexels-photo-8383664.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/276.mp3"
+  },
+  {
+    "index": 277,
+    "verb": "to believe",
+    "tense": "Present perfect",
+    "promptEs": "He creído eso.",
+    "translationEn": "I have believed that.",
+    "imageUrl": "https://images.pexels.com/photos/32368861/pexels-photo-32368861.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/277.mp3"
+  },
+  {
+    "index": 278,
+    "verb": "to believe",
+    "tense": "Past simple",
+    "promptEs": "Creía en ti.",
+    "translationEn": "I believed in you.",
+    "imageUrl": "https://images.pexels.com/photos/32368861/pexels-photo-32368861.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/278.mp3"
+  },
+  {
+    "index": 279,
+    "verb": "to believe",
+    "tense": "Future simple",
+    "promptEs": "Creeré la historia.",
+    "translationEn": "I will believe the story.",
+    "imageUrl": "https://images.pexels.com/photos/4116517/pexels-photo-4116517.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/279.mp3"
+  },
+  {
+    "index": 280,
+    "verb": "to believe",
+    "tense": "Going to",
+    "promptEs": "Le voy a creer a Mary.",
+    "translationEn": "I am going to believe Mary.",
+    "imageUrl": "https://images.pexels.com/photos/32457061/pexels-photo-32457061.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/280.mp3"
+  },
+  {
+    "index": 281,
+    "verb": "to allow",
+    "tense": "Present continuous",
+    "promptEs": "Estamos permitiendo visitas.",
+    "translationEn": "We are allowing visitors.",
+    "imageUrl": "https://images.pexels.com/photos/38116227/pexels-photo-38116227.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/281.mp3"
+  },
+  {
+    "index": 282,
+    "verb": "to allow",
+    "tense": "Present perfect",
+    "promptEs": "Hemos permitido cambios.",
+    "translationEn": "We have allowed changes.",
+    "imageUrl": "https://images.pexels.com/photos/9485659/pexels-photo-9485659.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/282.mp3"
+  },
+  {
+    "index": 283,
+    "verb": "to allow",
+    "tense": "Past simple",
+    "promptEs": "Permitimos excepciones.",
+    "translationEn": "We allowed exceptions.",
+    "imageUrl": "https://images.pexels.com/photos/9496596/pexels-photo-9496596.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/283.mp3"
+  },
+  {
+    "index": 284,
+    "verb": "to allow",
+    "tense": "Future simple",
+    "promptEs": "Permitiremos mascotas.",
+    "translationEn": "We will allow pets.",
+    "imageUrl": "https://images.pexels.com/photos/6845650/pexels-photo-6845650.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/284.mp3"
+  },
+  {
+    "index": 285,
+    "verb": "to allow",
+    "tense": "Going to",
+    "promptEs": "Vamos a permitir la participación.",
+    "translationEn": "We are going to allow participation.",
+    "imageUrl": "https://images.pexels.com/photos/5723322/pexels-photo-5723322.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/285.mp3"
+  },
+  {
+    "index": 286,
+    "verb": "to allow",
+    "tense": "Present simple",
+    "promptEs": "Permitimos los teléfonos.",
+    "translationEn": "We allow phones.",
+    "imageUrl": "https://images.pexels.com/photos/270257/pexels-photo-270257.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/286.mp3"
+  },
+  {
+    "index": 287,
+    "verb": "to sit",
+    "tense": "Present continuous",
+    "promptEs": "Ella está sentada a mi lado.",
+    "translationEn": "She is sitting next to me.",
+    "imageUrl": "https://images.pexels.com/photos/5810155/pexels-photo-5810155.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/287.mp3"
+  },
+  {
+    "index": 288,
+    "verb": "to sit",
+    "tense": "Present perfect",
+    "promptEs": "Ella se ha sentado a la mesa.",
+    "translationEn": "She has sat at the table.",
+    "imageUrl": "https://images.pexels.com/photos/2504924/pexels-photo-2504924.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/288.mp3"
+  },
+  {
+    "index": 289,
+    "verb": "to sit",
+    "tense": "Past simple",
+    "promptEs": "Ella se sentó en la silla.",
+    "translationEn": "She sat on the chair.",
+    "imageUrl": "https://images.pexels.com/photos/6969874/pexels-photo-6969874.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/289.mp3"
+  },
+  {
+    "index": 290,
+    "verb": "to sit",
+    "tense": "Future simple",
+    "promptEs": "Ella se sentará en el sofá.",
+    "translationEn": "She will sit on the sofa.",
+    "imageUrl": "https://images.pexels.com/photos/4047438/pexels-photo-4047438.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/290.mp3"
+  },
+  {
+    "index": 291,
+    "verb": "to sit",
+    "tense": "Going to",
+    "promptEs": "Ella va a sentarse sola.",
+    "translationEn": "She is going to sit alone.",
+    "imageUrl": "https://images.pexels.com/photos/2783762/pexels-photo-2783762.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/291.mp3"
+  },
+  {
+    "index": 292,
+    "verb": "to sit",
+    "tense": "Present simple",
+    "promptEs": "Ella se sienta tranquilamente.",
+    "translationEn": "She sits quietly.",
+    "imageUrl": "https://images.pexels.com/photos/14018387/pexels-photo-14018387.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/292.mp3"
+  },
+  {
+    "index": 293,
+    "verb": "to suffer",
+    "tense": "Present continuous",
+    "promptEs": "Estás sufriendo estrés.",
+    "translationEn": "You are suffering stress.",
+    "imageUrl": "https://images.pexels.com/photos/8458846/pexels-photo-8458846.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/293.mp3"
+  },
+  {
+    "index": 294,
+    "verb": "to suffer",
+    "tense": "Present perfect",
+    "promptEs": "Has sufrido mucho.",
+    "translationEn": "You have suffered a lot.",
+    "imageUrl": "https://images.pexels.com/photos/8783550/pexels-photo-8783550.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/294.mp3"
+  },
+  {
+    "index": 295,
+    "verb": "to suffer",
+    "tense": "Past simple",
+    "promptEs": "Sufriste una enfermedad.",
+    "translationEn": "You suffered from illness.",
+    "imageUrl": "https://images.pexels.com/photos/3807756/pexels-photo-3807756.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/295.mp3"
+  },
+  {
+    "index": 296,
+    "verb": "to suffer",
+    "tense": "Future simple",
+    "promptEs": "Sufrirás demasiado.",
+    "translationEn": "You will suffer too much.",
+    "imageUrl": "https://images.pexels.com/photos/8173233/pexels-photo-8173233.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/296.mp3"
+  },
+  {
+    "index": 297,
+    "verb": "to suffer",
+    "tense": "Going to",
+    "promptEs": "Vas a sufrir dolor.",
+    "translationEn": "You are going to suffer pain.",
+    "imageUrl": "https://images.pexels.com/photos/3807756/pexels-photo-3807756.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/297.mp3"
+  },
+  {
+    "index": 298,
+    "verb": "to suffer",
+    "tense": "Present simple",
+    "promptEs": "Sufres profundamente.",
+    "translationEn": "You suffer deeply.",
+    "imageUrl": "https://images.pexels.com/photos/19652593/pexels-photo-19652593.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/298.mp3"
+  },
+  {
+    "index": 299,
+    "verb": "to lead",
+    "tense": "Present continuous",
+    "promptEs": "Ellos están liderando el equipo.",
+    "translationEn": "They are leading the team.",
+    "imageUrl": "https://images.pexels.com/photos/36733315/pexels-photo-36733315.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/299.mp3"
+  },
+  {
+    "index": 300,
+    "verb": "to lead",
+    "tense": "Present perfect",
+    "promptEs": "Ellos han liderado el grupo.",
+    "translationEn": "They have led the group.",
+    "imageUrl": "https://images.pexels.com/photos/8119501/pexels-photo-8119501.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/300.mp3"
+  },
+  {
+    "index": 301,
+    "verb": "to lead",
+    "tense": "Past simple",
+    "promptEs": "Ellos dirigieron el proyecto.",
+    "translationEn": "They led the project.",
+    "imageUrl": "https://images.pexels.com/photos/15470542/pexels-photo-15470542.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/301.mp3"
+  },
+  {
+    "index": 302,
+    "verb": "to lead",
+    "tense": "Future simple",
+    "promptEs": "Ellos liderarán la clase.",
+    "translationEn": "They will lead the class.",
+    "imageUrl": "https://images.pexels.com/photos/8617940/pexels-photo-8617940.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/302.mp3"
+  },
+  {
+    "index": 303,
+    "verb": "to lead",
+    "tense": "Going to",
+    "promptEs": "Ellos van a liderar a todos.",
+    "translationEn": "They are going to lead everyone.",
+    "imageUrl": "https://images.pexels.com/photos/34594711/pexels-photo-34594711.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/303.mp3"
+  },
+  {
+    "index": 304,
+    "verb": "to lead",
+    "tense": "Present simple",
+    "promptEs": "Ellos dirigen la empresa.",
+    "translationEn": "They lead the company.",
+    "imageUrl": "https://images.pexels.com/photos/19856609/pexels-photo-19856609.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/304.mp3"
+  },
+  {
+    "index": 305,
+    "verb": "to live",
+    "tense": "Present continuous",
+    "promptEs": "Estoy viviendo en Alemania.",
+    "translationEn": "I am living in Germany.",
+    "imageUrl": "https://images.pexels.com/photos/33859593/pexels-photo-33859593.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/305.mp3"
+  },
+  {
+    "index": 306,
+    "verb": "to live",
+    "tense": "Present perfect",
+    "promptEs": "He vivido en el extranjero.",
+    "translationEn": "I have lived abroad.",
+    "imageUrl": "https://images.pexels.com/photos/36626702/pexels-photo-36626702.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/306.mp3"
+  },
+  {
+    "index": 307,
+    "verb": "to live",
+    "tense": "Past simple",
+    "promptEs": "Viví aquí.",
+    "translationEn": "I lived here.",
+    "imageUrl": "https://images.pexels.com/photos/9308435/pexels-photo-9308435.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/307.mp3"
+  },
+  {
+    "index": 308,
+    "verb": "to live",
+    "tense": "Future simple",
+    "promptEs": "Viviré en Londres.",
+    "translationEn": "I will live in London.",
+    "imageUrl": "https://images.pexels.com/photos/29740407/pexels-photo-29740407.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/308.mp3"
+  },
+  {
+    "index": 309,
+    "verb": "to live",
+    "tense": "Going to",
+    "promptEs": "Voy a vivir con Diego.",
+    "translationEn": "I am going to live with Diego.",
+    "imageUrl": "https://images.pexels.com/photos/38659617/pexels-photo-38659617.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/309.mp3"
+  },
+  {
+    "index": 310,
+    "verb": "to live",
+    "tense": "Present simple",
+    "promptEs": "Vivo solo.",
+    "translationEn": "I live alone.",
+    "imageUrl": "https://images.pexels.com/photos/23495691/pexels-photo-23495691.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/310.mp3"
+  },
+  {
+    "index": 311,
+    "verb": "to meet",
+    "tense": "Present continuous",
+    "promptEs": "Él está reuniéndose con clientes.",
+    "translationEn": "He is meeting clients.",
+    "imageUrl": "https://images.pexels.com/photos/8112162/pexels-photo-8112162.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/311.mp3"
+  },
+  {
+    "index": 312,
+    "verb": "to meet",
+    "tense": "Present perfect",
+    "promptEs": "Él ha conocido al presidente.",
+    "translationEn": "He has met the president.",
+    "imageUrl": "https://images.pexels.com/photos/6732134/pexels-photo-6732134.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/312.mp3"
+  },
+  {
+    "index": 313,
+    "verb": "to meet",
+    "tense": "Past simple",
+    "promptEs": "Él conoció a Michael Jackson.",
+    "translationEn": "He met Michael Jackson.",
+    "imageUrl": "https://images.pexels.com/photos/31097109/pexels-photo-31097109.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/313.mp3"
+  },
+  {
+    "index": 314,
+    "verb": "to meet",
+    "tense": "Future simple",
+    "promptEs": "Él se reunirá con su jefe.",
+    "translationEn": "He will meet his boss.",
+    "imageUrl": "https://images.pexels.com/photos/7654594/pexels-photo-7654594.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/314.mp3"
+  },
+  {
+    "index": 315,
+    "verb": "to meet",
+    "tense": "Going to",
+    "promptEs": "Él va a conocer al equipo.",
+    "translationEn": "He is going to meet the team.",
+    "imageUrl": "https://images.pexels.com/photos/6192762/pexels-photo-6192762.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/315.mp3"
+  },
+  {
+    "index": 316,
+    "verb": "to meet",
+    "tense": "Present simple",
+    "promptEs": "Él se reúne con el gerente.",
+    "translationEn": "He meets the manager.",
+    "imageUrl": "https://images.pexels.com/photos/7793142/pexels-photo-7793142.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/316.mp3"
+  },
+  {
+    "index": 317,
+    "verb": "to carry",
+    "tense": "Present continuous",
+    "promptEs": "Estás cargando la caja.",
+    "translationEn": "You are carrying the box.",
+    "imageUrl": "https://images.pexels.com/photos/4506231/pexels-photo-4506231.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/317.mp3"
+  },
+  {
+    "index": 318,
+    "verb": "to carry",
+    "tense": "Present perfect",
+    "promptEs": "Has cargado la bolsa.",
+    "translationEn": "You have carried the bag.",
+    "imageUrl": "https://images.pexels.com/photos/15113040/pexels-photo-15113040.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/318.mp3"
+  },
+  {
+    "index": 319,
+    "verb": "to carry",
+    "tense": "Past simple",
+    "promptEs": "Llevaste el equipaje.",
+    "translationEn": "You carried luggage.",
+    "imageUrl": "https://images.pexels.com/photos/37866135/pexels-photo-37866135.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/319.mp3"
+  },
+  {
+    "index": 320,
+    "verb": "to carry",
+    "tense": "Future simple",
+    "promptEs": "Llevarás la comida.",
+    "translationEn": "You will carry the food.",
+    "imageUrl": "https://images.pexels.com/photos/23716242/pexels-photo-23716242.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/320.mp3"
+  },
+  {
+    "index": 321,
+    "verb": "to carry",
+    "tense": "Going to",
+    "promptEs": "Vas a llevar una maleta.",
+    "translationEn": "You are going to carry a suitcase.",
+    "imageUrl": "https://images.pexels.com/photos/34629933/pexels-photo-34629933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/321.mp3"
+  },
+  {
+    "index": 322,
+    "verb": "to carry",
+    "tense": "Present simple",
+    "promptEs": "Llevas demasiado.",
+    "translationEn": "You carry too much.",
+    "imageUrl": "https://images.pexels.com/photos/37866135/pexels-photo-37866135.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/322.mp3"
+  },
+  {
+    "index": 323,
+    "verb": "to think",
+    "tense": "Present continuous",
+    "promptEs": "Estamos pensando en mudarnos.",
+    "translationEn": "We are thinking of moving.",
+    "imageUrl": "https://images.pexels.com/photos/7464429/pexels-photo-7464429.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/323.mp3"
+  },
+  {
+    "index": 324,
+    "verb": "to think",
+    "tense": "Present perfect",
+    "promptEs": "Hemos pensado en ello.",
+    "translationEn": "We have thought about it.",
+    "imageUrl": "https://images.pexels.com/photos/9139292/pexels-photo-9139292.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/324.mp3"
+  },
+  {
+    "index": 325,
+    "verb": "to think",
+    "tense": "Past simple",
+    "promptEs": "Pensamos en ti.",
+    "translationEn": "We thought of you.",
+    "imageUrl": "https://images.pexels.com/photos/3772532/pexels-photo-3772532.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/325.mp3"
+  },
+  {
+    "index": 326,
+    "verb": "to think",
+    "tense": "Future simple",
+    "promptEs": "Pensaremos con cuidado.",
+    "translationEn": "We will think carefully.",
+    "imageUrl": "https://images.pexels.com/photos/3772532/pexels-photo-3772532.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/326.mp3"
+  },
+  {
+    "index": 327,
+    "verb": "to think",
+    "tense": "Going to",
+    "promptEs": "Vamos a pensar positivamente.",
+    "translationEn": "We are going to think positively.",
+    "imageUrl": "https://images.pexels.com/photos/3831845/pexels-photo-3831845.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/327.mp3"
+  },
+  {
+    "index": 328,
+    "verb": "to think",
+    "tense": "Present simple",
+    "promptEs": "Pensamos juntos.",
+    "translationEn": "We think together.",
+    "imageUrl": "https://images.pexels.com/photos/11045734/pexels-photo-11045734.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/328.mp3"
+  },
+  {
+    "index": 329,
+    "verb": "to write",
+    "tense": "Present continuous",
+    "promptEs": "Estoy escribiendo una carta.",
+    "translationEn": "I am writing a letter.",
+    "imageUrl": "https://images.pexels.com/photos/356407/pexels-photo-356407.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/329.mp3"
+  },
+  {
+    "index": 330,
+    "verb": "to write",
+    "tense": "Present perfect",
+    "promptEs": "He escrito un correo electrónico.",
+    "translationEn": "I have written an email.",
+    "imageUrl": "https://images.pexels.com/photos/19399416/pexels-photo-19399416.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/330.mp3"
+  },
+  {
+    "index": 331,
+    "verb": "to write",
+    "tense": "Past simple",
+    "promptEs": "Escribí un libro.",
+    "translationEn": "I wrote a book.",
+    "imageUrl": "https://images.pexels.com/photos/34260873/pexels-photo-34260873.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/331.mp3"
+  },
+  {
+    "index": 332,
+    "verb": "to write",
+    "tense": "Future simple",
+    "promptEs": "Escribiré un mensaje.",
+    "translationEn": "I will write a message.",
+    "imageUrl": "https://images.pexels.com/photos/921716/pexels-photo-921716.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/332.mp3"
+  },
+  {
+    "index": 333,
+    "verb": "to write",
+    "tense": "Going to",
+    "promptEs": "Voy a escribir un informe.",
+    "translationEn": "I am going to write a report.",
+    "imageUrl": "https://images.pexels.com/photos/5717713/pexels-photo-5717713.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/333.mp3"
+  },
+  {
+    "index": 334,
+    "verb": "to write",
+    "tense": "Present simple",
+    "promptEs": "Escribo despacio.",
+    "translationEn": "I write slowly.",
+    "imageUrl": "https://images.pexels.com/photos/3363111/pexels-photo-3363111.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/334.mp3"
+  },
+  {
+    "index": 335,
+    "verb": "to finish",
+    "tense": "Present continuous",
+    "promptEs": "Ella está terminando los deberes.",
+    "translationEn": "She is finishing the homework.",
+    "imageUrl": "https://images.pexels.com/photos/36444170/pexels-photo-36444170.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/335.mp3"
+  },
+  {
+    "index": 336,
+    "verb": "to finish",
+    "tense": "Present perfect",
+    "promptEs": "Ella ha terminado el curso.",
+    "translationEn": "She has finished the course.",
+    "imageUrl": "https://images.pexels.com/photos/8533637/pexels-photo-8533637.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/336.mp3"
+  },
+  {
+    "index": 337,
+    "verb": "to finish",
+    "tense": "Past simple",
+    "promptEs": "Ella terminó su café.",
+    "translationEn": "She finished her coffee.",
+    "imageUrl": "https://images.pexels.com/photos/872890/pexels-photo-872890.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/337.mp3"
+  },
+  {
+    "index": 338,
+    "verb": "to finish",
+    "tense": "Future simple",
+    "promptEs": "Ella terminará el colegio.",
+    "translationEn": "She will finish school.",
+    "imageUrl": "https://images.pexels.com/photos/8177956/pexels-photo-8177956.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/338.mp3"
+  },
+  {
+    "index": 339,
+    "verb": "to finish",
+    "tense": "Going to",
+    "promptEs": "Ella va a terminar la lección.",
+    "translationEn": "She is going to finish the lesson.",
+    "imageUrl": "https://images.pexels.com/photos/8617774/pexels-photo-8617774.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/339.mp3"
+  },
+  {
+    "index": 340,
+    "verb": "to finish",
+    "tense": "Present simple",
+    "promptEs": "Ella termina rápido.",
+    "translationEn": "She finishes quickly.",
+    "imageUrl": "https://images.pexels.com/photos/12774180/pexels-photo-12774180.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/340.mp3"
+  },
+  {
+    "index": 341,
+    "verb": "to expect",
+    "tense": "Present continuous",
+    "promptEs": "Estás esperando una llamada.",
+    "translationEn": "You are expecting a call.",
+    "imageUrl": "https://images.pexels.com/photos/7155085/pexels-photo-7155085.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/341.mp3"
+  },
+  {
+    "index": 342,
+    "verb": "to expect",
+    "tense": "Present perfect",
+    "promptEs": "Has esperado demasiado.",
+    "translationEn": "You have expected too much.",
+    "imageUrl": "https://images.pexels.com/photos/17225296/pexels-photo-17225296.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/342.mp3"
+  },
+  {
+    "index": 343,
+    "verb": "to expect",
+    "tense": "Past simple",
+    "promptEs": "Esperabas una respuesta.",
+    "translationEn": "You expected a reply.",
+    "imageUrl": "https://images.pexels.com/photos/33705554/pexels-photo-33705554.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/343.mp3"
+  },
+  {
+    "index": 344,
+    "verb": "to expect",
+    "tense": "Future simple",
+    "promptEs": "Esperarás noticias.",
+    "translationEn": "You will expect news.",
+    "imageUrl": "https://images.pexels.com/photos/34573571/pexels-photo-34573571.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/344.mp3"
+  },
+  {
+    "index": 345,
+    "verb": "to expect",
+    "tense": "Going to",
+    "promptEs": "Vas a esperar una entrega.",
+    "translationEn": "You are going to expect a delivery.",
+    "imageUrl": "https://images.pexels.com/photos/7706598/pexels-photo-7706598.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/345.mp3"
+  },
+  {
+    "index": 346,
+    "verb": "to expect",
+    "tense": "Present simple",
+    "promptEs": "Esperas resultados.",
+    "translationEn": "You expect results.",
+    "imageUrl": "https://images.pexels.com/photos/4944959/pexels-photo-4944959.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/346.mp3"
+  },
+  {
+    "index": 347,
+    "verb": "to share",
+    "tense": "Present continuous",
+    "promptEs": "Ellos están compartiendo una habitación.",
+    "translationEn": "They are sharing a room.",
+    "imageUrl": "https://images.pexels.com/photos/4907616/pexels-photo-4907616.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/347.mp3"
+  },
+  {
+    "index": 348,
+    "verb": "to share",
+    "tense": "Present perfect",
+    "promptEs": "Ellos han compartido el sándwich.",
+    "translationEn": "They have shared the sandwich.",
+    "imageUrl": "https://images.pexels.com/photos/7624952/pexels-photo-7624952.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/348.mp3"
+  },
+  {
+    "index": 349,
+    "verb": "to share",
+    "tense": "Past simple",
+    "promptEs": "Ellos compartieron ideas.",
+    "translationEn": "They shared ideas.",
+    "imageUrl": "https://images.pexels.com/photos/6340629/pexels-photo-6340629.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/349.mp3"
+  },
+  {
+    "index": 350,
+    "verb": "to share",
+    "tense": "Future simple",
+    "promptEs": "Ellos compartirán el almuerzo.",
+    "translationEn": "They will share lunch.",
+    "imageUrl": "https://images.pexels.com/photos/13335060/pexels-photo-13335060.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/350.mp3"
+  },
+  {
+    "index": 351,
+    "verb": "to share",
+    "tense": "Going to",
+    "promptEs": "Ellos van a compartir el ordenador.",
+    "translationEn": "They are going to share the computer.",
+    "imageUrl": "https://images.pexels.com/photos/1181210/pexels-photo-1181210.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/351.mp3"
+  },
+  {
+    "index": 352,
+    "verb": "to share",
+    "tense": "Present simple",
+    "promptEs": "Ellos comparten secretos.",
+    "translationEn": "They share secrets.",
+    "imageUrl": "https://images.pexels.com/photos/7168996/pexels-photo-7168996.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/352.mp3"
+  },
+  {
+    "index": 353,
+    "verb": "to talk",
+    "tense": "Present continuous",
+    "promptEs": "Él está hablando por teléfono.",
+    "translationEn": "He is talking on the phone.",
+    "imageUrl": "https://images.pexels.com/photos/7793095/pexels-photo-7793095.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/353.mp3"
+  },
+  {
+    "index": 354,
+    "verb": "to talk",
+    "tense": "Present perfect",
+    "promptEs": "Él ha hablado con ellos.",
+    "translationEn": "He has talked to them.",
+    "imageUrl": "https://images.pexels.com/photos/8424894/pexels-photo-8424894.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/354.mp3"
+  },
+  {
+    "index": 355,
+    "verb": "to talk",
+    "tense": "Past simple",
+    "promptEs": "Él habló rápido.",
+    "translationEn": "He talked fast.",
+    "imageUrl": "https://images.pexels.com/photos/20021284/pexels-photo-20021284.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/355.mp3"
+  },
+  {
+    "index": 356,
+    "verb": "to talk",
+    "tense": "Future simple",
+    "promptEs": "Él hablará con ella.",
+    "translationEn": "He will talk to her.",
+    "imageUrl": "https://images.pexels.com/photos/23496877/pexels-photo-23496877.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/356.mp3"
+  },
+  {
+    "index": 357,
+    "verb": "to talk",
+    "tense": "Going to",
+    "promptEs": "Él va a hablar sobre eso.",
+    "translationEn": "He is going to talk about it.",
+    "imageUrl": "https://images.pexels.com/photos/18512922/pexels-photo-18512922.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/357.mp3"
+  },
+  {
+    "index": 358,
+    "verb": "to talk",
+    "tense": "Present simple",
+    "promptEs": "Él habla con claridad.",
+    "translationEn": "He talks clearly.",
+    "imageUrl": "https://images.pexels.com/photos/1421/road-nature-hand-path.jpg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/358.mp3"
+  },
+  {
+    "index": 359,
+    "verb": "to read",
+    "tense": "Present continuous",
+    "promptEs": "Estás leyendo tranquilamente.",
+    "translationEn": "You are reading quietly.",
+    "imageUrl": "https://images.pexels.com/photos/10638235/pexels-photo-10638235.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/359.mp3"
+  },
+  {
+    "index": 360,
+    "verb": "to read",
+    "tense": "Present perfect",
+    "promptEs": "Has leído la novela.",
+    "translationEn": "You have read the novel.",
+    "imageUrl": "https://images.pexels.com/photos/6271511/pexels-photo-6271511.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/360.mp3"
+  },
+  {
+    "index": 361,
+    "verb": "to read",
+    "tense": "Past simple",
+    "promptEs": "Leíste mi artículo.",
+    "translationEn": "You read my article.",
+    "imageUrl": "https://images.pexels.com/photos/3886870/pexels-photo-3886870.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/361.mp3"
+  },
+  {
+    "index": 362,
+    "verb": "to read",
+    "tense": "Future simple",
+    "promptEs": "Leerás los correos electrónicos.",
+    "translationEn": "You will read the emails.",
+    "imageUrl": "https://images.pexels.com/photos/374074/pexels-photo-374074.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/362.mp3"
+  },
+  {
+    "index": 363,
+    "verb": "to read",
+    "tense": "Going to",
+    "promptEs": "Vas a leer en voz alta.",
+    "translationEn": "You are going to read aloud.",
+    "imageUrl": "https://images.pexels.com/photos/7218341/pexels-photo-7218341.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/363.mp3"
+  },
+  {
+    "index": 364,
+    "verb": "to read",
+    "tense": "Present simple",
+    "promptEs": "Lees todos los días.",
+    "translationEn": "You read every day.",
+    "imageUrl": "https://images.pexels.com/photos/3776163/pexels-photo-3776163.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/364.mp3"
+  },
+  {
+    "index": 365,
+    "verb": "to lose",
+    "tense": "Present continuous",
+    "promptEs": "Estamos perdiendo dinero.",
+    "translationEn": "We are losing money.",
+    "imageUrl": "https://images.pexels.com/photos/4417/black-and-white-people-bar-men.jpg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/365.mp3"
+  },
+  {
+    "index": 366,
+    "verb": "to lose",
+    "tense": "Present perfect",
+    "promptEs": "Hemos perdido la carrera.",
+    "translationEn": "We have lost the race.",
+    "imageUrl": "https://images.pexels.com/photos/31925747/pexels-photo-31925747.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/366.mp3"
+  },
+  {
+    "index": 367,
+    "verb": "to lose",
+    "tense": "Past simple",
+    "promptEs": "La perdimos.",
+    "translationEn": "We lost her.",
+    "imageUrl": "https://images.pexels.com/photos/30341731/pexels-photo-30341731.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/367.mp3"
+  },
+  {
+    "index": 368,
+    "verb": "to lose",
+    "tense": "Future simple",
+    "promptEs": "Perderemos la apuesta.",
+    "translationEn": "We will lose the bet.",
+    "imageUrl": "https://images.pexels.com/photos/7594395/pexels-photo-7594395.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/368.mp3"
+  },
+  {
+    "index": 369,
+    "verb": "to lose",
+    "tense": "Going to",
+    "promptEs": "Vamos a perder el partido.",
+    "translationEn": "We are going to lose the match.",
+    "imageUrl": "https://images.pexels.com/photos/139392/checkmate-chess-resignation-conflict-139392.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/369.mp3"
+  },
+  {
+    "index": 370,
+    "verb": "to lose",
+    "tense": "Present simple",
+    "promptEs": "Perdemos otra vez.",
+    "translationEn": "We lose again.",
+    "imageUrl": "https://images.pexels.com/photos/5939129/pexels-photo-5939129.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/370.mp3"
+  },
+  {
+    "index": 371,
+    "verb": "to speak",
+    "tense": "Present continuous",
+    "promptEs": "Estoy hablando italiano.",
+    "translationEn": "I am speaking Italian.",
+    "imageUrl": "https://images.pexels.com/photos/11486484/pexels-photo-11486484.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/371.mp3"
+  },
+  {
+    "index": 372,
+    "verb": "to speak",
+    "tense": "Present perfect",
+    "promptEs": "He hablado con él.",
+    "translationEn": "I have spoken with him.",
+    "imageUrl": "https://images.pexels.com/photos/6144023/pexels-photo-6144023.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/372.mp3"
+  },
+  {
+    "index": 373,
+    "verb": "to speak",
+    "tense": "Past simple",
+    "promptEs": "Hablé todo el día.",
+    "translationEn": "I spoke all day.",
+    "imageUrl": "https://images.pexels.com/photos/12940632/pexels-photo-12940632.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/373.mp3"
+  },
+  {
+    "index": 374,
+    "verb": "to speak",
+    "tense": "Future simple",
+    "promptEs": "Hablaré en voz baja.",
+    "translationEn": "I will speak softly.",
+    "imageUrl": "https://images.pexels.com/photos/3851254/pexels-photo-3851254.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/374.mp3"
+  },
+  {
+    "index": 375,
+    "verb": "to speak",
+    "tense": "Going to",
+    "promptEs": "Voy a hablar con ellos.",
+    "translationEn": "I am going to speak to them.",
+    "imageUrl": "https://images.pexels.com/photos/8107287/pexels-photo-8107287.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/375.mp3"
+  },
+  {
+    "index": 376,
+    "verb": "to speak",
+    "tense": "Present simple",
+    "promptEs": "Hablo 3 idiomas.",
+    "translationEn": "I speak 3 languages.",
+    "imageUrl": "https://images.pexels.com/photos/19902307/pexels-photo-19902307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": "assets/audio/verbs/level1/376.mp3"
+  }
+]

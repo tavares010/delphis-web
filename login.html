@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iniciar sesión — Delphis Method</title>
+<meta name="description" content="Inicia sesión o crea tu cuenta gratis de Delphis Method.">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/course.css">
+</head>
+<body>
+
+<div class="hero__bg">
+  <div class="blob blob--1"></div>
+  <div class="blob blob--2"></div>
+  <div class="grid-overlay"></div>
+</div>
+
+<a href="index.html" class="navbar__brand" style="position:fixed; top:1.6rem; left:2rem; z-index:3;">
+  <img src="assets/logo.png" alt="Delphis Method" class="navbar__logo">
+  <span>Delphis <strong>Method</strong></span>
+</a>
+
+<main class="auth-shell">
+  <div class="auth-card">
+    <img src="assets/logo.png" alt="" class="auth-card__logo">
+    <h1 id="authTitle">Bienvenido de nuevo</h1>
+    <p class="auth-card__sub" id="authSub">Inicia sesión para continuar tu curso</p>
+
+    <div class="auth-tabs">
+      <button type="button" id="tabLogin" class="active">Iniciar sesión</button>
+      <button type="button" id="tabRegistro">Crear cuenta</button>
+    </div>
+
+    <div class="auth-error-banner" id="authError"></div>
+    <div class="auth-success-banner" id="authSuccess"></div>
+
+    <form id="authForm" novalidate>
+      <div class="auth-field" id="fieldEmail">
+        <label for="inputEmail">Correo electrónico</label>
+        <input type="email" id="inputEmail" autocomplete="email" placeholder="tu@email.com">
+        <div class="auth-field__error">Escribe un correo válido.</div>
+      </div>
+
+      <div class="auth-field" id="fieldPassword">
+        <label for="inputPassword">Contraseña</label>
+        <input type="password" id="inputPassword" autocomplete="current-password" placeholder="Mínimo 6 caracteres">
+        <div class="auth-field__error">La contraseña debe tener al menos 6 caracteres.</div>
+      </div>
+
+      <div class="auth-field" id="fieldConfirm" style="display:none;">
+        <label for="inputConfirm">Confirmar contraseña</label>
+        <input type="password" id="inputConfirm" autocomplete="new-password" placeholder="Repite tu contraseña">
+        <div class="auth-field__error">Las contraseñas no coinciden.</div>
+      </div>
+
+      <div class="auth-forgot" id="forgotWrap">
+        <button type="button" id="btnForgot">¿Olvidaste tu contraseña?</button>
+      </div>
+
+      <button type="submit" class="btn btn--primary btn--block btn--lg" id="btnSubmit">Iniciar sesión</button>
+    </form>
+
+    <div class="auth-switch" id="authSwitch">
+      ¿No tienes cuenta? <button type="button" id="btnGoRegistro">Crea una gratis</button>
+    </div>
+  </div>
+</main>
+
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+<script src="js/firebase-config.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/login-page.js"></script>
+</body>
+</html>

@@ -1,0 +1,898 @@
+{
+  "hosteleria": {
+    "packageId": "hosteleria",
+    "title": "Restaurante",
+    "aiRole": "a customer at a restaurant",
+    "userRole": "the waiter or waitress serving them",
+    "openingContext": "The customer has just been seated at a table and is looking at the menu.",
+    "roleSubtitleEs": "Tú eres el/la camarero/a · la IA hace de cliente",
+    "characterEmoji": "🧑",
+    "characterLabelEs": "Cliente",
+    "missionPool": [
+      {
+        "id": "greet_seat",
+        "titleEs": "Recibe al cliente y acompáñalo a la mesa",
+        "enHint": "Greet the customer and seat them at a table"
+      },
+      {
+        "id": "ask_party_size",
+        "titleEs": "Pregunta para cuántas personas es la mesa",
+        "enHint": "Ask how many people the table is for"
+      },
+      {
+        "id": "offer_drinks_menu",
+        "titleEs": "Ofrece la carta de bebidas",
+        "enHint": "Offer the drinks menu"
+      },
+      {
+        "id": "recommend_dish",
+        "titleEs": "Recomienda un plato de la casa",
+        "enHint": "Recommend a house special dish"
+      },
+      {
+        "id": "ask_allergies",
+        "titleEs": "Pregunta si tiene alguna alergia o intolerancia",
+        "enHint": "Ask about allergies or dietary restrictions"
+      },
+      {
+        "id": "take_full_order",
+        "titleEs": "Toma el pedido completo",
+        "enHint": "Take the customer's full order"
+      },
+      {
+        "id": "inform_unavailable",
+        "titleEs": "Informa de que un plato no está disponible y ofrece alternativa",
+        "enHint": "Inform the customer a dish is unavailable and offer an alternative"
+      },
+      {
+        "id": "ask_still_or_sparkling",
+        "titleEs": "Pregunta si quiere agua con gas o sin gas",
+        "enHint": "Ask if they want still or sparkling water"
+      },
+      {
+        "id": "serve_and_wish",
+        "titleEs": "Sirve el pedido y desea buen provecho",
+        "enHint": "Serve the food and wish them a good meal"
+      },
+      {
+        "id": "check_satisfaction",
+        "titleEs": "Pregunta si todo está a su gusto tras servir",
+        "enHint": "Check if everything is to their satisfaction after serving"
+      },
+      {
+        "id": "offer_dessert",
+        "titleEs": "Ofrece la carta de postres",
+        "enHint": "Offer the dessert menu"
+      },
+      {
+        "id": "offer_coffee_tea",
+        "titleEs": "Pregunta si quiere café o té",
+        "enHint": "Ask if they'd like coffee or tea"
+      },
+      {
+        "id": "offer_bill",
+        "titleEs": "Pregunta si quiere la cuenta",
+        "enHint": "Ask if they'd like the bill"
+      },
+      {
+        "id": "split_bill",
+        "titleEs": "Gestiona una petición de dividir la cuenta",
+        "enHint": "Handle a request to split the bill"
+      },
+      {
+        "id": "handle_complaint",
+        "titleEs": "Atiende una queja sobre la comida o el servicio",
+        "enHint": "Handle a complaint about the food or service"
+      },
+      {
+        "id": "take_reservation",
+        "titleEs": "Toma una reserva para más tarde, indicando la hora",
+        "enHint": "Take a reservation for later, confirming the time"
+      },
+      {
+        "id": "confirm_reservation_name",
+        "titleEs": "Confirma el nombre y número de personas de la reserva",
+        "enHint": "Confirm the name and party size for the reservation"
+      },
+      {
+        "id": "find_free_table",
+        "titleEs": "Consigue una mesa libre para un cliente sin reserva",
+        "enHint": "Find a free table for a walk-in customer"
+      },
+      {
+        "id": "apologize_for_delay",
+        "titleEs": "Discúlpate por un retraso en el servicio",
+        "enHint": "Apologize for a delay in service"
+      },
+      {
+        "id": "farewell_invite_back",
+        "titleEs": "Despide al cliente e invítale a volver",
+        "enHint": "Say goodbye and invite them to come back"
+      }
+    ]
+  },
+  "deportes": {
+    "packageId": "deportes",
+    "title": "Gimnasio",
+    "aiRole": "a new member at a gym, on their first day",
+    "userRole": "their personal trainer",
+    "openingContext": "The new member has just arrived at the gym for their first session.",
+    "roleSubtitleEs": "Tú eres el/la entrenador/a · la IA hace de socio nuevo",
+    "characterEmoji": "🏃",
+    "characterLabelEs": "Socio nuevo",
+    "missionPool": [
+      {
+        "id": "welcome_member",
+        "titleEs": "Da la bienvenida al nuevo socio",
+        "enHint": "Welcome the new gym member"
+      },
+      {
+        "id": "ask_fitness_goals",
+        "titleEs": "Pregunta cuáles son sus objetivos de forma física",
+        "enHint": "Ask about their fitness goals"
+      },
+      {
+        "id": "tour_facilities",
+        "titleEs": "Enséñale las instalaciones del gimnasio",
+        "enHint": "Show them around the facilities"
+      },
+      {
+        "id": "check_injuries",
+        "titleEs": "Pregunta si tiene alguna lesión o condición médica",
+        "enHint": "Ask about any injuries or medical conditions"
+      },
+      {
+        "id": "explain_membership",
+        "titleEs": "Explica los tipos de membresía disponibles",
+        "enHint": "Explain the membership plans available"
+      },
+      {
+        "id": "plan_first_routine",
+        "titleEs": "Diseña una primera rutina sencilla",
+        "enHint": "Design a simple first workout routine"
+      },
+      {
+        "id": "remind_warmup",
+        "titleEs": "Recuérdale que caliente antes de empezar",
+        "enHint": "Remind them to warm up before starting"
+      },
+      {
+        "id": "correct_form",
+        "titleEs": "Corrige su postura en un ejercicio",
+        "enHint": "Correct their form on an exercise"
+      },
+      {
+        "id": "suggest_rest_day",
+        "titleEs": "Sugiere un día de descanso en su plan",
+        "enHint": "Suggest a rest day in their plan"
+      },
+      {
+        "id": "motivate",
+        "titleEs": "Anímale cuando le cueste un ejercicio",
+        "enHint": "Motivate them when an exercise is hard"
+      },
+      {
+        "id": "discuss_nutrition",
+        "titleEs": "Habla brevemente sobre su alimentación",
+        "enHint": "Briefly discuss their nutrition"
+      },
+      {
+        "id": "schedule_next_session",
+        "titleEs": "Programa la próxima sesión",
+        "enHint": "Schedule the next session"
+      },
+      {
+        "id": "check_progress",
+        "titleEs": "Pregunta cómo se siente tras el entrenamiento",
+        "enHint": "Check how they feel after training"
+      },
+      {
+        "id": "recommend_class",
+        "titleEs": "Recomienda una clase grupal",
+        "enHint": "Recommend a group class"
+      },
+      {
+        "id": "explain_equipment",
+        "titleEs": "Explica cómo usar una máquina",
+        "enHint": "Explain how to use a machine"
+      },
+      {
+        "id": "set_milestone",
+        "titleEs": "Establece una meta a corto plazo",
+        "enHint": "Set a short-term goal or milestone"
+      },
+      {
+        "id": "handle_missed_session",
+        "titleEs": "Reprograma una sesión que el socio no pudo hacer",
+        "enHint": "Reschedule a missed session"
+      },
+      {
+        "id": "advise_hydration",
+        "titleEs": "Aconséjale sobre la hidratación",
+        "enHint": "Advise them about hydration"
+      },
+      {
+        "id": "address_soreness",
+        "titleEs": "Responde a una queja de dolor muscular",
+        "enHint": "Respond to a complaint about muscle soreness"
+      },
+      {
+        "id": "close_session",
+        "titleEs": "Despide la sesión felicitándole por el esfuerzo",
+        "enHint": "Close the session, praising their effort"
+      }
+    ]
+  },
+  "escuela": {
+    "packageId": "escuela",
+    "title": "Escuela",
+    "aiRole": "a student in class",
+    "userRole": "their teacher",
+    "openingContext": "Class is about to start and the student just sat down.",
+    "roleSubtitleEs": "Tú eres el/la profesor/a · la IA hace de estudiante",
+    "characterEmoji": "🧑‍🎓",
+    "characterLabelEs": "Estudiante",
+    "missionPool": [
+      {
+        "id": "start_class",
+        "titleEs": "Empieza la clase y capta su atención",
+        "enHint": "Start the class and get their attention"
+      },
+      {
+        "id": "explain_topic",
+        "titleEs": "Explica el tema del día",
+        "enHint": "Explain today's topic"
+      },
+      {
+        "id": "ask_understanding",
+        "titleEs": "Pregunta si ha entendido la explicación",
+        "enHint": "Ask if they understood the explanation"
+      },
+      {
+        "id": "answer_question",
+        "titleEs": "Responde a una duda del estudiante",
+        "enHint": "Answer a question from the student"
+      },
+      {
+        "id": "assign_homework",
+        "titleEs": "Asigna la tarea para casa",
+        "enHint": "Assign homework"
+      },
+      {
+        "id": "praise_answer",
+        "titleEs": "Elogia una buena respuesta",
+        "enHint": "Praise a good answer"
+      },
+      {
+        "id": "redirect_distraction",
+        "titleEs": "Redirige al estudiante si se distrae",
+        "enHint": "Redirect the student if they get distracted"
+      },
+      {
+        "id": "offer_extra_help",
+        "titleEs": "Ofrece ayuda extra fuera de clase",
+        "enHint": "Offer extra help outside class"
+      },
+      {
+        "id": "discuss_grade",
+        "titleEs": "Comenta una calificación con el estudiante",
+        "enHint": "Discuss a grade with the student"
+      },
+      {
+        "id": "schedule_exam",
+        "titleEs": "Anuncia la fecha de un examen",
+        "enHint": "Announce an exam date"
+      },
+      {
+        "id": "encourage_participation",
+        "titleEs": "Anima al estudiante a participar",
+        "enHint": "Encourage the student to participate"
+      },
+      {
+        "id": "clarify_instructions",
+        "titleEs": "Aclara las instrucciones de un ejercicio",
+        "enHint": "Clarify instructions for an exercise"
+      },
+      {
+        "id": "handle_missing_work",
+        "titleEs": "Pregunta por una tarea no entregada",
+        "enHint": "Ask about a missing assignment"
+      },
+      {
+        "id": "give_feedback",
+        "titleEs": "Da retroalimentación sobre un trabajo",
+        "enHint": "Give feedback on a piece of work"
+      },
+      {
+        "id": "calm_nervous_student",
+        "titleEs": "Tranquiliza a un estudiante nervioso",
+        "enHint": "Reassure a nervous student"
+      },
+      {
+        "id": "suggest_study_tip",
+        "titleEs": "Sugiere una técnica de estudio",
+        "enHint": "Suggest a study technique"
+      },
+      {
+        "id": "address_lateness",
+        "titleEs": "Comenta un retraso a clase",
+        "enHint": "Address the student arriving late"
+      },
+      {
+        "id": "group_work_instructions",
+        "titleEs": "Da instrucciones para un trabajo en grupo",
+        "enHint": "Give instructions for group work"
+      },
+      {
+        "id": "wrap_up_lesson",
+        "titleEs": "Resume los puntos clave al final de la clase",
+        "enHint": "Summarize key points at the end of class"
+      },
+      {
+        "id": "end_class_reminder",
+        "titleEs": "Termina la clase recordando la próxima tarea",
+        "enHint": "End class reminding them of the next assignment"
+      }
+    ]
+  },
+  "viajes": {
+    "packageId": "viajes",
+    "title": "Viajes",
+    "aiRole": "a traveller moving through an airport, a hotel and public transport in a new city",
+    "userRole": "the staff member helping them (check-in agent, security officer, border control, hotel receptionist or transport worker)",
+    "openingContext": "The traveller has just approached you for help during their trip.",
+    "roleSubtitleEs": "Tú eres el/la agente o recepcionista · la IA hace de viajero/a",
+    "characterEmoji": "🧳",
+    "characterLabelEs": "Viajero/a",
+    "missionPool": [
+      {
+        "id": "check_in_desk",
+        "titleEs": "Recibe al viajero en el mostrador y comprueba su reserva",
+        "enHint": "Welcome the traveller at the check-in desk and check their booking"
+      },
+      {
+        "id": "ask_checked_bags",
+        "titleEs": "Pregunta cuántas maletas va a facturar",
+        "enHint": "Ask how many bags they're checking in"
+      },
+      {
+        "id": "offer_seat_choice",
+        "titleEs": "Ofrece elegir asiento de ventanilla o pasillo",
+        "enHint": "Offer a window or aisle seat"
+      },
+      {
+        "id": "hand_boarding_pass",
+        "titleEs": "Entrega la tarjeta de embarque indicando la puerta",
+        "enHint": "Hand over the boarding pass and tell them the gate"
+      },
+      {
+        "id": "security_instructions",
+        "titleEs": "Indica qué hacer en el control de seguridad (zapatos, líquidos)",
+        "enHint": "Give security checkpoint instructions (shoes, liquids)"
+      },
+      {
+        "id": "passport_control",
+        "titleEs": "Revisa el pasaporte en el control de fronteras",
+        "enHint": "Check the passport at border control"
+      },
+      {
+        "id": "ask_purpose_of_visit",
+        "titleEs": "Pregunta el motivo de la visita y cuánto tiempo se queda",
+        "enHint": "Ask the purpose of the visit and how long they're staying"
+      },
+      {
+        "id": "baggage_claim_help",
+        "titleEs": "Ayuda a localizar la cinta de recogida de equipaje",
+        "enHint": "Help them find the baggage claim belt"
+      },
+      {
+        "id": "taxi_rank_directions",
+        "titleEs": "Indica dónde está la parada de taxis",
+        "enHint": "Give directions to the taxi rank"
+      },
+      {
+        "id": "train_ticket_sale",
+        "titleEs": "Vende un billete de tren e indica el andén",
+        "enHint": "Sell a train ticket and tell them the platform"
+      },
+      {
+        "id": "hotel_checkin",
+        "titleEs": "Da la bienvenida al hotel y pide su nombre de reserva",
+        "enHint": "Welcome them to the hotel and ask for their booking name"
+      },
+      {
+        "id": "hotel_amenities",
+        "titleEs": "Informa sobre el desayuno y el wifi del hotel",
+        "enHint": "Inform them about breakfast times and hotel wifi"
+      },
+      {
+        "id": "give_room_key",
+        "titleEs": "Entrega la llave de la habitación con indicaciones",
+        "enHint": "Hand over the room key with directions"
+      },
+      {
+        "id": "recommend_restaurant",
+        "titleEs": "Recomienda un buen restaurante cercano",
+        "enHint": "Recommend a good nearby restaurant"
+      },
+      {
+        "id": "metro_directions",
+        "titleEs": "Explica cómo llegar al centro en metro",
+        "enHint": "Explain how to get to the city centre by metro"
+      },
+      {
+        "id": "recommend_places",
+        "titleEs": "Recomienda lugares turísticos que visitar",
+        "enHint": "Recommend tourist places to visit"
+      },
+      {
+        "id": "handle_delay",
+        "titleEs": "Informa de un retraso en el vuelo o el tren",
+        "enHint": "Inform them about a flight or train delay"
+      },
+      {
+        "id": "handle_lost_luggage",
+        "titleEs": "Ayuda con una maleta perdida",
+        "enHint": "Help with lost luggage"
+      },
+      {
+        "id": "currency_or_payment_help",
+        "titleEs": "Ayuda con una duda sobre pagos o cambio de moneda",
+        "enHint": "Help with a payment or currency exchange question"
+      },
+      {
+        "id": "farewell_safe_trip",
+        "titleEs": "Despide al viajero deseándole un buen viaje",
+        "enHint": "Say goodbye and wish them a safe trip"
+      }
+    ]
+  },
+  "negocios": {
+    "packageId": "negocios",
+    "title": "Negocios",
+    "aiRole": "an office colleague chatting during the workday",
+    "userRole": "an office worker talking with their colleague",
+    "openingContext": "The colleague has just stopped by the desk to talk about ongoing work.",
+    "roleSubtitleEs": "Tú eres el/la oficinista · la IA hace de compañero/a",
+    "characterEmoji": "🧑‍💼",
+    "characterLabelEs": "Compañero/a",
+    "missionPool": [
+      {
+        "id": "schedule_meeting",
+        "titleEs": "Propón una reunión para mañana",
+        "enHint": "Propose a meeting for tomorrow"
+      },
+      {
+        "id": "request_document",
+        "titleEs": "Pide un documento o informe",
+        "enHint": "Request a document or report"
+      },
+      {
+        "id": "give_feedback",
+        "titleEs": "Da tu opinión sobre un trabajo del compañero",
+        "enHint": "Give feedback on the colleague's work"
+      },
+      {
+        "id": "discuss_deadline",
+        "titleEs": "Habla sobre un plazo de entrega",
+        "enHint": "Discuss a deadline"
+      },
+      {
+        "id": "delegate_task",
+        "titleEs": "Delega una tarea al compañero",
+        "enHint": "Delegate a task to the colleague"
+      },
+      {
+        "id": "follow_up_email",
+        "titleEs": "Haz seguimiento de un correo enviado antes",
+        "enHint": "Follow up on a previously sent email"
+      },
+      {
+        "id": "explain_delay_reason",
+        "titleEs": "Explica el motivo de un retraso",
+        "enHint": "Explain the reason for a delay"
+      },
+      {
+        "id": "propose_solution",
+        "titleEs": "Propón una solución a un problema",
+        "enHint": "Propose a solution to a problem"
+      },
+      {
+        "id": "request_approval",
+        "titleEs": "Pide la aprobación de un superior",
+        "enHint": "Request approval from a manager"
+      },
+      {
+        "id": "share_update",
+        "titleEs": "Comparte una actualización del proyecto",
+        "enHint": "Share a project update"
+      },
+      {
+        "id": "plan_presentation",
+        "titleEs": "Planifica una presentación juntos",
+        "enHint": "Plan a presentation together"
+      },
+      {
+        "id": "resolve_disagreement",
+        "titleEs": "Resuelve un desacuerdo sobre el enfoque",
+        "enHint": "Resolve a disagreement about the approach"
+      },
+      {
+        "id": "offer_help",
+        "titleEs": "Ofrece ayuda con una tarea del compañero",
+        "enHint": "Offer help with the colleague's task"
+      },
+      {
+        "id": "negotiate_scope",
+        "titleEs": "Negocia un cambio en el alcance del proyecto",
+        "enHint": "Negotiate a change in project scope"
+      },
+      {
+        "id": "thank_for_help",
+        "titleEs": "Agradece la ayuda recibida",
+        "enHint": "Thank the colleague for their help"
+      },
+      {
+        "id": "suggest_break",
+        "titleEs": "Sugiere hacer una pausa para el café",
+        "enHint": "Suggest taking a coffee break"
+      },
+      {
+        "id": "clarify_instructions",
+        "titleEs": "Aclara instrucciones poco claras",
+        "enHint": "Clarify unclear instructions"
+      },
+      {
+        "id": "report_issue",
+        "titleEs": "Informa de un problema técnico",
+        "enHint": "Report a technical issue"
+      },
+      {
+        "id": "celebrate_success",
+        "titleEs": "Celebra un logro del equipo",
+        "enHint": "Celebrate a team achievement"
+      },
+      {
+        "id": "plan_next_steps",
+        "titleEs": "Define los siguientes pasos a seguir",
+        "enHint": "Define the next steps to take"
+      }
+    ]
+  },
+  "salud": {
+    "packageId": "salud",
+    "title": "Salud",
+    "aiRole": "a patient visiting a clinic",
+    "userRole": "the doctor or nurse attending them",
+    "openingContext": "The patient has just sat down in the consultation room.",
+    "roleSubtitleEs": "Tú eres el/la médico/a · la IA hace de paciente",
+    "characterEmoji": "🤒",
+    "characterLabelEs": "Paciente",
+    "missionPool": [
+      {
+        "id": "ask_symptoms",
+        "titleEs": "Pregunta qué síntomas tiene",
+        "enHint": "Ask what symptoms they have"
+      },
+      {
+        "id": "ask_duration",
+        "titleEs": "Pregunta desde cuándo tiene el síntoma",
+        "enHint": "Ask how long they've had the symptom"
+      },
+      {
+        "id": "check_vitals",
+        "titleEs": "Comprueba la temperatura o la tensión",
+        "enHint": "Check their temperature or blood pressure"
+      },
+      {
+        "id": "ask_allergies_meds",
+        "titleEs": "Pregunta por alergias o medicación actual",
+        "enHint": "Ask about allergies or current medication"
+      },
+      {
+        "id": "give_diagnosis",
+        "titleEs": "Da un diagnóstico preliminar",
+        "enHint": "Give a preliminary diagnosis"
+      },
+      {
+        "id": "prescribe_medication",
+        "titleEs": "Prescribe una medicación",
+        "enHint": "Prescribe medication"
+      },
+      {
+        "id": "explain_dosage",
+        "titleEs": "Explica cómo tomar la medicación",
+        "enHint": "Explain how to take the medication"
+      },
+      {
+        "id": "order_test",
+        "titleEs": "Solicita un análisis o prueba",
+        "enHint": "Order a test or exam"
+      },
+      {
+        "id": "refer_specialist",
+        "titleEs": "Deriva al paciente a un especialista",
+        "enHint": "Refer the patient to a specialist"
+      },
+      {
+        "id": "advise_rest",
+        "titleEs": "Aconseja descanso y cuidados en casa",
+        "enHint": "Advise rest and home care"
+      },
+      {
+        "id": "schedule_followup",
+        "titleEs": "Programa una cita de seguimiento",
+        "enHint": "Schedule a follow-up appointment"
+      },
+      {
+        "id": "reassure_patient",
+        "titleEs": "Tranquiliza a un paciente preocupado",
+        "enHint": "Reassure a worried patient"
+      },
+      {
+        "id": "explain_side_effects",
+        "titleEs": "Explica posibles efectos secundarios",
+        "enHint": "Explain possible side effects"
+      },
+      {
+        "id": "discuss_lifestyle",
+        "titleEs": "Da consejos sobre hábitos de vida",
+        "enHint": "Give lifestyle advice"
+      },
+      {
+        "id": "check_vaccination",
+        "titleEs": "Pregunta por el estado de vacunación",
+        "enHint": "Ask about vaccination status"
+      },
+      {
+        "id": "handle_pain_complaint",
+        "titleEs": "Atiende una queja de dolor",
+        "enHint": "Address a pain complaint"
+      },
+      {
+        "id": "explain_procedure",
+        "titleEs": "Explica en qué consiste una prueba o procedimiento",
+        "enHint": "Explain what a test or procedure involves"
+      },
+      {
+        "id": "discuss_diet",
+        "titleEs": "Habla sobre la alimentación del paciente",
+        "enHint": "Discuss the patient's diet"
+      },
+      {
+        "id": "give_urgent_care_advice",
+        "titleEs": "Indica cuándo acudir a urgencias",
+        "enHint": "Advise when to go to the ER"
+      },
+      {
+        "id": "close_visit",
+        "titleEs": "Cierra la consulta despidiendo al paciente",
+        "enHint": "Close the visit and say goodbye"
+      }
+    ]
+  },
+  "uber": {
+    "packageId": "uber",
+    "title": "Uber / Taxi",
+    "aiRole": "a passenger being picked up for a ride",
+    "userRole": "the driver picking them up",
+    "openingContext": "The driver has just arrived to pick up the passenger.",
+    "roleSubtitleEs": "Tú eres el/la conductor/a · la IA hace de pasajero/a",
+    "characterEmoji": "🚕",
+    "characterLabelEs": "Pasajero/a",
+    "missionPool": [
+      {
+        "id": "confirm_passenger_name",
+        "titleEs": "Confirma que es el pasajero correcto",
+        "enHint": "Confirm you have the right passenger"
+      },
+      {
+        "id": "confirm_destination",
+        "titleEs": "Confirma a dónde va el pasajero",
+        "enHint": "Confirm where the passenger is going"
+      },
+      {
+        "id": "help_with_luggage",
+        "titleEs": "Ayuda a meter el equipaje en el maletero",
+        "enHint": "Help load the luggage into the trunk"
+      },
+      {
+        "id": "estimate_journey_time",
+        "titleEs": "Indica cuánto va a durar el trayecto",
+        "enHint": "Tell them how long the journey will take"
+      },
+      {
+        "id": "estimate_fare",
+        "titleEs": "Da una estimación del precio del trayecto",
+        "enHint": "Give a fare estimate"
+      },
+      {
+        "id": "discuss_route",
+        "titleEs": "Explica qué ruta vas a tomar",
+        "enHint": "Explain which route you'll take"
+      },
+      {
+        "id": "avoid_tolls",
+        "titleEs": "Acepta evitar las autopistas de peaje",
+        "enHint": "Agree to avoid toll roads"
+      },
+      {
+        "id": "adjust_climate",
+        "titleEs": "Pregunta si la temperatura del coche está bien",
+        "enHint": "Ask if the car temperature is okay"
+      },
+      {
+        "id": "adjust_music",
+        "titleEs": "Ajusta el volumen de la música a petición del pasajero",
+        "enHint": "Adjust the music volume at the passenger's request"
+      },
+      {
+        "id": "make_a_stop",
+        "titleEs": "Acepta hacer una parada rápida",
+        "enHint": "Agree to make a quick stop"
+      },
+      {
+        "id": "drive_slower",
+        "titleEs": "Acepta conducir más despacio",
+        "enHint": "Agree to drive more slowly"
+      },
+      {
+        "id": "confirm_drop_off",
+        "titleEs": "Confirma el punto exacto donde dejar al pasajero",
+        "enHint": "Confirm the exact drop-off point"
+      },
+      {
+        "id": "wait_for_passenger",
+        "titleEs": "Acepta esperar unos minutos al pasajero",
+        "enHint": "Agree to wait a few minutes for the passenger"
+      },
+      {
+        "id": "airport_terminal_check",
+        "titleEs": "Pregunta a qué terminal va si es un vuelo",
+        "enHint": "Ask which terminal they're going to for a flight"
+      },
+      {
+        "id": "small_talk_origin",
+        "titleEs": "Pregunta de dónde es el pasajero",
+        "enHint": "Ask where the passenger is from"
+      },
+      {
+        "id": "recommend_places",
+        "titleEs": "Recomienda algo que visitar en la ciudad",
+        "enHint": "Recommend something to visit in the city"
+      },
+      {
+        "id": "handle_payment",
+        "titleEs": "Cobra el trayecto y pregunta la forma de pago",
+        "enHint": "Charge for the ride and ask how they will pay"
+      },
+      {
+        "id": "offer_receipt",
+        "titleEs": "Ofrece un recibo del trayecto",
+        "enHint": "Offer a receipt for the ride"
+      },
+      {
+        "id": "handle_compliment",
+        "titleEs": "Responde a un cliente satisfecho con el servicio",
+        "enHint": "Respond to a happy customer's compliment"
+      },
+      {
+        "id": "farewell_safe_trip",
+        "titleEs": "Despide al pasajero deseándole un buen día",
+        "enHint": "Say goodbye and wish them a good day"
+      }
+    ]
+  },
+  "comercio": {
+    "packageId": "comercio",
+    "title": "Comercio",
+    "aiRole": "a customer shopping in a clothes store, supermarket, pharmacy or electronics store",
+    "userRole": "the shop assistant helping them",
+    "openingContext": "The customer has just walked up to you looking for help finding or buying something.",
+    "roleSubtitleEs": "Tú eres el/la dependiente/a · la IA hace de cliente",
+    "characterEmoji": "🛍️",
+    "characterLabelEs": "Cliente",
+    "missionPool": [
+      {
+        "id": "greet_and_ask",
+        "titleEs": "Saluda al cliente y pregunta qué busca",
+        "enHint": "Greet the customer and ask what they're looking for"
+      },
+      {
+        "id": "ask_size",
+        "titleEs": "Pregunta qué talla o número necesita",
+        "enHint": "Ask what size they need"
+      },
+      {
+        "id": "offer_fitting_room",
+        "titleEs": "Indica dónde están los probadores",
+        "enHint": "Show them where the fitting rooms are"
+      },
+      {
+        "id": "suggest_color",
+        "titleEs": "Sugiere otro color o modelo disponible",
+        "enHint": "Suggest another available colour or style"
+      },
+      {
+        "id": "explain_discount",
+        "titleEs": "Explica una oferta o descuento",
+        "enHint": "Explain a sale or discount"
+      },
+      {
+        "id": "process_payment",
+        "titleEs": "Cobra la compra y pregunta la forma de pago",
+        "enHint": "Charge for the purchase and ask how they will pay"
+      },
+      {
+        "id": "offer_receipt_bag",
+        "titleEs": "Ofrece el recibo y una bolsa",
+        "enHint": "Offer a receipt and a bag"
+      },
+      {
+        "id": "handle_exchange",
+        "titleEs": "Gestiona el cambio o devolución de un artículo",
+        "enHint": "Handle an exchange or return"
+      },
+      {
+        "id": "supermarket_aisle_directions",
+        "titleEs": "Indica en qué pasillo está un producto del súper",
+        "enHint": "Tell them which aisle a supermarket product is in"
+      },
+      {
+        "id": "recommend_fresh_produce",
+        "titleEs": "Recomienda fruta o producto fresco del día",
+        "enHint": "Recommend fresh produce of the day"
+      },
+      {
+        "id": "self_checkout_help",
+        "titleEs": "Ayuda con el uso de la caja automática",
+        "enHint": "Help them use the self-checkout"
+      },
+      {
+        "id": "shoe_size_check",
+        "titleEs": "Comprueba si hay un número de zapato disponible",
+        "enHint": "Check if a shoe size is available"
+      },
+      {
+        "id": "pharmacy_symptom_check",
+        "titleEs": "Pregunta el síntoma y recomienda un medicamento sin receta",
+        "enHint": "Ask about the symptom and recommend an over-the-counter medicine"
+      },
+      {
+        "id": "explain_dosage",
+        "titleEs": "Explica cómo y cuándo tomar un medicamento",
+        "enHint": "Explain how and when to take a medicine"
+      },
+      {
+        "id": "electronics_recommend",
+        "titleEs": "Recomienda un modelo de teléfono u otro aparato",
+        "enHint": "Recommend a phone or gadget model"
+      },
+      {
+        "id": "explain_warranty",
+        "titleEs": "Explica la garantía de un producto",
+        "enHint": "Explain a product's warranty"
+      },
+      {
+        "id": "bazaar_item_location",
+        "titleEs": "Indica dónde encontrar un artículo variado (pilas, papelería...)",
+        "enHint": "Point out where to find a miscellaneous item (batteries, stationery...)"
+      },
+      {
+        "id": "handle_out_of_stock",
+        "titleEs": "Informa de que un producto no está disponible y ofrece alternativa",
+        "enHint": "Inform them an item is out of stock and offer an alternative"
+      },
+      {
+        "id": "loyalty_card_offer",
+        "titleEs": "Pregunta si tiene tarjeta de fidelidad",
+        "enHint": "Ask if they have a loyalty card"
+      },
+      {
+        "id": "farewell_thank_customer",
+        "titleEs": "Agradece la compra y despide al cliente",
+        "enHint": "Thank them for their purchase and say goodbye"
+      }
+    ]
+  }
+}

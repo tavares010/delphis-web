@@ -1,0 +1,18 @@
+{
+  "note": "Capítulos (índice de extractBookChapters() sobre assets/laSed_en.txt) con audio narrado en assets/audio/book_chapters/chapter_<i>.mp3 + chapter_<i>_timestamps.json (karaoke).",
+  "indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
+}

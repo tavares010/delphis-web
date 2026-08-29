@@ -1,0 +1,1031 @@
+{
+  "hosteleria": [
+    {
+      "promptEs": "Buenas noches. ¿Tiene una reserva?",
+      "answerEn": "Good evening. Do you have a reservation?"
+    },
+    {
+      "promptEs": "Sí, a nombre de Smith.",
+      "answerEn": "Yes, under the name Smith."
+    },
+    {
+      "promptEs": "¿Cuántas personas son?",
+      "answerEn": "How many people are in your party?"
+    },
+    {
+      "promptEs": "Somos cuatro.",
+      "answerEn": "There are four of us."
+    },
+    {
+      "promptEs": "¿Quiere una mesa dentro o fuera?",
+      "answerEn": "Would you like a table inside or outside?"
+    },
+    {
+      "promptEs": "Fuera, por favor.",
+      "answerEn": "Outside, please."
+    },
+    {
+      "promptEs": "¿Le parece bien esta mesa?",
+      "answerEn": "Is this table okay for you?"
+    },
+    {
+      "promptEs": "Sí, es perfecta.",
+      "answerEn": "Yes, it’s perfect."
+    },
+    {
+      "promptEs": "¿Le recojo el abrigo?",
+      "answerEn": "Can I take your coats?"
+    },
+    {
+      "promptEs": "Sí, gracias.",
+      "answerEn": "Yes, thank you."
+    },
+    {
+      "promptEs": "Aquí tienen las cartas. ¿Quieren también la carta de bebidas?",
+      "answerEn": "Here are your menus. Would you like a drinks menu too?"
+    },
+    {
+      "promptEs": "Sí, por favor.",
+      "answerEn": "Yes, please."
+    },
+    {
+      "promptEs": "¿Ha comido con nosotros antes?",
+      "answerEn": "Have you dined with us before?"
+    },
+    {
+      "promptEs": "No, es la primera vez que venimos.",
+      "answerEn": "No, it’s our first time here."
+    },
+    {
+      "promptEs": "¿Le traigo algo de beber?",
+      "answerEn": "Can I get you something to drink?"
+    },
+    {
+      "promptEs": "Sí, quiero un vaso de agua.",
+      "answerEn": "Yes, I’d like a glass of water."
+    },
+    {
+      "promptEs": "¿Quiere agua con gas o sin gas?",
+      "answerEn": "Would you like still or sparkling water?"
+    },
+    {
+      "promptEs": "Sin gas, por favor.",
+      "answerEn": "Still water, please."
+    },
+    {
+      "promptEs": "¿Listos para pedir las bebidas?",
+      "answerEn": "Are you ready to order your drinks?"
+    },
+    {
+      "promptEs": "Sí, lo estoy.",
+      "answerEn": "Yes, I am."
+    },
+    {
+      "promptEs": "¿Qué le gustaría beber?",
+      "answerEn": "What would you like to drink?"
+    },
+    {
+      "promptEs": "Quiero una Coca-Cola, por favor.",
+      "answerEn": "I’d like a Coke, please."
+    },
+    {
+      "promptEs": "¿Quiere una cerveza o una copa de vino?",
+      "answerEn": "Would you like a beer or a glass of wine?"
+    },
+    {
+      "promptEs": "Tomaré una cerveza, por favor.",
+      "answerEn": "I’ll have a beer, please."
+    },
+    {
+      "promptEs": "¿Listos para pedir?",
+      "answerEn": "Are you ready to order?"
+    },
+    {
+      "promptEs": "Sí, lo estamos.",
+      "answerEn": "Yes, we are."
+    },
+    {
+      "promptEs": "¿Quieren algún entrante?",
+      "answerEn": "Would you like any starters?"
+    },
+    {
+      "promptEs": "Sí, queremos pan de ajo.",
+      "answerEn": "Yes, we’d like garlic bread."
+    },
+    {
+      "promptEs": "¿Quiere sopa?",
+      "answerEn": "Would you like some soup?"
+    },
+    {
+      "promptEs": "Sí, tomaré la sopa de tomate.",
+      "answerEn": "Yes, I’ll have the tomato soup."
+    },
+    {
+      "promptEs": "¿Quiere una ensalada de entrante?",
+      "answerEn": "Would you like a salad as a starter?"
+    },
+    {
+      "promptEs": "Sí, tomaré la ensalada César.",
+      "answerEn": "Yes, I’ll have the Caesar salad."
+    },
+    {
+      "promptEs": "¿Qué quiere de plato principal?",
+      "answerEn": "What would you like for your main course?"
+    },
+    {
+      "promptEs": "Tomaré el pollo a la parrilla.",
+      "answerEn": "I’ll have the grilled chicken."
+    },
+    {
+      "promptEs": "¿Quiere la ternera o el cerdo?",
+      "answerEn": "Would you like the beef or the pork?"
+    },
+    {
+      "promptEs": "Tomaré la ternera.",
+      "answerEn": "I’ll have the beef."
+    },
+    {
+      "promptEs": "¿Cómo quiere el filete de cocción?",
+      "answerEn": "How would you like your steak cooked?"
+    },
+    {
+      "promptEs": "Poco hecho, por favor.",
+      "answerEn": "Medium rare, please."
+    },
+    {
+      "promptEs": "¿Prefiere cordero en su lugar?",
+      "answerEn": "Would you like lamb instead?"
+    },
+    {
+      "promptEs": "No, tomaré el filete.",
+      "answerEn": "No, I’ll have the steak."
+    },
+    {
+      "promptEs": "¿Quiere pescado o carne?",
+      "answerEn": "Would you like fish or meat?"
+    },
+    {
+      "promptEs": "Tomaré el salmón.",
+      "answerEn": "I’ll have the salmon."
+    },
+    {
+      "promptEs": "¿Quiere pasta?",
+      "answerEn": "Would you like pasta?"
+    },
+    {
+      "promptEs": "Sí, tomaré los espaguetis carbonara.",
+      "answerEn": "Yes, I’ll have the spaghetti carbonara."
+    },
+    {
+      "promptEs": "¿Quiere pizza?",
+      "answerEn": "Would you like pizza?"
+    },
+    {
+      "promptEs": "Sí, tomaré una pizza de pepperoni.",
+      "answerEn": "Yes, I’ll have a pepperoni pizza."
+    },
+    {
+      "promptEs": "¿Qué hamburguesa quiere?",
+      "answerEn": "Which burger would you like?"
+    },
+    {
+      "promptEs": "Tomaré la hamburguesa con queso.",
+      "answerEn": "I’ll have the cheeseburger."
+    },
+    {
+      "promptEs": "¿Quiere patatas fritas o puré?",
+      "answerEn": "Would you like fries or mashed potatoes?"
+    },
+    {
+      "promptEs": "Patatas fritas, por favor.",
+      "answerEn": "Fries, please."
+    },
+    {
+      "promptEs": "¿Quiere arroz o verduras?",
+      "answerEn": "Would you like rice or vegetables?"
+    },
+    {
+      "promptEs": "Arroz, por favor.",
+      "answerEn": "Rice, please."
+    },
+    {
+      "promptEs": "¿Quiere verduras con la comida?",
+      "answerEn": "Would you like some vegetables with your meal?"
+    },
+    {
+      "promptEs": "Sí, por favor.",
+      "answerEn": "Yes, please."
+    },
+    {
+      "promptEs": "¿Quiere alguna salsa?",
+      "answerEn": "Would you like any sauce?"
+    },
+    {
+      "promptEs": "Sí, salsa barbacoa, por favor.",
+      "answerEn": "Yes, barbecue sauce, please."
+    },
+    {
+      "promptEs": "¿Tiene alguna alergia alimentaria?",
+      "answerEn": "Do you have any food allergies?"
+    },
+    {
+      "promptEs": "Sí, soy alérgico a los frutos secos.",
+      "answerEn": "Yes, I’m allergic to nuts."
+    },
+    {
+      "promptEs": "¿Todo bien con la comida?",
+      "answerEn": "Is everything okay with your meal?"
+    },
+    {
+      "promptEs": "Sí, todo está delicioso.",
+      "answerEn": "Yes, everything is delicious."
+    },
+    {
+      "promptEs": "¿El filete está cocinado como quería?",
+      "answerEn": "Is your steak cooked the way you wanted?"
+    },
+    {
+      "promptEs": "Sí, está perfecto.",
+      "answerEn": "Yes, it’s perfect."
+    },
+    {
+      "promptEs": "¿Le traigo más pan?",
+      "answerEn": "Can I bring you some more bread?"
+    },
+    {
+      "promptEs": "Sí, por favor.",
+      "answerEn": "Yes, please."
+    },
+    {
+      "promptEs": "¿Quiere otra bebida?",
+      "answerEn": "Would you like another drink?"
+    },
+    {
+      "promptEs": "Sí, otra Coca-Cola, por favor.",
+      "answerEn": "Yes, another Coke, please."
+    },
+    {
+      "promptEs": "¿Le relleno el agua?",
+      "answerEn": "Can I refill your water?"
+    },
+    {
+      "promptEs": "Sí, por favor.",
+      "answerEn": "Yes, please."
+    },
+    {
+      "promptEs": "¿Necesita algo más?",
+      "answerEn": "Do you need anything else?"
+    },
+    {
+      "promptEs": "¿Me podría traer kétchup, por favor?",
+      "answerEn": "Could I have some ketchup, please?"
+    },
+    {
+      "promptEs": "¿Quiere algo de mayonesa?",
+      "answerEn": "Would you like some mayonnaise?"
+    },
+    {
+      "promptEs": "Sí, por favor.",
+      "answerEn": "Yes, please."
+    },
+    {
+      "promptEs": "¿Le traigo sal y pimienta?",
+      "answerEn": "Can I get you some salt and pepper?"
+    },
+    {
+      "promptEs": "Sí, gracias.",
+      "answerEn": "Yes, thank you."
+    },
+    {
+      "promptEs": "¿Está disfrutando de la comida?",
+      "answerEn": "Are you enjoying your meal?"
+    },
+    {
+      "promptEs": "Sí, mucho.",
+      "answerEn": "Yes, very much."
+    },
+    {
+      "promptEs": "¿Ha terminado el plato principal?",
+      "answerEn": "Have you finished your main course?"
+    },
+    {
+      "promptEs": "Sí, hemos terminado.",
+      "answerEn": "Yes, we have."
+    },
+    {
+      "promptEs": "¿Le puedo retirar los platos?",
+      "answerEn": "Can I clear your plates?"
+    },
+    {
+      "promptEs": "Sí, por supuesto.",
+      "answerEn": "Yes, of course."
+    },
+    {
+      "promptEs": "¿Quiere ver la carta de postres?",
+      "answerEn": "Would you like to see the dessert menu?"
+    },
+    {
+      "promptEs": "Sí, por favor.",
+      "answerEn": "Yes, please."
+    },
+    {
+      "promptEs": "¿Qué postre recomienda?",
+      "answerEn": "What dessert would you recommend?"
+    },
+    {
+      "promptEs": "La tarta de chocolate es muy popular.",
+      "answerEn": "The chocolate cake is very popular."
+    },
+    {
+      "promptEs": "¿Quiere tarta de queso?",
+      "answerEn": "Would you like cheesecake?"
+    },
+    {
+      "promptEs": "Sí, por favor.",
+      "answerEn": "Yes, please."
+    },
+    {
+      "promptEs": "¿Quiere helado?",
+      "answerEn": "Would you like ice cream?"
+    },
+    {
+      "promptEs": "Sí, tomaré helado de vainilla.",
+      "answerEn": "Yes, I’ll have vanilla ice cream."
+    },
+    {
+      "promptEs": "¿Quiere tarta de manzana?",
+      "answerEn": "Would you like apple pie?"
+    },
+    {
+      "promptEs": "Sí, por favor.",
+      "answerEn": "Yes, please."
+    },
+    {
+      "promptEs": "¿Quiere café o té?",
+      "answerEn": "Would you like coffee or tea?"
+    },
+    {
+      "promptEs": "Tomaré un café.",
+      "answerEn": "I’ll have a coffee."
+    },
+    {
+      "promptEs": "¿Cómo toma el café?",
+      "answerEn": "How do you take your coffee?"
+    },
+    {
+      "promptEs": "Con leche y azúcar.",
+      "answerEn": "With milk and sugar."
+    },
+    {
+      "promptEs": "¿Quiere un café solo?",
+      "answerEn": "Would you like an espresso?"
+    },
+    {
+      "promptEs": "Sí, por favor.",
+      "answerEn": "Yes, please."
+    },
+    {
+      "promptEs": "¿Ha terminado el postre?",
+      "answerEn": "Have you finished your dessert?"
+    },
+    {
+      "promptEs": "Sí, gracias.",
+      "answerEn": "Yes, thank you."
+    },
+    {
+      "promptEs": "¿Estuvo todo bien?",
+      "answerEn": "Was everything alright?"
+    },
+    {
+      "promptEs": "Sí, todo estuvo excelente.",
+      "answerEn": "Yes, everything was excellent."
+    },
+    {
+      "promptEs": "¿Le gustó la comida?",
+      "answerEn": "Did you enjoy your meal?"
+    },
+    {
+      "promptEs": "Sí, nos gustó.",
+      "answerEn": "Yes, we did."
+    },
+    {
+      "promptEs": "¿Quiere algo más?",
+      "answerEn": "Would you like anything else?"
+    },
+    {
+      "promptEs": "No, gracias.",
+      "answerEn": "No, thank you."
+    },
+    {
+      "promptEs": "¿Listos para la cuenta?",
+      "answerEn": "Are you ready for the bill?"
+    },
+    {
+      "promptEs": "Sí, lo estamos.",
+      "answerEn": "Yes, we are."
+    },
+    {
+      "promptEs": "¿Quiere la cuenta ahora?",
+      "answerEn": "Would you like the bill now?"
+    },
+    {
+      "promptEs": "Sí, por favor.",
+      "answerEn": "Yes, please."
+    },
+    {
+      "promptEs": "¿Le traigo la cuenta?",
+      "answerEn": "Shall I bring the bill?"
+    },
+    {
+      "promptEs": "Sí, gracias.",
+      "answerEn": "Yes, thank you."
+    },
+    {
+      "promptEs": "¿Quieren pagar junto o por separado?",
+      "answerEn": "Would you like to pay together or separately?"
+    },
+    {
+      "promptEs": "Junto, por favor.",
+      "answerEn": "Together, please."
+    },
+    {
+      "promptEs": "¿Cómo quiere pagar?",
+      "answerEn": "How would you like to pay?"
+    },
+    {
+      "promptEs": "Con tarjeta, por favor.",
+      "answerEn": "By card, please."
+    },
+    {
+      "promptEs": "¿Quiere pagar en efectivo?",
+      "answerEn": "Would you like to pay in cash?"
+    },
+    {
+      "promptEs": "No, con tarjeta.",
+      "answerEn": "No, by card."
+    },
+    {
+      "promptEs": "¿Necesita un recibo?",
+      "answerEn": "Do you need a receipt?"
+    },
+    {
+      "promptEs": "Sí, por favor.",
+      "answerEn": "Yes, please."
+    },
+    {
+      "promptEs": "¿Quiere dejar propina?",
+      "answerEn": "Would you like to leave a tip?"
+    },
+    {
+      "promptEs": "Sí, por supuesto.",
+      "answerEn": "Yes, of course."
+    },
+    {
+      "promptEs": "Gracias por comer con nosotros.",
+      "answerEn": "Thank you for dining with us."
+    },
+    {
+      "promptEs": "Gracias por el excelente servicio.",
+      "answerEn": "Thank you for the excellent service."
+    },
+    {
+      "promptEs": "Esperamos verle pronto de nuevo.",
+      "answerEn": "We hope to see you again soon."
+    },
+    {
+      "promptEs": "Sin duda volveremos.",
+      "answerEn": "We will definitely come back."
+    },
+    {
+      "promptEs": "Que tenga una buena noche.",
+      "answerEn": "Have a lovely evening."
+    },
+    {
+      "promptEs": "Gracias. Igualmente.",
+      "answerEn": "Thank you. You too."
+    },
+    {
+      "promptEs": "Que tenga un buen viaje a casa.",
+      "answerEn": "Have a safe trip home."
+    },
+    {
+      "promptEs": "Muchas gracias.",
+      "answerEn": "Thank you very much."
+    }
+  ],
+  "uber": [
+    {
+      "promptEs": "Hola. ¿Es usted el conductor?",
+      "answerEn": "Hello. Are you the driver?"
+    },
+    {
+      "promptEs": "Sí, lo soy.",
+      "answerEn": "Yes, I am."
+    },
+    {
+      "promptEs": "¿Viene a buscar a Julia?",
+      "answerEn": "Are you here for Julia?"
+    },
+    {
+      "promptEs": "Sí, soy yo.",
+      "answerEn": "Yes, that’s me."
+    },
+    {
+      "promptEs": "¿A dónde va hoy?",
+      "answerEn": "Where are you going today?"
+    },
+    {
+      "promptEs": "Al aeropuerto, por favor.",
+      "answerEn": "To the airport, please."
+    },
+    {
+      "promptEs": "¿Podría llevarme a esta dirección?",
+      "answerEn": "Could you take me to this address?"
+    },
+    {
+      "promptEs": "Claro.",
+      "answerEn": "Of course."
+    },
+    {
+      "promptEs": "¿Es esta la dirección correcta?",
+      "answerEn": "Is this the correct address?"
+    },
+    {
+      "promptEs": "Sí, es correcta.",
+      "answerEn": "Yes, that’s right."
+    },
+    {
+      "promptEs": "¿Podría ayudarme con el equipaje?",
+      "answerEn": "Could you help me with my luggage?"
+    },
+    {
+      "promptEs": "Por supuesto.",
+      "answerEn": "Certainly."
+    },
+    {
+      "promptEs": "¿Puedo poner la maleta en el maletero?",
+      "answerEn": "Can I put my suitcase in the trunk?"
+    },
+    {
+      "promptEs": "Sí, se lo abro.",
+      "answerEn": "Yes, I’ll open it for you."
+    },
+    {
+      "promptEs": "¿Están todos listos?",
+      "answerEn": "Is everyone ready?"
+    },
+    {
+      "promptEs": "Sí, vamos.",
+      "answerEn": "Yes, let’s go."
+    },
+    {
+      "promptEs": "¿Cuánto durará el trayecto?",
+      "answerEn": "How long will the journey take?"
+    },
+    {
+      "promptEs": "Unos veinte minutos.",
+      "answerEn": "About twenty minutes."
+    },
+    {
+      "promptEs": "¿Cuánto costará?",
+      "answerEn": "How much will it cost?"
+    },
+    {
+      "promptEs": "Unos 25 euros.",
+      "answerEn": "Around €25."
+    },
+    {
+      "promptEs": "¿Hay mucho tráfico?",
+      "answerEn": "Is there much traffic?"
+    },
+    {
+      "promptEs": "No, por ahora no.",
+      "answerEn": "Not at the moment."
+    },
+    {
+      "promptEs": "¿Cuál es la forma más rápida de llegar?",
+      "answerEn": "What’s the fastest way to get there?"
+    },
+    {
+      "promptEs": "Iré por la autopista.",
+      "answerEn": "I’ll take the motorway."
+    },
+    {
+      "promptEs": "¿Podría evitar las autopistas de peaje?",
+      "answerEn": "Could you avoid the toll roads?"
+    },
+    {
+      "promptEs": "Claro.",
+      "answerEn": "Of course."
+    },
+    {
+      "promptEs": "¿Podría tomar la ruta más rápida?",
+      "answerEn": "Could you take the quickest route?"
+    },
+    {
+      "promptEs": "Claro.",
+      "answerEn": "Sure."
+    },
+    {
+      "promptEs": "¿Podemos parar en una gasolinera?",
+      "answerEn": "Can we stop at a petrol station?"
+    },
+    {
+      "promptEs": "Sí, sin problema.",
+      "answerEn": "Yes, no problem."
+    },
+    {
+      "promptEs": "¿Podríamos hacer una parada rápida?",
+      "answerEn": "Could we make a quick stop?"
+    },
+    {
+      "promptEs": "Claro.",
+      "answerEn": "Of course."
+    },
+    {
+      "promptEs": "¿Podría encender el aire acondicionado?",
+      "answerEn": "Could you turn the air conditioning on?"
+    },
+    {
+      "promptEs": "Por supuesto.",
+      "answerEn": "Certainly."
+    },
+    {
+      "promptEs": "¿Está bien la temperatura?",
+      "answerEn": "Is the temperature okay?"
+    },
+    {
+      "promptEs": "Sí, está perfecta.",
+      "answerEn": "Yes, it’s perfect."
+    },
+    {
+      "promptEs": "¿Podría bajar la música?",
+      "answerEn": "Could you turn the music down?"
+    },
+    {
+      "promptEs": "Claro.",
+      "answerEn": "Of course."
+    },
+    {
+      "promptEs": "¿Quiere que abra la ventana?",
+      "answerEn": "Would you like me to open the window?"
+    },
+    {
+      "promptEs": "Sí, por favor.",
+      "answerEn": "Yes, please."
+    },
+    {
+      "promptEs": "¿Ya casi llegamos?",
+      "answerEn": "Are we almost there?"
+    },
+    {
+      "promptEs": "Sí, cinco minutos más.",
+      "answerEn": "Yes, just five more minutes."
+    },
+    {
+      "promptEs": "¿Podría conducir un poco más despacio?",
+      "answerEn": "Could you drive a little slower?"
+    },
+    {
+      "promptEs": "Claro.",
+      "answerEn": "Of course."
+    },
+    {
+      "promptEs": "¿Podría dejarme aquí?",
+      "answerEn": "Could you drop me off here?"
+    },
+    {
+      "promptEs": "Por supuesto.",
+      "answerEn": "Certainly."
+    },
+    {
+      "promptEs": "¿Está bien aquí?",
+      "answerEn": "Is this okay?"
+    },
+    {
+      "promptEs": "Sí, gracias.",
+      "answerEn": "Yes, thank you."
+    },
+    {
+      "promptEs": "¿Qué calle es?",
+      "answerEn": "Which street is it?"
+    },
+    {
+      "promptEs": "Oxford Street.",
+      "answerEn": "Oxford Street."
+    },
+    {
+      "promptEs": "¿Está lejos de aquí?",
+      "answerEn": "Is it far from here?"
+    },
+    {
+      "promptEs": "No, está bastante cerca.",
+      "answerEn": "No, it’s quite close."
+    },
+    {
+      "promptEs": "¿Giro a la izquierda aquí?",
+      "answerEn": "Should I turn left here?"
+    },
+    {
+      "promptEs": "Sí, así es.",
+      "answerEn": "Yes, that’s right."
+    },
+    {
+      "promptEs": "¿Giro a la derecha en el semáforo?",
+      "answerEn": "Should I turn right at the traffic lights?"
+    },
+    {
+      "promptEs": "Sí, por favor.",
+      "answerEn": "Yes, please."
+    },
+    {
+      "promptEs": "¿La entrada está de este lado?",
+      "answerEn": "Is the entrance on this side?"
+    },
+    {
+      "promptEs": "Sí, así es.",
+      "answerEn": "Yes, it is."
+    },
+    {
+      "promptEs": "¿Puede parar delante del hotel?",
+      "answerEn": "Can you stop in front of the hotel?"
+    },
+    {
+      "promptEs": "Claro.",
+      "answerEn": "Of course."
+    },
+    {
+      "promptEs": "¿Podría esperarme unos minutos?",
+      "answerEn": "Could you wait for me for a few minutes?"
+    },
+    {
+      "promptEs": "Sí, sin problema.",
+      "answerEn": "Yes, no problem."
+    },
+    {
+      "promptEs": "¿Va a tardar mucho?",
+      "answerEn": "Will you be long?"
+    },
+    {
+      "promptEs": "Solo cinco minutos.",
+      "answerEn": "Just five minutes."
+    },
+    {
+      "promptEs": "¿A qué terminal va?",
+      "answerEn": "Which terminal are you going to?"
+    },
+    {
+      "promptEs": "A la terminal 2.",
+      "answerEn": "Terminal 2."
+    },
+    {
+      "promptEs": "¿Coge un vuelo hoy?",
+      "answerEn": "Are you catching a flight today?"
+    },
+    {
+      "promptEs": "Sí.",
+      "answerEn": "Yes, I am."
+    },
+    {
+      "promptEs": "¿A qué hora es su vuelo?",
+      "answerEn": "What time is your flight?"
+    },
+    {
+      "promptEs": "A las cuatro de la tarde.",
+      "answerEn": "At 4 p.m."
+    },
+    {
+      "promptEs": "¿Se aloja en este hotel?",
+      "answerEn": "Are you staying at this hotel?"
+    },
+    {
+      "promptEs": "Sí, tengo una reserva.",
+      "answerEn": "Yes, I have a reservation."
+    },
+    {
+      "promptEs": "¿Es este su hotel?",
+      "answerEn": "Is this your hotel?"
+    },
+    {
+      "promptEs": "Sí, gracias.",
+      "answerEn": "Yes, thank you."
+    },
+    {
+      "promptEs": "¿Necesita ayuda con las bolsas?",
+      "answerEn": "Do you need help with your bags?"
+    },
+    {
+      "promptEs": "Sí, por favor.",
+      "answerEn": "Yes, please."
+    },
+    {
+      "promptEs": "¿Dejo su equipaje aquí?",
+      "answerEn": "Shall I leave your luggage here?"
+    },
+    {
+      "promptEs": "Sí, perfecto.",
+      "answerEn": "Yes, that’s perfect."
+    },
+    {
+      "promptEs": "Que tenga una buena estancia.",
+      "answerEn": "Have a nice stay."
+    },
+    {
+      "promptEs": "Gracias.",
+      "answerEn": "Thank you."
+    },
+    {
+      "promptEs": "¿De dónde es usted?",
+      "answerEn": "Where are you from?"
+    },
+    {
+      "promptEs": "Soy de España.",
+      "answerEn": "I’m from Spain."
+    },
+    {
+      "promptEs": "¿Es su primera vez aquí?",
+      "answerEn": "Is this your first time here?"
+    },
+    {
+      "promptEs": "Sí, lo es.",
+      "answerEn": "Yes, it is."
+    },
+    {
+      "promptEs": "¿Está aquí por trabajo o de vacaciones?",
+      "answerEn": "Are you here for work or on holiday?"
+    },
+    {
+      "promptEs": "Estoy aquí de vacaciones.",
+      "answerEn": "I’m here on holiday."
+    },
+    {
+      "promptEs": "¿Cuánto tiempo se queda?",
+      "answerEn": "How long are you staying?"
+    },
+    {
+      "promptEs": "Una semana.",
+      "answerEn": "For one week."
+    },
+    {
+      "promptEs": "¿Ha visitado esta ciudad antes?",
+      "answerEn": "Have you visited this city before?"
+    },
+    {
+      "promptEs": "No, no la he visitado.",
+      "answerEn": "No, I haven’t."
+    },
+    {
+      "promptEs": "¿Le gusta la ciudad?",
+      "answerEn": "Do you like the city?"
+    },
+    {
+      "promptEs": "Sí, es preciosa.",
+      "answerEn": "Yes, it’s beautiful."
+    },
+    {
+      "promptEs": "¿Qué tiempo suele hacer aquí?",
+      "answerEn": "What’s the weather usually like here?"
+    },
+    {
+      "promptEs": "Normalmente hace sol.",
+      "answerEn": "It’s usually sunny."
+    },
+    {
+      "promptEs": "¿Necesita alguna recomendación?",
+      "answerEn": "Do you need any recommendations?"
+    },
+    {
+      "promptEs": "Sí, me encantaría.",
+      "answerEn": "Yes, I’d love some."
+    },
+    {
+      "promptEs": "Hemos llegado.",
+      "answerEn": "We’ve arrived."
+    },
+    {
+      "promptEs": "Gracias.",
+      "answerEn": "Thank you."
+    },
+    {
+      "promptEs": "¿Cuánto es la tarifa?",
+      "answerEn": "How much is the fare?"
+    },
+    {
+      "promptEs": "Son 18,50 euros.",
+      "answerEn": "It’s €18.50."
+    },
+    {
+      "promptEs": "¿Puedo pagar con tarjeta?",
+      "answerEn": "Can I pay by card?"
+    },
+    {
+      "promptEs": "Sí, claro.",
+      "answerEn": "Yes, of course."
+    },
+    {
+      "promptEs": "¿Aceptan efectivo?",
+      "answerEn": "Do you accept cash?"
+    },
+    {
+      "promptEs": "Sí, aceptamos.",
+      "answerEn": "Yes, we do."
+    },
+    {
+      "promptEs": "¿Quiere un recibo?",
+      "answerEn": "Would you like a receipt?"
+    },
+    {
+      "promptEs": "Sí, por favor.",
+      "answerEn": "Yes, please."
+    },
+    {
+      "promptEs": "¿Puedo pagar a través de la aplicación?",
+      "answerEn": "Can I pay through the app?"
+    },
+    {
+      "promptEs": "Sí, está bien.",
+      "answerEn": "Yes, that’s fine."
+    },
+    {
+      "promptEs": "Quédese con el cambio.",
+      "answerEn": "Keep the change."
+    },
+    {
+      "promptEs": "Muchas gracias.",
+      "answerEn": "Thank you very much."
+    },
+    {
+      "promptEs": "Todo fue perfecto. Gracias.",
+      "answerEn": "Everything was perfect. Thank you."
+    },
+    {
+      "promptEs": "Me alegra oír eso.",
+      "answerEn": "I’m glad to hear that."
+    },
+    {
+      "promptEs": "Gracias por el viaje.",
+      "answerEn": "Thank you for the ride."
+    },
+    {
+      "promptEs": "De nada.",
+      "answerEn": "You’re very welcome."
+    },
+    {
+      "promptEs": "¡Que tenga un buen día!",
+      "answerEn": "Have a great day!"
+    },
+    {
+      "promptEs": "Gracias. Usted también.",
+      "answerEn": "Thank you. You too."
+    },
+    {
+      "promptEs": "¡Cuídese!",
+      "answerEn": "Take care!"
+    },
+    {
+      "promptEs": "Gracias, usted también.",
+      "answerEn": "Thanks, you too."
+    },
+    {
+      "promptEs": "¡Buen viaje!",
+      "answerEn": "Have a safe trip!"
+    },
+    {
+      "promptEs": "Muchas gracias.",
+      "answerEn": "Thank you very much."
+    },
+    {
+      "promptEs": "Espero que disfrute su estancia.",
+      "answerEn": "I hope you enjoy your stay."
+    },
+    {
+      "promptEs": "Gracias. Seguro que sí.",
+      "answerEn": "Thank you. I’m sure I will."
+    },
+    {
+      "promptEs": "Gracias por elegir nuestro servicio.",
+      "answerEn": "Thanks for choosing our service."
+    },
+    {
+      "promptEs": "Un placer.",
+      "answerEn": "My pleasure."
+    },
+    {
+      "promptEs": "¡Hasta la próxima!",
+      "answerEn": "See you next time!"
+    },
+    {
+      "promptEs": "¡Hasta luego!",
+      "answerEn": "See you!"
+    },
+    {
+      "promptEs": "¡Adiós, que tenga un día maravilloso!",
+      "answerEn": "Goodbye and have a wonderful day!"
+    },
+    {
+      "promptEs": "¡Adiós! Que tenga un buen día también.",
+      "answerEn": "Goodbye! Have a great day too."
+    }
+  ],
+  "_note": "Solo hosteleria y uber tienen assets/paquetes/{id}.txt propio hoy — deportes, escuela, viajes, negocios, salud y comercio no tienen todavía un banco de frases Q/A propio en la app (quedan con la lista vacía en el flujo de Estudiar de Paquetes)."
+}

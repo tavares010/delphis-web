@@ -2,6 +2,15 @@
 # Host it as a GitHub Release asset instead and point descargar.html to that URL.
 *.apk
 
+# web_export/ ships real narrated audio + story video (~350MB) referenced
+# directly by the site at runtime (see js/data.js / js/libro.js / js/paquetes.js).
+# Too heavy for a normal git push — host it on real static storage (a CDN
+# bucket, GitHub Release asset, etc.) and update the base path in js/data.js
+# instead of committing these. The small stuff (data/*.json, laSed_en.txt,
+# cover images) stays tracked since it's what makes the content reviewable.
+web_export/assets/audio/
+web_export/assets/*_stories/*.mp4
+
 # OS junk
 .DS_Store
 Thumbs.db

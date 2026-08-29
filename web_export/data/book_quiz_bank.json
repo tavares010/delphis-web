@@ -1,0 +1,904 @@
+{
+  "0": [
+    {
+      "question": "¿Qué hizo Bhraman para que los seres volvieran a encontrar su naturaleza divina?",
+      "options": [
+        "Escondió los poderes divinos en el interior de cada ser",
+        "Los encerró en un templo sagrado",
+        "Se los entregó a la reina Prema",
+        "Los destruyó para siempre"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "question": "¿Qué colocó Bhraman en la lengua de cada humano?",
+      "options": [
+        "Una gota de agua bendita",
+        "Tres gotas mágicas que producirían una sed constante",
+        "Una semilla de la verdad",
+        "Un elixir de la memoria"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "question": "¿Cómo se llaman los dos reinos que surgieron tras la dualidad?",
+      "options": [
+        "Sathya y Rajasic",
+        "Tamasic y Mithya",
+        "Prema y Kali",
+        "Levit y Sem"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "question": "¿Cómo gestionaba el agua la reina Prema en su reino?",
+      "options": [
+        "Prohibiendo su consumo por completo",
+        "Vendiéndola al mejor postor",
+        "Almacenándola solo para la realeza",
+        "Racionándola con moderación, respeto y gratitud hacia la naturaleza"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "question": "¿Qué le ocurría a los mensajeros que Prema enviaba al reino de Kali?",
+      "options": [
+        "Eran encarcelados de inmediato",
+        "Bebían toda el agua que les ofrecían y olvidaban el mensaje, quedando atrapados",
+        "Regresaban con el remedio",
+        "Se convertían en guardias de Kali"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "question": "¿Cómo recibió la reina Prema la solución sobre quién debía emprender la misión?",
+      "options": [
+        "Por una carta de la reina Kali",
+        "Por un oráculo en el mercado",
+        "A través de un sueño revelador",
+        "Por un consejo de sus ministros"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "question": "¿Qué condición especial tenía la familia elegida para la misión?",
+      "options": [
+        "Debían viajar de noche únicamente",
+        "No podían llevar armas",
+        "Tenían que ir solos, sin los hijos",
+        "No podían cruzar por el camino del desierto, debían ir por tierras desconocidas"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "question": "¿Por qué el reino de Kali sufría cada vez más sed?",
+      "options": [
+        "Porque no tenían ríos ni lagos",
+        "Porque su reina acumulaba agua solo para ella y nunca dejaba de beber",
+        "Porque un hechizo había secado la tierra",
+        "Porque comerciaban el agua con otros reinos"
+      ],
+      "correctIndex": 1
+    }
+  ],
+  "1": [
+    {
+      "question": "¿Cómo se llama la protagonista y narradora de la historia?",
+      "options": [
+        "Narayana",
+        "Levit",
+        "Alexandra",
+        "Prema"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "question": "¿Cuántos hermanos tiene Alexandra y qué lugar ocupa ella?",
+      "options": [
+        "Es hija única",
+        "Es la mayor de tres hermanos",
+        "Es la menor de tres hermanos",
+        "Es la mediana de cinco hermanos"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "question": "¿A qué se dedicaba el padre de Alexandra, Elías?",
+      "options": [
+        "Era mensajero real",
+        "Era comerciante de agua",
+        "Era guardia del palacio",
+        "Era maestro del arte de los elementos"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "question": "¿Quién llega a la casa de Alexandra al principio de la historia?",
+      "options": [
+        "La propia reina Kali",
+        "Un mensajero de la reina",
+        "Un mercader",
+        "El rey Maya"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "question": "¿Para qué convoca la reina Prema a la familia de Alexandra?",
+      "options": [
+        "Para castigarlos por una falta",
+        "Para nombrarlos nuevos gobernantes",
+        "Para encomendarles la misión de ayudar al reino de Kali",
+        "Para pedirles impuestos"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "question": "¿Qué le entrega la reina Prema a la familia antes de partir?",
+      "options": [
+        "Un mapa del tesoro",
+        "Oro y joyas",
+        "Un dragón como guía",
+        "Armas y armadura para cruzar el primer reino"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "question": "¿Qué advertencia da la reina sobre el reino Rajasic?",
+      "options": [
+        "Que está deshabitado",
+        "Que no todo es lo que parece",
+        "Que es imposible de cruzar",
+        "Que allí vive un monstruo"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "question": "¿Cómo se llama el hermano menor de Alexandra?",
+      "options": [
+        "Sem",
+        "Elías",
+        "Levit",
+        "Maya"
+      ],
+      "correctIndex": 2
+    }
+  ],
+  "2": [
+    {
+      "question": "¿Cómo se llama el primer reino que la familia debe cruzar?",
+      "options": [
+        "Rajasic",
+        "Sathya",
+        "Kali",
+        "Tamasic"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "question": "¿Qué anuncia el cartel a la entrada de Tamasic?",
+      "options": [
+        "\"El reino de la verdad\"",
+        "\"El reino de la relajación y el placer\"",
+        "\"El reino del fuego eterno\"",
+        "\"Prohibida la entrada\""
+      ],
+      "correctIndex": 1
+    },
+    {
+      "question": "¿Qué les ocurre a todos tras comer el pastel que reparte la madre?",
+      "options": [
+        "Se ponen enfermos",
+        "Empiezan a ver visiones",
+        "Se quedan profundamente dormidos",
+        "Se vuelven invisibles"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "question": "¿Quiénes guían a la familia hacia los árboles frutales?",
+      "options": [
+        "Unos lobos",
+        "Un anciano",
+        "Las bestias encadenadas",
+        "Unas hadas"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "question": "¿Cómo descubre el padre que están atrapados en un bucle?",
+      "options": [
+        "Encuentra un mapa oculto",
+        "Nota que el nivel del río y las rocas no cambian aunque pase el tiempo",
+        "Se lo dice una de las hadas",
+        "Ve las mismas huellas en el suelo"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "question": "Según el padre, ¿por qué las hadas los mantenían allí?",
+      "options": [
+        "Porque querían robarles las armas",
+        "Porque eran prisioneros de un hechizo de sueño eterno",
+        "Porque los días no tenían noches correspondientes, haciendo que el tiempo no avanzara",
+        "Porque necesitaban su sangre"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "question": "¿Cómo logran finalmente escapar del bosque de las hadas?",
+      "options": [
+        "Quemando el bosque",
+        "Pidiendo ayuda a un mensajero",
+        "Con un hechizo del padre",
+        "Resistiendo el hambre y el cansancio hasta que las hadas dejan de engañarlos"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "question": "¿Qué efecto tiene la experiencia en la familia al superarla?",
+      "options": [
+        "Pierden la memoria del suceso",
+        "Se separan del padre",
+        "Se fortalecen frente al hambre y la fatiga para el resto del viaje",
+        "Deciden abandonar la misión"
+      ],
+      "correctIndex": 2
+    }
+  ],
+  "3": [
+    {
+      "question": "¿Por qué la familia se desvía de la ruta marcada por el padre?",
+      "options": [
+        "Porque una tormenta los desvía",
+        "Porque Sem se aleja del grupo jugando y hay que ir a buscarlo",
+        "Porque el mapa estaba mal dibujado",
+        "Porque las bestias los persiguen"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "question": "¿Qué observan escondidos junto al río de noche?",
+      "options": [
+        "Una fiesta de las hadas",
+        "Al rey Maya bañándose",
+        "Unas bestias mitad humanas mitad animales que esclavizan a otras criaturas",
+        "Un grupo de mensajeros perdidos"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "question": "¿Qué quiere hacer Sem al ver a las criaturas encadenadas?",
+      "options": [
+        "Unirse a las bestias",
+        "Liberarlas de las bestias",
+        "Huir sin decir nada",
+        "Pedir ayuda a la reina Kali"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "question": "¿Por qué se niega el padre a intervenir con las bestias?",
+      "options": [
+        "Porque tiene miedo de las bestias",
+        "Porque no tienen armas suficientes",
+        "Porque las criaturas no quieren ayuda",
+        "Porque no es su lucha y los desviaría de la misión principal"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "question": "¿Qué hace Sem esa misma noche a escondidas?",
+      "options": [
+        "Se escapa para volver a casa",
+        "Va solo a liberar a una de las criaturas encadenadas",
+        "Roba comida del campamento de las bestias",
+        "Despierta a toda la familia para atacar"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "question": "¿Qué estuvo a punto de pasarle a Sem al liberar a la criatura?",
+      "options": [
+        "Cayó a un río",
+        "Fue capturado por las bestias",
+        "Casi lo muerde con sus afilados colmillos",
+        "Se perdió en el bosque"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "question": "¿Quiénes rescatan a Sem de su error?",
+      "options": [
+        "La propia criatura liberada",
+        "Un grupo de mensajeros",
+        "Nadie, se salva solo",
+        "Sus padres y Alexandra"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "question": "¿Qué lección le da el padre a Sem tras el incidente?",
+      "options": [
+        "Que nunca debe confiar en su familia",
+        "Que los enemigos internos, como el dolor y la injusticia, son más peligrosos que los externos",
+        "Que las bestias son buenas en el fondo",
+        "Que debe entrenar más su puntería"
+      ],
+      "correctIndex": 1
+    }
+  ],
+  "4": [
+    {
+      "question": "¿Qué ve Alexandra en su reflejo en el lago?",
+      "options": [
+        "A su hermano Levit llorando",
+        "Grilletes de oro en sus pies que la esclavizan",
+        "El rostro de la reina Kali",
+        "Nada fuera de lo normal"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "question": "¿Qué sentimiento aviva el lago en Sem?",
+      "options": [
+        "Un miedo enorme a la oscuridad",
+        "Un deseo de ser rey",
+        "El resentimiento de sentirse el hijo intermedio olvidado",
+        "Nostalgia de su casa"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "question": "¿Por qué Levit no es engañado por el reflejo del lago?",
+      "options": [
+        "Porque no se acerca al agua",
+        "Porque su padre le cubre los ojos",
+        "Porque ya conocía el truco del lago",
+        "Porque su corazón puro e inocente no conoce el odio ni el engaño"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "question": "¿Qué ve Levit en el reflejo de las flores gigantes?",
+      "options": [
+        "Caras sonrientes y felices",
+        "Rostros con expresiones de tristeza, rabia y amargura",
+        "El rostro de su madre",
+        "Nada, solo flores normales"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "question": "¿Qué le pasa a Levit al intentar apartar a sus hermanos del lago?",
+      "options": [
+        "Se hace daño en un pie",
+        "Se queda dormido",
+        "Cae al agua por el impulso",
+        "Empieza a llorar sin motivo"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "question": "¿Qué rompe el hechizo del lago sobre Alexandra?",
+      "options": [
+        "Escuchar la voz de su padre",
+        "El amanecer",
+        "Un grito de las hadas",
+        "Ver a Levit en peligro dentro del agua"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "question": "¿Qué descubre Alexandra al saltar al agua para salvar a Levit?",
+      "options": [
+        "Que el agua era venenosa",
+        "Que había un monstruo en el fondo",
+        "Que los grilletes de oro nunca existieron, era solo una ilusión",
+        "Que su hermano sabía nadar perfectamente"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "question": "¿Qué hace la familia al llegar a la puerta de salida de Tamasic?",
+      "options": [
+        "Las venden a un mercader",
+        "Se las regalan a un mendigo",
+        "Las entierran como ofrenda",
+        "Dejan atrás las armas y armaduras que ya no necesitan"
+      ],
+      "correctIndex": 3
+    }
+  ],
+  "5": [
+    {
+      "question": "¿Qué frase da la bienvenida al reino Rajasic?",
+      "options": [
+        "\"El reino de la relajación y el placer\"",
+        "\"La ciudad perfecta para vivir\"",
+        "\"Bienvenidos a la oscuridad\"",
+        "\"Aquí nunca falta el agua\""
+      ],
+      "correctIndex": 1
+    },
+    {
+      "question": "¿Con qué llevan armados a los guardias de Rajasic en vez de armas?",
+      "options": [
+        "Lanzas de fuego",
+        "Escudos de cristal",
+        "Grandes redes tejidas",
+        "Espadas doradas"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "question": "¿Qué descubre Alexandra al mirar a una \"flor\" del jardín?",
+      "options": [
+        "Que es una fruta de Mithya",
+        "Que le devuelve la mirada la reina Kali",
+        "Que en realidad es una mujer disfrazada que vigila a los guardias",
+        "Que es una estatua mágica"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "question": "¿Cómo se llama el rey de Rajasic?",
+      "options": [
+        "Bhraman",
+        "Elías",
+        "Levit",
+        "Maya"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "question": "¿Qué fruto ofrece el rey Maya a la familia?",
+      "options": [
+        "La manzana de la verdad",
+        "La naranja dorada",
+        "El fruto de Mithya",
+        "El mango de Levit"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "question": "¿Qué promete el fruto de Mithya a quien lo consume?",
+      "options": [
+        "La inmortalidad",
+        "Todo lo que deseen: valentía, riqueza, belleza o poder",
+        "El don de la profecía",
+        "La capacidad de volar"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "question": "¿Qué pide a cambio el rey Maya por darles el fruto?",
+      "options": [
+        "Que le entreguen sus armas",
+        "Que le revelen el secreto de Prema",
+        "Que se queden a cultivarlo bajo su mando",
+        "Que luchen contra Kali por él"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "question": "¿Cómo consigue la madre ganar tiempo ante el rey?",
+      "options": [
+        "Retando al rey a un duelo",
+        "Fingiendo estar enferma",
+        "Pidiendo hablar con la reina Kali primero",
+        "Pidiendo primero descansar y cambiarse de ropa antes del banquete"
+      ],
+      "correctIndex": 3
+    }
+  ],
+  "6": [
+    {
+      "question": "¿Qué le extraña al padre sobre el clima de Rajasic?",
+      "options": [
+        "Que llueva constantemente",
+        "Que nunca oscurezca",
+        "Que haga tanto frío pese a haber un sol tan grande",
+        "Que haga demasiado calor"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "question": "¿Qué relación hay entre la cercanía al palacio y la cantidad de fruto de Mithya?",
+      "options": [
+        "Cuanto más lejos, más fruto tienen",
+        "No hay ninguna relación",
+        "Solo el rey posee el fruto",
+        "Cuanto más cerca del palacio, más fruto tienen, pero más miedo a perderlo"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "question": "¿Quién les revela el secreto del reino Rajasic?",
+      "options": [
+        "La reina Kali en persona",
+        "Un anciano pastor de ovejas",
+        "Un guardia arrepentido",
+        "La mujer disfrazada de flor"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "question": "¿De quién es hijo el rey Maya, según el pastor?",
+      "options": [
+        "De la reina Prema",
+        "Del propio pastor",
+        "De un antiguo rey de Tamasic",
+        "De la reina Kali"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "question": "¿Dónde crece el fruto de Mithya?",
+      "options": [
+        "Solo bajo el sol directo",
+        "En cualquier terreno fértil",
+        "Solo cerca del agua",
+        "Solo en la oscuridad"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "question": "¿Qué le hace el fruto de Mithya a quien lo consume?",
+      "options": [
+        "Le da fuerza sobrehumana",
+        "Borra su memoria y crea una fuerte adicción",
+        "Le cura cualquier enfermedad",
+        "Le permite ver el futuro"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "question": "¿Qué les pasaría a los adictos al fruto si miraran directamente al sol verdadero?",
+      "options": [
+        "Recuperarían la memoria al instante",
+        "No les pasaría nada",
+        "Podrían quedarse ciegos o morir",
+        "Se curarían de la adicción"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "question": "¿Qué relación tiene el pastor con alguien atrapado en el palacio?",
+      "options": [
+        "Es hermano del rey Maya",
+        "Fue guardia real hace años",
+        "Su propio hijo vive allí, adicto al fruto",
+        "No tiene ninguna relación personal"
+      ],
+      "correctIndex": 2
+    }
+  ],
+  "7": [
+    {
+      "question": "¿Qué detalle nota la madre que le da la clave para vencer al reino?",
+      "options": [
+        "Que no hay pájaros cantando",
+        "Que las flores no tienen olor",
+        "Que no hay ni un solo insecto, como abejas, en todo el reino",
+        "Que el agua del reino está estancada"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "question": "¿Qué usan para atrapar a las luciérnagas?",
+      "options": [
+        "La cesta de comida vacía",
+        "Las redes de los guardias",
+        "Un hechizo del padre",
+        "La rebeca (cárdigan) de Alexandra a modo de red improvisada"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "question": "¿Qué ocurre cuando las luciérnagas tocan el fruto de Mithya?",
+      "options": [
+        "Las luciérnagas mueren",
+        "El fruto se desintegra casi al instante",
+        "El fruto se vuelve dorado",
+        "No pasa nada especial"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "question": "¿Qué contratiempo sufren antes de llegar al palacio?",
+      "options": [
+        "Los guardias les confiscan las luciérnagas",
+        "Un incendio destruye la cesta",
+        "La cesta se queda abierta y pierden todas las luciérnagas por el camino",
+        "Las luciérnagas se niegan a seguir"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "question": "¿Cómo gana tiempo la madre ante el rey Maya en el palacio?",
+      "options": [
+        "Fingiendo un desmayo",
+        "Retándolo a un duelo",
+        "Pidiendo hablar con la reina Kali",
+        "Halagándolo y elogiando la arquitectura de su ciudad"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "question": "¿Cómo consigue el padre que entre la luz del sol real en la sala?",
+      "options": [
+        "Abriendo una puerta secreta",
+        "Pidiéndole al rey que la abra",
+        "Lanzando una bandeja contra la cúpula de cristal oscuro para romperla",
+        "Usando una de las luciérnagas restantes"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "question": "¿Qué diferencia a quienes se quedan ciegos de quienes recuperan la memoria?",
+      "options": [
+        "Quedaron ciegos los que llevaban armadura",
+        "Los que corrieron a salvar sus tesoros quedaron ciegos; los que permanecieron tranquilos recuperaron su memoria",
+        "Recuperaron la memoria solo los niños",
+        "Fue completamente al azar"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "question": "¿Qué le sucede finalmente al rey Maya?",
+      "options": [
+        "Escapa del reino sin ser visto",
+        "Se convierte en aliado de la familia",
+        "Recupera la memoria y pide perdón",
+        "Se queda ciego y nunca vuelve a gobernar"
+      ],
+      "correctIndex": 3
+    }
+  ],
+  "8": [
+    {
+      "question": "¿Cómo describen las tierras de Kali al entrar en ellas?",
+      "options": [
+        "Un vergel exuberante y verde",
+        "Tierra seca, agrietada y llena de agujeros por la sequía",
+        "Una ciudad brillante y próspera",
+        "Un bosque encantado"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "question": "¿Qué descubren a la mañana siguiente de acampar?",
+      "options": [
+        "Que las bestias los han encontrado",
+        "Que han llegado al palacio",
+        "Que Levit ha desaparecido",
+        "Que se han quedado sin agua"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "question": "¿Qué dos objetos nota el padre que también faltan?",
+      "options": [
+        "Su espada y su capa",
+        "El boceto del mapa y el mango favorito de Levit",
+        "El agua y la comida",
+        "Las botas de Alexandra"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "question": "¿Qué deduce la familia al notar esas faltas?",
+      "options": [
+        "Que unas bestias se lo han llevado",
+        "Que se ha ahogado en un pozo",
+        "Que ha vuelto solo hacia Prema",
+        "Que Levit se ha adelantado solo hacia el palacio"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "question": "¿Cómo reacciona la madre ante la desaparición de Levit?",
+      "options": [
+        "Se mantiene serena en todo momento",
+        "Rompe a llorar, algo que Alexandra nunca había visto antes",
+        "Culpa inmediatamente al padre",
+        "Decide abandonar la misión"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "question": "¿Qué significa el nombre de Levit, según recuerda Alexandra?",
+      "options": [
+        "\"El valiente\"",
+        "\"El guardián\"",
+        "\"El que une\"",
+        "\"El elegido\""
+      ],
+      "correctIndex": 2
+    },
+    {
+      "question": "¿Qué le enseñó el padre a sus hijos desde pequeños, relevante en este capítulo?",
+      "options": [
+        "A luchar con espada",
+        "A hablar con los animales",
+        "A interpretar los mapas que él dibujaba",
+        "A nadar en aguas profundas"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "question": "¿Cuántas misiones tiene ahora la familia tras la desaparición de Levit?",
+      "options": [
+        "Solo una, encontrar a Levit",
+        "Dos: ayudar a la reina Kali y encontrar a Levit",
+        "Tres, incluyendo derrotar al rey Maya",
+        "Ninguna, deciden volver a casa"
+      ],
+      "correctIndex": 1
+    }
+  ],
+  "9": [
+    {
+      "question": "¿Qué efecto tiene el aire de este valle sobre la familia?",
+      "options": [
+        "Los hace más fuertes y optimistas",
+        "Les provoca sed insaciable",
+        "Provoca un cansancio extremo y pensamientos de desánimo como \"no podré\"",
+        "Les hace perder la memoria por completo"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "question": "¿Quién parece no verse afectado por el valle?",
+      "options": [
+        "Sem, por su energía",
+        "Levit, por su inocencia",
+        "El padre, concentrado en el mapa",
+        "Nadie, a todos les afecta igual"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "question": "¿Cómo encuentran finalmente a Levit?",
+      "options": [
+        "Atrapado en un agujero",
+        "Escondido en el palacio de Kali",
+        "Siendo cuidado por un pastor",
+        "Dormido detrás de un arbusto con el mapa y el mango mordido en las manos"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "question": "¿Qué le dice Levit a su padre al despertar?",
+      "options": [
+        "Que se perdió sin querer",
+        "Que unas bestias lo asustaron",
+        "Que él también es capaz de completar el camino solo",
+        "Que no recuerda nada de lo ocurrido"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "question": "¿Qué lección le da el padre a Levit sobre su papel en la familia?",
+      "options": [
+        "Que debe ser castigado por desobedecer",
+        "Que ya puede ser el líder del grupo",
+        "Que por su juventud no le corresponde ser el guía, pero su pureza los ha ayudado mucho",
+        "Que debe quedarse siempre atrás"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "question": "¿Por qué se llama \"Valle del Olvido\"?",
+      "options": [
+        "Porque allí todos pierden la memoria para siempre",
+        "Porque nadie recuerda cómo entrar",
+        "Porque hace perder la noción de quiénes son y por qué han venido",
+        "Porque el mapa desaparece al cruzarlo"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "question": "¿Qué es lo que finalmente les permite superar el valle?",
+      "options": [
+        "Encontrar más comida",
+        "Correr lo más rápido posible",
+        "Usar las armas que aún tenían",
+        "Mantenerse unidos y humildes"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "question": "Además del mapa, ¿qué llevaba Levit consigo?",
+      "options": [
+        "Una de las luciérnagas",
+        "Un frasco de agua de Kali",
+        "Las botas de su padre",
+        "Un mango a medio comer"
+      ],
+      "correctIndex": 3
+    }
+  ],
+  "10": [
+    {
+      "question": "¿Quién amenaza con derribar las puertas del palacio de Kali?",
+      "options": [
+        "Las bestias del segundo reino",
+        "El ejército del rey Maya",
+        "Un ejército de antiguos ciudadanos sedientos",
+        "Un grupo de mensajeros de Prema"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "question": "¿Cómo logra Sem abrir la puerta del palacio desde dentro?",
+      "options": [
+        "La derriba a la fuerza",
+        "Convence a un guardia",
+        "Usa un hechizo del padre",
+        "Trepa por los adornos de la puerta usando su habilidad de escalada"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "question": "¿En qué encuentran a la reina Kali al entrar al palacio?",
+      "options": [
+        "Dormida en su cama",
+        "Luchando contra el ejército",
+        "Sentada en su trono, aferrada a un vaso de agua",
+        "Escondida en un pozo"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "question": "¿Cómo pone la reina Kali a prueba a los niños?",
+      "options": [
+        "Les pide que resuelvan un acertijo",
+        "Los envía a buscar el fruto de Mithya",
+        "Los obliga a luchar entre ellos",
+        "Les ofrece un vaso de agua para ver si pueden resistirse a beberlo"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "question": "¿Qué hacen Levit y Sem cuando la reina les ofrece el agua?",
+      "options": [
+        "Beben toda el agua de un trago",
+        "Rompen el vaso sin querer",
+        "La rechazan de palabra, aunque sus ojos delatan su sed",
+        "Se la ofrecen a Alexandra"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "question": "¿Qué hace Alexandra de forma diferente cuando le ofrecen el vaso?",
+      "options": [
+        "Se niega por completo a tocarlo",
+        "Bebe todo el vaso de golpe",
+        "Lo derrama a propósito",
+        "Toma solo un sorbo, justo lo necesario, y devuelve el vaso"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "question": "¿Qué comprende la reina Kali gracias al gesto de Alexandra?",
+      "options": [
+        "Que el agua de su reino estaba envenenada",
+        "Que su hijo Maya seguía vivo",
+        "Que debía abdicar de inmediato",
+        "Que la verdad, a diferencia de la mentira, no necesita mucho para sostenerse"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "question": "¿Cómo demuestra la reina Kali al general del ejército que ya no acapara el agua?",
+      "options": [
+        "Le entrega su corona",
+        "Abre todas las puertas del palacio sin condiciones",
+        "Le muestra el fruto de Mithya destruido",
+        "Bebe y ofrece agua de un barril elegido al azar por el propio general"
+      ],
+      "correctIndex": 3
+    }
+  ]
+}

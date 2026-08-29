@@ -1,0 +1,434 @@
+[
+  {
+    "index": 0,
+    "verb": "Zero Conditional",
+    "tense": "Zero Conditional",
+    "promptEs": "Me canso si no duermo.",
+    "translationEn": "I get tired if I don't sleep.",
+    "imageUrl": "https://images.pexels.com/photos/36713392/pexels-photo-36713392.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 1,
+    "verb": "Zero Conditional",
+    "tense": "Zero Conditional",
+    "promptEs": "Te entra hambre si no comes.",
+    "translationEn": "You get hungry if you don't eat.",
+    "imageUrl": "https://images.pexels.com/photos/4021956/pexels-photo-4021956.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 2,
+    "verb": "Zero Conditional",
+    "tense": "Zero Conditional",
+    "promptEs": "Él está feliz si gana.",
+    "translationEn": "He is happy if he wins.",
+    "imageUrl": "https://images.pexels.com/photos/6150589/pexels-photo-6150589.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 3,
+    "verb": "Zero Conditional",
+    "tense": "Zero Conditional",
+    "promptEs": "Ella sonríe si ve a sus amigos.",
+    "translationEn": "She smiles if she sees her friends.",
+    "imageUrl": "https://images.pexels.com/photos/12807372/pexels-photo-12807372.png?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 4,
+    "verb": "Zero Conditional",
+    "tense": "Zero Conditional",
+    "promptEs": "Nos quedamos en casa si llueve.",
+    "translationEn": "We stay home if it rains.",
+    "imageUrl": "https://images.pexels.com/photos/4045757/pexels-photo-4045757.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 5,
+    "verb": "Zero Conditional",
+    "tense": "Zero Conditional",
+    "promptEs": "Llegan tarde si pierden el autobús.",
+    "translationEn": "They are late if they miss the bus.",
+    "imageUrl": "https://images.pexels.com/photos/20052160/pexels-photo-20052160.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 6,
+    "verb": "First Conditional",
+    "tense": "First Conditional",
+    "promptEs": "Te llamaré si termino el trabajo pronto.",
+    "translationEn": "I will call you if I finish work early.",
+    "imageUrl": "https://images.pexels.com/photos/8682771/pexels-photo-8682771.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 7,
+    "verb": "First Conditional",
+    "tense": "First Conditional",
+    "promptEs": "Te sentirás mejor si descansas un poco.",
+    "translationEn": "You will feel better if you get some rest.",
+    "imageUrl": "https://images.pexels.com/photos/8110784/pexels-photo-8110784.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 8,
+    "verb": "First Conditional",
+    "tense": "First Conditional",
+    "promptEs": "Estará feliz si aprueba el examen.",
+    "translationEn": "He will be happy if he passes the exam.",
+    "imageUrl": "https://images.pexels.com/photos/4560076/pexels-photo-4560076.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 9,
+    "verb": "First Conditional",
+    "tense": "First Conditional",
+    "promptEs": "Vendrá si tiene tiempo.",
+    "translationEn": "She will come if she has time.",
+    "imageUrl": "https://images.pexels.com/photos/8841712/pexels-photo-8841712.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 10,
+    "verb": "First Conditional",
+    "tense": "First Conditional",
+    "promptEs": "Pediremos pizza si no tenemos ganas de cocinar.",
+    "translationEn": "We will order pizza if we don't feel like cooking.",
+    "imageUrl": "https://images.pexels.com/photos/4061560/pexels-photo-4061560.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 11,
+    "verb": "First Conditional",
+    "tense": "First Conditional",
+    "promptEs": "Comprarán un coche nuevo si ahorran suficiente dinero.",
+    "translationEn": "They will buy a new car if they save enough money.",
+    "imageUrl": "https://images.pexels.com/photos/6817009/pexels-photo-6817009.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 12,
+    "verb": "Second Conditional",
+    "tense": "Second Conditional",
+    "promptEs": "Viajaría más si tuviera más dinero.",
+    "translationEn": "I would travel more if I had more money.",
+    "imageUrl": "https://images.pexels.com/photos/69866/pexels-photo-69866.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 13,
+    "verb": "Second Conditional",
+    "tense": "Second Conditional",
+    "promptEs": "Te sentirías mejor si durmieras más.",
+    "translationEn": "You would feel better if you slept more.",
+    "imageUrl": "https://images.pexels.com/photos/5858741/pexels-photo-5858741.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 14,
+    "verb": "Second Conditional",
+    "tense": "Second Conditional",
+    "promptEs": "Compraría ese coche si tuviera suficiente dinero.",
+    "translationEn": "He would buy that car if he had enough money.",
+    "imageUrl": "https://images.pexels.com/photos/4895420/pexels-photo-4895420.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 15,
+    "verb": "Second Conditional",
+    "tense": "Second Conditional",
+    "promptEs": "Te ayudaría si tuviera tiempo.",
+    "translationEn": "She would help you if she had time.",
+    "imageUrl": "https://images.pexels.com/photos/8542827/pexels-photo-8542827.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 16,
+    "verb": "Second Conditional",
+    "tense": "Second Conditional",
+    "promptEs": "Iríamos a la playa si el tiempo fuera mejor.",
+    "translationEn": "We would go to the beach if the weather were better.",
+    "imageUrl": "https://images.pexels.com/photos/6436706/pexels-photo-6436706.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 17,
+    "verb": "Second Conditional",
+    "tense": "Second Conditional",
+    "promptEs": "Se mudarían a otra ciudad si encontraran un trabajo mejor.",
+    "translationEn": "They would move to another city if they found a better job.",
+    "imageUrl": "https://images.pexels.com/photos/2773478/pexels-photo-2773478.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 18,
+    "verb": "Third Conditional",
+    "tense": "Third Conditional",
+    "promptEs": "Te habría llamado si hubiera tenido tu número.",
+    "translationEn": "I would have called you if I had had your number.",
+    "imageUrl": "https://images.pexels.com/photos/105003/pexels-photo-105003.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 19,
+    "verb": "Third Conditional",
+    "tense": "Third Conditional",
+    "promptEs": "Te habrías sentido mejor si te hubieras acostado antes.",
+    "translationEn": "You would have felt better if you had gone to bed earlier.",
+    "imageUrl": "https://images.pexels.com/photos/10887572/pexels-photo-10887572.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 20,
+    "verb": "Third Conditional",
+    "tense": "Third Conditional",
+    "promptEs": "Habría aprobado el examen si hubiera estudiado más.",
+    "translationEn": "He would have passed the exam if he had studied more.",
+    "imageUrl": "https://images.pexels.com/photos/7092579/pexels-photo-7092579.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 21,
+    "verb": "Third Conditional",
+    "tense": "Third Conditional",
+    "promptEs": "Habría venido si hubiera sabido lo de la fiesta.",
+    "translationEn": "She would have come if she had known about the party.",
+    "imageUrl": "https://images.pexels.com/photos/5498399/pexels-photo-5498399.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 22,
+    "verb": "Third Conditional",
+    "tense": "Third Conditional",
+    "promptEs": "Habríamos ganado el partido si hubiéramos jugado mejor.",
+    "translationEn": "We would have won the game if we had played better.",
+    "imageUrl": "https://images.pexels.com/photos/899317/pexels-photo-899317.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 23,
+    "verb": "Third Conditional",
+    "tense": "Third Conditional",
+    "promptEs": "Habrían hecho más fotos si hubieran traído la cámara.",
+    "translationEn": "They would have taken more photos if they had brought the camera.",
+    "imageUrl": "https://images.pexels.com/photos/38835869/pexels-photo-38835869.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 24,
+    "verb": "Mixed Conditional",
+    "tense": "Mixed Conditional",
+    "promptEs": "Tendría un perro si no hubiera sido alérgico de niño.",
+    "translationEn": "I would have a dog if I hadn't been allergic as a child.",
+    "imageUrl": "https://images.pexels.com/photos/9435112/pexels-photo-9435112.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 25,
+    "verb": "Mixed Conditional",
+    "tense": "Mixed Conditional",
+    "promptEs": "Estarías en Londres ahora si hubieras aceptado el trabajo.",
+    "translationEn": "You would be in London now if you had accepted the job.",
+    "imageUrl": "https://images.pexels.com/photos/7213662/pexels-photo-7213662.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 26,
+    "verb": "Mixed Conditional",
+    "tense": "Mixed Conditional",
+    "promptEs": "Todavía estaría con nosotros si no se hubiera mudado a otra ciudad.",
+    "translationEn": "He would still be with us if he hadn't moved to another city.",
+    "imageUrl": "https://images.pexels.com/photos/9877159/pexels-photo-9877159.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 27,
+    "verb": "Mixed Conditional",
+    "tense": "Mixed Conditional",
+    "promptEs": "Hablaría inglés mejor si hubiera practicado más.",
+    "translationEn": "She would speak English better if she had practiced more.",
+    "imageUrl": "https://images.pexels.com/photos/6503155/pexels-photo-6503155.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 28,
+    "verb": "Mixed Conditional",
+    "tense": "Mixed Conditional",
+    "promptEs": "Tendríamos más tiempo libre si hubiéramos terminado el proyecto antes.",
+    "translationEn": "We would have more free time if we had finished the project earlier.",
+    "imageUrl": "https://images.pexels.com/photos/37268914/pexels-photo-37268914.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 29,
+    "verb": "Mixed Conditional",
+    "tense": "Mixed Conditional",
+    "promptEs": "Serían mucho más felices si se hubieran quedado en su antigua casa.",
+    "translationEn": "They would be much happier if they had stayed in their old house.",
+    "imageUrl": "https://images.pexels.com/photos/8664809/pexels-photo-8664809.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 30,
+    "verb": "Present Perfect Continuous",
+    "tense": "Present Perfect Continuous",
+    "promptEs": "Llevo dos horas estudiando inglés.",
+    "translationEn": "I have been studying English for two hours.",
+    "imageUrl": "https://images.pexels.com/photos/7156125/pexels-photo-7156125.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 31,
+    "verb": "Present Perfect Continuous",
+    "tense": "Present Perfect Continuous",
+    "promptEs": "Llevas esperando mucho tiempo.",
+    "translationEn": "You have been waiting for a long time.",
+    "imageUrl": "https://images.pexels.com/photos/8573370/pexels-photo-8573370.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 32,
+    "verb": "Present Perfect Continuous",
+    "tense": "Present Perfect Continuous",
+    "promptEs": "Lleva trabajando toda la mañana.",
+    "translationEn": "He has been working all morning.",
+    "imageUrl": "https://images.pexels.com/photos/16846734/pexels-photo-16846734.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 33,
+    "verb": "Present Perfect Continuous",
+    "tense": "Present Perfect Continuous",
+    "promptEs": "Lleva una hora hablando por teléfono.",
+    "translationEn": "She has been talking on the phone for an hour.",
+    "imageUrl": "https://images.pexels.com/photos/36698415/pexels-photo-36698415.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 34,
+    "verb": "Present Perfect Continuous",
+    "tense": "Present Perfect Continuous",
+    "promptEs": "Llevamos viendo esta serie desde la semana pasada.",
+    "translationEn": "We have been watching this series since last week.",
+    "imageUrl": "https://images.pexels.com/photos/987586/pexels-photo-987586.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 35,
+    "verb": "Present Perfect Continuous",
+    "tense": "Present Perfect Continuous",
+    "promptEs": "Llevan jugando al fútbol toda la tarde.",
+    "translationEn": "They have been playing football all afternoon.",
+    "imageUrl": "https://images.pexels.com/photos/36871435/pexels-photo-36871435.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 36,
+    "verb": "Past Perfect",
+    "tense": "Past Perfect",
+    "promptEs": "Había olvidado mis llaves, así que no pude entrar.",
+    "translationEn": "I had forgotten my keys, so I couldn't get inside.",
+    "imageUrl": "https://images.pexels.com/photos/4077308/pexels-photo-4077308.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 37,
+    "verb": "Past Perfect",
+    "tense": "Past Perfect",
+    "promptEs": "Nunca habías probado el sushi antes de ese día.",
+    "translationEn": "You had never tried sushi before that day.",
+    "imageUrl": "https://images.pexels.com/photos/11064614/pexels-photo-11064614.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 38,
+    "verb": "Past Perfect",
+    "tense": "Past Perfect",
+    "promptEs": "Había perdido su teléfono, así que me pidió el mío.",
+    "translationEn": "He had lost his phone, so he borrowed mine.",
+    "imageUrl": "https://images.pexels.com/photos/16658257/pexels-photo-16658257.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 39,
+    "verb": "Past Perfect",
+    "tense": "Past Perfect",
+    "promptEs": "Ya había preparado el desayuno cuando me desperté.",
+    "translationEn": "She had already made breakfast when I woke up.",
+    "imageUrl": "https://images.pexels.com/photos/35832883/pexels-photo-35832883.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 40,
+    "verb": "Past Perfect",
+    "tense": "Past Perfect",
+    "promptEs": "Nos habíamos visto antes, pero no te recordaba.",
+    "translationEn": "We had met before, but I didn't remember you.",
+    "imageUrl": "https://images.pexels.com/photos/3653998/pexels-photo-3653998.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 41,
+    "verb": "Past Perfect",
+    "tense": "Past Perfect",
+    "promptEs": "Habían perdido el tren, así que cogieron un taxi.",
+    "translationEn": "They had missed the train, so they took a taxi.",
+    "imageUrl": "https://images.pexels.com/photos/38705253/pexels-photo-38705253.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 42,
+    "verb": "Future Continuous",
+    "tense": "Future Continuous",
+    "promptEs": "Esta tarde estaré estudiando en la biblioteca.",
+    "translationEn": "I will be studying at the library this afternoon.",
+    "imageUrl": "https://images.pexels.com/photos/16018590/pexels-photo-16018590.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 43,
+    "verb": "Future Continuous",
+    "tense": "Future Continuous",
+    "promptEs": "A eso de las seis estarás conduciendo a casa.",
+    "translationEn": "You will be driving home around six.",
+    "imageUrl": "https://images.pexels.com/photos/7677319/pexels-photo-7677319.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 44,
+    "verb": "Future Continuous",
+    "tense": "Future Continuous",
+    "promptEs": "Estará cocinando cuando lleguemos.",
+    "translationEn": "He will be cooking dinner when we arrive.",
+    "imageUrl": "https://images.pexels.com/photos/10459893/pexels-photo-10459893.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 45,
+    "verb": "Future Continuous",
+    "tense": "Future Continuous",
+    "promptEs": "Estará de compras después del trabajo.",
+    "translationEn": "She will be shopping after work.",
+    "imageUrl": "https://images.pexels.com/photos/30037324/pexels-photo-30037324.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 46,
+    "verb": "Future Continuous",
+    "tense": "Future Continuous",
+    "promptEs": "Esta noche estaremos viendo el partido de fútbol.",
+    "translationEn": "We will be watching the football match tonight.",
+    "imageUrl": "https://images.pexels.com/photos/38401511/pexels-photo-38401511.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  },
+  {
+    "index": 47,
+    "verb": "Future Continuous",
+    "tense": "Future Continuous",
+    "promptEs": "Estarán esperándonos en la estación.",
+    "translationEn": "They will be waiting for us at the station.",
+    "imageUrl": "https://images.pexels.com/photos/32434785/pexels-photo-32434785.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "audioAsset": null
+  }
+]

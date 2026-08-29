@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Curso — Delphis Method</title>
+<meta name="description" content="El camino completo del curso Delphis Method: 3 niveles, 64 verbos, estructuras gramaticales, la novela La Sed y repasos con repetición espaciada.">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/course.css">
+</head>
+<body>
+
+<div class="cursor-glow" id="cursorGlow"></div>
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar" id="navbar">
+  <div class="container navbar__inner">
+    <a href="index.html" class="navbar__brand">
+      <img src="assets/logo.png" alt="Delphis Method" class="navbar__logo">
+      <span>Delphis <strong>Method</strong></span>
+    </a>
+
+    <nav class="navbar__links" id="navLinks">
+      <a href="index.html" class="nav-link">Inicio</a>
+      <a href="curriculo.html" class="nav-link active">El Curso</a>
+      <a href="libro.html" class="nav-link">El Libro</a>
+      <a href="paquetes.html" class="nav-link">Paquetes</a>
+      <a href="repaso.html" class="nav-link">Repaso</a>
+      <a href="como-funciona.html" class="nav-link">Cómo funciona</a>
+    </nav>
+
+    <div class="navbar__actions">
+      <div class="progress-chip" data-progress-chip></div>
+      <button class="navbar__burger" id="burger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" class="mobile-link">Inicio</a>
+  <a href="curriculo.html" class="mobile-link">El Curso</a>
+  <a href="libro.html" class="mobile-link">El Libro</a>
+  <a href="paquetes.html" class="mobile-link">Paquetes</a>
+  <a href="repaso.html" class="mobile-link">Repaso</a>
+  <a href="como-funciona.html" class="mobile-link">Cómo funciona</a>
+  <div data-mobile-auth></div>
+</div>
+
+<main>
+<section class="app-hero page-hero">
+  <div class="hero__bg">
+    <div class="blob blob--1"></div>
+    <div class="blob blob--2"></div>
+    <div class="grid-overlay"></div>
+  </div>
+  <div class="container page-hero__inner">
+    <span class="eyebrow reveal-up" id="cursoEyebrow">El curso</span>
+    <h1 class="reveal-up">Un solo camino, <span class="text-gradient">paso a paso</span></h1>
+    <p class="reveal-up delay-1">
+      Nada de menús libres. Cada verbo, capítulo del libro y repaso se desbloquea en orden,
+      exactamente como en la app original: estudias, demuestras que aprendiste con un quiz,
+      y lo produces tú solo en el juego antes de avanzar.
+    </p>
+    <div id="continueBanner"></div>
+  </div>
+</section>
+
+<section style="padding-top:1rem;">
+  <div class="container" id="nivelesWrap">
+    <p style="text-align:center; color:var(--gray-400); padding:3rem 0;">Cargando currículo…</p>
+  </div>
+</section>
+
+<section class="metodo">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <span class="eyebrow">Por qué está bloqueado</span>
+      <h2>El orden es parte del método</h2>
+      <p>No es una limitación técnica: mezclar verbo nuevo, capítulo del libro y repaso acumulativo
+        en un orden fijo obliga a tu cerebro a recuperar la estrategia correcta cada vez, en vez de
+        repetir en piloto automático.</p>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-card reveal-up">
+        <div class="feature-card__icon">📚</div>
+        <h4>Estudiar</h4>
+        <p>Ves todas las frases de ejemplo del verbo, con audio a velocidad normal y lenta.</p>
+      </div>
+      <div class="feature-card reveal-up delay-1">
+        <div class="feature-card__icon">✅</div>
+        <h4>Quiz</h4>
+        <p>Reconoces la traducción correcta entre opciones que ponen a prueba tiempo verbal y concordancia.</p>
+      </div>
+      <div class="feature-card reveal-up delay-2">
+        <div class="feature-card__icon">🎮</div>
+        <h4>Juego</h4>
+        <p>Produces la traducción tú solo, sin pistas, contrarreloj y con rachas que suman puntos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <a href="index.html" class="navbar__brand">
+        <img src="assets/logo.png" alt="Delphis Method" class="navbar__logo">
+        <span>Delphis <strong>Method</strong></span>
+      </a>
+      <p>Un método con ciencia, repetición espaciada e IA — inglés, francés, alemán, italiano y portugués.</p>
+    </div>
+    <div class="footer__col">
+      <h5>Curso</h5>
+      <a href="cursos.html">Mis cursos</a>
+      <a href="curriculo.html">El Curso</a>
+      <a href="libro.html">El Libro</a>
+      <a href="paquetes.html">Paquetes</a>
+      <a href="repaso.html">Repaso</a>
+    </div>
+    <div class="footer__col">
+      <h5>Cuenta</h5>
+      <a href="perfil.html">Mi perfil</a>
+      <a href="como-funciona.html">Cómo funciona</a>
+      <a href="index.html#metodo">El método</a>
+    </div>
+    <div class="footer__col">
+      <h5>Legal</h5>
+      <a href="#">Privacidad</a>
+      <a href="#">Términos</a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>© 2026 Delphis Method. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+<script src="js/firebase-config.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/data.js"></script>
+<script src="js/courses.js"></script>
+<script src="js/curriculo-builder.js"></script>
+<script src="js/srs.js"></script>
+<script src="js/progress.js"></script>
+<script src="js/cloud-sync.js"></script>
+<script src="js/app.js"></script>
+<script src="js/script.js"></script>
+<script src="js/curriculo.js"></script>
+</body>
+</html>

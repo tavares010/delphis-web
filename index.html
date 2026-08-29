@@ -3,13 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Delphis Method — Aprende inglés con IA y ciencia</title>
-<meta name="description" content="Delphis Method: la app que combina inteligencia artificial y métodos científicos para que aprendas inglés más rápido y de forma duradera.">
+<title>Delphis Method — Curso de inglés con IA y ciencia</title>
+<meta name="description" content="Delphis Method: un curso de inglés con método científico y repetición espaciada de verdad. Prueba el primer bloque gratis y sigue con una membresía desde $9/mes.">
 <link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/course.css">
 </head>
 <body>
 
@@ -27,21 +28,30 @@
 
     <nav class="navbar__links" id="navLinks">
       <a href="#inicio" class="nav-link active" data-section="inicio">Inicio</a>
+      <a href="cursos.html" class="nav-link">Idiomas 🌍</a>
       <a href="#metodo" class="nav-link" data-section="metodo">Método</a>
       <div class="nav-dropdown">
         <span class="nav-dropdown__trigger">
-          Recursos
-          <span class="badge-mini"><span class="badge-mini__dot"></span>Gratis</span>
+          El curso
+          <span class="badge-mini"><span class="badge-mini__dot"></span>Prueba gratis</span>
           <svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </span>
         <div class="nav-dropdown__menu">
-          <a href="ebook.html" class="nav-dropdown__item">
-            <span data-emoji>📖</span>
-            <div><strong>Ebook gratis "La Sed"</strong><small>Descarga por tiempo limitado</small></div>
+          <a href="curriculo.html" class="nav-dropdown__item">
+            <span data-emoji>🗺️</span>
+            <div><strong>El camino del curso</strong><small>Verbos, estructuras y niveles</small></div>
           </a>
-          <a href="vocabulario.html" class="nav-dropdown__item">
+          <a href="libro.html" class="nav-dropdown__item">
+            <span data-emoji>📖</span>
+            <div><strong>El libro "La Sed"</strong><small>Lectura con audio y traducción</small></div>
+          </a>
+          <a href="paquetes.html" class="nav-dropdown__item">
             <span data-emoji>🧩</span>
             <div><strong>Paquetes de vocabulario</strong><small>Hostelería, viajes, deportes y más</small></div>
+          </a>
+          <a href="repaso.html" class="nav-dropdown__item">
+            <span data-emoji>🔁</span>
+            <div><strong>Repaso espaciado</strong><small>Tu vocabulario, en el momento justo</small></div>
           </a>
         </div>
       </div>
@@ -52,10 +62,7 @@
     </nav>
 
     <div class="navbar__actions">
-      <a href="#comprar" class="btn btn--ghost">Iniciar sesión</a>
-      <a href="descargar.html" class="btn btn--primary">
-        <span>Comprar ahora</span>
-      </a>
+      <div class="progress-chip" data-progress-chip></div>
       <button class="navbar__burger" id="burger" aria-label="Abrir menú">
         <span></span><span></span><span></span>
       </button>
@@ -66,14 +73,17 @@
 <!-- mobile menu -->
 <div class="mobile-menu" id="mobileMenu">
   <a href="#inicio" class="mobile-link">Inicio</a>
+  <a href="cursos.html" class="mobile-link">Idiomas 🌍</a>
   <a href="#metodo" class="mobile-link">Método</a>
-  <a href="ebook.html" class="mobile-link">Ebook gratis 📖</a>
-  <a href="vocabulario.html" class="mobile-link">Vocabulario 🧩</a>
+  <a href="curriculo.html" class="mobile-link">El Curso 🗺️</a>
+  <a href="libro.html" class="mobile-link">El Libro 📖</a>
+  <a href="paquetes.html" class="mobile-link">Paquetes 🧩</a>
+  <a href="repaso.html" class="mobile-link">Repaso 🔁</a>
   <a href="#nosotros" class="mobile-link">Sobre Nosotros</a>
   <a href="#precios" class="mobile-link">Precios</a>
   <a href="#testimonios" class="mobile-link">Testimonios</a>
   <a href="#faq" class="mobile-link">FAQ</a>
-  <a href="descargar.html" class="btn btn--primary mobile-cta">Comprar ahora</a>
+  <div data-mobile-auth></div>
 </div>
 
 <main>
@@ -91,41 +101,42 @@
     <div class="hero__text reveal-up">
       <div class="badge">
         <span class="badge__dot"></span>
-        Impulsado por Inteligencia Artificial
+        Prueba el primer bloque gratis
       </div>
       <h1 class="hero__title">
         Aprende inglés con la
         <span class="text-gradient">precisión de la ciencia</span>
       </h1>
       <p class="hero__subtitle">
-        Delphis Method fusiona neurociencia, repetición espaciada e IA adaptativa
-        para diseñar un plan de aprendizaje único para tu cerebro. Habla inglés con
-        confianza en tiempo récord.
+        Delphis Method es un curso online: verbos, estructuras gramaticales y una novela real,
+        organizados en un solo camino con repetición espaciada de verdad. Estudias, lo demuestras
+        en un quiz y lo produces tú solo, sin pistas. Empieza gratis y sigue con una membresía
+        cuando quieras el curso completo.
       </p>
 
       <div class="hero__cta">
-        <a href="#precios" class="btn btn--primary btn--lg">
+        <a href="curriculo.html" class="btn btn--primary btn--lg">
           Empieza gratis
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
-        <a href="#metodo" class="btn btn--outline btn--lg">
+        <a href="#precios" class="btn btn--outline btn--lg">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M10 8l6 4-6 4V8z" fill="currentColor"/></svg>
-          Ver cómo funciona
+          Ver precios
         </a>
       </div>
 
       <div class="hero__stats">
         <div class="stat">
-          <span class="stat__num" data-count="52000">0</span>
-          <span class="stat__label">Estudiantes activos</span>
+          <span class="stat__num" data-count="64">0</span>
+          <span class="stat__label">Verbos en el curso</span>
         </div>
         <div class="stat">
-          <span class="stat__num" data-count="97" data-suffix="%">0</span>
-          <span class="stat__label">Tasa de progreso</span>
+          <span class="stat__num" data-count="13">0</span>
+          <span class="stat__label">Capítulos de "La Sed"</span>
         </div>
         <div class="stat">
-          <span class="stat__num" data-count="4" data-decimal="9">0</span>
-          <span class="stat__label">Calificación promedio</span>
+          <span class="stat__num">$9</span>
+          <span class="stat__label">Membresía, desde /mes</span>
         </div>
       </div>
     </div>
@@ -140,22 +151,22 @@
       <div class="float-card float-card--1">
         <div class="float-card__icon">🧠</div>
         <div>
-          <strong>IA Adaptativa</strong>
-          <span>Ajusta tu ritmo en vivo</span>
+          <strong>Repetición espaciada</strong>
+          <span>6 niveles, de verdad</span>
         </div>
       </div>
       <div class="float-card float-card--2">
-        <div class="float-card__icon">📈</div>
+        <div class="float-card__icon">📖</div>
         <div>
-          <strong>+63% retención</strong>
-          <span>vs métodos tradicionales</span>
+          <strong>Una novela real</strong>
+          <span>"La Sed", capítulo a capítulo</span>
         </div>
       </div>
       <div class="float-card float-card--3">
-        <div class="float-card__icon">🎧</div>
+        <div class="float-card__icon">🎮</div>
         <div>
-          <strong>Speaking en vivo</strong>
-          <span>Con tutor de voz IA</span>
+          <strong>Produce, no reconozcas</strong>
+          <span>Escribe la respuesta tú solo</span>
         </div>
       </div>
     </div>
@@ -170,13 +181,13 @@
 <!-- ===== LOGOS / TRUST BAR ===== -->
 <section class="trustbar reveal-up">
   <div class="container trustbar__inner">
-    <p>Metodología validada e inspirada en investigación de:</p>
+    <p>Metodología inspirada en investigación de:</p>
     <div class="trustbar__logos">
       <span>Neurociencia Cognitiva</span>
       <span>Spaced Repetition Systems</span>
       <span>Linguística Aplicada</span>
-      <span>Machine Learning</span>
-      <span>Cambridge Framework</span>
+      <span>Curva del olvido (Ebbinghaus)</span>
+      <span>Input comprensible (Krashen)</span>
     </div>
   </div>
 </section>
@@ -186,9 +197,9 @@
   <div class="container">
     <div class="section-head reveal-up">
       <span class="eyebrow">El Método Delphis</span>
-      <h2>Ciencia + Inteligencia Artificial <br> en un solo plan de estudio</h2>
-      <p>No es otra app de vocabulario. Es un sistema diseñado con base en estudios de adquisición
-        de lenguas, que se adapta a ti sesión tras sesión.</p>
+      <h2>Estudiar, demostrarlo, <br> producirlo tú solo</h2>
+      <p>No es una app de vocabulario suelto. Cada verbo o estructura del curso sigue siempre
+        el mismo bucle de tres pasos, diseñado para que el idioma se quede de verdad.</p>
     </div>
 
     <div class="steps">
@@ -196,63 +207,63 @@
 
       <div class="step reveal-up">
         <div class="step__num">01</div>
-        <div class="step__icon">🔍</div>
-        <h3>Diagnóstico con IA</h3>
-        <p>Un test adaptativo mide tu nivel real en minutos: gramática, oído, vocabulario y fluidez.</p>
+        <div class="step__icon">📚</div>
+        <h3>Estudiar</h3>
+        <p>Ves todas las frases de ejemplo del verbo, con audio a velocidad normal y lenta.</p>
       </div>
 
       <div class="step reveal-up delay-1">
         <div class="step__num">02</div>
-        <div class="step__icon">🧬</div>
-        <h3>Plan neurocientífico</h3>
-        <p>Generamos una ruta personalizada basada en repetición espaciada y curva del olvido.</p>
+        <div class="step__icon">✅</div>
+        <h3>Quiz</h3>
+        <p>Reconoces la traducción correcta entre opciones que ponen a prueba tiempo verbal y concordancia.</p>
       </div>
 
       <div class="step reveal-up delay-2">
         <div class="step__num">03</div>
-        <div class="step__icon">🗣️</div>
-        <h3>Práctica inmersiva</h3>
-        <p>Conversaciones reales con tutor de voz IA que corrige pronunciación en tiempo real.</p>
+        <div class="step__icon">🎮</div>
+        <h3>Juego</h3>
+        <p>Produces la respuesta tú solo, sin pistas, contrarreloj y con rachas que dan puntos extra.</p>
       </div>
 
       <div class="step reveal-up delay-3">
         <div class="step__num">04</div>
-        <div class="step__icon">📊</div>
-        <h3>Ajuste continuo</h3>
-        <p>El algoritmo reevalúa tu progreso cada día y recalibra la dificultad automáticamente.</p>
+        <div class="step__icon">🔁</div>
+        <h3>Repaso</h3>
+        <p>El vocabulario que tocaste vuelve justo antes de que lo olvides, nunca antes ni después.</p>
       </div>
     </div>
 
     <div class="feature-grid">
       <div class="feature-card reveal-up">
-        <div class="feature-card__icon">⚡</div>
-        <h4>Aprendizaje adaptativo</h4>
-        <p>Cada ejercicio se ajusta a tu desempeño en tiempo real, sin perder tiempo en lo que ya dominas.</p>
+        <div class="feature-card__icon">🗺️</div>
+        <h4>Un solo camino</h4>
+        <p>Nada de menú libre: 3 niveles, 64 verbos y 16 estructuras se desbloquean en orden, mezclados con el libro y repasos acumulativos.</p>
       </div>
       <div class="feature-card reveal-up delay-1">
         <div class="feature-card__icon">🎯</div>
-        <h4>Repetición espaciada</h4>
-        <p>Basado en la curva del olvido de Ebbinghaus, para que el vocabulario quede en tu memoria a largo plazo.</p>
+        <h4>Repetición espaciada real</h4>
+        <p>Sistema Leitner de 6 niveles: cada palabra tiene su propio calendario de repaso, y siempre se repasa primero lo que ya venció.</p>
       </div>
       <div class="feature-card reveal-up delay-2">
-        <div class="feature-card__icon">🤖</div>
-        <h4>Tutor IA 24/7</h4>
-        <p>Practica speaking y listening con un tutor conversacional disponible a cualquier hora.</p>
+        <div class="feature-card__icon">📖</div>
+        <h4>Una novela, no una lista</h4>
+        <p>"La Sed" se lee dentro del propio currículo. Tocas una palabra que no conoces y queda guardada automáticamente para repasar.</p>
       </div>
       <div class="feature-card reveal-up delay-3">
-        <div class="feature-card__icon">📉</div>
-        <h4>Analítica de progreso</h4>
-        <p>Dashboards claros que muestran tu evolución real en fluidez, gramática y pronunciación.</p>
+        <div class="feature-card__icon">🗣️</div>
+        <h4>Producción activa</h4>
+        <p>El paso final siempre es escribir la respuesta tú solo, sin pistas — reconocer una opción no es lo mismo que producir el idioma.</p>
       </div>
       <div class="feature-card reveal-up">
-        <div class="feature-card__icon">🌊</div>
-        <h4>Inmersión gradual</h4>
-        <p>Contenido que aumenta en dificultad siguiendo principios de comprensión de entrada (input +1).</p>
+        <div class="feature-card__icon">🧩</div>
+        <h4>Paquetes temáticos</h4>
+        <p>Vocabulario de contextos reales (hostelería, viajes, deportes...) siempre disponible, fuera del camino principal.</p>
       </div>
       <div class="feature-card reveal-up delay-1">
         <div class="feature-card__icon">🏆</div>
         <h4>Gamificación real</h4>
-        <p>Rachas, ligas y retos diseñados con psicología conductual para mantenerte motivado.</p>
+        <p>Puntos, rango, monedas y racha diaria calculados de verdad a partir de tu progreso — no son solo decoración.</p>
       </div>
     </div>
   </div>
@@ -262,94 +273,40 @@
 <section class="app-showcase" id="app">
   <div class="container">
     <div class="section-head reveal-up">
-      <span class="eyebrow">La app en acción</span>
-      <h2>Diseñada para que quieras volver cada día</h2>
-      <p>Rachas, puntos, retos y un guía con IA propio: así se ve el método por dentro.</p>
-    </div>
-
-    <div class="app-showcase__banner reveal-up">
-      <img src="assets/2.png" alt="Capturas de la app Delphis Method: dashboard, guía IA Delphi, niveles de estudio y roleplay conversacional" loading="lazy">
+      <span class="eyebrow">El curso en acción</span>
+      <h2>Así se ve por dentro</h2>
+      <p>Cada tarjeta lleva a una parte real del curso — no son capturas, son enlaces.</p>
     </div>
 
     <div class="app-caption-grid">
-      <div class="app-caption reveal-up">
+      <a href="curriculo.html" class="app-caption reveal-up">
         <div class="app-caption__num">1</div>
         <div>
-          <strong>Tu dashboard diario</strong>
-          <span>Rachas, puntos y el siguiente paso sugerido por la IA.</span>
+          <strong>El camino del curso</strong>
+          <span>Verbos, repasos y capítulos del libro, en orden.</span>
         </div>
-      </div>
-      <div class="app-caption reveal-up delay-1">
+      </a>
+      <a href="libro.html" class="app-caption reveal-up delay-1">
         <div class="app-caption__num">2</div>
         <div>
-          <strong>Delphi, tu guía IA</strong>
-          <span>Te acompaña desde el primer día explicando cada función.</span>
+          <strong>El libro "La Sed"</strong>
+          <span>Audio narrado y traducción al tocar cualquier palabra.</span>
         </div>
-      </div>
-      <div class="app-caption reveal-up delay-2">
+      </a>
+      <a href="repaso.html" class="app-caption reveal-up delay-2">
         <div class="app-caption__num">3</div>
         <div>
-          <strong>Estudio por estructuras</strong>
-          <span>To Be, To Have, To Can... organizado por niveles progresivos.</span>
+          <strong>Repaso espaciado</strong>
+          <span>Tus palabras vuelven justo en el momento en que las olvidas.</span>
         </div>
-      </div>
-      <div class="app-caption reveal-up delay-3">
+      </a>
+      <a href="perfil.html" class="app-caption reveal-up delay-3">
         <div class="app-caption__num">4</div>
         <div>
-          <strong>Roleplay con IA</strong>
-          <span>Simula conversaciones reales, como pedir en un restaurante.</span>
+          <strong>Tu perfil</strong>
+          <span>Rango, racha, retos diarios y tienda de temas.</span>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== RECURSOS: EBOOK + VOCABULARIO ===== -->
-<section class="recursos" id="recursos">
-  <div class="container">
-    <div class="section-head reveal-up">
-      <span class="eyebrow">Recursos adicionales</span>
-      <h2>Extras incluidos en Delphis</h2>
-      <p>Contenido extra para acelerar tu aprendizaje, incluido con tu cuenta de Delphis Method.</p>
-    </div>
-
-    <div class="recursos-grid">
-      <div class="resource-card resource-card--ebook reveal-left">
-        <span class="resource-card__ribbon"><span class="pulse-dot"></span>Gratis · Por tiempo limitado</span>
-        <h3>Ebook interactivo "La Sed"</h3>
-        <p>Una historia corta en inglés con ejercicios interactivos, audio y quizzes integrados para
-          practicar comprensión lectora mientras te diviertes. Disponible gratis solo por tiempo limitado.</p>
-        <div class="resource-card__tags">
-          <span>📖 Lectura interactiva</span>
-          <span>🎧 Audio narrado</span>
-          <span>✅ Quizzes incluidos</span>
-        </div>
-        <div class="resource-card__foot">
-          <a href="ebook.html" class="btn btn--primary">Descargar gratis</a>
-          <div class="mini-countdown" data-target="2026-07-19T23:59:59">
-            <div><strong data-cd="days">00</strong><span>Días</span></div>
-            <div><strong data-cd="hours">00</strong><span>Hrs</span></div>
-            <div><strong data-cd="minutes">00</strong><span>Min</span></div>
-            <div><strong data-cd="seconds">00</strong><span>Seg</span></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="resource-card resource-card--vocab reveal-right">
-        <span class="resource-card__ribbon">Paquetes temáticos</span>
-        <h3>Vocabulario extra por contexto</h3>
-        <p>Paquetes de vocabulario y roleplay con IA para situaciones reales: hostelería, viajes,
-          deportes, escuela y más. Practica exactamente el inglés que vas a necesitar.</p>
-        <div class="resource-card__tags">
-          <span>🍽️ Hostelería</span>
-          <span>✈️ Viajes</span>
-          <span>⚽ Deportes</span>
-          <span>🎓 Escuela</span>
-        </div>
-        <div class="resource-card__foot">
-          <a href="vocabulario.html" class="btn btn--outline">Ver paquetes</a>
-        </div>
-      </div>
+      </a>
     </div>
   </div>
 </section>
@@ -369,13 +326,12 @@
       <p>
         En la antigua Grecia, Delfos era el lugar donde se buscaba claridad y sabiduría.
         Delphis Method nace con esa misma filosofía: darte claridad en tu camino para
-        dominar el inglés, combinando la precisión de la inteligencia artificial con
-        décadas de investigación en adquisición de segundas lenguas.
+        dominar el inglés, combinando repetición espaciada real con décadas de investigación
+        en adquisición de segundas lenguas.
       </p>
       <p>
-        Nuestro equipo está formado por lingüistas computacionales, ingenieros de IA
-        y profesores certificados que creen que aprender un idioma no debería depender
-        de la suerte, sino de un método probado.
+        No creemos en el vocabulario suelto ni en el aprendizaje pasivo. Creemos en un
+        método probado: estudiar con contexto, demostrarlo y producirlo tú solo.
       </p>
 
       <div class="values">
@@ -383,26 +339,26 @@
           <div class="value__icon">🔬</div>
           <div>
             <strong>Rigor científico</strong>
-            <span>Cada función está respaldada por evidencia pedagógica.</span>
+            <span>Cada mecánica está respaldada por evidencia pedagógica.</span>
           </div>
         </div>
         <div class="value">
           <div class="value__icon">🐬</div>
           <div>
-            <strong>Inteligencia adaptativa</strong>
-            <span>Como los delfines, aprendemos y nos ajustamos contigo.</span>
+            <strong>Un solo camino, sin atajos</strong>
+            <span>El orden bloqueado es parte del método, no una limitación.</span>
           </div>
         </div>
         <div class="value">
           <div class="value__icon">🌍</div>
           <div>
-            <strong>Acceso global</strong>
-            <span>Miles de estudiantes en más de 30 países confían en nosotros.</span>
+            <strong>Empieza sin arriesgar nada</strong>
+            <span>El primer bloque es gratis; la membresía se paga cuando tú decidas seguir.</span>
           </div>
         </div>
       </div>
 
-      <a href="#precios" class="btn btn--primary">Únete a la comunidad</a>
+      <a href="curriculo.html" class="btn btn--primary">Empezar gratis</a>
     </div>
   </div>
 </section>
@@ -421,29 +377,29 @@
       <div class="carousel__track" id="carouselTrack">
         <div class="testimonial-card">
           <div class="testimonial-card__stars">★★★★★</div>
-          <p>"En 4 meses pasé de nivel A2 a B2. El tutor de voz con IA se siente como hablar
-            con una persona real, sin la vergüenza de equivocarme frente a alguien."</p>
+          <p>"En 4 meses pasé de nivel A2 a B2. Producir la respuesta en voz alta, sin pistas,
+            se siente muy distinto a simplemente reconocer una opción."</p>
           <div class="testimonial-card__author">
             <div class="avatar">MJ</div>
-            <div><strong>María José R.</strong><span>Estudiante Pro · México</span></div>
+            <div><strong>María José R.</strong><span>México</span></div>
           </div>
         </div>
         <div class="testimonial-card">
           <div class="testimonial-card__stars">★★★★★</div>
-          <p>"Probé Duolingo, Babbel y clases particulares. Nada se compara con la forma en que
-            Delphis ajusta la dificultad exacta que necesito cada día."</p>
+          <p>"Probé varias apps de vocabulario suelto. Nada se compara con aprender dentro
+            de una historia real, capítulo a capítulo."</p>
           <div class="testimonial-card__author">
             <div class="avatar">CP</div>
-            <div><strong>Carlos Peña</strong><span>Estudiante Premium · Colombia</span></div>
+            <div><strong>Carlos Peña</strong><span>Colombia</span></div>
           </div>
         </div>
         <div class="testimonial-card">
           <div class="testimonial-card__stars">★★★★★</div>
-          <p>"Como ingeniera, valoro los datos: mi dashboard de progreso me mostró exactamente
-            en qué áreas mejorar. Aprobé mi certificación en 3 meses."</p>
+          <p>"Como ingeniera, valoro los datos: mi perfil me mostraba exactamente cuántas
+            palabras tenía pendientes de repasar cada día."</p>
           <div class="testimonial-card__author">
             <div class="avatar">LF</div>
-            <div><strong>Laura Fernández</strong><span>Estudiante Pro · Chile</span></div>
+            <div><strong>Laura Fernández</strong><span>Chile</span></div>
           </div>
         </div>
         <div class="testimonial-card">
@@ -452,7 +408,7 @@
             ahora las recuerdo sin esfuerzo semanas después."</p>
           <div class="testimonial-card__author">
             <div class="avatar">DG</div>
-            <div><strong>Diego Gómez</strong><span>Estudiante Básico · Perú</span></div>
+            <div><strong>Diego Gómez</strong><span>Perú</span></div>
           </div>
         </div>
       </div>
@@ -469,8 +425,9 @@
   <div class="container">
     <div class="section-head reveal-up">
       <span class="eyebrow">Membresías</span>
-      <h2>Elige el plan que impulse tu inglés</h2>
-      <p>Cancela cuando quieras. Todos los planes incluyen 7 días de garantía.</p>
+      <h2>Empieza gratis, sigue cuando quieras</h2>
+      <p>El Bloque 1 del curso (verbos esenciales, quiz, juego y repaso) es gratis para siempre.
+        Una membresía desbloquea el resto del currículo, el libro completo y todos los paquetes.</p>
 
       <div class="billing-toggle">
         <span class="billing-toggle__label active" id="labelMonthly">Mensual</span>
@@ -484,27 +441,27 @@
     <div class="pricing-grid">
       <div class="price-card reveal-up">
         <h3>Básico</h3>
-        <p class="price-card__desc">Ideal para empezar tu camino en inglés.</p>
+        <p class="price-card__desc">Para conocer el método antes de comprometerte.</p>
         <div class="price-card__amount">
           <span class="currency">$</span>
           <span class="amount" data-monthly="9" data-yearly="6">9</span>
           <span class="period">/mes</span>
         </div>
         <ul class="price-card__features">
-          <li>✔ Lecciones adaptativas con IA</li>
-          <li>✔ 15 min/día de práctica</li>
-          <li>✔ Repetición espaciada</li>
-          <li>✔ Seguimiento de progreso</li>
-          <li class="disabled">✘ Tutor de voz IA</li>
-          <li class="disabled">✘ Clases en vivo</li>
+          <li>✔ Bloque 1 gratis, siempre</li>
+          <li>✔ Repetición espaciada real</li>
+          <li>✔ Paquetes temáticos publicados</li>
+          <li>✔ Perfil, rango y racha diaria</li>
+          <li class="disabled">✘ Resto de niveles del currículo</li>
+          <li class="disabled">✘ Roleplay y chat con IA</li>
         </ul>
-        <a href="#comprar" class="btn btn--outline btn--block">Elegir Básico</a>
+        <a href="curriculo.html" class="btn btn--outline btn--block">Elegir Básico</a>
       </div>
 
       <div class="price-card price-card--featured reveal-up delay-1">
         <div class="price-card__ribbon">Más popular</div>
         <h3>Pro</h3>
-        <p class="price-card__desc">La experiencia completa de Delphis Method.</p>
+        <p class="price-card__desc">El curso completo, a tu ritmo.</p>
         <div class="price-card__amount">
           <span class="currency">$</span>
           <span class="amount" data-monthly="19" data-yearly="13">19</span>
@@ -512,18 +469,18 @@
         </div>
         <ul class="price-card__features">
           <li>✔ Todo lo del plan Básico</li>
-          <li>✔ Práctica ilimitada</li>
-          <li>✔ Tutor de voz IA 24/7</li>
+          <li>✔ Niveles 2 y 3 a medida que se publican</li>
+          <li>✔ El libro "La Sed" completo</li>
+          <li>✔ Roleplay y chat con IA sobre el libro</li>
           <li>✔ Corrección de pronunciación</li>
-          <li>✔ Dashboard analítico avanzado</li>
           <li class="disabled">✘ Clases en vivo grupales</li>
         </ul>
-        <a href="#comprar" class="btn btn--primary btn--block">Elegir Pro</a>
+        <a href="curriculo.html" class="btn btn--primary btn--block">Elegir Pro</a>
       </div>
 
       <div class="price-card reveal-up delay-2">
         <h3>Premium</h3>
-        <p class="price-card__desc">Para quienes buscan resultados acelerados.</p>
+        <p class="price-card__desc">Para resultados acelerados con acompañamiento.</p>
         <div class="price-card__amount">
           <span class="currency">$</span>
           <span class="amount" data-monthly="39" data-yearly="27">39</span>
@@ -532,41 +489,44 @@
         <ul class="price-card__features">
           <li>✔ Todo lo del plan Pro</li>
           <li>✔ 4 clases en vivo grupales/mes</li>
-          <li>✔ Plan de estudio 1:1 con IA</li>
+          <li>✔ Plan de estudio 1:1</li>
           <li>✔ Certificado de nivel</li>
           <li>✔ Soporte prioritario</li>
           <li>✔ Acceso anticipado a nuevas funciones</li>
         </ul>
-        <a href="#comprar" class="btn btn--outline btn--block">Elegir Premium</a>
+        <a href="curriculo.html" class="btn btn--outline btn--block">Elegir Premium</a>
       </div>
     </div>
+
+    <p class="reveal-up" style="text-align:center; color:var(--gray-500); font-size:.85rem; margin-top:2.4rem;">
+      💡 El pago en línea llega muy pronto. Por ahora, crea tu cuenta gratis y ya tienes acceso
+      a todo el contenido publicado del curso.
+    </p>
   </div>
 </section>
 
-<!-- ===== COMPRAR ===== -->
-<section class="comprar" id="comprar">
+<!-- ===== CTA FINAL ===== -->
+<section class="comprar">
   <div class="comprar__bg">
     <div class="blob blob--4"></div>
   </div>
   <div class="container comprar__inner reveal-up">
     <img src="assets/logo.png" alt="Delphis Method" class="comprar__logo">
     <h2>Tu fluidez en inglés empieza hoy</h2>
-    <p>Únete a más de 52,000 estudiantes que ya están aprendiendo con el método
-      respaldado por ciencia e inteligencia artificial.</p>
+    <p>Crea tu cuenta gratis y empieza por el primer verbo. Sigue con una membresía cuando quieras
+      el curso completo.</p>
 
-    <form class="comprar__form" id="checkoutForm">
-      <input type="email" placeholder="tu@email.com" required aria-label="Correo electrónico">
-      <button type="submit" class="btn btn--primary btn--lg">
-        Comenzar prueba gratis
+    <div class="hero__cta" style="justify-content:center;">
+      <a href="curriculo.html" class="btn btn--primary btn--lg">
+        Empezar gratis ahora
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
-    </form>
-    <span class="comprar__note">Sin tarjeta de crédito · Cancela cuando quieras</span>
+      </a>
+    </div>
 
-    <div class="comprar__badges">
-      <div class="mini-badge">🔒 Pago seguro</div>
-      <div class="mini-badge">⭐ 4.9/5 valoración</div>
-      <div class="mini-badge">🕐 7 días de garantía</div>
+    <div class="comprar__badges" style="margin-top:2.2rem;">
+      <div class="mini-badge">🎁 Bloque 1 gratis</div>
+      <div class="mini-badge">💳 Membresías desde $9/mes</div>
+      <div class="mini-badge">⚡ Empieza en segundos</div>
     </div>
   </div>
 </section>
@@ -582,13 +542,36 @@
     <div class="accordion" id="accordion">
       <div class="accordion-item reveal-up">
         <button class="accordion-item__head">
-          <span>¿Cómo funciona la inteligencia artificial de Delphis Method?</span>
+          <span>¿El curso cuesta algo?</span>
           <span class="accordion-item__icon">+</span>
         </button>
         <div class="accordion-item__body">
-          <p>Nuestro algoritmo analiza tus respuestas, tiempos de reacción y errores recurrentes
-            para construir un modelo de tu nivel real. Con eso genera un plan de estudio único
-            que se recalibra cada sesión, siguiendo principios de repetición espaciada y aprendizaje adaptativo.</p>
+          <p>El Bloque 1 (verbos esenciales, quiz, juego y repaso) es gratis para siempre. El resto
+            del currículo, el libro completo y los paquetes temáticos se desbloquean con una
+            membresía desde $9/mes. El pago en línea está por activarse — mientras tanto, crear tu
+            cuenta ya te da acceso a todo el contenido publicado.</p>
+        </div>
+      </div>
+      <div class="accordion-item reveal-up">
+        <button class="accordion-item__head">
+          <span>¿Necesito crear una cuenta?</span>
+          <span class="accordion-item__icon">+</span>
+        </button>
+        <div class="accordion-item__body">
+          <p>Sí. Tu progreso (puntos, currículo y vocabulario) se guarda en tu cuenta y te sigue
+            entre dispositivos, no solo en este navegador. Crear la cuenta es gratis y toma
+            menos de un minuto.</p>
+        </div>
+      </div>
+      <div class="accordion-item reveal-up">
+        <button class="accordion-item__head">
+          <span>¿Por qué está todo bloqueado en orden?</span>
+          <span class="accordion-item__icon">+</span>
+        </button>
+        <div class="accordion-item__body">
+          <p>Es parte del método. Un solo camino que mezcla verbo nuevo, capítulo del libro y repaso
+            acumulativo obliga a tu cerebro a recuperar la estrategia correcta cada vez, en vez de
+            repetir en piloto automático.</p>
         </div>
       </div>
       <div class="accordion-item reveal-up">
@@ -597,30 +580,9 @@
           <span class="accordion-item__icon">+</span>
         </button>
         <div class="accordion-item__body">
-          <p>La mayoría de nuestros estudiantes nota mejoras en comprensión auditiva y vocabulario
-            en las primeras 3 semanas practicando 15-20 minutos al día. Los resultados en fluidez
-            oral suelen ser visibles entre el segundo y cuarto mes.</p>
-        </div>
-      </div>
-      <div class="accordion-item reveal-up">
-        <button class="accordion-item__head">
-          <span>¿Puedo cambiar o cancelar mi membresía?</span>
-          <span class="accordion-item__icon">+</span>
-        </button>
-        <div class="accordion-item__body">
-          <p>Sí, puedes cambiar de plan o cancelar en cualquier momento desde tu cuenta.
-            Además, todos los planes incluyen 7 días de garantía de devolución.</p>
-        </div>
-      </div>
-      <div class="accordion-item reveal-up">
-        <button class="accordion-item__head">
-          <span>¿El método está respaldado científicamente?</span>
-          <span class="accordion-item__icon">+</span>
-        </button>
-        <div class="accordion-item__body">
-          <p>Sí. Combinamos principios de la curva del olvido de Ebbinghaus, repetición espaciada,
-            teoría del input comprensible (Krashen) y modelos de machine learning entrenados
-            con datos reales de adquisición de lenguas.</p>
+          <p>Con 15-20 minutos al día, la mayoría de estudiantes nota mejoras en vocabulario y
+            comprensión en las primeras 3 semanas. La fluidez oral suele notarse entre el segundo
+            y cuarto mes de práctica constante.</p>
         </div>
       </div>
       <div class="accordion-item reveal-up">
@@ -629,8 +591,8 @@
           <span class="accordion-item__icon">+</span>
         </button>
         <div class="accordion-item__body">
-          <p>No. El diagnóstico inicial con IA detecta tu punto de partida, ya sea principiante
-            absoluto o alguien que busca perfeccionar fluidez avanzada.</p>
+          <p>No. El Nivel 1 empieza desde los verbos más básicos. Si ya tienes una base, puedes
+            avanzar más rápido porque el quiz se aprueba con 70% y no hay límite de reintentos.</p>
         </div>
       </div>
     </div>
@@ -646,7 +608,7 @@
         <img src="assets/logo.png" alt="Delphis Method" class="navbar__logo">
         <span>Delphis <strong>Method</strong></span>
       </a>
-      <p>Aprende inglés con la precisión de la ciencia y la inteligencia artificial.</p>
+      <p>Un método con ciencia, repetición espaciada e IA — inglés, francés, alemán, italiano y portugués.</p>
       <div class="footer__socials">
         <a href="#" aria-label="Instagram">IG</a>
         <a href="#" aria-label="TikTok">TT</a>
@@ -656,20 +618,20 @@
     </div>
 
     <div class="footer__col">
-      <h5>Producto</h5>
-      <a href="#metodo">Método</a>
-      <a href="ebook.html">Ebook gratis</a>
-      <a href="vocabulario.html">Vocabulario</a>
+      <h5>Curso</h5>
+      <a href="curriculo.html">El Curso</a>
+      <a href="libro.html">El Libro</a>
+      <a href="paquetes.html">Paquetes</a>
+      <a href="repaso.html">Repaso</a>
+      <a href="#metodo">El método</a>
       <a href="#precios">Precios</a>
-      <a href="descargar.html">Comprar y descargar</a>
-      <a href="#faq">FAQ</a>
     </div>
     <div class="footer__col">
       <h5>Compañía</h5>
       <a href="#nosotros">Sobre nosotros</a>
       <a href="#testimonios">Testimonios</a>
-      <a href="#">Carreras</a>
-      <a href="#">Prensa</a>
+      <a href="como-funciona.html">Cómo funciona</a>
+      <a href="#faq">FAQ</a>
     </div>
     <div class="footer__col">
       <h5>Legal</h5>
@@ -683,6 +645,18 @@
   </div>
 </footer>
 
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+<script src="js/firebase-config.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/data.js"></script>
+<script src="js/courses.js"></script>
+<script src="js/srs.js"></script>
+<script src="js/progress.js"></script>
+<script src="js/cloud-sync.js"></script>
+<script src="js/app.js"></script>
 <script src="js/script.js"></script>
+<script>initAuthUI({ protect: false });</script>
 </body>
 </html>

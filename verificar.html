@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verifica tu correo — Delphis Method</title>
+<meta name="description" content="Verifica tu correo para activar tu cuenta de Delphis Method.">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/course.css">
+</head>
+<body>
+
+<div class="hero__bg">
+  <div class="blob blob--1"></div>
+  <div class="blob blob--2"></div>
+  <div class="grid-overlay"></div>
+</div>
+
+<a href="index.html" class="navbar__brand" style="position:fixed; top:1.6rem; left:2rem; z-index:3;">
+  <img src="assets/logo.png" alt="Delphis Method" class="navbar__logo">
+  <span>Delphis <strong>Method</strong></span>
+</a>
+
+<main class="auth-shell">
+  <div class="auth-card verify-card">
+    <div class="verify-card__icon">📧</div>
+    <h1>Verifica tu correo</h1>
+    <p class="auth-card__sub">
+      Te enviamos un enlace de verificación a<br>
+      <span class="verify-card__email" id="verifyEmail">…</span>
+    </p>
+
+    <div class="auth-error-banner" id="authError"></div>
+    <div class="auth-success-banner" id="authSuccess"></div>
+
+    <button class="btn btn--primary btn--block btn--lg" id="btnCheck" style="margin-bottom:1rem;">Ya verifiqué, continuar</button>
+    <button class="btn btn--outline btn--block" id="btnResend">Reenviar correo de verificación</button>
+
+    <div class="auth-switch">
+      <button type="button" id="btnLogoutVerify">Cerrar sesión</button>
+    </div>
+  </div>
+</main>
+
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+<script src="js/firebase-config.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/verificar-page.js"></script>
+</body>
+</html>

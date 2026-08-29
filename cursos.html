@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elige tu curso — Delphis Method</title>
+<meta name="description" content="El mismo método Delphis en varios idiomas: inglés, francés, alemán, italiano y portugués.">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/course.css">
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<header class="navbar" id="navbar">
+  <div class="container navbar__inner">
+    <a href="index.html" class="navbar__brand">
+      <img src="assets/logo.png" alt="Delphis Method" class="navbar__logo">
+      <span>Delphis <strong>Method</strong></span>
+    </a>
+    <nav class="navbar__links" id="navLinks">
+      <a href="index.html" class="nav-link">Inicio</a>
+      <a href="cursos.html" class="nav-link active">Mis cursos</a>
+      <a href="curriculo.html" class="nav-link">El Curso</a>
+      <a href="libro.html" class="nav-link">El Libro</a>
+      <a href="paquetes.html" class="nav-link">Paquetes</a>
+      <a href="repaso.html" class="nav-link">Repaso</a>
+    </nav>
+    <div class="navbar__actions">
+      <div class="progress-chip" data-progress-chip></div>
+      <button class="navbar__burger" id="burger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" class="mobile-link">Inicio</a>
+  <a href="cursos.html" class="mobile-link">Mis cursos</a>
+  <a href="curriculo.html" class="mobile-link">El Curso</a>
+  <a href="libro.html" class="mobile-link">El Libro</a>
+  <a href="paquetes.html" class="mobile-link">Paquetes</a>
+  <a href="repaso.html" class="mobile-link">Repaso</a>
+  <div data-mobile-auth></div>
+</div>
+
+<main>
+<section class="hero page-hero" style="min-height:auto; padding-top:8.5rem; padding-bottom:2.5rem;">
+  <div class="hero__bg">
+    <div class="blob blob--1"></div>
+    <div class="blob blob--2"></div>
+    <div class="grid-overlay"></div>
+  </div>
+  <div class="container page-hero__inner">
+    <span class="eyebrow reveal-up">Mismo método, varios idiomas</span>
+    <h1 class="reveal-up">¿Qué idioma quieres <span class="text-gradient">aprender hoy?</span></h1>
+    <p class="reveal-up delay-1">
+      El mismo currículo — estudiar, quiz, juego, repetición espaciada — en el idioma que elijas.
+      Cada curso guarda su propio progreso por separado.
+    </p>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="container">
+    <div class="pack-grid" id="cursosGrid" style="max-width:1000px; margin:0 auto;"></div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <a href="index.html" class="navbar__brand">
+        <img src="assets/logo.png" alt="Delphis Method" class="navbar__logo">
+        <span>Delphis <strong>Method</strong></span>
+      </a>
+      <p>Un curso de idiomas con método científico y repetición espaciada real.</p>
+    </div>
+    <div class="footer__col">
+      <h5>Curso</h5>
+      <a href="cursos.html">Mis cursos</a>
+      <a href="curriculo.html">El Curso</a>
+      <a href="libro.html">El Libro</a>
+      <a href="paquetes.html">Paquetes</a>
+    </div>
+    <div class="footer__col">
+      <h5>Cuenta</h5>
+      <a href="perfil.html">Mi perfil</a>
+      <a href="como-funciona.html">Cómo funciona</a>
+    </div>
+  </div>
+  <div class="footer__bottom"><p>© 2026 Delphis Method. Todos los derechos reservados.</p></div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+<script src="js/firebase-config.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/data.js"></script>
+<script src="js/courses.js"></script>
+<script src="js/curriculo-builder.js"></script>
+<script src="js/srs.js"></script>
+<script src="js/progress.js"></script>
+<script src="js/cloud-sync.js"></script>
+<script src="js/app.js"></script>
+<script src="js/script.js"></script>
+<script src="js/cursos.js"></script>
+</body>
+</html>

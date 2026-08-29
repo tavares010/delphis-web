@@ -1,0 +1,214 @@
+[
+  {
+    "id": "frame_bronze_flame",
+    "type": "frame",
+    "name": "Llama de Bronce",
+    "description": "Un marco cálido para empezar a destacar",
+    "price": 80,
+    "colors": [
+      "#CD7F32",
+      "#F3C08B"
+    ]
+  },
+  {
+    "id": "frame_silver_wave",
+    "type": "frame",
+    "name": "Onda de Plata",
+    "description": "Elegante y sobrio",
+    "price": 150,
+    "colors": [
+      "#9CA3AF",
+      "#E5E7EB"
+    ]
+  },
+  {
+    "id": "frame_gold_royal",
+    "type": "frame",
+    "name": "Corona Dorada",
+    "description": "Para quien ya domina varios rangos",
+    "price": 300,
+    "colors": [
+      "#FFC107",
+      "#FFF3CD"
+    ]
+  },
+  {
+    "id": "frame_emerald",
+    "type": "frame",
+    "name": "Esmeralda",
+    "description": "Un verde intenso y premium",
+    "price": 400,
+    "colors": [
+      "#10B981",
+      "#6EE7B7"
+    ]
+  },
+  {
+    "id": "frame_sapphire",
+    "type": "frame",
+    "name": "Zafiro Real",
+    "description": "Azul profundo con brillo propio",
+    "price": 500,
+    "colors": [
+      "#2563EB",
+      "#93C5FD"
+    ]
+  },
+  {
+    "id": "frame_prism",
+    "type": "frame",
+    "name": "Prisma Arcoíris",
+    "description": "El marco más exclusivo de todos",
+    "price": 800,
+    "colors": [
+      "#EF4444",
+      "#F59E0B",
+      "#10B981",
+      "#3B82F6",
+      "#A855F7"
+    ]
+  },
+  {
+    "id": "theme_classic",
+    "type": "theme",
+    "name": "Tema Clásico",
+    "description": "El azul de Delphis de siempre",
+    "price": 0,
+    "colors": [
+      "#176BFF",
+      "#38BDF8"
+    ]
+  },
+  {
+    "id": "theme_gold",
+    "type": "theme",
+    "name": "Tema Dorado",
+    "description": "Toda la app con un acabado premium en oro",
+    "price": 250,
+    "colors": [
+      "#B8860B",
+      "#FFD166"
+    ]
+  },
+  {
+    "id": "theme_emerald",
+    "type": "theme",
+    "name": "Tema Esmeralda",
+    "description": "Un verde elegante para toda la app",
+    "price": 250,
+    "colors": [
+      "#047857",
+      "#34D399"
+    ]
+  },
+  {
+    "id": "theme_amethyst",
+    "type": "theme",
+    "name": "Tema Amatista",
+    "description": "Morado real de punta a punta",
+    "price": 250,
+    "colors": [
+      "#6D28D9",
+      "#C4B5FD"
+    ]
+  },
+  {
+    "id": "theme_midnight",
+    "type": "theme",
+    "name": "Tema Medianoche",
+    "description": "Un azul casi negro, muy sofisticado",
+    "price": 350,
+    "colors": [
+      "#0F172A",
+      "#38BDF8"
+    ]
+  },
+  {
+    "id": "theme_rose",
+    "type": "theme",
+    "name": "Tema Rosa Real",
+    "description": "Rosa vibrante y distinto",
+    "price": 250,
+    "colors": [
+      "#BE185D",
+      "#FBA4C7"
+    ]
+  },
+  {
+    "id": "title_polyglot",
+    "type": "title",
+    "name": "Políglota en ascenso",
+    "description": "Para quien no para de aprender",
+    "price": 100,
+    "colors": [
+      "#1565C0",
+      "#64B5F6"
+    ]
+  },
+  {
+    "id": "title_early_bird",
+    "type": "title",
+    "name": "Madrugador",
+    "description": "El primero en practicar cada día",
+    "price": 100,
+    "colors": [
+      "#EF6C00",
+      "#FFB74D"
+    ]
+  },
+  {
+    "id": "title_night_owl",
+    "type": "title",
+    "name": "Búho Nocturno",
+    "description": "Estudia cuando todos duermen",
+    "price": 100,
+    "colors": [
+      "#283593",
+      "#7986CB"
+    ]
+  },
+  {
+    "id": "title_streak_master",
+    "type": "title",
+    "name": "Maestro de la Racha",
+    "description": "Ni un solo día sin practicar",
+    "price": 200,
+    "colors": [
+      "#D84315",
+      "#FF8A65"
+    ]
+  },
+  {
+    "id": "title_perfectionist",
+    "type": "title",
+    "name": "Perfeccionista",
+    "description": "Nada de respuestas a medias",
+    "price": 200,
+    "colors": [
+      "#2E7D32",
+      "#81C784"
+    ]
+  },
+  {
+    "id": "title_globetrotter",
+    "type": "title",
+    "name": "Trotamundos",
+    "description": "Practicado en todos los paquetes temáticos",
+    "price": 150,
+    "colors": [
+      "#00838F",
+      "#4DD0E1"
+    ]
+  },
+  {
+    "id": "title_legend",
+    "type": "title",
+    "name": "Leyenda de Delphis",
+    "description": "El título más difícil de conseguir",
+    "price": 600,
+    "colors": [
+      "#FFC107",
+      "#7B1FA2"
+    ]
+  }
+]
