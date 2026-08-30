@@ -26,6 +26,7 @@ function updateActiveNav() {
     if (window.scrollY >= top) current = sec.getAttribute('id');
   });
   navLinks.forEach(link => {
+    if (!link.dataset.section) return; // deja intacto el active fijo de páginas sin scroll-spy (curriculo.html, etc.)
     link.classList.toggle('active', link.dataset.section === current);
   });
 }

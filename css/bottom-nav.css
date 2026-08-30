@@ -10,9 +10,10 @@
   left: 0; right: 0; bottom: 0;
   z-index: 600;
   padding: .5rem .4rem calc(.5rem + env(safe-area-inset-bottom));
-  background: rgba(18,13,31,.92);
+  background: rgba(255,255,255,.92);
   backdrop-filter: blur(20px) saturate(160%);
-  border-top: 1px solid rgba(148,163,184,.14);
+  border-top: 1px solid var(--border);
+  box-shadow: 0 -8px 30px rgba(30,27,46,.06);
 }
 .bottom-nav__inner {
   display: flex;

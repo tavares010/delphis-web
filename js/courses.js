@@ -9,8 +9,8 @@
 // pintan var(--blue-500)/var(--cyan-400) en tiempo real (ver aplicarTemaCurso)
 // para que la app entera se sienta distinta según el idioma activo.
 const CURSOS = [
-  { id: 'en', nombre: 'Inglés', bandera: '🇬🇧', speechLang: 'en-US', sufijo: '', disponible: true, colorA: '#8b5cf6', colorB: '#c084fc' },
-  { id: 'fr', nombre: 'Francés', bandera: '🇫🇷', speechLang: 'fr-FR', sufijo: '_fr', disponible: true, colorA: '#4f46e5', colorB: '#38bdf8' },
+  { id: 'en', nombre: 'Inglés', bandera: '🇬🇧', speechLang: 'en-US', sufijo: '', disponible: true, colorA: '#38bdf8', colorB: '#7dd3fc' },
+  { id: 'fr', nombre: 'Francés', bandera: '🇫🇷', speechLang: 'fr-FR', sufijo: '_fr', disponible: true, colorA: '#3b82f6', colorB: '#60a5fa' },
   { id: 'de', nombre: 'Alemán', bandera: '🇩🇪', speechLang: 'de-DE', sufijo: '_de', disponible: true, colorA: '#d97706', colorB: '#fbbf24' },
   { id: 'it', nombre: 'Italiano', bandera: '🇮🇹', speechLang: 'it-IT', sufijo: '_it', disponible: true, colorA: '#059669', colorB: '#a3e635' },
   { id: 'pt', nombre: 'Portugués', bandera: '🇵🇹', speechLang: 'pt-PT', sufijo: '_pt', disponible: true, colorA: '#e11d48', colorB: '#fb923c' },

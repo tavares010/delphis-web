@@ -60,13 +60,39 @@ You MUST reply with STRICT JSON only, no markdown formatting, no extra text befo
 {"npc_reply": "...", "correction": null, "missions_completed": [], "scenario_complete": false}`;
 }
 
+function renderPicker(scenarios) {
+  const wrap = document.getElementById('roleplayWrap');
+  const list = Object.values(scenarios);
+  wrap.innerHTML = `
+    <div class="rp-picker reveal-up visible">
+      <div class="rp-picker__head">
+        <span class="eyebrow">Hablar con IA</span>
+        <h1 style="font-size:2rem; margin:.5rem 0;">Elige con quién quieres practicar</h1>
+        <p style="color:var(--gray-400);">Un personaje distinto para cada escena — habla en voz alta o escribe, y tu avatar te responde en el momento.</p>
+      </div>
+      <div class="rp-scenario-grid">
+        ${list.map(s => `
+          <a href="roleplay.html?pkg=${s.packageId}" class="rp-scenario-card">
+            <span class="rp-scenario-card__emoji">${s.characterEmoji}</span>
+            <strong>${s.title}</strong>
+            <small>${s.roleSubtitleEs}</small>
+          </a>
+        `).join('')}
+      </div>
+    </div>
+  `;
+}
+
 function renderIntro(scenario) {
   const wrap = document.getElementById('roleplayWrap');
   const state = roleplayLimitState();
   const restantes = ROLEPLAY_DAILY_MAX - state.usadas;
   wrap.innerHTML = `
     <div class="rp-intro reveal-up visible">
-      <div class="rp-intro__avatar">${scenario.characterEmoji}</div>
+      <div class="rp-avatar-stage">
+        <div class="rp-avatar">${scenario.characterEmoji}</div>
+        <div class="rp-avatar-status">${scenario.characterLabelEs} te está esperando</div>
+      </div>
       <span class="eyebrow">Roleplay · ${scenario.title}</span>
       <h1 style="font-size:1.8rem; margin:.6rem 0;">${scenario.roleSubtitleEs}</h1>
       <p style="color:var(--gray-300);">${scenario.openingContext}</p>
@@ -78,6 +104,7 @@ function renderIntro(scenario) {
       ${restantes > 0
         ? `<button class="btn btn--primary btn--lg" id="btnStartRp">Empezar roleplay</button>`
         : `<p style="color:#f87171;">Ya usaste tus ${ROLEPLAY_DAILY_MAX} sesiones gratis de hoy. Vuelve mañana.</p>`}
+      <p style="margin-top:1rem;"><a href="roleplay.html" style="color:var(--gray-500); font-size:.82rem;">← Elegir otro personaje</a></p>
     </div>
   `;
   if (restantes > 0) qsR('#btnStartRp').addEventListener('click', () => startRoleplay(scenario));
@@ -115,9 +142,16 @@ function startRoleplay(scenario) {
   const wrap = document.getElementById('roleplayWrap');
   wrap.innerHTML = `
     <div class="rp-chat-wrap">
+      <div class="rp-avatar-stage">
+        <div class="rp-avatar" id="rpAvatar">${scenario.characterEmoji}</div>
+        <div class="rp-avatar-status" id="rpAvatarStatus">${scenario.characterLabelEs} · ${scenario.title}</div>
+      </div>
       <div class="rp-topbar">
-        <span>${scenario.characterEmoji} ${scenario.title}</span>
-        <span id="rpTurnCount">Turno 0 / ${MAX_USER_TURNS}</span>
+        <div class="rp-topbar__row">
+          <span id="rpTurnCount">Turno 0 / ${MAX_USER_TURNS}</span>
+          <span>${done.size}/${missions.length} misiones</span>
+        </div>
+        <div class="rp-progress-track"><div class="rp-progress-fill" id="rpProgressFill" style="width:0%"></div></div>
       </div>
       <div id="rpMissions">${renderMissionChecklist(missions, done)}</div>
       <div class="rp-chat-messages" id="rpMessages"></div>
@@ -129,53 +163,72 @@ function startRoleplay(scenario) {
     </div>
   `;
 
+  const avatarEl = qsR('#rpAvatar');
+  const statusEl = qsR('#rpAvatarStatus');
+  function setAvatarState(state, label) {
+    avatarEl.classList.remove('speaking', 'listening', 'thinking');
+    if (state) avatarEl.classList.add(state);
+    statusEl.innerHTML = label;
+  }
+  const idleLabel = `${scenario.characterLabelEs} · ${scenario.title}`;
+
   const recognition = setupMic((transcript) => { qsR('#rpInput').value = transcript; });
   const micBtn = qsR('#rpMic');
   if (!recognition) { micBtn.style.opacity = '.35'; micBtn.title = 'Tu navegador no soporta dictado por voz — usa el texto.'; }
   else {
     let recording = false;
     micBtn.addEventListener('click', () => {
-      if (recording) { recognition.stop(); recording = false; micBtn.classList.remove('recording'); return; }
+      if (recording) { recognition.stop(); recording = false; micBtn.classList.remove('recording'); setAvatarState(null, idleLabel); return; }
       recording = true; micBtn.classList.add('recording');
+      setAvatarState('listening', 'Te está escuchando…');
       recognition.start();
     });
-    recognition.onend = () => { recording = false; micBtn.classList.remove('recording'); };
+    recognition.onend = () => { recording = false; micBtn.classList.remove('recording'); if (avatarEl.classList.contains('listening')) setAvatarState(null, idleLabel); };
   }
 
   function addBubble(role, text) {
-    const div = document.createElement('div');
-    div.className = `chat-bubble chat-bubble--${role === 'assistant' ? 'ai' : 'user'}`;
-    div.textContent = text;
-    qsR('#rpMessages').appendChild(div);
-    div.scrollIntoView({ behavior: 'smooth', block: 'end' });
-    return div;
+    const row = document.createElement('div');
+    row.className = `chat-bubble-row chat-bubble-row--${role === 'assistant' ? 'ai' : 'user'}`;
+    if (role === 'assistant') row.innerHTML = `<span class="rp-avatar rp-avatar--sm">${scenario.characterEmoji}</span>`;
+    const bubble = document.createElement('div');
+    bubble.className = `chat-bubble chat-bubble--${role === 'assistant' ? 'ai' : 'user'}`;
+    bubble.textContent = text;
+    row.appendChild(bubble);
+    qsR('#rpMessages').appendChild(row);
+    row.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    return bubble;
   }
 
   async function sendTurn(userText) {
     if (userText) { messages.push({ role: 'user', content: userText }); addBubble('user', userText); turn++; }
     qsR('#rpTurnCount').textContent = `Turno ${turn} / ${MAX_USER_TURNS}`;
 
+    setAvatarState('thinking', `Pensando <span class="rp-dots"><span></span><span></span><span></span></span>`);
     const thinking = addBubble('assistant', '…');
     const sys = buildSystemPrompt(scenario, missions, turn);
     const msgsForCall = userText ? messages : [{ role: 'user', content: '(The user has just entered the roleplay. Begin now.)' }];
     const { text, error } = await callAI(sys, msgsForCall);
-    thinking.remove();
+    thinking.parentElement.remove();
 
     if (error) {
+      setAvatarState(null, idleLabel);
       addBubble('assistant', error === 'timeout' ? '(el servidor está despertando, intenta de nuevo en unos segundos)' : '(sin conexión con el servidor de IA ahora mismo)');
       return;
     }
     const parsed = parseAIJson(text);
-    if (!parsed) { addBubble('assistant', (text || '').trim()); return; }
+    if (!parsed) { setAvatarState(null, idleLabel); addBubble('assistant', (text || '').trim()); return; }
 
     messages.push({ role: 'assistant', content: text });
     addBubble('assistant', parsed.npc_reply);
-    speakText(parsed.npc_reply, 1);
+    setAvatarState('speaking', 'Hablando…');
+    speakText(parsed.npc_reply, 1, null, { onEnd: () => setAvatarState(null, idleLabel) });
 
     (parsed.missions_completed || []).forEach(id => {
       if (!done.has(id)) { done.add(id); addCoins(10); }
     });
     qsR('#rpMissions').innerHTML = renderMissionChecklist(missions, done);
+    qsR('#rpProgressFill').style.width = `${Math.round((done.size / missions.length) * 100)}%`;
+    qsR('.rp-topbar__row span:last-child').textContent = `${done.size}/${missions.length} misiones`;
     if (parsed.missions_completed && parsed.missions_completed.length) celebrate('✅ ¡Misión cumplida!');
 
     if (parsed.scenario_complete || turn >= MAX_USER_TURNS) {
@@ -186,6 +239,7 @@ function startRoleplay(scenario) {
 
   function finish(completo) {
     qsR('#rpForm').style.display = 'none';
+    setAvatarState(null, completo ? '¡Escena completada!' : 'Se acabaron los turnos');
     if (completo) { addCoins(30); touchStreak(); }
     if (typeof pushNow === 'function') pushNow();
     const div = document.createElement('div');
@@ -196,7 +250,10 @@ function startRoleplay(scenario) {
       <span class="eyebrow">${completo ? '¡Escena completada!' : 'Se acabaron los turnos'}</span>
       <div style="font-size:2.6rem; margin:1rem 0;">${completo ? '🎉' : '⏱️'}</div>
       <p style="color:var(--gray-400); margin-bottom:1.6rem;">${done.size} de ${missions.length} misiones cumplidas.</p>
-      <a href="paquetes.html" class="btn btn--primary">Volver a paquetes</a>
+      <div style="display:flex; gap:.8rem; justify-content:center; flex-wrap:wrap;">
+        <a href="roleplay.html" class="btn btn--primary">Elegir otro personaje</a>
+        <a href="paquetes.html" class="btn btn--outline">Volver a paquetes</a>
+      </div>
     `;
     qsR('#rpMessages').after(div);
   }
@@ -219,15 +276,16 @@ async function init() {
   if (content.curso.id !== 'en') {
     document.getElementById('roleplayWrap').innerHTML = `
       <div class="rp-intro">
-        <div class="rp-intro__avatar">🎭</div>
+        <div class="rp-avatar-stage"><div class="rp-avatar">🎭</div></div>
         <h1 style="font-size:1.6rem;">El roleplay todavía solo existe en inglés</h1>
         <p style="color:var(--gray-300);">Los escenarios de roleplay no están traducidos a ${content.curso.nombre.toLowerCase()} todavía.</p>
         <a href="paquetes.html" class="btn btn--primary" style="margin-top:1.2rem;">Volver a paquetes</a>
       </div>`;
     return;
   }
+  if (!pkgId) { renderPicker(content.roleplayScenarios); return; }
   const scenario = content.roleplayScenarios[pkgId];
-  if (!scenario) { showToast('Escenario no encontrado.'); location.href = 'paquetes.html'; return; }
+  if (!scenario) { showToast('Escenario no encontrado.'); location.href = 'roleplay.html'; return; }
   renderIntro(scenario);
 }
 

@@ -28,11 +28,33 @@
 
     <nav class="navbar__links" id="navLinks">
       <a href="index.html" class="nav-link">Inicio</a>
-      <a href="curriculo.html" class="nav-link active">El Curso</a>
-      <a href="libro.html" class="nav-link">El Libro</a>
-      <a href="paquetes.html" class="nav-link">Paquetes</a>
-      <a href="repaso.html" class="nav-link">Repaso</a>
-      <a href="como-funciona.html" class="nav-link">Cómo funciona</a>
+      <a href="cursos.html" class="nav-link">Cursos</a>
+      <a href="curriculo.html" class="nav-link active">Lenguaje</a>
+      <div class="nav-dropdown">
+        <span class="nav-dropdown__trigger">
+          Contenido
+          <svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <div class="nav-dropdown__menu">
+          <a href="libro.html" class="nav-dropdown__item">
+            <span data-emoji>📖</span>
+            <div><strong>El libro "La Sed"</strong><small>Lectura con audio y traducción</small></div>
+          </a>
+          <a href="paquetes.html" class="nav-dropdown__item">
+            <span data-emoji>🧩</span>
+            <div><strong>Paquetes de vocabulario</strong><small>Hostelería, viajes, deportes y más</small></div>
+          </a>
+          <a href="repaso.html" class="nav-dropdown__item">
+            <span data-emoji>🔁</span>
+            <div><strong>Repaso espaciado</strong><small>Tu vocabulario, en el momento justo</small></div>
+          </a>
+          <a href="como-funciona.html" class="nav-dropdown__item">
+            <span data-emoji>💡</span>
+            <div><strong>Cómo funciona</strong><small>El método, explicado</small></div>
+          </a>
+        </div>
+      </div>
+      <a href="roleplay.html" class="nav-link nav-link--ia">Hablar con IA 🤖</a>
     </nav>
 
     <div class="navbar__actions">
@@ -46,11 +68,13 @@
 
 <div class="mobile-menu" id="mobileMenu">
   <a href="index.html" class="mobile-link">Inicio</a>
-  <a href="curriculo.html" class="mobile-link">El Curso</a>
+  <a href="cursos.html" class="mobile-link">Cursos</a>
+  <a href="curriculo.html" class="mobile-link active">Lenguaje</a>
   <a href="libro.html" class="mobile-link">El Libro</a>
   <a href="paquetes.html" class="mobile-link">Paquetes</a>
   <a href="repaso.html" class="mobile-link">Repaso</a>
   <a href="como-funciona.html" class="mobile-link">Cómo funciona</a>
+  <a href="roleplay.html" class="mobile-link mobile-link--ia">Hablar con IA 🤖</a>
   <div data-mobile-auth></div>
 </div>
 

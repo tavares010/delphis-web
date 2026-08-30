@@ -14,20 +14,23 @@ const BOTTOM_NAV_ITEMS = [
     icon: '<path d="M4 4v5h5M20 20v-5h-5M4.5 15a8 8 0 0014.3 3.2M19.5 9a8 8 0 00-14.3-3.2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>' },
   { id: 'idiomas', href: 'cursos.html', label: 'Idiomas',
     icon: '<circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" fill="none"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18" stroke="currentColor" stroke-width="2" fill="none"/>' },
+  { id: 'ia', href: 'roleplay.html', label: 'IA',
+    icon: '<circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="2" fill="none"/><path d="M5 8.5C3.5 9.5 3 11 3 13v3a2 2 0 002 2h1m13-9.5c1.5 1 2 2.5 2 4.5v3a2 2 0 01-2 2h-1M8 20v-3a4 4 0 018 0v3" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>' },
   { id: 'perfil', href: 'perfil.html', label: 'Perfil',
     icon: '<circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2" fill="none"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>' },
 ];
 
-// Páginas que no son una de las 5 pestañas pero pertenecen a una: la
+// Páginas que no son una de las pestañas pero pertenecen a una: la
 // lección de un repaso destaca "Repaso", el resto de leccion.html/libro.html
-// /roleplay.html destaca "Curso" (son parte del camino principal).
+// destaca "Curso" (son parte del camino principal); roleplay.html tiene su
+// propia pestaña "IA".
 function seccionActiva() {
   const page = location.pathname.split('/').pop() || 'index.html';
   if (page === 'leccion.html') {
     const tipo = new URLSearchParams(location.search).get('tipo');
     return tipo === 'repaso' ? 'repaso.html' : 'curriculo.html';
   }
-  if (page === 'libro.html' || page === 'roleplay.html') return 'curriculo.html';
+  if (page === 'libro.html') return 'curriculo.html';
   return page;
 }
 
