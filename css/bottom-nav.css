@@ -1,0 +1,47 @@
+/* ===========================================================
+   DELPHIS METHOD — BARRA DE NAVEGACIÓN INFERIOR (solo móvil)
+   Reemplaza el menú hamburguesa dentro de la app en pantallas chicas
+   -patrón de app nativa (ver mockup Udemy, 2026-08-30). Se inyecta
+   con js/bottom-nav.js, no se pega a mano en cada página.
+   =========================================================== */
+.bottom-nav {
+  display: none;
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 600;
+  padding: .5rem .4rem calc(.5rem + env(safe-area-inset-bottom));
+  background: rgba(18,13,31,.92);
+  backdrop-filter: blur(20px) saturate(160%);
+  border-top: 1px solid rgba(148,163,184,.14);
+}
+.bottom-nav__inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 520px;
+  margin: 0 auto;
+}
+.bottom-nav__item {
+  display: flex; flex-direction: column; align-items: center; gap: .2rem;
+  padding: .4rem .5rem;
+  border-radius: 14px;
+  color: var(--gray-500);
+  font-size: .64rem;
+  font-weight: 700;
+  min-width: 56px;
+  transition: color .25s ease;
+}
+.bottom-nav__item svg { width: 22px; height: 22px; transition: transform .25s var(--ease); }
+.bottom-nav__item.active { color: var(--cyan-300); }
+.bottom-nav__item.active svg { transform: translateY(-2px); }
+.bottom-nav__item.active .bottom-nav__dot { opacity: 1; transform: scale(1); }
+.bottom-nav__dot {
+  width: 4px; height: 4px; border-radius: 50%;
+  background: var(--cyan-400);
+  opacity: 0; transform: scale(0);
+  transition: all .25s var(--ease);
+}
+
+@media (max-width: 720px) {
+  .bottom-nav[data-active] { display: block; }
+}

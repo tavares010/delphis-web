@@ -1,8 +1,9 @@
 /* ===========================================================
    DELPHIS METHOD — RENDER DEL CURRÍCULO REAL (curriculo.html)
-   Cada nivel es una lista de lecciones (como un curso de verdad),
-   no un mapa de nodos — con 64+90+8 lecciones no cabe como un
-   camino serpenteante.
+   Navegación en 3 pasos, como un curso de verdad: Curso -> Nivel ->
+   Sección -> Lecciones. Nada de mostrar 64+ lecciones de golpe.
+   Estado en la URL (?nivel=&seccion=) para que atrás/adelante del
+   navegador funcionen y los enlaces se puedan compartir.
    =========================================================== */
 
 const NIVEL_META = {
@@ -39,6 +40,13 @@ function nodoSub(nodo) {
   return '';
 }
 
+function nodoGroupId(nodo, nivel) {
+  if (nivel === 1) return nodo.bloqueId;
+  if (nivel === 2) return nodo.parejaId;
+  if (nivel === 3) return nodo.verboId; // en Nivel 3 cada estructura ES su propia sección
+  return null;
+}
+
 function rowClasses(nodo, estado) {
   const cls = ['course-row'];
   if (nodo.tipo === 'leccion') {
@@ -51,82 +59,57 @@ function rowClasses(nodo, estado) {
   return cls.join(' ');
 }
 
-function renderRow(nodo, estado, content) {
+function renderRow(nodo, estado, content, big) {
   const href = estado === 'bloqueado' ? null : nodoHref(nodo);
   const tag = href ? 'a' : 'div';
   const icono = estado === 'completo' ? '✓' : nodoIcono(nodo);
   const badge = estado === 'completo' ? 'Completado' : estado === 'actual' ? 'Continuar' : '';
   const attrs = href ? ` href="${href}"` : ' data-locked="true"';
-  return `<${tag} class="${rowClasses(nodo, estado)}"${attrs}>
+  return `<${tag} class="${rowClasses(nodo, estado)} ${big ? 'course-row--lg' : ''}"${attrs}>
     <div class="course-row__icon">${icono}</div>
     <div class="course-row__info"><strong>${nodoNombre(nodo, content)}</strong><span>${nodoSub(nodo)}</span></div>
     ${badge ? `<span class="course-row__badge">${badge}</span>` : ''}
   </${tag}>`;
 }
 
-function renderCaminoRows(camino, content, nivel) {
-  const estados = estadoCamino(camino);
-  let html = '';
-  let lastGroup = null;
-  camino.forEach((nodo, i) => {
-    const groupKey = nivel === 1 ? nodo.bloqueId : nivel === 2 ? nodo.parejaId : null;
-    if (groupKey && groupKey !== lastGroup) {
-      const nEnGrupo = camino.filter(n => (nivel === 1 ? n.bloqueId : n.parejaId) === groupKey && n.tipo === 'leccion').length;
-      let label, num;
-      if (nivel === 1) {
-        const bi = content.nivel1.bloques.findIndex(b => b.id === groupKey);
-        label = content.nivel1.bloques[bi].nombre; num = bi + 1;
-        html += `<div class="course-divider"><span>Bloque ${num} · ${nEnGrupo} lecciones</span><strong>${label}</strong></div>`;
-      } else {
-        const pi = NIVEL2_PAREJAS.findIndex(p => p.id === groupKey);
-        label = NIVEL2_PAREJAS[pi].verbos.map(v => traducirVerbo(v, content.curso.id)).join(' / '); num = pi + 1;
-        html += `<div class="course-divider"><span>Pareja ${num} · ${nEnGrupo} lecciones</span><strong>${label}</strong></div>`;
-      }
-      lastGroup = groupKey;
-    }
-    html += renderRow(nodo, estados[i], content);
-  });
-  return html;
+// ---------- Secciones de un nivel (bloques / parejas / estructuras) ----------
+function seccionesDeNivel(nivel, content) {
+  if (nivel === 1) {
+    return content.nivel1.bloques.map((b, i) => ({ id: b.id, num: i + 1, nombre: b.nombre, icono: '🔤' }));
+  }
+  if (nivel === 2) {
+    return NIVEL2_PAREJAS.map((p, i) => ({
+      id: p.id, num: i + 1,
+      nombre: p.verbos.map(v => traducirVerbo(v, content.curso.id)).join(' / '),
+      icono: '🧱',
+    }));
+  }
+  return content.nivel3.orden.map((id, i) => ({
+    id, num: i + 1, nombre: content.nivel3.porEstructura[id].nombre, icono: '🎓',
+  }));
 }
 
-function renderLevelCard(nivel, camino, content, { locked, open }) {
-  const meta = NIVEL_META[nivel];
+function seccionCard(seccion, nivel, camino, content) {
   const estados = estadoCamino(camino);
-  const completos = estados.filter(e => e === 'completo').length;
-  const pct = camino.length ? Math.round((completos / camino.length) * 100) : 0;
-
-  const card = document.createElement('div');
-  card.className = `level-card ${locked ? 'locked' : ''} ${open ? 'open' : ''}`;
-  card.style.setProperty('--level-a', meta.a);
-  card.style.setProperty('--level-b', meta.b);
-  const nLecciones = camino.filter(n => n.tipo === 'leccion').length;
-  card.innerHTML = `
-    <div class="level-card__header">
-      <div class="level-card__title">
-        <div class="level-card__icon">${meta.icono}</div>
-        <div><h3>${meta.titulo}</h3><span>${locked ? 'Se desbloquea al terminar el nivel anterior' : `${nLecciones} lecciones · ${meta.resumen}`}</span></div>
+  const idxEnCamino = [];
+  camino.forEach((n, i) => { if (n.tipo === 'leccion' && nodoGroupId(n, nivel) === seccion.id) idxEnCamino.push(i); });
+  const total = idxEnCamino.length;
+  const completos = idxEnCamino.filter(i => estados[i] === 'completo').length;
+  const pct = total ? Math.round((completos / total) * 100) : 0;
+  const bloqueada = total > 0 && idxEnCamino.every(i => estados[i] === 'bloqueado');
+  const href = `curriculo.html?nivel=${nivel}&seccion=${seccion.id}`;
+  return `
+    <a class="seccion-card ${bloqueada ? 'locked' : ''}" href="${bloqueada ? '#' : href}" data-locked="${bloqueada}">
+      <div class="seccion-card__top">
+        <div class="seccion-card__icon">${seccion.icono}</div>
+        <span class="seccion-card__num">${String(seccion.num).padStart(2, '0')}</span>
       </div>
-      <div class="level-card__right">
-        <div class="level-card__progress">
-          <div class="level-card__progress-bar"><div class="level-card__progress-fill" style="width:${pct}%"></div></div>
-          <span>${completos} / ${camino.length} · ${pct}%</span>
-        </div>
-        <svg class="level-card__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <h4>${seccion.nombre}</h4>
+      <div class="seccion-card__foot">
+        <div class="seccion-card__progress-bar"><div class="seccion-card__progress-fill" style="width:${pct}%"></div></div>
+        <span>${completos}/${total} lecciones</span>
       </div>
-    </div>
-    <div class="level-card__body"><div class="level-card__list">${locked ? '' : renderCaminoRows(camino, content, nivel)}</div></div>
-  `;
-
-  card.querySelector('.level-card__header').addEventListener('click', () => {
-    if (locked) { showToast('Termina el nivel anterior para desbloquear este.'); return; }
-    card.classList.toggle('open');
-  });
-
-  card.querySelectorAll('[data-locked="true"]').forEach(el => {
-    el.addEventListener('click', () => showToast('Se desbloquea completando el paso anterior.'));
-  });
-
-  return card;
+    </a>`;
 }
 
 function renderSummaryStrip(caminos, content) {
@@ -169,6 +152,118 @@ function renderContinueBanner(caminos, content) {
   </div>`;
 }
 
+function bindLocked(root) {
+  root.querySelectorAll('[data-locked="true"]').forEach(el => {
+    el.addEventListener('click', e => { e.preventDefault(); showToast('Se desbloquea completando el paso anterior.'); });
+  });
+}
+
+// ---------- PASO 1: niveles ----------
+function renderVistaNiveles(wrap, caminos, content, { n1Completo, n2Completo, dev }) {
+  document.getElementById('continueBanner').style.display = '';
+  document.getElementById('courseSummaryStrip').style.display = '';
+  renderContinueBanner(caminos, content);
+  renderSummaryStrip(caminos, content);
+
+  const niveles = [
+    { n: 1, camino: caminos.nivel1, locked: false },
+    { n: 2, camino: caminos.nivel2, locked: !dev && !n1Completo },
+    { n: 3, camino: caminos.nivel3, locked: !dev && !n2Completo },
+  ];
+
+  wrap.innerHTML = `<div class="nivel-grid">${niveles.map(({ n, camino, locked }) => {
+    const meta = NIVEL_META[n];
+    const estados = estadoCamino(camino);
+    const completos = estados.filter(e => e === 'completo').length;
+    const pct = camino.length ? Math.round((completos / camino.length) * 100) : 0;
+    const nLecciones = camino.filter(x => x.tipo === 'leccion').length;
+    const nSecciones = seccionesDeNivel(n, content).length;
+    return `
+      <a class="nivel-card ${locked ? 'locked' : ''}" href="${locked ? '#' : `curriculo.html?nivel=${n}`}" data-locked="${locked}"
+         style="--level-a:${meta.a}; --level-b:${meta.b};">
+        <div class="nivel-card__icon">${meta.icono}</div>
+        <h3>${meta.titulo}</h3>
+        <p>${locked ? 'Se desbloquea al terminar el nivel anterior' : meta.resumen}</p>
+        <div class="nivel-card__meta">
+          <span>📚 ${nSecciones} secciones</span>
+          <span>🔤 ${nLecciones} lecciones</span>
+        </div>
+        <div class="nivel-card__progress-bar"><div class="nivel-card__progress-fill" style="width:${pct}%"></div></div>
+        <div class="nivel-card__foot"><span>${completos}/${camino.length} · ${pct}%</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </a>`;
+  }).join('')}</div>`;
+  bindLocked(wrap);
+}
+
+// ---------- PASO 2: secciones de un nivel ----------
+function renderVistaSecciones(wrap, nivel, caminos, content) {
+  document.getElementById('continueBanner').style.display = 'none';
+  document.getElementById('courseSummaryStrip').style.display = 'none';
+  const camino = caminos[`nivel${nivel}`];
+  const meta = NIVEL_META[nivel];
+  const secciones = seccionesDeNivel(nivel, content);
+
+  // Nodos de repaso/libro en su posición real dentro del camino plano -se
+  // listan como filas sueltas entre las tarjetas de sección a las que
+  // siguen, sin romper el orden pedagógico original.
+  const estados = estadoCamino(camino);
+  const extras = []; // { afterSeccionIndex, html }
+  let seccionesVistas = 0;
+  camino.forEach((nodo, i) => {
+    if (nodo.tipo === 'leccion') {
+      const gid = nodoGroupId(nodo, nivel);
+      const idx = secciones.findIndex(s => s.id === gid);
+      if (idx + 1 > seccionesVistas) seccionesVistas = idx + 1;
+    } else {
+      extras.push({ afterSeccion: seccionesVistas, html: renderRow(nodo, estados[i], content) });
+    }
+  });
+
+  let html = `
+    <a href="curriculo.html" class="breadcrumb-back">← El curso</a>
+    <div class="seccion-head-row" style="--level-a:${meta.a}; --level-b:${meta.b};">
+      <div class="seccion-head-row__icon">${meta.icono}</div>
+      <div><h2>${meta.titulo}</h2><p>Elige una sección para ver sus lecciones.</p></div>
+    </div>
+    <div class="seccion-grid">`;
+  secciones.forEach((s, i) => {
+    html += seccionCard(s, nivel, camino, content);
+    extras.filter(e => e.afterSeccion === i + 1).forEach(e => { html += e.html; });
+  });
+  html += `</div>`;
+  wrap.innerHTML = html;
+  bindLocked(wrap);
+}
+
+// ---------- PASO 3: lecciones de una sección ----------
+function renderVistaLecciones(wrap, nivel, seccionId, caminos, content) {
+  document.getElementById('continueBanner').style.display = 'none';
+  document.getElementById('courseSummaryStrip').style.display = 'none';
+  const camino = caminos[`nivel${nivel}`];
+  const meta = NIVEL_META[nivel];
+  const secciones = seccionesDeNivel(nivel, content);
+  const seccion = secciones.find(s => s.id === seccionId);
+  if (!seccion) { wrap.innerHTML = `<p style="text-align:center; color:var(--gray-400); padding:3rem 0;">Sección no encontrada.</p>`; return; }
+
+  const estados = estadoCamino(camino);
+  let rows = '';
+  camino.forEach((nodo, i) => {
+    if (nodo.tipo === 'leccion' && nodoGroupId(nodo, nivel) === seccionId) rows += renderRow(nodo, estados[i], content, true);
+  });
+
+  wrap.innerHTML = `
+    <a href="curriculo.html?nivel=${nivel}" class="breadcrumb-back">← ${meta.titulo.split('·')[0].trim()}</a>
+    <div class="seccion-head-row" style="--level-a:${meta.a}; --level-b:${meta.b};">
+      <div class="seccion-head-row__icon">${seccion.icono}</div>
+      <div><h2>${seccion.nombre}</h2><p>Sección ${seccion.num} · ${meta.titulo}</p></div>
+    </div>
+    <div class="level-card__list" style="padding:0;">${rows}</div>
+  `;
+  bindLocked(wrap);
+}
+
 async function initCurriculo() {
   const wrap = document.getElementById('nivelesWrap');
   try {
@@ -178,21 +273,33 @@ async function initCurriculo() {
     const eyebrow = document.getElementById('cursoEyebrow');
     if (eyebrow) eyebrow.textContent = `El curso · ${content.curso.bandera} ${content.curso.nombre}`;
 
-    renderContinueBanner(caminos, content);
-    renderSummaryStrip(caminos, content);
-
     const n1Completo = nivelCompleto(caminos.nivel1);
     const n2Completo = nivelCompleto(caminos.nivel2);
     const dev = typeof DEV_MODE !== 'undefined' && DEV_MODE;
 
-    // Los 3 niveles empiezan colapsados (estilo Udemy: el currículo se
-    // hojea, no se muestra entero de golpe) — el botón "Continuar" de
-    // arriba ya lleva directo a la lección actual sin tener que desplegar
-    // una lista de 60+ lecciones para encontrarla.
-    wrap.innerHTML = '';
-    wrap.appendChild(renderLevelCard(1, caminos.nivel1, content, { locked: false, open: false }));
-    wrap.appendChild(renderLevelCard(2, caminos.nivel2, content, { locked: !dev && !n1Completo, open: false }));
-    wrap.appendChild(renderLevelCard(3, caminos.nivel3, content, { locked: !dev && !n2Completo, open: false }));
+    function render() {
+      const params = new URLSearchParams(location.search);
+      const nivel = parseInt(params.get('nivel'), 10);
+      const seccion = params.get('seccion');
+
+      if (!nivel) { renderVistaNiveles(wrap, caminos, content, { n1Completo, n2Completo, dev }); return; }
+      const locked = nivel === 2 ? (!dev && !n1Completo) : nivel === 3 ? (!dev && !n2Completo) : false;
+      if (locked) {
+        sessionStorage.setItem('delphis_toast', 'Termina el nivel anterior para desbloquear este.');
+        history.replaceState(null, '', 'curriculo.html');
+        renderVistaNiveles(wrap, caminos, content, { n1Completo, n2Completo, dev });
+        return;
+      }
+      if (seccion) renderVistaLecciones(wrap, nivel, seccion, caminos, content);
+      else renderVistaSecciones(wrap, nivel, caminos, content);
+      window.scrollTo({ top: 0 });
+    }
+
+    render();
+    window.addEventListener('popstate', render);
+    // Los enlaces de sección/nivel usan href normal (recarga) salvo que
+    // en el futuro se quiera SPA-navegar sin recargar -de momento, simple
+    // y fiable: cada clic es una navegación real, el estado vive en la URL.
 
     const pendingToast = sessionStorage.getItem('delphis_toast');
     if (pendingToast) { sessionStorage.removeItem('delphis_toast'); showToast(pendingToast); }

@@ -106,7 +106,11 @@ function comboMessage(streak) {
 async function applyTheme() {
   const data = progressLoad();
   if (!data.tema || data.tema === 'theme_classic') {
-    ['--blue-500', '--blue-400', '--cyan-400', '--cyan-300'].forEach(v => document.documentElement.style.removeProperty(v));
+    // Sin tema de tienda equipado: el color por defecto es el del curso
+    // activo (ver js/courses.js aplicarTemaCurso), no un morado fijo para
+    // todos -así se distingue de un vistazo qué idioma estás estudiando.
+    if (typeof aplicarTemaCurso === 'function') aplicarTemaCurso();
+    else ['--blue-500', '--blue-400', '--cyan-400', '--cyan-300'].forEach(v => document.documentElement.style.removeProperty(v));
     return;
   }
   try {
