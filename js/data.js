@@ -194,11 +194,12 @@ async function loadJSONOptional(path) {
   }
 }
 
-function groupPhrasesByVerb(list, cursoId) {
+function groupPhrasesByVerb(list, cursoId, variantsList) {
   const byVerb = {};
-  list.forEach(item => {
+  list.forEach((item, i) => {
     const id = slugify(item.verb);
     if (!byVerb[id]) byVerb[id] = { id, verbo: traducirVerbo(item.verb, cursoId), frases: [] };
+    const variantes = variantsList && variantsList[i] && variantsList[i].variants;
     byVerb[id].frases.push({
       es: item.promptEs,
       en: item.translationEn,
@@ -206,6 +207,7 @@ function groupPhrasesByVerb(list, cursoId) {
       tenseRaw: item.tense,
       audio: item.audioAsset ? WEB_EXPORT_BASE + item.audioAsset : null,
       imagen: item.imageUrl || null,
+      variantesTiempo: variantes || null,
     });
   });
   return byVerb;
@@ -274,6 +276,27 @@ function buildDistractoresParalelo(frase, content, todasLasFrasesDelGrupo, poolG
   return opciones;
 }
 
+// Distractores de PAR MÍNIMO generado (Nivel 1): a diferencia de Nivel 2,
+// los datos reales de Nivel 1 no tienen la misma frase repetida en otro
+// tiempo -cada frase es contenido distinto. Para tener el mismo truco
+// pedagógico ahí, se generó por lotes (IA, ver PROMPT.md/scratchpad) la
+// MISMA frase conjugada en 2 tiempos que de verdad se confunden con el
+// suyo (TENSE_CONFUSION), guardado en data/level1_tense_variants.json.
+// Si el idioma activo no tiene ese archivo todavía, cae al distractor de
+// confusión normal (mismo verbo, tiempo confuso, frase real distinta).
+function buildDistractoresGenerados(frase, pool, poolGlobal, max = 2) {
+  if (!frase.variantesTiempo) {
+    return buildDistractoresConfusion(frase, pool, poolGlobal, x => x.tenseRaw, TENSE_CONFUSION, max);
+  }
+  const opciones = shuffleArr(Object.values(frase.variantesTiempo)).slice(0, max);
+  if (opciones.length < max) {
+    const relleno = buildDistractoresConfusion(frase, pool, poolGlobal, x => x.tenseRaw, TENSE_CONFUSION, max)
+      .filter(en => !opciones.includes(en));
+    opciones.push(...relleno.slice(0, max - opciones.length));
+  }
+  return opciones;
+}
+
 function shuffleArr(arr) {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
@@ -297,7 +320,7 @@ async function loadContent(cursoId) {
     // todavía (nadie ha traducido "La Sed" a ese idioma), el curso sigue
     // funcionando normal, solo sin libro — nunca rompe la carga de la página.
     const bookContentPath = sufijo ? `data/book_content${sufijo}.json` : 'data/book_content.json';
-    const [level1Raw, level2Raw, level3Raw, bookQuiz, bookChaptersRaw, pkgCatalog, pkgPhrases, shopCatalog, roleplayScenarios, storyPackages] = await Promise.all([
+    const [level1Raw, level2Raw, level3Raw, bookQuiz, bookChaptersRaw, pkgCatalog, pkgPhrases, shopCatalog, roleplayScenarios, storyPackages, level1Variants] = await Promise.all([
       loadJSON(`data/level1_verbs${sufijo}.json`),
       loadJSON(`data/level2_structures${sufijo}.json`),
       loadJSON(`data/level3_structures${sufijo}.json`),
@@ -308,10 +331,14 @@ async function loadContent(cursoId) {
       loadJSON('data/shop_catalog.json'),
       loadJSON('data/roleplay_scenarios.json'),
       loadJSON('data/story_packages.json'),
+      // Variantes de tiempo verbal para distractores de par mínimo en Nivel 1
+      // (ver buildDistractoresGenerados) — opcional, solo existe en inglés
+      // por ahora; otros idiomas caen al distractor de confusión normal.
+      loadJSONOptional(`data/level1_tense_variants${sufijo}.json`),
     ]);
 
     // ---------- NIVEL 1: 64 verbos agrupados en 8 bloques de 8 ----------
-    const nivel1PorVerbo = groupPhrasesByVerb(level1Raw, curso.id);
+    const nivel1PorVerbo = groupPhrasesByVerb(level1Raw, curso.id, level1Variants);
     const nivel1PoolGlobal = level1Raw.map(x => x.translationEn);
     const ordenVerbos1 = [];
     level1Raw.forEach(x => { const id = slugify(x.verb); if (!ordenVerbos1.includes(id)) ordenVerbos1.push(id); });

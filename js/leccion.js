@@ -125,7 +125,7 @@ function renderStudy(ctx) {
    =========================================================== */
 function distractoresDe(f, distractorPool, poolGlobal, content_, nivel) {
   if (nivel === 2) return buildDistractoresParalelo(f, content_, distractorPool, poolGlobal);
-  if (nivel === 1) return buildDistractoresConfusion(f, distractorPool, poolGlobal, x => x.tenseRaw, TENSE_CONFUSION);
+  if (nivel === 1) return buildDistractoresGenerados(f, distractorPool, poolGlobal);
   if (nivel === 3) return buildDistractoresConfusion(f, distractorPool, poolGlobal, x => x.estructuraRaw, ESTRUCTURA_CONFUSION);
   return buildDistractores(f, distractorPool, poolGlobal);
 }
@@ -459,6 +459,7 @@ async function initLeccion(content_, caminos) {
   const est = leccionEstado(nodo.id);
   if (est.jugado) renderSummary(ctx);
   else if (est.quizAprobado) renderGame(ctx);
+  else if (est.estudiado) renderQuiz(ctx);
   else renderStudy(ctx);
 }
 
@@ -482,6 +483,7 @@ async function initPaquete(content_, id) {
   const est = paqueteEstado(id);
   if (est.jugado) renderSummary(ctx);
   else if (est.quizAprobado) renderGame(ctx);
+  else if (est.estudiado) renderQuiz(ctx);
   else renderStudy(ctx);
 }
 

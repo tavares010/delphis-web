@@ -6,9 +6,9 @@
    =========================================================== */
 
 const NIVEL_META = {
-  1: { titulo: 'Nivel 1 · Verbos básicos', icono: '🔤', resumen: '64 verbos esenciales en 8 bloques de 8.' },
-  2: { titulo: 'Nivel 2 · Estructuras', icono: '🧱', resumen: '8 verbos practicados a fondo en 6 tiempos verbales cada uno.' },
-  3: { titulo: 'Nivel 3 · Avanzado', icono: '🎓', resumen: '5 condicionales + 3 tiempos avanzados.' },
+  1: { titulo: 'Nivel 1 · Verbos básicos', icono: '🔤', resumen: '64 verbos esenciales en 8 bloques de 8.', a: '#2563eb', b: '#38bdf8' },
+  2: { titulo: 'Nivel 2 · Estructuras', icono: '🧱', resumen: '8 verbos practicados a fondo en 6 tiempos verbales cada uno.', a: '#7c3aed', b: '#c084fc' },
+  3: { titulo: 'Nivel 3 · Avanzado', icono: '🎓', resumen: '5 condicionales + 3 tiempos avanzados.', a: '#d97706', b: '#fbbf24' },
 };
 
 function nodoIcono(nodo) {
@@ -71,15 +71,16 @@ function renderCaminoRows(camino, content, nivel) {
   camino.forEach((nodo, i) => {
     const groupKey = nivel === 1 ? nodo.bloqueId : nivel === 2 ? nodo.parejaId : null;
     if (groupKey && groupKey !== lastGroup) {
+      const nEnGrupo = camino.filter(n => (nivel === 1 ? n.bloqueId : n.parejaId) === groupKey && n.tipo === 'leccion').length;
       let label, num;
       if (nivel === 1) {
         const bi = content.nivel1.bloques.findIndex(b => b.id === groupKey);
         label = content.nivel1.bloques[bi].nombre; num = bi + 1;
-        html += `<div class="course-divider"><span>Bloque ${num}</span><strong>${label}</strong></div>`;
+        html += `<div class="course-divider"><span>Bloque ${num} · ${nEnGrupo} lecciones</span><strong>${label}</strong></div>`;
       } else {
         const pi = NIVEL2_PAREJAS.findIndex(p => p.id === groupKey);
         label = NIVEL2_PAREJAS[pi].verbos.map(v => traducirVerbo(v, content.curso.id)).join(' / '); num = pi + 1;
-        html += `<div class="course-divider"><span>Pareja ${num}</span><strong>${label}</strong></div>`;
+        html += `<div class="course-divider"><span>Pareja ${num} · ${nEnGrupo} lecciones</span><strong>${label}</strong></div>`;
       }
       lastGroup = groupKey;
     }
@@ -96,11 +97,14 @@ function renderLevelCard(nivel, camino, content, { locked, open }) {
 
   const card = document.createElement('div');
   card.className = `level-card ${locked ? 'locked' : ''} ${open ? 'open' : ''}`;
+  card.style.setProperty('--level-a', meta.a);
+  card.style.setProperty('--level-b', meta.b);
+  const nLecciones = camino.filter(n => n.tipo === 'leccion').length;
   card.innerHTML = `
     <div class="level-card__header">
       <div class="level-card__title">
         <div class="level-card__icon">${meta.icono}</div>
-        <div><h3>${meta.titulo}</h3><span>${locked ? 'Se desbloquea al terminar el nivel anterior' : meta.resumen}</span></div>
+        <div><h3>${meta.titulo}</h3><span>${locked ? 'Se desbloquea al terminar el nivel anterior' : `${nLecciones} lecciones · ${meta.resumen}`}</span></div>
       </div>
       <div class="level-card__right">
         <div class="level-card__progress">
@@ -123,6 +127,20 @@ function renderLevelCard(nivel, camino, content, { locked, open }) {
   });
 
   return card;
+}
+
+function renderSummaryStrip(caminos, content) {
+  const wrap = document.getElementById('courseSummaryStrip');
+  if (!wrap) return;
+  const totalLecciones = ['nivel1', 'nivel2', 'nivel3'].reduce((acc, k) => acc + caminos[k].filter(n => n.tipo === 'leccion').length, 0);
+  const totalRepasos = ['nivel1', 'nivel2', 'nivel3'].reduce((acc, k) => acc + caminos[k].filter(n => n.tipo === 'repaso').length, 0);
+  const items = [
+    `🎓 3 niveles`,
+    `🔤 ${totalLecciones} lecciones`,
+    `🔁 ${totalRepasos} repasos acumulativos`,
+  ];
+  if (content.libroDisponible) items.push(`📖 "La Sed" · ${content.bookChapters.length} capítulos`);
+  wrap.innerHTML = items.map(t => `<span>${t}</span>`).join('');
 }
 
 function siguienteGlobal(caminos) {
@@ -161,15 +179,20 @@ async function initCurriculo() {
     if (eyebrow) eyebrow.textContent = `El curso · ${content.curso.bandera} ${content.curso.nombre}`;
 
     renderContinueBanner(caminos, content);
+    renderSummaryStrip(caminos, content);
 
     const n1Completo = nivelCompleto(caminos.nivel1);
     const n2Completo = nivelCompleto(caminos.nivel2);
     const dev = typeof DEV_MODE !== 'undefined' && DEV_MODE;
 
+    // Los 3 niveles empiezan colapsados (estilo Udemy: el currículo se
+    // hojea, no se muestra entero de golpe) — el botón "Continuar" de
+    // arriba ya lleva directo a la lección actual sin tener que desplegar
+    // una lista de 60+ lecciones para encontrarla.
     wrap.innerHTML = '';
-    wrap.appendChild(renderLevelCard(1, caminos.nivel1, content, { locked: false, open: !n1Completo }));
-    wrap.appendChild(renderLevelCard(2, caminos.nivel2, content, { locked: !dev && !n1Completo, open: dev || (n1Completo && !n2Completo) }));
-    wrap.appendChild(renderLevelCard(3, caminos.nivel3, content, { locked: !dev && !n2Completo, open: dev || (n1Completo && n2Completo) }));
+    wrap.appendChild(renderLevelCard(1, caminos.nivel1, content, { locked: false, open: false }));
+    wrap.appendChild(renderLevelCard(2, caminos.nivel2, content, { locked: !dev && !n1Completo, open: false }));
+    wrap.appendChild(renderLevelCard(3, caminos.nivel3, content, { locked: !dev && !n2Completo, open: false }));
 
     const pendingToast = sessionStorage.getItem('delphis_toast');
     if (pendingToast) { sessionStorage.removeItem('delphis_toast'); showToast(pendingToast); }

@@ -1,0 +1,2641 @@
+[
+ {
+  "index": 0,
+  "variants": {
+   "Present simple": "We are selfish.",
+   "Going to": "We are going to be selfish."
+  }
+ },
+ {
+  "index": 1,
+  "variants": {
+   "Past simple": "We went to Morocco.",
+   "Present simple": "We go to Morocco."
+  }
+ },
+ {
+  "index": 2,
+  "variants": {
+   "Present perfect": "We have been young.",
+   "Going to": "We are going to be young."
+  }
+ },
+ {
+  "index": 3,
+  "variants": {
+   "Going to": "We are going to be fast.",
+   "Present perfect": "We have been fast."
+  }
+ },
+ {
+  "index": 4,
+  "variants": {
+   "Future simple": "We will be late.",
+   "Present continuous": "We are being late."
+  }
+ },
+ {
+  "index": 5,
+  "variants": {
+   "Present continuous": "We are being fast.",
+   "Present perfect": "We have been fast."
+  }
+ },
+ {
+  "index": 6,
+  "variants": {
+   "Present simple": "I have breakfast.",
+   "Going to": "I am going to have breakfast."
+  }
+ },
+ {
+  "index": 7,
+  "variants": {
+   "Past simple": "I had enough.",
+   "Present simple": "I have enough."
+  }
+ },
+ {
+  "index": 8,
+  "variants": {
+   "Present perfect": "I have had a coffee.",
+   "Going to": "I am going to have a coffee."
+  }
+ },
+ {
+  "index": 9,
+  "variants": {
+   "Going to": "I am going to have a meeting.",
+   "Present perfect": "I have had a meeting."
+  }
+ },
+ {
+  "index": 10,
+  "variants": {
+   "Future simple": "I will have lunch.",
+   "Present continuous": "I am having lunch."
+  }
+ },
+ {
+  "index": 11,
+  "variants": {
+   "Present continuous": "I am having a dog.",
+   "Present perfect": "I have had a dog."
+  }
+ },
+ {
+  "index": 12,
+  "variants": {
+   "Present continuous": "You are helping me.",
+   "Present perfect": "You have helped me."
+  }
+ },
+ {
+  "index": 13,
+  "variants": {
+   "Past simple": "You could do it.",
+   "Present simple": "You can do it."
+  }
+ },
+ {
+  "index": 14,
+  "variants": {
+   "Present perfect": "You have been able to work.",
+   "Going to": "You are going to be able to work."
+  }
+ },
+ {
+  "index": 15,
+  "variants": {
+   "Going to": "You are going to be able to speak.",
+   "Present perfect": "You have been able to speak."
+  }
+ },
+ {
+  "index": 16,
+  "variants": {
+   "Future simple": "You will be able to hear.",
+   "Present continuous": "You are being able to hear."
+  }
+ },
+ {
+  "index": 17,
+  "variants": {
+   "Present continuous": "They are knowing the truth.",
+   "Present perfect": "They have known the truth."
+  }
+ },
+ {
+  "index": 18,
+  "variants": {
+   "Past simple": "They knew about the problem.",
+   "Present simple": "They know about the problem."
+  }
+ },
+ {
+  "index": 19,
+  "variants": {
+   "Present perfect": "They have known each other.",
+   "Going to": "They are going to know each other."
+  }
+ },
+ {
+  "index": 20,
+  "variants": {
+   "Going to": "They are not going to know the answer.",
+   "Present perfect": "They have not known the answer."
+  }
+ },
+ {
+  "index": 21,
+  "variants": {
+   "Future simple": "They will know what happened.",
+   "Present continuous": "They are knowing what happened."
+  }
+ },
+ {
+  "index": 22,
+  "variants": {
+   "Present continuous": "You are wanting chocolate.",
+   "Present perfect": "You have wanted chocolate."
+  }
+ },
+ {
+  "index": 23,
+  "variants": {
+   "Past simple": "You wanted a car.",
+   "Present simple": "You want a car."
+  }
+ },
+ {
+  "index": 24,
+  "variants": {
+   "Present perfect": "You have wanted this job.",
+   "Going to": "You are going to want this job."
+  }
+ },
+ {
+  "index": 25,
+  "variants": {
+   "Going to": "You are going to want a house.",
+   "Present perfect": "You have wanted a house."
+  }
+ },
+ {
+  "index": 26,
+  "variants": {
+   "Future simple": "You will want free time.",
+   "Present continuous": "You are wanting free time."
+  }
+ },
+ {
+  "index": 27,
+  "variants": {
+   "Present continuous": "He is needing clothes.",
+   "Present perfect": "He has needed clothes."
+  }
+ },
+ {
+  "index": 28,
+  "variants": {
+   "Past simple": "He needed help.",
+   "Present simple": "He needs help."
+  }
+ },
+ {
+  "index": 29,
+  "variants": {
+   "Present perfect": "He has needed money.",
+   "Going to": "He is going to need money."
+  }
+ },
+ {
+  "index": 30,
+  "variants": {
+   "Going to": "He is going to need a break.",
+   "Present perfect": "He has needed a break."
+  }
+ },
+ {
+  "index": 31,
+  "variants": {
+   "Future simple": "He will need a babysitter.",
+   "Present continuous": "He is needing a babysitter."
+  }
+ },
+ {
+  "index": 32,
+  "variants": {
+   "Present simple": "She goes to work.",
+   "Going to": "She is going to work."
+  }
+ },
+ {
+  "index": 33,
+  "variants": {
+   "Past simple": "She went to the supermarket.",
+   "Present simple": "She goes to the supermarket."
+  }
+ },
+ {
+  "index": 34,
+  "variants": {
+   "Present perfect": "She has gone to the mall.",
+   "Going to": "She is going to go to the mall."
+  }
+ },
+ {
+  "index": 35,
+  "variants": {
+   "Going to": "She is going to go with him.",
+   "Present perfect": "She has gone with him."
+  }
+ },
+ {
+  "index": 36,
+  "variants": {
+   "Future simple": "She will go to the cinema.",
+   "Present continuous": "She is going to the cinema."
+  }
+ },
+ {
+  "index": 37,
+  "variants": {
+   "Present continuous": "She is going to school.",
+   "Present perfect": "She has gone to school."
+  }
+ },
+ {
+  "index": 38,
+  "variants": {
+   "Present simple": "I do my homework.",
+   "Going to": "I am going to do my homework."
+  }
+ },
+ {
+  "index": 39,
+  "variants": {
+   "Past simple": "I did the dishes.",
+   "Present simple": "I do the dishes."
+  }
+ },
+ {
+  "index": 40,
+  "variants": {
+   "Present perfect": "I have done the shopping.",
+   "Going to": "I am going to do the shopping."
+  }
+ },
+ {
+  "index": 41,
+  "variants": {
+   "Going to": "I am going to do the laundry.",
+   "Present perfect": "I have done the laundry."
+  }
+ },
+ {
+  "index": 42,
+  "variants": {
+   "Future simple": "I will do the course.",
+   "Present continuous": "I am doing the course."
+  }
+ },
+ {
+  "index": 43,
+  "variants": {
+   "Present continuous": "I am doing exercise.",
+   "Present perfect": "I have done exercise."
+  }
+ },
+ {
+  "index": 44,
+  "variants": {
+   "Present simple": "You get tired.",
+   "Going to": "You are going to get tired."
+  }
+ },
+ {
+  "index": 45,
+  "variants": {
+   "Past simple": "You got money.",
+   "Present simple": "You get money."
+  }
+ },
+ {
+  "index": 46,
+  "variants": {
+   "Present perfect": "You have got the job.",
+   "Going to": "You are going to get the job."
+  }
+ },
+ {
+  "index": 47,
+  "variants": {
+   "Going to": "You are going to get slimmer.",
+   "Present perfect": "You have got slimmer."
+  }
+ },
+ {
+  "index": 48,
+  "variants": {
+   "Future simple": "You will get better.",
+   "Present continuous": "You are getting better."
+  }
+ },
+ {
+  "index": 49,
+  "variants": {
+   "Present continuous": "You are getting emails.",
+   "Present perfect": "You have gotten emails."
+  }
+ },
+ {
+  "index": 50,
+  "variants": {
+   "Present simple": "They make a cake.",
+   "Going to": "They are going to make a cake."
+  }
+ },
+ {
+  "index": 51,
+  "variants": {
+   "Past simple": "They made mistakes.",
+   "Present simple": "They make mistakes."
+  }
+ },
+ {
+  "index": 52,
+  "variants": {
+   "Present perfect": "They have made progress.",
+   "Going to": "They are going to make progress."
+  }
+ },
+ {
+  "index": 53,
+  "variants": {
+   "Going to": "They are going to make dinner.",
+   "Present perfect": "They have made dinner."
+  }
+ },
+ {
+  "index": 54,
+  "variants": {
+   "Future simple": "They will make a website.",
+   "Present continuous": "They are making a website."
+  }
+ },
+ {
+  "index": 55,
+  "variants": {
+   "Present continuous": "They are making lunch.",
+   "Present perfect": "They have made lunch."
+  }
+ },
+ {
+  "index": 56,
+  "variants": {
+   "Present simple": "He follows her.",
+   "Going to": "He is going to follow her."
+  }
+ },
+ {
+  "index": 57,
+  "variants": {
+   "Past simple": "He followed the law.",
+   "Present simple": "He follows the law."
+  }
+ },
+ {
+  "index": 58,
+  "variants": {
+   "Present perfect": "He has followed the rules.",
+   "Going to": "He is going to follow the rules."
+  }
+ },
+ {
+  "index": 59,
+  "variants": {
+   "Going to": "He is going to follow your advice.",
+   "Present perfect": "He has followed your advice."
+  }
+ },
+ {
+  "index": 60,
+  "variants": {
+   "Future simple": "He will follow the instructions.",
+   "Present continuous": "He is following the instructions."
+  }
+ },
+ {
+  "index": 61,
+  "variants": {
+   "Present continuous": "He is following you.",
+   "Present perfect": "He has followed you."
+  }
+ },
+ {
+  "index": 62,
+  "variants": {
+   "Present simple": "I take the pills.",
+   "Going to": "I am going to take the pills."
+  }
+ },
+ {
+  "index": 63,
+  "variants": {
+   "Past simple": "I took the bus.",
+   "Present simple": "I take the bus."
+  }
+ },
+ {
+  "index": 64,
+  "variants": {
+   "Present perfect": "I have taken photos.",
+   "Going to": "I am going to take photos."
+  }
+ },
+ {
+  "index": 65,
+  "variants": {
+   "Going to": "I am going to take an umbrella.",
+   "Present perfect": "I have taken an umbrella."
+  }
+ },
+ {
+  "index": 66,
+  "variants": {
+   "Future simple": "I will take a plane.",
+   "Present continuous": "I am taking a plane."
+  }
+ },
+ {
+  "index": 67,
+  "variants": {
+   "Present continuous": "I am taking lessons.",
+   "Present perfect": "I have taken lessons."
+  }
+ },
+ {
+  "index": 68,
+  "variants": {
+   "Present simple": "I begin to enjoy.",
+   "Going to": "I am going to begin to enjoy."
+  }
+ },
+ {
+  "index": 69,
+  "variants": {
+   "Past simple": "I began the lesson.",
+   "Present simple": "I begin the lesson."
+  }
+ },
+ {
+  "index": 70,
+  "variants": {
+   "Present perfect": "I have begun to cry.",
+   "Going to": "I am going to begin to cry."
+  }
+ },
+ {
+  "index": 71,
+  "variants": {
+   "Going to": "I am going to begin the project.",
+   "Present perfect": "I have begun the project."
+  }
+ },
+ {
+  "index": 72,
+  "variants": {
+   "Future simple": "I will begin my new job.",
+   "Present continuous": "I am beginning my new job."
+  }
+ },
+ {
+  "index": 73,
+  "variants": {
+   "Present continuous": "I am beginning my workout.",
+   "Present perfect": "I have begun my workout."
+  }
+ },
+ {
+  "index": 74,
+  "variants": {
+   "Present simple": "You come tonight.",
+   "Going to": "You are going to come tonight."
+  }
+ },
+ {
+  "index": 75,
+  "variants": {
+   "Past simple": "You came a long way.",
+   "Present simple": "You come a long way."
+  }
+ },
+ {
+  "index": 76,
+  "variants": {
+   "Present perfect": "You have come to the party.",
+   "Going to": "You are going to come to the party."
+  }
+ },
+ {
+  "index": 77,
+  "variants": {
+   "Going to": "You are going to come early.",
+   "Present perfect": "You have come early."
+  }
+ },
+ {
+  "index": 78,
+  "variants": {
+   "Future simple": "You will come prepared.",
+   "Present continuous": "You are coming prepared."
+  }
+ },
+ {
+  "index": 79,
+  "variants": {
+   "Present continuous": "You are coming from Spain.",
+   "Present perfect": "You have come from Spain."
+  }
+ },
+ {
+  "index": 80,
+  "variants": {
+   "Present simple": "You give chances.",
+   "Going to": "You are going to give chances."
+  }
+ },
+ {
+  "index": 81,
+  "variants": {
+   "Past simple": "You gave information.",
+   "Present simple": "You give information."
+  }
+ },
+ {
+  "index": 82,
+  "variants": {
+   "Present perfect": "You have given some toys.",
+   "Going to": "You are going to give some toys."
+  }
+ },
+ {
+  "index": 83,
+  "variants": {
+   "Going to": "You are going to give presents.",
+   "Present perfect": "You have given presents."
+  }
+ },
+ {
+  "index": 84,
+  "variants": {
+   "Future simple": "You will give support.",
+   "Present continuous": "You are giving support."
+  }
+ },
+ {
+  "index": 85,
+  "variants": {
+   "Present continuous": "You are giving a lot.",
+   "Present perfect": "You have given a lot."
+  }
+ },
+ {
+  "index": 86,
+  "variants": {
+   "Present simple": "I use your phone.",
+   "Going to": "I am going to use your phone."
+  }
+ },
+ {
+  "index": 87,
+  "variants": {
+   "Past simple": "I used his computer.",
+   "Present simple": "I use his computer."
+  }
+ },
+ {
+  "index": 88,
+  "variants": {
+   "Present perfect": "I have used a translator.",
+   "Going to": "I am going to use a translator."
+  }
+ },
+ {
+  "index": 89,
+  "variants": {
+   "Going to": "I am going to use the car.",
+   "Present perfect": "I have used the car."
+  }
+ },
+ {
+  "index": 90,
+  "variants": {
+   "Future simple": "I will use the savings.",
+   "Present continuous": "I am using the savings."
+  }
+ },
+ {
+  "index": 91,
+  "variants": {
+   "Present continuous": "I am using credit card.",
+   "Present perfect": "I have used credit card."
+  }
+ },
+ {
+  "index": 92,
+  "variants": {
+   "Present simple": "We find mistakes.",
+   "Going to": "We are going to find mistakes."
+  }
+ },
+ {
+  "index": 93,
+  "variants": {
+   "Past simple": "I found the keys.",
+   "Present simple": "I find the keys."
+  }
+ },
+ {
+  "index": 94,
+  "variants": {
+   "Present perfect": "I have found a spot.",
+   "Going to": "I am going to find a spot."
+  }
+ },
+ {
+  "index": 95,
+  "variants": {
+   "Going to": "I am going to find the glasses.",
+   "Present perfect": "I have found the glasses."
+  }
+ },
+ {
+  "index": 96,
+  "variants": {
+   "Future simple": "I will find the answers.",
+   "Present continuous": "I am finding the answers."
+  }
+ },
+ {
+  "index": 97,
+  "variants": {
+   "Present continuous": "I am finding money.",
+   "Present perfect": "I have found money."
+  }
+ },
+ {
+  "index": 98,
+  "variants": {
+   "Present simple": "We tell the truth.",
+   "Going to": "We are going to tell the truth."
+  }
+ },
+ {
+  "index": 99,
+  "variants": {
+   "Past simple": "We told everything.",
+   "Present simple": "We tell everything."
+  }
+ },
+ {
+  "index": 100,
+  "variants": {
+   "Present perfect": "We have told our parents.",
+   "Going to": "We are going to tell our parents."
+  }
+ },
+ {
+  "index": 101,
+  "variants": {
+   "Going to": "We are going to tell the news.",
+   "Present perfect": "We have told the news."
+  }
+ },
+ {
+  "index": 102,
+  "variants": {
+   "Future simple": "We will tell everyone.",
+   "Present continuous": "We are telling everyone."
+  }
+ },
+ {
+  "index": 103,
+  "variants": {
+   "Present continuous": "We are telling a story.",
+   "Present perfect": "We have told a story."
+  }
+ },
+ {
+  "index": 104,
+  "variants": {
+   "Present simple": "You listen carefully.",
+   "Going to": "You are going to listen carefully."
+  }
+ },
+ {
+  "index": 105,
+  "variants": {
+   "Past simple": "You listened to the radio.",
+   "Present simple": "You listen to the radio."
+  }
+ },
+ {
+  "index": 106,
+  "variants": {
+   "Present perfect": "You have listened to the teacher.",
+   "Going to": "You are going to listen to the teacher."
+  }
+ },
+ {
+  "index": 107,
+  "variants": {
+   "Going to": "You are going to listen to your mom.",
+   "Present perfect": "You have listened to your mom."
+  }
+ },
+ {
+  "index": 108,
+  "variants": {
+   "Future simple": "You will listen to me.",
+   "Present continuous": "You are listening to me."
+  }
+ },
+ {
+  "index": 109,
+  "variants": {
+   "Present continuous": "You are listening to him.",
+   "Present perfect": "You have listened to him."
+  }
+ },
+ {
+  "index": 110,
+  "variants": {
+   "Present simple": "You organize your room.",
+   "Going to": "You are going to organize your room."
+  }
+ },
+ {
+  "index": 111,
+  "variants": {
+   "Past simple": "You organized the event.",
+   "Present simple": "You organize the event."
+  }
+ },
+ {
+  "index": 112,
+  "variants": {
+   "Present perfect": "You have organized your things.",
+   "Going to": "You are going to organize your things."
+  }
+ },
+ {
+  "index": 113,
+  "variants": {
+   "Going to": "You are going to organize the documents.",
+   "Present perfect": "You have organized the documents."
+  }
+ },
+ {
+  "index": 114,
+  "variants": {
+   "Future simple": "You will organize the meeting.",
+   "Present continuous": "You are organizing the meeting."
+  }
+ },
+ {
+  "index": 115,
+  "variants": {
+   "Present continuous": "You are organizing the house.",
+   "Present perfect": "You have organized the house."
+  }
+ },
+ {
+  "index": 116,
+  "variants": {
+   "Present simple": "She becomes more responsible.",
+   "Going to": "She is going to become more responsible."
+  }
+ },
+ {
+  "index": 117,
+  "variants": {
+   "Past simple": "She became a father.",
+   "Present simple": "She becomes a father."
+  }
+ },
+ {
+  "index": 118,
+  "variants": {
+   "Present perfect": "She has become a chef.",
+   "Going to": "She is going to become a chef."
+  }
+ },
+ {
+  "index": 119,
+  "variants": {
+   "Going to": "She is going to become an architect.",
+   "Present perfect": "She has become an architect."
+  }
+ },
+ {
+  "index": 120,
+  "variants": {
+   "Future simple": "She will become successful.",
+   "Present continuous": "She is becoming successful."
+  }
+ },
+ {
+  "index": 121,
+  "variants": {
+   "Present continuous": "She is becoming famous.",
+   "Present perfect": "She has become famous."
+  }
+ },
+ {
+  "index": 122,
+  "variants": {
+   "Present simple": "They leave now.",
+   "Going to": "They are going to leave now."
+  }
+ },
+ {
+  "index": 123,
+  "variants": {
+   "Past simple": "They left a message.",
+   "Present simple": "They leave a message."
+  }
+ },
+ {
+  "index": 124,
+  "variants": {
+   "Present perfect": "They have left yesterday.",
+   "Going to": "They are going to leave yesterday."
+  }
+ },
+ {
+  "index": 125,
+  "variants": {
+   "Going to": "They are going to leave the city.",
+   "Present perfect": "They have left the city."
+  }
+ },
+ {
+  "index": 126,
+  "variants": {
+   "Future simple": "They will leave soon.",
+   "Present continuous": "They are leaving soon."
+  }
+ },
+ {
+  "index": 127,
+  "variants": {
+   "Present continuous": "He is leaving at 3.",
+   "Present perfect": "He has left at 3."
+  }
+ },
+ {
+  "index": 128,
+  "variants": {
+   "Present simple": "I work hard.",
+   "Going to": "I am going to work hard."
+  }
+ },
+ {
+  "index": 129,
+  "variants": {
+   "Past simple": "I worked with James.",
+   "Present simple": "I work with James."
+  }
+ },
+ {
+  "index": 130,
+  "variants": {
+   "Present perfect": "I have worked in a museum.",
+   "Going to": "I am going to work in a museum."
+  }
+ },
+ {
+  "index": 131,
+  "variants": {
+   "Going to": "I am going to work tomorrow.",
+   "Present perfect": "I have worked tomorrow."
+  }
+ },
+ {
+  "index": 132,
+  "variants": {
+   "Future simple": "I will work hard.",
+   "Present continuous": "I am working hard."
+  }
+ },
+ {
+  "index": 133,
+  "variants": {
+   "Present continuous": "I am working in a hotel.",
+   "Present perfect": "I have worked in a hotel."
+  }
+ },
+ {
+  "index": 134,
+  "variants": {
+   "Present continuous": "We are feeling better.",
+   "Present perfect": "We have felt better."
+  }
+ },
+ {
+  "index": 135,
+  "variants": {
+   "Past simple": "We felt tired.",
+   "Present simple": "We feel tired."
+  }
+ },
+ {
+  "index": 136,
+  "variants": {
+   "Present perfect": "We have felt nervous.",
+   "Going to": "We are going to feel nervous."
+  }
+ },
+ {
+  "index": 137,
+  "variants": {
+   "Going to": "We are going to feel excited.",
+   "Present perfect": "We have felt excited."
+  }
+ },
+ {
+  "index": 138,
+  "variants": {
+   "Future simple": "We will feel the pressure.",
+   "Present continuous": "We are feeling the pressure."
+  }
+ },
+ {
+  "index": 139,
+  "variants": {
+   "Present continuous": "We are feeling happy.",
+   "Present perfect": "We have felt happy."
+  }
+ },
+ {
+  "index": 140,
+  "variants": {
+   "Present simple": "You fly to London.",
+   "Going to": "You are going to fly to London."
+  }
+ },
+ {
+  "index": 141,
+  "variants": {
+   "Past simple": "You flew for 6 hours.",
+   "Present simple": "You fly for 6 hours."
+  }
+ },
+ {
+  "index": 142,
+  "variants": {
+   "Present perfect": "You have flown too high.",
+   "Going to": "You are going to fly too high."
+  }
+ },
+ {
+  "index": 143,
+  "variants": {
+   "Going to": "You are going to fly in a plane.",
+   "Present perfect": "You have flown in a plane."
+  }
+ },
+ {
+  "index": 144,
+  "variants": {
+   "Future simple": "You will fly to New York.",
+   "Present continuous": "You are flying to New York."
+  }
+ },
+ {
+  "index": 145,
+  "variants": {
+   "Present continuous": "You are flying for work.",
+   "Present perfect": "You have flown for work."
+  }
+ },
+ {
+  "index": 146,
+  "variants": {
+   "Present simple": "You ask for help.",
+   "Going to": "You are going to ask for help."
+  }
+ },
+ {
+  "index": 147,
+  "variants": {
+   "Past simple": "You asked questions.",
+   "Present simple": "You ask questions."
+  }
+ },
+ {
+  "index": 148,
+  "variants": {
+   "Present perfect": "You have asked for more time.",
+   "Going to": "You are going to ask for more time."
+  }
+ },
+ {
+  "index": 149,
+  "variants": {
+   "Going to": "You are going to ask for money.",
+   "Present perfect": "You have asked for money."
+  }
+ },
+ {
+  "index": 150,
+  "variants": {
+   "Future simple": "You will ask for dessert.",
+   "Present continuous": "You are asking for dessert."
+  }
+ },
+ {
+  "index": 151,
+  "variants": {
+   "Present continuous": "You are asking the teacher.",
+   "Present perfect": "You have asked the teacher."
+  }
+ },
+ {
+  "index": 152,
+  "variants": {
+   "Present simple": "He marries his fiance.",
+   "Going to": "He is going to marry his fiance."
+  }
+ },
+ {
+  "index": 153,
+  "variants": {
+   "Past simple": "He married Julie.",
+   "Present simple": "He marries Julie."
+  }
+ },
+ {
+  "index": 154,
+  "variants": {
+   "Present perfect": "He has married last summer.",
+   "Going to": "He is going to marry last summer."
+  }
+ },
+ {
+  "index": 155,
+  "variants": {
+   "Going to": "He is going to marry Julie.",
+   "Present perfect": "He has married Julie."
+  }
+ },
+ {
+  "index": 156,
+  "variants": {
+   "Future simple": "He will marry my daughter.",
+   "Present continuous": "He is marrying my daughter."
+  }
+ },
+ {
+  "index": 157,
+  "variants": {
+   "Present continuous": "He is marrying her.",
+   "Present perfect": "He has married her."
+  }
+ },
+ {
+  "index": 158,
+  "variants": {
+   "Present simple": "She tries to call her.",
+   "Going to": "She is going to try to call her."
+  }
+ },
+ {
+  "index": 159,
+  "variants": {
+   "Past simple": "She tried the cake.",
+   "Present simple": "She tries the cake."
+  }
+ },
+ {
+  "index": 160,
+  "variants": {
+   "Present perfect": "She has tried his best.",
+   "Going to": "She is going to try his best."
+  }
+ },
+ {
+  "index": 161,
+  "variants": {
+   "Going to": "She is going to try calling you.",
+   "Present perfect": "She has tried calling you."
+  }
+ },
+ {
+  "index": 162,
+  "variants": {
+   "Future simple": "She will try once more.",
+   "Present continuous": "She is trying once more."
+  }
+ },
+ {
+  "index": 163,
+  "variants": {
+   "Present continuous": "She is trying everything.",
+   "Present perfect": "She has tried everything."
+  }
+ },
+ {
+  "index": 164,
+  "variants": {
+   "Present simple": "I run with Paul.",
+   "Going to": "I am going to run with Paul."
+  }
+ },
+ {
+  "index": 165,
+  "variants": {
+   "Past simple": "I ran in the park.",
+   "Present simple": "I run in the park."
+  }
+ },
+ {
+  "index": 166,
+  "variants": {
+   "Present perfect": "I have run a marathon.",
+   "Going to": "I am going to run a marathon."
+  }
+ },
+ {
+  "index": 167,
+  "variants": {
+   "Going to": "I am going to run quicker.",
+   "Present perfect": "I have run quicker."
+  }
+ },
+ {
+  "index": 168,
+  "variants": {
+   "Future simple": "I will run in the Olympics.",
+   "Present continuous": "I am running in the Olympics."
+  }
+ },
+ {
+  "index": 169,
+  "variants": {
+   "Present continuous": "I am running everyday.",
+   "Present perfect": "I have run everyday."
+  }
+ },
+ {
+  "index": 170,
+  "variants": {
+   "Present continuous": "I am remaining silent.",
+   "Present perfect": "I have remained silent."
+  }
+ },
+ {
+  "index": 171,
+  "variants": {
+   "Past simple": "I remained calm.",
+   "Present simple": "I remain calm."
+  }
+ },
+ {
+  "index": 172,
+  "variants": {
+   "Present perfect": "I have remained strong.",
+   "Going to": "I am going to remain strong."
+  }
+ },
+ {
+  "index": 173,
+  "variants": {
+   "Going to": "I am going to remain patient.",
+   "Present perfect": "I have remained patient."
+  }
+ },
+ {
+  "index": 174,
+  "variants": {
+   "Future simple": "I will remain at home.",
+   "Present continuous": "I am remaining at home."
+  }
+ },
+ {
+  "index": 175,
+  "variants": {
+   "Present simple": "We show the house.",
+   "Going to": "We are going to show the house."
+  }
+ },
+ {
+  "index": 176,
+  "variants": {
+   "Past simple": "We showed the results.",
+   "Present simple": "We show the results."
+  }
+ },
+ {
+  "index": 177,
+  "variants": {
+   "Present perfect": "We have shown the pictures.",
+   "Going to": "We are going to show the pictures."
+  }
+ },
+ {
+  "index": 178,
+  "variants": {
+   "Going to": "We are going to show the way.",
+   "Present perfect": "We have shown the way."
+  }
+ },
+ {
+  "index": 179,
+  "variants": {
+   "Future simple": "We will show our support.",
+   "Present continuous": "We are showing our support."
+  }
+ },
+ {
+  "index": 180,
+  "variants": {
+   "Present continuous": "We are showing kindness.",
+   "Present perfect": "We have shown kindness."
+  }
+ },
+ {
+  "index": 181,
+  "variants": {
+   "Present simple": "They fall asleep.",
+   "Going to": "They are going to fall asleep."
+  }
+ },
+ {
+  "index": 182,
+  "variants": {
+   "Past simple": "They fell downstairs.",
+   "Present simple": "They fall downstairs."
+  }
+ },
+ {
+  "index": 183,
+  "variants": {
+   "Present perfect": "They have fallen apart.",
+   "Going to": "They are going to fall apart."
+  }
+ },
+ {
+  "index": 184,
+  "variants": {
+   "Going to": "They are going to fall into the trap.",
+   "Present perfect": "They have fallen into the trap."
+  }
+ },
+ {
+  "index": 185,
+  "variants": {
+   "Future simple": "They will fall in love.",
+   "Present continuous": "They are falling in love."
+  }
+ },
+ {
+  "index": 186,
+  "variants": {
+   "Present continuous": "They are falling easily.",
+   "Present perfect": "They have fallen easily."
+  }
+ },
+ {
+  "index": 187,
+  "variants": {
+   "Present simple": "You hold a glass.",
+   "Going to": "You are going to hold a glass."
+  }
+ },
+ {
+  "index": 188,
+  "variants": {
+   "Past simple": "You held the baby.",
+   "Present simple": "You hold the baby."
+  }
+ },
+ {
+  "index": 189,
+  "variants": {
+   "Present perfect": "You have held the trophy.",
+   "Going to": "You are going to hold the trophy."
+  }
+ },
+ {
+  "index": 190,
+  "variants": {
+   "Going to": "You are going to hold the record.",
+   "Present perfect": "You have held the record."
+  }
+ },
+ {
+  "index": 191,
+  "variants": {
+   "Future simple": "You will hold this position.",
+   "Present continuous": "You are holding this position."
+  }
+ },
+ {
+  "index": 192,
+  "variants": {
+   "Present continuous": "You are holding the door.",
+   "Present perfect": "You have held the door."
+  }
+ },
+ {
+  "index": 193,
+  "variants": {
+   "Present simple": "They apply for a job.",
+   "Going to": "They are going to apply for a job."
+  }
+ },
+ {
+  "index": 194,
+  "variants": {
+   "Past simple": "They applied for a visa.",
+   "Present simple": "They apply for a visa."
+  }
+ },
+ {
+  "index": 195,
+  "variants": {
+   "Present perfect": "They have applied for a scholarship.",
+   "Going to": "They are going to apply for a scholarship."
+  }
+ },
+ {
+  "index": 196,
+  "variants": {
+   "Going to": "They are going to apply for a loan.",
+   "Present perfect": "They have applied for a loan."
+  }
+ },
+ {
+  "index": 197,
+  "variants": {
+   "Future simple": "They will apply sunscreen.",
+   "Present continuous": "They are applying sunscreen."
+  }
+ },
+ {
+  "index": 198,
+  "variants": {
+   "Present continuous": "They are applying pressure.",
+   "Present perfect": "They have applied pressure."
+  }
+ },
+ {
+  "index": 199,
+  "variants": {
+   "Present simple": "He sees a therapist.",
+   "Going to": "He is going to see a therapist."
+  }
+ },
+ {
+  "index": 200,
+  "variants": {
+   "Past simple": "He saw the movie.",
+   "Present simple": "He sees the movie."
+  }
+ },
+ {
+  "index": 201,
+  "variants": {
+   "Present perfect": "He has seen her.",
+   "Going to": "He is going to see her."
+  }
+ },
+ {
+  "index": 202,
+  "variants": {
+   "Going to": "He is going to see the doctor.",
+   "Present perfect": "He has seen the doctor."
+  }
+ },
+ {
+  "index": 203,
+  "variants": {
+   "Future simple": "He will see his girlfriend.",
+   "Present continuous": "He is seeing his girlfriend."
+  }
+ },
+ {
+  "index": 204,
+  "variants": {
+   "Present continuous": "He is seeing the value.",
+   "Present perfect": "He has seen the value."
+  }
+ },
+ {
+  "index": 205,
+  "variants": {
+   "Present simple": "We let him stay.",
+   "Going to": "We are going to let him stay."
+  }
+ },
+ {
+  "index": 206,
+  "variants": {
+   "Past simple": "We let her speak.",
+   "Present simple": "We let her speak."
+  }
+ },
+ {
+  "index": 207,
+  "variants": {
+   "Present perfect": "We have let them enter.",
+   "Going to": "We are going to let them enter."
+  }
+ },
+ {
+  "index": 208,
+  "variants": {
+   "Going to": "We are going to let John drive.",
+   "Present perfect": "We have let John drive."
+  }
+ },
+ {
+  "index": 209,
+  "variants": {
+   "Future simple": "We will let you choose.",
+   "Present continuous": "We are letting you choose."
+  }
+ },
+ {
+  "index": 210,
+  "variants": {
+   "Present continuous": "We are letting them help.",
+   "Present perfect": "We have let them help."
+  }
+ },
+ {
+  "index": 211,
+  "variants": {
+   "Present simple": "I bring snacks.",
+   "Going to": "I am going to bring snacks."
+  }
+ },
+ {
+  "index": 212,
+  "variants": {
+   "Past simple": "I brought my laptop.",
+   "Present simple": "I bring my laptop."
+  }
+ },
+ {
+  "index": 213,
+  "variants": {
+   "Present perfect": "I have brought a gift.",
+   "Going to": "I am going to bring a gift."
+  }
+ },
+ {
+  "index": 214,
+  "variants": {
+   "Going to": "I am going to bring a friend.",
+   "Present perfect": "I have brought a friend."
+  }
+ },
+ {
+  "index": 215,
+  "variants": {
+   "Future simple": "I will bring dessert.",
+   "Present continuous": "I am bringing dessert."
+  }
+ },
+ {
+  "index": 216,
+  "variants": {
+   "Present continuous": "I am bringing everything.",
+   "Present perfect": "I have brought everything."
+  }
+ },
+ {
+  "index": 217,
+  "variants": {
+   "Present continuous": "You are liking fish.",
+   "Present perfect": "You have liked fish."
+  }
+ },
+ {
+  "index": 218,
+  "variants": {
+   "Past simple": "You liked the idea.",
+   "Present simple": "You like the idea."
+  }
+ },
+ {
+  "index": 219,
+  "variants": {
+   "Present perfect": "You have liked the show.",
+   "Going to": "You are going to like the show."
+  }
+ },
+ {
+  "index": 220,
+  "variants": {
+   "Going to": "You are going to like the food.",
+   "Present perfect": "You have liked the food."
+  }
+ },
+ {
+  "index": 221,
+  "variants": {
+   "Future simple": "You will like the game.",
+   "Present continuous": "You are liking the game."
+  }
+ },
+ {
+  "index": 222,
+  "variants": {
+   "Present continuous": "You are liking the trip.",
+   "Present perfect": "You have liked the trip."
+  }
+ },
+ {
+  "index": 223,
+  "variants": {
+   "Present simple": "They help us.",
+   "Going to": "They are going to help us."
+  }
+ },
+ {
+  "index": 224,
+  "variants": {
+   "Past simple": "They helped a lot.",
+   "Present simple": "They help a lot."
+  }
+ },
+ {
+  "index": 225,
+  "variants": {
+   "Present perfect": "They have helped the children.",
+   "Going to": "They are going to help the children."
+  }
+ },
+ {
+  "index": 226,
+  "variants": {
+   "Going to": "They are going to help tomorrow.",
+   "Present perfect": "They have helped tomorrow."
+  }
+ },
+ {
+  "index": 227,
+  "variants": {
+   "Future simple": "They will help me.",
+   "Present continuous": "They are helping me."
+  }
+ },
+ {
+  "index": 228,
+  "variants": {
+   "Present continuous": "They are helping families.",
+   "Present perfect": "They have helped families."
+  }
+ },
+ {
+  "index": 229,
+  "variants": {
+   "Present simple": "She starts school.",
+   "Going to": "She is going to start school."
+  }
+ },
+ {
+  "index": 230,
+  "variants": {
+   "Past simple": "She started training.",
+   "Present simple": "She starts training."
+  }
+ },
+ {
+  "index": 231,
+  "variants": {
+   "Present perfect": "She has started early.",
+   "Going to": "She is going to start early."
+  }
+ },
+ {
+  "index": 232,
+  "variants": {
+   "Going to": "She is going to start at 2.",
+   "Present perfect": "She has started at 2."
+  }
+ },
+ {
+  "index": 233,
+  "variants": {
+   "Future simple": "She will start a business.",
+   "Present continuous": "She is starting a business."
+  }
+ },
+ {
+  "index": 234,
+  "variants": {
+   "Present continuous": "She is starting now.",
+   "Present perfect": "She has started now."
+  }
+ },
+ {
+  "index": 235,
+  "variants": {
+   "Present simple": "They call Monica.",
+   "Going to": "They are going to call Monica."
+  }
+ },
+ {
+  "index": 236,
+  "variants": {
+   "Past simple": "They called the police.",
+   "Present simple": "They call the police."
+  }
+ },
+ {
+  "index": 237,
+  "variants": {
+   "Present perfect": "They have called you.",
+   "Going to": "They are going to call you."
+  }
+ },
+ {
+  "index": 238,
+  "variants": {
+   "Going to": "They are going to call back.",
+   "Present perfect": "They have called back."
+  }
+ },
+ {
+  "index": 239,
+  "variants": {
+   "Future simple": "They will call me.",
+   "Present continuous": "They are calling me."
+  }
+ },
+ {
+  "index": 240,
+  "variants": {
+   "Present continuous": "They are calling everyday.",
+   "Present perfect": "They have called everyday."
+  }
+ },
+ {
+  "index": 241,
+  "variants": {
+   "Present simple": "I forget everything.",
+   "Going to": "I am going to forget everything."
+  }
+ },
+ {
+  "index": 242,
+  "variants": {
+   "Past simple": "I forgot your birthday.",
+   "Present simple": "I forget your birthday."
+  }
+ },
+ {
+  "index": 243,
+  "variants": {
+   "Present perfect": "I have forgotten the keys.",
+   "Going to": "I am going to forget the keys."
+  }
+ },
+ {
+  "index": 244,
+  "variants": {
+   "Going to": "I am going to forget the rules.",
+   "Present perfect": "I have forgotten the rules."
+  }
+ },
+ {
+  "index": 245,
+  "variants": {
+   "Future simple": "I will forget my bag.",
+   "Present continuous": "I am forgetting my bag."
+  }
+ },
+ {
+  "index": 246,
+  "variants": {
+   "Present continuous": "I am forgetting names.",
+   "Present perfect": "I have forgotten names."
+  }
+ },
+ {
+  "index": 247,
+  "variants": {
+   "Present simple": "We avoid him.",
+   "Going to": "We are going to avoid him."
+  }
+ },
+ {
+  "index": 248,
+  "variants": {
+   "Past simple": "We avoided trouble.",
+   "Present simple": "We avoid trouble."
+  }
+ },
+ {
+  "index": 249,
+  "variants": {
+   "Present perfect": "We have avoided traffic.",
+   "Going to": "We are going to avoid traffic."
+  }
+ },
+ {
+  "index": 250,
+  "variants": {
+   "Going to": "We are going to avoid conflict.",
+   "Present perfect": "We have avoided conflict."
+  }
+ },
+ {
+  "index": 251,
+  "variants": {
+   "Future simple": "We will avoid the crowd.",
+   "Present continuous": "We are avoiding the crowd."
+  }
+ },
+ {
+  "index": 252,
+  "variants": {
+   "Present continuous": "We are avoiding arguments.",
+   "Present perfect": "We have avoided arguments."
+  }
+ },
+ {
+  "index": 253,
+  "variants": {
+   "Present simple": "You move fast.",
+   "Going to": "You are going to move fast."
+  }
+ },
+ {
+  "index": 254,
+  "variants": {
+   "Past simple": "You moved the table.",
+   "Present simple": "You move the table."
+  }
+ },
+ {
+  "index": 255,
+  "variants": {
+   "Present perfect": "You have moved away.",
+   "Going to": "You are going to move away."
+  }
+ },
+ {
+  "index": 256,
+  "variants": {
+   "Going to": "You are going to move upstairs.",
+   "Present perfect": "You have moved upstairs."
+  }
+ },
+ {
+  "index": 257,
+  "variants": {
+   "Future simple": "You will move boxes.",
+   "Present continuous": "You are moving boxes."
+  }
+ },
+ {
+  "index": 258,
+  "variants": {
+   "Present continuous": "You are moving furniture.",
+   "Present perfect": "You have moved furniture."
+  }
+ },
+ {
+  "index": 259,
+  "variants": {
+   "Present simple": "She plays chess.",
+   "Going to": "She is going to play chess."
+  }
+ },
+ {
+  "index": 260,
+  "variants": {
+   "Past simple": "She played the piano.",
+   "Present simple": "She plays the piano."
+  }
+ },
+ {
+  "index": 261,
+  "variants": {
+   "Present perfect": "She has played tennis.",
+   "Going to": "She is going to play tennis."
+  }
+ },
+ {
+  "index": 262,
+  "variants": {
+   "Going to": "She is going to play inside.",
+   "Present perfect": "She has played inside."
+  }
+ },
+ {
+  "index": 263,
+  "variants": {
+   "Future simple": "She will play alone.",
+   "Present continuous": "She is playing alone."
+  }
+ },
+ {
+  "index": 264,
+  "variants": {
+   "Present continuous": "She is playing soccer.",
+   "Present perfect": "She has played soccer."
+  }
+ },
+ {
+  "index": 265,
+  "variants": {
+   "Present simple": "He pays the bill.",
+   "Going to": "He is going to pay the bill."
+  }
+ },
+ {
+  "index": 266,
+  "variants": {
+   "Past simple": "He paid for lunch.",
+   "Present simple": "He pays for lunch."
+  }
+ },
+ {
+  "index": 267,
+  "variants": {
+   "Present perfect": "He has paid by card.",
+   "Going to": "He is going to pay by card."
+  }
+ },
+ {
+  "index": 268,
+  "variants": {
+   "Going to": "He is going to pay the driver.",
+   "Present perfect": "He has paid the driver."
+  }
+ },
+ {
+  "index": 269,
+  "variants": {
+   "Future simple": "He will pay the taxes.",
+   "Present continuous": "He is paying the taxes."
+  }
+ },
+ {
+  "index": 270,
+  "variants": {
+   "Present continuous": "He is paying the rent.",
+   "Present perfect": "He has paid the rent."
+  }
+ },
+ {
+  "index": 271,
+  "variants": {
+   "Present continuous": "They are hearing music.",
+   "Present perfect": "They have heard music."
+  }
+ },
+ {
+  "index": 272,
+  "variants": {
+   "Past simple": "They heard a noise.",
+   "Present simple": "They hear a noise."
+  }
+ },
+ {
+  "index": 273,
+  "variants": {
+   "Present perfect": "They have heard voices.",
+   "Going to": "They are going to hear voices."
+  }
+ },
+ {
+  "index": 274,
+  "variants": {
+   "Going to": "They are going to hear the bells.",
+   "Present perfect": "They have heard the bells."
+  }
+ },
+ {
+  "index": 275,
+  "variants": {
+   "Future simple": "They will hear shouting.",
+   "Present continuous": "They are hearing shouting."
+  }
+ },
+ {
+  "index": 276,
+  "variants": {
+   "Present continuous": "I am believing in God.",
+   "Present perfect": "I have believed in God."
+  }
+ },
+ {
+  "index": 277,
+  "variants": {
+   "Past simple": "I believed that.",
+   "Present simple": "I believe that."
+  }
+ },
+ {
+  "index": 278,
+  "variants": {
+   "Present perfect": "I have believed in you.",
+   "Going to": "I am going to believe in you."
+  }
+ },
+ {
+  "index": 279,
+  "variants": {
+   "Going to": "I am going to believe the story.",
+   "Present perfect": "I have believed the story."
+  }
+ },
+ {
+  "index": 280,
+  "variants": {
+   "Future simple": "I will believe Mary.",
+   "Present continuous": "I am believing Mary."
+  }
+ },
+ {
+  "index": 281,
+  "variants": {
+   "Present simple": "We allow visitors.",
+   "Going to": "We are going to allow visitors."
+  }
+ },
+ {
+  "index": 282,
+  "variants": {
+   "Past simple": "We allowed changes.",
+   "Present simple": "We allow changes."
+  }
+ },
+ {
+  "index": 283,
+  "variants": {
+   "Present perfect": "We have allowed exceptions.",
+   "Going to": "We are going to allow exceptions."
+  }
+ },
+ {
+  "index": 284,
+  "variants": {
+   "Going to": "We are going to allow pets.",
+   "Present perfect": "We have allowed pets."
+  }
+ },
+ {
+  "index": 285,
+  "variants": {
+   "Future simple": "We will allow participation.",
+   "Present continuous": "We are allowing participation."
+  }
+ },
+ {
+  "index": 286,
+  "variants": {
+   "Present continuous": "We are allowing phones.",
+   "Present perfect": "We have allowed phones."
+  }
+ },
+ {
+  "index": 287,
+  "variants": {
+   "Present simple": "She sits next to me.",
+   "Going to": "She is going to sit next to me."
+  }
+ },
+ {
+  "index": 288,
+  "variants": {
+   "Past simple": "She sat at the table.",
+   "Present simple": "She sits at the table."
+  }
+ },
+ {
+  "index": 289,
+  "variants": {
+   "Present perfect": "She has sat on the chair.",
+   "Going to": "She is going to sit on the chair."
+  }
+ },
+ {
+  "index": 290,
+  "variants": {
+   "Going to": "She is going to sit on the sofa.",
+   "Present perfect": "She has sat on the sofa."
+  }
+ },
+ {
+  "index": 291,
+  "variants": {
+   "Future simple": "She will sit alone.",
+   "Present continuous": "She is sitting alone."
+  }
+ },
+ {
+  "index": 292,
+  "variants": {
+   "Present continuous": "She is sitting quietly.",
+   "Present perfect": "She has sat quietly."
+  }
+ },
+ {
+  "index": 293,
+  "variants": {
+   "Present simple": "You suffer stress.",
+   "Going to": "You are going to suffer stress."
+  }
+ },
+ {
+  "index": 294,
+  "variants": {
+   "Past simple": "You suffered a lot.",
+   "Present simple": "You suffer a lot."
+  }
+ },
+ {
+  "index": 295,
+  "variants": {
+   "Present perfect": "You have suffered from illness.",
+   "Going to": "You are going to suffer from illness."
+  }
+ },
+ {
+  "index": 296,
+  "variants": {
+   "Going to": "You are going to suffer too much.",
+   "Present perfect": "You have suffered too much."
+  }
+ },
+ {
+  "index": 297,
+  "variants": {
+   "Future simple": "You will suffer pain.",
+   "Present continuous": "You are suffering pain."
+  }
+ },
+ {
+  "index": 298,
+  "variants": {
+   "Present continuous": "You are suffering deeply.",
+   "Present perfect": "You have suffered deeply."
+  }
+ },
+ {
+  "index": 299,
+  "variants": {
+   "Present simple": "They lead the team.",
+   "Going to": "They are going to lead the team."
+  }
+ },
+ {
+  "index": 300,
+  "variants": {
+   "Past simple": "They led the group.",
+   "Present simple": "They lead the group."
+  }
+ },
+ {
+  "index": 301,
+  "variants": {
+   "Present perfect": "They have led the project.",
+   "Going to": "They are going to lead the project."
+  }
+ },
+ {
+  "index": 302,
+  "variants": {
+   "Going to": "They are going to lead the class.",
+   "Present perfect": "They have led the class."
+  }
+ },
+ {
+  "index": 303,
+  "variants": {
+   "Future simple": "They will lead everyone.",
+   "Present continuous": "They are leading everyone."
+  }
+ },
+ {
+  "index": 304,
+  "variants": {
+   "Present continuous": "They are leading the company.",
+   "Present perfect": "They have led the company."
+  }
+ },
+ {
+  "index": 305,
+  "variants": {
+   "Present simple": "I live in Germany.",
+   "Going to": "I am going to live in Germany."
+  }
+ },
+ {
+  "index": 306,
+  "variants": {
+   "Past simple": "I lived abroad.",
+   "Present simple": "I live abroad."
+  }
+ },
+ {
+  "index": 307,
+  "variants": {
+   "Present perfect": "I have lived here.",
+   "Going to": "I am going to live here."
+  }
+ },
+ {
+  "index": 308,
+  "variants": {
+   "Going to": "I am going to live in London.",
+   "Present perfect": "I have lived in London."
+  }
+ },
+ {
+  "index": 309,
+  "variants": {
+   "Future simple": "I will live with Diego.",
+   "Present continuous": "I am living with Diego."
+  }
+ },
+ {
+  "index": 310,
+  "variants": {
+   "Present continuous": "I am living alone.",
+   "Present perfect": "I have lived alone."
+  }
+ },
+ {
+  "index": 311,
+  "variants": {
+   "Present simple": "He meets clients.",
+   "Going to": "He is going to meet clients."
+  }
+ },
+ {
+  "index": 312,
+  "variants": {
+   "Past simple": "He met the president.",
+   "Present simple": "He meets the president."
+  }
+ },
+ {
+  "index": 313,
+  "variants": {
+   "Present perfect": "He has met Michael Jackson.",
+   "Going to": "He is going to meet Michael Jackson."
+  }
+ },
+ {
+  "index": 314,
+  "variants": {
+   "Going to": "He is going to meet his boss.",
+   "Present perfect": "He has met his boss."
+  }
+ },
+ {
+  "index": 315,
+  "variants": {
+   "Future simple": "He will meet the team.",
+   "Present continuous": "He is meeting the team."
+  }
+ },
+ {
+  "index": 316,
+  "variants": {
+   "Present continuous": "He is meeting the manager.",
+   "Present perfect": "He has met the manager."
+  }
+ },
+ {
+  "index": 317,
+  "variants": {
+   "Present simple": "You carry the box.",
+   "Going to": "You are going to carry the box."
+  }
+ },
+ {
+  "index": 318,
+  "variants": {
+   "Past simple": "You carried the bag.",
+   "Present simple": "You carry the bag."
+  }
+ },
+ {
+  "index": 319,
+  "variants": {
+   "Present perfect": "You have carried luggage.",
+   "Going to": "You are going to carry luggage."
+  }
+ },
+ {
+  "index": 320,
+  "variants": {
+   "Going to": "You are going to carry the food.",
+   "Present perfect": "You have carried the food."
+  }
+ },
+ {
+  "index": 321,
+  "variants": {
+   "Future simple": "You will carry a suitcase.",
+   "Present continuous": "You are carrying a suitcase."
+  }
+ },
+ {
+  "index": 322,
+  "variants": {
+   "Present continuous": "You are carrying too much.",
+   "Present perfect": "You have carried too much."
+  }
+ },
+ {
+  "index": 323,
+  "variants": {
+   "Present simple": "We think of moving.",
+   "Going to": "We are going to think of moving."
+  }
+ },
+ {
+  "index": 324,
+  "variants": {
+   "Past simple": "We thought about it.",
+   "Present simple": "We think about it."
+  }
+ },
+ {
+  "index": 325,
+  "variants": {
+   "Present perfect": "We have thought of you.",
+   "Going to": "We are going to think of you."
+  }
+ },
+ {
+  "index": 326,
+  "variants": {
+   "Going to": "We are going to think carefully.",
+   "Present perfect": "We have thought carefully."
+  }
+ },
+ {
+  "index": 327,
+  "variants": {
+   "Future simple": "We will think positively.",
+   "Present continuous": "We are thinking positively."
+  }
+ },
+ {
+  "index": 328,
+  "variants": {
+   "Present continuous": "We are thinking together.",
+   "Present perfect": "We have thought together."
+  }
+ },
+ {
+  "index": 329,
+  "variants": {
+   "Present simple": "I write a letter.",
+   "Going to": "I am going to write a letter."
+  }
+ },
+ {
+  "index": 330,
+  "variants": {
+   "Past simple": "I wrote an email.",
+   "Present simple": "I write an email."
+  }
+ },
+ {
+  "index": 331,
+  "variants": {
+   "Present perfect": "I have written a book.",
+   "Going to": "I am going to write a book."
+  }
+ },
+ {
+  "index": 332,
+  "variants": {
+   "Going to": "I am going to write a message.",
+   "Present perfect": "I have written a message."
+  }
+ },
+ {
+  "index": 333,
+  "variants": {
+   "Future simple": "I will write a report.",
+   "Present continuous": "I am writing a report."
+  }
+ },
+ {
+  "index": 334,
+  "variants": {
+   "Present continuous": "I am writing slowly.",
+   "Present perfect": "I have written slowly."
+  }
+ },
+ {
+  "index": 335,
+  "variants": {
+   "Present simple": "She finishes the homework.",
+   "Going to": "She is going to finish the homework."
+  }
+ },
+ {
+  "index": 336,
+  "variants": {
+   "Past simple": "She finished the course.",
+   "Present simple": "She finishes the course."
+  }
+ },
+ {
+  "index": 337,
+  "variants": {
+   "Present perfect": "She has finished her coffee.",
+   "Going to": "She is going to finish her coffee."
+  }
+ },
+ {
+  "index": 338,
+  "variants": {
+   "Going to": "She is going to finish school.",
+   "Present perfect": "She has finished school."
+  }
+ },
+ {
+  "index": 339,
+  "variants": {
+   "Future simple": "She will finish the lesson.",
+   "Present continuous": "She is finishing the lesson."
+  }
+ },
+ {
+  "index": 340,
+  "variants": {
+   "Present continuous": "She is finishing quickly.",
+   "Present perfect": "She has finished quickly."
+  }
+ },
+ {
+  "index": 341,
+  "variants": {
+   "Present simple": "You expect a call.",
+   "Going to": "You are going to expect a call."
+  }
+ },
+ {
+  "index": 342,
+  "variants": {
+   "Past simple": "You expected too much.",
+   "Present simple": "You expect too much."
+  }
+ },
+ {
+  "index": 343,
+  "variants": {
+   "Present perfect": "You have expected a reply.",
+   "Going to": "You are going to expect a reply."
+  }
+ },
+ {
+  "index": 344,
+  "variants": {
+   "Going to": "You are going to expect news.",
+   "Present perfect": "You have expected news."
+  }
+ },
+ {
+  "index": 345,
+  "variants": {
+   "Future simple": "You will expect a delivery.",
+   "Present continuous": "You are expecting a delivery."
+  }
+ },
+ {
+  "index": 346,
+  "variants": {
+   "Present continuous": "You are expecting results.",
+   "Present perfect": "You have expected results."
+  }
+ },
+ {
+  "index": 347,
+  "variants": {
+   "Present simple": "They share a room.",
+   "Going to": "They are going to share a room."
+  }
+ },
+ {
+  "index": 348,
+  "variants": {
+   "Past simple": "They shared the sandwich.",
+   "Present simple": "They share the sandwich."
+  }
+ },
+ {
+  "index": 349,
+  "variants": {
+   "Present perfect": "They have shared ideas.",
+   "Going to": "They are going to share ideas."
+  }
+ },
+ {
+  "index": 350,
+  "variants": {
+   "Going to": "They are going to share lunch.",
+   "Present perfect": "They have shared lunch."
+  }
+ },
+ {
+  "index": 351,
+  "variants": {
+   "Future simple": "They will share the computer.",
+   "Present continuous": "They are sharing the computer."
+  }
+ },
+ {
+  "index": 352,
+  "variants": {
+   "Present continuous": "They are sharing secrets.",
+   "Present perfect": "They have shared secrets."
+  }
+ },
+ {
+  "index": 353,
+  "variants": {
+   "Present simple": "He talks on the phone.",
+   "Going to": "He is going to talk on the phone."
+  }
+ },
+ {
+  "index": 354,
+  "variants": {
+   "Past simple": "He talked to them.",
+   "Present simple": "He talks to them."
+  }
+ },
+ {
+  "index": 355,
+  "variants": {
+   "Present perfect": "He has talked fast.",
+   "Going to": "He is going to talk fast."
+  }
+ },
+ {
+  "index": 356,
+  "variants": {
+   "Going to": "He is going to talk to her.",
+   "Present perfect": "He has talked to her."
+  }
+ },
+ {
+  "index": 357,
+  "variants": {
+   "Future simple": "He will talk about it.",
+   "Present continuous": "He is talking about it."
+  }
+ },
+ {
+  "index": 358,
+  "variants": {
+   "Present continuous": "He is talking clearly.",
+   "Present perfect": "He has talked clearly."
+  }
+ },
+ {
+  "index": 359,
+  "variants": {
+   "Present simple": "You read quietly.",
+   "Going to": "You are going to read quietly."
+  }
+ },
+ {
+  "index": 360,
+  "variants": {
+   "Past simple": "You read the novel.",
+   "Present simple": "You read the novel."
+  }
+ },
+ {
+  "index": 361,
+  "variants": {
+   "Present perfect": "You have read my article.",
+   "Going to": "You are going to read my article."
+  }
+ },
+ {
+  "index": 362,
+  "variants": {
+   "Going to": "You are going to read the emails.",
+   "Present perfect": "You have read the emails."
+  }
+ },
+ {
+  "index": 363,
+  "variants": {
+   "Future simple": "You will read aloud.",
+   "Present continuous": "You are reading aloud."
+  }
+ },
+ {
+  "index": 364,
+  "variants": {
+   "Present continuous": "You are reading every day.",
+   "Present perfect": "You have read every day."
+  }
+ },
+ {
+  "index": 365,
+  "variants": {
+   "Present simple": "We lose money.",
+   "Going to": "We are going to lose money."
+  }
+ },
+ {
+  "index": 366,
+  "variants": {
+   "Past simple": "We lost the race.",
+   "Present simple": "We lose the race."
+  }
+ },
+ {
+  "index": 367,
+  "variants": {
+   "Present perfect": "We have lost her.",
+   "Going to": "We are going to lose her."
+  }
+ },
+ {
+  "index": 368,
+  "variants": {
+   "Going to": "We are going to lose the bet.",
+   "Present perfect": "We have lost the bet."
+  }
+ },
+ {
+  "index": 369,
+  "variants": {
+   "Future simple": "We will lose the match.",
+   "Present continuous": "We are losing the match."
+  }
+ },
+ {
+  "index": 370,
+  "variants": {
+   "Present continuous": "We are losing again.",
+   "Present perfect": "We have lost again."
+  }
+ },
+ {
+  "index": 371,
+  "variants": {
+   "Present simple": "I speak Italian.",
+   "Going to": "I am going to speak Italian."
+  }
+ },
+ {
+  "index": 372,
+  "variants": {
+   "Past simple": "I spoke with him.",
+   "Present simple": "I speak with him."
+  }
+ },
+ {
+  "index": 373,
+  "variants": {
+   "Present perfect": "I have spoken all day.",
+   "Going to": "I am going to speak all day."
+  }
+ },
+ {
+  "index": 374,
+  "variants": {
+   "Going to": "I am going to speak softly.",
+   "Present perfect": "I have spoken softly."
+  }
+ },
+ {
+  "index": 375,
+  "variants": {
+   "Future simple": "I will speak to them.",
+   "Present continuous": "I am speaking to them."
+  }
+ },
+ {
+  "index": 376,
+  "variants": {
+   "Present continuous": "I am speaking 3 languages.",
+   "Present perfect": "I have spoken 3 languages."
+  }
+ }
+]
