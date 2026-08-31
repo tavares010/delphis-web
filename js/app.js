@@ -127,21 +127,24 @@ function popPoints(x, y, text) {
 // Poner utter.lang NO basta para que suene con el acento correcto -en
 // muchos navegadores (sobre todo iOS/Safari) si no se fija además una
 // voz de verdad, cae en la voz por defecto del sistema (aquí, español)
-// sin importar el idioma pedido. Las voces cargan async -hay que
-// guardarlas cuando estén listas y volver a intentar si aún no llegaron.
-let ttsVoces = [];
-function cargarVocesTTS() {
-  if ('speechSynthesis' in window) ttsVoces = window.speechSynthesis.getVoices();
+// sin importar el idioma pedido. Las voces cargan async y en inglés
+// suelen estar listas ya (es la voz por defecto en casi todos los
+// dispositivos), pero las de otros idiomas a veces tardan más en
+// aparecer -por eso NUNCA se usa una lista guardada de antes: se pide
+// getVoices() de nuevo cada vez, y si aún así no hay ninguna que
+// encaje, se espera un poco (pueden estar a mitad de cargar) antes de
+// hablar con lo que haya.
+function vocesTTSAhora() {
+  return ('speechSynthesis' in window) ? window.speechSynthesis.getVoices() : [];
 }
 if ('speechSynthesis' in window) {
-  cargarVocesTTS();
-  window.speechSynthesis.addEventListener('voiceschanged', cargarVocesTTS);
+  window.speechSynthesis.getVoices(); // dispara la carga en algunos navegadores
 }
 function vozParaIdioma(langCode) {
-  if (!ttsVoces.length) cargarVocesTTS();
+  const voces = vocesTTSAhora();
   const prefijo = langCode.split('-')[0].toLowerCase();
-  return ttsVoces.find(v => v.lang.toLowerCase() === langCode.toLowerCase())
-    || ttsVoces.find(v => v.lang.toLowerCase().startsWith(prefijo))
+  return voces.find(v => v.lang.toLowerCase() === langCode.toLowerCase())
+    || voces.find(v => v.lang.toLowerCase().startsWith(prefijo))
     || null;
 }
 
@@ -153,19 +156,30 @@ function speakText(text, rate = 1, lang, callbacks) {
     if (callbacks && callbacks.onEnd) callbacks.onEnd();
     return null;
   }
-  window.speechSynthesis.cancel();
-  const utter = new SpeechSynthesisUtterance(text);
   const targetLang = lang || (typeof getCursoActivo === 'function' ? getCursoActivo().speechLang : 'en-US');
-  utter.lang = targetLang;
-  const voz = vozParaIdioma(targetLang);
-  if (voz) utter.voice = voz;
-  utter.rate = rate;
-  if (callbacks) {
-    if (callbacks.onStart) utter.addEventListener('start', callbacks.onStart);
-    if (callbacks.onEnd) { utter.addEventListener('end', callbacks.onEnd); utter.addEventListener('error', callbacks.onEnd); }
+
+  function decirDeVerdad(reintentos) {
+    window.speechSynthesis.cancel();
+    const utter = new SpeechSynthesisUtterance(text);
+    utter.lang = targetLang;
+    const voz = vozParaIdioma(targetLang);
+    // Si se pide un idioma que no es inglés y todavía no hay ninguna voz
+    // que encaje, puede que la lista de voces siga cargando -se reintenta
+    // un par de veces con una pequeña espera antes de rendirse y hablar
+    // con la voz por defecto (mejor eso que quedarse mudo).
+    if (!voz && !targetLang.toLowerCase().startsWith('en') && reintentos > 0) {
+      setTimeout(() => decirDeVerdad(reintentos - 1), 250);
+      return;
+    }
+    if (voz) utter.voice = voz;
+    utter.rate = rate;
+    if (callbacks) {
+      if (callbacks.onStart) utter.addEventListener('start', callbacks.onStart);
+      if (callbacks.onEnd) { utter.addEventListener('end', callbacks.onEnd); utter.addEventListener('error', callbacks.onEnd); }
+    }
+    window.speechSynthesis.speak(utter);
   }
-  window.speechSynthesis.speak(utter);
-  return utter;
+  decirDeVerdad(4);
 }
 
 // ---------- Normalización para comparar respuestas escritas ----------
