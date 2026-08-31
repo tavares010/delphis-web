@@ -172,3 +172,38 @@ async function applyTheme() {
 applyTheme();
 
 document.addEventListener('DOMContentLoaded', renderProgressChip);
+
+// ---------- Muro de membresía (simulado -sin pasarela de pago real todavía) ----------
+// Lo único gratis de verdad es el verbo "to be" y la introducción del
+// libro (ver nodoEsGratis en curriculo-builder.js). Todo lo demás pide
+// membresía; como no hay checkout real montado aún, "Suscribirme" activa
+// la membresía al instante y avisa que es simulado.
+function mostrarMuroPremium(onUnlock) {
+  if (document.getElementById('premiumModalOverlay')) return;
+  const overlay = document.createElement('div');
+  overlay.id = 'premiumModalOverlay';
+  overlay.className = 'premium-modal-overlay';
+  overlay.innerHTML = `
+    <div class="premium-modal">
+      <button class="premium-modal__close" id="premiumModalClose" aria-label="Cerrar">✕</button>
+      <div class="premium-modal__icon">💎</div>
+      <h3>Esto es de la membresía</h3>
+      <p>El verbo <strong>"to be"</strong> y la introducción del libro son gratis para siempre.
+        El resto del currículo, el libro completo y los paquetes se desbloquean con la membresía.</p>
+      <div class="premium-modal__price">Desde $9<span>/mes</span></div>
+      <button class="btn btn--primary btn--lg" id="btnFakeSubscribe">Suscribirme</button>
+      <a href="index.html#precios" class="premium-modal__link">Ver todos los planes</a>
+      <p class="premium-modal__note">El pago real llega pronto — por ahora esto simula la suscripción al instante.</p>
+    </div>
+  `;
+  document.body.appendChild(overlay);
+  const close = () => overlay.remove();
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
+  document.getElementById('premiumModalClose').addEventListener('click', close);
+  document.getElementById('btnFakeSubscribe').addEventListener('click', () => {
+    activarPremiumFalso();
+    close();
+    showToast('✅ (Simulado) Ya tienes la membresía — contenido desbloqueado.');
+    if (onUnlock) onUnlock();
+  });
+}

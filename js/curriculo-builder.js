@@ -47,6 +47,22 @@ function nivelDesbloqueado(caminos, nivel) {
   return false;
 }
 
+// ---------- Lo gratis de verdad, sin membresía ----------
+// Solo el verbo "to be" (Nivel 1) y la introducción del libro. Todo lo
+// demás requiere membresía (simulada por ahora, ver progress.js
+// esPremium/activarPremiumFalso -no hay pasarela de pago real todavía).
+const FREE_VERB_ID = 'to-be';
+const FREE_BOOK_CHAPTER = 2; // "Introducción"
+
+function nodoEsGratis(nodo) {
+  if (nodo.tipo === 'leccion' && nodo.nivel === 1 && nodo.verboId === FREE_VERB_ID) return true;
+  if (nodo.tipo === 'libro' && nodo.capIndex === FREE_BOOK_CHAPTER) return true;
+  return false;
+}
+function nodoAccesible(nodo) {
+  return nodoEsGratis(nodo) || esPremium();
+}
+
 function buildCamino(content) {
   // ---------- NIVEL 1 ----------
   const n1Lessons = content.nivel1.orden.map((verbId, i) => {

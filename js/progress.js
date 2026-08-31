@@ -28,7 +28,21 @@ function progressDefault() {
     statsHoy: { fecha: todayStr(), aciertos: 0, palabrasConsultadas: 0 },
     statsSemana: { aciertos: 0 },
     retosReclamados: [], // ids de retos ya reclamados hoy (se resetea con statsHoy.fecha)
+    premium: false, // membresía -sin pasarela de pago real todavía, ver activarPremiumFalso()
   };
+}
+
+// ---------- Membresía (simulada -de momento no hay pasarela de pago real,
+// solo lo gratis de verdad: el verbo "to be" y la introducción del libro,
+// ver nodoEsGratis en curriculo-builder.js) ----------
+function esPremium() {
+  if (typeof DEV_MODE !== 'undefined' && DEV_MODE) return true;
+  return !!progressLoad().premium;
+}
+function activarPremiumFalso() {
+  const data = progressLoad();
+  data.premium = true;
+  progressSave(data);
 }
 
 function progressLoad() {
@@ -296,8 +310,13 @@ function estadoCamino(camino) {
   camino.forEach((nodo) => {
     if (bloqueado) { estados.push('bloqueado'); return; }
     const hecho = estaHecho(nodo);
-    if (hecho) estados.push('completo');
-    else { estados.push('actual'); bloqueado = true; }
+    if (hecho) { estados.push('completo'); return; }
+    // Ya te toca este nodo por progreso, pero no es gratis y no tienes
+    // membresía -se para aquí igual que "bloqueado", solo que la razón es
+    // el pago, no el orden del currículo (ver nodoEsGratis).
+    if (!nodoAccesible(nodo)) { estados.push('premium'); bloqueado = true; return; }
+    estados.push('actual');
+    bloqueado = true;
   });
   return estados;
 }

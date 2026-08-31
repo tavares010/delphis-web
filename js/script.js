@@ -277,6 +277,18 @@ if (heroTypingEl && !window.matchMedia('(prefers-reduced-motion: reduce)').match
   let heroCharIdx = HERO_IDIOMAS[0].length; // arranca mostrando "inglés" ya escrito, como en el HTML
   let heroDeleting = true;
 
+  // El orden de HERO_IDIOMAS es el mismo que CURSOS (en/fr/de/it/pt) en
+  // js/courses.js -así cada palabra usa el degradado REAL de su curso
+  // (el mismo que ves al cambiar de idioma en la app), no uno inventado
+  // aparte. Ej: portugués = rojo y verde, como el resto del tema.
+  function heroSetTypingColors(idx) {
+    const curso = typeof CURSOS !== 'undefined' && CURSOS[idx];
+    if (!curso) return;
+    heroTypingEl.style.setProperty('--typing-a', curso.colorA);
+    heroTypingEl.style.setProperty('--typing-b', curso.colorB);
+  }
+  heroSetTypingColors(0);
+
   function heroTypingTick() {
     const word = HERO_IDIOMAS[heroWordIdx];
     let delay;
@@ -287,6 +299,7 @@ if (heroTypingEl && !window.matchMedia('(prefers-reduced-motion: reduce)').match
       if (heroCharIdx <= 0) {
         heroDeleting = false;
         heroWordIdx = (heroWordIdx + 1) % HERO_IDIOMAS.length;
+        heroSetTypingColors(heroWordIdx);
         delay = 300;
       }
     } else {

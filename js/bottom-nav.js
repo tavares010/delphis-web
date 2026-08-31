@@ -1,9 +1,11 @@
 /* ===========================================================
    DELPHIS METHOD — BARRA DE NAVEGACIÓN INFERIOR (solo móvil, ≤720px)
    Se inyecta sola en las páginas "de dentro de la app" (currículo,
-   lección, libro, paquetes, repaso, perfil, roleplay, cursos) — no en
+   libro, paquetes, repaso, perfil, roleplay, cursos) — no en
    marketing/auth (index, login, verificar, cómo-funciona), igual que
-   una app real no muestra tabs antes de entrar.
+   una app real no muestra tabs antes de entrar. Excepción: leccion.html
+   (Estudiar/Quiz/Juego) tampoco la lleva, para que en móvil el paso
+   quepa entero sin scroll.
    =========================================================== */
 const BOTTOM_NAV_ITEMS = [
   { id: 'curso', href: 'curriculo.html', label: 'Curso',
@@ -35,6 +37,12 @@ function seccionActiva() {
 }
 
 function renderBottomNav() {
+  // En leccion.html (Estudiar/Quiz/Juego) se quita para que en móvil quepa
+  // todo el paso sin hacer scroll -esas pantallas ya tienen su propia
+  // navegación (el indicador de pasos, clicable hacia "Estudiar").
+  const page = location.pathname.split('/').pop() || 'index.html';
+  if (page === 'leccion.html') return;
+
   const activa = seccionActiva();
   const nav = document.createElement('nav');
   nav.className = 'bottom-nav';

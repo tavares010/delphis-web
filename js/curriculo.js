@@ -12,8 +12,29 @@ const NIVEL_META = {
   3: { titulo: 'Nivel 3 · Avanzado', icono: '🎓', resumen: '5 condicionales + 3 tiempos avanzados.', a: '#d97706', b: '#fbbf24' },
 };
 
+// Icono por verbo (Nivel 1 y 2 comparten estos mismos 8-64 verbos, ver
+// nodo.verboId) -antes cada lección de "leccion" mostraba el mismo 🔤
+// genérico sin importar el verbo. Clave = slug del verbo en inglés
+// (estable entre idiomas, es el mismo id que usa el resto del código).
+const VERBO_ICONOS = {
+  'to-be': '🧍', 'to-have': '🎒', 'to-can': '💪', 'to-know': '🧠', 'to-want': '🙏', 'to-need': '❗',
+  'to-go': '🚶', 'to-do': '✅', 'to-get': '📥', 'to-make': '🛠️', 'to-follow': '👣', 'to-take': '✋',
+  'to-begin': '🌱', 'to-come': '👋', 'to-give': '🎁', 'to-use': '🔧', 'to-find': '🔍', 'to-tell': '🗣️',
+  'to-listen': '👂', 'to-organize': '🗂️', 'to-become': '🦋', 'to-leave': '🚪', 'to-work': '💼', 'to-feel': '❤️',
+  'to-fly': '✈️', 'to-ask': '❓', 'to-marry': '💍', 'to-try': '🎯', 'to-run': '🏃', 'to-remain': '🧘',
+  'to-show': '👁️', 'to-fall': '🍂', 'to-hold': '🤲', 'to-apply': '📝', 'to-see': '👀', 'to-let': '🔓',
+  'to-bring': '📦', 'to-like': '👍', 'to-help': '🤝', 'to-start': '▶️', 'to-call': '📞', 'to-forget': '🌫️',
+  'to-avoid': '🚫', 'to-move': '🚚', 'to-play': '🎮', 'to-pay': '💳', 'to-hear': '🔊', 'to-believe': '🕊️',
+  'to-allow': '🟢', 'to-sit': '🪑', 'to-suffer': '😣', 'to-lead': '🧭', 'to-live': '🏡', 'to-meet': '👥',
+  'to-carry': '🏋️', 'to-think': '💭', 'to-write': '✍️', 'to-finish': '🏁', 'to-expect': '⏳', 'to-share': '📤',
+  'to-talk': '💬', 'to-read': '📖', 'to-lose': '📉', 'to-speak': '🎤',
+};
+
 function nodoIcono(nodo) {
-  if (nodo.tipo === 'leccion') return '🔤';
+  if (nodo.tipo === 'leccion') {
+    if (nodo.nivel === 3) return NIVEL3_ESTRUCTURA_ICONOS[nodo.verboId] || '🎓';
+    return VERBO_ICONOS[nodo.verboId] || '🔤';
+  }
   if (nodo.tipo === 'repaso') return '🔁';
   if (nodo.tipo === 'libro') return '📖';
   return '·';
@@ -55,16 +76,18 @@ function rowClasses(nodo, estado) {
     cls.push(`course-row--${nodo.tipo}`);
     if (estado === 'completo') cls.push('course-row--completo');
     if (estado === 'bloqueado') cls.push('course-row--bloqueado');
+    if (estado === 'premium') cls.push('course-row--premium');
   }
   return cls.join(' ');
 }
 
 function renderRow(nodo, estado, content, big) {
-  const href = estado === 'bloqueado' ? null : nodoHref(nodo);
+  const cerrado = estado === 'bloqueado' || estado === 'premium';
+  const href = cerrado ? null : nodoHref(nodo);
   const tag = href ? 'a' : 'div';
-  const icono = estado === 'completo' ? '✓' : nodoIcono(nodo);
-  const badge = estado === 'completo' ? 'Completado' : estado === 'actual' ? 'Continuar' : '';
-  const attrs = href ? ` href="${href}"` : ' data-locked="true"';
+  const icono = estado === 'completo' ? '✓' : estado === 'premium' ? '💎' : nodoIcono(nodo);
+  const badge = estado === 'completo' ? 'Completado' : estado === 'actual' ? 'Continuar' : estado === 'premium' ? 'Membresía' : '';
+  const attrs = href ? ` href="${href}"` : ` data-locked="true" data-locked-reason="${estado === 'premium' ? 'premium' : 'progreso'}"`;
   return `<${tag} class="${rowClasses(nodo, estado)} ${big ? 'course-row--lg' : ''}"${attrs}>
     <div class="course-row__icon">${icono}</div>
     <div class="course-row__info"><strong>${nodoNombre(nodo, content)}</strong><span>${nodoSub(nodo)}</span></div>
@@ -72,36 +95,37 @@ function renderRow(nodo, estado, content, big) {
   </${tag}>`;
 }
 
-// Foto real de portada por sección: la del primer ejemplo real de su primer
-// verbo/estructura (ya viene en los datos, la misma que se ve dentro de la
-// lección) -así cada tarjeta ilustra contenido real, no un genérico suelto.
-function imagenNivel2(verbo, content) {
-  const verboId = slugify(verbo);
-  const key = Object.keys(content.nivel2.byVerbTense).find(k => k.startsWith(`${verboId}__`));
-  const frases = key && content.nivel2.byVerbTense[key];
-  return (frases && frases[0] && frases[0].imagen) || null;
-}
-
 // ---------- Secciones de un nivel (bloques / parejas / estructuras) ----------
+// Sin foto de portada a propósito: una sección agrupa VARIOS verbos o
+// estructuras distintos (8 en Nivel 1, por ejemplo), así que ninguna foto
+// suelta puede representarlos a todos -antes usábamos la del primer verbo
+// nada más, y quedaba una foto sin relación real con el resto del grupo.
+// Un icono por sección según lo que de verdad enseña -antes todas las
+// secciones de un nivel compartían el mismo icono genérico (🔤/🧱/🎓),
+// así que aunque cada tarjeta tuviera un color distinto, todas se veían
+// iguales de un vistazo.
+const NIVEL1_BLOQUE_ICONOS = ['🔑', '🏆', '💬', '🚶', '👀', '🏠', '🧠', '📢'];
+const NIVEL2_PAREJA_ICONOS = { 'be-have': '👤', 'can-know': '🧠', 'want-need': '❤️', 'go-do': '🏃' };
+const NIVEL3_ESTRUCTURA_ICONOS = {
+  'zero-conditional': '🔁', 'first-conditional': '🎯', 'second-conditional': '💭',
+  'third-conditional': '⏮️', 'mixed-conditional': '🔗',
+  'present-perfect-continuous': '⏳', 'past-perfect': '⏪', 'future-continuous': '🔮',
+};
+
 function seccionesDeNivel(nivel, content) {
   if (nivel === 1) {
-    return content.nivel1.bloques.map((b, i) => {
-      const primerVerbo = b.verbos[0] && content.nivel1.porVerbo[b.verbos[0].id];
-      const imagen = primerVerbo && primerVerbo.frases[0] && primerVerbo.frases[0].imagen;
-      return { id: b.id, num: i + 1, nombre: b.nombre, icono: '🔤', imagen: imagen || null };
-    });
+    return content.nivel1.bloques.map((b, i) => ({ id: b.id, num: i + 1, nombre: b.nombre, icono: NIVEL1_BLOQUE_ICONOS[i] || '🔤' }));
   }
   if (nivel === 2) {
     return NIVEL2_PAREJAS.map((p, i) => ({
       id: p.id, num: i + 1,
       nombre: p.verbos.map(v => traducirVerbo(v, content.curso.id)).join(' / '),
-      icono: '🧱',
-      imagen: imagenNivel2(p.verbos[0], content),
+      icono: NIVEL2_PAREJA_ICONOS[p.id] || '🧱',
     }));
   }
   return content.nivel3.orden.map((id, i) => {
     const est = content.nivel3.porEstructura[id];
-    return { id, num: i + 1, nombre: est.nombre, icono: '🎓', imagen: (est.frases[0] && est.frases[0].imagen) || null };
+    return { id, num: i + 1, nombre: est.nombre, icono: NIVEL3_ESTRUCTURA_ICONOS[id] || '🎓' };
   });
 }
 
@@ -137,6 +161,11 @@ function extrasPorSeccion(camino, nivel, secciones) {
   return porSeccion;
 }
 
+// Ficha grande de color sólido de punta a punta -a propósito muy distinta
+// de .nivel-card (portada de color arriba + cuerpo blanco abajo): aquí
+// TODA la ficha es del color de la sección, sin cuerpo blanco, como los
+// iconos de la pantalla "Courses" de referencia. Así se nota de un
+// vistazo si estás viendo niveles o secciones dentro de un nivel.
 function seccionCard(seccion, nivel, camino, content, extras) {
   const estados = estadoCamino(camino);
   const idxEnCamino = [];
@@ -145,27 +174,25 @@ function seccionCard(seccion, nivel, camino, content, extras) {
   const completos = idxEnCamino.filter(i => estados[i] === 'completo').length;
   const pct = total ? Math.round((completos / total) * 100) : 0;
   const bloqueada = total > 0 && idxEnCamino.every(i => estados[i] === 'bloqueado');
+  const necesitaPremium = idxEnCamino.some(i => estados[i] === 'premium');
   const href = `curriculo.html?nivel=${nivel}&seccion=${seccion.id}`;
   const [ca, cb] = SECCION_COLORES[(seccion.num - 1) % SECCION_COLORES.length];
-  const estadoTxt = completos === total && total > 0 ? 'Completa' : completos > 0 ? 'En curso' : 'Por empezar';
   const tieneExamen = (extras || []).some(n => n.tipo === 'repaso');
   const tieneLibro = (extras || []).some(n => n.tipo === 'libro');
   return `
-    <a class="seccion-card ${bloqueada ? 'locked' : ''}" href="${bloqueada ? '#' : href}" data-locked="${bloqueada}">
-      <div class="seccion-card__cover" style="${coverStyle(seccion.imagen, ca, cb)}">
-        <span class="seccion-card__icon-big">${seccion.icono}</span>
-        <span class="seccion-card__num-badge">${String(seccion.num).padStart(2, '0')}</span>
-        ${tieneExamen ? '<span class="seccion-card__examen-badge">🔁 Examen</span>' : ''}
+    <a class="seccion-tile ${bloqueada ? 'locked' : ''} ${necesitaPremium ? 'seccion-tile--premium' : ''}" href="${bloqueada ? '#' : href}" data-locked="${bloqueada}" data-locked-reason="progreso"
+       style="background:linear-gradient(150deg, ${ca}, ${cb});">
+      <div class="seccion-tile__top">
+        <span class="seccion-tile__icon">${necesitaPremium ? '💎' : seccion.icono}</span>
+        <span class="seccion-tile__num">${String(seccion.num).padStart(2, '0')}</span>
       </div>
-      <div class="seccion-card__body">
-        <h4>${seccion.nombre}</h4>
-        <div class="seccion-card__meta-row">
-          <span>📚 ${total} lecciones</span>
-          <span>✅ ${estadoTxt}</span>
-        </div>
-        <div class="seccion-card__progress-bar"><div class="seccion-card__progress-fill" style="width:${pct}%; background:linear-gradient(90deg, ${ca}, ${cb});"></div></div>
-        <span class="seccion-card__pct">${completos}/${total} · ${pct}%${tieneLibro ? ' · 📖 incluye capítulo' : ''}</span>
+      <h4 class="seccion-tile__title">${seccion.nombre}</h4>
+      <div class="seccion-tile__progress-bar"><div class="seccion-tile__progress-fill" style="width:${pct}%"></div></div>
+      <div class="seccion-tile__foot">
+        <span>${total} lecciones${tieneLibro ? ' · 📖' : ''}</span>
+        <span>${pct}%</span>
       </div>
+      ${tieneExamen ? '<span class="seccion-tile__examen" title="Incluye examen">🔁</span>' : ''}
     </a>`;
 }
 
@@ -211,7 +238,11 @@ function renderContinueBanner(caminos, content) {
 
 function bindLocked(root) {
   root.querySelectorAll('[data-locked="true"]').forEach(el => {
-    el.addEventListener('click', e => { e.preventDefault(); showToast('Se desbloquea completando el paso anterior.'); });
+    el.addEventListener('click', e => {
+      e.preventDefault();
+      if (el.dataset.lockedReason === 'premium') mostrarMuroPremium(() => location.reload());
+      else showToast('Se desbloquea completando el paso anterior.');
+    });
   });
 }
 
@@ -236,11 +267,10 @@ function renderVistaNiveles(wrap, caminos, content, { n1Completo, n2Completo, de
     const nLecciones = camino.filter(x => x.tipo === 'leccion').length;
     const secciones = seccionesDeNivel(n, content);
     const nSecciones = secciones.length;
-    const imagen = secciones[0] && secciones[0].imagen;
     return `
       <a class="nivel-card ${locked ? 'locked' : ''}" href="${locked ? '#' : `curriculo.html?nivel=${n}`}" data-locked="${locked}"
          style="--level-a:${meta.a}; --level-b:${meta.b};">
-        <div class="nivel-card__cover" style="${coverStyle(imagen, meta.a, meta.b)}">
+        <div class="nivel-card__cover" style="${coverStyle(null, meta.a, meta.b)}">
           <span class="nivel-card__icon-big">${meta.icono}</span>
         </div>
         <div class="nivel-card__body">
@@ -275,7 +305,7 @@ function renderVistaSecciones(wrap, nivel, caminos, content) {
       <div class="seccion-head-row__icon">${meta.icono}</div>
       <div><h2>${meta.titulo}</h2><p>Elige una sección para ver sus lecciones -el repaso y el capítulo del libro se estudian dentro de la sección a la que siguen.</p></div>
     </div>
-    <div class="seccion-grid">`;
+    <div class="seccion-tile-grid">`;
   secciones.forEach((s, i) => { html += seccionCard(s, nivel, camino, content, extrasPorSec[i]); });
   html += `</div>`;
   wrap.innerHTML = html;

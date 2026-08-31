@@ -32,6 +32,26 @@ function flashToastFromSession() {
   if (msg) { sessionStorage.removeItem('delphis_toast'); showToast(msg); }
 }
 
+// Refuerzo del muro de pago por si alguien llega aquí por URL directa,
+// saltándose las tarjetas de curriculo.html (que ya lo bloquean antes).
+function mostrarBloqueoPremium(onUnlock) {
+  if (stepsWrap) stepsWrap.innerHTML = '';
+  content.className = 'lesson-card';
+  content.innerHTML = `
+    <div style="text-align:center; padding:2rem 1rem;">
+      <div style="font-size:2.6rem; margin-bottom:1rem;">💎</div>
+      <h2 style="margin-bottom:.6rem;">Esto es de la membresía</h2>
+      <p style="color:var(--gray-400); max-width:420px; margin:0 auto 1.6rem;">
+        El verbo "to be" es gratis para siempre. El resto del currículo se desbloquea con la membresía.
+      </p>
+      <div style="display:flex; gap:.8rem; justify-content:center; flex-wrap:wrap;">
+        <button class="btn btn--primary btn--lg" id="btnGoPremium">Suscribirme</button>
+        <a href="curriculo.html" class="btn btn--outline">Volver al curso</a>
+      </div>
+    </div>`;
+  qs('#btnGoPremium').addEventListener('click', () => mostrarMuroPremium(onUnlock));
+}
+
 /* ===========================================================
    Localizar el nodo pedido dentro del currículo real
    =========================================================== */
@@ -162,6 +182,7 @@ function renderQuiz(ctx) {
     const q = questions[qi];
     answered = false;
     content.innerHTML = `
+      <button type="button" class="breadcrumb-back" id="btnQuizBack">← Volver a estudiar</button>
       <div class="lesson-card__head">
         <h1>${ctx.titulo} · Quiz</h1>
         <p>Elige la traducción correcta</p>
@@ -177,6 +198,7 @@ function renderQuiz(ctx) {
       </div>
       <div class="quiz-feedback" id="quizFeedback"></div>
     `;
+    qs('#btnQuizBack').addEventListener('click', () => renderStudy(ctx));
     qs('#quizOptions').querySelectorAll('.quiz-option').forEach(btn => {
       btn.addEventListener('click', () => {
         if (answered) return;
@@ -246,6 +268,7 @@ function renderGame(ctx) {
     startTime = Date.now();
     const f = frases[idx];
     content.innerHTML = `
+      <button type="button" class="breadcrumb-back" id="btnGameBack">← Volver al quiz</button>
       <div class="lesson-card__head">
         <h1>${ctx.titulo} · Juego</h1>
         <p>Produce la respuesta tú solo. Sin pistas.</p>
@@ -272,6 +295,7 @@ function renderGame(ctx) {
       `}
       <div class="game-feedback" id="gameFeedback"></div>
     `;
+    qs('#btnGameBack').addEventListener('click', () => renderQuiz(ctx));
     if (GAME_SR_DISPONIBLE) setupGameMic(); else {
       qs('#gameForm').addEventListener('submit', (e) => {
         e.preventDefault();
@@ -392,79 +416,137 @@ function renderSummary(ctx) {
 }
 
 /* ===========================================================
-   REPASO — quiz acumulativo de varias lecciones ya vistas
+   REPASO — examen acumulativo de varias lecciones ya vistas
+   Producción activa (micrófono, igual que el paso Juego), no quiz de
+   opción múltiple -un examen de verdad pone a prueba que lo produzcas
+   tú solo, no que reconozcas la respuesta entre 4 opciones.
    =========================================================== */
 function initRepaso(content_, caminos, encontrado) {
   const { nodo, camino } = encontrado;
 
   const leccionesPrevias = camino.filter(n => n.tipo === 'leccion').slice(nodo.desde - 1, nodo.hasta);
-  const frasesRepaso = leccionesPrevias.map(ln => {
-    const frases = frasesDeLeccion(content_, ln);
-    return frases[Math.floor(Math.random() * frases.length)];
-  }).filter(Boolean);
-  const nivelRepaso = camino === caminos.nivel1 ? 1 : camino === caminos.nivel2 ? 2 : 3;
-  const poolGlobal = poolGlobalDeNivel(content_, nivelRepaso);
+  const frases = shuffle(leccionesPrevias.map(ln => {
+    const frasesLeccion = frasesDeLeccion(content_, ln);
+    return frasesLeccion[Math.floor(Math.random() * frasesLeccion.length)];
+  }).filter(Boolean));
 
   if (stepsWrap) stepsWrap.innerHTML = `<div class="lesson-step active"><span class="lesson-step__dot">🔁</span>Repaso acumulativo</div>`;
 
-  let questions = shuffle(buildQuizQuestions(frasesRepaso, frasesRepaso, poolGlobal, content_, nivelRepaso));
-  let qi = 0, correctCount = 0, answered = false;
+  let idx = 0;
+  let correctCount = 0;
 
-  function drawQuestion() {
-    const q = questions[qi];
-    answered = false;
-    content.className = 'lesson-card lesson-card--quiz';
+  function draw() {
+    const f = frases[idx];
+    content.className = 'lesson-card lesson-card--game';
     content.innerHTML = `
       <div class="lesson-card__head"><h1>Repaso acumulativo</h1><p>Verbos/estructuras ${nodo.desde} a ${nodo.hasta}</p></div>
       <div class="quiz-progress-row">
-        <span class="quiz-progress-row__text">Pregunta ${qi + 1}/${questions.length}</span>
-        <div class="quiz-progress-row__bar"><div class="quiz-progress-row__fill" style="width:${(qi / questions.length) * 100}%"></div></div>
+        <span class="quiz-progress-row__text">Frase ${idx + 1}/${frases.length}</span>
+        <div class="quiz-progress-row__bar"><div class="quiz-progress-row__fill" style="width:${(idx / frases.length) * 100}%"></div></div>
         <span class="quiz-progress-row__pass">70% para aprobar</span>
       </div>
-      <div class="quiz-question">${q.es}</div>
-      <div class="quiz-options" id="quizOptions">
-        ${q.opciones.map((op, i) => `<button class="quiz-option" data-op="${i}"><span class="quiz-option__letter">${QUIZ_LETRAS[i]}</span><span class="quiz-option__text">${op}</span></button>`).join('')}
+      <div class="game-prompt">
+        <div class="game-prompt__es">${f.es}</div>
+        <div class="game-prompt__hint">${GAME_SR_DISPONIBLE ? 'Toca el micrófono y di la respuesta en voz alta' : 'Escribe la respuesta en inglés'}</div>
       </div>
-      <div class="quiz-feedback" id="quizFeedback"></div>
+      ${GAME_SR_DISPONIBLE ? `
+        <div class="game-mic-main">
+          <button type="button" class="game-mic-main__btn" id="repasoMic">🎤</button>
+          <div class="game-mic-main__status" id="repasoMicStatus">Toca para hablar</div>
+          <div class="game-mic-main__transcript" id="repasoTranscript"></div>
+        </div>
+      ` : `
+        <form class="game-input-row" id="repasoForm">
+          <input type="text" id="repasoInput" autocomplete="off" placeholder="Escribe tu respuesta…" autofocus>
+          <button class="btn btn--primary" type="submit">Enviar</button>
+        </form>
+      `}
+      <div class="game-feedback" id="repasoFeedback"></div>
     `;
-    qs('#quizOptions').querySelectorAll('.quiz-option').forEach(btn => {
-      btn.addEventListener('click', () => {
-        if (answered) return;
-        answered = true;
-        const chosen = q.opciones[+btn.dataset.op];
-        const opts = qs('#quizOptions').querySelectorAll('.quiz-option');
-        opts.forEach(o => o.classList.add('disabled'));
-        if (chosen === q.correcta) { btn.classList.add('correct'); correctCount++; qs('#quizFeedback').textContent = '¡Correcto!'; }
-        else {
-          btn.classList.add('incorrect');
-          opts.forEach((o, i) => { if (q.opciones[i] === q.correcta) o.classList.add('correct'); });
-          qs('#quizFeedback').textContent = `La respuesta correcta era: "${q.correcta}"`;
-        }
-        setTimeout(() => { if (qi < questions.length - 1) { qi++; drawQuestion(); } else drawResult(); }, 1300);
+    if (GAME_SR_DISPONIBLE) setupRepasoMic(); else {
+      qs('#repasoForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const input = qs('#repasoInput');
+        checkAnswer(f, input.value.trim(), () => { input.disabled = true; qs('#repasoForm button').disabled = true; });
       });
+    }
+  }
+
+  function setupRepasoMic() {
+    const micBtn = qs('#repasoMic');
+    const statusEl = qs('#repasoMicStatus');
+    const transcriptEl = qs('#repasoTranscript');
+    const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+    recognition.lang = content_.curso.speechLang || 'en-US';
+    recognition.interimResults = false;
+    recognition.maxAlternatives = 1;
+    let recording = false;
+    recognition.onresult = (e) => {
+      const transcript = e.results[0][0].transcript;
+      transcriptEl.textContent = `"${transcript}"`;
+      checkAnswer(frases[idx], transcript, () => { micBtn.disabled = true; });
+    };
+    recognition.onstart = () => { statusEl.textContent = 'Escuchando…'; };
+    recognition.onend = () => { recording = false; micBtn.classList.remove('recording'); if (statusEl.textContent === 'Escuchando…') statusEl.textContent = 'Toca para hablar'; };
+    micBtn.addEventListener('click', () => {
+      if (recording) { recognition.stop(); return; }
+      recording = true; micBtn.classList.add('recording'); transcriptEl.textContent = '';
+      recognition.start();
     });
   }
 
+  function checkAnswer(f, value, onAnswered) {
+    if (!value) return;
+    onAnswered();
+    const isCorrect = normalizeAnswer(value) === normalizeAnswer(f.en) || isAcceptedAlternate(f.en, value);
+    if (isCorrect) {
+      correctCount++;
+      qs('#repasoFeedback').innerHTML = `<div class="game-feedback correct">¡Correcto!</div>`;
+      if (f.audio) { const a = new Audio(f.audio); a.play().catch(() => speakText(f.en, 1)); } else { speakText(f.en, 1); }
+      setTimeout(() => next(), 1300);
+    } else {
+      qs('#repasoFeedback').innerHTML = `
+        <div class="game-feedback incorrect">La respuesta correcta era: <strong>${f.en}</strong></div>
+        <button type="button" class="add-answer-btn" id="btnAddAlt">➕ Añadir "${value}" como respuesta válida</button>
+        <div style="text-align:center; margin-top:1rem;"><button class="btn btn--outline" id="btnNextAfterFail">Siguiente →</button></div>
+      `;
+      qs('#btnAddAlt').addEventListener('click', () => {
+        submitAlternate(f.en, value);
+        showToast('Guardado. Esa respuesta ahora se acepta para todos.');
+        qs('#btnAddAlt').remove();
+        correctCount++;
+        setTimeout(() => next(), 200);
+      });
+      qs('#btnNextAfterFail').addEventListener('click', () => next());
+    }
+  }
+
+  function next() {
+    if (idx < frases.length - 1) { idx++; draw(); }
+    else drawResult();
+  }
+
   function drawResult() {
-    const pct = Math.round((correctCount / questions.length) * 100);
+    const pct = Math.round((correctCount / frases.length) * 100);
     const pass = pct >= 70;
+    content.className = 'lesson-card';
     content.innerHTML = `
       <div class="quiz-result">
         <span class="eyebrow">${pass ? 'Repaso superado' : 'Casi'}</span>
         <div class="quiz-result__ring" style="--ring-pct:${pct}; --ring-color:${pass ? '#4ade80' : '#f87171'};">
           <div class="quiz-result__score ${pass ? 'pass' : 'fail'}">${pct}%</div>
         </div>
-        <p style="color:var(--gray-400); margin-bottom:1.6rem;">${correctCount} de ${questions.length} correctas</p>
+        <p style="color:var(--gray-400); margin-bottom:1.6rem;">${correctCount} de ${frases.length} correctas</p>
         <button class="btn ${pass ? 'btn--primary' : 'btn--outline'} btn--lg" id="btnContinue">${pass ? 'Continuar el camino →' : 'Reintentar'}</button>
       </div>
     `;
     qs('#btnContinue').addEventListener('click', () => {
       if (pass) { marcarRepasoHecho(nodo.id); if (typeof pushNow === 'function') pushNow(); irACurriculo('✅ Repaso superado.'); }
-      else { questions = shuffle(buildQuizQuestions(frasesRepaso, frasesRepaso, poolGlobal, content_, nivelRepaso)); qi = 0; correctCount = 0; drawQuestion(); }
+      else { idx = 0; correctCount = 0; draw(); }
     });
   }
 
-  drawQuestion();
+  draw();
 }
 
 /* ===========================================================
@@ -479,6 +561,7 @@ async function initLeccion(content_, caminos) {
   const estados = estadoCamino(camino);
   const idxEnCamino = camino.indexOf(nodo);
   if (estados[idxEnCamino] === 'bloqueado') { irACurriculo('Esa lección todavía está bloqueada.'); return; }
+  if (estados[idxEnCamino] === 'premium') { mostrarBloqueoPremium(() => initLeccion(content_, caminos)); return; }
 
   const frases = frasesDeLeccion(content_, nodo);
   const distractorPool = distractorPoolDeLeccion(content_, nodo);
@@ -506,10 +589,11 @@ async function initPaquete(content_, id) {
   const catalogo = content_.pkgCatalog.find(p => p.id === id);
   const frasesRaw = content_.paquetesConFrases[id];
   if (!catalogo || !frasesRaw || !frasesRaw.length) { irACurriculo('Ese paquete todavía no tiene contenido propio.'); return; }
+  if (!esPremium()) { mostrarBloqueoPremium(() => initPaquete(content_, id)); return; }
 
   const ctx = {
     titulo: catalogo.name,
-    sub: 'Paquete temático · acceso libre',
+    sub: 'Paquete temático · membresía',
     frases: frasesRaw,
     distractorPool: frasesRaw,
     poolGlobal: frasesRaw.map(f => f.en),
@@ -538,7 +622,9 @@ async function init() {
     if (!encontrado) { irACurriculo('Repaso no encontrado.'); return; }
     const { nivel, camino, idx } = encontrado;
     if (!nivelDesbloqueado(caminos, nivel)) { irACurriculo(`Termina el Nivel ${nivel - 1} primero.`); return; }
-    if (estadoCamino(camino)[idx] === 'bloqueado') { irACurriculo('Ese repaso todavía está bloqueado.'); return; }
+    const estadoRepaso = estadoCamino(camino)[idx];
+    if (estadoRepaso === 'bloqueado') { irACurriculo('Ese repaso todavía está bloqueado.'); return; }
+    if (estadoRepaso === 'premium') { mostrarBloqueoPremium(() => init()); return; }
     initRepaso(content_, caminos, encontrado);
   }
   else if (TIPO === 'paquete' && ID) initPaquete(content_, ID);

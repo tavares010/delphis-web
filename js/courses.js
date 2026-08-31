@@ -9,11 +9,11 @@
 // pintan var(--blue-500)/var(--cyan-400) en tiempo real (ver aplicarTemaCurso)
 // para que la app entera se sienta distinta según el idioma activo.
 const CURSOS = [
-  { id: 'en', nombre: 'Inglés', bandera: '🇬🇧', speechLang: 'en-US', sufijo: '', disponible: true, colorA: '#38bdf8', colorB: '#7dd3fc' },
-  { id: 'fr', nombre: 'Francés', bandera: '🇫🇷', speechLang: 'fr-FR', sufijo: '_fr', disponible: true, colorA: '#3b82f6', colorB: '#60a5fa' },
+  { id: 'en', nombre: 'Inglés', bandera: '🇬🇧', speechLang: 'en-US', sufijo: '', disponible: true, colorA: '#0369a1', colorB: '#0ea5e9' },
+  { id: 'fr', nombre: 'Francés', bandera: '🇫🇷', speechLang: 'fr-FR', sufijo: '_fr', disponible: true, colorA: '#1d4ed8', colorB: '#3b82f6' },
   { id: 'de', nombre: 'Alemán', bandera: '🇩🇪', speechLang: 'de-DE', sufijo: '_de', disponible: true, colorA: '#d97706', colorB: '#fbbf24' },
   { id: 'it', nombre: 'Italiano', bandera: '🇮🇹', speechLang: 'it-IT', sufijo: '_it', disponible: true, colorA: '#059669', colorB: '#a3e635' },
-  { id: 'pt', nombre: 'Portugués', bandera: '🇵🇹', speechLang: 'pt-PT', sufijo: '_pt', disponible: true, colorA: '#e11d48', colorB: '#fb923c' },
+  { id: 'pt', nombre: 'Portugués', bandera: '🇵🇹', speechLang: 'pt-PT', sufijo: '_pt', disponible: true, colorA: '#dc2626', colorB: '#16a34a' },
 ];
 
 const CURSO_ACTIVO_KEY = 'delphis_curso_activo';

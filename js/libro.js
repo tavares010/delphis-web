@@ -21,25 +21,35 @@ let karaokePointer = 0;
 let currentAudio = null;
 
 function capituloInfo(capIndex) {
+  // La introducción es gratis para todo el mundo, sin importar en qué
+  // punto del currículo caiga normalmente su capítulo -si dependiera del
+  // recorrido secuencial nunca se podría llegar a ella sin membresía,
+  // porque las lecciones de antes en ese camino sí la piden (ver
+  // estadoCamino en progress.js, que corta el recorrido en la primera
+  // parada de pago).
+  if (capIndex === FREE_BOOK_CHAPTER) return { desbloqueado: true, razon: 'ok' };
   for (const nivel of [1, 2, 3]) {
     const camino = CAMINOS[`nivel${nivel}`];
     const idx = camino.findIndex(n => n.tipo === 'libro' && n.capIndex === capIndex);
     if (idx !== -1) {
-      if (!nivelDesbloqueado(CAMINOS, nivel)) return { desbloqueado: false };
-      return { desbloqueado: estadoCamino(camino)[idx] !== 'bloqueado' };
+      if (!nivelDesbloqueado(CAMINOS, nivel)) return { desbloqueado: false, razon: 'progreso' };
+      const estado = estadoCamino(camino)[idx];
+      if (estado === 'bloqueado') return { desbloqueado: false, razon: 'progreso' };
+      if (estado === 'premium') return { desbloqueado: false, razon: 'premium' };
+      return { desbloqueado: true, razon: 'ok' };
     }
   }
-  return { desbloqueado: false };
+  return { desbloqueado: false, razon: 'progreso' };
 }
 
 function renderToc() {
   tocList.innerHTML = CONTENT.bookChapters.map(cap => {
     const active = cap.index === capId;
-    const { desbloqueado } = capituloInfo(cap.index);
+    const { desbloqueado, razon } = capituloInfo(cap.index);
     return `
-      <div class="book-toc__item ${active ? 'active' : ''} ${desbloqueado ? '' : 'locked'}" data-cap="${cap.index}" data-locked="${!desbloqueado}">
+      <div class="book-toc__item ${active ? 'active' : ''} ${desbloqueado ? '' : 'locked'}" data-cap="${cap.index}" data-locked="${!desbloqueado}" data-locked-reason="${razon}">
         <span class="book-toc__num">${cap.index}</span>
-        <span>${cap.titulo} ${desbloqueado ? '' : '🔒'}</span>
+        <span>${cap.titulo} ${desbloqueado ? '' : (razon === 'premium' ? '💎' : '🔒')}</span>
       </div>
     `;
   }).join('');
@@ -47,7 +57,8 @@ function renderToc() {
   tocList.querySelectorAll('.book-toc__item').forEach(item => {
     item.addEventListener('click', () => {
       if (item.dataset.locked === 'true') {
-        showToast('Este capítulo se desbloquea avanzando en el curso.');
+        if (item.dataset.lockedReason === 'premium') mostrarMuroPremium(() => { renderToc(); renderChapterContent(); });
+        else showToast('Este capítulo se desbloquea avanzando en el curso.');
         return;
       }
       location.href = `libro.html?cap=${item.dataset.cap}`;
@@ -71,32 +82,41 @@ function buildReaderHTML(chapter) {
 }
 
 function renderChapterContent() {
-  const { desbloqueado } = capituloInfo(capId);
+  const { desbloqueado, razon } = capituloInfo(capId);
   const chapter = CONTENT.bookChapters[capId];
 
   if (!chapter || !desbloqueado) {
+    const esPremiumWall = chapter && razon === 'premium';
     readerPanel.innerHTML = `
       <div style="text-align:center; padding:3rem 1rem;">
-        <div style="font-size:2.6rem; margin-bottom:1rem;">🔒</div>
-        <h2 style="margin-bottom:.6rem;">Este capítulo aún no está disponible</h2>
-        <p style="color:var(--gray-400); max-width:420px; margin:0 auto;">Se desbloquea avanzando en el currículo del curso.</p>
-        <a href="curriculo.html" class="btn btn--primary" style="margin-top:1.6rem;">Ir al curso</a>
+        <div style="font-size:2.6rem; margin-bottom:1rem;">${esPremiumWall ? '💎' : '🔒'}</div>
+        <h2 style="margin-bottom:.6rem;">${esPremiumWall ? 'Este capítulo es de la membresía' : 'Este capítulo aún no está disponible'}</h2>
+        <p style="color:var(--gray-400); max-width:420px; margin:0 auto;">${esPremiumWall
+          ? 'La introducción es gratis para siempre. El resto del libro se desbloquea con la membresía.'
+          : 'Se desbloquea avanzando en el currículo del curso.'}</p>
+        ${esPremiumWall
+          ? `<button class="btn btn--primary" style="margin-top:1.6rem;" id="btnBookPremium">Suscribirme</button>`
+          : `<a href="curriculo.html" class="btn btn--primary" style="margin-top:1.6rem;">Ir al curso</a>`}
       </div>`;
+    if (esPremiumWall) qsL('#btnBookPremium').addEventListener('click', () => mostrarMuroPremium(() => { renderToc(); renderChapterContent(); }));
     return;
   }
 
   const paragraphsHtml = buildReaderHTML(chapter);
   const yaLeido = libroLeido(capId);
+  const minLectura = Math.max(1, Math.round(chapter.wordCount / 200));
 
   readerPanel.innerHTML = `
     <h2>${chapter.titulo}</h2>
-    <div class="reader-controls">
-      <button class="audio-btn" id="btnPlay">▶️ Escuchar capítulo</button>
-      <button class="audio-btn audio-btn--slow" id="btnPlaySlow">🐢 Narración lenta</button>
-      <button class="audio-btn" id="btnStop">⏹️ Detener</button>
-      <button class="audio-btn" id="btnFullscreen">📖 Modo lectura sin distracciones</button>
+    <p class="reader-meta">Capítulo ${chapter.index} · ~${minLectura} min de lectura</p>
+    <div class="reader-player">
+      <button class="reader-player__play" id="btnPlay">▶️ Escuchar</button>
+      <button class="reader-player__icon-btn" id="btnPlaySlow" title="Narración lenta" aria-label="Narración lenta">🐢</button>
+      <button class="reader-player__icon-btn" id="btnStop" title="Detener" aria-label="Detener">⏹️</button>
+      <span class="reader-player__spacer"></span>
+      <button class="reader-player__full" id="btnFullscreen">📖 Lectura sin distracciones</button>
     </div>
-    <div class="reader-text" id="readerText">${paragraphsHtml}</div>
+    <div class="reader-text" id="readerText" lang="${CONTENT.curso.speechLang.split('-')[0]}">${paragraphsHtml}</div>
 
     <div style="margin-top:2.2rem; display:flex; gap:1rem; flex-wrap:wrap;">
       <button class="btn btn--primary" id="btnFinishChapter" ${yaLeido ? 'disabled style="opacity:.5;"' : ''}>${yaLeido ? '✅ Ya lo marcaste como leído' : '✅ Marcar capítulo como leído'}</button>
@@ -115,7 +135,7 @@ function renderChapterContent() {
 
   qsL('#btnPlay').addEventListener('click', () => playChapter(chapter, 1));
   qsL('#btnPlaySlow').addEventListener('click', () => playChapter(chapter, 0.65));
-  qsL('#btnStop').addEventListener('click', stopChapter);
+  qsL('#btnStop').addEventListener('click', () => stopChapter());
   qsL('#btnFullscreen').addEventListener('click', () => openFullscreen(paragraphsHtml));
   qsL('#btnFinishChapter').addEventListener('click', () => {
     marcarLibroLeido(capId);
@@ -132,14 +152,22 @@ function renderChapterContent() {
 }
 
 /* ---------- Audio real + karaoke por marcas de tiempo reales ---------- */
+function setPlayerActive(rate) {
+  const play = qsL('#btnPlay');
+  const slow = qsL('#btnPlaySlow');
+  if (play) play.classList.toggle('active', rate === 1);
+  if (slow) slow.classList.toggle('active', rate === 0.65);
+}
+
 function playChapter(chapter, rate) {
   stopChapter();
   karaokePointer = 0;
   currentAudio = new Audio(chapter.audio);
   currentAudio.playbackRate = rate;
   currentAudio.addEventListener('timeupdate', onTimeUpdate);
-  currentAudio.addEventListener('ended', clearHighlights);
+  currentAudio.addEventListener('ended', () => { clearHighlights(); autoScrollPaused = false; clearTimeout(autoScrollResumeTimer); hideAutoScrollBadge(); setPlayerActive(null); });
   currentAudio.play().catch(() => showToast('No se pudo reproducir el audio.'));
+  setPlayerActive(rate);
 }
 
 function onTimeUpdate() {
@@ -152,13 +180,64 @@ function onTimeUpdate() {
 function stopChapter() {
   if (currentAudio) { currentAudio.pause(); currentAudio.removeEventListener('timeupdate', onTimeUpdate); currentAudio = null; }
   clearHighlights();
+  autoScrollPaused = false;
+  clearTimeout(autoScrollResumeTimer);
+  hideAutoScrollBadge();
+  setPlayerActive(null);
+}
+
+// El auto-scroll del karaoke antes re-centraba la palabra en CADA cambio,
+// así que en cuanto el usuario intentaba desplazarse a mano (para releer
+// algo o simplemente llegar al botón de Detener) el siguiente tick lo
+// devolvía de golpe -en móvil el lector quedaba literalmente inmanipulable.
+// Ahora: (1) solo se auto-desplaza si la palabra realmente sale de una
+// franja cómoda de lectura, no en cada palabra, y (2) cualquier scroll
+// manual real (rueda/touch) lo pausa unos segundos y muestra un aviso
+// para retomarlo cuando el usuario quiera.
+let autoScrollPaused = false;
+let autoScrollResumeTimer = null;
+let autoScrollProgrammatic = false;
+
+function pauseAutoScroll() {
+  if (!currentAudio) return; // solo tiene sentido mientras suena el karaoke
+  autoScrollPaused = true;
+  showAutoScrollBadge();
+  clearTimeout(autoScrollResumeTimer);
+  autoScrollResumeTimer = setTimeout(() => { autoScrollPaused = false; hideAutoScrollBadge(); }, 4000);
+}
+
+['wheel', 'touchmove'].forEach(evt => {
+  document.addEventListener(evt, () => { if (!autoScrollProgrammatic) pauseAutoScroll(); }, { passive: true });
+});
+
+function showAutoScrollBadge() {
+  let badge = document.getElementById('autoScrollBadge');
+  if (badge) return;
+  badge = document.createElement('button');
+  badge.id = 'autoScrollBadge';
+  badge.type = 'button';
+  badge.className = 'auto-scroll-badge';
+  badge.textContent = '⏸ Seguimiento pausado — toca para seguir la lectura';
+  badge.addEventListener('click', () => { autoScrollPaused = false; clearTimeout(autoScrollResumeTimer); hideAutoScrollBadge(); });
+  document.body.appendChild(badge);
+}
+function hideAutoScrollBadge() {
+  const badge = document.getElementById('autoScrollBadge');
+  if (badge) badge.remove();
 }
 
 function highlightWord(gidx) {
   clearHighlights();
   document.querySelectorAll(`.tap-word[data-gidx="${gidx}"]`).forEach(el => {
     el.classList.add('speaking');
+    if (autoScrollPaused) return;
+    const rect = el.getBoundingClientRect();
+    const comfortTop = window.innerHeight * 0.25;
+    const comfortBottom = window.innerHeight * 0.75;
+    if (rect.top >= comfortTop && rect.bottom <= comfortBottom) return; // ya está en zona cómoda, no muevas nada
+    autoScrollProgrammatic = true;
     el.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    setTimeout(() => { autoScrollProgrammatic = false; }, 600);
   });
 }
 function clearHighlights() {
@@ -168,7 +247,7 @@ function clearHighlights() {
 function openFullscreen(paragraphsHtml) {
   const overlay = document.createElement('div');
   overlay.className = 'reader-mode-full';
-  overlay.innerHTML = `<button class="reader-mode-full__close" id="btnCloseFull">✕</button><div class="reader-text">${paragraphsHtml}</div>`;
+  overlay.innerHTML = `<button class="reader-mode-full__close" id="btnCloseFull">✕</button><div class="reader-text" lang="${CONTENT.curso.speechLang.split('-')[0]}">${paragraphsHtml}</div>`;
   document.body.appendChild(overlay);
   qsL('#btnCloseFull', overlay).addEventListener('click', () => overlay.remove());
 }
