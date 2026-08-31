@@ -256,32 +256,66 @@ function renderQuiz(ctx) {
    =========================================================== */
 const GAME_SR_DISPONIBLE = !!(window.SpeechRecognition || window.webkitSpeechRecognition);
 
+// Contrarreloj de verdad: 30s en total para toda la ronda (no por
+// frase), y fallar una no para nada -solo el reloj llegando a 0 acaba
+// la ronda. Antes cada fallo pedía confirmar "Siguiente" a mano y la
+// ronda terminaba al acabar la lista de frases, sin reloj real.
+const GAME_DURACION_S = 30;
+
 function renderGame(ctx) {
   renderSteps('game', ['study', 'quiz'], () => renderStudy(ctx));
   content.className = 'lesson-card lesson-card--game';
-  const frases = shuffle(ctx.frases);
+  let frases = shuffle(ctx.frases);
   let idx = 0;
   let streak = 0;
+  let aciertos = 0;
+  let intentos = 0;
+  // Por si el micrófono "existe" pero no reconoce bien ese idioma en
+  // concreto (pasa en algunos móviles con idiomas que no son inglés) —
+  // sin esto, quien tuviera ese problema se quedaba atascado sin forma
+  // de cambiar a escribir la respuesta.
+  let modoTexto = false;
   let startTime = Date.now();
+  let tiempoRestante = GAME_DURACION_S;
+  let timerId = null;
+  let terminado = false;
+
+  function pararReloj() { clearInterval(timerId); timerId = null; }
+
+  function arrancarReloj() {
+    pararReloj();
+    timerId = setInterval(() => {
+      tiempoRestante--;
+      const timerEl = qs('#gameTimer');
+      if (timerEl) {
+        timerEl.textContent = `${tiempoRestante}s`;
+        timerEl.classList.toggle('game-timer--urgente', tiempoRestante <= 10);
+      }
+      if (tiempoRestante <= 0) { pararReloj(); finish(); }
+    }, 1000);
+  }
 
   function draw() {
+    if (terminado) return;
     startTime = Date.now();
+    if (idx >= frases.length) { frases = shuffle(ctx.frases); idx = 0; } // se repiten mezcladas si da tiempo a más
     const f = frases[idx];
+    const usarMic = GAME_SR_DISPONIBLE && !modoTexto;
     content.innerHTML = `
       <button type="button" class="breadcrumb-back" id="btnGameBack">← Volver al quiz</button>
       <div class="lesson-card__head">
         <h1>${ctx.titulo} · Juego</h1>
-        <p>Produce la respuesta tú solo. Sin pistas.</p>
+        <p>Produce todas las que puedas antes de que se acabe el tiempo.</p>
       </div>
       <div class="game-topbar">
-        <span style="font-size:.82rem; color:var(--gray-400);">Frase ${idx + 1} de ${frases.length}</span>
+        <div class="game-timer" id="gameTimer">${tiempoRestante}s</div>
         <div class="game-streak">🔥 Racha: ${streak}</div>
       </div>
       <div class="game-prompt">
         <div class="game-prompt__es">${f.es}</div>
-        <div class="game-prompt__hint">${GAME_SR_DISPONIBLE ? 'Toca el micrófono y di la respuesta en voz alta' : 'Escribe la respuesta en inglés'}</div>
+        <div class="game-prompt__hint">${usarMic ? 'Toca el micrófono y di la respuesta en voz alta' : 'Escribe la respuesta'}</div>
       </div>
-      ${GAME_SR_DISPONIBLE ? `
+      ${usarMic ? `
         <div class="game-mic-main">
           <button type="button" class="game-mic-main__btn" id="gameMic">🎤</button>
           <div class="game-mic-main__status" id="gameMicStatus">Toca para hablar</div>
@@ -294,9 +328,12 @@ function renderGame(ctx) {
         </form>
       `}
       <div class="game-feedback" id="gameFeedback"></div>
+      ${GAME_SR_DISPONIBLE ? `<button type="button" class="game-mode-toggle" id="btnModoTexto">${usarMic ? '✍️ El micrófono no me reconoce bien, prefiero escribir' : '🎤 Volver a usar el micrófono'}</button>` : ''}
     `;
-    qs('#btnGameBack').addEventListener('click', () => renderQuiz(ctx));
-    if (GAME_SR_DISPONIBLE) setupGameMic(); else {
+    qs('#btnGameBack').addEventListener('click', () => { pararReloj(); terminado = true; renderQuiz(ctx); });
+    const btnModoTexto = qs('#btnModoTexto');
+    if (btnModoTexto) btnModoTexto.addEventListener('click', () => { modoTexto = !modoTexto; draw(); });
+    if (usarMic) setupGameMic(); else {
       qs('#gameForm').addEventListener('submit', (e) => {
         e.preventDefault();
         const input = qs('#gameInput');
@@ -330,32 +367,40 @@ function renderGame(ctx) {
   }
 
   function checkAnswer(f, value, onAnswered) {
-    if (!value) return;
+    if (!value || terminado) return;
     onAnswered();
     const elapsed = (Date.now() - startTime) / 1000;
     const isCorrect = normalizeAnswer(value) === normalizeAnswer(f.en) || isAcceptedAlternate(f.en, value);
 
     if (isCorrect) {
+      intentos++;
       onCorrect(f, elapsed);
     } else {
       streak = 0;
       qs('#gameFeedback').innerHTML = `
         <div class="game-feedback incorrect">La respuesta correcta era: <strong>${f.en}</strong></div>
         <button type="button" class="add-answer-btn" id="btnAddAlt">➕ Añadir "${value}" como respuesta válida</button>
-        <div style="text-align:center; margin-top:1rem;"><button class="btn btn--outline" id="btnNextAfterFail">Siguiente →</button></div>
       `;
-      qs('#btnAddAlt').addEventListener('click', () => {
+      // Fallar no para nada -solo el reloj acaba la ronda, así que se
+      // sigue a la siguiente frase sola tras un momento breve para leer
+      // la respuesta correcta, salvo que el usuario la marque como
+      // válida antes: entonces cuenta como acierto de verdad.
+      const avance = setTimeout(() => { intentos++; next(); }, 1600);
+      const btnAlt = qs('#btnAddAlt');
+      if (btnAlt) btnAlt.addEventListener('click', (e) => {
+        e.stopPropagation();
+        clearTimeout(avance);
+        intentos++;
         submitAlternate(f.en, value);
         showToast('Guardado. Esa respuesta ahora se acepta para todos.');
-        qs('#btnAddAlt').remove();
         onCorrect(f, elapsed, true);
       });
-      qs('#btnNextAfterFail').addEventListener('click', () => next());
     }
   }
 
   function onCorrect(f, elapsed, viaCorreccion) {
     streak++;
+    aciertos++;
     const res = addGamePoints(elapsed);
     touchStreak();
     const combo = comboMessage(streak);
@@ -363,22 +408,26 @@ function renderGame(ctx) {
     if (f.audio) { const a = new Audio(f.audio); a.play().catch(() => speakText(f.en, 1)); } else { speakText(f.en, 1); }
     if (combo) celebrate(combo);
     if (res.subioDeRango) showToast('🎉 ¡Subiste de rango! +50 pts extra');
-    setTimeout(() => next(), viaCorreccion ? 200 : 1400);
+    setTimeout(() => next(), viaCorreccion ? 200 : 900);
   }
 
   function next() {
-    if (idx < frases.length - 1) { idx++; draw(); }
-    else { finish(); }
+    if (terminado) return;
+    idx++;
+    draw();
   }
 
   function finish() {
+    if (terminado) return;
+    terminado = true;
+    pararReloj();
     ctx.onGameDone();
     if (typeof pushNow === 'function') pushNow();
     content.innerHTML = `
       <div class="quiz-result">
-        <span class="eyebrow">Lección completada</span>
-        <div style="font-size:3.4rem; margin:1rem 0;">🎉</div>
-        <h2 style="margin-bottom:.6rem;">${ctx.titulo} · listo</h2>
+        <span class="eyebrow">¡Se acabó el tiempo!</span>
+        <div style="font-size:3.4rem; margin:1rem 0;">⏱️</div>
+        <h2 style="margin-bottom:.6rem;">${aciertos} de ${intentos} en ${GAME_DURACION_S}s</h2>
         <p style="color:var(--gray-400); margin-bottom:1.8rem;">Sigues avanzando por el camino del curso.</p>
         <div class="hero__cta" style="justify-content:center;">
           <a href="curriculo.html" class="btn btn--primary btn--lg">Volver al curso →</a>
@@ -390,6 +439,7 @@ function renderGame(ctx) {
   }
 
   draw();
+  arrancarReloj();
 }
 
 /* ===========================================================
@@ -435,9 +485,11 @@ function initRepaso(content_, caminos, encontrado) {
 
   let idx = 0;
   let correctCount = 0;
+  let modoTexto = false; // por si el micro "existe" pero no reconoce bien ese idioma
 
   function draw() {
     const f = frases[idx];
+    const usarMic = GAME_SR_DISPONIBLE && !modoTexto;
     content.className = 'lesson-card lesson-card--game';
     content.innerHTML = `
       <div class="lesson-card__head"><h1>Repaso acumulativo</h1><p>Verbos/estructuras ${nodo.desde} a ${nodo.hasta}</p></div>
@@ -448,9 +500,9 @@ function initRepaso(content_, caminos, encontrado) {
       </div>
       <div class="game-prompt">
         <div class="game-prompt__es">${f.es}</div>
-        <div class="game-prompt__hint">${GAME_SR_DISPONIBLE ? 'Toca el micrófono y di la respuesta en voz alta' : 'Escribe la respuesta en inglés'}</div>
+        <div class="game-prompt__hint">${usarMic ? 'Toca el micrófono y di la respuesta en voz alta' : 'Escribe la respuesta'}</div>
       </div>
-      ${GAME_SR_DISPONIBLE ? `
+      ${usarMic ? `
         <div class="game-mic-main">
           <button type="button" class="game-mic-main__btn" id="repasoMic">🎤</button>
           <div class="game-mic-main__status" id="repasoMicStatus">Toca para hablar</div>
@@ -463,8 +515,11 @@ function initRepaso(content_, caminos, encontrado) {
         </form>
       `}
       <div class="game-feedback" id="repasoFeedback"></div>
+      ${GAME_SR_DISPONIBLE ? `<button type="button" class="game-mode-toggle" id="btnModoTextoRepaso">${usarMic ? '✍️ El micrófono no me reconoce bien, prefiero escribir' : '🎤 Volver a usar el micrófono'}</button>` : ''}
     `;
-    if (GAME_SR_DISPONIBLE) setupRepasoMic(); else {
+    const btnModoTexto = qs('#btnModoTextoRepaso');
+    if (btnModoTexto) btnModoTexto.addEventListener('click', () => { modoTexto = !modoTexto; draw(); });
+    if (usarMic) setupRepasoMic(); else {
       qs('#repasoForm').addEventListener('submit', (e) => {
         e.preventDefault();
         const input = qs('#repasoInput');

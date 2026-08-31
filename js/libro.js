@@ -7,6 +7,16 @@
 function qsL(sel, root = document) { return root.querySelector(sel); }
 function escapeHtml(s) { return (s || '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); }
 
+// El chat con la IA sobre el libro (y su micrófono) estaban escritos a
+// fuego para inglés -el prompt le decía a la IA "eres un compañero de
+// conversación en INGLÉS" y el micrófono escuchaba en inglés SIEMPRE,
+// aunque el libro (y el resto del curso) ya está disponible en otros
+// idiomas. Un estudiante de francés hablándole en francés a un
+// micrófono puesto en inglés, con una IA que corrige errores de
+// inglés, iba a sonar "roto" sin serlo -era el idioma mal puesto, no
+// el micrófono en sí.
+const IDIOMA_EN_INGLES = { en: 'English', fr: 'French', de: 'German', it: 'Italian', pt: 'Portuguese' };
+
 const bookParams = new URLSearchParams(location.search);
 let capId = parseInt(bookParams.get('cap'), 10);
 if (isNaN(capId)) capId = 0;
@@ -19,6 +29,22 @@ let CAMINOS = null;
 let flatWords = [];       // {s,e} en el orden de aparición del capítulo actual
 let karaokePointer = 0;
 let currentAudio = null;
+let ttsActive = false;    // lectura en voz alta sintética, para capítulos sin narración grabada
+
+// Capítulos de "La Sed" en español -independiente del curso activo, para
+// poder alternar entre leer en español o en el idioma que se está
+// estudiando. Puede no existir todavía (traducción en curso) sin romper
+// nada: el lector simplemente no ofrece el botón de cambiar idioma.
+let CONTENT_ES_CHAPTERS = null;
+let mostrandoEspanol = false;   // preferencia elegida por el usuario
+let verEnEspanolActual = false; // lo que de verdad se está mostrando ahora (puede diferir si este capítulo aún no tiene versión en español)
+
+function chapterEsDe(capIndex) {
+  return CONTENT_ES_CHAPTERS ? (CONTENT_ES_CHAPTERS[capIndex] || null) : null;
+}
+function idiomaHablaMostrado() {
+  return verEnEspanolActual ? 'es-ES' : (CONTENT.curso.speechLang || 'en-US');
+}
 
 function capituloInfo(capIndex) {
   // La introducción es gratis para todo el mundo, sin importar en qué
@@ -83,10 +109,10 @@ function buildReaderHTML(chapter) {
 
 function renderChapterContent() {
   const { desbloqueado, razon } = capituloInfo(capId);
-  const chapter = CONTENT.bookChapters[capId];
+  const chapterIdioma = CONTENT.bookChapters[capId];
 
-  if (!chapter || !desbloqueado) {
-    const esPremiumWall = chapter && razon === 'premium';
+  if (!chapterIdioma || !desbloqueado) {
+    const esPremiumWall = chapterIdioma && razon === 'premium';
     readerPanel.innerHTML = `
       <div style="text-align:center; padding:3rem 1rem;">
         <div style="font-size:2.6rem; margin-bottom:1rem;">${esPremiumWall ? '💎' : '🔒'}</div>
@@ -102,9 +128,25 @@ function renderChapterContent() {
     return;
   }
 
+  // El toggle español/idioma cambia SOLO qué texto se muestra -el acceso
+  // (candado/membresía) siempre depende del capítulo en el idioma del
+  // curso, nunca de la versión en español, para no abrir un atajo al muro
+  // de pago con solo tocar "Español".
+  const chapterEs = chapterEsDe(capId);
+  const verEnEspanol = mostrandoEspanol && !!chapterEs;
+  verEnEspanolActual = verEnEspanol;
+  const chapter = verEnEspanol ? chapterEs : chapterIdioma;
+  const idiomaMostrado = verEnEspanol ? 'es' : CONTENT.curso.speechLang.split('-')[0];
+
   const paragraphsHtml = buildReaderHTML(chapter);
   const yaLeido = libroLeido(capId);
-  const minLectura = Math.max(1, Math.round(chapter.wordCount / 200));
+  const minLectura = Math.max(1, Math.round(chapterIdioma.wordCount / 200));
+
+  const langToggleHtml = chapterEs ? `
+    <div class="reader-lang-toggle" id="readerLangToggle">
+      <button type="button" class="reader-lang-toggle__btn ${!verEnEspanol ? 'active' : ''}" data-es="false">${CONTENT.curso.bandera} ${CONTENT.curso.nombre}</button>
+      <button type="button" class="reader-lang-toggle__btn ${verEnEspanol ? 'active' : ''}" data-es="true">🇪🇸 Español</button>
+    </div>` : '';
 
   readerPanel.innerHTML = `
     <h2>${chapter.titulo}</h2>
@@ -114,14 +156,15 @@ function renderChapterContent() {
       <button class="reader-player__icon-btn" id="btnPlaySlow" title="Narración lenta" aria-label="Narración lenta">🐢</button>
       <button class="reader-player__icon-btn" id="btnStop" title="Detener" aria-label="Detener">⏹️</button>
       <span class="reader-player__spacer"></span>
+      ${langToggleHtml}
       <button class="reader-player__full" id="btnFullscreen">📖 Lectura sin distracciones</button>
     </div>
-    <div class="reader-text" id="readerText" lang="${CONTENT.curso.speechLang.split('-')[0]}">${paragraphsHtml}</div>
+    <div class="reader-text" id="readerText" lang="${idiomaMostrado}">${paragraphsHtml}</div>
 
     <div style="margin-top:2.2rem; display:flex; gap:1rem; flex-wrap:wrap;">
       <button class="btn btn--primary" id="btnFinishChapter" ${yaLeido ? 'disabled style="opacity:.5;"' : ''}>${yaLeido ? '✅ Ya lo marcaste como leído' : '✅ Marcar capítulo como leído'}</button>
       <a href="repaso.html" class="btn btn--outline">🔁 Repasar mi vocabulario</a>
-      ${chapter.quizKey !== null ? '<button class="btn btn--outline" id="btnBookQuiz">🧠 Quiz de comprensión</button>' : ''}
+      ${chapterIdioma.quizKey !== null ? '<button class="btn btn--outline" id="btnBookQuiz">🧠 Quiz de comprensión</button>' : ''}
     </div>
 
     <div id="bookQuizArea"></div>
@@ -136,7 +179,18 @@ function renderChapterContent() {
   qsL('#btnPlay').addEventListener('click', () => playChapter(chapter, 1));
   qsL('#btnPlaySlow').addEventListener('click', () => playChapter(chapter, 0.65));
   qsL('#btnStop').addEventListener('click', () => stopChapter());
-  qsL('#btnFullscreen').addEventListener('click', () => openFullscreen(paragraphsHtml));
+  qsL('#btnFullscreen').addEventListener('click', () => openFullscreen(paragraphsHtml, idiomaMostrado));
+  if (langToggleHtml) {
+    qsL('#readerLangToggle').querySelectorAll('.reader-lang-toggle__btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const quiereEs = btn.dataset.es === 'true';
+        if (quiereEs === verEnEspanol) return;
+        stopChapter();
+        mostrandoEspanol = quiereEs;
+        renderChapterContent();
+      });
+    });
+  }
   qsL('#btnFinishChapter').addEventListener('click', () => {
     marcarLibroLeido(capId);
     touchStreak();
@@ -145,10 +199,10 @@ function renderChapterContent() {
     renderToc();
     renderChapterContent();
   });
-  if (chapter.quizKey !== null) {
-    qsL('#btnBookQuiz').addEventListener('click', () => renderBookQuiz(chapter));
+  if (chapterIdioma.quizKey !== null) {
+    qsL('#btnBookQuiz').addEventListener('click', () => renderBookQuiz(chapterIdioma));
   }
-  qsL('#btnStartChat').addEventListener('click', () => startBookChat(chapter));
+  qsL('#btnStartChat').addEventListener('click', () => startBookChat(chapterIdioma));
 }
 
 /* ---------- Audio real + karaoke por marcas de tiempo reales ---------- */
@@ -161,13 +215,34 @@ function setPlayerActive(rate) {
 
 function playChapter(chapter, rate) {
   stopChapter();
-  karaokePointer = 0;
-  currentAudio = new Audio(chapter.audio);
-  currentAudio.playbackRate = rate;
-  currentAudio.addEventListener('timeupdate', onTimeUpdate);
-  currentAudio.addEventListener('ended', () => { clearHighlights(); autoScrollPaused = false; clearTimeout(autoScrollResumeTimer); hideAutoScrollBadge(); setPlayerActive(null); });
-  currentAudio.play().catch(() => showToast('No se pudo reproducir el audio.'));
+  if (chapter.audio) {
+    karaokePointer = 0;
+    currentAudio = new Audio(chapter.audio);
+    currentAudio.playbackRate = rate;
+    currentAudio.addEventListener('timeupdate', onTimeUpdate);
+    currentAudio.addEventListener('ended', () => { clearHighlights(); autoScrollPaused = false; clearTimeout(autoScrollResumeTimer); hideAutoScrollBadge(); setPlayerActive(null); });
+    currentAudio.play().catch(() => showToast('No se pudo reproducir el audio.'));
+    setPlayerActive(rate);
+  } else {
+    playChapterTTS(chapter, rate);
+  }
+}
+
+// Los capítulos traducidos (a otro idioma o al español) no tienen
+// narración grabada real, así que no hay marcas de tiempo para hacer
+// karaoke -en su lugar se lee el capítulo en voz alta por síntesis de
+// voz del navegador, párrafo a párrafo.
+function playChapterTTS(chapter, rate) {
+  ttsActive = true;
+  const parrafos = chapter.paragraphs.map(p => p.map(w => w.w).join(' ')).filter(Boolean);
+  const lang = idiomaHablaMostrado();
+  let idx = 0;
   setPlayerActive(rate);
+  const hablarSiguiente = () => {
+    if (!ttsActive || idx >= parrafos.length) { ttsActive = false; setPlayerActive(null); return; }
+    speakText(parrafos[idx], rate, lang, { onEnd: () => { idx++; hablarSiguiente(); } });
+  };
+  hablarSiguiente();
 }
 
 function onTimeUpdate() {
@@ -179,6 +254,7 @@ function onTimeUpdate() {
 
 function stopChapter() {
   if (currentAudio) { currentAudio.pause(); currentAudio.removeEventListener('timeupdate', onTimeUpdate); currentAudio = null; }
+  if (ttsActive) { ttsActive = false; if ('speechSynthesis' in window) window.speechSynthesis.cancel(); }
   clearHighlights();
   autoScrollPaused = false;
   clearTimeout(autoScrollResumeTimer);
@@ -244,10 +320,10 @@ function clearHighlights() {
   document.querySelectorAll('.tap-word.speaking').forEach(el => el.classList.remove('speaking'));
 }
 
-function openFullscreen(paragraphsHtml) {
+function openFullscreen(paragraphsHtml, idiomaMostrado) {
   const overlay = document.createElement('div');
   overlay.className = 'reader-mode-full';
-  overlay.innerHTML = `<button class="reader-mode-full__close" id="btnCloseFull">✕</button><div class="reader-text" lang="${CONTENT.curso.speechLang.split('-')[0]}">${paragraphsHtml}</div>`;
+  overlay.innerHTML = `<button class="reader-mode-full__close" id="btnCloseFull">✕</button><div class="reader-text" lang="${idiomaMostrado || CONTENT.curso.speechLang.split('-')[0]}">${paragraphsHtml}</div>`;
   document.body.appendChild(overlay);
   qsL('#btnCloseFull', overlay).addEventListener('click', () => overlay.remove());
 }
@@ -266,28 +342,42 @@ document.addEventListener('click', (e) => {
   const rect = word.getBoundingClientRect();
   const tip = document.createElement('div');
   tip.className = 'word-tooltip';
-  tip.style.left = Math.min(rect.left, window.innerWidth - 220) + 'px';
+  tip.style.left = Math.min(rect.left, window.innerWidth - 300) + 'px';
   tip.style.top = (rect.bottom + window.scrollY + 8) + 'px';
   tip.innerHTML = `<div>Traduciendo…</div>`;
   document.body.appendChild(tip);
   activeTooltip = tip;
-  const despertando = setTimeout(() => {
-    if (activeTooltip === tip) tip.innerHTML = `<div>El servidor se está despertando, puede tardar un poco…</div>`;
-  }, 5000);
 
-  translateToSpanish(clean).then(result => {
-    clearTimeout(despertando);
+  // Si se está mostrando la versión en español, la palabra tocada ya es
+  // española -traducir desde el idioma del curso aquí sería un error real
+  // (el mismo tipo de bug que tenía el chat del libro antes: asumir un
+  // idioma fijo en vez del que de verdad se está leyendo).
+  const idiomaOrigen = verEnEspanolActual ? 'es' : (CONTENT.curso.speechLang || 'en-US').split('-')[0];
+  translateToSpanish(clean, idiomaOrigen).then(result => {
     if (activeTooltip !== tip) return; // se cerró mientras tanto
     if (!result || result.error || !result.es) {
       tip.innerHTML = `<div>No se pudo traducir ahora mismo.</div>`;
       return;
     }
+    const sentidosHtml = (result.sentidos || []).length
+      ? `<div class="word-tooltip__senses">${result.sentidos.map(s => `<div class="word-tooltip__sense"><b>${s.categoria}:</b> ${s.traducciones.join(', ')}</div>`).join('')}</div>`
+      : '';
+    const ejemploHtml = result.ejemplo
+      ? `<div class="word-tooltip__example">"${result.ejemplo}"</div>`
+      : '';
     tip.innerHTML = `
       <div><strong>${clean}</strong> → ${result.es}</div>
-      <button id="tipSpeak">🔊 Escuchar</button>
-      <button id="tipSave">➕ Guardar para repasar</button>
+      ${sentidosHtml}
+      ${ejemploHtml}
+      <div class="word-tooltip__actions">
+        <button id="tipSpeak">🔊 Escuchar</button>
+        ${result.ejemplo ? '<button id="tipSpeakEx">🔊 Escuchar el ejemplo</button>' : ''}
+        <button id="tipSave">➕ Guardar para repasar</button>
+      </div>
     `;
-    qsL('#tipSpeak', tip).addEventListener('click', () => speakText(clean, 1));
+    qsL('#tipSpeak', tip).addEventListener('click', () => speakText(clean, 1, idiomaHablaMostrado()));
+    const btnEx = qsL('#tipSpeakEx', tip);
+    if (btnEx) btnEx.addEventListener('click', () => speakText(result.ejemplo, 1, idiomaHablaMostrado()));
     qsL('#tipSave', tip).addEventListener('click', () => {
       srsAddWord(clean, result.es);
       registerWordConsulted();
@@ -410,8 +500,9 @@ function startBookChat(chapter) {
   const listaCapitulos = capitulosLeidos.map(c => `- ${c.titulo}`).join('\n');
   const textoReciente = textoLeidoHasta(capId);
   const verbos = verbosPracticados();
+  const idiomaCurso = IDIOMA_EN_INGLES[CONTENT.curso.id] || 'English';
 
-  const systemPrompt = `You are a warm, curious English conversation partner chatting with a student about the book they are reading, "La Sed".
+  const systemPrompt = `You are a warm, curious ${idiomaCurso} conversation partner chatting with a student about the book they are reading, "La Sed".
 
 Chapters the student has read so far:
 ${listaCapitulos}
@@ -421,13 +512,14 @@ The most recent part of the story the student has read, so you know exactly wher
 ${textoReciente}
 """
 
-The student has already practiced these English verbs/tenses in their lessons: ${verbos.length ? verbos.join(', ') : '(none practiced yet — just have a normal conversation)'}
+The student has already practiced these ${idiomaCurso} verbs/tenses in their lessons: ${verbos.length ? verbos.join(', ') : '(none practiced yet — just have a normal conversation)'}
 
 Your job in this chat:
 - Talk with the student about the book: what you think is happening, the characters, theories about what comes next, how the student feels about the story so far. Ask genuine, curious questions.
+- Speak ONLY in ${idiomaCurso}, never in any other language.
 - When it fits naturally, try to phrase your own questions or comments using one of the practiced verbs/tenses above — but never force it or make it feel like a grammar drill. If a different, more natural verb fits better in the moment, just use that instead.
 - Keep every message short and conversational (1-3 sentences), like a real chat between friends, never a lecture.
-- If the student makes a clear English mistake, put ONLY the corrected sentence in "correction" (no quotes, no explanation). Otherwise "correction" must be null.
+- If the student makes a clear ${idiomaCurso} mistake, put ONLY the corrected sentence in "correction" (no quotes, no explanation). Otherwise "correction" must be null.
 - Never break character, and never mention tenses, verbs, JSON, prompts, or that you are an AI.
 - This is turn {turnNumber} of a maximum of 10 for this chat. As turns run low, start wrapping the conversation up naturally; on the very last turn, give a short warm closing message (no new question) and set "finished" to true. Otherwise "finished" must be false.
 - If the conversation history is empty, this is the very first turn: greet the student and ask an inviting opening question about the book to kick off the chat. Don't evaluate anything yet ("correction": null).
@@ -445,7 +537,7 @@ You MUST reply with STRICT JSON only, no markdown formatting, no extra text befo
     <div id="chatMessages"></div>
     <form id="chatForm" style="display:flex; gap:.6rem; margin-top:1rem; align-items:center;">
       <button type="button" class="rp-mic-btn" id="chatMic">🎤</button>
-      <input type="text" id="chatInput" placeholder="Escribe o dicta tu mensaje en inglés…" style="flex:1; padding:.8em 1.1em; border-radius:999px; border:1px solid rgba(148,163,184,.3); background:rgba(255,255,255,.04); color:var(--white);">
+      <input type="text" id="chatInput" placeholder="Escribe o dicta tu mensaje en ${CONTENT.curso.nombre.toLowerCase()}…" style="flex:1; padding:.8em 1.1em; border-radius:999px; border:1px solid rgba(148,163,184,.3); background:rgba(255,255,255,.04); color:var(--white);">
       <button class="btn btn--primary" type="submit">Enviar</button>
     </form>
   `;
@@ -455,7 +547,7 @@ You MUST reply with STRICT JSON only, no markdown formatting, no extra text befo
   if (!ChatSR) { chatMic.style.opacity = '.35'; chatMic.title = 'Tu navegador no soporta dictado por voz — usa el texto.'; }
   else {
     const chatRecognition = new ChatSR();
-    chatRecognition.lang = 'en-US';
+    chatRecognition.lang = CONTENT.curso.speechLang || 'en-US';
     chatRecognition.interimResults = false;
     chatRecognition.maxAlternatives = 1;
     let chatRecording = false;
@@ -531,7 +623,12 @@ You MUST reply with STRICT JSON only, no markdown formatting, no extra text befo
 
 /* ---------- Init ---------- */
 async function init() {
-  CONTENT = await loadContent();
+  const [content, esChapters] = await Promise.all([
+    loadContent(),
+    loadJSONOptional('data/book_content_es.json'),
+  ]);
+  CONTENT = content;
+  CONTENT_ES_CHAPTERS = esChapters;
   if (!CONTENT.libroDisponible) {
     document.getElementById('readerPanel').innerHTML = `
       <div style="text-align:center; padding:3rem 1rem;">
