@@ -196,10 +196,17 @@ async function loadJSONOptional(path) {
 
 function groupPhrasesByVerb(list, cursoId, variantsList) {
   const byVerb = {};
+  // variantsList es un array disperso (algunas frases no tienen ninguna
+  // variante útil y quedan fuera del todo) -indexado por su campo `index`,
+  // NO por la posición dentro del array, así que se busca por id, nunca
+  // por variantsList[i] directo.
+  const variantsById = {};
+  if (variantsList) variantsList.forEach(v => { variantsById[v.index] = v; });
   list.forEach((item, i) => {
     const id = slugify(item.verb);
     if (!byVerb[id]) byVerb[id] = { id, verbo: traducirVerbo(item.verb, cursoId), frases: [] };
-    const variantes = variantsList && variantsList[i] && variantsList[i].variants;
+    const entry = variantsById[i];
+    const variantes = entry && entry.variants;
     byVerb[id].frases.push({
       es: item.promptEs,
       en: item.translationEn,

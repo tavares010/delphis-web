@@ -1,0 +1,2488 @@
+[
+  {
+    "index": 0,
+    "variants": {
+      "Going to": "Nous allons être égoïstes."
+    }
+  },
+  {
+    "index": 1,
+    "variants": {
+      "Past simple": "Nous étions au Maroc.",
+      "Present simple": "Nous sommes au Maroc."
+    }
+  },
+  {
+    "index": 2,
+    "variants": {
+      "Present perfect": "Nous avons été jeunes.",
+      "Going to": "Nous allons être jeunes."
+    }
+  },
+  {
+    "index": 3,
+    "variants": {
+      "Going to": "Nous allons être rapides.",
+      "Present perfect": "Nous avons été rapides."
+    }
+  },
+  {
+    "index": 4,
+    "variants": {
+      "Future simple": "Nous serons en retard.",
+      "Present continuous": "Nous sommes en train d'être en retard."
+    }
+  },
+  {
+    "index": 5,
+    "variants": {
+      "Present continuous": "Nous sommes en train d'être rapides.",
+      "Present perfect": "Nous avons été rapides."
+    }
+  },
+  {
+    "index": 6,
+    "variants": {
+      "Going to": "Je vais prendre mon petit-déjeuner."
+    }
+  },
+  {
+    "index": 7,
+    "variants": {
+      "Past simple": "J'en avais assez."
+    }
+  },
+  {
+    "index": 8,
+    "variants": {
+      "Going to": "Je vais prendre un café."
+    }
+  },
+  {
+    "index": 9,
+    "variants": {
+      "Going to": "Je vais avoir une réunion.",
+      "Present perfect": "J'ai eu une réunion."
+    }
+  },
+  {
+    "index": 10,
+    "variants": {
+      "Future simple": "Je déjeunerai.",
+      "Present continuous": "Je suis en train de déjeuner."
+    }
+  },
+  {
+    "index": 11,
+    "variants": {
+      "Present continuous": "Je suis en train d'avoir un chien.",
+      "Present perfect": "J'ai eu un chien."
+    }
+  },
+  {
+    "index": 12,
+    "variants": {
+      "Present continuous": "Tu es en train de pouvoir m'aider.",
+      "Present perfect": "Tu as pu m'aider."
+    }
+  },
+  {
+    "index": 13,
+    "variants": {
+      "Past simple": "Tu pouvais le faire.",
+      "Present simple": "Tu peux le faire."
+    }
+  },
+  {
+    "index": 14,
+    "variants": {
+      "Present perfect": "Tu as pu travailler.",
+      "Going to": "Tu vas pouvoir travailler."
+    }
+  },
+  {
+    "index": 15,
+    "variants": {
+      "Going to": "Tu vas pouvoir parler.",
+      "Present perfect": "Tu as pu parler."
+    }
+  },
+  {
+    "index": 16,
+    "variants": {
+      "Future simple": "Tu pourras entendre.",
+      "Present continuous": "Tu es en train de pouvoir entendre."
+    }
+  },
+  {
+    "index": 17,
+    "variants": {
+      "Present continuous": "Ils sont en train de connaître la vérité.",
+      "Present perfect": "Ils ont connu la vérité."
+    }
+  },
+  {
+    "index": 18,
+    "variants": {
+      "Past simple": "Ils connaissaient le problème.",
+      "Present simple": "Ils connaissent le problème."
+    }
+  },
+  {
+    "index": 19,
+    "variants": {
+      "Present perfect": "Ils se sont connus.",
+      "Going to": "Ils vont se connaître."
+    }
+  },
+  {
+    "index": 20,
+    "variants": {
+      "Going to": "Ils ne vont pas savoir la réponse.",
+      "Present perfect": "Ils n'ont pas su la réponse."
+    }
+  },
+  {
+    "index": 21,
+    "variants": {
+      "Future simple": "Ils sauront ce qui s'est passé.",
+      "Present continuous": "Ils sont en train de savoir ce qui s'est passé."
+    }
+  },
+  {
+    "index": 22,
+    "variants": {
+      "Present continuous": "Tu es en train de vouloir du chocolat.",
+      "Present perfect": "Tu as voulu du chocolat."
+    }
+  },
+  {
+    "index": 23,
+    "variants": {
+      "Past simple": "Tu voulais une voiture.",
+      "Present simple": "Tu veux une voiture."
+    }
+  },
+  {
+    "index": 24,
+    "variants": {
+      "Present perfect": "Tu as voulu cet emploi.",
+      "Going to": "Tu vas vouloir cet emploi."
+    }
+  },
+  {
+    "index": 25,
+    "variants": {
+      "Going to": "Tu vas vouloir une maison.",
+      "Present perfect": "Tu as voulu une maison."
+    }
+  },
+  {
+    "index": 26,
+    "variants": {
+      "Future simple": "Tu voudras du temps libre.",
+      "Present continuous": "Tu es en train de vouloir du temps libre."
+    }
+  },
+  {
+    "index": 27,
+    "variants": {
+      "Present continuous": "Il est en train d'avoir besoin de vêtements.",
+      "Present perfect": "Il a eu besoin de vêtements."
+    }
+  },
+  {
+    "index": 28,
+    "variants": {
+      "Past simple": "Il avait besoin d'aide.",
+      "Present simple": "Il a besoin d'aide."
+    }
+  },
+  {
+    "index": 29,
+    "variants": {
+      "Present perfect": "Il a eu besoin d'argent.",
+      "Going to": "Il va avoir besoin d'argent."
+    }
+  },
+  {
+    "index": 30,
+    "variants": {
+      "Going to": "Il va avoir besoin d'une pause.",
+      "Present perfect": "Il a eu besoin d'une pause."
+    }
+  },
+  {
+    "index": 31,
+    "variants": {
+      "Future simple": "Il aura besoin d'une babysitter.",
+      "Present continuous": "Il est en train d'avoir besoin d'une babysitter."
+    }
+  },
+  {
+    "index": 32,
+    "variants": {
+      "Going to": "Elle va aller travailler."
+    }
+  },
+  {
+    "index": 33,
+    "variants": {
+      "Past simple": "Elle allait au supermarché.",
+      "Present simple": "Elle va au supermarché."
+    }
+  },
+  {
+    "index": 34,
+    "variants": {
+      "Going to": "Elle va aller au centre commercial."
+    }
+  },
+  {
+    "index": 35,
+    "variants": {
+      "Going to": "Elle va aller avec lui.",
+      "Present perfect": "Elle est allée avec lui."
+    }
+  },
+  {
+    "index": 36,
+    "variants": {
+      "Future simple": "Elle ira au cinéma.",
+      "Present continuous": "Elle est en train d'aller au cinéma."
+    }
+  },
+  {
+    "index": 37,
+    "variants": {
+      "Present continuous": "Elle est en train d'aller à l'école.",
+      "Present perfect": "Elle est allée à l'école."
+    }
+  },
+  {
+    "index": 38,
+    "variants": {
+      "Going to": "Je vais faire mes devoirs."
+    }
+  },
+  {
+    "index": 39,
+    "variants": {
+      "Present simple": "Je fais la vaisselle."
+    }
+  },
+  {
+    "index": 40,
+    "variants": {
+      "Going to": "Je vais faire les courses."
+    }
+  },
+  {
+    "index": 41,
+    "variants": {
+      "Going to": "Je vais faire la lessive.",
+      "Present perfect": "J'ai fait la lessive."
+    }
+  },
+  {
+    "index": 42,
+    "variants": {
+      "Future simple": "Je ferai le cours.",
+      "Present continuous": "Je suis en train de faire le cours."
+    }
+  },
+  {
+    "index": 43,
+    "variants": {
+      "Present continuous": "Je suis en train de faire de l'exercice.",
+      "Present perfect": "J'ai fait de l'exercice."
+    }
+  },
+  {
+    "index": 44,
+    "variants": {
+      "Going to": "Tu vas te fatiguer."
+    }
+  },
+  {
+    "index": 45,
+    "variants": {
+      "Past simple": "Tu as eu de l'argent."
+    }
+  },
+  {
+    "index": 46,
+    "variants": {
+      "Going to": "Tu vas obtenir l'emploi."
+    }
+  },
+  {
+    "index": 47,
+    "variants": {
+      "Going to": "Tu vas devenir plus mince.",
+      "Present perfect": "Tu es devenu plus mince."
+    }
+  },
+  {
+    "index": 48,
+    "variants": {
+      "Future simple": "Tu iras mieux.",
+      "Present continuous": "Tu es en train d'aller mieux."
+    }
+  },
+  {
+    "index": 49,
+    "variants": {
+      "Present continuous": "Tu es en train de recevoir des emails.",
+      "Present perfect": "Tu as reçu des emails."
+    }
+  },
+  {
+    "index": 50,
+    "variants": {
+      "Going to": "Ils vont faire un gâteau."
+    }
+  },
+  {
+    "index": 51,
+    "variants": {
+      "Present simple": "Ils font des erreurs."
+    }
+  },
+  {
+    "index": 52,
+    "variants": {
+      "Going to": "Ils vont faire des progrès."
+    }
+  },
+  {
+    "index": 53,
+    "variants": {
+      "Going to": "Ils vont faire le dîner.",
+      "Present perfect": "Ils ont fait le dîner."
+    }
+  },
+  {
+    "index": 54,
+    "variants": {
+      "Future simple": "Ils feront un site web.",
+      "Present continuous": "Ils sont en train de faire un site web."
+    }
+  },
+  {
+    "index": 55,
+    "variants": {
+      "Present continuous": "Ils sont en train de faire le déjeuner.",
+      "Present perfect": "Ils ont fait le déjeuner."
+    }
+  },
+  {
+    "index": 56,
+    "variants": {
+      "Going to": "Il va la suivre."
+    }
+  },
+  {
+    "index": 57,
+    "variants": {
+      "Present simple": "Il respecte la loi."
+    }
+  },
+  {
+    "index": 58,
+    "variants": {
+      "Going to": "Il va suivre les règles."
+    }
+  },
+  {
+    "index": 59,
+    "variants": {
+      "Going to": "Il va suivre tes conseils.",
+      "Present perfect": "Il a suivi tes conseils."
+    }
+  },
+  {
+    "index": 60,
+    "variants": {
+      "Future simple": "Il suivra les instructions.",
+      "Present continuous": "Il est en train de suivre les instructions."
+    }
+  },
+  {
+    "index": 61,
+    "variants": {
+      "Present continuous": "Il est en train de te suivre.",
+      "Present perfect": "Il t'a suivi."
+    }
+  },
+  {
+    "index": 62,
+    "variants": {
+      "Going to": "Je vais prendre les comprimés."
+    }
+  },
+  {
+    "index": 63,
+    "variants": {
+      "Present simple": "Je prends l'autobus."
+    }
+  },
+  {
+    "index": 64,
+    "variants": {
+      "Going to": "Je vais prendre des photos."
+    }
+  },
+  {
+    "index": 65,
+    "variants": {
+      "Going to": "Je vais prendre un parapluie.",
+      "Present perfect": "J'ai pris un parapluie."
+    }
+  },
+  {
+    "index": 66,
+    "variants": {
+      "Future simple": "Je prendrai un avion.",
+      "Present continuous": "Je suis en train de prendre un avion."
+    }
+  },
+  {
+    "index": 67,
+    "variants": {
+      "Present continuous": "Je suis en train de prendre des cours.",
+      "Present perfect": "J'ai pris des cours."
+    }
+  },
+  {
+    "index": 68,
+    "variants": {
+      "Going to": "Je vais commencer à apprécier."
+    }
+  },
+  {
+    "index": 69,
+    "variants": {
+      "Present simple": "Je commence la leçon."
+    }
+  },
+  {
+    "index": 70,
+    "variants": {
+      "Going to": "Je vais commencer à pleurer."
+    }
+  },
+  {
+    "index": 71,
+    "variants": {
+      "Going to": "Je vais commencer le projet.",
+      "Present perfect": "J'ai commencé le projet."
+    }
+  },
+  {
+    "index": 72,
+    "variants": {
+      "Future simple": "Je commencerai mon nouveau travail.",
+      "Present continuous": "Je suis en train de commencer mon nouveau travail."
+    }
+  },
+  {
+    "index": 73,
+    "variants": {
+      "Present continuous": "Je suis en train de commencer mon entraînement.",
+      "Present perfect": "J'ai commencé mon entraînement."
+    }
+  },
+  {
+    "index": 74,
+    "variants": {
+      "Going to": "Tu vas venir ce soir."
+    }
+  },
+  {
+    "index": 75,
+    "variants": {
+      "Present simple": "Tu parcours un long chemin."
+    }
+  },
+  {
+    "index": 76,
+    "variants": {
+      "Going to": "Tu vas venir à la fête."
+    }
+  },
+  {
+    "index": 77,
+    "variants": {
+      "Going to": "Tu vas venir tôt.",
+      "Present perfect": "Tu es venu tôt."
+    }
+  },
+  {
+    "index": 78,
+    "variants": {
+      "Future simple": "Tu viendras préparé.",
+      "Present continuous": "Tu es en train de venir préparé."
+    }
+  },
+  {
+    "index": 79,
+    "variants": {
+      "Present continuous": "Tu es en train de venir d'Espagne.",
+      "Present perfect": "Tu es venu d'Espagne."
+    }
+  },
+  {
+    "index": 80,
+    "variants": {
+      "Going to": "Tu vas donner des chances."
+    }
+  },
+  {
+    "index": 81,
+    "variants": {
+      "Present simple": "Tu donnes des informations."
+    }
+  },
+  {
+    "index": 82,
+    "variants": {
+      "Going to": "Tu vas donner des jouets."
+    }
+  },
+  {
+    "index": 83,
+    "variants": {
+      "Going to": "Tu vas donner des cadeaux.",
+      "Present perfect": "Tu as donné des cadeaux."
+    }
+  },
+  {
+    "index": 84,
+    "variants": {
+      "Future simple": "Tu donneras du soutien.",
+      "Present continuous": "Tu es en train de donner du soutien."
+    }
+  },
+  {
+    "index": 85,
+    "variants": {
+      "Present continuous": "Tu es en train de donner beaucoup.",
+      "Present perfect": "Tu as donné beaucoup."
+    }
+  },
+  {
+    "index": 86,
+    "variants": {
+      "Going to": "Je vais utiliser ton téléphone."
+    }
+  },
+  {
+    "index": 87,
+    "variants": {
+      "Present simple": "J'utilise son ordinateur."
+    }
+  },
+  {
+    "index": 88,
+    "variants": {
+      "Going to": "Je vais utiliser un traducteur."
+    }
+  },
+  {
+    "index": 89,
+    "variants": {
+      "Going to": "Je vais utiliser la voiture.",
+      "Present perfect": "J'ai utilisé la voiture."
+    }
+  },
+  {
+    "index": 90,
+    "variants": {
+      "Future simple": "J'utiliserai les économies.",
+      "Present continuous": "Je suis en train d'utiliser les économies."
+    }
+  },
+  {
+    "index": 91,
+    "variants": {
+      "Present continuous": "Je suis en train d'utiliser une carte de crédit.",
+      "Present perfect": "J'ai utilisé une carte de crédit."
+    }
+  },
+  {
+    "index": 92,
+    "variants": {
+      "Going to": "Nous allons trouver des erreurs."
+    }
+  },
+  {
+    "index": 93,
+    "variants": {
+      "Present simple": "Je trouve les clés."
+    }
+  },
+  {
+    "index": 94,
+    "variants": {
+      "Going to": "Je vais trouver un endroit."
+    }
+  },
+  {
+    "index": 95,
+    "variants": {
+      "Going to": "Je vais trouver les lunettes.",
+      "Present perfect": "J'ai trouvé les lunettes."
+    }
+  },
+  {
+    "index": 96,
+    "variants": {
+      "Future simple": "Je trouverai les réponses.",
+      "Present continuous": "Je suis en train de trouver les réponses."
+    }
+  },
+  {
+    "index": 97,
+    "variants": {
+      "Present continuous": "Je suis en train de trouver de l'argent.",
+      "Present perfect": "J'ai trouvé de l'argent."
+    }
+  },
+  {
+    "index": 98,
+    "variants": {
+      "Going to": "Nous allons dire la vérité."
+    }
+  },
+  {
+    "index": 99,
+    "variants": {
+      "Present simple": "Nous disons tout."
+    }
+  },
+  {
+    "index": 100,
+    "variants": {
+      "Going to": "Nous allons dire à nos parents."
+    }
+  },
+  {
+    "index": 101,
+    "variants": {
+      "Present perfect": "Nous avons dit les nouvelles."
+    }
+  },
+  {
+    "index": 102,
+    "variants": {
+      "Future simple": "Nous dirons à tout le monde.",
+      "Present continuous": "Nous sommes en train de dire à tout le monde."
+    }
+  },
+  {
+    "index": 103,
+    "variants": {
+      "Present continuous": "Nous sommes en train de raconter une histoire.",
+      "Present perfect": "Nous avons raconté une histoire."
+    }
+  },
+  {
+    "index": 104,
+    "variants": {
+      "Going to": "Vous allez écouter attentivement."
+    }
+  },
+  {
+    "index": 105,
+    "variants": {
+      "Present simple": "Vous écoutez la radio."
+    }
+  },
+  {
+    "index": 106,
+    "variants": {
+      "Going to": "Vous allez écouter le professeur."
+    }
+  },
+  {
+    "index": 107,
+    "variants": {
+      "Present perfect": "Vous avez écouté votre maman."
+    }
+  },
+  {
+    "index": 108,
+    "variants": {
+      "Future simple": "Vous m'écouterez.",
+      "Present continuous": "Vous êtes en train de m'écouter."
+    }
+  },
+  {
+    "index": 109,
+    "variants": {
+      "Present continuous": "Vous êtes en train de l'écouter.",
+      "Present perfect": "Vous l'avez écouté."
+    }
+  },
+  {
+    "index": 110,
+    "variants": {
+      "Going to": "Vous allez organiser votre chambre."
+    }
+  },
+  {
+    "index": 111,
+    "variants": {
+      "Present simple": "Vous organisez l'événement."
+    }
+  },
+  {
+    "index": 112,
+    "variants": {
+      "Going to": "Vous allez organiser vos affaires."
+    }
+  },
+  {
+    "index": 113,
+    "variants": {
+      "Present perfect": "Vous avez organisé les documents."
+    }
+  },
+  {
+    "index": 114,
+    "variants": {
+      "Present continuous": "Vous êtes en train d'organiser la réunion."
+    }
+  },
+  {
+    "index": 115,
+    "variants": {
+      "Present continuous": "Vous êtes en train d'organiser la maison.",
+      "Present perfect": "Vous avez organisé la maison."
+    }
+  },
+  {
+    "index": 116,
+    "variants": {
+      "Going to": "Elle va devenir plus responsable."
+    }
+  },
+  {
+    "index": 117,
+    "variants": {
+      "Present simple": "Elle devient père."
+    }
+  },
+  {
+    "index": 118,
+    "variants": {
+      "Going to": "Elle va devenir chef."
+    }
+  },
+  {
+    "index": 119,
+    "variants": {
+      "Going to": "Elle va devenir architecte.",
+      "Present perfect": "Elle est devenue architecte."
+    }
+  },
+  {
+    "index": 120,
+    "variants": {
+      "Future simple": "Elle deviendra célèbre.",
+      "Present continuous": "Elle est en train de devenir célèbre."
+    }
+  },
+  {
+    "index": 121,
+    "variants": {
+      "Present continuous": "Elle est en train de devenir célèbre.",
+      "Present perfect": "Elle est devenue célèbre."
+    }
+  },
+  {
+    "index": 122,
+    "variants": {
+      "Going to": "Ils vont partir maintenant."
+    }
+  },
+  {
+    "index": 123,
+    "variants": {
+      "Present simple": "Ils laissent un message."
+    }
+  },
+  {
+    "index": 124,
+    "variants": {
+      "Going to": "Ils vont partir hier."
+    }
+  },
+  {
+    "index": 125,
+    "variants": {
+      "Going to": "Ils vont quitter la ville.",
+      "Present perfect": "Ils ont quitté la ville."
+    }
+  },
+  {
+    "index": 126,
+    "variants": {
+      "Future simple": "Ils partiront bientôt.",
+      "Present continuous": "Ils sont en train de partir bientôt."
+    }
+  },
+  {
+    "index": 127,
+    "variants": {
+      "Present continuous": "Il est en train de partir à 3 heures.",
+      "Present perfect": "Il est parti à 3 heures."
+    }
+  },
+  {
+    "index": 128,
+    "variants": {
+      "Going to": "Je vais travailler dur."
+    }
+  },
+  {
+    "index": 129,
+    "variants": {
+      "Present simple": "Je travaille avec James."
+    }
+  },
+  {
+    "index": 130,
+    "variants": {
+      "Going to": "Je vais travailler dans un musée."
+    }
+  },
+  {
+    "index": 131,
+    "variants": {
+      "Going to": "Je vais travailler demain.",
+      "Present perfect": "J'ai travaillé demain."
+    }
+  },
+  {
+    "index": 132,
+    "variants": {
+      "Future simple": "Je travaillerai dur.",
+      "Present continuous": "Je suis en train de travailler dur."
+    }
+  },
+  {
+    "index": 133,
+    "variants": {
+      "Present continuous": "Je suis en train de travailler dans un hôtel.",
+      "Present perfect": "J'ai travaillé dans un hôtel."
+    }
+  },
+  {
+    "index": 134,
+    "variants": {
+      "Present continuous": "Nous nous sentons mieux. (or: Nous sommes en train de nous sentir mieux.)",
+      "Present perfect": "Nous nous sommes sentis mieux."
+    }
+  },
+  {
+    "index": 135,
+    "variants": {
+      "Past simple": "Nous eûmes faim.",
+      "Present simple": "Nous avons faim."
+    }
+  },
+  {
+    "index": 136,
+    "variants": {
+      "Present perfect": "Nous nous sommes sentis nerveux.",
+      "Going to": "Nous allons nous sentir nerveux."
+    }
+  },
+  {
+    "index": 137,
+    "variants": {
+      "Going to": "Nous allons nous sentir excités.",
+      "Present perfect": "Nous nous sommes sentis excités."
+    }
+  },
+  {
+    "index": 138,
+    "variants": {
+      "Future simple": "Nous sentirons la pression.",
+      "Present continuous": "Nous sommes en train de sentir la pression."
+    }
+  },
+  {
+    "index": 139,
+    "variants": {
+      "Present continuous": "Nous nous sentons heureux. (or: Nous sommes en train de nous sentir heureux.)",
+      "Present perfect": "Nous nous sommes sentis heureux."
+    }
+  },
+  {
+    "index": 140,
+    "variants": {
+      "Going to": "Vous allez voler vers Londres."
+    }
+  },
+  {
+    "index": 141,
+    "variants": {
+      "Past simple": "Vous volâtes pendant 6 heures.",
+      "Present simple": "Vous volez pendant 6 heures."
+    }
+  },
+  {
+    "index": 142,
+    "variants": {
+      "Going to": "Vous allez voler trop haut."
+    }
+  },
+  {
+    "index": 143,
+    "variants": {
+      "Going to": "Vous allez voler dans un avion.",
+      "Present perfect": "Vous avez volé dans un avion."
+    }
+  },
+  {
+    "index": 144,
+    "variants": {
+      "Future simple": "Vous volerez vers New York.",
+      "Present continuous": "Vous êtes en train de voler vers New York."
+    }
+  },
+  {
+    "index": 145,
+    "variants": {
+      "Present continuous": "Vous êtes en train de voler pour le travail.",
+      "Present perfect": "Vous avez volé pour le travail."
+    }
+  },
+  {
+    "index": 146,
+    "variants": {
+      "Going to": "Vous allez demander de l'aide."
+    }
+  },
+  {
+    "index": 147,
+    "variants": {
+      "Present simple": "Vous posez des questions."
+    }
+  },
+  {
+    "index": 148,
+    "variants": {
+      "Going to": "Vous allez demander plus de temps."
+    }
+  },
+  {
+    "index": 149,
+    "variants": {
+      "Going to": "Vous allez demander de l'argent.",
+      "Present perfect": "Vous avez demandé de l'argent."
+    }
+  },
+  {
+    "index": 150,
+    "variants": {
+      "Future simple": "Vous demanderez du dessert.",
+      "Present continuous": "Vous êtes en train de demander du dessert."
+    }
+  },
+  {
+    "index": 151,
+    "variants": {
+      "Present continuous": "Vous êtes en train de demander au professeur.",
+      "Present perfect": "Vous avez demandé au professeur."
+    }
+  },
+  {
+    "index": 152,
+    "variants": {
+      "Going to": "Il va épouser sa fiancée."
+    }
+  },
+  {
+    "index": 153,
+    "variants": {
+      "Present simple": "Il épouse Julie."
+    }
+  },
+  {
+    "index": 154,
+    "variants": {
+      "Going to": "Il va se marier l'été dernier."
+    }
+  },
+  {
+    "index": 155,
+    "variants": {
+      "Going to": "Il va épouser Julie.",
+      "Present perfect": "Il a épousé Julie."
+    }
+  },
+  {
+    "index": 156,
+    "variants": {
+      "Future simple": "Il épousera ma fille.",
+      "Present continuous": "Il est en train d'épouser ma fille."
+    }
+  },
+  {
+    "index": 157,
+    "variants": {
+      "Present continuous": "Il l'épouse en ce moment.",
+      "Present perfect": "Il l'a épousée."
+    }
+  },
+  {
+    "index": 158,
+    "variants": {
+      "Going to": "Elle va essayer de l'appeler."
+    }
+  },
+  {
+    "index": 159,
+    "variants": {
+      "Present simple": "Elle goûte le gâteau."
+    }
+  },
+  {
+    "index": 160,
+    "variants": {
+      "Going to": "Elle va essayer de faire de son mieux."
+    }
+  },
+  {
+    "index": 161,
+    "variants": {
+      "Present perfect": "Elle a essayé de t'appeler."
+    }
+  },
+  {
+    "index": 162,
+    "variants": {
+      "Future simple": "Elle essayera une fois de plus.",
+      "Present continuous": "Elle est en train d'essayer une fois de plus."
+    }
+  },
+  {
+    "index": 163,
+    "variants": {
+      "Present continuous": "Elle essaie tout en ce moment.",
+      "Present perfect": "Elle a essayé tout."
+    }
+  },
+  {
+    "index": 164,
+    "variants": {
+      "Going to": "Je vais courir avec Paul."
+    }
+  },
+  {
+    "index": 165,
+    "variants": {
+      "Present simple": "Je cours dans le parc."
+    }
+  },
+  {
+    "index": 166,
+    "variants": {
+      "Going to": "Je vais courir un marathon."
+    }
+  },
+  {
+    "index": 167,
+    "variants": {
+      "Going to": "Je vais courir plus vite.",
+      "Present perfect": "J'ai couru plus vite."
+    }
+  },
+  {
+    "index": 168,
+    "variants": {
+      "Future simple": "Je courrai aux Jeux olympiques.",
+      "Present continuous": "Je suis en train de courir aux Jeux olympiques."
+    }
+  },
+  {
+    "index": 169,
+    "variants": {
+      "Present continuous": "Je suis en train de courir tous les jours.",
+      "Present perfect": "J'ai couru tous les jours."
+    }
+  },
+  {
+    "index": 170,
+    "variants": {
+      "Present continuous": "Je suis en train de rester silencieux.",
+      "Present perfect": "Je suis resté silencieux."
+    }
+  },
+  {
+    "index": 171,
+    "variants": {
+      "Present simple": "Je reste calme."
+    }
+  },
+  {
+    "index": 172,
+    "variants": {
+      "Going to": "Je vais rester fort."
+    }
+  },
+  {
+    "index": 173,
+    "variants": {
+      "Going to": "Je vais rester patient.",
+      "Present perfect": "Je suis resté patient."
+    }
+  },
+  {
+    "index": 174,
+    "variants": {
+      "Future simple": "Je resterai à la maison.",
+      "Present continuous": "Je suis en train de rester à la maison."
+    }
+  },
+  {
+    "index": 175,
+    "variants": {
+      "Going to": "Nous allons montrer la maison."
+    }
+  },
+  {
+    "index": 176,
+    "variants": {
+      "Present simple": "Nous montrons les résultats."
+    }
+  },
+  {
+    "index": 177,
+    "variants": {
+      "Going to": "Nous allons montrer les photos."
+    }
+  },
+  {
+    "index": 178,
+    "variants": {
+      "Going to": "Nous allons montrer le chemin.",
+      "Present perfect": "Nous avons montré le chemin."
+    }
+  },
+  {
+    "index": 179,
+    "variants": {
+      "Future simple": "Nous montrerons notre soutien.",
+      "Present continuous": "Nous sommes en train de montrer notre soutien."
+    }
+  },
+  {
+    "index": 180,
+    "variants": {
+      "Present continuous": "Nous sommes en train de montrer de la gentillesse.",
+      "Present perfect": "Nous avons montré de la gentillesse."
+    }
+  },
+  {
+    "index": 181,
+    "variants": {
+      "Going to": "Ils vont s'endormir."
+    }
+  },
+  {
+    "index": 182,
+    "variants": {
+      "Past simple": "Ils tombèrent dans l'escalier.",
+      "Present simple": "Ils tombent dans l'escalier."
+    }
+  },
+  {
+    "index": 183,
+    "variants": {
+      "Going to": "Ils vont s'effondrer."
+    }
+  },
+  {
+    "index": 184,
+    "variants": {
+      "Going to": "Ils vont tomber dans le piège.",
+      "Present perfect": "Ils sont tombés dans le piège."
+    }
+  },
+  {
+    "index": 185,
+    "variants": {
+      "Future simple": "Ils tomberont amoureux.",
+      "Present continuous": "Ils sont en train de tomber amoureux."
+    }
+  },
+  {
+    "index": 186,
+    "variants": {
+      "Present continuous": "Ils sont en train de tomber facilement.",
+      "Present perfect": "Ils sont tombés facilement."
+    }
+  },
+  {
+    "index": 187,
+    "variants": {
+      "Going to": "Vous allez tenir un verre."
+    }
+  },
+  {
+    "index": 188,
+    "variants": {
+      "Past simple": "Vous tîntes le bébé.",
+      "Present simple": "Vous tenez le bébé."
+    }
+  },
+  {
+    "index": 189,
+    "variants": {
+      "Going to": "Vous allez tenir le trophée."
+    }
+  },
+  {
+    "index": 190,
+    "variants": {
+      "Going to": "Vous allez tenir le record.",
+      "Present perfect": "Vous avez tenu le record."
+    }
+  },
+  {
+    "index": 191,
+    "variants": {
+      "Future simple": "Vous tiendrez ce poste.",
+      "Present continuous": "Vous êtes en train de tenir ce poste."
+    }
+  },
+  {
+    "index": 192,
+    "variants": {
+      "Present continuous": "Vous êtes en train de tenir la porte.",
+      "Present perfect": "Vous avez tenu la porte."
+    }
+  },
+  {
+    "index": 193,
+    "variants": {
+      "Going to": "Ils vont poser leur candidature pour un emploi."
+    }
+  },
+  {
+    "index": 194,
+    "variants": {
+      "Present simple": "Ils posent leur candidature pour un visa."
+    }
+  },
+  {
+    "index": 195,
+    "variants": {
+      "Going to": "Ils vont poser leur candidature pour une bourse."
+    }
+  },
+  {
+    "index": 196,
+    "variants": {
+      "Going to": "Ils vont poser leur candidature pour un prêt.",
+      "Present perfect": "Ils ont posé leur candidature pour un prêt."
+    }
+  },
+  {
+    "index": 197,
+    "variants": {
+      "Future simple": "Ils appliqueront de la crème solaire.",
+      "Present continuous": "Ils sont en train d'appliquer de la crème solaire."
+    }
+  },
+  {
+    "index": 198,
+    "variants": {
+      "Present continuous": "Ils sont en train d'appliquer une pression.",
+      "Present perfect": "Ils ont appliqué une pression."
+    }
+  },
+  {
+    "index": 199,
+    "variants": {
+      "Going to": "Il va voir un thérapeute."
+    }
+  },
+  {
+    "index": 200,
+    "variants": {
+      "Present simple": "Il voit le film."
+    }
+  },
+  {
+    "index": 201,
+    "variants": {
+      "Going to": "Il va la voir."
+    }
+  },
+  {
+    "index": 202,
+    "variants": {
+      "Going to": "Il va voir le médecin.",
+      "Present perfect": "Il a vu le médecin."
+    }
+  },
+  {
+    "index": 203,
+    "variants": {
+      "Future simple": "Il verra sa petite amie.",
+      "Present continuous": "Il est en train de voir sa petite amie."
+    }
+  },
+  {
+    "index": 204,
+    "variants": {
+      "Present continuous": "Il est en train de voir la valeur.",
+      "Present perfect": "Il a vu la valeur."
+    }
+  },
+  {
+    "index": 205,
+    "variants": {
+      "Going to": "Nous allons le laisser rester."
+    }
+  },
+  {
+    "index": 206,
+    "variants": {
+      "Present simple": "Nous la laissons parler."
+    }
+  },
+  {
+    "index": 207,
+    "variants": {
+      "Going to": "Nous allons les laisser entrer."
+    }
+  },
+  {
+    "index": 208,
+    "variants": {
+      "Going to": "Nous allons laisser John conduire.",
+      "Present perfect": "Nous avons laissé John conduire."
+    }
+  },
+  {
+    "index": 209,
+    "variants": {
+      "Future simple": "Nous te laisserons choisir.",
+      "Present continuous": "Nous sommes en train de te laisser choisir."
+    }
+  },
+  {
+    "index": 210,
+    "variants": {
+      "Present continuous": "Nous sommes en train de les laisser aider.",
+      "Present perfect": "Nous les avons laissés aider."
+    }
+  },
+  {
+    "index": 211,
+    "variants": {
+      "Going to": "Je vais apporter des en-cas."
+    }
+  },
+  {
+    "index": 212,
+    "variants": {
+      "Present simple": "J'apporte mon ordinateur portable."
+    }
+  },
+  {
+    "index": 213,
+    "variants": {
+      "Going to": "Je vais apporter un cadeau."
+    }
+  },
+  {
+    "index": 214,
+    "variants": {
+      "Going to": "Je vais apporter un ami.",
+      "Present perfect": "J'ai apporté un ami."
+    }
+  },
+  {
+    "index": 215,
+    "variants": {
+      "Future simple": "Je apporterai le dessert.",
+      "Present continuous": "Je suis en train d'apporter le dessert."
+    }
+  },
+  {
+    "index": 216,
+    "variants": {
+      "Present continuous": "Je suis en train d'apporter tout.",
+      "Present perfect": "J'ai apporté tout."
+    }
+  },
+  {
+    "index": 217,
+    "variants": {
+      "Present continuous": "Tu es en train d'aimer le poisson.",
+      "Present perfect": "Tu as aimé le poisson."
+    }
+  },
+  {
+    "index": 218,
+    "variants": {
+      "Present simple": "Tu aimes l'idée."
+    }
+  },
+  {
+    "index": 219,
+    "variants": {
+      "Going to": "Tu vas aimer le spectacle."
+    }
+  },
+  {
+    "index": 220,
+    "variants": {
+      "Going to": "Tu vas aimer la nourriture.",
+      "Present perfect": "Tu as aimé la nourriture."
+    }
+  },
+  {
+    "index": 221,
+    "variants": {
+      "Future simple": "Tu aimeras le jeu.",
+      "Present continuous": "Tu es en train d'aimer le jeu."
+    }
+  },
+  {
+    "index": 222,
+    "variants": {
+      "Present continuous": "Tu es en train d'aimer le voyage.",
+      "Present perfect": "Tu as aimé le voyage."
+    }
+  },
+  {
+    "index": 223,
+    "variants": {
+      "Going to": "Ils vont nous aider."
+    }
+  },
+  {
+    "index": 224,
+    "variants": {
+      "Past simple": "Ils ont aidé.",
+      "Present simple": "Ils aident."
+    }
+  },
+  {
+    "index": 225,
+    "variants": {
+      "Going to": "Ils vont aider les enfants."
+    }
+  },
+  {
+    "index": 226,
+    "variants": {
+      "Going to": "Ils vont aider demain.",
+      "Present perfect": "Ils ont aidé demain."
+    }
+  },
+  {
+    "index": 227,
+    "variants": {
+      "Future simple": "Ils m'aideront.",
+      "Present continuous": "Ils sont en train de m'aider."
+    }
+  },
+  {
+    "index": 228,
+    "variants": {
+      "Present continuous": "Ils sont en train d'aider les familles.",
+      "Present perfect": "Ils ont aidé les familles."
+    }
+  },
+  {
+    "index": 229,
+    "variants": {
+      "Going to": "Elle va commencer l'école."
+    }
+  },
+  {
+    "index": 230,
+    "variants": {
+      "Present simple": "Elle commence l'entraînement."
+    }
+  },
+  {
+    "index": 231,
+    "variants": {
+      "Going to": "Elle va commencer tôt."
+    }
+  },
+  {
+    "index": 232,
+    "variants": {
+      "Going to": "Elle va commencer à 2h.",
+      "Present perfect": "Elle a commencé à 2h."
+    }
+  },
+  {
+    "index": 233,
+    "variants": {
+      "Future simple": "Elle commencera une entreprise.",
+      "Present continuous": "Elle est en train de commencer une entreprise."
+    }
+  },
+  {
+    "index": 234,
+    "variants": {
+      "Present continuous": "Elle est en train de commencer maintenant.",
+      "Present perfect": "Elle a commencé maintenant."
+    }
+  },
+  {
+    "index": 235,
+    "variants": {
+      "Going to": "Ils vont appeler Monica."
+    }
+  },
+  {
+    "index": 236,
+    "variants": {
+      "Present simple": "Ils appellent la police."
+    }
+  },
+  {
+    "index": 237,
+    "variants": {
+      "Going to": "Ils vont t'appeler."
+    }
+  },
+  {
+    "index": 238,
+    "variants": {
+      "Going to": "Ils vont rappeler.",
+      "Present perfect": "Ils ont rappelé."
+    }
+  },
+  {
+    "index": 239,
+    "variants": {
+      "Future simple": "Ils m'appelleront.",
+      "Present continuous": "Ils sont en train de m'appeler."
+    }
+  },
+  {
+    "index": 240,
+    "variants": {
+      "Present continuous": "Ils sont en train d'appeler tous les jours.",
+      "Present perfect": "Ils ont appelé tous les jours."
+    }
+  },
+  {
+    "index": 241,
+    "variants": {
+      "Going to": "Je vais oublier tout."
+    }
+  },
+  {
+    "index": 242,
+    "variants": {
+      "Present simple": "J'oublie ton anniversaire."
+    }
+  },
+  {
+    "index": 243,
+    "variants": {
+      "Going to": "Je vais oublier les clés."
+    }
+  },
+  {
+    "index": 244,
+    "variants": {
+      "Going to": "Je vais oublier les règles.",
+      "Present perfect": "J'ai oublié les règles."
+    }
+  },
+  {
+    "index": 245,
+    "variants": {
+      "Future simple": "J'oublierai mon sac.",
+      "Present continuous": "Je suis en train d'oublier mon sac."
+    }
+  },
+  {
+    "index": 246,
+    "variants": {
+      "Present continuous": "Je suis en train d'oublier les noms.",
+      "Present perfect": "J'ai oublié les noms."
+    }
+  },
+  {
+    "index": 247,
+    "variants": {
+      "Going to": "Nous allons l'éviter."
+    }
+  },
+  {
+    "index": 248,
+    "variants": {
+      "Present simple": "Nous évitons les ennuis."
+    }
+  },
+  {
+    "index": 249,
+    "variants": {
+      "Going to": "Nous allons éviter la circulation."
+    }
+  },
+  {
+    "index": 250,
+    "variants": {
+      "Going to": "Nous allons éviter le conflit.",
+      "Present perfect": "Nous avons évité le conflit."
+    }
+  },
+  {
+    "index": 251,
+    "variants": {
+      "Future simple": "Nous éviterons la foule.",
+      "Present continuous": "Nous sommes en train d'éviter la foule."
+    }
+  },
+  {
+    "index": 252,
+    "variants": {
+      "Present continuous": "Nous sommes en train d'éviter les disputes.",
+      "Present perfect": "Nous avons évité les disputes."
+    }
+  },
+  {
+    "index": 253,
+    "variants": {
+      "Going to": "Tu vas te déplacer vite."
+    }
+  },
+  {
+    "index": 254,
+    "variants": {
+      "Present simple": "Tu déplaces la table."
+    }
+  },
+  {
+    "index": 255,
+    "variants": {
+      "Going to": "Tu vas déménager."
+    }
+  },
+  {
+    "index": 256,
+    "variants": {
+      "Going to": "Tu vas déménager à l'étage.",
+      "Present perfect": "Tu as déménagé à l'étage."
+    }
+  },
+  {
+    "index": 257,
+    "variants": {
+      "Future simple": "Tu déplaceras les cartons.",
+      "Present continuous": "Tu es en train de déplacer les cartons."
+    }
+  },
+  {
+    "index": 258,
+    "variants": {
+      "Present continuous": "Tu es en train de déplacer les meubles.",
+      "Present perfect": "Tu as déplacé les meubles."
+    }
+  },
+  {
+    "index": 259,
+    "variants": {
+      "Going to": "Elle va jouer aux échecs."
+    }
+  },
+  {
+    "index": 260,
+    "variants": {
+      "Present simple": "Elle joue du piano."
+    }
+  },
+  {
+    "index": 261,
+    "variants": {
+      "Going to": "Elle va jouer au tennis."
+    }
+  },
+  {
+    "index": 262,
+    "variants": {
+      "Going to": "Elle va jouer à l'intérieur.",
+      "Present perfect": "Elle a joué à l'intérieur."
+    }
+  },
+  {
+    "index": 263,
+    "variants": {
+      "Future simple": "Elle jouera seule.",
+      "Present continuous": "Elle est en train de jouer seule."
+    }
+  },
+  {
+    "index": 264,
+    "variants": {
+      "Present continuous": "Elle est en train de jouer au football.",
+      "Present perfect": "Elle a joué au football."
+    }
+  },
+  {
+    "index": 265,
+    "variants": {
+      "Going to": "Il va payer la facture."
+    }
+  },
+  {
+    "index": 266,
+    "variants": {
+      "Present simple": "Il paie le déjeuner."
+    }
+  },
+  {
+    "index": 267,
+    "variants": {
+      "Going to": "Il va payer par carte."
+    }
+  },
+  {
+    "index": 268,
+    "variants": {
+      "Going to": "Il va payer le chauffeur.",
+      "Present perfect": "Il a payé le chauffeur."
+    }
+  },
+  {
+    "index": 269,
+    "variants": {
+      "Future simple": "Il paiera les impôts.",
+      "Present continuous": "Il est en train de payer les impôts."
+    }
+  },
+  {
+    "index": 270,
+    "variants": {
+      "Present continuous": "Il est en train de payer le loyer.",
+      "Present perfect": "Il a payé le loyer."
+    }
+  },
+  {
+    "index": 271,
+    "variants": {
+      "Present continuous": "Ils sont en train d'entendre de la musique.",
+      "Present perfect": "Ils ont entendu de la musique."
+    }
+  },
+  {
+    "index": 272,
+    "variants": {
+      "Present simple": "Ils entendent un bruit."
+    }
+  },
+  {
+    "index": 273,
+    "variants": {
+      "Going to": "Ils vont entendre des voix."
+    }
+  },
+  {
+    "index": 274,
+    "variants": {
+      "Going to": "Ils vont entendre les cloches.",
+      "Present perfect": "Ils ont entendu les cloches."
+    }
+  },
+  {
+    "index": 275,
+    "variants": {
+      "Future simple": "Ils entendront des cris.",
+      "Present continuous": "Ils sont en train d'entendre des cris."
+    }
+  },
+  {
+    "index": 276,
+    "variants": {
+      "Present continuous": "Je suis en train de croire en Dieu.",
+      "Present perfect": "J'ai cru en Dieu."
+    }
+  },
+  {
+    "index": 277,
+    "variants": {
+      "Past simple": "Je croyais cela.",
+      "Present simple": "Je crois cela."
+    }
+  },
+  {
+    "index": 278,
+    "variants": {
+      "Present perfect": "J'ai cru en toi.",
+      "Going to": "Je vais croire en toi."
+    }
+  },
+  {
+    "index": 279,
+    "variants": {
+      "Going to": "Je vais croire l'histoire.",
+      "Present perfect": "J'ai cru l'histoire."
+    }
+  },
+  {
+    "index": 280,
+    "variants": {
+      "Future simple": "Je croirai Marie.",
+      "Present continuous": "Je suis en train de croire Marie."
+    }
+  },
+  {
+    "index": 281,
+    "variants": {
+      "Going to": "Nous allons autoriser des visiteurs."
+    }
+  },
+  {
+    "index": 282,
+    "variants": {
+      "Present simple": "Nous autorisons des changements."
+    }
+  },
+  {
+    "index": 283,
+    "variants": {
+      "Going to": "Nous allons autoriser des exceptions."
+    }
+  },
+  {
+    "index": 284,
+    "variants": {
+      "Going to": "Nous allons autoriser des animaux.",
+      "Present perfect": "Nous avons autorisé des animaux."
+    }
+  },
+  {
+    "index": 285,
+    "variants": {
+      "Future simple": "Nous autoriserons la participation.",
+      "Present continuous": "Nous sommes en train d'autoriser la participation."
+    }
+  },
+  {
+    "index": 286,
+    "variants": {
+      "Present continuous": "Nous sommes en train d'autoriser les téléphones.",
+      "Present perfect": "Nous avons autorisé les téléphones."
+    }
+  },
+  {
+    "index": 287,
+    "variants": {
+      "Going to": "Elle va être assise à côté de moi."
+    }
+  },
+  {
+    "index": 288,
+    "variants": {
+      "Past simple": "Elle s'assit à la table.",
+      "Present simple": "Elle s'assoit à la table."
+    }
+  },
+  {
+    "index": 289,
+    "variants": {
+      "Going to": "Elle va s'asseoir sur la chaise."
+    }
+  },
+  {
+    "index": 290,
+    "variants": {
+      "Going to": "Elle va s'asseoir sur le canapé.",
+      "Present perfect": "Elle s'est assise sur le canapé."
+    }
+  },
+  {
+    "index": 291,
+    "variants": {
+      "Future simple": "Elle s'assiéra seule.",
+      "Present continuous": "Elle est en train de s'asseoir seule."
+    }
+  },
+  {
+    "index": 292,
+    "variants": {
+      "Present continuous": "Elle est en train de s'asseoir tranquillement.",
+      "Present perfect": "Elle s'est assise tranquillement."
+    }
+  },
+  {
+    "index": 293,
+    "variants": {
+      "Going to": "Vous allez souffrir du stress."
+    }
+  },
+  {
+    "index": 294,
+    "variants": {
+      "Present simple": "Vous souffrez beaucoup."
+    }
+  },
+  {
+    "index": 295,
+    "variants": {
+      "Going to": "Vous allez souffrir d'une maladie."
+    }
+  },
+  {
+    "index": 296,
+    "variants": {
+      "Going to": "Vous allez souffrir trop.",
+      "Present perfect": "Vous avez souffert trop."
+    }
+  },
+  {
+    "index": 297,
+    "variants": {
+      "Future simple": "Vous souffrirez de la douleur.",
+      "Present continuous": "Vous êtes en train de souffrir de la douleur."
+    }
+  },
+  {
+    "index": 298,
+    "variants": {
+      "Present continuous": "Vous êtes en train de souffrir profondément.",
+      "Present perfect": "Vous avez souffert profondément."
+    }
+  },
+  {
+    "index": 299,
+    "variants": {
+      "Going to": "Ils vont diriger l'équipe."
+    }
+  },
+  {
+    "index": 300,
+    "variants": {
+      "Past simple": "Ils menèrent le groupe.",
+      "Present simple": "Ils mènent le groupe."
+    }
+  },
+  {
+    "index": 301,
+    "variants": {
+      "Going to": "Ils vont mener le projet."
+    }
+  },
+  {
+    "index": 302,
+    "variants": {
+      "Going to": "Ils vont mener la classe.",
+      "Present perfect": "Ils ont mené la classe."
+    }
+  },
+  {
+    "index": 303,
+    "variants": {
+      "Future simple": "Ils mèneront tout le monde.",
+      "Present continuous": "Ils sont en train de mener tout le monde."
+    }
+  },
+  {
+    "index": 304,
+    "variants": {
+      "Present continuous": "Ils sont en train de mener l'entreprise.",
+      "Present perfect": "Ils ont mené l'entreprise."
+    }
+  },
+  {
+    "index": 305,
+    "variants": {
+      "Going to": "Je vais vivre en Allemagne."
+    }
+  },
+  {
+    "index": 306,
+    "variants": {
+      "Past simple": "Je vécus à l'étranger.",
+      "Present simple": "Je vis à l'étranger."
+    }
+  },
+  {
+    "index": 307,
+    "variants": {
+      "Present perfect": "J'ai habité ici.",
+      "Going to": "Je vais habiter ici."
+    }
+  },
+  {
+    "index": 308,
+    "variants": {
+      "Going to": "Je vais vivre à Londres.",
+      "Present perfect": "J'ai vécu à Londres."
+    }
+  },
+  {
+    "index": 309,
+    "variants": {
+      "Future simple": "Je vivrai avec Diego.",
+      "Present continuous": "Je suis en train de vivre avec Diego."
+    }
+  },
+  {
+    "index": 310,
+    "variants": {
+      "Present continuous": "Je suis en train de vivre seul.",
+      "Present perfect": "J'ai vécu seul."
+    }
+  },
+  {
+    "index": 311,
+    "variants": {
+      "Going to": "Il va rencontrer des clients."
+    }
+  },
+  {
+    "index": 312,
+    "variants": {
+      "Past simple": "Il rencontra le président.",
+      "Present simple": "Il rencontre le président."
+    }
+  },
+  {
+    "index": 313,
+    "variants": {
+      "Going to": "Il va rencontrer Michael Jackson."
+    }
+  },
+  {
+    "index": 314,
+    "variants": {
+      "Going to": "Il va rencontrer son patron.",
+      "Present perfect": "Il a rencontré son patron."
+    }
+  },
+  {
+    "index": 315,
+    "variants": {
+      "Future simple": "Il rencontrera l'équipe.",
+      "Present continuous": "Il est en train de rencontrer l'équipe."
+    }
+  },
+  {
+    "index": 316,
+    "variants": {
+      "Present continuous": "Il est en train de rencontrer le directeur.",
+      "Present perfect": "Il a rencontré le directeur."
+    }
+  },
+  {
+    "index": 317,
+    "variants": {
+      "Going to": "Tu vas porter la boîte."
+    }
+  },
+  {
+    "index": 318,
+    "variants": {
+      "Past simple": "Tu portas le sac.",
+      "Present simple": "Tu portes le sac."
+    }
+  },
+  {
+    "index": 319,
+    "variants": {
+      "Present perfect": "Tu as porté les bagages.",
+      "Going to": "Tu vas porter les bagages."
+    }
+  },
+  {
+    "index": 320,
+    "variants": {
+      "Going to": "Tu vas porter la nourriture.",
+      "Present perfect": "Tu as porté la nourriture."
+    }
+  },
+  {
+    "index": 321,
+    "variants": {
+      "Future simple": "Tu porteras une valise.",
+      "Present continuous": "Tu es en train de porter une valise."
+    }
+  },
+  {
+    "index": 322,
+    "variants": {
+      "Present continuous": "Tu es en train de porter trop.",
+      "Present perfect": "Tu as porté trop."
+    }
+  },
+  {
+    "index": 323,
+    "variants": {
+      "Going to": "Nous allons penser à déménager."
+    }
+  },
+  {
+    "index": 324,
+    "variants": {
+      "Present simple": "Nous y pensons."
+    }
+  },
+  {
+    "index": 325,
+    "variants": {
+      "Going to": "Nous allons penser à toi."
+    }
+  },
+  {
+    "index": 326,
+    "variants": {
+      "Going to": "Nous allons penser soigneusement.",
+      "Present perfect": "Nous avons pensé soigneusement."
+    }
+  },
+  {
+    "index": 327,
+    "variants": {
+      "Future simple": "Nous penserons positivement.",
+      "Present continuous": "Nous sommes en train de penser positivement."
+    }
+  },
+  {
+    "index": 328,
+    "variants": {
+      "Present continuous": "Nous sommes en train de penser ensemble.",
+      "Present perfect": "Nous avons pensé ensemble."
+    }
+  },
+  {
+    "index": 329,
+    "variants": {
+      "Going to": "Je vais écrire une lettre."
+    }
+  },
+  {
+    "index": 330,
+    "variants": {
+      "Present simple": "J'écris un email."
+    }
+  },
+  {
+    "index": 331,
+    "variants": {
+      "Going to": "Je vais écrire un livre."
+    }
+  },
+  {
+    "index": 332,
+    "variants": {
+      "Going to": "Je vais écrire un message.",
+      "Present perfect": "J'ai écrit un message."
+    }
+  },
+  {
+    "index": 333,
+    "variants": {
+      "Future simple": "J'écrirai un rapport.",
+      "Present continuous": "Je suis en train d'écrire un rapport."
+    }
+  },
+  {
+    "index": 334,
+    "variants": {
+      "Present continuous": "Je suis en train d'écrire lentement.",
+      "Present perfect": "J'ai écrit lentement."
+    }
+  },
+  {
+    "index": 335,
+    "variants": {
+      "Going to": "Elle va finir les devoirs."
+    }
+  },
+  {
+    "index": 336,
+    "variants": {
+      "Past simple": "Elle termina le cours.",
+      "Present simple": "Elle termine le cours."
+    }
+  },
+  {
+    "index": 337,
+    "variants": {
+      "Going to": "Elle va finir son café."
+    }
+  },
+  {
+    "index": 338,
+    "variants": {
+      "Going to": "Elle va finir l'école.",
+      "Present perfect": "Elle a fini l'école."
+    }
+  },
+  {
+    "index": 339,
+    "variants": {
+      "Future simple": "Elle finira la leçon.",
+      "Present continuous": "Elle est en train de finir la leçon."
+    }
+  },
+  {
+    "index": 340,
+    "variants": {
+      "Present continuous": "Elle est en train de finir rapidement.",
+      "Present perfect": "Elle a fini rapidement."
+    }
+  },
+  {
+    "index": 341,
+    "variants": {
+      "Going to": "Vous allez attendre un appel."
+    }
+  },
+  {
+    "index": 342,
+    "variants": {
+      "Past simple": "Vous attendîtes trop.",
+      "Present simple": "Vous attendez trop."
+    }
+  },
+  {
+    "index": 343,
+    "variants": {
+      "Present perfect": "Vous avez attendu une réponse.",
+      "Going to": "Vous allez attendre une réponse."
+    }
+  },
+  {
+    "index": 344,
+    "variants": {
+      "Going to": "Vous allez attendre des nouvelles.",
+      "Present perfect": "Vous avez attendu des nouvelles."
+    }
+  },
+  {
+    "index": 345,
+    "variants": {
+      "Future simple": "Vous attendrez une livraison.",
+      "Present continuous": "Vous êtes en train d'attendre une livraison."
+    }
+  },
+  {
+    "index": 346,
+    "variants": {
+      "Present continuous": "Vous êtes en train d'attendre des résultats.",
+      "Present perfect": "Vous avez attendu des résultats."
+    }
+  },
+  {
+    "index": 347,
+    "variants": {
+      "Going to": "Ils vont partager une chambre."
+    }
+  },
+  {
+    "index": 348,
+    "variants": {
+      "Past simple": "Ils partagèrent le sandwich.",
+      "Present simple": "Ils partagent le sandwich."
+    }
+  },
+  {
+    "index": 349,
+    "variants": {
+      "Going to": "Ils vont partager des idées."
+    }
+  },
+  {
+    "index": 350,
+    "variants": {
+      "Going to": "Ils vont partager le déjeuner.",
+      "Present perfect": "Ils ont partagé le déjeuner."
+    }
+  },
+  {
+    "index": 351,
+    "variants": {
+      "Future simple": "Ils partageront l'ordinateur.",
+      "Present continuous": "Ils sont en train de partager l'ordinateur."
+    }
+  },
+  {
+    "index": 352,
+    "variants": {
+      "Present continuous": "Ils sont en train de partager des secrets.",
+      "Present perfect": "Ils ont partagé des secrets."
+    }
+  },
+  {
+    "index": 353,
+    "variants": {
+      "Going to": "Il va parler au téléphone."
+    }
+  },
+  {
+    "index": 354,
+    "variants": {
+      "Past simple": "Il leur parla.",
+      "Present simple": "Il leur parle."
+    }
+  },
+  {
+    "index": 355,
+    "variants": {
+      "Present perfect": "Il a parlé vite.",
+      "Going to": "Il va parler vite."
+    }
+  },
+  {
+    "index": 356,
+    "variants": {
+      "Going to": "Il va lui parler.",
+      "Present perfect": "Il lui a parlé."
+    }
+  },
+  {
+    "index": 357,
+    "variants": {
+      "Future simple": "Il en parlera.",
+      "Present continuous": "Il est en train d'en parler."
+    }
+  },
+  {
+    "index": 358,
+    "variants": {
+      "Present continuous": "Il est en train de parler clairement.",
+      "Present perfect": "Il a parlé clairement."
+    }
+  },
+  {
+    "index": 359,
+    "variants": {
+      "Going to": "Vous allez lire tranquillement."
+    }
+  },
+  {
+    "index": 360,
+    "variants": {
+      "Past simple": "Tu lus le roman.",
+      "Present simple": "Tu lis le roman."
+    }
+  },
+  {
+    "index": 361,
+    "variants": {
+      "Going to": "Tu vas lire mon article."
+    }
+  },
+  {
+    "index": 362,
+    "variants": {
+      "Going to": "Tu vas lire les e-mails.",
+      "Present perfect": "Tu as lu les e-mails."
+    }
+  },
+  {
+    "index": 363,
+    "variants": {
+      "Future simple": "Tu liras à haute voix.",
+      "Present continuous": "Tu es en train de lire à haute voix."
+    }
+  },
+  {
+    "index": 364,
+    "variants": {
+      "Present continuous": "Tu es en train de lire chaque jour.",
+      "Present perfect": "Tu as lu chaque jour."
+    }
+  },
+  {
+    "index": 365,
+    "variants": {
+      "Going to": "Nous allons perdre de l'argent."
+    }
+  },
+  {
+    "index": 366,
+    "variants": {
+      "Past simple": "Nous perdîmes la course.",
+      "Present simple": "Nous perdons la course."
+    }
+  },
+  {
+    "index": 367,
+    "variants": {
+      "Going to": "Nous allons la perdre."
+    }
+  },
+  {
+    "index": 368,
+    "variants": {
+      "Going to": "Nous allons perdre le pari.",
+      "Present perfect": "Nous avons perdu le pari."
+    }
+  },
+  {
+    "index": 369,
+    "variants": {
+      "Future simple": "Nous perdrons le match.",
+      "Present continuous": "Nous sommes en train de perdre le match."
+    }
+  },
+  {
+    "index": 370,
+    "variants": {
+      "Present continuous": "Nous sommes en train de perdre à nouveau.",
+      "Present perfect": "Nous avons perdu à nouveau."
+    }
+  },
+  {
+    "index": 371,
+    "variants": {
+      "Going to": "Je vais parler l'italien."
+    }
+  },
+  {
+    "index": 372,
+    "variants": {
+      "Past simple": "Je parlai avec lui.",
+      "Present simple": "Je parle avec lui."
+    }
+  },
+  {
+    "index": 373,
+    "variants": {
+      "Going to": "Je vais parler toute la journée."
+    }
+  },
+  {
+    "index": 374,
+    "variants": {
+      "Going to": "Je vais parler doucement.",
+      "Present perfect": "J'ai parlé doucement."
+    }
+  },
+  {
+    "index": 375,
+    "variants": {
+      "Future simple": "Je leur parlerai.",
+      "Present continuous": "Je suis en train de leur parler."
+    }
+  },
+  {
+    "index": 376,
+    "variants": {
+      "Present continuous": "Je suis en train de parler 3 langues.",
+      "Present perfect": "J'ai parlé 3 langues."
+    }
+  }
+]

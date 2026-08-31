@@ -1,0 +1,2371 @@
+[
+  {
+    "index": 0,
+    "variants": {
+      "Going to": "Wir werden egoistisch sein."
+    }
+  },
+  {
+    "index": 1,
+    "variants": {
+      "Past simple": "Wir fuhren nach Marokko.",
+      "Present simple": "Wir fahren nach Marokko."
+    }
+  },
+  {
+    "index": 2,
+    "variants": {
+      "Present perfect": "Wir sind jung gewesen.",
+      "Going to": "Wir werden jung sein."
+    }
+  },
+  {
+    "index": 3,
+    "variants": {
+      "Present perfect": "Wir sind schnell gewesen."
+    }
+  },
+  {
+    "index": 4,
+    "variants": {
+      "Present continuous": "Wir sind zu spät."
+    }
+  },
+  {
+    "index": 5,
+    "variants": {
+      "Present perfect": "Wir sind schnell gewesen."
+    }
+  },
+  {
+    "index": 6,
+    "variants": {
+      "Present simple": "Ich esse Frühstück.",
+      "Going to": "Ich werde Frühstück essen."
+    }
+  },
+  {
+    "index": 7,
+    "variants": {
+      "Past simple": "Ich hatte genug.",
+      "Present simple": "Ich habe genug."
+    }
+  },
+  {
+    "index": 8,
+    "variants": {
+      "Present perfect": "Ich habe einen Kaffee gehabt.",
+      "Going to": "Ich werde einen Kaffee haben."
+    }
+  },
+  {
+    "index": 9,
+    "variants": {
+      "Present perfect": "Ich habe ein Treffen gehabt."
+    }
+  },
+  {
+    "index": 10,
+    "variants": {
+      "Present continuous": "Ich esse gerade Mittag."
+    }
+  },
+  {
+    "index": 11,
+    "variants": {
+      "Present perfect": "Ich habe einen Hund gehabt."
+    }
+  },
+  {
+    "index": 12,
+    "variants": {
+      "Present continuous": "Du kannst mir gerade helfen.",
+      "Present perfect": "Du hast mir helfen können."
+    }
+  },
+  {
+    "index": 13,
+    "variants": {
+      "Past simple": "Du konntest es machen.",
+      "Present simple": "Du kannst es machen."
+    }
+  },
+  {
+    "index": 14,
+    "variants": {
+      "Present perfect": "Du hast arbeiten können.",
+      "Going to": "Du wirst arbeiten können."
+    }
+  },
+  {
+    "index": 15,
+    "variants": {
+      "Present perfect": "Du hast sprechen können."
+    }
+  },
+  {
+    "index": 16,
+    "variants": {
+      "Present continuous": "Du kannst gerade hören."
+    }
+  },
+  {
+    "index": 17,
+    "variants": {
+      "Present continuous": "Sie kennen gerade die Wahrheit.",
+      "Present perfect": "Sie haben die Wahrheit gekannt."
+    }
+  },
+  {
+    "index": 18,
+    "variants": {
+      "Past simple": "Sie wussten vom Problem.",
+      "Present simple": "Sie wissen vom Problem."
+    }
+  },
+  {
+    "index": 19,
+    "variants": {
+      "Present perfect": "Sie haben sich gekannt.",
+      "Going to": "Sie werden sich kennen."
+    }
+  },
+  {
+    "index": 20,
+    "variants": {
+      "Present perfect": "Sie haben die Antwort nicht gewusst."
+    }
+  },
+  {
+    "index": 21,
+    "variants": {
+      "Present continuous": "Sie erfahren gerade, was passiert ist."
+    }
+  },
+  {
+    "index": 22,
+    "variants": {
+      "Present continuous": "Du möchtest gerade Schokolade.",
+      "Present perfect": "Du hast Schokolade gemocht."
+    }
+  },
+  {
+    "index": 23,
+    "variants": {
+      "Past simple": "Du wolltest ein Auto.",
+      "Present simple": "Du möchtest ein Auto."
+    }
+  },
+  {
+    "index": 24,
+    "variants": {
+      "Present perfect": "Du hast diesen Job gewollt.",
+      "Going to": "Du wirst diesen Job wollen."
+    }
+  },
+  {
+    "index": 25,
+    "variants": {
+      "Present perfect": "Du hast ein Haus gewollt."
+    }
+  },
+  {
+    "index": 27,
+    "variants": {
+      "Present perfect": "Er hat Kleidung gebraucht."
+    }
+  },
+  {
+    "index": 28,
+    "variants": {
+      "Past simple": "Er brauchte Hilfe.",
+      "Present simple": "Er braucht Hilfe."
+    }
+  },
+  {
+    "index": 29,
+    "variants": {
+      "Present perfect": "Er hat Geld gebraucht.",
+      "Going to": "Er wird Geld brauchen."
+    }
+  },
+  {
+    "index": 30,
+    "variants": {
+      "Present perfect": "Er hat eine Pause gebraucht."
+    }
+  },
+  {
+    "index": 31,
+    "variants": {
+      "Present continuous": "Er braucht einen Babysitter."
+    }
+  },
+  {
+    "index": 32,
+    "variants": {
+      "Present simple": "Sie arbeitet."
+    }
+  },
+  {
+    "index": 33,
+    "variants": {
+      "Past simple": "Sie ging zum Supermarkt.",
+      "Present simple": "Sie geht zum Supermarkt."
+    }
+  },
+  {
+    "index": 34,
+    "variants": {
+      "Present perfect": "Sie ist ins Einkaufszentrum gegangen.",
+      "Going to": "Sie wird ins Einkaufszentrum gehen."
+    }
+  },
+  {
+    "index": 35,
+    "variants": {
+      "Present perfect": "Sie ist mit ihm gegangen."
+    }
+  },
+  {
+    "index": 36,
+    "variants": {
+      "Present continuous": "Sie geht ins Kino."
+    }
+  },
+  {
+    "index": 37,
+    "variants": {
+      "Present perfect": "Sie ist zur Schule gegangen."
+    }
+  },
+  {
+    "index": 38,
+    "variants": {
+      "Going to": "Ich werde meine Hausaufgaben machen."
+    }
+  },
+  {
+    "index": 39,
+    "variants": {
+      "Past simple": "Ich spülte das Geschirr.",
+      "Present simple": "Ich spüle das Geschirr."
+    }
+  },
+  {
+    "index": 40,
+    "variants": {
+      "Going to": "Ich werde die Einkäufe erledigen."
+    }
+  },
+  {
+    "index": 41,
+    "variants": {
+      "Present perfect": "Ich habe die Wäsche gemacht."
+    }
+  },
+  {
+    "index": 42,
+    "variants": {
+      "Present continuous": "Ich mache den Kurs."
+    }
+  },
+  {
+    "index": 43,
+    "variants": {
+      "Present perfect": "Ich habe trainiert."
+    }
+  },
+  {
+    "index": 46,
+    "variants": {
+      "Going to": "Du wirst den Job bekommen."
+    }
+  },
+  {
+    "index": 47,
+    "variants": {
+      "Present perfect": "Du bist schlanker geworden."
+    }
+  },
+  {
+    "index": 48,
+    "variants": {
+      "Present continuous": "Du besserst dich."
+    }
+  },
+  {
+    "index": 49,
+    "variants": {
+      "Present perfect": "Du hast E-Mails bekommen."
+    }
+  },
+  {
+    "index": 50,
+    "variants": {
+      "Going to": "Sie werden einen Kuchen backen."
+    }
+  },
+  {
+    "index": 51,
+    "variants": {
+      "Past simple": "Sie machten Fehler.",
+      "Present simple": "Sie machen Fehler."
+    }
+  },
+  {
+    "index": 52,
+    "variants": {
+      "Present perfect": "Sie haben Fortschritte gemacht.",
+      "Going to": "Sie werden Fortschritte machen."
+    }
+  },
+  {
+    "index": 53,
+    "variants": {
+      "Present perfect": "Sie haben das Abendessen zubereitet."
+    }
+  },
+  {
+    "index": 54,
+    "variants": {
+      "Present continuous": "Sie erstellen eine Website."
+    }
+  },
+  {
+    "index": 55,
+    "variants": {
+      "Present perfect": "Sie haben das Mittagessen gemacht."
+    }
+  },
+  {
+    "index": 56,
+    "variants": {
+      "Going to": "Er wird ihr folgen."
+    }
+  },
+  {
+    "index": 57,
+    "variants": {
+      "Past simple": "Er befolgte das Gesetz.",
+      "Present simple": "Er befolgt das Gesetz."
+    }
+  },
+  {
+    "index": 58,
+    "variants": {
+      "Present perfect": "Er hat die Regeln befolgt.",
+      "Going to": "Er wird die Regeln befolgen."
+    }
+  },
+  {
+    "index": 59,
+    "variants": {
+      "Present perfect": "Er hat deinem Rat gefolgt."
+    }
+  },
+  {
+    "index": 60,
+    "variants": {
+      "Present continuous": "Er folgt den Anweisungen."
+    }
+  },
+  {
+    "index": 61,
+    "variants": {
+      "Present perfect": "Er ist dir gefolgt."
+    }
+  },
+  {
+    "index": 62,
+    "variants": {
+      "Going to": "Ich werde die Pillen nehmen."
+    }
+  },
+  {
+    "index": 63,
+    "variants": {
+      "Past simple": "Ich nahm den Bus.",
+      "Present simple": "Ich nehme den Bus."
+    }
+  },
+  {
+    "index": 64,
+    "variants": {
+      "Going to": "Ich werde Fotos machen."
+    }
+  },
+  {
+    "index": 65,
+    "variants": {
+      "Present perfect": "Ich habe einen Regenschirm genommen."
+    }
+  },
+  {
+    "index": 66,
+    "variants": {
+      "Present continuous": "Ich nehme ein Flugzeug."
+    }
+  },
+  {
+    "index": 67,
+    "variants": {
+      "Present perfect": "Ich habe Unterricht genommen."
+    }
+  },
+  {
+    "index": 68,
+    "variants": {
+      "Going to": "Ich werde anfangen zu genießen."
+    }
+  },
+  {
+    "index": 69,
+    "variants": {
+      "Past simple": "Ich fing an zu weinen.",
+      "Present simple": "Ich fange an zu weinen."
+    }
+  },
+  {
+    "index": 70,
+    "variants": {
+      "Present perfect": "Ich habe angefangen zu weinen.",
+      "Going to": "Ich werde anfangen zu weinen."
+    }
+  },
+  {
+    "index": 71,
+    "variants": {
+      "Present perfect": "Ich habe das Projekt begonnen."
+    }
+  },
+  {
+    "index": 72,
+    "variants": {
+      "Present continuous": "Ich fange meinen neuen Job an."
+    }
+  },
+  {
+    "index": 73,
+    "variants": {
+      "Present continuous": "Ich fange mein Training an.",
+      "Present perfect": "Ich habe mein Training begonnen."
+    }
+  },
+  {
+    "index": 74,
+    "variants": {
+      "Going to": "Du wirst heute Abend kommen."
+    }
+  },
+  {
+    "index": 75,
+    "variants": {
+      "Past simple": "Du kamst weit.",
+      "Present simple": "Du kommst weit."
+    }
+  },
+  {
+    "index": 76,
+    "variants": {
+      "Going to": "Du wirst zur Party kommen."
+    }
+  },
+  {
+    "index": 77,
+    "variants": {
+      "Present perfect": "Du bist früh gekommen."
+    }
+  },
+  {
+    "index": 78,
+    "variants": {
+      "Present continuous": "Du kommst vorbereitet."
+    }
+  },
+  {
+    "index": 79,
+    "variants": {
+      "Present perfect": "Du bist aus Spanien gekommen."
+    }
+  },
+  {
+    "index": 80,
+    "variants": {
+      "Going to": "Du wirst Chancen geben."
+    }
+  },
+  {
+    "index": 81,
+    "variants": {
+      "Past simple": "Du gabst Informationen.",
+      "Present simple": "Du gibst Informationen."
+    }
+  },
+  {
+    "index": 82,
+    "variants": {
+      "Going to": "Du wirst einige Spielzeuge geben."
+    }
+  },
+  {
+    "index": 83,
+    "variants": {
+      "Present perfect": "Du hast Geschenke gegeben."
+    }
+  },
+  {
+    "index": 84,
+    "variants": {
+      "Present continuous": "Du gibst Unterstützung."
+    }
+  },
+  {
+    "index": 85,
+    "variants": {
+      "Present perfect": "Du hast viel gegeben."
+    }
+  },
+  {
+    "index": 86,
+    "variants": {
+      "Going to": "Ich werde dein Telefon benutzen."
+    }
+  },
+  {
+    "index": 87,
+    "variants": {
+      "Past simple": "Ich benutzte seinen Computer.",
+      "Present simple": "Ich benutze seinen Computer."
+    }
+  },
+  {
+    "index": 88,
+    "variants": {
+      "Going to": "Ich werde einen Übersetzer benutzen."
+    }
+  },
+  {
+    "index": 89,
+    "variants": {
+      "Present perfect": "Ich habe das Auto benutzt."
+    }
+  },
+  {
+    "index": 90,
+    "variants": {
+      "Present continuous": "Ich benutze die Ersparnisse."
+    }
+  },
+  {
+    "index": 91,
+    "variants": {
+      "Present perfect": "Ich habe eine Kreditkarte benutzt."
+    }
+  },
+  {
+    "index": 92,
+    "variants": {
+      "Going to": "Wir werden Fehler finden."
+    }
+  },
+  {
+    "index": 93,
+    "variants": {
+      "Past simple": "Ich fand die Schlüssel.",
+      "Present simple": "Ich finde die Schlüssel."
+    }
+  },
+  {
+    "index": 94,
+    "variants": {
+      "Going to": "Ich werde einen Platz finden."
+    }
+  },
+  {
+    "index": 95,
+    "variants": {
+      "Present perfect": "Ich habe die Brille gefunden."
+    }
+  },
+  {
+    "index": 96,
+    "variants": {
+      "Present continuous": "Ich bin die Antworten am Finden."
+    }
+  },
+  {
+    "index": 97,
+    "variants": {
+      "Present continuous": "Ich bin Geld am Finden.",
+      "Present perfect": "Ich habe Geld gefunden."
+    }
+  },
+  {
+    "index": 98,
+    "variants": {
+      "Going to": "Wir werden die Wahrheit sagen."
+    }
+  },
+  {
+    "index": 99,
+    "variants": {
+      "Past simple": "Wir erzählten alles.",
+      "Present simple": "Wir erzählen alles."
+    }
+  },
+  {
+    "index": 100,
+    "variants": {
+      "Going to": "Wir werden unseren Eltern sagen."
+    }
+  },
+  {
+    "index": 101,
+    "variants": {
+      "Present perfect": "Wir haben die Nachricht gesagt."
+    }
+  },
+  {
+    "index": 102,
+    "variants": {
+      "Present continuous": "Wir sind allen am Sagen."
+    }
+  },
+  {
+    "index": 103,
+    "variants": {
+      "Present continuous": "Wir sind eine Geschichte am Erzählen.",
+      "Present perfect": "Wir haben eine Geschichte erzählt."
+    }
+  },
+  {
+    "index": 104,
+    "variants": {
+      "Going to": "Du wirst sorgfältig zuhören."
+    }
+  },
+  {
+    "index": 105,
+    "variants": {
+      "Past simple": "Du hörtest das Radio.",
+      "Present simple": "Du hörst das Radio."
+    }
+  },
+  {
+    "index": 106,
+    "variants": {
+      "Going to": "Du wirst dem Lehrer zuhören."
+    }
+  },
+  {
+    "index": 107,
+    "variants": {
+      "Present perfect": "Du hast deiner Mutter zugehört."
+    }
+  },
+  {
+    "index": 108,
+    "variants": {
+      "Present continuous": "Du hörst mir zu."
+    }
+  },
+  {
+    "index": 109,
+    "variants": {
+      "Present perfect": "Du hast ihm zugehört."
+    }
+  },
+  {
+    "index": 110,
+    "variants": {
+      "Going to": "Du wirst dein Zimmer aufräumen."
+    }
+  },
+  {
+    "index": 111,
+    "variants": {
+      "Present simple": "Du organisierst die Veranstaltung."
+    }
+  },
+  {
+    "index": 112,
+    "variants": {
+      "Going to": "Du wirst deine Sachen organisieren."
+    }
+  },
+  {
+    "index": 113,
+    "variants": {
+      "Present perfect": "Du hast die Dokumente organisiert."
+    }
+  },
+  {
+    "index": 114,
+    "variants": {
+      "Present continuous": "Du organisierst das Treffen."
+    }
+  },
+  {
+    "index": 115,
+    "variants": {
+      "Present perfect": "Du hast das Haus organisiert."
+    }
+  },
+  {
+    "index": 117,
+    "variants": {
+      "Past simple": "Sie wurde Vater.",
+      "Present simple": "Sie wird Vater."
+    }
+  },
+  {
+    "index": 118,
+    "variants": {
+      "Present perfect": "Sie ist Köchin geworden.",
+      "Going to": "Sie wird Köchin."
+    }
+  },
+  {
+    "index": 119,
+    "variants": {
+      "Present perfect": "Sie ist Architektin geworden."
+    }
+  },
+  {
+    "index": 120,
+    "variants": {
+      "Present continuous": "Sie wird gerade erfolgreich werden."
+    }
+  },
+  {
+    "index": 121,
+    "variants": {
+      "Present continuous": "Sie wird gerade berühmt.",
+      "Present perfect": "Sie ist berühmt geworden."
+    }
+  },
+  {
+    "index": 122,
+    "variants": {
+      "Going to": "Sie werden jetzt gehen."
+    }
+  },
+  {
+    "index": 123,
+    "variants": {
+      "Past simple": "Sie hinterließen eine Nachricht.",
+      "Present simple": "Sie hinterlassen eine Nachricht."
+    }
+  },
+  {
+    "index": 124,
+    "variants": {
+      "Present perfect": "Sie haben gestern einen Weg gegangen.",
+      "Going to": "Sie werden gestern gehen."
+    }
+  },
+  {
+    "index": 125,
+    "variants": {
+      "Present perfect": "Sie haben die Stadt verlassen."
+    }
+  },
+  {
+    "index": 126,
+    "variants": {
+      "Present continuous": "Sie gehen gerade bald."
+    }
+  },
+  {
+    "index": 127,
+    "variants": {
+      "Present continuous": "Er geht gerade um 3 Uhr.",
+      "Present perfect": "Er ist um 3 Uhr gegangen."
+    }
+  },
+  {
+    "index": 128,
+    "variants": {
+      "Going to": "Ich werde hart arbeiten."
+    }
+  },
+  {
+    "index": 129,
+    "variants": {
+      "Past simple": "Ich arbeitete mit James.",
+      "Present simple": "Ich arbeite mit James."
+    }
+  },
+  {
+    "index": 130,
+    "variants": {
+      "Going to": "Ich werde in einem Museum arbeiten."
+    }
+  },
+  {
+    "index": 131,
+    "variants": {
+      "Present perfect": "Ich habe morgen gearbeitet."
+    }
+  },
+  {
+    "index": 132,
+    "variants": {
+      "Present continuous": "Ich bin hart am Arbeiten."
+    }
+  },
+  {
+    "index": 133,
+    "variants": {
+      "Present continuous": "Ich bin in einem Hotel am Arbeiten.",
+      "Present perfect": "Ich habe in einem Hotel gearbeitet."
+    }
+  },
+  {
+    "index": 134,
+    "variants": {
+      "Present continuous": "Wir sind uns besser am Fühlen.",
+      "Present perfect": "Wir haben uns besser gefühlt."
+    }
+  },
+  {
+    "index": 135,
+    "variants": {
+      "Past simple": "Wir fühlten uns müde.",
+      "Present simple": "Wir fühlen uns müde."
+    }
+  },
+  {
+    "index": 136,
+    "variants": {
+      "Present perfect": "Wir haben uns nervös gefühlt.",
+      "Going to": "Wir werden uns nervös fühlen."
+    }
+  },
+  {
+    "index": 137,
+    "variants": {
+      "Present perfect": "Wir haben uns aufgeregt gefühlt."
+    }
+  },
+  {
+    "index": 138,
+    "variants": {
+      "Present continuous": "Wir sind den Druck am Spüren."
+    }
+  },
+  {
+    "index": 139,
+    "variants": {
+      "Present continuous": "Wir sind uns glücklich am Fühlen.",
+      "Present perfect": "Wir haben uns glücklich gefühlt."
+    }
+  },
+  {
+    "index": 140,
+    "variants": {
+      "Going to": "Du wirst nach London fliegen."
+    }
+  },
+  {
+    "index": 141,
+    "variants": {
+      "Present simple": "Du fliegst 6 Stunden."
+    }
+  },
+  {
+    "index": 142,
+    "variants": {
+      "Going to": "Du wirst zu hoch fliegen."
+    }
+  },
+  {
+    "index": 143,
+    "variants": {
+      "Present perfect": "Du bist in einem Flugzeug geflogen."
+    }
+  },
+  {
+    "index": 144,
+    "variants": {
+      "Present continuous": "Du bist nach New York am Fliegen."
+    }
+  },
+  {
+    "index": 145,
+    "variants": {
+      "Present continuous": "Du bist beruflich am Fliegen.",
+      "Present perfect": "Du bist beruflich geflogen."
+    }
+  },
+  {
+    "index": 146,
+    "variants": {
+      "Going to": "Du wirst um Hilfe bitten."
+    }
+  },
+  {
+    "index": 147,
+    "variants": {
+      "Present simple": "Du stellst Fragen."
+    }
+  },
+  {
+    "index": 148,
+    "variants": {
+      "Going to": "Du wirst um mehr Zeit bitten."
+    }
+  },
+  {
+    "index": 149,
+    "variants": {
+      "Present perfect": "Du hast um Geld gebeten."
+    }
+  },
+  {
+    "index": 150,
+    "variants": {
+      "Present continuous": "Du bist um Nachtisch am Bitten."
+    }
+  },
+  {
+    "index": 151,
+    "variants": {
+      "Present continuous": "Du bist den Lehrer am Fragen.",
+      "Present perfect": "Du hast den Lehrer gefragt."
+    }
+  },
+  {
+    "index": 152,
+    "variants": {
+      "Going to": "Er wird seine Verlobte heiraten."
+    }
+  },
+  {
+    "index": 153,
+    "variants": {
+      "Present simple": "Er heiratet Julie."
+    }
+  },
+  {
+    "index": 154,
+    "variants": {
+      "Going to": "Er wird letzten Sommer heiraten."
+    }
+  },
+  {
+    "index": 155,
+    "variants": {
+      "Present perfect": "Er hat Julie geheiratet."
+    }
+  },
+  {
+    "index": 156,
+    "variants": {
+      "Present continuous": "Er heiratet meine Tochter."
+    }
+  },
+  {
+    "index": 157,
+    "variants": {
+      "Present perfect": "Er hat sie geheiratet."
+    }
+  },
+  {
+    "index": 158,
+    "variants": {
+      "Going to": "Sie wird versuchen, sie anzurufen."
+    }
+  },
+  {
+    "index": 159,
+    "variants": {
+      "Past simple": "Sie probierte den Kuchen.",
+      "Present simple": "Sie probiert den Kuchen."
+    }
+  },
+  {
+    "index": 160,
+    "variants": {
+      "Going to": "Sie wird sein Bestes versuchen."
+    }
+  },
+  {
+    "index": 161,
+    "variants": {
+      "Present perfect": "Sie hat versucht, dich anzurufen."
+    }
+  },
+  {
+    "index": 162,
+    "variants": {
+      "Present continuous": "Sie versucht noch einmal."
+    }
+  },
+  {
+    "index": 163,
+    "variants": {
+      "Present perfect": "Sie hat alles versucht."
+    }
+  },
+  {
+    "index": 164,
+    "variants": {
+      "Going to": "Ich werde mit Paul laufen."
+    }
+  },
+  {
+    "index": 165,
+    "variants": {
+      "Present simple": "Ich laufe im Park."
+    }
+  },
+  {
+    "index": 166,
+    "variants": {
+      "Going to": "Ich werde einen Marathon laufen."
+    }
+  },
+  {
+    "index": 167,
+    "variants": {
+      "Present perfect": "Ich bin schneller gelaufen."
+    }
+  },
+  {
+    "index": 168,
+    "variants": {
+      "Present continuous": "Ich laufe gerade in den Olympischen Spielen."
+    }
+  },
+  {
+    "index": 169,
+    "variants": {
+      "Present continuous": "Ich laufe gerade jeden Tag.",
+      "Present perfect": "Ich bin jeden Tag gelaufen."
+    }
+  },
+  {
+    "index": 170,
+    "variants": {
+      "Present continuous": "Ich bleibe gerade still.",
+      "Present perfect": "Ich bin still geblieben."
+    }
+  },
+  {
+    "index": 171,
+    "variants": {
+      "Past simple": "Ich blieb ruhig.",
+      "Present simple": "Ich bleibe ruhig."
+    }
+  },
+  {
+    "index": 172,
+    "variants": {
+      "Going to": "Ich werde stark bleiben."
+    }
+  },
+  {
+    "index": 173,
+    "variants": {
+      "Present perfect": "Ich bin geduldig geblieben."
+    }
+  },
+  {
+    "index": 174,
+    "variants": {
+      "Present continuous": "Ich bleibe gerade zu Hause."
+    }
+  },
+  {
+    "index": 175,
+    "variants": {
+      "Going to": "Wir werden das Haus zeigen."
+    }
+  },
+  {
+    "index": 176,
+    "variants": {
+      "Past simple": "Wir zeigten die Ergebnisse.",
+      "Present simple": "Wir zeigen die Ergebnisse."
+    }
+  },
+  {
+    "index": 177,
+    "variants": {
+      "Going to": "Wir werden die Bilder zeigen."
+    }
+  },
+  {
+    "index": 178,
+    "variants": {
+      "Present perfect": "Wir haben den Weg gezeigt."
+    }
+  },
+  {
+    "index": 179,
+    "variants": {
+      "Present continuous": "Wir zeigen gerade unsere Unterstützung."
+    }
+  },
+  {
+    "index": 180,
+    "variants": {
+      "Present continuous": "Wir sind Freundlichkeit am Zeigen.",
+      "Present perfect": "Wir haben Freundlichkeit gezeigt."
+    }
+  },
+  {
+    "index": 181,
+    "variants": {
+      "Going to": "Sie werden einschlafen."
+    }
+  },
+  {
+    "index": 182,
+    "variants": {
+      "Past simple": "Sie fielen die Treppe hinunter.",
+      "Present simple": "Sie fallen die Treppe hinunter."
+    }
+  },
+  {
+    "index": 183,
+    "variants": {
+      "Going to": "Sie werden auseinanderfallen."
+    }
+  },
+  {
+    "index": 184,
+    "variants": {
+      "Present perfect": "Sie sind in die Falle getappt."
+    }
+  },
+  {
+    "index": 185,
+    "variants": {
+      "Present continuous": "Sie verlieben sich."
+    }
+  },
+  {
+    "index": 186,
+    "variants": {
+      "Present continuous": "Sie sind leicht am Fallen.",
+      "Present perfect": "Sie sind leicht gefallen."
+    }
+  },
+  {
+    "index": 187,
+    "variants": {
+      "Going to": "Du wirst ein Glas halten."
+    }
+  },
+  {
+    "index": 188,
+    "variants": {
+      "Past simple": "Du hieltest das Baby.",
+      "Present simple": "Du hältst das Baby."
+    }
+  },
+  {
+    "index": 189,
+    "variants": {
+      "Present perfect": "Du hast die Trophäe gehalten.",
+      "Going to": "Du wirst die Trophäe halten."
+    }
+  },
+  {
+    "index": 190,
+    "variants": {
+      "Present perfect": "Du hast den Rekord gehalten."
+    }
+  },
+  {
+    "index": 191,
+    "variants": {
+      "Present continuous": "Du hältst diese Position."
+    }
+  },
+  {
+    "index": 192,
+    "variants": {
+      "Present continuous": "Du hältst gerade die Tür.",
+      "Present perfect": "Du hast die Tür gehalten."
+    }
+  },
+  {
+    "index": 193,
+    "variants": {
+      "Going to": "Sie werden sich um eine Stelle bewerben."
+    }
+  },
+  {
+    "index": 194,
+    "variants": {
+      "Past simple": "Sie bewarben sich um ein Visum.",
+      "Present simple": "Sie bewerben sich um ein Visum."
+    }
+  },
+  {
+    "index": 195,
+    "variants": {
+      "Present perfect": "Sie haben sich um ein Stipendium beworben.",
+      "Going to": "Sie werden sich um ein Stipendium bewerben."
+    }
+  },
+  {
+    "index": 196,
+    "variants": {
+      "Present perfect": "Sie haben sich um einen Kredit beworben."
+    }
+  },
+  {
+    "index": 197,
+    "variants": {
+      "Present continuous": "Sie tragen gerade Sonnencreme auf."
+    }
+  },
+  {
+    "index": 198,
+    "variants": {
+      "Present continuous": "Sie üben gerade Druck aus.",
+      "Present perfect": "Sie haben Druck ausgeübt."
+    }
+  },
+  {
+    "index": 199,
+    "variants": {
+      "Going to": "Er wird einen Therapeuten sehen."
+    }
+  },
+  {
+    "index": 200,
+    "variants": {
+      "Past simple": "Er sah den Film.",
+      "Present simple": "Er sieht den Film."
+    }
+  },
+  {
+    "index": 201,
+    "variants": {
+      "Present perfect": "Er hat sie gesehen.",
+      "Going to": "Er wird sie sehen."
+    }
+  },
+  {
+    "index": 202,
+    "variants": {
+      "Present perfect": "Er hat den Arzt gesehen."
+    }
+  },
+  {
+    "index": 203,
+    "variants": {
+      "Present continuous": "Er sieht gerade seine Freundin."
+    }
+  },
+  {
+    "index": 204,
+    "variants": {
+      "Present continuous": "Er ist dabei, den Wert zu sehen.",
+      "Present perfect": "Er hat den Wert gesehen."
+    }
+  },
+  {
+    "index": 205,
+    "variants": {
+      "Going to": "Wir werden ihn bleiben lassen."
+    }
+  },
+  {
+    "index": 206,
+    "variants": {
+      "Past simple": "Wir ließen sie sprechen.",
+      "Present simple": "Wir lassen sie sprechen."
+    }
+  },
+  {
+    "index": 207,
+    "variants": {
+      "Present perfect": "Wir haben sie eintreten lassen.",
+      "Going to": "Wir werden sie eintreten lassen."
+    }
+  },
+  {
+    "index": 208,
+    "variants": {
+      "Present perfect": "Wir haben John fahren lassen."
+    }
+  },
+  {
+    "index": 209,
+    "variants": {
+      "Present continuous": "Wir lassen dich wählen."
+    }
+  },
+  {
+    "index": 210,
+    "variants": {
+      "Present continuous": "Wir lassen ihnen helfen.",
+      "Present perfect": "Wir haben ihnen helfen lassen."
+    }
+  },
+  {
+    "index": 211,
+    "variants": {
+      "Going to": "Ich werde Snacks mitbringen."
+    }
+  },
+  {
+    "index": 212,
+    "variants": {
+      "Past simple": "Ich brachte meinen Laptop mit.",
+      "Present simple": "Ich bringe meinen Laptop mit."
+    }
+  },
+  {
+    "index": 213,
+    "variants": {
+      "Present perfect": "Ich habe ein Geschenk mitgebracht.",
+      "Going to": "Ich werde ein Geschenk mitbringen."
+    }
+  },
+  {
+    "index": 214,
+    "variants": {
+      "Present perfect": "Ich habe einen Freund mitgebracht."
+    }
+  },
+  {
+    "index": 215,
+    "variants": {
+      "Present continuous": "Ich bringe Nachtisch mit."
+    }
+  },
+  {
+    "index": 216,
+    "variants": {
+      "Present continuous": "Ich bin alles am Mitbringen.",
+      "Present perfect": "Ich habe alles mitgebracht."
+    }
+  },
+  {
+    "index": 217,
+    "variants": {
+      "Present continuous": "Du bist Fisch am Mögen.",
+      "Present perfect": "Du hast Fisch gemocht."
+    }
+  },
+  {
+    "index": 218,
+    "variants": {
+      "Past simple": "Du mochtest die Idee.",
+      "Present simple": "Du magst die Idee."
+    }
+  },
+  {
+    "index": 219,
+    "variants": {
+      "Present perfect": "Dir hat die Show gefallen.",
+      "Going to": "Dir wird die Show gefallen."
+    }
+  },
+  {
+    "index": 220,
+    "variants": {
+      "Going to": "Dir wirst das Essen mögen.",
+      "Present perfect": "Dir hat das Essen gefallen."
+    }
+  },
+  {
+    "index": 221,
+    "variants": {
+      "Present continuous": "Du bist das Spiel am Mögen."
+    }
+  },
+  {
+    "index": 222,
+    "variants": {
+      "Present continuous": "Du bist die Reise am Mögen.",
+      "Present perfect": "Du hast die Reise gemocht."
+    }
+  },
+  {
+    "index": 223,
+    "variants": {
+      "Going to": "Sie werden uns helfen."
+    }
+  },
+  {
+    "index": 224,
+    "variants": {
+      "Past simple": "Sie halfen viel.",
+      "Present simple": "Sie helfen viel."
+    }
+  },
+  {
+    "index": 225,
+    "variants": {
+      "Present perfect": "Sie haben den Kindern geholfen.",
+      "Going to": "Sie werden den Kindern helfen."
+    }
+  },
+  {
+    "index": 226,
+    "variants": {
+      "Present perfect": "Sie haben morgen geholfen."
+    }
+  },
+  {
+    "index": 227,
+    "variants": {
+      "Present continuous": "Sie helfen mir."
+    }
+  },
+  {
+    "index": 228,
+    "variants": {
+      "Present continuous": "Sie sind dabei, Familien zu helfen.",
+      "Present perfect": "Sie haben Familien geholfen."
+    }
+  },
+  {
+    "index": 229,
+    "variants": {
+      "Going to": "Sie wird die Schule anfangen."
+    }
+  },
+  {
+    "index": 230,
+    "variants": {
+      "Past simple": "Sie fing das Training an.",
+      "Present simple": "Sie fängt das Training an."
+    }
+  },
+  {
+    "index": 231,
+    "variants": {
+      "Present perfect": "Sie hat früh angefangen.",
+      "Going to": "Sie wird früh anfangen."
+    }
+  },
+  {
+    "index": 232,
+    "variants": {
+      "Present perfect": "Sie hat um 2 Uhr angefangen."
+    }
+  },
+  {
+    "index": 233,
+    "variants": {
+      "Present continuous": "Sie ist dabei, ein Geschäft zu gründen."
+    }
+  },
+  {
+    "index": 234,
+    "variants": {
+      "Present continuous": "Sie ist dabei, jetzt anzufangen.",
+      "Present perfect": "Sie hat jetzt angefangen."
+    }
+  },
+  {
+    "index": 235,
+    "variants": {
+      "Going to": "Sie werden Monica anrufen."
+    }
+  },
+  {
+    "index": 236,
+    "variants": {
+      "Past simple": "Sie riefen die Polizei an.",
+      "Present simple": "Sie rufen die Polizei an."
+    }
+  },
+  {
+    "index": 237,
+    "variants": {
+      "Going to": "Sie werden dich anrufen."
+    }
+  },
+  {
+    "index": 238,
+    "variants": {
+      "Present perfect": "Sie haben zurückgerufen."
+    }
+  },
+  {
+    "index": 239,
+    "variants": {
+      "Present continuous": "Sie sind dabei, mich anzurufen."
+    }
+  },
+  {
+    "index": 240,
+    "variants": {
+      "Present perfect": "Sie haben jeden Tag angerufen."
+    }
+  },
+  {
+    "index": 241,
+    "variants": {
+      "Going to": "Ich werde alles vergessen."
+    }
+  },
+  {
+    "index": 242,
+    "variants": {
+      "Past simple": "Ich vergaß deinen Geburtstag.",
+      "Present simple": "Ich vergesse deinen Geburtstag."
+    }
+  },
+  {
+    "index": 243,
+    "variants": {
+      "Going to": "Ich werde die Schlüssel vergessen."
+    }
+  },
+  {
+    "index": 244,
+    "variants": {
+      "Present perfect": "Ich habe die Regeln vergessen."
+    }
+  },
+  {
+    "index": 245,
+    "variants": {
+      "Present continuous": "Ich vergesse meine Tasche."
+    }
+  },
+  {
+    "index": 246,
+    "variants": {
+      "Present perfect": "Ich habe Namen vergessen."
+    }
+  },
+  {
+    "index": 247,
+    "variants": {
+      "Going to": "Wir werden ihn meiden."
+    }
+  },
+  {
+    "index": 248,
+    "variants": {
+      "Past simple": "Wir vermieden Ärger.",
+      "Present simple": "Wir meiden Ärger."
+    }
+  },
+  {
+    "index": 249,
+    "variants": {
+      "Going to": "Wir werden den Verkehr vermeiden."
+    }
+  },
+  {
+    "index": 250,
+    "variants": {
+      "Present perfect": "Wir haben Konflikte vermieden."
+    }
+  },
+  {
+    "index": 251,
+    "variants": {
+      "Present continuous": "Wir meiden die Menschenmenge."
+    }
+  },
+  {
+    "index": 252,
+    "variants": {
+      "Present continuous": "Wir vermeiden gerade Auseinandersetzungen.",
+      "Present perfect": "Wir haben Auseinandersetzungen vermieden."
+    }
+  },
+  {
+    "index": 253,
+    "variants": {
+      "Going to": "Du wirst dich schnell bewegen."
+    }
+  },
+  {
+    "index": 254,
+    "variants": {
+      "Past simple": "Du bewegtest den Tisch.",
+      "Present simple": "Du bewegst den Tisch."
+    }
+  },
+  {
+    "index": 255,
+    "variants": {
+      "Going to": "Du wirst umziehen."
+    }
+  },
+  {
+    "index": 256,
+    "variants": {
+      "Present perfect": "Du bist nach oben gezogen."
+    }
+  },
+  {
+    "index": 257,
+    "variants": {
+      "Present continuous": "Du bewegst Kartons gerade."
+    }
+  },
+  {
+    "index": 258,
+    "variants": {
+      "Present continuous": "Du bewegst Möbel gerade.",
+      "Present perfect": "Du hast Möbel bewegt."
+    }
+  },
+  {
+    "index": 259,
+    "variants": {
+      "Going to": "Sie wird Schach spielen."
+    }
+  },
+  {
+    "index": 260,
+    "variants": {
+      "Past simple": "Sie spielte Klavier.",
+      "Present simple": "Sie spielt Klavier."
+    }
+  },
+  {
+    "index": 261,
+    "variants": {
+      "Present perfect": "Sie hat Tennis gespielt.",
+      "Going to": "Sie wird Tennis spielen."
+    }
+  },
+  {
+    "index": 262,
+    "variants": {
+      "Present perfect": "Sie hat drinnen gespielt."
+    }
+  },
+  {
+    "index": 263,
+    "variants": {
+      "Present continuous": "Sie spielt allein gerade."
+    }
+  },
+  {
+    "index": 264,
+    "variants": {
+      "Present continuous": "Sie ist Fußball spielend.",
+      "Present perfect": "Sie hat Fußball gespielt."
+    }
+  },
+  {
+    "index": 265,
+    "variants": {
+      "Going to": "Er wird die Rechnung bezahlen."
+    }
+  },
+  {
+    "index": 266,
+    "variants": {
+      "Past simple": "Er bezahlte das Mittagessen.",
+      "Present simple": "Er bezahlt das Mittagessen."
+    }
+  },
+  {
+    "index": 267,
+    "variants": {
+      "Present perfect": "Er hat mit Karte bezahlt.",
+      "Going to": "Er wird mit Karte bezahlen."
+    }
+  },
+  {
+    "index": 268,
+    "variants": {
+      "Present perfect": "Er hat den Fahrer bezahlt."
+    }
+  },
+  {
+    "index": 269,
+    "variants": {
+      "Present continuous": "Er bezahlt die Steuern."
+    }
+  },
+  {
+    "index": 270,
+    "variants": {
+      "Present perfect": "Er hat die Miete bezahlt."
+    }
+  },
+  {
+    "index": 271,
+    "variants": {
+      "Present perfect": "Sie haben Musik gehört."
+    }
+  },
+  {
+    "index": 272,
+    "variants": {
+      "Past simple": "Sie hörten ein Geräusch.",
+      "Present simple": "Sie hören ein Geräusch."
+    }
+  },
+  {
+    "index": 273,
+    "variants": {
+      "Present perfect": "Sie haben Stimmen gehört.",
+      "Going to": "Sie werden Stimmen hören."
+    }
+  },
+  {
+    "index": 274,
+    "variants": {
+      "Present perfect": "Sie haben die Glocken gehört."
+    }
+  },
+  {
+    "index": 275,
+    "variants": {
+      "Present continuous": "Sie hören Schreie."
+    }
+  },
+  {
+    "index": 276,
+    "variants": {
+      "Present perfect": "Ich habe an Gott geglaubt."
+    }
+  },
+  {
+    "index": 277,
+    "variants": {
+      "Past simple": "Ich glaubte das.",
+      "Present simple": "Ich glaube das."
+    }
+  },
+  {
+    "index": 278,
+    "variants": {
+      "Present perfect": "Ich habe an dir geglaubt.",
+      "Going to": "Ich werde an dir glauben."
+    }
+  },
+  {
+    "index": 279,
+    "variants": {
+      "Present perfect": "Ich habe die Geschichte geglaubt."
+    }
+  },
+  {
+    "index": 280,
+    "variants": {
+      "Present continuous": "Ich glaube Mary."
+    }
+  },
+  {
+    "index": 281,
+    "variants": {
+      "Going to": "Wir werden Besucher zulassen."
+    }
+  },
+  {
+    "index": 282,
+    "variants": {
+      "Past simple": "Wir ließen Änderungen zu.",
+      "Present simple": "Wir lassen Änderungen zu."
+    }
+  },
+  {
+    "index": 283,
+    "variants": {
+      "Present perfect": "Wir haben Ausnahmen zugelassen.",
+      "Going to": "Wir werden Ausnahmen zulassen."
+    }
+  },
+  {
+    "index": 284,
+    "variants": {
+      "Present perfect": "Wir haben Haustiere erlaubt."
+    }
+  },
+  {
+    "index": 285,
+    "variants": {
+      "Present continuous": "Wir lassen Teilnahme zu."
+    }
+  },
+  {
+    "index": 286,
+    "variants": {
+      "Present perfect": "Wir haben Telefone erlaubt."
+    }
+  },
+  {
+    "index": 287,
+    "variants": {
+      "Going to": "Sie wird neben mir sitzen."
+    }
+  },
+  {
+    "index": 288,
+    "variants": {
+      "Past simple": "Sie saß am Tisch.",
+      "Present simple": "Sie sitzt am Tisch."
+    }
+  },
+  {
+    "index": 289,
+    "variants": {
+      "Present perfect": "Sie hat auf dem Stuhl gesessen.",
+      "Going to": "Sie wird auf dem Stuhl sitzen."
+    }
+  },
+  {
+    "index": 290,
+    "variants": {
+      "Present perfect": "Sie hat auf dem Sofa gesessen."
+    }
+  },
+  {
+    "index": 291,
+    "variants": {
+      "Present continuous": "Sie sitzt allein."
+    }
+  },
+  {
+    "index": 292,
+    "variants": {
+      "Present perfect": "Sie hat still gesessen."
+    }
+  },
+  {
+    "index": 293,
+    "variants": {
+      "Going to": "Du wirst unter Stress leiden."
+    }
+  },
+  {
+    "index": 294,
+    "variants": {
+      "Past simple": "Du littst viel.",
+      "Present simple": "Du leidest viel."
+    }
+  },
+  {
+    "index": 295,
+    "variants": {
+      "Present perfect": "Du hast an einer Krankheit gelitten.",
+      "Going to": "Du wirst an einer Krankheit leiden."
+    }
+  },
+  {
+    "index": 296,
+    "variants": {
+      "Present perfect": "Du hast zu viel gelitten."
+    }
+  },
+  {
+    "index": 297,
+    "variants": {
+      "Present continuous": "Du leidest Schmerzen."
+    }
+  },
+  {
+    "index": 298,
+    "variants": {
+      "Present perfect": "Du hast tief gelitten."
+    }
+  },
+  {
+    "index": 299,
+    "variants": {
+      "Going to": "Sie werden das Team anführen."
+    }
+  },
+  {
+    "index": 300,
+    "variants": {
+      "Past simple": "Sie leiteten die Gruppe.",
+      "Present simple": "Sie leiten die Gruppe."
+    }
+  },
+  {
+    "index": 301,
+    "variants": {
+      "Present perfect": "Sie haben das Projekt geleitet.",
+      "Going to": "Sie werden das Projekt leiten."
+    }
+  },
+  {
+    "index": 302,
+    "variants": {
+      "Present perfect": "Sie haben die Klasse geleitet."
+    }
+  },
+  {
+    "index": 303,
+    "variants": {
+      "Present continuous": "Sie führen alle."
+    }
+  },
+  {
+    "index": 304,
+    "variants": {
+      "Present perfect": "Sie haben das Unternehmen geleitet."
+    }
+  },
+  {
+    "index": 305,
+    "variants": {
+      "Going to": "Ich werde in Deutschland leben."
+    }
+  },
+  {
+    "index": 306,
+    "variants": {
+      "Past simple": "Ich lebte im Ausland.",
+      "Present simple": "Ich lebe im Ausland."
+    }
+  },
+  {
+    "index": 307,
+    "variants": {
+      "Present perfect": "Ich habe hier gelebt.",
+      "Going to": "Ich werde hier leben."
+    }
+  },
+  {
+    "index": 308,
+    "variants": {
+      "Present perfect": "Ich habe in London gelebt."
+    }
+  },
+  {
+    "index": 309,
+    "variants": {
+      "Present continuous": "Ich lebe mit Diego."
+    }
+  },
+  {
+    "index": 310,
+    "variants": {
+      "Present perfect": "Ich habe allein gelebt."
+    }
+  },
+  {
+    "index": 311,
+    "variants": {
+      "Going to": "Er wird Kunden treffen."
+    }
+  },
+  {
+    "index": 312,
+    "variants": {
+      "Past simple": "Er traf den Präsidenten.",
+      "Present simple": "Er trifft den Präsidenten."
+    }
+  },
+  {
+    "index": 313,
+    "variants": {
+      "Present perfect": "Er hat Michael Jackson getroffen.",
+      "Going to": "Er wird Michael Jackson treffen."
+    }
+  },
+  {
+    "index": 314,
+    "variants": {
+      "Present perfect": "Er hat seinen Chef getroffen."
+    }
+  },
+  {
+    "index": 315,
+    "variants": {
+      "Present continuous": "Er trifft gerade das Team."
+    }
+  },
+  {
+    "index": 316,
+    "variants": {
+      "Present continuous": "Er trifft gerade den Manager.",
+      "Present perfect": "Er hat den Manager getroffen."
+    }
+  },
+  {
+    "index": 317,
+    "variants": {
+      "Going to": "Du wirst die Kiste tragen."
+    }
+  },
+  {
+    "index": 318,
+    "variants": {
+      "Past simple": "Du trugst die Tasche.",
+      "Present simple": "Du trägst die Tasche."
+    }
+  },
+  {
+    "index": 319,
+    "variants": {
+      "Present perfect": "Du hast Gepäck getragen.",
+      "Going to": "Du wirst Gepäck tragen."
+    }
+  },
+  {
+    "index": 320,
+    "variants": {
+      "Present perfect": "Du hast das Essen getragen."
+    }
+  },
+  {
+    "index": 321,
+    "variants": {
+      "Present continuous": "Du trägst gerade einen Koffer."
+    }
+  },
+  {
+    "index": 322,
+    "variants": {
+      "Present continuous": "Du trägst gerade zu viel.",
+      "Present perfect": "Du hast zu viel getragen."
+    }
+  },
+  {
+    "index": 323,
+    "variants": {
+      "Going to": "Wir werden daran denken, umzuziehen."
+    }
+  },
+  {
+    "index": 324,
+    "variants": {
+      "Past simple": "Wir dachten darüber nach.",
+      "Present simple": "Wir denken darüber nach."
+    }
+  },
+  {
+    "index": 325,
+    "variants": {
+      "Going to": "Wir werden an dich denken."
+    }
+  },
+  {
+    "index": 326,
+    "variants": {
+      "Present perfect": "Wir haben sorgfältig nachgedacht."
+    }
+  },
+  {
+    "index": 327,
+    "variants": {
+      "Present continuous": "Wir denken positiv."
+    }
+  },
+  {
+    "index": 328,
+    "variants": {
+      "Present perfect": "Wir haben zusammen gedacht."
+    }
+  },
+  {
+    "index": 329,
+    "variants": {
+      "Going to": "Ich werde einen Brief schreiben."
+    }
+  },
+  {
+    "index": 330,
+    "variants": {
+      "Past simple": "Ich schrieb eine E-Mail.",
+      "Present simple": "Ich schreibe eine E-Mail."
+    }
+  },
+  {
+    "index": 331,
+    "variants": {
+      "Present perfect": "Ich habe ein Buch geschrieben.",
+      "Going to": "Ich werde ein Buch schreiben."
+    }
+  },
+  {
+    "index": 332,
+    "variants": {
+      "Present perfect": "Ich habe eine Nachricht geschrieben."
+    }
+  },
+  {
+    "index": 333,
+    "variants": {
+      "Present continuous": "Ich schreibe einen Bericht."
+    }
+  },
+  {
+    "index": 334,
+    "variants": {
+      "Present perfect": "Ich habe langsam geschrieben."
+    }
+  },
+  {
+    "index": 335,
+    "variants": {
+      "Going to": "Sie wird die Hausaufgaben fertig machen."
+    }
+  },
+  {
+    "index": 336,
+    "variants": {
+      "Past simple": "Sie schloss den Kurs ab.",
+      "Present simple": "Sie schließt den Kurs ab."
+    }
+  },
+  {
+    "index": 337,
+    "variants": {
+      "Present perfect": "Sie hat ihren Kaffee ausgetrunken.",
+      "Going to": "Sie wird ihren Kaffee austrinken."
+    }
+  },
+  {
+    "index": 338,
+    "variants": {
+      "Present perfect": "Sie hat die Schule beendet."
+    }
+  },
+  {
+    "index": 339,
+    "variants": {
+      "Present continuous": "Sie beendet gerade die Stunde."
+    }
+  },
+  {
+    "index": 340,
+    "variants": {
+      "Present continuous": "Sie beendet gerade schnell.",
+      "Present perfect": "Sie hat schnell beendet."
+    }
+  },
+  {
+    "index": 341,
+    "variants": {
+      "Going to": "Du wirst einen Anruf erwarten."
+    }
+  },
+  {
+    "index": 342,
+    "variants": {
+      "Past simple": "Du erwartest zu viel.",
+      "Present simple": "Du erwartest zu viel."
+    }
+  },
+  {
+    "index": 343,
+    "variants": {
+      "Going to": "Du wirst eine Antwort erwarten."
+    }
+  },
+  {
+    "index": 344,
+    "variants": {
+      "Present perfect": "Du hast Nachrichten erwartet."
+    }
+  },
+  {
+    "index": 345,
+    "variants": {
+      "Present continuous": "Du erwartest gerade eine Lieferung."
+    }
+  },
+  {
+    "index": 346,
+    "variants": {
+      "Present continuous": "Du erwartest gerade Ergebnisse.",
+      "Present perfect": "Du hast Ergebnisse erwartet."
+    }
+  },
+  {
+    "index": 347,
+    "variants": {
+      "Going to": "Sie werden sich ein Zimmer teilen."
+    }
+  },
+  {
+    "index": 348,
+    "variants": {
+      "Past simple": "Sie teilten das Sandwich.",
+      "Present simple": "Sie teilen das Sandwich."
+    }
+  },
+  {
+    "index": 349,
+    "variants": {
+      "Present perfect": "Sie haben Ideen geteilt.",
+      "Going to": "Sie werden Ideen teilen."
+    }
+  },
+  {
+    "index": 350,
+    "variants": {
+      "Present perfect": "Sie haben das Mittagessen geteilt."
+    }
+  },
+  {
+    "index": 351,
+    "variants": {
+      "Present continuous": "Sie teilen den Computer."
+    }
+  },
+  {
+    "index": 352,
+    "variants": {
+      "Present perfect": "Sie haben Geheimnisse geteilt."
+    }
+  },
+  {
+    "index": 353,
+    "variants": {
+      "Going to": "Er wird am Telefon sprechen."
+    }
+  },
+  {
+    "index": 354,
+    "variants": {
+      "Past simple": "Er sprach mit ihnen.",
+      "Present simple": "Er spricht mit ihnen."
+    }
+  },
+  {
+    "index": 355,
+    "variants": {
+      "Present perfect": "Er hat schnell gesprochen.",
+      "Going to": "Er wird schnell sprechen."
+    }
+  },
+  {
+    "index": 356,
+    "variants": {
+      "Present perfect": "Er hat mit ihr gesprochen."
+    }
+  },
+  {
+    "index": 357,
+    "variants": {
+      "Present continuous": "Er spricht darüber."
+    }
+  },
+  {
+    "index": 358,
+    "variants": {
+      "Present perfect": "Er hat deutlich gesprochen."
+    }
+  },
+  {
+    "index": 359,
+    "variants": {
+      "Going to": "Du wirst leise lesen."
+    }
+  },
+  {
+    "index": 360,
+    "variants": {
+      "Past simple": "Du lasest den Roman.",
+      "Present simple": "Du liest den Roman."
+    }
+  },
+  {
+    "index": 361,
+    "variants": {
+      "Present perfect": "Du hast meinen Artikel gelesen.",
+      "Going to": "Du wirst meinen Artikel lesen."
+    }
+  },
+  {
+    "index": 362,
+    "variants": {
+      "Present perfect": "Du hast die E-Mails gelesen."
+    }
+  },
+  {
+    "index": 363,
+    "variants": {
+      "Present continuous": "Du liest laut vor."
+    }
+  },
+  {
+    "index": 364,
+    "variants": {
+      "Present perfect": "Du hast jeden Tag gelesen."
+    }
+  },
+  {
+    "index": 365,
+    "variants": {
+      "Going to": "Wir werden Geld verlieren."
+    }
+  },
+  {
+    "index": 366,
+    "variants": {
+      "Past simple": "Wir verloren das Rennen.",
+      "Present simple": "Wir verlieren das Rennen."
+    }
+  },
+  {
+    "index": 367,
+    "variants": {
+      "Going to": "Wir werden sie verlieren."
+    }
+  },
+  {
+    "index": 368,
+    "variants": {
+      "Present perfect": "Wir haben die Wette verloren."
+    }
+  },
+  {
+    "index": 369,
+    "variants": {
+      "Present continuous": "Wir verlieren das Spiel."
+    }
+  },
+  {
+    "index": 370,
+    "variants": {
+      "Present perfect": "Wir haben wieder verloren."
+    }
+  },
+  {
+    "index": 371,
+    "variants": {
+      "Going to": "Ich werde Italienisch sprechen."
+    }
+  },
+  {
+    "index": 372,
+    "variants": {
+      "Past simple": "Ich sprach mit ihm.",
+      "Present simple": "Ich spreche mit ihm."
+    }
+  },
+  {
+    "index": 373,
+    "variants": {
+      "Going to": "Ich werde den ganzen Tag sprechen."
+    }
+  },
+  {
+    "index": 374,
+    "variants": {
+      "Present perfect": "Ich habe leise gesprochen."
+    }
+  },
+  {
+    "index": 375,
+    "variants": {
+      "Present continuous": "Ich spreche gerade mit ihnen."
+    }
+  },
+  {
+    "index": 376,
+    "variants": {
+      "Present continuous": "Ich spreche gerade 3 Sprachen.",
+      "Present perfect": "Ich habe 3 Sprachen gesprochen."
+    }
+  }
+]

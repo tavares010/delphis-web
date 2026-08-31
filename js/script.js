@@ -269,5 +269,40 @@ if (countdowns.length) {
   setInterval(tickCountdowns, 1000);
 }
 
+// ============ HERO: máquina de escribir con los 5 idiomas reales del curso ============
+const heroTypingEl = document.getElementById('heroTyping');
+if (heroTypingEl && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const HERO_IDIOMAS = ['inglés', 'francés', 'alemán', 'italiano', 'portugués'];
+  let heroWordIdx = 0;
+  let heroCharIdx = HERO_IDIOMAS[0].length; // arranca mostrando "inglés" ya escrito, como en el HTML
+  let heroDeleting = true;
+
+  function heroTypingTick() {
+    const word = HERO_IDIOMAS[heroWordIdx];
+    let delay;
+    if (heroDeleting) {
+      heroCharIdx--;
+      heroTypingEl.textContent = word.slice(0, heroCharIdx);
+      delay = 45;
+      if (heroCharIdx <= 0) {
+        heroDeleting = false;
+        heroWordIdx = (heroWordIdx + 1) % HERO_IDIOMAS.length;
+        delay = 300;
+      }
+    } else {
+      const nextWord = HERO_IDIOMAS[heroWordIdx];
+      heroCharIdx++;
+      heroTypingEl.textContent = nextWord.slice(0, heroCharIdx);
+      delay = 85;
+      if (heroCharIdx >= nextWord.length) {
+        heroDeleting = true;
+        delay = 1700;
+      }
+    }
+    setTimeout(heroTypingTick, delay);
+  }
+  setTimeout(heroTypingTick, 2000);
+}
+
 // init
 onScroll();

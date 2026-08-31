@@ -75,13 +75,18 @@ function renderReviewSession() {
     const options = buildOptions(word.es);
     let answered = false;
 
+    const LETRAS = ['A', 'B', 'C', 'D', 'E'];
     area.innerHTML = `
-      <div class="lesson-card">
-        <div class="quiz-progress-row"><span>Palabra ${idx + 1} de ${total}</span><span>Nivel actual: ${word.nivel}/5</span></div>
+      <div class="lesson-card lesson-card--quiz">
+        <div class="quiz-progress-row">
+          <span class="quiz-progress-row__text">Palabra ${idx + 1}/${total}</span>
+          <div class="quiz-progress-row__bar"><div class="quiz-progress-row__fill" style="width:${(idx / total) * 100}%"></div></div>
+          <span class="quiz-progress-row__pass">Nivel ${word.nivel}/5</span>
+        </div>
         <div class="quiz-question">${word.en}</div>
         <p style="text-align:center; color:var(--gray-500); font-size:.85rem; margin-bottom:1.4rem;">¿Qué significa esta palabra?</p>
         <div class="quiz-options" id="srsOptions">
-          ${options.map(op => `<button class="quiz-option">${op}</button>`).join('')}
+          ${options.map((op, i) => `<button class="quiz-option" data-op="${i}"><span class="quiz-option__letter">${LETRAS[i]}</span><span class="quiz-option__text">${op}</span></button>`).join('')}
         </div>
         <div class="quiz-feedback" id="srsFeedback"></div>
       </div>
@@ -93,11 +98,11 @@ function renderReviewSession() {
         answered = true;
         const opts = qsR('#srsOptions').querySelectorAll('.quiz-option');
         opts.forEach(o => o.classList.add('disabled'));
-        const correcto = btn.textContent === word.es;
+        const correcto = options[+btn.dataset.op] === word.es;
         if (correcto) { btn.classList.add('correct'); aciertos++; }
         else {
           btn.classList.add('incorrect');
-          opts.forEach(o => { if (o.textContent === word.es) o.classList.add('correct'); });
+          opts.forEach((o, i) => { if (options[i] === word.es) o.classList.add('correct'); });
         }
         const updated = srsReview(word.en, correcto);
         qsR('#srsFeedback').textContent = correcto
@@ -116,7 +121,9 @@ function renderReviewSession() {
       <div class="lesson-card">
         <div class="quiz-result">
           <span class="eyebrow">Sesión de repaso completa</span>
-          <div class="quiz-result__score pass">${pct}%</div>
+          <div class="quiz-result__ring" style="--ring-pct:${pct}; --ring-color:#4ade80;">
+            <div class="quiz-result__score pass">${pct}%</div>
+          </div>
           <p style="color:var(--gray-400); margin-bottom:1.6rem;">${aciertos} de ${total} correctas</p>
           <button class="btn btn--primary btn--lg" id="btnMore">Ver mi vocabulario</button>
         </div>

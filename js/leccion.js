@@ -47,7 +47,10 @@ function encontrarNodoLeccionOoRepaso(caminos, tipoBuscado, id) {
 /* ===========================================================
    Indicador de pasos
    =========================================================== */
-function renderSteps(activeKey, doneKeys) {
+// onStudyClick: si se pasa, el paso "Estudiar" se vuelve clicable desde
+// quiz/juego/resumen -volver a estudiar debe estar disponible siempre,
+// no solo cuando la lección ya está completa del todo.
+function renderSteps(activeKey, doneKeys, onStudyClick) {
   if (!stepsWrap) return;
   const steps = [
     { key: 'study', label: 'Estudiar', icon: '📚' },
@@ -58,8 +61,14 @@ function renderSteps(activeKey, doneKeys) {
     const cls = doneKeys.includes(s.key) ? 'done' : (s.key === activeKey ? 'active' : '');
     const dot = doneKeys.includes(s.key) ? '✓' : (i + 1);
     const sep = i < steps.length - 1 ? '<span class="lesson-step-sep"></span>' : '';
-    return `<div class="lesson-step ${cls}"><span class="lesson-step__dot">${dot}</span>${s.label}</div>${sep}`;
+    const clicable = s.key === 'study' && activeKey !== 'study' && onStudyClick;
+    const tag = clicable ? 'button' : 'div';
+    return `<${tag} class="lesson-step ${cls} ${clicable ? 'lesson-step--clickable' : ''}" ${clicable ? 'type="button" data-step-study' : ''}><span class="lesson-step__dot">${dot}</span>${s.label}</${tag}>${sep}`;
   }).join('');
+  if (onStudyClick) {
+    const btn = stepsWrap.querySelector('[data-step-study]');
+    if (btn) btn.addEventListener('click', onStudyClick);
+  }
 }
 
 /* ===========================================================
@@ -67,6 +76,7 @@ function renderSteps(activeKey, doneKeys) {
    =========================================================== */
 function renderStudy(ctx) {
   renderSteps('study', []);
+  content.className = 'lesson-card lesson-card--study';
   let idx = 0;
   const frases = ctx.frases;
   let audioEl = null;
@@ -138,8 +148,11 @@ function buildQuizQuestions(frases, distractorPool, poolGlobal, content_, nivel)
   }));
 }
 
+const QUIZ_LETRAS = ['A', 'B', 'C', 'D', 'E'];
+
 function renderQuiz(ctx) {
-  renderSteps('quiz', ['study']);
+  renderSteps('quiz', ['study'], () => renderStudy(ctx));
+  content.className = 'lesson-card lesson-card--quiz';
   let questions = shuffle(buildQuizQuestions(ctx.frases, ctx.distractorPool, ctx.poolGlobal, ctx.content, ctx.nivel));
   let qi = 0;
   let correctCount = 0;
@@ -154,12 +167,13 @@ function renderQuiz(ctx) {
         <p>Elige la traducción correcta</p>
       </div>
       <div class="quiz-progress-row">
-        <span>Pregunta ${qi + 1} de ${questions.length}</span>
-        <span>Necesitas 70% para aprobar</span>
+        <span class="quiz-progress-row__text">Pregunta ${qi + 1}/${questions.length}</span>
+        <div class="quiz-progress-row__bar"><div class="quiz-progress-row__fill" style="width:${(qi / questions.length) * 100}%"></div></div>
+        <span class="quiz-progress-row__pass">70% para aprobar</span>
       </div>
       <div class="quiz-question">${q.es}</div>
       <div class="quiz-options" id="quizOptions">
-        ${q.opciones.map((op, i) => `<button class="quiz-option" data-op="${i}">${op}</button>`).join('')}
+        ${q.opciones.map((op, i) => `<button class="quiz-option" data-op="${i}"><span class="quiz-option__letter">${QUIZ_LETRAS[i]}</span><span class="quiz-option__text">${op}</span></button>`).join('')}
       </div>
       <div class="quiz-feedback" id="quizFeedback"></div>
     `;
@@ -167,7 +181,7 @@ function renderQuiz(ctx) {
       btn.addEventListener('click', () => {
         if (answered) return;
         answered = true;
-        const chosen = btn.textContent;
+        const chosen = q.opciones[+btn.dataset.op];
         const opts = qs('#quizOptions').querySelectorAll('.quiz-option');
         opts.forEach(o => o.classList.add('disabled'));
         if (chosen === q.correcta) {
@@ -176,7 +190,7 @@ function renderQuiz(ctx) {
           qs('#quizFeedback').textContent = '¡Correcto!';
         } else {
           btn.classList.add('incorrect');
-          opts.forEach(o => { if (o.textContent === q.correcta) o.classList.add('correct'); });
+          opts.forEach((o, i) => { if (q.opciones[i] === q.correcta) o.classList.add('correct'); });
           qs('#quizFeedback').textContent = `La respuesta correcta era: "${q.correcta}"`;
         }
         setTimeout(() => {
@@ -193,11 +207,17 @@ function renderQuiz(ctx) {
     content.innerHTML = `
       <div class="quiz-result">
         <span class="eyebrow">${pass ? 'Aprobado' : 'Casi'}</span>
-        <div class="quiz-result__score ${pass ? 'pass' : 'fail'}">${pct}%</div>
+        <div class="quiz-result__ring" style="--ring-pct:${pct}; --ring-color:${pass ? '#4ade80' : '#f87171'};">
+          <div class="quiz-result__score ${pass ? 'pass' : 'fail'}">${pct}%</div>
+        </div>
         <p style="color:var(--gray-400); margin-bottom:1.6rem;">${correctCount} de ${questions.length} correctas ${pass ? '· desbloqueaste el juego' : '· necesitas 70% para desbloquear el juego'}</p>
-        <button class="btn ${pass ? 'btn--primary' : 'btn--outline'} btn--lg" id="btnQuizContinue">${pass ? 'Ir al juego →' : 'Reintentar quiz'}</button>
+        <div class="hero__cta" style="justify-content:center;">
+          <button class="btn ${pass ? 'btn--primary' : 'btn--outline'} btn--lg" id="btnQuizContinue">${pass ? 'Ir al juego →' : 'Reintentar quiz'}</button>
+          <button class="btn btn--outline" id="btnQuizBackStudy">📚 Volver a estudiar</button>
+        </div>
       </div>
     `;
+    qs('#btnQuizBackStudy').addEventListener('click', () => renderStudy(ctx));
     qs('#btnQuizContinue').addEventListener('click', () => {
       if (pass) { ctx.onQuizPass(); renderGame(ctx); }
       else { questions = shuffle(buildQuizQuestions(ctx.frases, ctx.distractorPool, ctx.poolGlobal, ctx.content, ctx.nivel)); qi = 0; correctCount = 0; drawQuestion(); }
@@ -212,8 +232,11 @@ function renderQuiz(ctx) {
    Corrección aceptada vía Firebase Realtime Database real y
    compartida con la app móvil (js/accepted-answers.js).
    =========================================================== */
+const GAME_SR_DISPONIBLE = !!(window.SpeechRecognition || window.webkitSpeechRecognition);
+
 function renderGame(ctx) {
-  renderSteps('game', ['study', 'quiz']);
+  renderSteps('game', ['study', 'quiz'], () => renderStudy(ctx));
+  content.className = 'lesson-card lesson-card--game';
   const frases = shuffle(ctx.frases);
   let idx = 0;
   let streak = 0;
@@ -233,55 +256,59 @@ function renderGame(ctx) {
       </div>
       <div class="game-prompt">
         <div class="game-prompt__es">${f.es}</div>
-        <div class="game-prompt__hint">Di la respuesta en voz alta (o escríbela)</div>
+        <div class="game-prompt__hint">${GAME_SR_DISPONIBLE ? 'Toca el micrófono y di la respuesta en voz alta' : 'Escribe la respuesta en inglés'}</div>
       </div>
-      <form class="game-input-row" id="gameForm">
-        <button type="button" class="rp-mic-btn" id="gameMic">🎤</button>
-        <input type="text" id="gameInput" autocomplete="off" placeholder="Escribe tu respuesta…" autofocus>
-        <button class="btn btn--primary" type="submit">Enviar</button>
-      </form>
+      ${GAME_SR_DISPONIBLE ? `
+        <div class="game-mic-main">
+          <button type="button" class="game-mic-main__btn" id="gameMic">🎤</button>
+          <div class="game-mic-main__status" id="gameMicStatus">Toca para hablar</div>
+          <div class="game-mic-main__transcript" id="gameTranscript"></div>
+        </div>
+      ` : `
+        <form class="game-input-row" id="gameForm">
+          <input type="text" id="gameInput" autocomplete="off" placeholder="Escribe tu respuesta…" autofocus>
+          <button class="btn btn--primary" type="submit">Enviar</button>
+        </form>
+      `}
       <div class="game-feedback" id="gameFeedback"></div>
     `;
-    qs('#gameForm').addEventListener('submit', (e) => {
-      e.preventDefault();
-      checkAnswer(f);
-    });
-    setupGameMic();
+    if (GAME_SR_DISPONIBLE) setupGameMic(); else {
+      qs('#gameForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const input = qs('#gameInput');
+        checkAnswer(f, input.value.trim(), () => { input.disabled = true; qs('#gameForm button').disabled = true; });
+      });
+    }
   }
 
   function setupGameMic() {
     const micBtn = qs('#gameMic');
-    if (!micBtn) return;
-    const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
-    if (!SR) { micBtn.style.opacity = '.35'; micBtn.title = 'Tu navegador no soporta dictado por voz — usa el texto.'; return; }
-    const recognition = new SR();
+    const statusEl = qs('#gameMicStatus');
+    const transcriptEl = qs('#gameTranscript');
+    const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
     recognition.lang = ctx.speechLang || 'en-US';
     recognition.interimResults = false;
     recognition.maxAlternatives = 1;
     let recording = false;
     recognition.onresult = (e) => {
       const transcript = e.results[0][0].transcript;
-      const input = qs('#gameInput');
-      if (input) input.value = transcript;
-      checkAnswer(frases[idx]);
+      transcriptEl.textContent = `"${transcript}"`;
+      checkAnswer(frases[idx], transcript, () => { micBtn.disabled = true; });
     };
-    recognition.onend = () => { recording = false; micBtn.classList.remove('recording'); };
+    recognition.onstart = () => { statusEl.textContent = 'Escuchando…'; };
+    recognition.onend = () => { recording = false; micBtn.classList.remove('recording'); if (statusEl.textContent === 'Escuchando…') statusEl.textContent = 'Toca para hablar'; };
     micBtn.addEventListener('click', () => {
       if (recording) { recognition.stop(); return; }
-      recording = true; micBtn.classList.add('recording');
+      recording = true; micBtn.classList.add('recording'); transcriptEl.textContent = '';
       recognition.start();
     });
   }
 
-  function checkAnswer(f) {
-    const input = qs('#gameInput');
-    const value = input.value.trim();
+  function checkAnswer(f, value, onAnswered) {
     if (!value) return;
+    onAnswered();
     const elapsed = (Date.now() - startTime) / 1000;
     const isCorrect = normalizeAnswer(value) === normalizeAnswer(f.en) || isAcceptedAlternate(f.en, value);
-
-    input.disabled = true;
-    qs('#gameForm').querySelectorAll('button').forEach(b => { b.disabled = true; });
 
     if (isCorrect) {
       onCorrect(f, elapsed);
@@ -328,9 +355,13 @@ function renderGame(ctx) {
         <div style="font-size:3.4rem; margin:1rem 0;">🎉</div>
         <h2 style="margin-bottom:.6rem;">${ctx.titulo} · listo</h2>
         <p style="color:var(--gray-400); margin-bottom:1.8rem;">Sigues avanzando por el camino del curso.</p>
-        <a href="curriculo.html" class="btn btn--primary btn--lg">Volver al curso →</a>
+        <div class="hero__cta" style="justify-content:center;">
+          <a href="curriculo.html" class="btn btn--primary btn--lg">Volver al curso →</a>
+          <button class="btn btn--outline" id="btnFinishBackStudy">📚 Volver a estudiar</button>
+        </div>
       </div>
     `;
+    qs('#btnFinishBackStudy').addEventListener('click', () => renderStudy(ctx));
   }
 
   draw();
@@ -340,7 +371,8 @@ function renderGame(ctx) {
    Resumen si la lección ya se completó del todo (permite repasar)
    =========================================================== */
 function renderSummary(ctx) {
-  renderSteps('game', ['study', 'quiz', 'game']);
+  renderSteps('game', ['study', 'quiz', 'game'], () => renderStudy(ctx));
+  content.className = 'lesson-card';
   content.innerHTML = `
     <div class="quiz-result">
       <span class="eyebrow">Ya completado</span>
@@ -381,12 +413,17 @@ function initRepaso(content_, caminos, encontrado) {
   function drawQuestion() {
     const q = questions[qi];
     answered = false;
+    content.className = 'lesson-card lesson-card--quiz';
     content.innerHTML = `
       <div class="lesson-card__head"><h1>Repaso acumulativo</h1><p>Verbos/estructuras ${nodo.desde} a ${nodo.hasta}</p></div>
-      <div class="quiz-progress-row"><span>Pregunta ${qi + 1} de ${questions.length}</span><span>Necesitas 70% para aprobar</span></div>
+      <div class="quiz-progress-row">
+        <span class="quiz-progress-row__text">Pregunta ${qi + 1}/${questions.length}</span>
+        <div class="quiz-progress-row__bar"><div class="quiz-progress-row__fill" style="width:${(qi / questions.length) * 100}%"></div></div>
+        <span class="quiz-progress-row__pass">70% para aprobar</span>
+      </div>
       <div class="quiz-question">${q.es}</div>
       <div class="quiz-options" id="quizOptions">
-        ${q.opciones.map(op => `<button class="quiz-option">${op}</button>`).join('')}
+        ${q.opciones.map((op, i) => `<button class="quiz-option" data-op="${i}"><span class="quiz-option__letter">${QUIZ_LETRAS[i]}</span><span class="quiz-option__text">${op}</span></button>`).join('')}
       </div>
       <div class="quiz-feedback" id="quizFeedback"></div>
     `;
@@ -394,13 +431,13 @@ function initRepaso(content_, caminos, encontrado) {
       btn.addEventListener('click', () => {
         if (answered) return;
         answered = true;
-        const chosen = btn.textContent;
+        const chosen = q.opciones[+btn.dataset.op];
         const opts = qs('#quizOptions').querySelectorAll('.quiz-option');
         opts.forEach(o => o.classList.add('disabled'));
         if (chosen === q.correcta) { btn.classList.add('correct'); correctCount++; qs('#quizFeedback').textContent = '¡Correcto!'; }
         else {
           btn.classList.add('incorrect');
-          opts.forEach(o => { if (o.textContent === q.correcta) o.classList.add('correct'); });
+          opts.forEach((o, i) => { if (q.opciones[i] === q.correcta) o.classList.add('correct'); });
           qs('#quizFeedback').textContent = `La respuesta correcta era: "${q.correcta}"`;
         }
         setTimeout(() => { if (qi < questions.length - 1) { qi++; drawQuestion(); } else drawResult(); }, 1300);
@@ -414,7 +451,9 @@ function initRepaso(content_, caminos, encontrado) {
     content.innerHTML = `
       <div class="quiz-result">
         <span class="eyebrow">${pass ? 'Repaso superado' : 'Casi'}</span>
-        <div class="quiz-result__score ${pass ? 'pass' : 'fail'}">${pct}%</div>
+        <div class="quiz-result__ring" style="--ring-pct:${pct}; --ring-color:${pass ? '#4ade80' : '#f87171'};">
+          <div class="quiz-result__score ${pass ? 'pass' : 'fail'}">${pct}%</div>
+        </div>
         <p style="color:var(--gray-400); margin-bottom:1.6rem;">${correctCount} de ${questions.length} correctas</p>
         <button class="btn ${pass ? 'btn--primary' : 'btn--outline'} btn--lg" id="btnContinue">${pass ? 'Continuar el camino →' : 'Reintentar'}</button>
       </div>

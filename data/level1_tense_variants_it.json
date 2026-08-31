@@ -1,0 +1,2530 @@
+[
+  {
+    "index": 0,
+    "variants": {
+      "Going to": "Stiamo per essere egoisti."
+    }
+  },
+  {
+    "index": 1,
+    "variants": {
+      "Past simple": "Fummo in Marocco.",
+      "Present simple": "Siamo in Marocco."
+    }
+  },
+  {
+    "index": 2,
+    "variants": {
+      "Present perfect": "Siamo stati giovani.",
+      "Going to": "Stiamo per essere giovani."
+    }
+  },
+  {
+    "index": 3,
+    "variants": {
+      "Going to": "Stiamo per essere veloci.",
+      "Present perfect": "Siamo stati veloci."
+    }
+  },
+  {
+    "index": 4,
+    "variants": {
+      "Present continuous": "Stiamo andando in ritardo."
+    }
+  },
+  {
+    "index": 5,
+    "variants": {
+      "Present continuous": "Stiamo essendo veloci.",
+      "Present perfect": "Siamo stati veloci."
+    }
+  },
+  {
+    "index": 6,
+    "variants": {
+      "Present simple": "Faccio colazione.",
+      "Going to": "Sto per fare colazione."
+    }
+  },
+  {
+    "index": 7,
+    "variants": {
+      "Past simple": "Ebbi abbastanza.",
+      "Present simple": "Ho abbastanza."
+    }
+  },
+  {
+    "index": 8,
+    "variants": {
+      "Going to": "Sto per prendere un caffè."
+    }
+  },
+  {
+    "index": 9,
+    "variants": {
+      "Going to": "Sto per avere una riunione.",
+      "Present perfect": "Ho avuto una riunione."
+    }
+  },
+  {
+    "index": 10,
+    "variants": {
+      "Present continuous": "Sto andando a pranzo."
+    }
+  },
+  {
+    "index": 11,
+    "variants": {
+      "Present continuous": "Sto avendo un cane.",
+      "Present perfect": "Ho avuto un cane."
+    }
+  },
+  {
+    "index": 12,
+    "variants": {
+      "Present continuous": "Stai potendo aiutarmi.",
+      "Present perfect": "Hai potuto aiutarmi."
+    }
+  },
+  {
+    "index": 13,
+    "variants": {
+      "Past simple": "Potesti farlo.",
+      "Present simple": "Puoi farlo."
+    }
+  },
+  {
+    "index": 14,
+    "variants": {
+      "Present perfect": "Hai potuto lavorare.",
+      "Going to": "Potrai lavorare."
+    }
+  },
+  {
+    "index": 15,
+    "variants": {
+      "Present perfect": "Hai potuto parlare."
+    }
+  },
+  {
+    "index": 16,
+    "variants": {
+      "Present continuous": "Stai potendo sentire."
+    }
+  },
+  {
+    "index": 17,
+    "variants": {
+      "Present continuous": "Stanno conoscendo la verità.",
+      "Present perfect": "Hanno conosciuto la verità."
+    }
+  },
+  {
+    "index": 18,
+    "variants": {
+      "Past simple": "Seppero del problema.",
+      "Present simple": "Sanno del problema."
+    }
+  },
+  {
+    "index": 19,
+    "variants": {
+      "Present perfect": "Si sono conosciuti.",
+      "Going to": "Si conosceranno."
+    }
+  },
+  {
+    "index": 20,
+    "variants": {
+      "Present perfect": "Non hanno conosciuto la risposta."
+    }
+  },
+  {
+    "index": 21,
+    "variants": {
+      "Present continuous": "Stanno conoscendo quello che è successo."
+    }
+  },
+  {
+    "index": 22,
+    "variants": {
+      "Present continuous": "Stai volendo il cioccolato.",
+      "Present perfect": "Hai voluto il cioccolato."
+    }
+  },
+  {
+    "index": 23,
+    "variants": {
+      "Past simple": "Volesti una macchina.",
+      "Present simple": "Vuoi una macchina."
+    }
+  },
+  {
+    "index": 24,
+    "variants": {
+      "Present perfect": "Hai voluto questo lavoro.",
+      "Going to": "Vorrai questo lavoro."
+    }
+  },
+  {
+    "index": 25,
+    "variants": {
+      "Present perfect": "Hai voluto una casa."
+    }
+  },
+  {
+    "index": 26,
+    "variants": {
+      "Present continuous": "Stai volendo del tempo libero."
+    }
+  },
+  {
+    "index": 27,
+    "variants": {
+      "Present continuous": "Sta avendo bisogno di vestiti.",
+      "Present perfect": "Ha avuto bisogno di vestiti."
+    }
+  },
+  {
+    "index": 28,
+    "variants": {
+      "Past simple": "Aveva bisogno di aiuto.",
+      "Present simple": "Ha bisogno di aiuto."
+    }
+  },
+  {
+    "index": 29,
+    "variants": {
+      "Present perfect": "Ha avuto bisogno di soldi.",
+      "Going to": "Avrà bisogno di soldi."
+    }
+  },
+  {
+    "index": 30,
+    "variants": {
+      "Present perfect": "Ha avuto bisogno di una pausa."
+    }
+  },
+  {
+    "index": 31,
+    "variants": {
+      "Present continuous": "Sta avendo bisogno di una babysitter."
+    }
+  },
+  {
+    "index": 32,
+    "variants": {
+      "Present simple": "Va a lavorare.",
+      "Going to": "Sta per andare a lavorare."
+    }
+  },
+  {
+    "index": 33,
+    "variants": {
+      "Past simple": "Andò al supermercato.",
+      "Present simple": "Va al supermercato."
+    }
+  },
+  {
+    "index": 34,
+    "variants": {
+      "Going to": "Sta per andare al centro commerciale."
+    }
+  },
+  {
+    "index": 35,
+    "variants": {
+      "Going to": "Sta per andare con lui.",
+      "Present perfect": "È andata con lui."
+    }
+  },
+  {
+    "index": 36,
+    "variants": {
+      "Present continuous": "Sta andando al cinema."
+    }
+  },
+  {
+    "index": 37,
+    "variants": {
+      "Present continuous": "Sta andando a scuola.",
+      "Present perfect": "È andato a scuola."
+    }
+  },
+  {
+    "index": 38,
+    "variants": {
+      "Present simple": "Faccio i miei compiti.",
+      "Going to": "Vado a fare i miei compiti."
+    }
+  },
+  {
+    "index": 39,
+    "variants": {
+      "Present simple": "Lavo i piatti."
+    }
+  },
+  {
+    "index": 40,
+    "variants": {
+      "Going to": "Vado a fare la spesa."
+    }
+  },
+  {
+    "index": 41,
+    "variants": {
+      "Going to": "Vado a fare il bucato.",
+      "Present perfect": "Ho fatto il bucato."
+    }
+  },
+  {
+    "index": 42,
+    "variants": {
+      "Future simple": "Farò il corso.",
+      "Present continuous": "Sto facendo il corso."
+    }
+  },
+  {
+    "index": 43,
+    "variants": {
+      "Present continuous": "Sto facendo esercizio.",
+      "Present perfect": "Ho fatto esercizio."
+    }
+  },
+  {
+    "index": 44,
+    "variants": {
+      "Present simple": "Ti stanchi.",
+      "Going to": "Ti stai per stancare."
+    }
+  },
+  {
+    "index": 45,
+    "variants": {
+      "Past simple": "Hai avuto dei soldi."
+    }
+  },
+  {
+    "index": 46,
+    "variants": {
+      "Going to": "Vai a ottenere il lavoro."
+    }
+  },
+  {
+    "index": 47,
+    "variants": {
+      "Going to": "Vai a diventare più magro.",
+      "Present perfect": "Sei diventato più magro."
+    }
+  },
+  {
+    "index": 48,
+    "variants": {
+      "Future simple": "Starai meglio.",
+      "Present continuous": "Stai stando meglio."
+    }
+  },
+  {
+    "index": 49,
+    "variants": {
+      "Present continuous": "Stai ricevendo email.",
+      "Present perfect": "Hai ricevuto email."
+    }
+  },
+  {
+    "index": 50,
+    "variants": {
+      "Present simple": "Fanno una torta.",
+      "Going to": "Stanno per fare una torta."
+    }
+  },
+  {
+    "index": 51,
+    "variants": {
+      "Present simple": "Fanno degli errori."
+    }
+  },
+  {
+    "index": 52,
+    "variants": {
+      "Going to": "Stanno per fare progressi."
+    }
+  },
+  {
+    "index": 53,
+    "variants": {
+      "Going to": "Stanno per fare la cena.",
+      "Present perfect": "Hanno fatto la cena."
+    }
+  },
+  {
+    "index": 54,
+    "variants": {
+      "Future simple": "Faranno un sito web.",
+      "Present continuous": "Stanno facendo un sito web."
+    }
+  },
+  {
+    "index": 55,
+    "variants": {
+      "Present continuous": "Stanno facendo il pranzo.",
+      "Present perfect": "Hanno fatto il pranzo."
+    }
+  },
+  {
+    "index": 56,
+    "variants": {
+      "Present simple": "La segue.",
+      "Going to": "La sta per seguire."
+    }
+  },
+  {
+    "index": 57,
+    "variants": {
+      "Present simple": "Segue la legge."
+    }
+  },
+  {
+    "index": 58,
+    "variants": {
+      "Going to": "Sta per seguire le regole."
+    }
+  },
+  {
+    "index": 59,
+    "variants": {
+      "Going to": "Sta per seguire il tuo consiglio.",
+      "Present perfect": "Ha seguito il tuo consiglio."
+    }
+  },
+  {
+    "index": 60,
+    "variants": {
+      "Future simple": "Lui seguirà le istruzioni.",
+      "Present continuous": "Lui sta seguendo le istruzioni."
+    }
+  },
+  {
+    "index": 61,
+    "variants": {
+      "Present continuous": "Lui ti sta seguendo.",
+      "Present perfect": "Lui ti ha seguito."
+    }
+  },
+  {
+    "index": 62,
+    "variants": {
+      "Present simple": "Prendo le pillole.",
+      "Going to": "Sto per prendere le pillole."
+    }
+  },
+  {
+    "index": 63,
+    "variants": {
+      "Present simple": "Prendo l'autobus."
+    }
+  },
+  {
+    "index": 64,
+    "variants": {
+      "Going to": "Sto per fotografare."
+    }
+  },
+  {
+    "index": 65,
+    "variants": {
+      "Going to": "Sto per prendere un ombrello.",
+      "Present perfect": "Ho preso un ombrello."
+    }
+  },
+  {
+    "index": 66,
+    "variants": {
+      "Future simple": "Prenderò un aereo.",
+      "Present continuous": "Sto prendendo un aereo."
+    }
+  },
+  {
+    "index": 67,
+    "variants": {
+      "Present continuous": "Sto prendendo lezioni.",
+      "Present perfect": "Ho preso lezioni."
+    }
+  },
+  {
+    "index": 68,
+    "variants": {
+      "Present simple": "Inizio a divertirmi.",
+      "Going to": "Sto per iniziare a divertirmi."
+    }
+  },
+  {
+    "index": 69,
+    "variants": {
+      "Present simple": "Inizio la lezione."
+    }
+  },
+  {
+    "index": 70,
+    "variants": {
+      "Going to": "Sto per iniziare a piangere."
+    }
+  },
+  {
+    "index": 71,
+    "variants": {
+      "Going to": "Sto per iniziare il progetto.",
+      "Present perfect": "Ho iniziato il progetto."
+    }
+  },
+  {
+    "index": 72,
+    "variants": {
+      "Future simple": "Inizierò il mio nuovo lavoro.",
+      "Present continuous": "Sto iniziando il mio nuovo lavoro."
+    }
+  },
+  {
+    "index": 73,
+    "variants": {
+      "Present continuous": "Sto iniziando il mio allenamento.",
+      "Present perfect": "Ho iniziato il mio allenamento."
+    }
+  },
+  {
+    "index": 74,
+    "variants": {
+      "Present simple": "Vieni stasera.",
+      "Going to": "Stai per venire stasera."
+    }
+  },
+  {
+    "index": 75,
+    "variants": {
+      "Present simple": "Vieni molto lontano."
+    }
+  },
+  {
+    "index": 76,
+    "variants": {
+      "Going to": "Stai per venire alla festa."
+    }
+  },
+  {
+    "index": 77,
+    "variants": {
+      "Going to": "Stai per venire presto.",
+      "Present perfect": "Sei venuto presto."
+    }
+  },
+  {
+    "index": 78,
+    "variants": {
+      "Future simple": "Verrai preparato.",
+      "Present continuous": "Stai venendo preparato."
+    }
+  },
+  {
+    "index": 79,
+    "variants": {
+      "Present continuous": "Stai venendo dalla Spagna.",
+      "Present perfect": "Sei venuto dalla Spagna."
+    }
+  },
+  {
+    "index": 80,
+    "variants": {
+      "Present simple": "Tu dai opportunità.",
+      "Going to": "Tu stai per dare opportunità."
+    }
+  },
+  {
+    "index": 81,
+    "variants": {
+      "Present simple": "Tu dai informazioni."
+    }
+  },
+  {
+    "index": 82,
+    "variants": {
+      "Going to": "Tu stai per dare alcuni giocattoli."
+    }
+  },
+  {
+    "index": 83,
+    "variants": {
+      "Going to": "Tu stai per dare regali.",
+      "Present perfect": "Tu hai dato regali."
+    }
+  },
+  {
+    "index": 84,
+    "variants": {
+      "Future simple": "Tu darai sostegno.",
+      "Present continuous": "Tu stai dando sostegno."
+    }
+  },
+  {
+    "index": 85,
+    "variants": {
+      "Present continuous": "Tu stai dando molto.",
+      "Present perfect": "Tu hai dato molto."
+    }
+  },
+  {
+    "index": 86,
+    "variants": {
+      "Present simple": "Io uso il tuo telefono.",
+      "Going to": "Io sto per usare il tuo telefono."
+    }
+  },
+  {
+    "index": 87,
+    "variants": {
+      "Present simple": "Io uso il suo computer."
+    }
+  },
+  {
+    "index": 88,
+    "variants": {
+      "Going to": "Io sto per usare un traduttore."
+    }
+  },
+  {
+    "index": 89,
+    "variants": {
+      "Going to": "Io sto per usare la macchina.",
+      "Present perfect": "Io ho usato la macchina."
+    }
+  },
+  {
+    "index": 90,
+    "variants": {
+      "Future simple": "Io userò i risparmi.",
+      "Present continuous": "Io sto usando i risparmi."
+    }
+  },
+  {
+    "index": 91,
+    "variants": {
+      "Present continuous": "Io sto usando la carta di credito.",
+      "Present perfect": "Io ho usato la carta di credito."
+    }
+  },
+  {
+    "index": 92,
+    "variants": {
+      "Present simple": "Noi troviamo errori.",
+      "Going to": "Noi stiamo per trovare errori."
+    }
+  },
+  {
+    "index": 93,
+    "variants": {
+      "Present simple": "Io trovo le chiavi."
+    }
+  },
+  {
+    "index": 94,
+    "variants": {
+      "Going to": "Io sto per trovare un posto."
+    }
+  },
+  {
+    "index": 95,
+    "variants": {
+      "Going to": "Io sto per trovare gli occhiali.",
+      "Present perfect": "Io ho trovato gli occhiali."
+    }
+  },
+  {
+    "index": 96,
+    "variants": {
+      "Future simple": "Io troverò le risposte.",
+      "Present continuous": "Io sto trovando le risposte."
+    }
+  },
+  {
+    "index": 97,
+    "variants": {
+      "Present continuous": "Io sto trovando denaro.",
+      "Present perfect": "Io ho trovato denaro."
+    }
+  },
+  {
+    "index": 98,
+    "variants": {
+      "Present simple": "Noi diciamo la verità.",
+      "Going to": "Noi stiamo per dire la verità."
+    }
+  },
+  {
+    "index": 99,
+    "variants": {
+      "Present simple": "Noi diciamo tutto."
+    }
+  },
+  {
+    "index": 100,
+    "variants": {
+      "Going to": "Stiamo per dire ai nostri genitori."
+    }
+  },
+  {
+    "index": 101,
+    "variants": {
+      "Going to": "Stiamo per dire la notizia.",
+      "Present perfect": "Abbiamo detto la notizia."
+    }
+  },
+  {
+    "index": 102,
+    "variants": {
+      "Future simple": "Diremo a tutti.",
+      "Present continuous": "Stiamo dicendo a tutti."
+    }
+  },
+  {
+    "index": 103,
+    "variants": {
+      "Present continuous": "Stiamo raccontando una storia.",
+      "Present perfect": "Abbiamo raccontato una storia."
+    }
+  },
+  {
+    "index": 104,
+    "variants": {
+      "Going to": "Stai per ascoltare con attenzione."
+    }
+  },
+  {
+    "index": 105,
+    "variants": {
+      "Present simple": "Ascolti la radio."
+    }
+  },
+  {
+    "index": 106,
+    "variants": {
+      "Going to": "Stai per ascoltare l'insegnante."
+    }
+  },
+  {
+    "index": 107,
+    "variants": {
+      "Going to": "Stai per ascoltare tua mamma.",
+      "Present perfect": "Hai ascoltato tua mamma."
+    }
+  },
+  {
+    "index": 108,
+    "variants": {
+      "Future simple": "Mi ascolterai.",
+      "Present continuous": "Stai ascoltandomi."
+    }
+  },
+  {
+    "index": 109,
+    "variants": {
+      "Present continuous": "Stai ascoltando lui.",
+      "Present perfect": "Hai ascoltato lui."
+    }
+  },
+  {
+    "index": 110,
+    "variants": {
+      "Present simple": "Organizzi la tua camera.",
+      "Going to": "Stai per organizzare la tua camera."
+    }
+  },
+  {
+    "index": 111,
+    "variants": {
+      "Present simple": "Organizzi l'evento."
+    }
+  },
+  {
+    "index": 112,
+    "variants": {
+      "Going to": "Stai per organizzare le tue cose."
+    }
+  },
+  {
+    "index": 113,
+    "variants": {
+      "Going to": "Stai per organizzare i documenti.",
+      "Present perfect": "Hai organizzato i documenti."
+    }
+  },
+  {
+    "index": 114,
+    "variants": {
+      "Future simple": "Organizzerai la riunione.",
+      "Present continuous": "Stai organizzando la riunione."
+    }
+  },
+  {
+    "index": 115,
+    "variants": {
+      "Present continuous": "Stai organizzando la casa.",
+      "Present perfect": "Hai organizzato la casa."
+    }
+  },
+  {
+    "index": 116,
+    "variants": {
+      "Present simple": "Diventa più responsabile.",
+      "Going to": "Sta per diventare più responsabile."
+    }
+  },
+  {
+    "index": 117,
+    "variants": {
+      "Present simple": "Diventa padre."
+    }
+  },
+  {
+    "index": 118,
+    "variants": {
+      "Going to": "Sta per diventare chef."
+    }
+  },
+  {
+    "index": 119,
+    "variants": {
+      "Going to": "Sta per diventare un'architetta.",
+      "Present perfect": "È diventata un'architetta."
+    }
+  },
+  {
+    "index": 120,
+    "variants": {
+      "Present continuous": "Lei sta diventando di successo."
+    }
+  },
+  {
+    "index": 121,
+    "variants": {
+      "Present continuous": "Lei sta diventando famosa.",
+      "Present perfect": "Lei è diventata famosa."
+    }
+  },
+  {
+    "index": 122,
+    "variants": {
+      "Present simple": "Loro partono adesso.",
+      "Going to": "Loro stanno per partire adesso."
+    }
+  },
+  {
+    "index": 123,
+    "variants": {
+      "Present simple": "Loro lasciano un messaggio."
+    }
+  },
+  {
+    "index": 124,
+    "variants": {
+      "Going to": "Loro stanno per partire ieri."
+    }
+  },
+  {
+    "index": 125,
+    "variants": {
+      "Going to": "Loro stanno per lasciare la città.",
+      "Present perfect": "Loro hanno lasciato la città."
+    }
+  },
+  {
+    "index": 126,
+    "variants": {
+      "Future simple": "Loro partiranno presto.",
+      "Present continuous": "Loro stanno partendo presto."
+    }
+  },
+  {
+    "index": 127,
+    "variants": {
+      "Present continuous": "Lui sta partendo alle 3.",
+      "Present perfect": "Lui è partito alle 3."
+    }
+  },
+  {
+    "index": 128,
+    "variants": {
+      "Present simple": "Io lavoro duramente.",
+      "Going to": "Io sto per lavorare duramente."
+    }
+  },
+  {
+    "index": 129,
+    "variants": {
+      "Present simple": "Io lavoro con James."
+    }
+  },
+  {
+    "index": 130,
+    "variants": {
+      "Going to": "Io sto per lavorare in un museo."
+    }
+  },
+  {
+    "index": 131,
+    "variants": {
+      "Going to": "Io sto per lavorare domani.",
+      "Present perfect": "Io ho lavorato domani."
+    }
+  },
+  {
+    "index": 132,
+    "variants": {
+      "Future simple": "Io lavorerò duramente.",
+      "Present continuous": "Io sto lavorando duramente."
+    }
+  },
+  {
+    "index": 133,
+    "variants": {
+      "Present continuous": "Io sto lavorando in un hotel.",
+      "Present perfect": "Io ho lavorato in un hotel."
+    }
+  },
+  {
+    "index": 134,
+    "variants": {
+      "Present continuous": "Noi ci stiamo sentendo meglio.",
+      "Present perfect": "Noi ci siamo sentiti meglio."
+    }
+  },
+  {
+    "index": 135,
+    "variants": {
+      "Present simple": "Noi ci sentiamo stanchi."
+    }
+  },
+  {
+    "index": 136,
+    "variants": {
+      "Going to": "Noi stiamo per sentirci nervosi."
+    }
+  },
+  {
+    "index": 137,
+    "variants": {
+      "Going to": "Noi stiamo per sentirci entusiasti.",
+      "Present perfect": "Noi ci siamo sentiti entusiasti."
+    }
+  },
+  {
+    "index": 138,
+    "variants": {
+      "Future simple": "Noi sentiremo la pressione.",
+      "Present continuous": "Noi stiamo sentendo la pressione."
+    }
+  },
+  {
+    "index": 139,
+    "variants": {
+      "Present continuous": "Noi ci stiamo sentendo felici.",
+      "Present perfect": "Noi ci siamo sentiti felici."
+    }
+  },
+  {
+    "index": 140,
+    "variants": {
+      "Going to": "Stai per volare a Londra."
+    }
+  },
+  {
+    "index": 141,
+    "variants": {
+      "Present simple": "Voli per 6 ore."
+    }
+  },
+  {
+    "index": 142,
+    "variants": {
+      "Going to": "Stai per volare troppo in alto."
+    }
+  },
+  {
+    "index": 143,
+    "variants": {
+      "Going to": "Stai per volare in aereo.",
+      "Present perfect": "Hai volato in aereo."
+    }
+  },
+  {
+    "index": 144,
+    "variants": {
+      "Future simple": "Volerai a New York.",
+      "Present continuous": "Stai volando a New York."
+    }
+  },
+  {
+    "index": 145,
+    "variants": {
+      "Present continuous": "Stai volando per lavoro.",
+      "Present perfect": "Hai volato per lavoro."
+    }
+  },
+  {
+    "index": 146,
+    "variants": {
+      "Present simple": "Chiedi aiuto.",
+      "Going to": "Stai per chiedere aiuto."
+    }
+  },
+  {
+    "index": 147,
+    "variants": {
+      "Present simple": "Fai domande."
+    }
+  },
+  {
+    "index": 148,
+    "variants": {
+      "Going to": "Stai per chiedere più tempo."
+    }
+  },
+  {
+    "index": 149,
+    "variants": {
+      "Going to": "Stai per chiedere soldi.",
+      "Present perfect": "Hai chiesto soldi."
+    }
+  },
+  {
+    "index": 150,
+    "variants": {
+      "Future simple": "Chiederai il dessert.",
+      "Present continuous": "Stai chiedendo il dessert."
+    }
+  },
+  {
+    "index": 151,
+    "variants": {
+      "Present continuous": "Stai chiedendo l'insegnante.",
+      "Present perfect": "Hai chiesto l'insegnante."
+    }
+  },
+  {
+    "index": 152,
+    "variants": {
+      "Present simple": "Sposa la sua fidanzata.",
+      "Going to": "Sta per sposare la sua fidanzata."
+    }
+  },
+  {
+    "index": 153,
+    "variants": {
+      "Present simple": "Sposa Julie."
+    }
+  },
+  {
+    "index": 154,
+    "variants": {
+      "Going to": "Sta per sposarsi l'estate scorsa."
+    }
+  },
+  {
+    "index": 155,
+    "variants": {
+      "Going to": "Sta per sposare Julie.",
+      "Present perfect": "Ha sposato Julie."
+    }
+  },
+  {
+    "index": 156,
+    "variants": {
+      "Future simple": "Sposerà mia figlia.",
+      "Present continuous": "Sta sposando mia figlia."
+    }
+  },
+  {
+    "index": 157,
+    "variants": {
+      "Present continuous": "La sta sposando.",
+      "Present perfect": "L'ha sposata."
+    }
+  },
+  {
+    "index": 158,
+    "variants": {
+      "Present simple": "Cerca di chiamarla.",
+      "Going to": "Sta per cercare di chiamarla."
+    }
+  },
+  {
+    "index": 159,
+    "variants": {
+      "Present simple": "Prova la torta."
+    }
+  },
+  {
+    "index": 160,
+    "variants": {
+      "Present perfect": "Ha provato il suo meglio.",
+      "Going to": "Sta per provare il suo meglio."
+    }
+  },
+  {
+    "index": 161,
+    "variants": {
+      "Going to": "Lei sta per provare a chiamarti.",
+      "Present perfect": "Lei ha provato a chiamarti."
+    }
+  },
+  {
+    "index": 162,
+    "variants": {
+      "Future simple": "Lei proverà ancora una volta.",
+      "Present continuous": "Lei sta provando ancora una volta."
+    }
+  },
+  {
+    "index": 163,
+    "variants": {
+      "Present continuous": "Lei sta provando tutto.",
+      "Present perfect": "Lei ha provato tutto."
+    }
+  },
+  {
+    "index": 164,
+    "variants": {
+      "Present simple": "Corro con Paolo.",
+      "Going to": "Sto per correre con Paolo."
+    }
+  },
+  {
+    "index": 165,
+    "variants": {
+      "Present simple": "Corro nel parco."
+    }
+  },
+  {
+    "index": 166,
+    "variants": {
+      "Going to": "Sto per correre una maratona."
+    }
+  },
+  {
+    "index": 167,
+    "variants": {
+      "Going to": "Sto per correre più velocemente.",
+      "Present perfect": "Ho corso più velocemente."
+    }
+  },
+  {
+    "index": 168,
+    "variants": {
+      "Future simple": "Correrò alle Olimpiadi.",
+      "Present continuous": "Sto correndo alle Olimpiadi."
+    }
+  },
+  {
+    "index": 169,
+    "variants": {
+      "Present continuous": "Sto correndo ogni giorno.",
+      "Present perfect": "Ho corso ogni giorno."
+    }
+  },
+  {
+    "index": 170,
+    "variants": {
+      "Present continuous": "Sto rimanendo silenzioso.",
+      "Present perfect": "Sono rimasto silenzioso."
+    }
+  },
+  {
+    "index": 171,
+    "variants": {
+      "Past simple": "Rimasi calmo.",
+      "Present simple": "Rimango calmo."
+    }
+  },
+  {
+    "index": 172,
+    "variants": {
+      "Going to": "Sto per rimanere forte."
+    }
+  },
+  {
+    "index": 173,
+    "variants": {
+      "Going to": "Sto per rimanere paziente.",
+      "Present perfect": "Sono rimasto paziente."
+    }
+  },
+  {
+    "index": 174,
+    "variants": {
+      "Future simple": "Rimarrò a casa.",
+      "Present continuous": "Sto rimanendo a casa."
+    }
+  },
+  {
+    "index": 175,
+    "variants": {
+      "Present simple": "Mostriamo la casa.",
+      "Going to": "Stiamo per mostrare la casa."
+    }
+  },
+  {
+    "index": 176,
+    "variants": {
+      "Past simple": "Mostrammo i risultati.",
+      "Present simple": "Mostriamo i risultati."
+    }
+  },
+  {
+    "index": 177,
+    "variants": {
+      "Going to": "Stiamo per mostrare le foto."
+    }
+  },
+  {
+    "index": 178,
+    "variants": {
+      "Going to": "Stiamo per mostrare la strada.",
+      "Present perfect": "Abbiamo mostrato la strada."
+    }
+  },
+  {
+    "index": 179,
+    "variants": {
+      "Future simple": "Mostreremo il nostro sostegno.",
+      "Present continuous": "Stiamo mostrando il nostro sostegno."
+    }
+  },
+  {
+    "index": 180,
+    "variants": {
+      "Present continuous": "Stiamo mostrando gentilezza.",
+      "Present perfect": "Abbiamo mostrato gentilezza."
+    }
+  },
+  {
+    "index": 181,
+    "variants": {
+      "Present simple": "Si addormentano.",
+      "Going to": "Stanno per addormentarsi."
+    }
+  },
+  {
+    "index": 182,
+    "variants": {
+      "Past simple": "Caddero giù dalle scale.",
+      "Present simple": "Cadono giù dalle scale."
+    }
+  },
+  {
+    "index": 183,
+    "variants": {
+      "Going to": "Stanno per sfarsi."
+    }
+  },
+  {
+    "index": 184,
+    "variants": {
+      "Going to": "Stanno per cadere nella trappola.",
+      "Present perfect": "Sono caduti nella trappola."
+    }
+  },
+  {
+    "index": 185,
+    "variants": {
+      "Future simple": "Si innamoreranno.",
+      "Present continuous": "Stanno innamorandosi."
+    }
+  },
+  {
+    "index": 186,
+    "variants": {
+      "Present continuous": "Stanno cadendo facilmente.",
+      "Present perfect": "Sono caduti facilmente."
+    }
+  },
+  {
+    "index": 187,
+    "variants": {
+      "Present simple": "Tieni un bicchiere.",
+      "Going to": "Stai per tenere un bicchiere."
+    }
+  },
+  {
+    "index": 188,
+    "variants": {
+      "Past simple": "Tenesti il bambino.",
+      "Present simple": "Tieni il bambino."
+    }
+  },
+  {
+    "index": 189,
+    "variants": {
+      "Going to": "Stai per tenere il trofeo."
+    }
+  },
+  {
+    "index": 190,
+    "variants": {
+      "Going to": "Stai per tenere il record.",
+      "Present perfect": "Ho tenuto il record."
+    }
+  },
+  {
+    "index": 191,
+    "variants": {
+      "Future simple": "Occuperai questo posto.",
+      "Present continuous": "Stai occupando questo posto."
+    }
+  },
+  {
+    "index": 192,
+    "variants": {
+      "Present continuous": "Stai tenendo la porta.",
+      "Present perfect": "Hai tenuto la porta."
+    }
+  },
+  {
+    "index": 193,
+    "variants": {
+      "Present simple": "Fanno domanda per un lavoro.",
+      "Going to": "Stanno per fare domanda per un lavoro."
+    }
+  },
+  {
+    "index": 194,
+    "variants": {
+      "Present simple": "Fanno domanda per un visto."
+    }
+  },
+  {
+    "index": 195,
+    "variants": {
+      "Going to": "Stanno per fare domanda per una borsa di studio."
+    }
+  },
+  {
+    "index": 196,
+    "variants": {
+      "Going to": "Stanno per fare domanda per un prestito.",
+      "Present perfect": "Hanno fatto domanda per un prestito."
+    }
+  },
+  {
+    "index": 197,
+    "variants": {
+      "Future simple": "Applicheranno la crema solare.",
+      "Present continuous": "Stanno applicando la crema solare."
+    }
+  },
+  {
+    "index": 198,
+    "variants": {
+      "Present continuous": "Stanno applicando pressione.",
+      "Present perfect": "Hanno applicato pressione."
+    }
+  },
+  {
+    "index": 199,
+    "variants": {
+      "Present simple": "Vede uno psicoterapeuta.",
+      "Going to": "Sta per vedere uno psicoterapeuta."
+    }
+  },
+  {
+    "index": 200,
+    "variants": {
+      "Present simple": "Vede il film."
+    }
+  },
+  {
+    "index": 201,
+    "variants": {
+      "Going to": "Sta per vederla."
+    }
+  },
+  {
+    "index": 202,
+    "variants": {
+      "Going to": "Sta per vedere il dottore.",
+      "Present perfect": "Ha visto il dottore."
+    }
+  },
+  {
+    "index": 203,
+    "variants": {
+      "Future simple": "Vedrà la sua ragazza.",
+      "Present continuous": "Sta vedendo la sua ragazza."
+    }
+  },
+  {
+    "index": 204,
+    "variants": {
+      "Present continuous": "Sta vedendo il valore.",
+      "Present perfect": "Ha visto il valore."
+    }
+  },
+  {
+    "index": 205,
+    "variants": {
+      "Present simple": "Lo lasciamo stare.",
+      "Going to": "Lo stiamo per lasciare stare."
+    }
+  },
+  {
+    "index": 206,
+    "variants": {
+      "Present simple": "La lasciamo parlare."
+    }
+  },
+  {
+    "index": 207,
+    "variants": {
+      "Going to": "Stiamo per lasciarli entrare."
+    }
+  },
+  {
+    "index": 208,
+    "variants": {
+      "Going to": "Stiamo per lasciar guidare John.",
+      "Present perfect": "Abbiamo lasciato guidare John."
+    }
+  },
+  {
+    "index": 209,
+    "variants": {
+      "Present continuous": "Ti stiamo lasciando scegliere."
+    }
+  },
+  {
+    "index": 210,
+    "variants": {
+      "Present continuous": "Stiamo lasciandoli aiutare."
+    }
+  },
+  {
+    "index": 211,
+    "variants": {
+      "Present simple": "Porto snack.",
+      "Going to": "Sto per portare snack."
+    }
+  },
+  {
+    "index": 212,
+    "variants": {
+      "Present simple": "Porto il mio laptop."
+    }
+  },
+  {
+    "index": 213,
+    "variants": {
+      "Going to": "Sto per portare un regalo."
+    }
+  },
+  {
+    "index": 214,
+    "variants": {
+      "Going to": "Sto per portare un amico.",
+      "Present perfect": "Ho portato un amico."
+    }
+  },
+  {
+    "index": 215,
+    "variants": {
+      "Future simple": "Porterò il dolce.",
+      "Present continuous": "Sto portando il dolce."
+    }
+  },
+  {
+    "index": 216,
+    "variants": {
+      "Present continuous": "Sto portando tutto.",
+      "Present perfect": "Ho portato tutto."
+    }
+  },
+  {
+    "index": 217,
+    "variants": {
+      "Present continuous": "Ti sta piacendo il pesce.",
+      "Present perfect": "Ti è piaciuto il pesce."
+    }
+  },
+  {
+    "index": 218,
+    "variants": {
+      "Past simple": "Ti piacque l'idea.",
+      "Present simple": "Ti piace l'idea."
+    }
+  },
+  {
+    "index": 219,
+    "variants": {
+      "Going to": "Ti piacerà lo spettacolo."
+    }
+  },
+  {
+    "index": 220,
+    "variants": {
+      "Present perfect": "Ti è piaciuto il cibo."
+    }
+  },
+  {
+    "index": 221,
+    "variants": {
+      "Present continuous": "Ti sta piacendo il gioco."
+    }
+  },
+  {
+    "index": 222,
+    "variants": {
+      "Present continuous": "Ti sta piacendo il viaggio.",
+      "Present perfect": "Ti è piaciuto il viaggio."
+    }
+  },
+  {
+    "index": 223,
+    "variants": {
+      "Present simple": "Ti aiutano.",
+      "Going to": "Ti aiuteranno."
+    }
+  },
+  {
+    "index": 224,
+    "variants": {
+      "Past simple": "Ti aiutarono molto.",
+      "Present simple": "Ti aiutano molto."
+    }
+  },
+  {
+    "index": 225,
+    "variants": {
+      "Going to": "Aiuteranno i bambini."
+    }
+  },
+  {
+    "index": 226,
+    "variants": {
+      "Present perfect": "Ti hanno aiutato domani."
+    }
+  },
+  {
+    "index": 227,
+    "variants": {
+      "Present continuous": "Mi stanno aiutando."
+    }
+  },
+  {
+    "index": 228,
+    "variants": {
+      "Present continuous": "Stanno aiutando le famiglie.",
+      "Present perfect": "Hanno aiutato le famiglie."
+    }
+  },
+  {
+    "index": 229,
+    "variants": {
+      "Present simple": "Inizia la scuola.",
+      "Going to": "La scuola sta per iniziare."
+    }
+  },
+  {
+    "index": 230,
+    "variants": {
+      "Past simple": "Iniziò l'allenamento.",
+      "Present simple": "Inizia l'allenamento."
+    }
+  },
+  {
+    "index": 231,
+    "variants": {
+      "Going to": "Sta per iniziare presto."
+    }
+  },
+  {
+    "index": 232,
+    "variants": {
+      "Going to": "Sta per iniziare alle 2.",
+      "Present perfect": "Ha iniziato alle 2."
+    }
+  },
+  {
+    "index": 233,
+    "variants": {
+      "Future simple": "Avvierà un'attività.",
+      "Present continuous": "Sta avviando un'attività."
+    }
+  },
+  {
+    "index": 234,
+    "variants": {
+      "Present continuous": "Sta iniziando adesso.",
+      "Present perfect": "Ha iniziato adesso."
+    }
+  },
+  {
+    "index": 235,
+    "variants": {
+      "Present simple": "Chiamano Monica.",
+      "Going to": "Stanno per chiamare Monica."
+    }
+  },
+  {
+    "index": 236,
+    "variants": {
+      "Past simple": "Chiamarono la polizia.",
+      "Present simple": "Chiamano la polizia."
+    }
+  },
+  {
+    "index": 237,
+    "variants": {
+      "Going to": "Ti stanno per chiamare."
+    }
+  },
+  {
+    "index": 238,
+    "variants": {
+      "Going to": "Ti stai per richiamare.",
+      "Present perfect": "Ti hanno richiamato."
+    }
+  },
+  {
+    "index": 239,
+    "variants": {
+      "Present continuous": "Mi stanno chiamando."
+    }
+  },
+  {
+    "index": 240,
+    "variants": {
+      "Present continuous": "Loro stanno chiamando ogni giorno.",
+      "Present perfect": "Loro hanno chiamato ogni giorno."
+    }
+  },
+  {
+    "index": 241,
+    "variants": {
+      "Present simple": "Dimentico tutto.",
+      "Going to": "Sto per dimenticare tutto."
+    }
+  },
+  {
+    "index": 242,
+    "variants": {
+      "Past simple": "Dimenticai il tuo compleanno.",
+      "Present simple": "Dimentico il tuo compleanno."
+    }
+  },
+  {
+    "index": 243,
+    "variants": {
+      "Going to": "Sto per dimenticare le chiavi."
+    }
+  },
+  {
+    "index": 244,
+    "variants": {
+      "Going to": "Sto per dimenticare le regole.",
+      "Present perfect": "Ho dimenticato le regole."
+    }
+  },
+  {
+    "index": 245,
+    "variants": {
+      "Future simple": "Dimenticherò la mia borsa.",
+      "Present continuous": "Sto dimenticando la mia borsa."
+    }
+  },
+  {
+    "index": 246,
+    "variants": {
+      "Present continuous": "Sto dimenticando i nomi.",
+      "Present perfect": "Ho dimenticato i nomi."
+    }
+  },
+  {
+    "index": 247,
+    "variants": {
+      "Present simple": "Evitiamo lui.",
+      "Going to": "Stiamo per evitare lui."
+    }
+  },
+  {
+    "index": 248,
+    "variants": {
+      "Past simple": "Evitammo i problemi.",
+      "Present simple": "Evitiamo i problemi."
+    }
+  },
+  {
+    "index": 249,
+    "variants": {
+      "Going to": "Stiamo per evitare il traffico."
+    }
+  },
+  {
+    "index": 250,
+    "variants": {
+      "Going to": "Stiamo per evitare il conflitto.",
+      "Present perfect": "Abbiamo evitato il conflitto."
+    }
+  },
+  {
+    "index": 251,
+    "variants": {
+      "Future simple": "Eviteremo la folla.",
+      "Present continuous": "Stiamo evitando la folla."
+    }
+  },
+  {
+    "index": 252,
+    "variants": {
+      "Present continuous": "Stiamo evitando le discussioni.",
+      "Present perfect": "Abbiamo evitato le discussioni."
+    }
+  },
+  {
+    "index": 253,
+    "variants": {
+      "Present simple": "Ti muovi velocemente.",
+      "Going to": "Stai per muoverti velocemente."
+    }
+  },
+  {
+    "index": 254,
+    "variants": {
+      "Present simple": "Sposti il tavolo."
+    }
+  },
+  {
+    "index": 255,
+    "variants": {
+      "Going to": "Stai per trasferirti."
+    }
+  },
+  {
+    "index": 256,
+    "variants": {
+      "Going to": "Stai per trasferirti al piano superiore.",
+      "Present perfect": "Ti sei trasferito al piano superiore."
+    }
+  },
+  {
+    "index": 257,
+    "variants": {
+      "Future simple": "Sposterai le scatole.",
+      "Present continuous": "Stai spostando le scatole."
+    }
+  },
+  {
+    "index": 258,
+    "variants": {
+      "Present continuous": "Stai spostando i mobili.",
+      "Present perfect": "Hai spostato i mobili."
+    }
+  },
+  {
+    "index": 259,
+    "variants": {
+      "Present simple": "Gioca a scacchi.",
+      "Going to": "Sta per giocare a scacchi."
+    }
+  },
+  {
+    "index": 260,
+    "variants": {
+      "Present simple": "Suona il pianoforte."
+    }
+  },
+  {
+    "index": 261,
+    "variants": {
+      "Going to": "Sta per giocare a tennis."
+    }
+  },
+  {
+    "index": 262,
+    "variants": {
+      "Going to": "Sta per giocare dentro.",
+      "Present perfect": "Ha giocato dentro."
+    }
+  },
+  {
+    "index": 263,
+    "variants": {
+      "Future simple": "Giocherà da sola.",
+      "Present continuous": "Sta giocando da sola."
+    }
+  },
+  {
+    "index": 264,
+    "variants": {
+      "Present continuous": "Sta giocando a calcio.",
+      "Present perfect": "Ha giocato a calcio."
+    }
+  },
+  {
+    "index": 265,
+    "variants": {
+      "Present simple": "Paga il conto.",
+      "Going to": "Sta per pagare il conto."
+    }
+  },
+  {
+    "index": 266,
+    "variants": {
+      "Past simple": "Pagò il pranzo.",
+      "Present simple": "Paga il pranzo."
+    }
+  },
+  {
+    "index": 267,
+    "variants": {
+      "Going to": "Sta per pagare con carta."
+    }
+  },
+  {
+    "index": 268,
+    "variants": {
+      "Going to": "Sta per pagare l'autista.",
+      "Present perfect": "Ha pagato l'autista."
+    }
+  },
+  {
+    "index": 269,
+    "variants": {
+      "Future simple": "Pagherà le tasse.",
+      "Present continuous": "Sta pagando le tasse."
+    }
+  },
+  {
+    "index": 270,
+    "variants": {
+      "Present continuous": "Sta pagando l'affitto.",
+      "Present perfect": "Ha pagato l'affitto."
+    }
+  },
+  {
+    "index": 271,
+    "variants": {
+      "Present continuous": "Stanno sentendo musica.",
+      "Present perfect": "Hanno sentito musica."
+    }
+  },
+  {
+    "index": 272,
+    "variants": {
+      "Past simple": "Sentirono un rumore.",
+      "Present simple": "Sentono un rumore."
+    }
+  },
+  {
+    "index": 273,
+    "variants": {
+      "Going to": "Stanno per sentire voci."
+    }
+  },
+  {
+    "index": 274,
+    "variants": {
+      "Going to": "Stanno per sentire le campane.",
+      "Present perfect": "Hanno sentito le campane."
+    }
+  },
+  {
+    "index": 275,
+    "variants": {
+      "Future simple": "Sentiranno urla.",
+      "Present continuous": "Stanno sentendo urla."
+    }
+  },
+  {
+    "index": 276,
+    "variants": {
+      "Present continuous": "Sto credendo in Dio.",
+      "Present perfect": "Ho creduto in Dio."
+    }
+  },
+  {
+    "index": 277,
+    "variants": {
+      "Past simple": "Credetti quello.",
+      "Present simple": "Credo quello."
+    }
+  },
+  {
+    "index": 278,
+    "variants": {
+      "Present perfect": "Ho creduto in te.",
+      "Going to": "Vado a credere in te."
+    }
+  },
+  {
+    "index": 279,
+    "variants": {
+      "Going to": "Vado a credere la storia.",
+      "Present perfect": "Ho creduto la storia."
+    }
+  },
+  {
+    "index": 280,
+    "variants": {
+      "Future simple": "Crederò a Maria.",
+      "Present continuous": "Sto credendo a Maria."
+    }
+  },
+  {
+    "index": 281,
+    "variants": {
+      "Present simple": "Permettiamo i visitatori.",
+      "Going to": "Andiamo a permettere i visitatori."
+    }
+  },
+  {
+    "index": 282,
+    "variants": {
+      "Past simple": "Permettemmo i cambiamenti.",
+      "Present simple": "Permettiamo i cambiamenti."
+    }
+  },
+  {
+    "index": 283,
+    "variants": {
+      "Going to": "Andiamo a permettere le eccezioni."
+    }
+  },
+  {
+    "index": 284,
+    "variants": {
+      "Going to": "Andremo a permettere gli animali domestici.",
+      "Present perfect": "Abbiamo permesso gli animali domestici."
+    }
+  },
+  {
+    "index": 285,
+    "variants": {
+      "Future simple": "Permetteremo la partecipazione.",
+      "Present continuous": "Stiamo permettendo la partecipazione."
+    }
+  },
+  {
+    "index": 286,
+    "variants": {
+      "Present continuous": "Stiamo permettendo i telefoni.",
+      "Present perfect": "Abbiamo permesso i telefoni."
+    }
+  },
+  {
+    "index": 287,
+    "variants": {
+      "Present simple": "Lei si siede accanto a me.",
+      "Going to": "Lei va a sedersi accanto a me."
+    }
+  },
+  {
+    "index": 288,
+    "variants": {
+      "Past simple": "Lei si sedette al tavolo.",
+      "Present simple": "Lei si siede al tavolo."
+    }
+  },
+  {
+    "index": 289,
+    "variants": {
+      "Going to": "Lei andrà a sedersi sulla sedia."
+    }
+  },
+  {
+    "index": 290,
+    "variants": {
+      "Going to": "Lei andrà a sedersi sul divano.",
+      "Present perfect": "Lei si è seduta sul divano."
+    }
+  },
+  {
+    "index": 291,
+    "variants": {
+      "Future simple": "Lei si siederà da sola.",
+      "Present continuous": "Lei si sta sedendo da sola."
+    }
+  },
+  {
+    "index": 292,
+    "variants": {
+      "Present continuous": "Lei si sta sedendo tranquillamente.",
+      "Present perfect": "Lei si è seduta tranquillamente."
+    }
+  },
+  {
+    "index": 293,
+    "variants": {
+      "Present simple": "Soffri lo stress.",
+      "Going to": "Andrai a soffrire lo stress."
+    }
+  },
+  {
+    "index": 294,
+    "variants": {
+      "Past simple": "Soffristi molto.",
+      "Present simple": "Soffri molto."
+    }
+  },
+  {
+    "index": 295,
+    "variants": {
+      "Going to": "Andrai a soffrire da una malattia."
+    }
+  },
+  {
+    "index": 296,
+    "variants": {
+      "Going to": "Andrai a soffrire troppo.",
+      "Present perfect": "Hai sofferto troppo."
+    }
+  },
+  {
+    "index": 297,
+    "variants": {
+      "Future simple": "Soffrirai il dolore.",
+      "Present continuous": "Stai soffrendo il dolore."
+    }
+  },
+  {
+    "index": 298,
+    "variants": {
+      "Present continuous": "Stai soffrendo profondamente.",
+      "Present perfect": "Hai sofferto profondamente."
+    }
+  },
+  {
+    "index": 299,
+    "variants": {
+      "Present simple": "Loro guidano la squadra.",
+      "Going to": "Loro andranno a guidare la squadra."
+    }
+  },
+  {
+    "index": 300,
+    "variants": {
+      "Past simple": "Loro guidarono il gruppo.",
+      "Present simple": "Loro guidano il gruppo."
+    }
+  },
+  {
+    "index": 301,
+    "variants": {
+      "Going to": "Loro guideranno il progetto."
+    }
+  },
+  {
+    "index": 302,
+    "variants": {
+      "Present perfect": "Loro hanno guidato la classe."
+    }
+  },
+  {
+    "index": 303,
+    "variants": {
+      "Present continuous": "Loro stanno guidando tutti."
+    }
+  },
+  {
+    "index": 304,
+    "variants": {
+      "Present continuous": "Loro stanno guidando l'azienda.",
+      "Present perfect": "Loro hanno guidato l'azienda."
+    }
+  },
+  {
+    "index": 305,
+    "variants": {
+      "Present simple": "Io vivo in Germania.",
+      "Going to": "Io vivrò in Germania."
+    }
+  },
+  {
+    "index": 306,
+    "variants": {
+      "Past simple": "Io vissi all'estero.",
+      "Present simple": "Io vivo all'estero."
+    }
+  },
+  {
+    "index": 307,
+    "variants": {
+      "Going to": "Io vivrò qui."
+    }
+  },
+  {
+    "index": 308,
+    "variants": {
+      "Present perfect": "Io ho vissuto a Londra."
+    }
+  },
+  {
+    "index": 309,
+    "variants": {
+      "Present continuous": "Io sto vivendo con Diego."
+    }
+  },
+  {
+    "index": 310,
+    "variants": {
+      "Present continuous": "Io sto vivendo solo.",
+      "Present perfect": "Io ho vissuto solo."
+    }
+  },
+  {
+    "index": 311,
+    "variants": {
+      "Present simple": "Lui incontra i clienti.",
+      "Going to": "Lui incontrerà i clienti."
+    }
+  },
+  {
+    "index": 312,
+    "variants": {
+      "Past simple": "Lui incontrò il presidente.",
+      "Present simple": "Lui incontra il presidente."
+    }
+  },
+  {
+    "index": 313,
+    "variants": {
+      "Going to": "Lui sta per incontrare Michael Jackson."
+    }
+  },
+  {
+    "index": 314,
+    "variants": {
+      "Going to": "Lui sta per incontrare il suo capo.",
+      "Present perfect": "Lui ha incontrato il suo capo."
+    }
+  },
+  {
+    "index": 315,
+    "variants": {
+      "Present continuous": "Lui sta incontrando la squadra."
+    }
+  },
+  {
+    "index": 316,
+    "variants": {
+      "Present continuous": "Lui sta incontrando il direttore.",
+      "Present perfect": "Lui ha incontrato il direttore."
+    }
+  },
+  {
+    "index": 317,
+    "variants": {
+      "Present simple": "Tu porti la scatola.",
+      "Going to": "Tu stai per portare la scatola."
+    }
+  },
+  {
+    "index": 318,
+    "variants": {
+      "Past simple": "Tu portasti la borsa.",
+      "Present simple": "Tu porti la borsa."
+    }
+  },
+  {
+    "index": 319,
+    "variants": {
+      "Going to": "Tu stai per portare i bagagli."
+    }
+  },
+  {
+    "index": 320,
+    "variants": {
+      "Going to": "Tu stai per portare il cibo.",
+      "Present perfect": "Tu hai portato il cibo."
+    }
+  },
+  {
+    "index": 321,
+    "variants": {
+      "Future simple": "Tu porterai una valigia.",
+      "Present continuous": "Tu stai portando una valigia."
+    }
+  },
+  {
+    "index": 322,
+    "variants": {
+      "Present continuous": "Tu stai portando troppo.",
+      "Present perfect": "Tu hai portato troppo."
+    }
+  },
+  {
+    "index": 323,
+    "variants": {
+      "Present simple": "Noi pensiamo di trasferirci.",
+      "Going to": "Noi stiamo per pensare di trasferirci."
+    }
+  },
+  {
+    "index": 324,
+    "variants": {
+      "Past simple": "Noi pensammo a questo.",
+      "Present simple": "Noi pensiamo a questo."
+    }
+  },
+  {
+    "index": 325,
+    "variants": {
+      "Going to": "Noi stiamo per pensare a te."
+    }
+  },
+  {
+    "index": 326,
+    "variants": {
+      "Going to": "Noi stiamo per pensare attentamente.",
+      "Present perfect": "Noi abbiamo pensato attentamente."
+    }
+  },
+  {
+    "index": 327,
+    "variants": {
+      "Future simple": "Noi penseremo positivamente.",
+      "Present continuous": "Noi stiamo pensando positivamente."
+    }
+  },
+  {
+    "index": 328,
+    "variants": {
+      "Present continuous": "Noi stiamo pensando insieme.",
+      "Present perfect": "Noi abbiamo pensato insieme."
+    }
+  },
+  {
+    "index": 329,
+    "variants": {
+      "Present simple": "Io scrivo una lettera.",
+      "Going to": "Io sto per scrivere una lettera."
+    }
+  },
+  {
+    "index": 330,
+    "variants": {
+      "Past simple": "Io scrissi un'email.",
+      "Present simple": "Io scrivo un'email."
+    }
+  },
+  {
+    "index": 331,
+    "variants": {
+      "Going to": "Io sto per scrivere un libro."
+    }
+  },
+  {
+    "index": 332,
+    "variants": {
+      "Going to": "Io sto per scrivere un messaggio.",
+      "Present perfect": "Io ho scritto un messaggio."
+    }
+  },
+  {
+    "index": 333,
+    "variants": {
+      "Future simple": "Io scriverò un rapporto.",
+      "Present continuous": "Io sto scrivendo un rapporto."
+    }
+  },
+  {
+    "index": 334,
+    "variants": {
+      "Present continuous": "Io sto scrivendo lentamente.",
+      "Present perfect": "Io ho scritto lentamente."
+    }
+  },
+  {
+    "index": 335,
+    "variants": {
+      "Present simple": "Lei finisce i compiti.",
+      "Going to": "Lei sta per finire i compiti."
+    }
+  },
+  {
+    "index": 336,
+    "variants": {
+      "Past simple": "Lei finì il corso.",
+      "Present simple": "Lei finisce il corso."
+    }
+  },
+  {
+    "index": 337,
+    "variants": {
+      "Going to": "Lei sta per finire il suo caffè."
+    }
+  },
+  {
+    "index": 338,
+    "variants": {
+      "Going to": "Lei sta per finire la scuola.",
+      "Present perfect": "Lei ha finito la scuola."
+    }
+  },
+  {
+    "index": 339,
+    "variants": {
+      "Future simple": "Lei finirà la lezione.",
+      "Present continuous": "Lei sta finendo la lezione."
+    }
+  },
+  {
+    "index": 340,
+    "variants": {
+      "Present continuous": "Lei sta finendo rapidamente.",
+      "Present perfect": "Lei ha finito rapidamente."
+    }
+  },
+  {
+    "index": 341,
+    "variants": {
+      "Present simple": "Tu aspetti una chiamata.",
+      "Going to": "Tu stai per aspettare una chiamata."
+    }
+  },
+  {
+    "index": 342,
+    "variants": {
+      "Past simple": "Tu aspettasti troppo.",
+      "Present simple": "Tu aspetti troppo."
+    }
+  },
+  {
+    "index": 343,
+    "variants": {
+      "Present perfect": "Tu hai aspettato una risposta.",
+      "Going to": "Tu stai per aspettare una risposta."
+    }
+  },
+  {
+    "index": 344,
+    "variants": {
+      "Going to": "Tu stai per aspettare notizie.",
+      "Present perfect": "Tu hai aspettato notizie."
+    }
+  },
+  {
+    "index": 345,
+    "variants": {
+      "Future simple": "Tu aspetterai una consegna.",
+      "Present continuous": "Tu stai aspettando una consegna."
+    }
+  },
+  {
+    "index": 346,
+    "variants": {
+      "Present continuous": "Tu stai aspettando risultati.",
+      "Present perfect": "Tu hai aspettato risultati."
+    }
+  },
+  {
+    "index": 347,
+    "variants": {
+      "Present simple": "Loro condividono una stanza.",
+      "Going to": "Loro stanno per condividere una stanza."
+    }
+  },
+  {
+    "index": 348,
+    "variants": {
+      "Past simple": "Loro condivisero il panino.",
+      "Present simple": "Loro condividono il panino."
+    }
+  },
+  {
+    "index": 349,
+    "variants": {
+      "Going to": "Loro stanno per condividere idee."
+    }
+  },
+  {
+    "index": 350,
+    "variants": {
+      "Going to": "Loro stanno per condividere il pranzo.",
+      "Present perfect": "Loro hanno condiviso il pranzo."
+    }
+  },
+  {
+    "index": 351,
+    "variants": {
+      "Future simple": "Loro condivideranno il computer.",
+      "Present continuous": "Loro stanno condividendo il computer."
+    }
+  },
+  {
+    "index": 352,
+    "variants": {
+      "Present continuous": "Loro stanno condividendo segreti.",
+      "Present perfect": "Loro hanno condiviso segreti."
+    }
+  },
+  {
+    "index": 353,
+    "variants": {
+      "Present simple": "Lui parla al telefono.",
+      "Going to": "Lui sta per parlare al telefono."
+    }
+  },
+  {
+    "index": 354,
+    "variants": {
+      "Past simple": "Lui parlò con loro.",
+      "Present simple": "Lui parla con loro."
+    }
+  },
+  {
+    "index": 355,
+    "variants": {
+      "Going to": "Lui sta per parlare velocemente."
+    }
+  },
+  {
+    "index": 356,
+    "variants": {
+      "Going to": "Lui sta per parlare con lei.",
+      "Present perfect": "Lui ha parlato con lei."
+    }
+  },
+  {
+    "index": 357,
+    "variants": {
+      "Future simple": "Lui parlerà di questo.",
+      "Present continuous": "Lui sta parlando di questo."
+    }
+  },
+  {
+    "index": 358,
+    "variants": {
+      "Present continuous": "Lui sta parlando chiaramente.",
+      "Present perfect": "Lui ha parlato chiaramente."
+    }
+  },
+  {
+    "index": 359,
+    "variants": {
+      "Present simple": "Tu leggi tranquillamente.",
+      "Going to": "Tu stai per leggere tranquillamente."
+    }
+  },
+  {
+    "index": 360,
+    "variants": {
+      "Past simple": "Leggesti il romanzo.",
+      "Present simple": "Leggi il romanzo."
+    }
+  },
+  {
+    "index": 361,
+    "variants": {
+      "Going to": "Stai per leggere il mio articolo."
+    }
+  },
+  {
+    "index": 362,
+    "variants": {
+      "Going to": "Stai per leggere le email.",
+      "Present perfect": "Hai letto le email."
+    }
+  },
+  {
+    "index": 363,
+    "variants": {
+      "Future simple": "Leggerai ad alta voce.",
+      "Present continuous": "Stai leggendo ad alta voce."
+    }
+  },
+  {
+    "index": 364,
+    "variants": {
+      "Present continuous": "Stai leggendo ogni giorno.",
+      "Present perfect": "Hai letto ogni giorno."
+    }
+  },
+  {
+    "index": 365,
+    "variants": {
+      "Present simple": "Perdiamo denaro.",
+      "Going to": "Stiamo per perdere denaro."
+    }
+  },
+  {
+    "index": 366,
+    "variants": {
+      "Past simple": "Perdemmo la gara.",
+      "Present simple": "Perdiamo la gara."
+    }
+  },
+  {
+    "index": 367,
+    "variants": {
+      "Going to": "Stiamo per perderla."
+    }
+  },
+  {
+    "index": 368,
+    "variants": {
+      "Going to": "Stiamo per perdere la scommessa.",
+      "Present perfect": "Abbiamo perso la scommessa."
+    }
+  },
+  {
+    "index": 369,
+    "variants": {
+      "Future simple": "Perderemo la partita.",
+      "Present continuous": "Stiamo perdendo la partita."
+    }
+  },
+  {
+    "index": 370,
+    "variants": {
+      "Present continuous": "Stiamo perdendo di nuovo.",
+      "Present perfect": "Abbiamo perso di nuovo."
+    }
+  },
+  {
+    "index": 371,
+    "variants": {
+      "Present simple": "Parlo italiano.",
+      "Going to": "Sto per parlare italiano."
+    }
+  },
+  {
+    "index": 372,
+    "variants": {
+      "Past simple": "Parlai con lui.",
+      "Present simple": "Parlo con lui."
+    }
+  },
+  {
+    "index": 373,
+    "variants": {
+      "Going to": "Sto per parlare tutto il giorno."
+    }
+  },
+  {
+    "index": 374,
+    "variants": {
+      "Going to": "Sto per parlare dolcemente.",
+      "Present perfect": "Ho parlato dolcemente."
+    }
+  },
+  {
+    "index": 375,
+    "variants": {
+      "Future simple": "Parlerò con loro.",
+      "Present continuous": "Sto parlando con loro."
+    }
+  },
+  {
+    "index": 376,
+    "variants": {
+      "Present continuous": "Sto parlando 3 lingue.",
+      "Present perfect": "Ho parlato 3 lingue."
+    }
+  }
+]

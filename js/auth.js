@@ -108,7 +108,7 @@ function renderNavForUser(user) {
   if (DEV_MODE) {
     document.querySelectorAll('[data-progress-chip]').forEach(wrap => {
       if (wrap.querySelector('.dev-mode-badge')) return;
-      wrap.insertAdjacentHTML('afterbegin', '<span class="dev-mode-badge" title="Modo desarrollador: todo desbloqueado">🛠️ DEV</span>');
+      wrap.insertAdjacentHTML('afterbegin', '<span class="dev-mode-badge" title="Modo desarrollador: todo desbloqueado">🛠️<span class="dev-mode-badge__text"> DEV</span></span>');
     });
   }
   document.querySelectorAll('[data-mobile-auth]').forEach(wrap => {

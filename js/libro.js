@@ -228,12 +228,17 @@ function renderBookQuiz(chapter) {
   function drawQuestion() {
     const q = preguntas[qi];
     answered = false;
+    const LETRAS = ['A', 'B', 'C', 'D', 'E'];
     area.innerHTML = `
-      <div class="lesson-card" style="margin-top:1.6rem;">
-        <div class="quiz-progress-row"><span>Pregunta ${qi + 1} de ${preguntas.length}</span><span>Comprensión lectora</span></div>
+      <div class="lesson-card lesson-card--quiz" style="margin-top:1.6rem;">
+        <div class="quiz-progress-row">
+          <span class="quiz-progress-row__text">Pregunta ${qi + 1}/${preguntas.length}</span>
+          <div class="quiz-progress-row__bar"><div class="quiz-progress-row__fill" style="width:${(qi / preguntas.length) * 100}%"></div></div>
+          <span class="quiz-progress-row__pass">Comprensión</span>
+        </div>
         <div class="quiz-question">${q.question}</div>
         <div class="quiz-options" id="bqOptions">
-          ${q.options.map((op, i) => `<button class="quiz-option" data-i="${i}">${op}</button>`).join('')}
+          ${q.options.map((op, i) => `<button class="quiz-option" data-i="${i}"><span class="quiz-option__letter">${LETRAS[i]}</span><span class="quiz-option__text">${op}</span></button>`).join('')}
         </div>
       </div>
     `;
@@ -256,7 +261,9 @@ function renderBookQuiz(chapter) {
       <div class="lesson-card" style="margin-top:1.6rem;">
         <div class="quiz-result">
           <span class="eyebrow">Quiz de comprensión</span>
-          <div class="quiz-result__score ${pct >= 70 ? 'pass' : 'fail'}">${pct}%</div>
+          <div class="quiz-result__ring" style="--ring-pct:${pct}; --ring-color:${pct >= 70 ? '#4ade80' : '#f87171'};">
+            <div class="quiz-result__score ${pct >= 70 ? 'pass' : 'fail'}">${pct}%</div>
+          </div>
           <p style="color:var(--gray-400);">${correctCount} de ${preguntas.length} correctas</p>
         </div>
       </div>

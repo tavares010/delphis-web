@@ -1,0 +1,2499 @@
+[
+  {
+    "index": 0,
+    "variants": {
+      "Present simple": "Somos egoístas.",
+      "Going to": "Vamos ser egoístas."
+    }
+  },
+  {
+    "index": 1,
+    "variants": {
+      "Past simple": "Estivemos em Marrocos.",
+      "Present simple": "Somos em Marrocos."
+    }
+  },
+  {
+    "index": 2,
+    "variants": {
+      "Present perfect": "Temos sido jovens.",
+      "Going to": "Vamos ser jovens."
+    }
+  },
+  {
+    "index": 3,
+    "variants": {
+      "Going to": "Vamos ser rápidos.",
+      "Present perfect": "Temos sido rápidos."
+    }
+  },
+  {
+    "index": 4,
+    "variants": {
+      "Future simple": "Estaremos atrasados.",
+      "Present continuous": "Estamos a estar atrasados."
+    }
+  },
+  {
+    "index": 5,
+    "variants": {
+      "Present continuous": "Estamos a ser rápidos.",
+      "Present perfect": "Temos sido rápidos."
+    }
+  },
+  {
+    "index": 6,
+    "variants": {
+      "Present simple": "Tomo o pequeno-almoço.",
+      "Going to": "Vou tomar o pequeno-almoço."
+    }
+  },
+  {
+    "index": 7,
+    "variants": {
+      "Past simple": "Tomei o suficiente.",
+      "Present simple": "Tomo o suficiente."
+    }
+  },
+  {
+    "index": 8,
+    "variants": {
+      "Present perfect": "Tenho tomado um café.",
+      "Going to": "Vou tomar um café."
+    }
+  },
+  {
+    "index": 9,
+    "variants": {
+      "Present perfect": "Tenho tido uma reunião."
+    }
+  },
+  {
+    "index": 10,
+    "variants": {
+      "Future simple": "Almoçarei.",
+      "Present continuous": "Estou a almoçar."
+    }
+  },
+  {
+    "index": 11,
+    "variants": {
+      "Present continuous": "Estou a ter um cão.",
+      "Present perfect": "Tenho tido um cão."
+    }
+  },
+  {
+    "index": 12,
+    "variants": {
+      "Present continuous": "Você está a poder ajudar-me.",
+      "Present perfect": "Você tem podido ajudar-me."
+    }
+  },
+  {
+    "index": 13,
+    "variants": {
+      "Past simple": "Você podia o fazer.",
+      "Present simple": "Você pode o fazer."
+    }
+  },
+  {
+    "index": 14,
+    "variants": {
+      "Present perfect": "Você tem podido trabalhar.",
+      "Going to": "Você vai poder trabalhar."
+    }
+  },
+  {
+    "index": 15,
+    "variants": {
+      "Going to": "Você vai ser capaz de falar.",
+      "Present perfect": "Você tem sido capaz de falar."
+    }
+  },
+  {
+    "index": 16,
+    "variants": {
+      "Future simple": "Você será capaz de ouvir.",
+      "Present continuous": "Você está a ser capaz de ouvir."
+    }
+  },
+  {
+    "index": 17,
+    "variants": {
+      "Present continuous": "Eles estão a saber a verdade.",
+      "Present perfect": "Eles têm sabido a verdade."
+    }
+  },
+  {
+    "index": 18,
+    "variants": {
+      "Past simple": "Eles souberam do problema.",
+      "Present simple": "Eles sabem do problema."
+    }
+  },
+  {
+    "index": 19,
+    "variants": {
+      "Present perfect": "Eles têm se conhecido.",
+      "Going to": "Eles vão se conhecer."
+    }
+  },
+  {
+    "index": 20,
+    "variants": {
+      "Present perfect": "Eles não têm sabido a resposta."
+    }
+  },
+  {
+    "index": 21,
+    "variants": {
+      "Future simple": "Eles saberão o que aconteceu.",
+      "Present continuous": "Eles estão a saber o que aconteceu."
+    }
+  },
+  {
+    "index": 22,
+    "variants": {
+      "Present continuous": "Tu estás a querer chocolate.",
+      "Present perfect": "Tu tens querido chocolate."
+    }
+  },
+  {
+    "index": 23,
+    "variants": {
+      "Past simple": "Tu quiseste um carro.",
+      "Present simple": "Tu queres um carro."
+    }
+  },
+  {
+    "index": 24,
+    "variants": {
+      "Present perfect": "Tu tens querido este trabalho.",
+      "Going to": "Tu vais querer este trabalho."
+    }
+  },
+  {
+    "index": 25,
+    "variants": {
+      "Present perfect": "Tu tens querido uma casa."
+    }
+  },
+  {
+    "index": 26,
+    "variants": {
+      "Present continuous": "Tu estás a querer tempo livre."
+    }
+  },
+  {
+    "index": 27,
+    "variants": {
+      "Present continuous": "Ele está a precisar de roupa.",
+      "Present perfect": "Ele tem precisado de roupa."
+    }
+  },
+  {
+    "index": 28,
+    "variants": {
+      "Past simple": "Ele precisava de ajuda.",
+      "Present simple": "Ele precisa de ajuda."
+    }
+  },
+  {
+    "index": 29,
+    "variants": {
+      "Present perfect": "Ele tem precisado de dinheiro.",
+      "Going to": "Ele vai precisar de dinheiro."
+    }
+  },
+  {
+    "index": 30,
+    "variants": {
+      "Present perfect": "Ele tem precisado de um intervalo."
+    }
+  },
+  {
+    "index": 31,
+    "variants": {
+      "Present continuous": "Ele está a precisar de uma ama."
+    }
+  },
+  {
+    "index": 32,
+    "variants": {
+      "Going to": "Ela vai ir trabalhar."
+    }
+  },
+  {
+    "index": 33,
+    "variants": {
+      "Present simple": "Ela vai ao supermercado."
+    }
+  },
+  {
+    "index": 34,
+    "variants": {
+      "Present perfect": "Ela tem ido ao centro comercial.",
+      "Going to": "Ela vai ir ao centro comercial."
+    }
+  },
+  {
+    "index": 35,
+    "variants": {
+      "Present perfect": "Ela tem ido com ele."
+    }
+  },
+  {
+    "index": 36,
+    "variants": {
+      "Future simple": "Ela irá ao cinema.",
+      "Present continuous": "Ela está a ir ao cinema."
+    }
+  },
+  {
+    "index": 37,
+    "variants": {
+      "Present continuous": "Ela está a ir à escola.",
+      "Present perfect": "Ela tem ido à escola."
+    }
+  },
+  {
+    "index": 38,
+    "variants": {
+      "Present simple": "Eu faço os meus trabalhos de casa.",
+      "Going to": "Eu vou fazer os meus trabalhos de casa."
+    }
+  },
+  {
+    "index": 39,
+    "variants": {
+      "Past simple": "Eu fiz a louça.",
+      "Present simple": "Eu faço a louça."
+    }
+  },
+  {
+    "index": 40,
+    "variants": {
+      "Present perfect": "Eu tenho feito as compras.",
+      "Going to": "Eu vou fazer as compras."
+    }
+  },
+  {
+    "index": 41,
+    "variants": {
+      "Present perfect": "Tenho feito a roupa."
+    }
+  },
+  {
+    "index": 42,
+    "variants": {
+      "Present continuous": "Estou a fazer o curso."
+    }
+  },
+  {
+    "index": 43,
+    "variants": {
+      "Present continuous": "Estou a fazer exercício.",
+      "Present perfect": "Tenho feito exercício."
+    }
+  },
+  {
+    "index": 44,
+    "variants": {
+      "Present simple": "Ficas cansado.",
+      "Going to": "Vais ficar cansado."
+    }
+  },
+  {
+    "index": 45,
+    "variants": {
+      "Past simple": "Conseguiste dinheiro.",
+      "Present simple": "Consegues dinheiro."
+    }
+  },
+  {
+    "index": 46,
+    "variants": {
+      "Present perfect": "Tens conseguido o emprego.",
+      "Going to": "Vais conseguir o emprego."
+    }
+  },
+  {
+    "index": 47,
+    "variants": {
+      "Present perfect": "Tens ficado mais magro."
+    }
+  },
+  {
+    "index": 48,
+    "variants": {
+      "Future simple": "Vou melhorar.",
+      "Present continuous": "Estou a melhorar."
+    }
+  },
+  {
+    "index": 49,
+    "variants": {
+      "Present continuous": "Estás a receber emails.",
+      "Present perfect": "Tens recebido emails."
+    }
+  },
+  {
+    "index": 50,
+    "variants": {
+      "Present simple": "Fazem um bolo.",
+      "Going to": "Vão fazer um bolo."
+    }
+  },
+  {
+    "index": 51,
+    "variants": {
+      "Present simple": "Cometem erros."
+    }
+  },
+  {
+    "index": 52,
+    "variants": {
+      "Present perfect": "Têm feito progressos.",
+      "Going to": "Vão fazer progressos."
+    }
+  },
+  {
+    "index": 53,
+    "variants": {
+      "Present perfect": "Têm feito o jantar."
+    }
+  },
+  {
+    "index": 54,
+    "variants": {
+      "Present continuous": "Estão a fazer um website."
+    }
+  },
+  {
+    "index": 55,
+    "variants": {
+      "Present continuous": "Estão a fazer o almoço.",
+      "Present perfect": "Têm feito o almoço."
+    }
+  },
+  {
+    "index": 56,
+    "variants": {
+      "Present simple": "Segue-a.",
+      "Going to": "Vai segui-la."
+    }
+  },
+  {
+    "index": 57,
+    "variants": {
+      "Past simple": "Seguiu a lei.",
+      "Present simple": "Segue a lei."
+    }
+  },
+  {
+    "index": 58,
+    "variants": {
+      "Present perfect": "Tem seguido as regras.",
+      "Going to": "Vai seguir as regras."
+    }
+  },
+  {
+    "index": 59,
+    "variants": {
+      "Present perfect": "Tem seguido o teu conselho."
+    }
+  },
+  {
+    "index": 60,
+    "variants": {
+      "Future simple": "Ele seguirá as instruções.",
+      "Present continuous": "Ele está a seguir as instruções."
+    }
+  },
+  {
+    "index": 61,
+    "variants": {
+      "Present continuous": "Ele está a seguir-te.",
+      "Present perfect": "Ele tem-te seguido."
+    }
+  },
+  {
+    "index": 62,
+    "variants": {
+      "Present simple": "Tomo os comprimidos.",
+      "Going to": "Vou tomar os comprimidos."
+    }
+  },
+  {
+    "index": 63,
+    "variants": {
+      "Past simple": "Apanhei o autocarro.",
+      "Present simple": "Apanho o autocarro."
+    }
+  },
+  {
+    "index": 64,
+    "variants": {
+      "Present perfect": "Já tirei fotografias.",
+      "Going to": "Vou tirar fotografias."
+    }
+  },
+  {
+    "index": 65,
+    "variants": {
+      "Present perfect": "Já levei um guarda-chuva."
+    }
+  },
+  {
+    "index": 66,
+    "variants": {
+      "Present continuous": "Estou a apanhar um avião."
+    }
+  },
+  {
+    "index": 67,
+    "variants": {
+      "Present continuous": "Estou a tomar aulas.",
+      "Present perfect": "Já tenho tomado aulas."
+    }
+  },
+  {
+    "index": 68,
+    "variants": {
+      "Present simple": "Começo a gostar.",
+      "Going to": "Vou começar a gostar."
+    }
+  },
+  {
+    "index": 69,
+    "variants": {
+      "Past simple": "Comecei a aula.",
+      "Present simple": "Começo a aula."
+    }
+  },
+  {
+    "index": 70,
+    "variants": {
+      "Present perfect": "Já comecei a chorar.",
+      "Going to": "Vou começar a chorar."
+    }
+  },
+  {
+    "index": 71,
+    "variants": {
+      "Present perfect": "Já comecei o projeto."
+    }
+  },
+  {
+    "index": 72,
+    "variants": {
+      "Future simple": "Começarei o meu novo trabalho.",
+      "Present continuous": "Estou a começar o meu novo trabalho."
+    }
+  },
+  {
+    "index": 73,
+    "variants": {
+      "Present continuous": "Estou a começar meu treino.",
+      "Present perfect": "Comecei meu treino."
+    }
+  },
+  {
+    "index": 74,
+    "variants": {
+      "Going to": "Vais vir esta noite."
+    }
+  },
+  {
+    "index": 75,
+    "variants": {
+      "Past simple": "Vieste um longo caminho.",
+      "Present simple": "Vens um longo caminho."
+    }
+  },
+  {
+    "index": 76,
+    "variants": {
+      "Present perfect": "Já vieste à festa.",
+      "Going to": "Vais vir à festa."
+    }
+  },
+  {
+    "index": 77,
+    "variants": {
+      "Going to": "Vais vir cedo.",
+      "Present perfect": "Já vieste cedo."
+    }
+  },
+  {
+    "index": 78,
+    "variants": {
+      "Future simple": "Virás preparado.",
+      "Present continuous": "Estás a vir preparado."
+    }
+  },
+  {
+    "index": 79,
+    "variants": {
+      "Present continuous": "Estás a vir de Espanha.",
+      "Present perfect": "Já vieste de Espanha."
+    }
+  },
+  {
+    "index": 80,
+    "variants": {
+      "Present simple": "Das oportunidades.",
+      "Going to": "Vais dar oportunidades."
+    }
+  },
+  {
+    "index": 81,
+    "variants": {
+      "Present simple": "Das informações."
+    }
+  },
+  {
+    "index": 82,
+    "variants": {
+      "Present perfect": "Já deste alguns brinquedos.",
+      "Going to": "Vais dar alguns brinquedos."
+    }
+  },
+  {
+    "index": 83,
+    "variants": {
+      "Present perfect": "Já deste presentes."
+    }
+  },
+  {
+    "index": 84,
+    "variants": {
+      "Future simple": "Darei apoio.",
+      "Present continuous": "Estou a dar apoio."
+    }
+  },
+  {
+    "index": 85,
+    "variants": {
+      "Present continuous": "Estás a dar muito.",
+      "Present perfect": "Já deste muito."
+    }
+  },
+  {
+    "index": 86,
+    "variants": {
+      "Present simple": "Uso o teu telefone.",
+      "Going to": "Vou usar o teu telefone."
+    }
+  },
+  {
+    "index": 87,
+    "variants": {
+      "Present simple": "Uso o seu computador."
+    }
+  },
+  {
+    "index": 88,
+    "variants": {
+      "Present perfect": "Tenho utilizado um tradutor.",
+      "Going to": "Vou utilizar um tradutor."
+    }
+  },
+  {
+    "index": 89,
+    "variants": {
+      "Present perfect": "Tenho usado o carro."
+    }
+  },
+  {
+    "index": 90,
+    "variants": {
+      "Future simple": "Usarei as poupanças.",
+      "Present continuous": "Estou a usar as poupanças."
+    }
+  },
+  {
+    "index": 91,
+    "variants": {
+      "Present continuous": "Estou a usar cartão de crédito.",
+      "Present perfect": "Tenho usado cartão de crédito."
+    }
+  },
+  {
+    "index": 92,
+    "variants": {
+      "Present simple": "Encontramos erros.",
+      "Going to": "Vamos encontrar erros."
+    }
+  },
+  {
+    "index": 93,
+    "variants": {
+      "Present simple": "Encontro as chaves."
+    }
+  },
+  {
+    "index": 94,
+    "variants": {
+      "Present perfect": "Tenho encontrado um sítio.",
+      "Going to": "Vou encontrar um sítio."
+    }
+  },
+  {
+    "index": 95,
+    "variants": {
+      "Present perfect": "Tenho encontrado os óculos."
+    }
+  },
+  {
+    "index": 96,
+    "variants": {
+      "Present continuous": "Estou a encontrar as respostas."
+    }
+  },
+  {
+    "index": 97,
+    "variants": {
+      "Present continuous": "Estou a encontrar dinheiro.",
+      "Present perfect": "Tenho encontrado dinheiro."
+    }
+  },
+  {
+    "index": 98,
+    "variants": {
+      "Present simple": "Dizemos a verdade.",
+      "Going to": "Vamos dizer a verdade."
+    }
+  },
+  {
+    "index": 99,
+    "variants": {
+      "Present simple": "Dizemos tudo."
+    }
+  },
+  {
+    "index": 100,
+    "variants": {
+      "Present perfect": "Temos dito aos nossos pais.",
+      "Going to": "Vamos dizer aos nossos pais."
+    }
+  },
+  {
+    "index": 101,
+    "variants": {
+      "Present perfect": "Temos contado as notícias."
+    }
+  },
+  {
+    "index": 102,
+    "variants": {
+      "Present continuous": "Estamos a contar a todos."
+    }
+  },
+  {
+    "index": 103,
+    "variants": {
+      "Present continuous": "Estamos a contar uma história.",
+      "Present perfect": "Temos contado uma história."
+    }
+  },
+  {
+    "index": 104,
+    "variants": {
+      "Present simple": "Ouves com atenção.",
+      "Going to": "Vais ouvir com atenção."
+    }
+  },
+  {
+    "index": 105,
+    "variants": {
+      "Present simple": "Ouves o rádio."
+    }
+  },
+  {
+    "index": 106,
+    "variants": {
+      "Present perfect": "Tens ouvido o professor.",
+      "Going to": "Vais ouvir o professor."
+    }
+  },
+  {
+    "index": 107,
+    "variants": {
+      "Present perfect": "Tens ouvido a tua mãe."
+    }
+  },
+  {
+    "index": 108,
+    "variants": {
+      "Future simple": "Ouvirás-me.",
+      "Present continuous": "Estás a ouvir-me."
+    }
+  },
+  {
+    "index": 109,
+    "variants": {
+      "Present continuous": "Estás a ouvir-o.",
+      "Present perfect": "Ouviste-o."
+    }
+  },
+  {
+    "index": 110,
+    "variants": {
+      "Present simple": "Organizas o teu quarto.",
+      "Going to": "Vais organizar o teu quarto."
+    }
+  },
+  {
+    "index": 111,
+    "variants": {
+      "Present simple": "Organizas o evento."
+    }
+  },
+  {
+    "index": 112,
+    "variants": {
+      "Going to": "Vais organizar as tuas coisas."
+    }
+  },
+  {
+    "index": 113,
+    "variants": {
+      "Present perfect": "Organizaste os documentos."
+    }
+  },
+  {
+    "index": 114,
+    "variants": {
+      "Future simple": "Organizarás a reunião.",
+      "Present continuous": "Estás a organizar a reunião."
+    }
+  },
+  {
+    "index": 115,
+    "variants": {
+      "Present continuous": "Estás a organizar a casa.",
+      "Present perfect": "Organizaste a casa."
+    }
+  },
+  {
+    "index": 116,
+    "variants": {
+      "Present simple": "Ela torna-se mais responsável.",
+      "Going to": "Ela vai tornar-se mais responsável."
+    }
+  },
+  {
+    "index": 117,
+    "variants": {
+      "Present simple": "Ela torna-se pai."
+    }
+  },
+  {
+    "index": 118,
+    "variants": {
+      "Going to": "Ela vai tornar-se chef."
+    }
+  },
+  {
+    "index": 119,
+    "variants": {
+      "Going to": "Ela vai ser arquiteta.",
+      "Present perfect": "Ela tornou-se arquiteta."
+    }
+  },
+  {
+    "index": 120,
+    "variants": {
+      "Future simple": "Ela ficará bem-sucedida.",
+      "Present continuous": "Ela está a ficar bem-sucedida."
+    }
+  },
+  {
+    "index": 121,
+    "variants": {
+      "Present continuous": "Ela está a ficar famosa.",
+      "Present perfect": "Ela ficou famosa."
+    }
+  },
+  {
+    "index": 122,
+    "variants": {
+      "Present simple": "Eles saem agora.",
+      "Going to": "Eles vão sair agora."
+    }
+  },
+  {
+    "index": 123,
+    "variants": {
+      "Present simple": "Eles deixam uma mensagem."
+    }
+  },
+  {
+    "index": 124,
+    "variants": {
+      "Present perfect": "Eles têm saído ontem.",
+      "Going to": "Eles vão sair ontem."
+    }
+  },
+  {
+    "index": 125,
+    "variants": {
+      "Present perfect": "Eles têm deixado a cidade."
+    }
+  },
+  {
+    "index": 126,
+    "variants": {
+      "Future simple": "Eles sairão em breve.",
+      "Present continuous": "Eles estão a sair em breve."
+    }
+  },
+  {
+    "index": 127,
+    "variants": {
+      "Present continuous": "Ele está a sair às 3.",
+      "Present perfect": "Ele saiu às 3."
+    }
+  },
+  {
+    "index": 128,
+    "variants": {
+      "Present simple": "Trabalho muito.",
+      "Going to": "Vou trabalhar muito."
+    }
+  },
+  {
+    "index": 129,
+    "variants": {
+      "Past simple": "Trabalhei com o James.",
+      "Present simple": "Trabalho com o James."
+    }
+  },
+  {
+    "index": 130,
+    "variants": {
+      "Present perfect": "Tenho trabalhado num museu.",
+      "Going to": "Vou trabalhar num museu."
+    }
+  },
+  {
+    "index": 131,
+    "variants": {
+      "Present perfect": "Tenho trabalhado amanhã."
+    }
+  },
+  {
+    "index": 132,
+    "variants": {
+      "Present continuous": "Estou a trabalhar muito."
+    }
+  },
+  {
+    "index": 133,
+    "variants": {
+      "Present continuous": "Estou a trabalhar num hotel.",
+      "Present perfect": "Tenho trabalhado num hotel."
+    }
+  },
+  {
+    "index": 134,
+    "variants": {
+      "Present continuous": "Estamo-nos a sentir melhor.",
+      "Present perfect": "Temo-nos sentido melhor."
+    }
+  },
+  {
+    "index": 135,
+    "variants": {
+      "Past simple": "Sentimo-nos cansaço.",
+      "Present simple": "Sentimo-nos cansaço."
+    }
+  },
+  {
+    "index": 136,
+    "variants": {
+      "Present perfect": "Temo-nos sentido nervosos.",
+      "Going to": "Vamo-nos sentir nervosos."
+    }
+  },
+  {
+    "index": 137,
+    "variants": {
+      "Present perfect": "Temos sentido entusiasmo."
+    }
+  },
+  {
+    "index": 138,
+    "variants": {
+      "Present continuous": "Estamos a sentir a pressão."
+    }
+  },
+  {
+    "index": 139,
+    "variants": {
+      "Present continuous": "Estamo-nos a sentir felizes.",
+      "Present perfect": "Temo-nos sentido felizes."
+    }
+  },
+  {
+    "index": 140,
+    "variants": {
+      "Present simple": "Você voa para Londres.",
+      "Going to": "Você vai voar para Londres."
+    }
+  },
+  {
+    "index": 141,
+    "variants": {
+      "Present simple": "Você voa durante 6 horas."
+    }
+  },
+  {
+    "index": 142,
+    "variants": {
+      "Present perfect": "Você tem voado demasiado alto.",
+      "Going to": "Você vai voar demasiado alto."
+    }
+  },
+  {
+    "index": 143,
+    "variants": {
+      "Present perfect": "Você tem voado num avião."
+    }
+  },
+  {
+    "index": 144,
+    "variants": {
+      "Future simple": "Você voará para Nova Iorque.",
+      "Present continuous": "Você está a voar para Nova Iorque."
+    }
+  },
+  {
+    "index": 145,
+    "variants": {
+      "Present continuous": "Você está a voar pelo trabalho.",
+      "Present perfect": "Você voou pelo trabalho."
+    }
+  },
+  {
+    "index": 146,
+    "variants": {
+      "Present simple": "Você pede ajuda.",
+      "Going to": "Você vai pedir ajuda."
+    }
+  },
+  {
+    "index": 147,
+    "variants": {
+      "Present simple": "Você pede perguntas."
+    }
+  },
+  {
+    "index": 148,
+    "variants": {
+      "Going to": "Você vai pedir mais tempo."
+    }
+  },
+  {
+    "index": 149,
+    "variants": {
+      "Present perfect": "Você pediu dinheiro."
+    }
+  },
+  {
+    "index": 150,
+    "variants": {
+      "Future simple": "Você pedirá sobremesa.",
+      "Present continuous": "Você está a pedir sobremesa."
+    }
+  },
+  {
+    "index": 151,
+    "variants": {
+      "Present continuous": "Você está a pedir ao professor.",
+      "Present perfect": "Você pediu ao professor."
+    }
+  },
+  {
+    "index": 152,
+    "variants": {
+      "Present simple": "Ele casa-se com a sua noiva.",
+      "Going to": "Ele vai casar-se com a sua noiva."
+    }
+  },
+  {
+    "index": 153,
+    "variants": {
+      "Present simple": "Ele casa-se com a Julie."
+    }
+  },
+  {
+    "index": 154,
+    "variants": {
+      "Present perfect": "Ele casou-se no verão passado.",
+      "Going to": "Ele vai casar no verão passado."
+    }
+  },
+  {
+    "index": 155,
+    "variants": {
+      "Present perfect": "Ele casou com a Julie."
+    }
+  },
+  {
+    "index": 156,
+    "variants": {
+      "Future simple": "Ele casará com a minha filha.",
+      "Present continuous": "Ele está a casar-se com a minha filha."
+    }
+  },
+  {
+    "index": 157,
+    "variants": {
+      "Present continuous": "Ele está a casar-se com ela.",
+      "Present perfect": "Ele casou-se com ela."
+    }
+  },
+  {
+    "index": 158,
+    "variants": {
+      "Present simple": "Ela tenta ligar para ela.",
+      "Going to": "Ela vai tentar ligar para ela."
+    }
+  },
+  {
+    "index": 159,
+    "variants": {
+      "Present simple": "Ela prova o bolo."
+    }
+  },
+  {
+    "index": 160,
+    "variants": {
+      "Present perfect": "Ela tem tentado o seu melhor.",
+      "Going to": "Ela vai tentar o seu melhor."
+    }
+  },
+  {
+    "index": 161,
+    "variants": {
+      "Present perfect": "Ela tem tentado ligar-te."
+    }
+  },
+  {
+    "index": 162,
+    "variants": {
+      "Future simple": "Ela tentará mais uma vez.",
+      "Present continuous": "Ela está a tentar mais uma vez."
+    }
+  },
+  {
+    "index": 163,
+    "variants": {
+      "Present continuous": "Ela está a tentar tudo.",
+      "Present perfect": "Ela tem tentado tudo."
+    }
+  },
+  {
+    "index": 164,
+    "variants": {
+      "Present simple": "Corro com o Paulo.",
+      "Going to": "Vou correr com o Paulo."
+    }
+  },
+  {
+    "index": 165,
+    "variants": {
+      "Past simple": "Corri no parque.",
+      "Present simple": "Corro no parque."
+    }
+  },
+  {
+    "index": 166,
+    "variants": {
+      "Present perfect": "Tenho corrido uma maratona.",
+      "Going to": "Vou correr uma maratona."
+    }
+  },
+  {
+    "index": 167,
+    "variants": {
+      "Present perfect": "Tenho corrido mais depressa."
+    }
+  },
+  {
+    "index": 168,
+    "variants": {
+      "Present continuous": "Estou a correr nas Olimpíadas."
+    }
+  },
+  {
+    "index": 169,
+    "variants": {
+      "Present continuous": "Estou a correr todos os dias.",
+      "Present perfect": "Tenho corrido todos os dias."
+    }
+  },
+  {
+    "index": 170,
+    "variants": {
+      "Present continuous": "Estou a ficar em silêncio.",
+      "Present perfect": "Tenho ficado em silêncio."
+    }
+  },
+  {
+    "index": 171,
+    "variants": {
+      "Past simple": "Mantive-me calmo.",
+      "Present simple": "Mantenho-me calmo."
+    }
+  },
+  {
+    "index": 172,
+    "variants": {
+      "Present perfect": "Tenho-me mantido forte.",
+      "Going to": "Vou manter-me forte."
+    }
+  },
+  {
+    "index": 173,
+    "variants": {
+      "Present perfect": "Tenho-me mantido paciente."
+    }
+  },
+  {
+    "index": 174,
+    "variants": {
+      "Future simple": "Ficarei em casa.",
+      "Present continuous": "Estou a ficar em casa."
+    }
+  },
+  {
+    "index": 175,
+    "variants": {
+      "Present simple": "Mostramos a casa.",
+      "Going to": "Vamos mostrar a casa."
+    }
+  },
+  {
+    "index": 176,
+    "variants": {
+      "Past simple": "Mostrámos os resultados.",
+      "Present simple": "Mostramos os resultados."
+    }
+  },
+  {
+    "index": 177,
+    "variants": {
+      "Present perfect": "Temos mostrado as fotos.",
+      "Going to": "Vamos mostrar as fotos."
+    }
+  },
+  {
+    "index": 178,
+    "variants": {
+      "Present perfect": "Temos mostrado o caminho."
+    }
+  },
+  {
+    "index": 179,
+    "variants": {
+      "Future simple": "Mostraremos o nosso apoio.",
+      "Present continuous": "Estamos a mostrar o nosso apoio."
+    }
+  },
+  {
+    "index": 180,
+    "variants": {
+      "Present continuous": "Nós estamos a mostrar bondade.",
+      "Present perfect": "Nós temos mostrado bondade."
+    }
+  },
+  {
+    "index": 181,
+    "variants": {
+      "Present simple": "Eles adormecem.",
+      "Going to": "Eles vão adormecer."
+    }
+  },
+  {
+    "index": 182,
+    "variants": {
+      "Present simple": "Eles caem pelas escadas."
+    }
+  },
+  {
+    "index": 183,
+    "variants": {
+      "Present perfect": "Eles têm-se desintegrado.",
+      "Going to": "Eles vão desintegrar-se."
+    }
+  },
+  {
+    "index": 184,
+    "variants": {
+      "Present perfect": "Eles têm caído na armadilha."
+    }
+  },
+  {
+    "index": 185,
+    "variants": {
+      "Present continuous": "Eles estão a apaixonar-se."
+    }
+  },
+  {
+    "index": 186,
+    "variants": {
+      "Present continuous": "Eles estão a cair facilmente.",
+      "Present perfect": "Eles têm caído facilmente."
+    }
+  },
+  {
+    "index": 187,
+    "variants": {
+      "Present simple": "Tu seguras um copo.",
+      "Going to": "Tu vais segurar um copo."
+    }
+  },
+  {
+    "index": 188,
+    "variants": {
+      "Present simple": "Tu seguras o bebé."
+    }
+  },
+  {
+    "index": 189,
+    "variants": {
+      "Present perfect": "Tu tens segurando o troféu.",
+      "Going to": "Tu vais segurar o troféu."
+    }
+  },
+  {
+    "index": 190,
+    "variants": {
+      "Present perfect": "Tu tens mantido o recorde."
+    }
+  },
+  {
+    "index": 191,
+    "variants": {
+      "Present continuous": "Tu estás a ocupar esta posição."
+    }
+  },
+  {
+    "index": 192,
+    "variants": {
+      "Present continuous": "Tu estás a segurar a porta.",
+      "Present perfect": "Tu tens segurado a porta."
+    }
+  },
+  {
+    "index": 193,
+    "variants": {
+      "Present simple": "Eles candidatam-se a um emprego.",
+      "Going to": "Eles vão candidatar-se a um emprego."
+    }
+  },
+  {
+    "index": 194,
+    "variants": {
+      "Present simple": "Eles candidatam-se a um visto."
+    }
+  },
+  {
+    "index": 195,
+    "variants": {
+      "Present perfect": "Eles têm-se candidatado a uma bolsa.",
+      "Going to": "Eles vão candidatar-se a uma bolsa."
+    }
+  },
+  {
+    "index": 196,
+    "variants": {
+      "Present perfect": "Eles têm-se candidatado a um empréstimo."
+    }
+  },
+  {
+    "index": 197,
+    "variants": {
+      "Future simple": "Eles aplicarão protetor solar.",
+      "Present continuous": "Eles estão a aplicar protetor solar."
+    }
+  },
+  {
+    "index": 198,
+    "variants": {
+      "Present continuous": "Eles estão a aplicar pressão.",
+      "Present perfect": "Eles têm aplicado pressão."
+    }
+  },
+  {
+    "index": 199,
+    "variants": {
+      "Present simple": "Ele vê um terapeuta.",
+      "Going to": "Ele vai ver um terapeuta."
+    }
+  },
+  {
+    "index": 200,
+    "variants": {
+      "Present simple": "Ele vê o filme."
+    }
+  },
+  {
+    "index": 201,
+    "variants": {
+      "Present perfect": "Ele tem visto a.",
+      "Going to": "Ele vai vê-la."
+    }
+  },
+  {
+    "index": 202,
+    "variants": {
+      "Present perfect": "Ele tem visto o médico."
+    }
+  },
+  {
+    "index": 203,
+    "variants": {
+      "Future simple": "Ele verá a namorada.",
+      "Present continuous": "Ele está a ver a namorada."
+    }
+  },
+  {
+    "index": 204,
+    "variants": {
+      "Present continuous": "Ele está a ver o valor.",
+      "Present perfect": "Ele tem visto o valor."
+    }
+  },
+  {
+    "index": 205,
+    "variants": {
+      "Present simple": "Deixámos que fique.",
+      "Going to": "Vamos deixá-lo ficar."
+    }
+  },
+  {
+    "index": 206,
+    "variants": {
+      "Past simple": "Deixámos que falasse.",
+      "Present simple": "Deixamos que ela fale."
+    }
+  },
+  {
+    "index": 207,
+    "variants": {
+      "Present perfect": "Temos deixado que entrassem.",
+      "Going to": "Vamos deixar que entrem."
+    }
+  },
+  {
+    "index": 208,
+    "variants": {
+      "Present perfect": "Temos deixado o João conduzir."
+    }
+  },
+  {
+    "index": 209,
+    "variants": {
+      "Future simple": "Deixarás que escolhas.",
+      "Present continuous": "Estamos a deixar-te escolher."
+    }
+  },
+  {
+    "index": 210,
+    "variants": {
+      "Present continuous": "Estamos a deixar que ajudem.",
+      "Present perfect": "Temos deixado que ajudassem."
+    }
+  },
+  {
+    "index": 211,
+    "variants": {
+      "Present simple": "Trago aperitivos.",
+      "Going to": "Vou trazer aperitivos."
+    }
+  },
+  {
+    "index": 212,
+    "variants": {
+      "Present simple": "Trago o meu portátil."
+    }
+  },
+  {
+    "index": 213,
+    "variants": {
+      "Present perfect": "Tenho trazido uma prenda.",
+      "Going to": "Vou trazer uma prenda."
+    }
+  },
+  {
+    "index": 214,
+    "variants": {
+      "Present perfect": "Tenho trazido um amigo."
+    }
+  },
+  {
+    "index": 215,
+    "variants": {
+      "Future simple": "Trarei a sobremesa.",
+      "Present continuous": "Estou a trazer a sobremesa."
+    }
+  },
+  {
+    "index": 216,
+    "variants": {
+      "Present continuous": "Estou a trazer tudo.",
+      "Present perfect": "Tenho trazido tudo."
+    }
+  },
+  {
+    "index": 217,
+    "variants": {
+      "Present continuous": "Está a gostar de peixe.",
+      "Present perfect": "Tem gostado de peixe."
+    }
+  },
+  {
+    "index": 218,
+    "variants": {
+      "Present simple": "Gosta da ideia."
+    }
+  },
+  {
+    "index": 219,
+    "variants": {
+      "Present perfect": "Tem gostado do espectáculo.",
+      "Going to": "Vai gostar do espectáculo."
+    }
+  },
+  {
+    "index": 220,
+    "variants": {
+      "Present perfect": "Tens gostado da comida."
+    }
+  },
+  {
+    "index": 221,
+    "variants": {
+      "Present continuous": "Estás a gostar do jogo."
+    }
+  },
+  {
+    "index": 222,
+    "variants": {
+      "Present continuous": "Estás a gostar da viagem.",
+      "Present perfect": "Tens gostado da viagem."
+    }
+  },
+  {
+    "index": 223,
+    "variants": {
+      "Present simple": "Ajudam-nos.",
+      "Going to": "Vão ajudar-nos."
+    }
+  },
+  {
+    "index": 224,
+    "variants": {
+      "Present simple": "Ajudam muito."
+    }
+  },
+  {
+    "index": 225,
+    "variants": {
+      "Present perfect": "Têm ajudado as crianças.",
+      "Going to": "Vão ajudar as crianças."
+    }
+  },
+  {
+    "index": 226,
+    "variants": {
+      "Present perfect": "Têm ajudado amanhã."
+    }
+  },
+  {
+    "index": 227,
+    "variants": {
+      "Present continuous": "Estão a ajudar-me."
+    }
+  },
+  {
+    "index": 228,
+    "variants": {
+      "Present continuous": "Estão a ajudar famílias.",
+      "Present perfect": "Têm ajudado famílias."
+    }
+  },
+  {
+    "index": 229,
+    "variants": {
+      "Present simple": "Começa a escola.",
+      "Going to": "Vai começar a escola."
+    }
+  },
+  {
+    "index": 230,
+    "variants": {
+      "Present simple": "Começa o treino."
+    }
+  },
+  {
+    "index": 231,
+    "variants": {
+      "Present perfect": "Têm começado cedo.",
+      "Going to": "Vai começar cedo."
+    }
+  },
+  {
+    "index": 232,
+    "variants": {
+      "Present perfect": "Têm começado às 2."
+    }
+  },
+  {
+    "index": 233,
+    "variants": {
+      "Future simple": "Começará um negócio.",
+      "Present continuous": "Está a começar um negócio."
+    }
+  },
+  {
+    "index": 234,
+    "variants": {
+      "Present continuous": "Está a começar agora.",
+      "Present perfect": "Tem começado agora."
+    }
+  },
+  {
+    "index": 235,
+    "variants": {
+      "Present simple": "Chamam a Mónica.",
+      "Going to": "Vão chamar a Mónica."
+    }
+  },
+  {
+    "index": 236,
+    "variants": {
+      "Present simple": "Chamam a polícia."
+    }
+  },
+  {
+    "index": 237,
+    "variants": {
+      "Present perfect": "Têm-te chamado.",
+      "Going to": "Vão chamar-te."
+    }
+  },
+  {
+    "index": 238,
+    "variants": {
+      "Present perfect": "Têm chamado de volta."
+    }
+  },
+  {
+    "index": 239,
+    "variants": {
+      "Future simple": "Chamar-me-ão.",
+      "Present continuous": "Estão a chamar-me."
+    }
+  },
+  {
+    "index": 240,
+    "variants": {
+      "Present continuous": "Estão a ligar todos os dias.",
+      "Present perfect": "Têm ligado todos os dias."
+    }
+  },
+  {
+    "index": 241,
+    "variants": {
+      "Present simple": "Esqueço tudo.",
+      "Going to": "Vou esquecer tudo."
+    }
+  },
+  {
+    "index": 242,
+    "variants": {
+      "Past simple": "Esqueci do teu aniversário.",
+      "Present simple": "Esqueço do teu aniversário."
+    }
+  },
+  {
+    "index": 243,
+    "variants": {
+      "Present perfect": "Esqueci-me das chaves.",
+      "Going to": "Vou esquecer as chaves."
+    }
+  },
+  {
+    "index": 244,
+    "variants": {
+      "Present perfect": "Esqueci as regras."
+    }
+  },
+  {
+    "index": 245,
+    "variants": {
+      "Present continuous": "Estou a esquecer a minha mala."
+    }
+  },
+  {
+    "index": 246,
+    "variants": {
+      "Present continuous": "Estou a esquecer nomes.",
+      "Present perfect": "Esqueci nomes."
+    }
+  },
+  {
+    "index": 247,
+    "variants": {
+      "Present simple": "Evitamos-te.",
+      "Going to": "Vamos evitar-te."
+    }
+  },
+  {
+    "index": 249,
+    "variants": {
+      "Going to": "Vamos evitar o trânsito."
+    }
+  },
+  {
+    "index": 250,
+    "variants": {
+      "Present perfect": "Evitámos conflitos."
+    }
+  },
+  {
+    "index": 251,
+    "variants": {
+      "Present continuous": "Estamos a evitar a multidão."
+    }
+  },
+  {
+    "index": 252,
+    "variants": {
+      "Present continuous": "Estamos a evitar discussões.",
+      "Present perfect": "Temos evitado discussões."
+    }
+  },
+  {
+    "index": 253,
+    "variants": {
+      "Present simple": "Moves-te rápido.",
+      "Going to": "Vais mover-te rápido."
+    }
+  },
+  {
+    "index": 254,
+    "variants": {
+      "Present simple": "Moves a mesa."
+    }
+  },
+  {
+    "index": 255,
+    "variants": {
+      "Present perfect": "Tens-te mudado.",
+      "Going to": "Vais mudar-te."
+    }
+  },
+  {
+    "index": 256,
+    "variants": {
+      "Present perfect": "Tens-te mudado para o primeiro andar."
+    }
+  },
+  {
+    "index": 257,
+    "variants": {
+      "Present continuous": "Estás a mover caixas."
+    }
+  },
+  {
+    "index": 258,
+    "variants": {
+      "Present continuous": "Estás a mover móveis.",
+      "Present perfect": "Tens movido móveis."
+    }
+  },
+  {
+    "index": 259,
+    "variants": {
+      "Present simple": "Ela joga xadrez.",
+      "Going to": "Ela vai jogar xadrez."
+    }
+  },
+  {
+    "index": 260,
+    "variants": {
+      "Present simple": "Ela toca piano."
+    }
+  },
+  {
+    "index": 261,
+    "variants": {
+      "Present perfect": "Ela tem jogado ténis.",
+      "Going to": "Ela vai jogar ténis."
+    }
+  },
+  {
+    "index": 262,
+    "variants": {
+      "Present perfect": "Ela tem jogado dentro."
+    }
+  },
+  {
+    "index": 263,
+    "variants": {
+      "Present continuous": "Ela está a jogar sozinha."
+    }
+  },
+  {
+    "index": 264,
+    "variants": {
+      "Present continuous": "Ela está a jogar futebol.",
+      "Present perfect": "Ela tem jogado futebol."
+    }
+  },
+  {
+    "index": 265,
+    "variants": {
+      "Present simple": "Ele paga a conta.",
+      "Going to": "Ele vai pagar a conta."
+    }
+  },
+  {
+    "index": 266,
+    "variants": {
+      "Present simple": "Ele paga o almoço."
+    }
+  },
+  {
+    "index": 267,
+    "variants": {
+      "Present perfect": "Ele tem pagado com cartão.",
+      "Going to": "Ele vai pagar com cartão."
+    }
+  },
+  {
+    "index": 268,
+    "variants": {
+      "Present perfect": "Ele tem pago o condutor."
+    }
+  },
+  {
+    "index": 269,
+    "variants": {
+      "Future simple": "Ele pagará os impostos.",
+      "Present continuous": "Ele está a pagar os impostos."
+    }
+  },
+  {
+    "index": 270,
+    "variants": {
+      "Present continuous": "Ele está a pagar a renda.",
+      "Present perfect": "Ele tem pago a renda."
+    }
+  },
+  {
+    "index": 271,
+    "variants": {
+      "Present continuous": "Eles estão a ouvir música.",
+      "Present perfect": "Eles têm ouvido música."
+    }
+  },
+  {
+    "index": 272,
+    "variants": {
+      "Present simple": "Eles ouvem um barulho."
+    }
+  },
+  {
+    "index": 273,
+    "variants": {
+      "Present perfect": "Eles têm ouvido vozes.",
+      "Going to": "Eles vão ouvir vozes."
+    }
+  },
+  {
+    "index": 274,
+    "variants": {
+      "Present perfect": "Eles têm ouvido os sinos."
+    }
+  },
+  {
+    "index": 275,
+    "variants": {
+      "Future simple": "Eles ouvirão gritos.",
+      "Present continuous": "Eles estão a ouvir gritos."
+    }
+  },
+  {
+    "index": 276,
+    "variants": {
+      "Present continuous": "Eu estou a acreditar em Deus.",
+      "Present perfect": "Eu tenho acreditado em Deus."
+    }
+  },
+  {
+    "index": 277,
+    "variants": {
+      "Present simple": "Eu acredito nisso."
+    }
+  },
+  {
+    "index": 278,
+    "variants": {
+      "Present perfect": "Eu tenho acreditado em ti.",
+      "Going to": "Eu vou acreditar em ti."
+    }
+  },
+  {
+    "index": 279,
+    "variants": {
+      "Present perfect": "Eu tenho acreditado na história."
+    }
+  },
+  {
+    "index": 280,
+    "variants": {
+      "Present continuous": "Estou a acreditar na Maria."
+    }
+  },
+  {
+    "index": 281,
+    "variants": {
+      "Present simple": "Permitimos visitantes.",
+      "Going to": "Vamos permitir visitantes."
+    }
+  },
+  {
+    "index": 282,
+    "variants": {
+      "Past simple": "Permitimos mudanças.",
+      "Present simple": "Permitimos mudanças."
+    }
+  },
+  {
+    "index": 283,
+    "variants": {
+      "Present perfect": "Temos permitido exceções.",
+      "Going to": "Vamos permitir exceções."
+    }
+  },
+  {
+    "index": 284,
+    "variants": {
+      "Present perfect": "Temos permitido animais de estimação."
+    }
+  },
+  {
+    "index": 285,
+    "variants": {
+      "Present continuous": "Estamos a permitir participação."
+    }
+  },
+  {
+    "index": 286,
+    "variants": {
+      "Present continuous": "Estamos a permitir telemóveis.",
+      "Present perfect": "Temos permitido telemóveis."
+    }
+  },
+  {
+    "index": 287,
+    "variants": {
+      "Going to": "Ela vai estar sentada ao meu lado."
+    }
+  },
+  {
+    "index": 288,
+    "variants": {
+      "Past simple": "Ela sentou-se à mesa.",
+      "Present simple": "Ela senta-se à mesa."
+    }
+  },
+  {
+    "index": 289,
+    "variants": {
+      "Present perfect": "Ela tem-se sentado na cadeira.",
+      "Going to": "Ela vai sentar-se na cadeira."
+    }
+  },
+  {
+    "index": 290,
+    "variants": {
+      "Present perfect": "Ela tem-se sentado no sofá."
+    }
+  },
+  {
+    "index": 291,
+    "variants": {
+      "Future simple": "Ela sentará-se sozinha.",
+      "Present continuous": "Ela está a sentar-se sozinha."
+    }
+  },
+  {
+    "index": 292,
+    "variants": {
+      "Present continuous": "Ela está a sentar-se quietamente.",
+      "Present perfect": "Ela tem-se sentado quietamente."
+    }
+  },
+  {
+    "index": 293,
+    "variants": {
+      "Present simple": "Sofres stress.",
+      "Going to": "Vais sofrer stress."
+    }
+  },
+  {
+    "index": 294,
+    "variants": {
+      "Past simple": "Sofreste muito.",
+      "Present simple": "Sofres muito."
+    }
+  },
+  {
+    "index": 295,
+    "variants": {
+      "Present perfect": "Tens sofrido com doença.",
+      "Going to": "Vais sofrer com doença."
+    }
+  },
+  {
+    "index": 296,
+    "variants": {
+      "Present perfect": "Tens sofrido demasiado."
+    }
+  },
+  {
+    "index": 297,
+    "variants": {
+      "Future simple": "Sofrerás dor.",
+      "Present continuous": "Estás a sofrer dor."
+    }
+  },
+  {
+    "index": 298,
+    "variants": {
+      "Present continuous": "Estás a sofrer profundamente.",
+      "Present perfect": "Tens sofrido profundamente."
+    }
+  },
+  {
+    "index": 299,
+    "variants": {
+      "Present simple": "Lideram a equipa.",
+      "Going to": "Vão liderar a equipa."
+    }
+  },
+  {
+    "index": 300,
+    "variants": {
+      "Past simple": "Eles lideraram o grupo.",
+      "Present simple": "Eles lideram o grupo."
+    }
+  },
+  {
+    "index": 301,
+    "variants": {
+      "Present perfect": "Eles têm liderado o projeto.",
+      "Going to": "Eles vão liderar o projeto."
+    }
+  },
+  {
+    "index": 302,
+    "variants": {
+      "Present perfect": "Eles têm liderado a aula."
+    }
+  },
+  {
+    "index": 303,
+    "variants": {
+      "Future simple": "Eles liderarão toda a gente.",
+      "Present continuous": "Estão a liderar toda a gente."
+    }
+  },
+  {
+    "index": 304,
+    "variants": {
+      "Present continuous": "Estão a liderar a empresa.",
+      "Present perfect": "Eles têm liderado a empresa."
+    }
+  },
+  {
+    "index": 305,
+    "variants": {
+      "Present simple": "Vivo na Alemanha.",
+      "Going to": "Vou viver na Alemanha."
+    }
+  },
+  {
+    "index": 306,
+    "variants": {
+      "Past simple": "Vivi no estrangeiro.",
+      "Present simple": "Vivo no estrangeiro."
+    }
+  },
+  {
+    "index": 307,
+    "variants": {
+      "Present perfect": "Tenho vivido aqui.",
+      "Going to": "Vou viver aqui."
+    }
+  },
+  {
+    "index": 308,
+    "variants": {
+      "Present perfect": "Tenho vivido em Londres."
+    }
+  },
+  {
+    "index": 309,
+    "variants": {
+      "Present continuous": "Estou a viver com o Diego."
+    }
+  },
+  {
+    "index": 310,
+    "variants": {
+      "Present continuous": "Estou a viver sozinho.",
+      "Present perfect": "Tenho vivido sozinho."
+    }
+  },
+  {
+    "index": 311,
+    "variants": {
+      "Present simple": "Ele reúne-se com clientes.",
+      "Going to": "Ele vai reunir-se com clientes."
+    }
+  },
+  {
+    "index": 312,
+    "variants": {
+      "Present simple": "Ele conhece o presidente."
+    }
+  },
+  {
+    "index": 313,
+    "variants": {
+      "Present perfect": "Ele tem conhecido Michael Jackson.",
+      "Going to": "Ele vai conhecer Michael Jackson."
+    }
+  },
+  {
+    "index": 314,
+    "variants": {
+      "Present perfect": "Ele tem conhecido o seu chefe."
+    }
+  },
+  {
+    "index": 315,
+    "variants": {
+      "Future simple": "Ele conhecerá a equipa.",
+      "Present continuous": "Ele está a conhecer a equipa."
+    }
+  },
+  {
+    "index": 316,
+    "variants": {
+      "Present continuous": "Ele está a conhecer o gerente.",
+      "Present perfect": "Ele tem conhecido o gerente."
+    }
+  },
+  {
+    "index": 317,
+    "variants": {
+      "Going to": "Vais a carregar a caixa."
+    }
+  },
+  {
+    "index": 318,
+    "variants": {
+      "Past simple": "Carregaste a mala.",
+      "Present simple": "Carregas a mala."
+    }
+  },
+  {
+    "index": 319,
+    "variants": {
+      "Present perfect": "Tens carregado bagagem.",
+      "Going to": "Vais carregar bagagem."
+    }
+  },
+  {
+    "index": 320,
+    "variants": {
+      "Going to": "Tu vais levar a comida.",
+      "Present perfect": "Tu tens levado a comida."
+    }
+  },
+  {
+    "index": 321,
+    "variants": {
+      "Future simple": "Tu carregarás uma mala.",
+      "Present continuous": "Tu estás a carregar uma mala."
+    }
+  },
+  {
+    "index": 322,
+    "variants": {
+      "Present continuous": "Tu estás a carregar demasiado.",
+      "Present perfect": "Tu tens carregado demasiado."
+    }
+  },
+  {
+    "index": 323,
+    "variants": {
+      "Present simple": "Nós pensamos em mudar-nos.",
+      "Going to": "Nós vamos pensar em mudar-nos."
+    }
+  },
+  {
+    "index": 324,
+    "variants": {
+      "Past simple": "Nós pensámos nisso.",
+      "Present simple": "Nós pensamos nisso."
+    }
+  },
+  {
+    "index": 325,
+    "variants": {
+      "Present perfect": "Nós temos pensado em ti.",
+      "Going to": "Nós vamos pensar em ti."
+    }
+  },
+  {
+    "index": 326,
+    "variants": {
+      "Present perfect": "Nós temos pensado cuidadosamente."
+    }
+  },
+  {
+    "index": 327,
+    "variants": {
+      "Present continuous": "Nós estamos a pensar positivamente."
+    }
+  },
+  {
+    "index": 328,
+    "variants": {
+      "Present continuous": "Nós estamos a pensar juntos.",
+      "Present perfect": "Nós temos pensado juntos."
+    }
+  },
+  {
+    "index": 329,
+    "variants": {
+      "Present simple": "Eu escrevo uma carta.",
+      "Going to": "Eu vou escrever uma carta."
+    }
+  },
+  {
+    "index": 330,
+    "variants": {
+      "Past simple": "Eu escrevi um email.",
+      "Present simple": "Eu escrevo um email."
+    }
+  },
+  {
+    "index": 331,
+    "variants": {
+      "Present perfect": "Eu tenho escrito um livro.",
+      "Going to": "Eu vou escrever um livro."
+    }
+  },
+  {
+    "index": 332,
+    "variants": {
+      "Present perfect": "Eu tenho escrito uma mensagem."
+    }
+  },
+  {
+    "index": 333,
+    "variants": {
+      "Present continuous": "Eu estou a escrever um relatório."
+    }
+  },
+  {
+    "index": 334,
+    "variants": {
+      "Present continuous": "Eu estou a escrever lentamente.",
+      "Present perfect": "Eu tenho escrito lentamente."
+    }
+  },
+  {
+    "index": 335,
+    "variants": {
+      "Present simple": "Ela termina o trabalho de casa.",
+      "Going to": "Ela vai terminar o trabalho de casa."
+    }
+  },
+  {
+    "index": 336,
+    "variants": {
+      "Past simple": "Ela terminou o curso.",
+      "Present simple": "Ela termina o curso."
+    }
+  },
+  {
+    "index": 337,
+    "variants": {
+      "Present perfect": "Ela tem terminado o seu café.",
+      "Going to": "Ela vai terminar o seu café."
+    }
+  },
+  {
+    "index": 338,
+    "variants": {
+      "Present perfect": "Ela tem terminado a escola."
+    }
+  },
+  {
+    "index": 339,
+    "variants": {
+      "Future simple": "Ela terminará a aula.",
+      "Present continuous": "Ela está a terminar a aula."
+    }
+  },
+  {
+    "index": 340,
+    "variants": {
+      "Present continuous": "Ela está a terminar rapidamente.",
+      "Present perfect": "Ela tem terminado rapidamente."
+    }
+  },
+  {
+    "index": 341,
+    "variants": {
+      "Going to": "Você vai estar à espera de uma chamada."
+    }
+  },
+  {
+    "index": 342,
+    "variants": {
+      "Present simple": "Você espera demasiado."
+    }
+  },
+  {
+    "index": 343,
+    "variants": {
+      "Present perfect": "Você tem esperado uma resposta.",
+      "Going to": "Você vai esperar uma resposta."
+    }
+  },
+  {
+    "index": 344,
+    "variants": {
+      "Present perfect": "Você tem esperado notícias."
+    }
+  },
+  {
+    "index": 345,
+    "variants": {
+      "Future simple": "Você estará à espera de uma entrega.",
+      "Present continuous": "Você está à espera de uma entrega."
+    }
+  },
+  {
+    "index": 346,
+    "variants": {
+      "Present continuous": "Você está a esperar resultados.",
+      "Present perfect": "Você tem esperado resultados."
+    }
+  },
+  {
+    "index": 347,
+    "variants": {
+      "Present simple": "Eles partilham um quarto.",
+      "Going to": "Eles vão partilhar um quarto."
+    }
+  },
+  {
+    "index": 348,
+    "variants": {
+      "Present simple": "Eles partilham o sanduíche."
+    }
+  },
+  {
+    "index": 349,
+    "variants": {
+      "Present perfect": "Eles têm partilhado ideias.",
+      "Going to": "Eles vão partilhar ideias."
+    }
+  },
+  {
+    "index": 350,
+    "variants": {
+      "Present perfect": "Eles têm partilhado o almoço."
+    }
+  },
+  {
+    "index": 351,
+    "variants": {
+      "Future simple": "Eles vão partilhar o computador.",
+      "Present continuous": "Eles estão a partilhar o computador."
+    }
+  },
+  {
+    "index": 352,
+    "variants": {
+      "Present continuous": "Eles estão a partilhar segredos.",
+      "Present perfect": "Eles têm partilhado segredos."
+    }
+  },
+  {
+    "index": 353,
+    "variants": {
+      "Present simple": "Ele fala ao telefone.",
+      "Going to": "Ele vai estar a falar ao telefone."
+    }
+  },
+  {
+    "index": 354,
+    "variants": {
+      "Present simple": "Ele fala com eles."
+    }
+  },
+  {
+    "index": 355,
+    "variants": {
+      "Present perfect": "Ele tem falado depressa.",
+      "Going to": "Ele vai falar depressa."
+    }
+  },
+  {
+    "index": 356,
+    "variants": {
+      "Present perfect": "Ele tem falado com ela."
+    }
+  },
+  {
+    "index": 357,
+    "variants": {
+      "Future simple": "Ele vai falar sobre isso.",
+      "Present continuous": "Ele está a falar sobre isso."
+    }
+  },
+  {
+    "index": 358,
+    "variants": {
+      "Present continuous": "Ele está a falar claramente.",
+      "Present perfect": "Ele tem falado claramente."
+    }
+  },
+  {
+    "index": 359,
+    "variants": {
+      "Present simple": "Você lê em silêncio.",
+      "Going to": "Você vai estar a ler em silêncio."
+    }
+  },
+  {
+    "index": 360,
+    "variants": {
+      "Present simple": "Você lê o romance."
+    }
+  },
+  {
+    "index": 361,
+    "variants": {
+      "Going to": "Você vai ler o meu artigo."
+    }
+  },
+  {
+    "index": 362,
+    "variants": {
+      "Present perfect": "Você leu os emails."
+    }
+  },
+  {
+    "index": 363,
+    "variants": {
+      "Future simple": "Você lerá em voz alta.",
+      "Present continuous": "Você está a ler em voz alta."
+    }
+  },
+  {
+    "index": 364,
+    "variants": {
+      "Present continuous": "Você está a ler todos os dias.",
+      "Present perfect": "Você leu todos os dias."
+    }
+  },
+  {
+    "index": 365,
+    "variants": {
+      "Going to": "Vamos perder dinheiro."
+    }
+  },
+  {
+    "index": 367,
+    "variants": {
+      "Going to": "Vamos perdê-la."
+    }
+  },
+  {
+    "index": 368,
+    "variants": {
+      "Present perfect": "Perdemos a aposta."
+    }
+  },
+  {
+    "index": 369,
+    "variants": {
+      "Future simple": "Perderemos o jogo.",
+      "Present continuous": "Estamos a perder o jogo."
+    }
+  },
+  {
+    "index": 370,
+    "variants": {
+      "Present continuous": "Estamos a perder de novo."
+    }
+  },
+  {
+    "index": 371,
+    "variants": {
+      "Present simple": "Falo italiano.",
+      "Going to": "Vou falar italiano."
+    }
+  },
+  {
+    "index": 372,
+    "variants": {
+      "Past simple": "Falei com ele.",
+      "Present simple": "Falo com ele."
+    }
+  },
+  {
+    "index": 373,
+    "variants": {
+      "Present perfect": "Já tenho falado o dia todo.",
+      "Going to": "Vou falar o dia todo."
+    }
+  },
+  {
+    "index": 374,
+    "variants": {
+      "Present perfect": "Já tenho falado baixo."
+    }
+  },
+  {
+    "index": 375,
+    "variants": {
+      "Future simple": "Falarei com eles.",
+      "Present continuous": "Estou falando com eles."
+    }
+  },
+  {
+    "index": 376,
+    "variants": {
+      "Present continuous": "Estou falando 3 idiomas.",
+      "Present perfect": "Já tenho falado 3 idiomas."
+    }
+  }
+]
