@@ -5,6 +5,22 @@
    Se carga después de data.js, srs.js y progress.js.
    =========================================================== */
 
+// ---------- Errores del micrófono (dictado por voz) ----------
+// En iOS/Safari sobre todo, el reconocimiento de voz falla más seguido
+// (permiso, red, silencio) y antes esos fallos no avisaban nada -el
+// botón se quedaba en "grabando" para siempre sin explicar por qué.
+function mensajeErrorMic(codigo) {
+  const mensajes = {
+    'not-allowed': 'Necesitas dar permiso de micrófono en los ajustes del navegador.',
+    'service-not-allowed': 'Necesitas dar permiso de micrófono en los ajustes del navegador.',
+    'no-speech': 'No se oyó nada, inténtalo de nuevo.',
+    'audio-capture': 'No se encontró ningún micrófono.',
+    'network': 'Problema de conexión con el dictado por voz, inténtalo de nuevo.',
+    'aborted': null, // el usuario lo paró a mano, sin mensaje
+  };
+  return codigo in mensajes ? mensajes[codigo] : 'No se pudo usar el micrófono ahora mismo, prueba a escribir.';
+}
+
 // ---------- Chip de progreso (navbar) ----------
 function renderProgressChip() {
   const wraps = document.querySelectorAll('[data-progress-chip]');
@@ -108,6 +124,27 @@ function popPoints(x, y, text) {
 }
 
 // ---------- Texto a voz ----------
+// Poner utter.lang NO basta para que suene con el acento correcto -en
+// muchos navegadores (sobre todo iOS/Safari) si no se fija además una
+// voz de verdad, cae en la voz por defecto del sistema (aquí, español)
+// sin importar el idioma pedido. Las voces cargan async -hay que
+// guardarlas cuando estén listas y volver a intentar si aún no llegaron.
+let ttsVoces = [];
+function cargarVocesTTS() {
+  if ('speechSynthesis' in window) ttsVoces = window.speechSynthesis.getVoices();
+}
+if ('speechSynthesis' in window) {
+  cargarVocesTTS();
+  window.speechSynthesis.addEventListener('voiceschanged', cargarVocesTTS);
+}
+function vozParaIdioma(langCode) {
+  if (!ttsVoces.length) cargarVocesTTS();
+  const prefijo = langCode.split('-')[0].toLowerCase();
+  return ttsVoces.find(v => v.lang.toLowerCase() === langCode.toLowerCase())
+    || ttsVoces.find(v => v.lang.toLowerCase().startsWith(prefijo))
+    || null;
+}
+
 // callbacks opcional: { onStart, onEnd } -para sincronizar, por ejemplo,
 // la animación de un avatar con el inicio/fin real de la narración.
 function speakText(text, rate = 1, lang, callbacks) {
@@ -118,7 +155,10 @@ function speakText(text, rate = 1, lang, callbacks) {
   }
   window.speechSynthesis.cancel();
   const utter = new SpeechSynthesisUtterance(text);
-  utter.lang = lang || (typeof getCursoActivo === 'function' ? getCursoActivo().speechLang : 'en-US');
+  const targetLang = lang || (typeof getCursoActivo === 'function' ? getCursoActivo().speechLang : 'en-US');
+  utter.lang = targetLang;
+  const voz = vozParaIdioma(targetLang);
+  if (voz) utter.voice = voz;
   utter.rate = rate;
   if (callbacks) {
     if (callbacks.onStart) utter.addEventListener('start', callbacks.onStart);

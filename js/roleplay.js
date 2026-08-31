@@ -181,8 +181,13 @@ function startRoleplay(scenario) {
       if (recording) { recognition.stop(); recording = false; micBtn.classList.remove('recording'); setAvatarState(null, idleLabel); return; }
       recording = true; micBtn.classList.add('recording');
       setAvatarState('listening', 'Te está escuchando…');
-      recognition.start();
+      try { recognition.start(); } catch (err) { recording = false; micBtn.classList.remove('recording'); setAvatarState(null, idleLabel); showToast('No se pudo iniciar el micrófono.'); }
     });
+    recognition.onerror = (e) => {
+      const msg = mensajeErrorMic(e.error);
+      if (msg) showToast(msg);
+      recording = false; micBtn.classList.remove('recording'); setAvatarState(null, idleLabel);
+    };
     recognition.onend = () => { recording = false; micBtn.classList.remove('recording'); if (avatarEl.classList.contains('listening')) setAvatarState(null, idleLabel); };
   }
 

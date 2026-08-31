@@ -460,11 +460,16 @@ You MUST reply with STRICT JSON only, no markdown formatting, no extra text befo
     chatRecognition.maxAlternatives = 1;
     let chatRecording = false;
     chatRecognition.onresult = (e) => { qsL('#chatInput').value = e.results[0][0].transcript; };
+    chatRecognition.onerror = (e) => {
+      const msg = mensajeErrorMic(e.error);
+      if (msg) showToast(msg);
+      chatRecording = false; chatMic.classList.remove('recording');
+    };
     chatRecognition.onend = () => { chatRecording = false; chatMic.classList.remove('recording'); };
     chatMic.addEventListener('click', () => {
       if (chatRecording) { chatRecognition.stop(); return; }
       chatRecording = true; chatMic.classList.add('recording');
-      chatRecognition.start();
+      try { chatRecognition.start(); } catch (err) { chatRecording = false; chatMic.classList.remove('recording'); showToast('No se pudo iniciar el micrófono.'); }
     });
   }
 
