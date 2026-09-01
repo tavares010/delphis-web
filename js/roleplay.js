@@ -185,6 +185,7 @@ function startRoleplay(scenario) {
       setAvatarState('listening', 'Te está escuchando…');
       try {
         recognition.start();
+        registrarMicActivo(recognition);
         micWatchdog = vigilarMic(recognition, () => {
           recording = false; micBtn.classList.remove('recording'); setAvatarState(null, idleLabel);
           showToast('No se detectó nada, inténtalo de nuevo.');
@@ -194,11 +195,12 @@ function startRoleplay(scenario) {
     recognition.onresult = (e) => { clearTimeout(micWatchdog); onResultOriginal(e); };
     recognition.onerror = (e) => {
       clearTimeout(micWatchdog);
+      if (recognitionActiva === recognition) recognitionActiva = null;
       const msg = mensajeErrorMic(e.error);
       if (msg) showToast(msg);
       recording = false; micBtn.classList.remove('recording'); setAvatarState(null, idleLabel);
     };
-    recognition.onend = () => { clearTimeout(micWatchdog); recording = false; micBtn.classList.remove('recording'); if (avatarEl.classList.contains('listening')) setAvatarState(null, idleLabel); };
+    recognition.onend = () => { clearTimeout(micWatchdog); if (recognitionActiva === recognition) recognitionActiva = null; recording = false; micBtn.classList.remove('recording'); if (avatarEl.classList.contains('listening')) setAvatarState(null, idleLabel); };
   }
 
   function addBubble(role, text) {

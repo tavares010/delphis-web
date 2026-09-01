@@ -330,7 +330,7 @@ function renderGame(ctx) {
       <div class="game-feedback" id="gameFeedback"></div>
       ${GAME_SR_DISPONIBLE ? `<button type="button" class="game-mode-toggle" id="btnModoTexto">${usarMic ? '✍️ El micrófono no me reconoce bien, prefiero escribir' : '🎤 Volver a usar el micrófono'}</button>` : ''}
     `;
-    qs('#btnGameBack').addEventListener('click', () => { pararReloj(); terminado = true; renderQuiz(ctx); });
+    qs('#btnGameBack').addEventListener('click', () => { pararReloj(); terminado = true; cortarMicActivo(); renderQuiz(ctx); });
     const btnModoTexto = qs('#btnModoTexto');
     if (btnModoTexto) btnModoTexto.addEventListener('click', () => { modoTexto = !modoTexto; draw(); });
     if (usarMic) setupGameMic(); else {
@@ -343,6 +343,7 @@ function renderGame(ctx) {
   }
 
   function setupGameMic() {
+    cortarMicActivo(); // por si la pregunta anterior dejó un reconocimiento colgado sin terminar
     const micBtn = qs('#gameMic');
     const statusEl = qs('#gameMicStatus');
     const transcriptEl = qs('#gameTranscript');
@@ -359,13 +360,14 @@ function renderGame(ctx) {
       checkAnswer(frases[idx], transcript, () => { micBtn.disabled = true; });
     };
     recognition.onstart = () => { statusEl.textContent = 'Escuchando…'; };
-    recognition.onerror = (e) => { clearTimeout(micWatchdog); const msg = mensajeErrorMic(e.error); if (msg) showToast(msg); statusEl.textContent = 'Toca para hablar'; };
-    recognition.onend = () => { clearTimeout(micWatchdog); recording = false; micBtn.classList.remove('recording'); if (statusEl.textContent === 'Escuchando…') statusEl.textContent = 'Toca para hablar'; };
+    recognition.onerror = (e) => { clearTimeout(micWatchdog); if (recognitionActiva === recognition) recognitionActiva = null; const msg = mensajeErrorMic(e.error); if (msg) showToast(msg); statusEl.textContent = 'Toca para hablar'; };
+    recognition.onend = () => { clearTimeout(micWatchdog); if (recognitionActiva === recognition) recognitionActiva = null; recording = false; micBtn.classList.remove('recording'); if (statusEl.textContent === 'Escuchando…') statusEl.textContent = 'Toca para hablar'; };
     micBtn.addEventListener('click', () => {
       if (recording) { recognition.stop(); return; }
       recording = true; micBtn.classList.add('recording'); transcriptEl.textContent = '';
       try {
         recognition.start();
+        registrarMicActivo(recognition);
         micWatchdog = vigilarMic(recognition, () => {
           recording = false; micBtn.classList.remove('recording'); statusEl.textContent = 'Toca para hablar';
           showToast('No se detectó nada, inténtalo de nuevo.');
@@ -429,6 +431,7 @@ function renderGame(ctx) {
     if (terminado) return;
     terminado = true;
     pararReloj();
+    cortarMicActivo(); // el reloj puede acabar con el micro a mitad de escuchar
     ctx.onGameDone();
     if (typeof pushNow === 'function') pushNow();
     content.innerHTML = `
@@ -537,6 +540,7 @@ function initRepaso(content_, caminos, encontrado) {
   }
 
   function setupRepasoMic() {
+    cortarMicActivo(); // por si la frase anterior dejó un reconocimiento colgado sin terminar
     const micBtn = qs('#repasoMic');
     const statusEl = qs('#repasoMicStatus');
     const transcriptEl = qs('#repasoTranscript');
@@ -553,13 +557,14 @@ function initRepaso(content_, caminos, encontrado) {
       checkAnswer(frases[idx], transcript, () => { micBtn.disabled = true; });
     };
     recognition.onstart = () => { statusEl.textContent = 'Escuchando…'; };
-    recognition.onerror = (e) => { clearTimeout(micWatchdog); const msg = mensajeErrorMic(e.error); if (msg) showToast(msg); statusEl.textContent = 'Toca para hablar'; };
-    recognition.onend = () => { clearTimeout(micWatchdog); recording = false; micBtn.classList.remove('recording'); if (statusEl.textContent === 'Escuchando…') statusEl.textContent = 'Toca para hablar'; };
+    recognition.onerror = (e) => { clearTimeout(micWatchdog); if (recognitionActiva === recognition) recognitionActiva = null; const msg = mensajeErrorMic(e.error); if (msg) showToast(msg); statusEl.textContent = 'Toca para hablar'; };
+    recognition.onend = () => { clearTimeout(micWatchdog); if (recognitionActiva === recognition) recognitionActiva = null; recording = false; micBtn.classList.remove('recording'); if (statusEl.textContent === 'Escuchando…') statusEl.textContent = 'Toca para hablar'; };
     micBtn.addEventListener('click', () => {
       if (recording) { recognition.stop(); return; }
       recording = true; micBtn.classList.add('recording'); transcriptEl.textContent = '';
       try {
         recognition.start();
+        registrarMicActivo(recognition);
         micWatchdog = vigilarMic(recognition, () => {
           recording = false; micBtn.classList.remove('recording'); statusEl.textContent = 'Toca para hablar';
           showToast('No se detectó nada, inténtalo de nuevo.');
@@ -600,6 +605,7 @@ function initRepaso(content_, caminos, encontrado) {
   }
 
   function drawResult() {
+    cortarMicActivo();
     const pct = Math.round((correctCount / frases.length) * 100);
     const pass = pct >= 70;
     content.className = 'lesson-card';

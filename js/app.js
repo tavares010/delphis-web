@@ -36,6 +36,26 @@ function vigilarMic(recognition, alExpirar, ms = 9000) {
   }, ms);
 }
 
+// Se detectó en dispositivos reales que el micrófono del propio iOS (el
+// indicador del sistema, no solo el botón de la app) se quedaba
+// encendido de verdad incluso saliendo de la pantalla que lo abrió.
+// Causa real: cada pantalla con micrófono (Juego, Repaso, roleplay, chat
+// del libro) podía crear un reconocimiento nuevo, o el usuario podía
+// cambiar de pantalla/pestaña, sin que nadie parara nunca el
+// reconocimiento anterior si seguía escuchando (colgado, o a mitad) -el
+// objeto viejo quedaba huérfano con el micrófono del hardware todavía
+// abierto. Esto vive en app.js (se carga en todas las páginas) para que
+// las 4 pantallas con micrófono compartan un único "cuál está activo
+// ahora mismo" y se corte de verdad al cambiar de pregunta/pantalla, o si
+// el usuario cambia de pestaña o sale de la página.
+let recognitionActiva = null;
+function registrarMicActivo(recognition) { recognitionActiva = recognition; }
+function cortarMicActivo() {
+  if (recognitionActiva) { try { recognitionActiva.abort(); } catch (e) {} recognitionActiva = null; }
+}
+document.addEventListener('visibilitychange', () => { if (document.hidden) cortarMicActivo(); });
+window.addEventListener('pagehide', cortarMicActivo);
+
 // ---------- Chip de progreso (navbar) ----------
 function renderProgressChip() {
   const wraps = document.querySelectorAll('[data-progress-chip]');

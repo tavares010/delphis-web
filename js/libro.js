@@ -555,16 +555,18 @@ You MUST reply with STRICT JSON only, no markdown formatting, no extra text befo
     chatRecognition.onresult = (e) => { clearTimeout(chatMicWatchdog); qsL('#chatInput').value = e.results[0][0].transcript; };
     chatRecognition.onerror = (e) => {
       clearTimeout(chatMicWatchdog);
+      if (recognitionActiva === chatRecognition) recognitionActiva = null;
       const msg = mensajeErrorMic(e.error);
       if (msg) showToast(msg);
       chatRecording = false; chatMic.classList.remove('recording');
     };
-    chatRecognition.onend = () => { clearTimeout(chatMicWatchdog); chatRecording = false; chatMic.classList.remove('recording'); };
+    chatRecognition.onend = () => { clearTimeout(chatMicWatchdog); if (recognitionActiva === chatRecognition) recognitionActiva = null; chatRecording = false; chatMic.classList.remove('recording'); };
     chatMic.addEventListener('click', () => {
       if (chatRecording) { chatRecognition.stop(); return; }
       chatRecording = true; chatMic.classList.add('recording');
       try {
         chatRecognition.start();
+        registrarMicActivo(chatRecognition);
         chatMicWatchdog = vigilarMic(chatRecognition, () => {
           chatRecording = false; chatMic.classList.remove('recording');
           showToast('No se detectó nada, inténtalo de nuevo.');
