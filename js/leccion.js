@@ -351,18 +351,26 @@ function renderGame(ctx) {
     recognition.interimResults = false;
     recognition.maxAlternatives = 1;
     let recording = false;
+    let micWatchdog = null;
     recognition.onresult = (e) => {
+      clearTimeout(micWatchdog);
       const transcript = e.results[0][0].transcript;
       transcriptEl.textContent = `"${transcript}"`;
       checkAnswer(frases[idx], transcript, () => { micBtn.disabled = true; });
     };
     recognition.onstart = () => { statusEl.textContent = 'Escuchando…'; };
-    recognition.onerror = (e) => { const msg = mensajeErrorMic(e.error); if (msg) showToast(msg); statusEl.textContent = 'Toca para hablar'; };
-    recognition.onend = () => { recording = false; micBtn.classList.remove('recording'); if (statusEl.textContent === 'Escuchando…') statusEl.textContent = 'Toca para hablar'; };
+    recognition.onerror = (e) => { clearTimeout(micWatchdog); const msg = mensajeErrorMic(e.error); if (msg) showToast(msg); statusEl.textContent = 'Toca para hablar'; };
+    recognition.onend = () => { clearTimeout(micWatchdog); recording = false; micBtn.classList.remove('recording'); if (statusEl.textContent === 'Escuchando…') statusEl.textContent = 'Toca para hablar'; };
     micBtn.addEventListener('click', () => {
       if (recording) { recognition.stop(); return; }
       recording = true; micBtn.classList.add('recording'); transcriptEl.textContent = '';
-      try { recognition.start(); } catch (err) { recording = false; micBtn.classList.remove('recording'); showToast('No se pudo iniciar el micrófono.'); }
+      try {
+        recognition.start();
+        micWatchdog = vigilarMic(recognition, () => {
+          recording = false; micBtn.classList.remove('recording'); statusEl.textContent = 'Toca para hablar';
+          showToast('No se detectó nada, inténtalo de nuevo.');
+        });
+      } catch (err) { recording = false; micBtn.classList.remove('recording'); showToast('No se pudo iniciar el micrófono.'); }
     });
   }
 
@@ -537,18 +545,26 @@ function initRepaso(content_, caminos, encontrado) {
     recognition.interimResults = false;
     recognition.maxAlternatives = 1;
     let recording = false;
+    let micWatchdog = null;
     recognition.onresult = (e) => {
+      clearTimeout(micWatchdog);
       const transcript = e.results[0][0].transcript;
       transcriptEl.textContent = `"${transcript}"`;
       checkAnswer(frases[idx], transcript, () => { micBtn.disabled = true; });
     };
     recognition.onstart = () => { statusEl.textContent = 'Escuchando…'; };
-    recognition.onerror = (e) => { const msg = mensajeErrorMic(e.error); if (msg) showToast(msg); statusEl.textContent = 'Toca para hablar'; };
-    recognition.onend = () => { recording = false; micBtn.classList.remove('recording'); if (statusEl.textContent === 'Escuchando…') statusEl.textContent = 'Toca para hablar'; };
+    recognition.onerror = (e) => { clearTimeout(micWatchdog); const msg = mensajeErrorMic(e.error); if (msg) showToast(msg); statusEl.textContent = 'Toca para hablar'; };
+    recognition.onend = () => { clearTimeout(micWatchdog); recording = false; micBtn.classList.remove('recording'); if (statusEl.textContent === 'Escuchando…') statusEl.textContent = 'Toca para hablar'; };
     micBtn.addEventListener('click', () => {
       if (recording) { recognition.stop(); return; }
       recording = true; micBtn.classList.add('recording'); transcriptEl.textContent = '';
-      try { recognition.start(); } catch (err) { recording = false; micBtn.classList.remove('recording'); showToast('No se pudo iniciar el micrófono.'); }
+      try {
+        recognition.start();
+        micWatchdog = vigilarMic(recognition, () => {
+          recording = false; micBtn.classList.remove('recording'); statusEl.textContent = 'Toca para hablar';
+          showToast('No se detectó nada, inténtalo de nuevo.');
+        });
+      } catch (err) { recording = false; micBtn.classList.remove('recording'); showToast('No se pudo iniciar el micrófono.'); }
     });
   }
 

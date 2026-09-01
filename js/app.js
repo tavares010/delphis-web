@@ -21,6 +21,21 @@ function mensajeErrorMic(codigo) {
   return codigo in mensajes ? mensajes[codigo] : 'No se pudo usar el micrófono ahora mismo, prueba a escribir.';
 }
 
+// iOS Safari tiene un fallo real y bastante conocido: si el reconocimiento
+// de voz se cuelga, no dispara NI onresult NI onerror NI onend -el
+// micrófono se queda "escuchando" para siempre sin ningún aviso, porque
+// todo el manejo de errores de arriba depende de que uno de esos tres
+// eventos dispare en algún momento. Este vigilante no confía en eso: si no
+// ha pasado nada en unos segundos, corta el reconocimiento por su cuenta y
+// avisa. Hay que limpiarlo (clearTimeout) en onresult/onerror/onend de
+// verdad para que no salte de más tras un uso normal.
+function vigilarMic(recognition, alExpirar, ms = 9000) {
+  return setTimeout(() => {
+    try { recognition.abort(); } catch (e) {}
+    alExpirar();
+  }, ms);
+}
+
 // ---------- Chip de progreso (navbar) ----------
 function renderProgressChip() {
   const wraps = document.querySelectorAll('[data-progress-chip]');

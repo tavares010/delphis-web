@@ -177,18 +177,28 @@ function startRoleplay(scenario) {
   if (!recognition) { micBtn.style.opacity = '.35'; micBtn.title = 'Tu navegador no soporta dictado por voz — usa el texto.'; }
   else {
     let recording = false;
+    let micWatchdog = null;
+    const onResultOriginal = recognition.onresult; // asignado por setupMic()
     micBtn.addEventListener('click', () => {
       if (recording) { recognition.stop(); recording = false; micBtn.classList.remove('recording'); setAvatarState(null, idleLabel); return; }
       recording = true; micBtn.classList.add('recording');
       setAvatarState('listening', 'Te está escuchando…');
-      try { recognition.start(); } catch (err) { recording = false; micBtn.classList.remove('recording'); setAvatarState(null, idleLabel); showToast('No se pudo iniciar el micrófono.'); }
+      try {
+        recognition.start();
+        micWatchdog = vigilarMic(recognition, () => {
+          recording = false; micBtn.classList.remove('recording'); setAvatarState(null, idleLabel);
+          showToast('No se detectó nada, inténtalo de nuevo.');
+        });
+      } catch (err) { recording = false; micBtn.classList.remove('recording'); setAvatarState(null, idleLabel); showToast('No se pudo iniciar el micrófono.'); }
     });
+    recognition.onresult = (e) => { clearTimeout(micWatchdog); onResultOriginal(e); };
     recognition.onerror = (e) => {
+      clearTimeout(micWatchdog);
       const msg = mensajeErrorMic(e.error);
       if (msg) showToast(msg);
       recording = false; micBtn.classList.remove('recording'); setAvatarState(null, idleLabel);
     };
-    recognition.onend = () => { recording = false; micBtn.classList.remove('recording'); if (avatarEl.classList.contains('listening')) setAvatarState(null, idleLabel); };
+    recognition.onend = () => { clearTimeout(micWatchdog); recording = false; micBtn.classList.remove('recording'); if (avatarEl.classList.contains('listening')) setAvatarState(null, idleLabel); };
   }
 
   function addBubble(role, text) {
