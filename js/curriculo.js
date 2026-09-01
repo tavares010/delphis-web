@@ -385,6 +385,18 @@ async function initCurriculo() {
     // en el futuro se quiera SPA-navegar sin recargar -de momento, simple
     // y fiable: cada clic es una navegación real, el estado vive en la URL.
 
+    // Tutorial guiado -solo tiene sentido en la vista de niveles (los
+    // selectores apuntan a elementos que solo existen ahí), así que no se
+    // ofrece dentro de una sección o lista de lecciones concreta.
+    if (typeof ofrecerTour === 'function' && !new URLSearchParams(location.search).get('nivel')) {
+      ofrecerTour('curriculo', [
+        { selector: '[data-progress-chip]', titulo: 'Tu progreso, siempre a la vista', texto: 'Racha de días, puntos y el curso que tienes activo ahora mismo. Puedes cambiar de idioma desde aquí.' },
+        { selector: '#courseSummaryStrip', titulo: 'Así está organizado el curso', texto: '3 niveles, cada uno con sus lecciones, repasos acumulativos y, si ya está traducido, capítulos del libro "La Sed".' },
+        { selector: '.nivel-card', titulo: 'Cada nivel se desbloquea al anterior', texto: 'Toca un nivel para ver sus secciones. Dentro de cada sección están las lecciones, el examen y el capítulo del libro que le corresponde.' },
+        { selector: '#continueBanner', titulo: 'Sigue justo donde lo dejaste', texto: 'Este botón te lleva directo a tu siguiente lección pendiente -no hace falta que busques por dónde ibas.' },
+      ]);
+    }
+
     const pendingToast = sessionStorage.getItem('delphis_toast');
     if (pendingToast) { sessionStorage.removeItem('delphis_toast'); showToast(pendingToast); }
   } catch (e) {

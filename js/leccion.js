@@ -94,6 +94,73 @@ function renderSteps(activeKey, doneKeys, onStudyClick) {
 /* ===========================================================
    ESTUDIAR — carrusel de frases reales (con audio/imagen si existen)
    =========================================================== */
+/* ===========================================================
+   ESTRUCTURAS VERBALES RESALTADAS (Estudiar) — Nivel 1/2/3 comparten el
+   mismo campo tenseRaw (p.ej. "Present continuous", "First Conditional").
+   No hay analizador gramatical de verdad -son patrones verificados contra
+   el contenido real de los 3 niveles-, así que en preguntas se deja que
+   el sujeto se cuele entre el auxiliar y el verbo ("Have you been...?"),
+   cosa que en una afirmación no pasa ("You have been..."). Frases
+   afirmativas sin ningún auxiliar (p.ej. "She works at a hospital") no
+   tienen ninguna palabra que las delate sin analizar la gramática de
+   verdad, así que caen a resaltar la 2ª palabra como mejor aproximación.
+   =========================================================== */
+function patronesEstructura(esPregunta) {
+  const suj = esPregunta ? '(?:\\s+\\S+)?' : '';
+  const adv = '(?:\\s+(?:still|also|probably|definitely|really|always|never|often|already|just|now))?';
+  return {
+    'Present continuous': new RegExp(`(?:\\b(?:am|is|are|aren't|isn't)\\b|'m|'re|'s)(?:\\s+not)?${suj}\\s+\\w+ing\\b`, 'gi'),
+    'Present perfect': new RegExp(`(?:\\b(?:have|has|haven't|hasn't)\\b|'ve|'s)${suj}\\s+\\w+\\b`, 'gi'),
+    'Past simple': new RegExp(`\\b(?:did|didn't)\\b${suj}\\s+\\w+\\b|\\b(?:was|were|wasn't|weren't|could|couldn't)\\b|\\w+ed\\b`, 'gi'),
+    'Future simple': new RegExp(`\\b(?:will|won't)\\b${suj}\\s+\\w+\\b`, 'gi'),
+    'Going to': new RegExp(`(?:\\b(?:am|is|are|aren't|isn't)\\b|'m|'re|'s)(?:\\s+not)?${suj}\\s+going to\\s+\\w+\\b`, 'gi'),
+    'Present simple': new RegExp(`\\b(?:do|does|don't|doesn't)\\b${suj}\\s+\\w+\\b|\\b(?:am|is|are|aren't|isn't|can|can't)\\b`, 'gi'),
+    'Zero Conditional': /\bif\b/gi,
+    'First Conditional': /\b(?:will|won't)\b\s+\w+\b/gi,
+    'Second Conditional': /\b(?:would|wouldn't)\b\s+\w+\b/gi,
+    'Third Conditional': /\bwould(?:n't)?\s+have\s+\w+\b|\bhad\s+\w+\b/gi,
+    'Mixed Conditional': new RegExp(`\\bwould(?:n't)?\\b${adv}\\s+\\w+\\b|\\bhad(?:n't)?\\b${adv}\\s+\\w+\\b`, 'gi'),
+    'Present Perfect Continuous': new RegExp(`(?:\\b(?:have|has|haven't|hasn't)\\b|'ve|'s)\\s+been\\s+\\w+ing\\b`, 'gi'),
+    'Past Perfect': new RegExp(`\\bhad(?:n't)?\\b${adv}\\s+\\w+\\b`, 'gi'),
+    'Future Continuous': /\b(?:will|won't)\b\s+be\s+\w+ing\b/gi,
+  };
+}
+
+function resaltarEstructura(texto, tenseRaw) {
+  if (!texto || !tenseRaw) return texto || '';
+  const esPregunta = texto.trim().endsWith('?');
+  const patron = patronesEstructura(esPregunta)[tenseRaw];
+  if (!patron) return texto;
+
+  let out = '';
+  let last = 0;
+  let huboMatch = false;
+  let m;
+  patron.lastIndex = 0;
+  while ((m = patron.exec(texto))) {
+    huboMatch = true;
+    out += texto.slice(last, m.index);
+    out += `<mark class="estructura-verbal">${m[0]}</mark>`;
+    last = m.index + m[0].length;
+    if (m[0].length === 0) patron.lastIndex++;
+  }
+  out += texto.slice(last);
+
+  if (!huboMatch && !esPregunta && (tenseRaw === 'Present simple' || tenseRaw === 'Past simple')) {
+    const partes = texto.split(/(\s+)/);
+    let numPalabra = 0;
+    for (let i = 0; i < partes.length; i++) {
+      if (partes[i] && !/^\s+$/.test(partes[i])) {
+        numPalabra++;
+        if (numPalabra === 2) { partes[i] = `<mark class="estructura-verbal">${partes[i]}</mark>`; break; }
+      }
+    }
+    return partes.join('');
+  }
+
+  return out;
+}
+
 function renderStudy(ctx) {
   renderSteps('study', []);
   content.className = 'lesson-card lesson-card--study';
@@ -117,7 +184,7 @@ function renderStudy(ctx) {
         ${f.imagen ? `<img class="phrase-card__img" src="${f.imagen}" alt="" loading="lazy">` : ''}
         ${f.tiempo ? `<span class="phrase-card__tense">${f.tiempo}</span>` : ''}
         <div class="phrase-card__es">${f.es}</div>
-        <div class="phrase-card__en">${f.en}</div>
+        <div class="phrase-card__en">${resaltarEstructura(f.en, f.tenseRaw)}</div>
         <div class="phrase-card__audio">
           <button class="audio-btn" id="btnAudioNorm">🔊 Escuchar</button>
           <button class="audio-btn audio-btn--slow" id="btnAudioSlow">🐢 Más lento</button>
@@ -147,6 +214,14 @@ function renderStudy(ctx) {
     });
   }
   draw();
+
+  if (typeof ofrecerTour === 'function') {
+    ofrecerTour('leccion', [
+      { selector: '#lessonSteps', titulo: '3 pasos por lección', texto: 'Estudiar → Quiz → Juego. Ahora estás en Estudiar: lee cada frase antes de pasar al quiz.' },
+      { selector: '.phrase-card', titulo: 'Escucha la pronunciación real', texto: 'Toca "Escuchar" para oír la frase, o "Más lento" si necesitas oírla más despacio.' },
+      { selector: '.lesson-nav', titulo: 'Avanza frase a frase', texto: 'Cuando termines todas las frases de la lección, pasas directo al quiz.' },
+    ]);
+  }
 }
 
 /* ===========================================================

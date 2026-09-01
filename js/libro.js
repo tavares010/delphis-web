@@ -69,16 +69,28 @@ function capituloInfo(capIndex) {
 }
 
 function renderToc() {
-  tocList.innerHTML = CONTENT.bookChapters.map(cap => {
+  const leidos = CONTENT.bookChapters.filter(cap => libroLeido(cap.index)).length;
+  const pct = CONTENT.bookChapters.length ? Math.round((leidos / CONTENT.bookChapters.length) * 100) : 0;
+
+  const itemsHtml = CONTENT.bookChapters.map(cap => {
     const active = cap.index === capId;
     const { desbloqueado, razon } = capituloInfo(cap.index);
+    const leido = libroLeido(cap.index);
     return `
-      <div class="book-toc__item ${active ? 'active' : ''} ${desbloqueado ? '' : 'locked'}" data-cap="${cap.index}" data-locked="${!desbloqueado}" data-locked-reason="${razon}">
-        <span class="book-toc__num">${cap.index}</span>
+      <div class="book-toc__item ${active ? 'active' : ''} ${desbloqueado ? '' : 'locked'} ${leido ? 'read' : ''}" data-cap="${cap.index}" data-locked="${!desbloqueado}" data-locked-reason="${razon}">
+        <span class="book-toc__num">${leido ? '✓' : cap.index}</span>
         <span>${cap.titulo} ${desbloqueado ? '' : (razon === 'premium' ? '💎' : '🔒')}</span>
       </div>
     `;
   }).join('');
+
+  tocList.innerHTML = `
+    <div class="book-toc__progress">
+      <div class="book-toc__progress-bar"><div class="book-toc__progress-fill" style="width:${pct}%"></div></div>
+      <span>${leidos} de ${CONTENT.bookChapters.length} leídos</span>
+    </div>
+    ${itemsHtml}
+  `;
 
   tocList.querySelectorAll('.book-toc__item').forEach(item => {
     item.addEventListener('click', () => {
@@ -653,6 +665,16 @@ async function init() {
   CAMINOS = buildCamino(CONTENT);
   renderToc();
   renderChapterContent();
+
+  if (typeof ofrecerTour === 'function') {
+    ofrecerTour('libro', [
+      { selector: '.book-toc', titulo: 'Todos los capítulos', texto: 'Los que aparecen con 🔒 se desbloquean avanzando en el curso, y con 💎 son de la membresía. La introducción siempre es gratis.' },
+      { selector: '.reader-player', titulo: 'Escucha el capítulo', texto: 'Narración real a velocidad normal o lenta (🐢). Si el capítulo no tiene audio grabado, se lee con voz sintética.' },
+      { selector: '.tap-word', titulo: 'Toca cualquier palabra', texto: 'Traducción al instante con todas sus acepciones y una frase de ejemplo que también puedes escuchar. Se guarda para tu repaso.' },
+      { selector: '.reader-lang-toggle', titulo: 'Lee en español o en el idioma del curso', texto: 'Cambia la vista del capítulo cuando quieras, sin perder tu progreso.' },
+      { selector: '#chatArea', titulo: 'Habla con la IA sobre lo que leíste', texto: 'Una sesión gratis al día -la IA conoce lo que ya leíste y los tiempos verbales que ya practicaste.' },
+    ]);
+  }
 }
 
 initAuthUI({ protect: true, onReady: init });

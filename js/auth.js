@@ -105,12 +105,11 @@ function renderNavForGuest() {
 function renderNavForUser(user) {
   document.querySelectorAll('[data-progress-chip]').forEach(wrap => { wrap.className = 'progress-chip'; });
   renderProgressChip();
-  if (DEV_MODE) {
-    document.querySelectorAll('[data-progress-chip]').forEach(wrap => {
-      if (wrap.querySelector('.dev-mode-badge')) return;
-      wrap.insertAdjacentHTML('afterbegin', '<span class="dev-mode-badge" title="Modo desarrollador: todo desbloqueado">🛠️<span class="dev-mode-badge__text"> DEV</span></span>');
-    });
-  }
+  // El modo desarrollador sigue desbloqueando todo el currículo para
+  // poder probar cualquier lección (ver nivelDesbloqueado en
+  // curriculo-builder.js), pero ya no se anuncia en la interfaz -ni
+  // insignia ni aviso- para que no ensucie la UI de nadie que use esa
+  // cuenta también para enseñar o grabar pantalla.
   document.querySelectorAll('[data-mobile-auth]').forEach(wrap => {
     wrap.innerHTML = `
       <a href="perfil.html" class="mobile-link">Mi perfil (${user.email})</a>
@@ -165,7 +164,6 @@ function initAuthUI(options = {}) {
     }
 
     renderNavForUser(user);
-    if (DEV_MODE && typeof showToast === 'function') showToast('🛠️ Modo desarrollador activo — todo el currículo está desbloqueado.');
     if (typeof options.onReady === 'function') options.onReady(user);
   });
 }

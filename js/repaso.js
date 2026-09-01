@@ -22,10 +22,10 @@ function renderSummary() {
   const due = srsDueWords();
   const mastered = all.filter(w => w.nivel >= 5).length;
   qsR('#srsSummary').innerHTML = `
-    <div class="srs-stat"><strong>${all.length}</strong><span>Palabras guardadas</span></div>
-    <div class="srs-stat"><strong>${due.length}</strong><span>Por repasar ahora</span></div>
-    <div class="srs-stat"><strong>${mastered}</strong><span>Dominadas (nivel 5)</span></div>
-    <div class="srs-stat"><strong>${progressLoad().statsHoy.aciertos}</strong><span>Aciertos hoy</span></div>
+    <div class="srs-stat"><span class="srs-stat__icon">📚</span><strong>${all.length}</strong><span>Palabras guardadas</span></div>
+    <div class="srs-stat"><span class="srs-stat__icon">⏰</span><strong>${due.length}</strong><span>Por repasar ahora</span></div>
+    <div class="srs-stat"><span class="srs-stat__icon">🏆</span><strong>${mastered}</strong><span>Dominadas (nivel 5)</span></div>
+    <div class="srs-stat"><span class="srs-stat__icon">✅</span><strong>${progressLoad().statsHoy.aciertos}</strong><span>Aciertos hoy</span></div>
   `;
 }
 
