@@ -143,6 +143,15 @@ qsP('#btnSaveName').addEventListener('click', () => {
   showToast('Nombre guardado.');
 });
 
+// El botón "?" flotante para reabrir los tutoriales en cada página
+// molestaba encima de la app -ahora se reinician desde aquí, y la
+// próxima vez que se entre a Currículo/Lección/El libro el recorrido
+// guiado vuelve a salir solo, como la primera vez.
+qsP('#btnReiniciarTours').addEventListener('click', () => {
+  if (typeof reiniciarTodosLosTours === 'function') reiniciarTodosLosTours();
+  showToast('Listo. Verás los tutoriales de nuevo la próxima vez que entres a Currículo, Lección o El libro.');
+});
+
 qsP('#btnReset').addEventListener('click', async () => {
   if (!confirm('¿Seguro? Esto borra todo tu progreso: puntos, monedas, currículo y vocabulario guardado, en este navegador y en tu cuenta.')) return;
   await deleteCloudProgress();

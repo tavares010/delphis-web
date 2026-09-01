@@ -96,25 +96,20 @@ function iniciarTour(id, pasosOriginales) {
   posicionar();
 }
 
-function montarBotonAyuda(id, pasos) {
-  if (document.getElementById('tourHelpBtn')) return;
-  const btn = document.createElement('button');
-  btn.type = 'button';
-  btn.id = 'tourHelpBtn';
-  btn.className = 'tour-help-btn';
-  btn.title = 'Ver tutorial de esta página';
-  btn.setAttribute('aria-label', 'Ver tutorial de esta página');
-  btn.textContent = '?';
-  btn.addEventListener('click', () => iniciarTour(id, pasos));
-  document.body.appendChild(btn);
+// Punto de entrada de cada página: lanza el tour automáticamente solo la
+// primera vez -con un pequeño margen (delayMs) para dar tiempo a que el
+// contenido real ya esté pintado, ya que los pasos apuntan a elementos
+// que crea JS (loadContent es asíncrono en todas estas páginas). Antes
+// había también un botón "?" flotante para volver a verlo cuando
+// quisieras, pero molestaba de más estando siempre encima de la app -la
+// forma de volver a verlo ahora es reiniciarlo desde Perfil.
+function ofrecerTour(id, pasos, { delayMs = 700 } = {}) {
+  if (!tourVisto(id)) setTimeout(() => iniciarTour(id, pasos), delayMs);
 }
 
-// Punto de entrada de cada página: monta el botón de ayuda siempre, y
-// lanza el tour automáticamente solo la primera vez -con un pequeño
-// margen (delayMs) para dar tiempo a que el contenido real ya esté
-// pintado, ya que los pasos apuntan a elementos que crea JS (loadContent
-// es asíncrono en todas estas páginas).
-function ofrecerTour(id, pasos, { delayMs = 700 } = {}) {
-  montarBotonAyuda(id, pasos);
-  if (!tourVisto(id)) setTimeout(() => iniciarTour(id, pasos), delayMs);
+// Usado desde perfil.html ("Ver los tutoriales de nuevo") -borra qué
+// tours ya se vieron, así la próxima vez que se entre a cada página
+// (Currículo/Lección/El libro) el recorrido guiado vuelve a salir solo.
+function reiniciarTodosLosTours() {
+  try { localStorage.removeItem(TOUR_SEEN_KEY); } catch (e) {}
 }

@@ -108,21 +108,26 @@ function renderSteps(activeKey, doneKeys, onStudyClick) {
 function patronesEstructura(esPregunta) {
   const suj = esPregunta ? '(?:\\s+\\S+)?' : '';
   const adv = '(?:\\s+(?:still|also|probably|definitely|really|always|never|often|already|just|now))?';
+  // El pronombre/sujeto también se resalta, no solo el auxiliar+verbo -en
+  // preguntas ya se colaba dentro del hueco de ${suj}, pero en
+  // afirmaciones el sujeto va ANTES del auxiliar ("You have been..."), así
+  // que hace falta añadirlo como prefijo opcional en cada patrón.
+  const pron = '(?:\\b(?:I|You|He|She|It|We|They)\\b\\s+)?';
   return {
-    'Present continuous': new RegExp(`(?:\\b(?:am|is|are|aren't|isn't)\\b|'m|'re|'s)(?:\\s+not)?${suj}\\s+\\w+ing\\b`, 'gi'),
-    'Present perfect': new RegExp(`(?:\\b(?:have|has|haven't|hasn't)\\b|'ve|'s)${suj}\\s+\\w+\\b`, 'gi'),
-    'Past simple': new RegExp(`\\b(?:did|didn't)\\b${suj}\\s+\\w+\\b|\\b(?:was|were|wasn't|weren't|could|couldn't)\\b|\\w+ed\\b`, 'gi'),
-    'Future simple': new RegExp(`\\b(?:will|won't)\\b${suj}\\s+\\w+\\b`, 'gi'),
-    'Going to': new RegExp(`(?:\\b(?:am|is|are|aren't|isn't)\\b|'m|'re|'s)(?:\\s+not)?${suj}\\s+going to\\s+\\w+\\b`, 'gi'),
-    'Present simple': new RegExp(`\\b(?:do|does|don't|doesn't)\\b${suj}\\s+\\w+\\b|\\b(?:am|is|are|aren't|isn't|can|can't)\\b`, 'gi'),
+    'Present continuous': new RegExp(`${pron}(?:\\b(?:am|is|are|aren't|isn't)\\b|'m|'re|'s)(?:\\s+not)?${suj}\\s+\\w+ing\\b`, 'gi'),
+    'Present perfect': new RegExp(`${pron}(?:\\b(?:have|has|haven't|hasn't)\\b|'ve|'s)${suj}\\s+\\w+\\b`, 'gi'),
+    'Past simple': new RegExp(`${pron}\\b(?:did|didn't)\\b${suj}\\s+\\w+\\b|${pron}\\b(?:was|were|wasn't|weren't|could|couldn't)\\b|${pron}\\w+ed\\b`, 'gi'),
+    'Future simple': new RegExp(`${pron}\\b(?:will|won't)\\b${suj}\\s+\\w+\\b`, 'gi'),
+    'Going to': new RegExp(`${pron}(?:\\b(?:am|is|are|aren't|isn't)\\b|'m|'re|'s)(?:\\s+not)?${suj}\\s+going to\\s+\\w+\\b`, 'gi'),
+    'Present simple': new RegExp(`${pron}\\b(?:do|does|don't|doesn't)\\b${suj}\\s+\\w+\\b|${pron}\\b(?:am|is|are|aren't|isn't|can|can't)\\b`, 'gi'),
     'Zero Conditional': /\bif\b/gi,
-    'First Conditional': /\b(?:will|won't)\b\s+\w+\b/gi,
-    'Second Conditional': /\b(?:would|wouldn't)\b\s+\w+\b/gi,
-    'Third Conditional': /\bwould(?:n't)?\s+have\s+\w+\b|\bhad\s+\w+\b/gi,
-    'Mixed Conditional': new RegExp(`\\bwould(?:n't)?\\b${adv}\\s+\\w+\\b|\\bhad(?:n't)?\\b${adv}\\s+\\w+\\b`, 'gi'),
-    'Present Perfect Continuous': new RegExp(`(?:\\b(?:have|has|haven't|hasn't)\\b|'ve|'s)\\s+been\\s+\\w+ing\\b`, 'gi'),
-    'Past Perfect': new RegExp(`\\bhad(?:n't)?\\b${adv}\\s+\\w+\\b`, 'gi'),
-    'Future Continuous': /\b(?:will|won't)\b\s+be\s+\w+ing\b/gi,
+    'First Conditional': new RegExp(`${pron}\\b(?:will|won't)\\b\\s+\\w+\\b`, 'gi'),
+    'Second Conditional': new RegExp(`${pron}\\b(?:would|wouldn't)\\b\\s+\\w+\\b`, 'gi'),
+    'Third Conditional': new RegExp(`${pron}\\bwould(?:n't)?\\s+have\\s+\\w+\\b|${pron}\\bhad\\s+\\w+\\b`, 'gi'),
+    'Mixed Conditional': new RegExp(`${pron}\\bwould(?:n't)?\\b${adv}\\s+\\w+\\b|${pron}\\bhad(?:n't)?\\b${adv}\\s+\\w+\\b`, 'gi'),
+    'Present Perfect Continuous': new RegExp(`${pron}(?:\\b(?:have|has|haven't|hasn't)\\b|'ve|'s)\\s+been\\s+\\w+ing\\b`, 'gi'),
+    'Past Perfect': new RegExp(`${pron}\\bhad(?:n't)?\\b${adv}\\s+\\w+\\b`, 'gi'),
+    'Future Continuous': new RegExp(`${pron}\\b(?:will|won't)\\b\\s+be\\s+\\w+ing\\b`, 'gi'),
   };
 }
 
@@ -147,15 +152,23 @@ function resaltarEstructura(texto, tenseRaw) {
   out += texto.slice(last);
 
   if (!huboMatch && !esPregunta && (tenseRaw === 'Present simple' || tenseRaw === 'Past simple')) {
+    // Sin ningún auxiliar que la delate ("She works at a hospital"), se
+    // resaltan sujeto+verbo juntos (las 2 primeras palabras) como mejor
+    // aproximación posible sin analizar la gramática de verdad.
     const partes = texto.split(/(\s+)/);
-    let numPalabra = 0;
+    let numPalabra = 0, inicio = -1, fin = -1;
     for (let i = 0; i < partes.length; i++) {
       if (partes[i] && !/^\s+$/.test(partes[i])) {
         numPalabra++;
-        if (numPalabra === 2) { partes[i] = `<mark class="estructura-verbal">${partes[i]}</mark>`; break; }
+        if (numPalabra === 1) inicio = i;
+        if (numPalabra === 2) { fin = i; break; }
       }
     }
-    return partes.join('');
+    if (inicio !== -1 && fin !== -1) {
+      const marcado = partes.slice(inicio, fin + 1).join('');
+      return partes.slice(0, inicio).join('') + `<mark class="estructura-verbal">${marcado}</mark>` + partes.slice(fin + 1).join('');
+    }
+    return texto;
   }
 
   return out;
