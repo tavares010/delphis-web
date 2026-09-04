@@ -344,16 +344,17 @@ function renderQuiz(ctx) {
    =========================================================== */
 const GAME_SR_DISPONIBLE = !!(window.SpeechRecognition || window.webkitSpeechRecognition);
 
-// Contrarreloj de verdad: 30s en total para toda la ronda (no por
-// frase), y fallar una no para nada -solo el reloj llegando a 0 acaba
-// la ronda. Antes cada fallo pedía confirmar "Siguiente" a mano y la
-// ronda terminaba al acabar la lista de frases, sin reloj real.
+// Contrarreloj de verdad, pero POR FRASE: cada frase tiene sus propios
+// 30s para responder, el reloj se reinicia al pasar a la siguiente.
+// Fallar (o que se acabe el tiempo de esa frase) no para nada -solo pasa
+// a la siguiente frase con el reloj repuesto- y la ronda termina cuando
+// se acaba la lista de frases, no por un reloj global de toda la ronda.
 const GAME_DURACION_S = 30;
 
 function renderGame(ctx) {
   renderSteps('game', ['study', 'quiz'], () => renderStudy(ctx));
   content.className = 'lesson-card lesson-card--game';
-  let frases = shuffle(ctx.frases);
+  const frases = shuffle(ctx.frases);
   let idx = 0;
   let streak = 0;
   let aciertos = 0;
@@ -364,39 +365,59 @@ function renderGame(ctx) {
   // de cambiar a escribir la respuesta.
   let modoTexto = false;
   let startTime = Date.now();
-  let tiempoRestante = GAME_DURACION_S;
-  let timerId = null;
   let terminado = false;
+  let resuelta = false; // ya se contestó esta frase (bien, mal o por tiempo) -evita doble conteo
+  let relojFraseId = null;
+  let tiempoFrase = GAME_DURACION_S;
 
-  function pararReloj() { clearInterval(timerId); timerId = null; }
+  function pararRelojFrase() { clearInterval(relojFraseId); relojFraseId = null; }
 
-  function arrancarReloj() {
-    pararReloj();
-    timerId = setInterval(() => {
-      tiempoRestante--;
-      const timerEl = qs('#gameTimer');
-      if (timerEl) {
-        timerEl.textContent = `${tiempoRestante}s`;
-        timerEl.classList.toggle('game-timer--urgente', tiempoRestante <= 10);
-      }
-      if (tiempoRestante <= 0) { pararReloj(); finish(); }
+  function actualizarRelojUI() {
+    const timerEl = qs('#gameTimer');
+    if (timerEl) {
+      timerEl.textContent = `${tiempoFrase}s`;
+      timerEl.classList.toggle('game-timer--urgente', tiempoFrase <= 10);
+    }
+  }
+
+  function arrancarRelojFrase() {
+    pararRelojFrase();
+    tiempoFrase = GAME_DURACION_S;
+    actualizarRelojUI();
+    relojFraseId = setInterval(() => {
+      tiempoFrase--;
+      actualizarRelojUI();
+      if (tiempoFrase <= 0) { pararRelojFrase(); tiempoAgotado(); }
     }, 1000);
+  }
+
+  function tiempoAgotado() {
+    if (terminado || resuelta) return;
+    resuelta = true;
+    intentos++;
+    streak = 0;
+    cortarMicActivo(); // por si estaba escuchando cuando se acabó el tiempo de esta frase
+    const micBtn = qs('#gameMic'); if (micBtn) micBtn.disabled = true;
+    const input = qs('#gameInput'); if (input) input.disabled = true;
+    const feedback = qs('#gameFeedback');
+    if (feedback) feedback.innerHTML = `<div class="game-feedback incorrect">⏱️ Se acabó el tiempo. La respuesta era: <strong>${frases[idx].en}</strong></div>`;
+    setTimeout(() => next(), 1600);
   }
 
   function draw() {
     if (terminado) return;
+    resuelta = false;
     startTime = Date.now();
-    if (idx >= frases.length) { frases = shuffle(ctx.frases); idx = 0; } // se repiten mezcladas si da tiempo a más
     const f = frases[idx];
     const usarMic = GAME_SR_DISPONIBLE && !modoTexto;
     content.innerHTML = `
       <button type="button" class="breadcrumb-back" id="btnGameBack">← Volver al quiz</button>
       <div class="lesson-card__head">
         <h1>${ctx.titulo} · Juego</h1>
-        <p>Produce todas las que puedas antes de que se acabe el tiempo.</p>
+        <p>Tienes ${GAME_DURACION_S}s para cada frase. Fallar no te saca del juego.</p>
       </div>
       <div class="game-topbar">
-        <div class="game-timer" id="gameTimer">${tiempoRestante}s</div>
+        <div class="game-timer" id="gameTimer">${GAME_DURACION_S}s</div>
         <div class="game-streak">🔥 Racha: ${streak}</div>
       </div>
       <div class="game-prompt">
@@ -418,7 +439,7 @@ function renderGame(ctx) {
       <div class="game-feedback" id="gameFeedback"></div>
       ${GAME_SR_DISPONIBLE ? `<button type="button" class="game-mode-toggle" id="btnModoTexto">${usarMic ? '✍️ El micrófono no me reconoce bien, prefiero escribir' : '🎤 Volver a usar el micrófono'}</button>` : ''}
     `;
-    qs('#btnGameBack').addEventListener('click', () => { pararReloj(); terminado = true; cortarMicActivo(); renderQuiz(ctx); });
+    qs('#btnGameBack').addEventListener('click', () => { pararRelojFrase(); terminado = true; cortarMicActivo(); renderQuiz(ctx); });
     const btnModoTexto = qs('#btnModoTexto');
     if (btnModoTexto) btnModoTexto.addEventListener('click', () => { modoTexto = !modoTexto; draw(); });
     if (usarMic) setupGameMic(); else {
@@ -428,6 +449,7 @@ function renderGame(ctx) {
         checkAnswer(f, input.value.trim(), () => { input.disabled = true; qs('#gameForm button').disabled = true; });
       });
     }
+    arrancarRelojFrase();
   }
 
   function setupGameMic() {
@@ -465,7 +487,9 @@ function renderGame(ctx) {
   }
 
   function checkAnswer(f, value, onAnswered) {
-    if (!value || terminado) return;
+    if (!value || terminado || resuelta) return;
+    resuelta = true;
+    pararRelojFrase();
     onAnswered();
     const elapsed = (Date.now() - startTime) / 1000;
     const isCorrect = normalizeAnswer(value) === normalizeAnswer(f.en) || isAcceptedAlternate(f.en, value);
@@ -479,10 +503,10 @@ function renderGame(ctx) {
         <div class="game-feedback incorrect">La respuesta correcta era: <strong>${f.en}</strong></div>
         <button type="button" class="add-answer-btn" id="btnAddAlt">➕ Añadir "${value}" como respuesta válida</button>
       `;
-      // Fallar no para nada -solo el reloj acaba la ronda, así que se
-      // sigue a la siguiente frase sola tras un momento breve para leer
-      // la respuesta correcta, salvo que el usuario la marque como
-      // válida antes: entonces cuenta como acierto de verdad.
+      // Fallar no saca del juego -se sigue a la siguiente frase sola tras
+      // un momento breve para leer la respuesta correcta, salvo que el
+      // usuario la marque como válida antes: entonces cuenta como acierto
+      // de verdad.
       const avance = setTimeout(() => { intentos++; next(); }, 1600);
       const btnAlt = qs('#btnAddAlt');
       if (btnAlt) btnAlt.addEventListener('click', (e) => {
@@ -511,22 +535,22 @@ function renderGame(ctx) {
 
   function next() {
     if (terminado) return;
-    idx++;
-    draw();
+    if (idx < frases.length - 1) { idx++; draw(); }
+    else { finish(); }
   }
 
   function finish() {
     if (terminado) return;
     terminado = true;
-    pararReloj();
-    cortarMicActivo(); // el reloj puede acabar con el micro a mitad de escuchar
+    pararRelojFrase();
+    cortarMicActivo(); // el reloj de la última frase puede acabar con el micro a mitad de escuchar
     ctx.onGameDone();
     if (typeof pushNow === 'function') pushNow();
     content.innerHTML = `
       <div class="quiz-result">
-        <span class="eyebrow">¡Se acabó el tiempo!</span>
-        <div style="font-size:3.4rem; margin:1rem 0;">⏱️</div>
-        <h2 style="margin-bottom:.6rem;">${aciertos} de ${intentos} en ${GAME_DURACION_S}s</h2>
+        <span class="eyebrow">¡Ronda completada!</span>
+        <div style="font-size:3.4rem; margin:1rem 0;">🎉</div>
+        <h2 style="margin-bottom:.6rem;">${aciertos} de ${intentos}</h2>
         <p style="color:var(--gray-400); margin-bottom:1.8rem;">Sigues avanzando por el camino del curso.</p>
         <div class="hero__cta" style="justify-content:center;">
           <a href="curriculo.html" class="btn btn--primary btn--lg">Volver al curso →</a>
@@ -538,7 +562,6 @@ function renderGame(ctx) {
   }
 
   draw();
-  arrancarReloj();
 }
 
 /* ===========================================================
