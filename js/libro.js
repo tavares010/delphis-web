@@ -421,6 +421,7 @@ function renderBookQuiz(chapter) {
         <div class="quiz-options" id="bqOptions">
           ${q.options.map((op, i) => `<button class="quiz-option" data-i="${i}"><span class="quiz-option__letter">${LETRAS[i]}</span><span class="quiz-option__text">${op}</span></button>`).join('')}
         </div>
+        <div class="quiz-feedback" id="bqFeedback"></div>
       </div>
     `;
     qsL('#bqOptions').querySelectorAll('.quiz-option').forEach((btn, i) => {
@@ -431,7 +432,11 @@ function renderBookQuiz(chapter) {
         opts.forEach(o => o.classList.add('disabled'));
         if (i === q.correctIndex) { btn.classList.add('correct'); correctCount++; }
         else { btn.classList.add('incorrect'); opts[q.correctIndex].classList.add('correct'); }
-        setTimeout(() => { if (qi < preguntas.length - 1) { qi++; drawQuestion(); } else drawResult(); }, 1200);
+        // El usuario decide cuándo seguir, para poder releer la
+        // respuesta correcta las veces que haga falta.
+        const esUltima = qi >= preguntas.length - 1;
+        qsL('#bqFeedback').innerHTML = `<button type="button" class="btn btn--primary" id="btnBqNext">${esUltima ? 'Ver resultado →' : 'Siguiente →'}</button>`;
+        qsL('#btnBqNext').addEventListener('click', () => { if (qi < preguntas.length - 1) { qi++; drawQuestion(); } else drawResult(); });
       });
     });
   }

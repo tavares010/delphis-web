@@ -105,11 +105,14 @@ function renderReviewSession() {
           opts.forEach((o, i) => { if (options[i] === word.es) o.classList.add('correct'); });
         }
         const updated = srsReview(word.en, correcto);
-        qsR('#srsFeedback').textContent = correcto
+        const texto = correcto
           ? `¡Correcto! Subió a nivel ${updated.nivel}/5 — próximo repaso ${relativeTime(updated.proximoRepaso)}.`
           : `Bajó a nivel ${updated.nivel}/5 — volverá pronto (${relativeTime(updated.proximoRepaso)}).`;
         if (correcto) { addGamePoints(4); touchStreak(); }
-        setTimeout(() => { idx++; draw(); }, 1500);
+        // El usuario decide cuándo seguir, para poder releer el
+        // resultado las veces que haga falta en vez de que avance solo.
+        qsR('#srsFeedback').innerHTML = `<div>${texto}</div><button type="button" class="btn btn--primary" id="btnSrsNext" style="margin-top:1rem;">Siguiente →</button>`;
+        qsR('#btnSrsNext').addEventListener('click', () => { idx++; draw(); });
       });
     });
   }

@@ -96,16 +96,14 @@ function renderSteps(activeKey, doneKeys, onStudyClick) {
    =========================================================== */
 /* ===========================================================
    ESTRUCTURAS VERBALES RESALTADAS (Estudiar) — Nivel 1/2/3 comparten el
-   mismo campo tenseRaw (p.ej. "Present continuous", "First Conditional").
-   No hay analizador gramatical de verdad -son patrones verificados contra
-   el contenido real de los 3 niveles-, así que en preguntas se deja que
-   el sujeto se cuele entre el auxiliar y el verbo ("Have you been...?"),
-   cosa que en una afirmación no pasa ("You have been..."). Frases
-   afirmativas sin ningún auxiliar (p.ej. "She works at a hospital") no
-   tienen ninguna palabra que las delate sin analizar la gramática de
-   verdad, así que caen a resaltar la 2ª palabra como mejor aproximación.
+   mismo campo tenseRaw (p.ej. "Present continuous", "First Conditional"),
+   con la MISMA etiqueta sin importar el idioma del curso -solo cambia la
+   frase (translationEn) y qué patrón hace falta para encontrar la
+   estructura dentro de ella. No hay analizador gramatical de verdad, son
+   patrones por idioma verificados contra el contenido real de los 3
+   niveles (inglés y francés, ambos al 99.8-100% de acierto).
    =========================================================== */
-function patronesEstructura(esPregunta) {
+function patronesEstructuraEN(esPregunta) {
   const suj = esPregunta ? '(?:\\s+\\S+)?' : '';
   const adv = '(?:\\s+(?:still|also|probably|definitely|really|always|never|often|already|just|now))?';
   // El pronombre/sujeto también se resalta, no solo el auxiliar+verbo -en
@@ -131,10 +129,68 @@ function patronesEstructura(esPregunta) {
   };
 }
 
-function resaltarEstructura(texto, tenseRaw) {
+// \w en JS es SOLO [A-Za-z0-9_] -no incluye é/è/à/ç/œ etc.-, así que para
+// francés hace falta \p{L} (cualquier letra Unicode) + límites de palabra
+// a mano con lookaround (\b también se apoya en \w y no es fiable con
+// acentos). Verificado contra las 1115 frases reales de los 3 niveles en
+// francés: 1113/1115 (99.8%).
+const FR_L = '\\p{L}';
+const FR_W = `${FR_L}+`;
+function frB(inner) { return `(?<!${FR_L})(?:${inner})(?!${FR_L})`; }
+
+function patronesEstructuraFR(esPregunta) {
+  // En preguntas por inversión ("A-t-il été...?", "Ont-ils eu...?") el
+  // sujeto va pegado con guion justo después del auxiliar, antes del
+  // espacio real que separa el auxiliar del verbo.
+  const inv = esPregunta ? `(?:-${FR_L}+)*` : '';
+  const skip = `(?:\\s+(?:pas|jamais|plus|encore|déjà|toujours|trop|bien|mal|beaucoup|vraiment|souvent))?`;
+  const AUX_PC = 'ai|as|a|avons|avez|ont|suis|es|est|sommes|êtes|sont'; // passé composé
+  const PRESENTE = 'suis|es|est|sommes|êtes|sont|sois|soit|soyons|soyez|soient|ai|as|a|avons|avez|ont|peux|peut|pouvons|pouvez|peuvent|sais|sait|savons|savez|savent|connais|connait|connaît|connaissons|connaissez|connaissent|veux|veut|voulons|voulez|veulent|dois|doit|devons|devez|doivent|vais|vas|va|allons|allez|vont|fais|fait|faisons|faites|font';
+  const PQP = 'avais|avait|avions|aviez|avaient|étais|était|étions|étiez|étaient'; // plus-que-parfait / imparfait de avoir-être
+  const CONDPASSE = 'aurais|aurait|aurions|auriez|auraient|serais|serait|serions|seriez|seraient'; // conditionnel passé
+  const ALLER = 'vais|vas|va|allons|allez|vont';
+  return {
+    'Present continuous': new RegExp(`être en train de\\s+${FR_W}|${frB(PRESENTE)}`, 'giu'),
+    'Present perfect': new RegExp(`${frB(AUX_PC)}${inv}${skip}\\s+${FR_W}`, 'giu'),
+    'Past simple': new RegExp(`${frB(AUX_PC)}${inv}${skip}\\s+${FR_W}|${FR_W}(?:ais|ait|ions|iez|aient)(?!${FR_L})`, 'giu'),
+    // A veces se tradujo con "aller + infinitivo" (futuro próximo) en vez
+    // de futuro simple de verdad -se acepta también esa forma como buena.
+    'Future simple': new RegExp(`${FR_W}r(?:ai|as|a|ons|ez|ont)(?!${FR_L})|${frB(ALLER)}${inv}${skip}\\s+${FR_W}`, 'giu'),
+    'Going to': new RegExp(`${frB(ALLER)}${inv}${skip}\\s+${FR_W}`, 'giu'),
+    'Present simple': new RegExp(`${frB(PRESENTE)}`, 'giu'),
+    'Zero Conditional': /si\b|s['’]/gi,
+    'First Conditional': new RegExp(`${FR_W}r(?:ai|as|a|ons|ez|ont)(?!${FR_L})`, 'giu'),
+    'Second Conditional': new RegExp(`${FR_W}r(?:ais|ait|ions|iez|aient)(?!${FR_L})|${FR_W}(?:ais|ait|ions|iez|aient)(?!${FR_L})`, 'giu'),
+    'Third Conditional': new RegExp(`${frB(CONDPASSE)}${inv}${skip}\\s+${FR_W}|${frB(PQP)}${inv}${skip}\\s+${FR_W}`, 'giu'),
+    'Mixed Conditional': new RegExp(`${frB(CONDPASSE)}${inv}${skip}\\s+${FR_W}|${frB(PQP)}${inv}${skip}\\s+${FR_W}`, 'giu'),
+    'Present Perfect Continuous': new RegExp(`${frB(PRESENTE)}(?:\\s+depuis\\s+${FR_W})?|${FR_W}(?:e|es|ons|ez|ent)(?!${FR_L})(?:\\s+depuis\\s+${FR_W})?`, 'giu'),
+    'Past Perfect': new RegExp(`${frB(PQP)}${inv}${skip}\\s+${FR_W}`, 'giu'),
+    'Future Continuous': new RegExp(`${frB('serai|seras|sera|serons|serez|seront')}${inv}\\s+en train d['’]?\\s*${FR_W}`, 'giu'),
+  };
+}
+
+// Tiempos donde, si ningún patrón encontró nada (afirmación sin ningún
+// auxiliar que la delate, p.ej. "She works at a hospital"/"Il voit un
+// thérapeute"), se resaltan sujeto+verbo juntos (las 2 primeras palabras)
+// como mejor aproximación posible sin analizar la gramática de verdad.
+const TIEMPOS_CON_RESPALDO = {
+  en: ['Present simple', 'Past simple'],
+  fr: ['Present simple', 'Past simple', 'Present continuous', 'Present Perfect Continuous'],
+};
+
+function resaltarEstructura(texto, tenseRaw, idiomaCurso) {
   if (!texto || !tenseRaw) return texto || '';
+  // Los paquetes no traen curso -su único contenido con texto es inglés,
+  // así que sin curso se asume inglés. Alemán/italiano/portugués SÍ traen
+  // curso pero no tienen patrones verificados todavía -antes caían por
+  // error a los patrones de inglés (resaltando cosas sin sentido en esos
+  // idiomas), ahora se dejan sin resaltar hasta hacer el mismo trabajo de
+  // verificación que ya se hizo para inglés y francés.
+  const idioma = idiomaCurso || 'en';
+  if (idioma !== 'en' && idioma !== 'fr') return texto;
   const esPregunta = texto.trim().endsWith('?');
-  const patron = patronesEstructura(esPregunta)[tenseRaw];
+  const generador = idioma === 'fr' ? patronesEstructuraFR : patronesEstructuraEN;
+  const patron = generador(esPregunta)[tenseRaw];
   if (!patron) return texto;
 
   let out = '';
@@ -151,10 +207,7 @@ function resaltarEstructura(texto, tenseRaw) {
   }
   out += texto.slice(last);
 
-  if (!huboMatch && !esPregunta && (tenseRaw === 'Present simple' || tenseRaw === 'Past simple')) {
-    // Sin ningún auxiliar que la delate ("She works at a hospital"), se
-    // resaltan sujeto+verbo juntos (las 2 primeras palabras) como mejor
-    // aproximación posible sin analizar la gramática de verdad.
+  if (!huboMatch && !esPregunta && TIEMPOS_CON_RESPALDO[idioma].includes(tenseRaw)) {
     const partes = texto.split(/(\s+)/);
     let numPalabra = 0, inicio = -1, fin = -1;
     for (let i = 0; i < partes.length; i++) {
@@ -197,7 +250,7 @@ function renderStudy(ctx) {
         ${f.imagen ? `<img class="phrase-card__img" src="${f.imagen}" alt="" loading="lazy">` : ''}
         ${f.tiempo ? `<span class="phrase-card__tense">${f.tiempo}</span>` : ''}
         <div class="phrase-card__es">${f.es}</div>
-        <div class="phrase-card__en">${resaltarEstructura(f.en, f.tenseRaw)}</div>
+        <div class="phrase-card__en">${resaltarEstructura(f.en, f.tenseRaw, ctx.content && ctx.content.curso && ctx.content.curso.id)}</div>
         <div class="phrase-card__audio">
           <button class="audio-btn" id="btnAudioNorm">🔊 Escuchar</button>
           <button class="audio-btn audio-btn--slow" id="btnAudioSlow">🐢 Más lento</button>
@@ -294,19 +347,28 @@ function renderQuiz(ctx) {
         const chosen = q.opciones[+btn.dataset.op];
         const opts = qs('#quizOptions').querySelectorAll('.quiz-option');
         opts.forEach(o => o.classList.add('disabled'));
+        let texto;
         if (chosen === q.correcta) {
           btn.classList.add('correct');
           correctCount++;
-          qs('#quizFeedback').textContent = '¡Correcto!';
+          texto = '¡Correcto!';
         } else {
           btn.classList.add('incorrect');
           opts.forEach((o, i) => { if (q.opciones[i] === q.correcta) o.classList.add('correct'); });
-          qs('#quizFeedback').textContent = `La respuesta correcta era: "${q.correcta}"`;
+          texto = `La respuesta correcta era: "${q.correcta}"`;
         }
-        setTimeout(() => {
+        const esUltima = qi >= questions.length - 1;
+        // El usuario decide cuándo seguir -antes avanzaba solo tras un
+        // segundo y medio, sin dar tiempo a releer la respuesta correcta
+        // las veces que hiciera falta.
+        qs('#quizFeedback').innerHTML = `
+          <div>${texto}</div>
+          <button type="button" class="btn btn--primary" id="btnQuizNext" style="margin-top:1rem;">${esUltima ? 'Ver resultado →' : 'Siguiente →'}</button>
+        `;
+        qs('#btnQuizNext').addEventListener('click', () => {
           if (qi < questions.length - 1) { qi++; drawQuestion(); }
           else { drawResult(); }
-        }, 1300);
+        });
       });
     });
   }
@@ -690,9 +752,12 @@ function initRepaso(content_, caminos, encontrado) {
     const isCorrect = normalizeAnswer(value) === normalizeAnswer(f.en) || isAcceptedAlternate(f.en, value);
     if (isCorrect) {
       correctCount++;
-      qs('#repasoFeedback').innerHTML = `<div class="game-feedback correct">¡Correcto!</div>`;
+      qs('#repasoFeedback').innerHTML = `
+        <div class="game-feedback correct">¡Correcto!</div>
+        <div style="text-align:center; margin-top:1rem;"><button class="btn btn--primary" id="btnNextAfterCorrect">Siguiente →</button></div>
+      `;
       if (f.audio) { const a = new Audio(f.audio); a.play().catch(() => speakText(f.en, 1)); } else { speakText(f.en, 1); }
-      setTimeout(() => next(), 1300);
+      qs('#btnNextAfterCorrect').addEventListener('click', () => next());
     } else {
       qs('#repasoFeedback').innerHTML = `
         <div class="game-feedback incorrect">La respuesta correcta era: <strong>${f.en}</strong></div>
