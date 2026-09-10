@@ -1,11 +1,12 @@
 /* ===========================================================
    DELPHIS METHOD — BARRA DE NAVEGACIÓN INFERIOR (solo móvil, ≤720px)
    Se inyecta sola en las páginas "de dentro de la app" (currículo,
-   libro, paquetes, repaso, perfil, roleplay, cursos) — no en
-   marketing/auth (index, login, verificar, cómo-funciona), igual que
-   una app real no muestra tabs antes de entrar. Excepción: leccion.html
-   (Estudiar/Quiz/Juego) tampoco la lleva, para que en móvil el paso
-   quepa entero sin scroll.
+   libro, paquetes, repaso, perfil, roleplay) — no en marketing/auth
+   (index, login, verificar, cómo-funciona), igual que una app real no
+   muestra tabs antes de entrar. Excepción: leccion.html (Estudiar/Quiz/
+   Juego) tampoco la lleva, para que en móvil el paso quepa entero sin
+   scroll. (Hubo una pestaña "Idiomas" hacia cursos.html, quitada junto
+   con el resto del soporte multi-idioma.)
    =========================================================== */
 const BOTTOM_NAV_ITEMS = [
   { id: 'curso', href: 'curriculo.html', label: 'Curso',
@@ -14,8 +15,6 @@ const BOTTOM_NAV_ITEMS = [
     icon: '<path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>' },
   { id: 'repaso', href: 'repaso.html', label: 'Repaso',
     icon: '<path d="M4 4v5h5M20 20v-5h-5M4.5 15a8 8 0 0014.3 3.2M19.5 9a8 8 0 00-14.3-3.2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>' },
-  { id: 'idiomas', href: 'cursos.html', label: 'Idiomas',
-    icon: '<circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" fill="none"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18" stroke="currentColor" stroke-width="2" fill="none"/>' },
   { id: 'ia', href: 'roleplay.html', label: 'IA',
     icon: '<circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="2" fill="none"/><path d="M5 8.5C3.5 9.5 3 11 3 13v3a2 2 0 002 2h1m13-9.5c1.5 1 2 2.5 2 4.5v3a2 2 0 01-2 2h-1M8 20v-3a4 4 0 018 0v3" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>' },
   { id: 'perfil', href: 'perfil.html', label: 'Perfil',
@@ -23,16 +22,16 @@ const BOTTOM_NAV_ITEMS = [
 ];
 
 // Páginas que no son una de las pestañas pero pertenecen a una: la
-// lección de un repaso destaca "Repaso", el resto de leccion.html/libro.html
-// destaca "Curso" (son parte del camino principal); roleplay.html tiene su
-// propia pestaña "IA".
+// lección de un repaso destaca "Repaso", el resto de leccion.html/libro.html/
+// teoria.html/teoria-leccion.html/progreso.html destaca "Curso" (son parte
+// del camino principal); roleplay.html tiene su propia pestaña "IA".
 function seccionActiva() {
   const page = location.pathname.split('/').pop() || 'index.html';
   if (page === 'leccion.html') {
     const tipo = new URLSearchParams(location.search).get('tipo');
     return tipo === 'repaso' ? 'repaso.html' : 'curriculo.html';
   }
-  if (page === 'libro.html') return 'curriculo.html';
+  if (page === 'libro.html' || page === 'teoria.html' || page === 'teoria-leccion.html' || page === 'progreso.html') return 'curriculo.html';
   return page;
 }
 

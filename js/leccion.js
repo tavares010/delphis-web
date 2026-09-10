@@ -94,138 +94,8 @@ function renderSteps(activeKey, doneKeys, onStudyClick) {
 /* ===========================================================
    ESTUDIAR — carrusel de frases reales (con audio/imagen si existen)
    =========================================================== */
-/* ===========================================================
-   ESTRUCTURAS VERBALES RESALTADAS (Estudiar) — Nivel 1/2/3 comparten el
-   mismo campo tenseRaw (p.ej. "Present continuous", "First Conditional"),
-   con la MISMA etiqueta sin importar el idioma del curso -solo cambia la
-   frase (translationEn) y qué patrón hace falta para encontrar la
-   estructura dentro de ella. No hay analizador gramatical de verdad, son
-   patrones por idioma verificados contra el contenido real de los 3
-   niveles (inglés y francés, ambos al 99.8-100% de acierto).
-   =========================================================== */
-function patronesEstructuraEN(esPregunta) {
-  const suj = esPregunta ? '(?:\\s+\\S+)?' : '';
-  const adv = '(?:\\s+(?:still|also|probably|definitely|really|always|never|often|already|just|now))?';
-  // El pronombre/sujeto también se resalta, no solo el auxiliar+verbo -en
-  // preguntas ya se colaba dentro del hueco de ${suj}, pero en
-  // afirmaciones el sujeto va ANTES del auxiliar ("You have been..."), así
-  // que hace falta añadirlo como prefijo opcional en cada patrón.
-  const pron = '(?:\\b(?:I|You|He|She|It|We|They)\\b\\s+)?';
-  return {
-    'Present continuous': new RegExp(`${pron}(?:\\b(?:am|is|are|aren't|isn't)\\b|'m|'re|'s)(?:\\s+not)?${suj}\\s+\\w+ing\\b`, 'gi'),
-    'Present perfect': new RegExp(`${pron}(?:\\b(?:have|has|haven't|hasn't)\\b|'ve|'s)${suj}\\s+\\w+\\b`, 'gi'),
-    'Past simple': new RegExp(`${pron}\\b(?:did|didn't)\\b${suj}\\s+\\w+\\b|${pron}\\b(?:was|were|wasn't|weren't|could|couldn't)\\b|${pron}\\w+ed\\b`, 'gi'),
-    'Future simple': new RegExp(`${pron}\\b(?:will|won't)\\b${suj}\\s+\\w+\\b`, 'gi'),
-    'Going to': new RegExp(`${pron}(?:\\b(?:am|is|are|aren't|isn't)\\b|'m|'re|'s)(?:\\s+not)?${suj}\\s+going to\\s+\\w+\\b`, 'gi'),
-    'Present simple': new RegExp(`${pron}\\b(?:do|does|don't|doesn't)\\b${suj}\\s+\\w+\\b|${pron}\\b(?:am|is|are|aren't|isn't|can|can't)\\b`, 'gi'),
-    'Zero Conditional': /\bif\b/gi,
-    'First Conditional': new RegExp(`${pron}\\b(?:will|won't)\\b\\s+\\w+\\b`, 'gi'),
-    'Second Conditional': new RegExp(`${pron}\\b(?:would|wouldn't)\\b\\s+\\w+\\b`, 'gi'),
-    'Third Conditional': new RegExp(`${pron}\\bwould(?:n't)?\\s+have\\s+\\w+\\b|${pron}\\bhad\\s+\\w+\\b`, 'gi'),
-    'Mixed Conditional': new RegExp(`${pron}\\bwould(?:n't)?\\b${adv}\\s+\\w+\\b|${pron}\\bhad(?:n't)?\\b${adv}\\s+\\w+\\b`, 'gi'),
-    'Present Perfect Continuous': new RegExp(`${pron}(?:\\b(?:have|has|haven't|hasn't)\\b|'ve|'s)\\s+been\\s+\\w+ing\\b`, 'gi'),
-    'Past Perfect': new RegExp(`${pron}\\bhad(?:n't)?\\b${adv}\\s+\\w+\\b`, 'gi'),
-    'Future Continuous': new RegExp(`${pron}\\b(?:will|won't)\\b\\s+be\\s+\\w+ing\\b`, 'gi'),
-  };
-}
-
-// \w en JS es SOLO [A-Za-z0-9_] -no incluye é/è/à/ç/œ etc.-, así que para
-// francés hace falta \p{L} (cualquier letra Unicode) + límites de palabra
-// a mano con lookaround (\b también se apoya en \w y no es fiable con
-// acentos). Verificado contra las 1115 frases reales de los 3 niveles en
-// francés: 1113/1115 (99.8%).
-const FR_L = '\\p{L}';
-const FR_W = `${FR_L}+`;
-function frB(inner) { return `(?<!${FR_L})(?:${inner})(?!${FR_L})`; }
-
-function patronesEstructuraFR(esPregunta) {
-  // En preguntas por inversión ("A-t-il été...?", "Ont-ils eu...?") el
-  // sujeto va pegado con guion justo después del auxiliar, antes del
-  // espacio real que separa el auxiliar del verbo.
-  const inv = esPregunta ? `(?:-${FR_L}+)*` : '';
-  const skip = `(?:\\s+(?:pas|jamais|plus|encore|déjà|toujours|trop|bien|mal|beaucoup|vraiment|souvent))?`;
-  const AUX_PC = 'ai|as|a|avons|avez|ont|suis|es|est|sommes|êtes|sont'; // passé composé
-  const PRESENTE = 'suis|es|est|sommes|êtes|sont|sois|soit|soyons|soyez|soient|ai|as|a|avons|avez|ont|peux|peut|pouvons|pouvez|peuvent|sais|sait|savons|savez|savent|connais|connait|connaît|connaissons|connaissez|connaissent|veux|veut|voulons|voulez|veulent|dois|doit|devons|devez|doivent|vais|vas|va|allons|allez|vont|fais|fait|faisons|faites|font';
-  const PQP = 'avais|avait|avions|aviez|avaient|étais|était|étions|étiez|étaient'; // plus-que-parfait / imparfait de avoir-être
-  const CONDPASSE = 'aurais|aurait|aurions|auriez|auraient|serais|serait|serions|seriez|seraient'; // conditionnel passé
-  const ALLER = 'vais|vas|va|allons|allez|vont';
-  return {
-    'Present continuous': new RegExp(`être en train de\\s+${FR_W}|${frB(PRESENTE)}`, 'giu'),
-    'Present perfect': new RegExp(`${frB(AUX_PC)}${inv}${skip}\\s+${FR_W}`, 'giu'),
-    'Past simple': new RegExp(`${frB(AUX_PC)}${inv}${skip}\\s+${FR_W}|${FR_W}(?:ais|ait|ions|iez|aient)(?!${FR_L})`, 'giu'),
-    // A veces se tradujo con "aller + infinitivo" (futuro próximo) en vez
-    // de futuro simple de verdad -se acepta también esa forma como buena.
-    'Future simple': new RegExp(`${FR_W}r(?:ai|as|a|ons|ez|ont)(?!${FR_L})|${frB(ALLER)}${inv}${skip}\\s+${FR_W}`, 'giu'),
-    'Going to': new RegExp(`${frB(ALLER)}${inv}${skip}\\s+${FR_W}`, 'giu'),
-    'Present simple': new RegExp(`${frB(PRESENTE)}`, 'giu'),
-    'Zero Conditional': /si\b|s['’]/gi,
-    'First Conditional': new RegExp(`${FR_W}r(?:ai|as|a|ons|ez|ont)(?!${FR_L})`, 'giu'),
-    'Second Conditional': new RegExp(`${FR_W}r(?:ais|ait|ions|iez|aient)(?!${FR_L})|${FR_W}(?:ais|ait|ions|iez|aient)(?!${FR_L})`, 'giu'),
-    'Third Conditional': new RegExp(`${frB(CONDPASSE)}${inv}${skip}\\s+${FR_W}|${frB(PQP)}${inv}${skip}\\s+${FR_W}`, 'giu'),
-    'Mixed Conditional': new RegExp(`${frB(CONDPASSE)}${inv}${skip}\\s+${FR_W}|${frB(PQP)}${inv}${skip}\\s+${FR_W}`, 'giu'),
-    'Present Perfect Continuous': new RegExp(`${frB(PRESENTE)}(?:\\s+depuis\\s+${FR_W})?|${FR_W}(?:e|es|ons|ez|ent)(?!${FR_L})(?:\\s+depuis\\s+${FR_W})?`, 'giu'),
-    'Past Perfect': new RegExp(`${frB(PQP)}${inv}${skip}\\s+${FR_W}`, 'giu'),
-    'Future Continuous': new RegExp(`${frB('serai|seras|sera|serons|serez|seront')}${inv}\\s+en train d['’]?\\s*${FR_W}`, 'giu'),
-  };
-}
-
-// Tiempos donde, si ningún patrón encontró nada (afirmación sin ningún
-// auxiliar que la delate, p.ej. "She works at a hospital"/"Il voit un
-// thérapeute"), se resaltan sujeto+verbo juntos (las 2 primeras palabras)
-// como mejor aproximación posible sin analizar la gramática de verdad.
-const TIEMPOS_CON_RESPALDO = {
-  en: ['Present simple', 'Past simple'],
-  fr: ['Present simple', 'Past simple', 'Present continuous', 'Present Perfect Continuous'],
-};
-
-function resaltarEstructura(texto, tenseRaw, idiomaCurso) {
-  if (!texto || !tenseRaw) return texto || '';
-  // Los paquetes no traen curso -su único contenido con texto es inglés,
-  // así que sin curso se asume inglés. Alemán/italiano/portugués SÍ traen
-  // curso pero no tienen patrones verificados todavía -antes caían por
-  // error a los patrones de inglés (resaltando cosas sin sentido en esos
-  // idiomas), ahora se dejan sin resaltar hasta hacer el mismo trabajo de
-  // verificación que ya se hizo para inglés y francés.
-  const idioma = idiomaCurso || 'en';
-  if (idioma !== 'en' && idioma !== 'fr') return texto;
-  const esPregunta = texto.trim().endsWith('?');
-  const generador = idioma === 'fr' ? patronesEstructuraFR : patronesEstructuraEN;
-  const patron = generador(esPregunta)[tenseRaw];
-  if (!patron) return texto;
-
-  let out = '';
-  let last = 0;
-  let huboMatch = false;
-  let m;
-  patron.lastIndex = 0;
-  while ((m = patron.exec(texto))) {
-    huboMatch = true;
-    out += texto.slice(last, m.index);
-    out += `<mark class="estructura-verbal">${m[0]}</mark>`;
-    last = m.index + m[0].length;
-    if (m[0].length === 0) patron.lastIndex++;
-  }
-  out += texto.slice(last);
-
-  if (!huboMatch && !esPregunta && TIEMPOS_CON_RESPALDO[idioma].includes(tenseRaw)) {
-    const partes = texto.split(/(\s+)/);
-    let numPalabra = 0, inicio = -1, fin = -1;
-    for (let i = 0; i < partes.length; i++) {
-      if (partes[i] && !/^\s+$/.test(partes[i])) {
-        numPalabra++;
-        if (numPalabra === 1) inicio = i;
-        if (numPalabra === 2) { fin = i; break; }
-      }
-    }
-    if (inicio !== -1 && fin !== -1) {
-      const marcado = partes.slice(inicio, fin + 1).join('');
-      return partes.slice(0, inicio).join('') + `<mark class="estructura-verbal">${marcado}</mark>` + partes.slice(fin + 1).join('');
-    }
-    return texto;
-  }
-
-  return out;
-}
+// resaltarEstructura() (usada más abajo, en la tarjeta de Estudiar) vive
+// ahora en js/estructura-verbal.js, compartida con las lecciones de teoría.
 
 function renderStudy(ctx) {
   renderSteps('study', []);
@@ -250,7 +120,7 @@ function renderStudy(ctx) {
         ${f.imagen ? `<img class="phrase-card__img" src="${f.imagen}" alt="" loading="lazy">` : ''}
         ${f.tiempo ? `<span class="phrase-card__tense">${f.tiempo}</span>` : ''}
         <div class="phrase-card__es">${f.es}</div>
-        <div class="phrase-card__en">${resaltarEstructura(f.en, f.tenseRaw, ctx.content && ctx.content.curso && ctx.content.curso.id)}</div>
+        <div class="phrase-card__en">${resaltarEstructura(f.en, f.tenseRaw)}</div>
         <div class="phrase-card__audio">
           <button class="audio-btn" id="btnAudioNorm">🔊 Escuchar</button>
           <button class="audio-btn audio-btn--slow" id="btnAudioSlow">🐢 Más lento</button>
@@ -356,6 +226,7 @@ function renderQuiz(ctx) {
           btn.classList.add('incorrect');
           opts.forEach((o, i) => { if (q.opciones[i] === q.correcta) o.classList.add('correct'); });
           texto = `La respuesta correcta era: "${q.correcta}"`;
+          if (ctx.categoriaId) recordMistake(ctx.categoriaId);
         }
         const esUltima = qi >= questions.length - 1;
         // El usuario decide cuándo seguir -antes avanzaba solo tras un
@@ -458,6 +329,7 @@ function renderGame(ctx) {
     resuelta = true;
     intentos++;
     streak = 0;
+    if (ctx.categoriaId) recordMistake(ctx.categoriaId); // se acabó el tiempo de esta frase = fallo, para "Mi progreso"
     cortarMicActivo(); // por si estaba escuchando cuando se acabó el tiempo de esta frase
     const micBtn = qs('#gameMic'); if (micBtn) micBtn.disabled = true;
     const input = qs('#gameInput'); if (input) input.disabled = true;
@@ -561,6 +433,7 @@ function renderGame(ctx) {
       onCorrect(f, elapsed);
     } else {
       streak = 0;
+      if (ctx.categoriaId) recordMistake(ctx.categoriaId);
       qs('#gameFeedback').innerHTML = `
         <div class="game-feedback incorrect">La respuesta correcta era: <strong>${f.en}</strong></div>
         <button type="button" class="add-answer-btn" id="btnAddAlt">➕ Añadir "${value}" como respuesta válida</button>
@@ -656,16 +529,17 @@ function renderSummary(ctx) {
    opción múltiple -un examen de verdad pone a prueba que lo produzcas
    tú solo, no que reconozcas la respuesta entre 4 opciones.
    =========================================================== */
-function initRepaso(content_, caminos, encontrado) {
-  const { nodo, camino } = encontrado;
+// Motor de producción compartido: dibuja/mic-o-texto/checkAnswer/next/
+// resultado. Lo usan tanto el Repaso acumulativo (rango fijo de
+// lecciones de una sección) como el Entrenamiento dirigido de "Mi
+// progreso" (frases de varias secciones sueltas, las marcadas como
+// puntos débiles) -generalizado para no duplicar el motor entero por
+// una segunda pantalla casi idéntica.
+function runProduccionRonda(content_, frasesIn, opts) {
+  const { titulo, sub, stepIcon, stepLabel, onFinishLabel, onPass, volverHref, volverLabel } = opts;
+  const frases = shuffle(frasesIn);
 
-  const leccionesPrevias = camino.filter(n => n.tipo === 'leccion').slice(nodo.desde - 1, nodo.hasta);
-  const frases = shuffle(leccionesPrevias.map(ln => {
-    const frasesLeccion = frasesDeLeccion(content_, ln);
-    return frasesLeccion[Math.floor(Math.random() * frasesLeccion.length)];
-  }).filter(Boolean));
-
-  if (stepsWrap) stepsWrap.innerHTML = `<div class="lesson-step active"><span class="lesson-step__dot">🔁</span>Repaso acumulativo</div>`;
+  if (stepsWrap) stepsWrap.innerHTML = `<div class="lesson-step active"><span class="lesson-step__dot">${stepIcon}</span>${stepLabel}</div>`;
 
   let idx = 0;
   let correctCount = 0;
@@ -676,7 +550,7 @@ function initRepaso(content_, caminos, encontrado) {
     const usarMic = GAME_SR_DISPONIBLE && !modoTexto;
     content.className = 'lesson-card lesson-card--game';
     content.innerHTML = `
-      <div class="lesson-card__head"><h1>Repaso acumulativo</h1><p>Verbos/estructuras ${nodo.desde} a ${nodo.hasta}</p></div>
+      <div class="lesson-card__head"><h1>${titulo}</h1><p>${sub}</p></div>
       <div class="quiz-progress-row">
         <span class="quiz-progress-row__text">Frase ${idx + 1}/${frases.length}</span>
         <div class="quiz-progress-row__bar"><div class="quiz-progress-row__fill" style="width:${(idx / frases.length) * 100}%"></div></div>
@@ -787,21 +661,66 @@ function initRepaso(content_, caminos, encontrado) {
     content.className = 'lesson-card';
     content.innerHTML = `
       <div class="quiz-result">
-        <span class="eyebrow">${pass ? 'Repaso superado' : 'Casi'}</span>
+        <span class="eyebrow">${pass ? 'Superado' : 'Casi'}</span>
         <div class="quiz-result__ring" style="--ring-pct:${pct}; --ring-color:${pass ? '#4ade80' : '#f87171'};">
           <div class="quiz-result__score ${pass ? 'pass' : 'fail'}">${pct}%</div>
         </div>
         <p style="color:var(--gray-400); margin-bottom:1.6rem;">${correctCount} de ${frases.length} correctas</p>
-        <button class="btn ${pass ? 'btn--primary' : 'btn--outline'} btn--lg" id="btnContinue">${pass ? 'Continuar el camino →' : 'Reintentar'}</button>
+        <div class="hero__cta" style="justify-content:center;">
+          <button class="btn ${pass ? 'btn--primary' : 'btn--outline'} btn--lg" id="btnContinue">${pass ? onFinishLabel : 'Reintentar'}</button>
+          ${volverHref ? `<a href="${volverHref}" class="btn btn--outline">${volverLabel || '← Volver'}</a>` : ''}
+        </div>
       </div>
     `;
     qs('#btnContinue').addEventListener('click', () => {
-      if (pass) { marcarRepasoHecho(nodo.id); if (typeof pushNow === 'function') pushNow(); irACurriculo('✅ Repaso superado.'); }
+      if (pass) onPass();
       else { idx = 0; correctCount = 0; draw(); }
     });
   }
 
   draw();
+}
+
+function initRepaso(content_, caminos, encontrado) {
+  const { nodo, camino } = encontrado;
+  const leccionesPrevias = camino.filter(n => n.tipo === 'leccion').slice(nodo.desde - 1, nodo.hasta);
+  const frases = leccionesPrevias.map(ln => {
+    const frasesLeccion = frasesDeLeccion(content_, ln);
+    return frasesLeccion[Math.floor(Math.random() * frasesLeccion.length)];
+  }).filter(Boolean);
+
+  runProduccionRonda(content_, frases, {
+    titulo: 'Repaso acumulativo',
+    sub: `Verbos/estructuras ${nodo.desde} a ${nodo.hasta}`,
+    stepIcon: '🔁', stepLabel: 'Repaso acumulativo',
+    onFinishLabel: 'Continuar el camino →',
+    onPass: () => { marcarRepasoHecho(nodo.id); if (typeof pushNow === 'function') pushNow(); irACurriculo('✅ Repaso superado.'); },
+  });
+}
+
+// "Entrenar puntos débiles" desde Mi progreso (progreso.html): junta las
+// frases de TODAS las lecciones cuyas secciones estén en catIds (varias
+// secciones sueltas, no un rango contiguo como el repaso). Sesión de
+// práctica libre -no toca marcarRepasoHecho ni reinicia el contador de
+// fallos, porque borrar ese historial destruiría la señal de "esto era un
+// punto débil" para la próxima vez que se mire Mi progreso.
+function initEntrenamiento(content_, caminos, nivel, catIds) {
+  const camino = caminos[`nivel${nivel}`];
+  const frases = [];
+  camino.forEach(n => {
+    if (n.tipo === 'leccion' && catIds.includes(nodoGroupId(n, nivel))) frases.push(...frasesDeLeccion(content_, n));
+  });
+  if (!frases.length) { irACurriculo('No hay frases para entrenar en esa selección.'); return; }
+
+  runProduccionRonda(content_, frases, {
+    titulo: 'Entrenamiento dirigido',
+    sub: 'Tus puntos débiles, todos juntos',
+    stepIcon: '🎯', stepLabel: 'Entrenamiento',
+    onFinishLabel: 'Volver a Mi progreso →',
+    onPass: () => { if (typeof pushNow === 'function') pushNow(); location.href = `progreso.html?nivel=${nivel}`; },
+    volverHref: `progreso.html?nivel=${nivel}`,
+    volverLabel: '← Volver a Mi progreso',
+  });
 }
 
 /* ===========================================================
@@ -828,6 +747,7 @@ async function initLeccion(content_, caminos) {
     frases, distractorPool, poolGlobal,
     content: content_, nivel,
     speechLang: content_.curso.speechLang,
+    categoriaId: nodoGroupId(nodo, nivel), // para el rastreador de fallos de "Mi progreso"
     onStudyDone: () => marcarLeccionEstudiada(nodo.id),
     onQuizPass: () => marcarLeccionQuizAprobado(nodo.id),
     onGameDone: () => marcarLeccionJugada(nodo.id),
@@ -883,6 +803,13 @@ async function init() {
     initRepaso(content_, caminos, encontrado);
   }
   else if (TIPO === 'paquete' && ID) initPaquete(content_, ID);
+  else if (TIPO === 'entrenamiento') {
+    const nivel = parseInt(params.get('nivel'), 10);
+    const cats = (params.get('cats') || '').split(',').filter(Boolean);
+    if (!nivel || !cats.length) { irACurriculo('Selección de entrenamiento no válida.'); return; }
+    if (!nivelDesbloqueado(caminos, nivel)) { irACurriculo(`Termina el Nivel ${nivel - 1} primero.`); return; }
+    initEntrenamiento(content_, caminos, nivel, cats);
+  }
   else irACurriculo('Lección no encontrada.');
 }
 

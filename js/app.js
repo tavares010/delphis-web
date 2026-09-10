@@ -57,62 +57,25 @@ document.addEventListener('visibilitychange', () => { if (document.hidden) corta
 window.addEventListener('pagehide', cortarMicActivo);
 
 // ---------- Chip de progreso (navbar) ----------
+// Antes incluía un selector de idioma (bandera + menú desplegable con
+// los 5 cursos + enlace a "Ver todos los cursos") -con un solo idioma
+// (inglés) no tiene ninguna función, y el enlace apuntaba a cursos.html,
+// que ya no existe. Se quita del todo, no solo se oculta.
 function renderProgressChip() {
   const wraps = document.querySelectorAll('[data-progress-chip]');
   if (!wraps.length) return;
   const data = progressLoad();
   const { actual } = getRankInfo(data.puntos);
 
-  const cursoActivo = (typeof getCursoActivo === 'function') ? getCursoActivo() : null;
-  const todosLosCursos = (typeof CURSOS !== 'undefined') ? CURSOS : [];
-
   wraps.forEach(wrap => {
     wrap.innerHTML = `
-      ${cursoActivo ? `
-        <div class="lang-switcher">
-          <button type="button" class="progress-chip__item lang-switcher__trigger" title="Cambiar de idioma" style="font-size:1.1rem;">${cursoActivo.bandera}<svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-          <div class="lang-switcher__menu">
-            <span class="lang-switcher__label">Cambiar de idioma</span>
-            ${todosLosCursos.map(c => `
-              <button type="button" class="lang-switcher__opt ${c.id === cursoActivo.id ? 'active' : ''}" data-curso="${c.id}" style="--curso-a:${c.colorA}; --curso-b:${c.colorB};">
-                <span class="lang-switcher__flag">${c.bandera}</span>
-                <span>${c.nombre}</span>
-                ${c.id === cursoActivo.id ? '<span class="lang-switcher__check">✓</span>' : ''}
-              </button>
-            `).join('')}
-            <a href="cursos.html" class="lang-switcher__all">Ver todos los cursos →</a>
-          </div>
-        </div>
-      ` : ''}
       <span class="progress-chip__item"><span data-emoji>🔥</span>${data.racha}</span>
       <span class="progress-chip__item"><span data-emoji>${actual.icono}</span>${data.puntos}</span>
       <span class="progress-chip__item"><span data-emoji>🪙</span>${data.monedas}</span>
       <a href="perfil.html" class="progress-chip__avatar" title="Mi perfil">${data.avatar}</a>
     `;
-
-    const sw = wrap.querySelector('.lang-switcher');
-    if (sw) {
-      const trigger = sw.querySelector('.lang-switcher__trigger');
-      trigger.addEventListener('click', e => {
-        e.stopPropagation();
-        document.querySelectorAll('.lang-switcher.open').forEach(o => { if (o !== sw) o.classList.remove('open'); });
-        sw.classList.toggle('open');
-      });
-      sw.querySelectorAll('.lang-switcher__opt').forEach(btn => {
-        btn.addEventListener('click', () => {
-          setCursoActivo(btn.dataset.curso);
-          location.href = 'curriculo.html';
-        });
-      });
-    }
   });
 }
-
-// Un solo listener para toda la página, sin importar cuántas veces se
-// vuelva a pintar el chip (perfil.js lo repinta varias veces).
-document.addEventListener('click', () => {
-  document.querySelectorAll('.lang-switcher.open').forEach(o => o.classList.remove('open'));
-});
 
 // ---------- Toasts ----------
 function ensureToastWrap() {

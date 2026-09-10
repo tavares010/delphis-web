@@ -269,53 +269,13 @@ if (countdowns.length) {
   setInterval(tickCountdowns, 1000);
 }
 
-// ============ HERO: máquina de escribir con los 5 idiomas reales del curso ============
-const heroTypingEl = document.getElementById('heroTyping');
-if (heroTypingEl && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  const HERO_IDIOMAS = ['inglés', 'francés', 'alemán', 'italiano', 'portugués'];
-  let heroWordIdx = 0;
-  let heroCharIdx = HERO_IDIOMAS[0].length; // arranca mostrando "inglés" ya escrito, como en el HTML
-  let heroDeleting = true;
-
-  // El orden de HERO_IDIOMAS es el mismo que CURSOS (en/fr/de/it/pt) en
-  // js/courses.js -así cada palabra usa el degradado REAL de su curso
-  // (el mismo que ves al cambiar de idioma en la app), no uno inventado
-  // aparte. Ej: portugués = rojo y verde, como el resto del tema.
-  function heroSetTypingColors(idx) {
-    const curso = typeof CURSOS !== 'undefined' && CURSOS[idx];
-    if (!curso) return;
-    heroTypingEl.style.setProperty('--typing-a', curso.colorA);
-    heroTypingEl.style.setProperty('--typing-b', curso.colorB);
-  }
-  heroSetTypingColors(0);
-
-  function heroTypingTick() {
-    const word = HERO_IDIOMAS[heroWordIdx];
-    let delay;
-    if (heroDeleting) {
-      heroCharIdx--;
-      heroTypingEl.textContent = word.slice(0, heroCharIdx);
-      delay = 45;
-      if (heroCharIdx <= 0) {
-        heroDeleting = false;
-        heroWordIdx = (heroWordIdx + 1) % HERO_IDIOMAS.length;
-        heroSetTypingColors(heroWordIdx);
-        delay = 300;
-      }
-    } else {
-      const nextWord = HERO_IDIOMAS[heroWordIdx];
-      heroCharIdx++;
-      heroTypingEl.textContent = nextWord.slice(0, heroCharIdx);
-      delay = 85;
-      if (heroCharIdx >= nextWord.length) {
-        heroDeleting = true;
-        delay = 1700;
-      }
-    }
-    setTimeout(heroTypingTick, delay);
-  }
-  setTimeout(heroTypingTick, 2000);
-}
+// La máquina de escribir que ciclaba por los 5 idiomas del curso (inglés/
+// francés/alemán/italiano/portugués) se quitó junto con el resto del
+// soporte multi-idioma -con un único idioma no había nada que ciclar, se
+// quedaba borrando y reescribiendo "inglés" en bucle sin sentido. El
+// <span id="heroTyping"> del HTML se queda como texto fijo con degradado
+// (la propia CSS de .hero__typing ya cae a los colores del tema por
+// defecto si nadie fija --typing-a/--typing-b).
 
 // init
 onScroll();

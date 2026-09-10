@@ -327,7 +327,7 @@ async function loadContent(cursoId) {
     // todavía (nadie ha traducido "La Sed" a ese idioma), el curso sigue
     // funcionando normal, solo sin libro — nunca rompe la carga de la página.
     const bookContentPath = sufijo ? `data/book_content${sufijo}.json` : 'data/book_content.json';
-    const [level1Raw, level2Raw, level3Raw, bookQuiz, bookChaptersRaw, pkgCatalog, pkgPhrases, shopCatalog, roleplayScenarios, storyPackages, level1Variants] = await Promise.all([
+    const [level1Raw, level2Raw, level3Raw, bookQuiz, bookChaptersRaw, pkgCatalog, pkgPhrases, shopCatalog, roleplayScenarios, storyPackages, level1Variants, theoryLessons] = await Promise.all([
       loadJSON(`data/level1_verbs${sufijo}.json`),
       loadJSON(`data/level2_structures${sufijo}.json`),
       loadJSON(`data/level3_structures${sufijo}.json`),
@@ -342,6 +342,11 @@ async function loadContent(cursoId) {
       // (ver buildDistractoresGenerados) — opcional, solo existe en inglés
       // por ahora; otros idiomas caen al distractor de confusión normal.
       loadJSONOptional(`data/level1_tense_variants${sufijo}.json`),
+      // Lecciones de teoría ("Conceptos esenciales") -contenido de gramática
+      // inglesa, un solo archivo (no hay sufijo por idioma: la app ya es
+      // solo inglés). Opcional para que un fallo aquí nunca rompa la carga
+      // del resto del curso.
+      loadJSONOptional('data/theory_lessons.json'),
     ]);
 
     // ---------- NIVEL 1: 64 verbos agrupados en 8 bloques de 8 ----------
@@ -418,6 +423,7 @@ async function loadContent(cursoId) {
       shopCatalog,
       roleplayScenarios,
       storyPackages,
+      theoryLessons: theoryLessons || { nivel1: [], nivel2: [], nivel3: [] },
     };
   })();
 

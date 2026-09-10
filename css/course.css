@@ -113,64 +113,6 @@ body.tour-activo { overflow: hidden; }
   border: 1px solid rgba(56,189,248,.3);
 }
 
-/* ---------- Selector de idioma rápido (dentro del chip de progreso) ----------
-   Antes era un simple enlace a cursos.html -poco descubrible. Ahora es un
-   desplegable de verdad con las 5 banderas, cambio instantáneo de curso. */
-.lang-switcher { position: relative; }
-.lang-switcher__trigger {
-  display: flex; align-items: center; gap: .35rem;
-  background: color-mix(in srgb, var(--curso-a, var(--blue-500)) 12%, transparent);
-  border: 1px solid color-mix(in srgb, var(--curso-a, var(--blue-500)) 30%, transparent);
-  border-radius: 999px;
-  padding: .3em .6em .3em .5em;
-  transition: background .2s ease, transform .2s ease;
-}
-.lang-switcher__trigger:hover { transform: translateY(-1px); background: color-mix(in srgb, var(--curso-a, var(--blue-500)) 20%, transparent); }
-.lang-switcher__trigger svg { color: var(--curso-a, var(--blue-500)); transition: transform .25s var(--ease); }
-.lang-switcher.open .lang-switcher__trigger svg { transform: rotate(180deg); }
-.lang-switcher__menu {
-  position: absolute; top: calc(100% + .9rem); right: -.5rem;
-  width: 240px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  padding: .5rem;
-  box-shadow: var(--shadow-card-hover);
-  opacity: 0; visibility: hidden; transform: translateY(-6px);
-  transition: opacity .25s var(--ease), transform .25s var(--ease), visibility .25s;
-  z-index: 60;
-}
-.lang-switcher.open .lang-switcher__menu { opacity: 1; visibility: visible; transform: translateY(0); }
-.lang-switcher__label {
-  display: block; padding: .4rem .7rem .6rem;
-  font-size: .68rem; font-weight: 800; text-transform: uppercase; letter-spacing: .05em;
-  color: var(--gray-500);
-}
-.lang-switcher__opt {
-  width: 100%;
-  display: flex; align-items: center; gap: .7rem;
-  padding: .65rem .7rem;
-  border-radius: 12px;
-  font-size: .9rem; font-weight: 700; color: var(--text);
-  text-align: left;
-  transition: background .2s ease;
-}
-.lang-switcher__opt:hover { background: color-mix(in srgb, var(--curso-a, var(--blue-500)) 10%, transparent); }
-.lang-switcher__opt.active { background: color-mix(in srgb, var(--curso-a, var(--blue-500)) 12%, transparent); }
-.lang-switcher__flag {
-  width: 34px; height: 34px; border-radius: 10px; flex-shrink: 0;
-  display: flex; align-items: center; justify-content: center; font-size: 1.2rem;
-  background: linear-gradient(135deg, color-mix(in srgb, var(--curso-a, var(--blue-500)) 20%, transparent), color-mix(in srgb, var(--curso-b, var(--cyan-400)) 20%, transparent));
-}
-.lang-switcher__opt span:nth-child(2) { flex: 1; }
-.lang-switcher__check { color: var(--curso-a, var(--blue-500)); font-weight: 800; }
-.lang-switcher__all {
-  display: block; text-align: center;
-  margin-top: .3rem; padding: .7rem;
-  font-size: .8rem; font-weight: 700; color: var(--cyan-300);
-  border-top: 1px solid var(--border);
-}
-
 /* ---------- Toast ---------- */
 .toast-wrap {
   position: fixed;
@@ -487,11 +429,21 @@ body.tour-activo { overflow: hidden; }
 .quiz-option.disabled { pointer-events: none; opacity: .85; }
 .quiz-feedback { text-align: center; margin-top: 1.4rem; font-size: .9rem; color: var(--gray-300); min-height: 1.4em; }
 .quiz-result { text-align: center; padding: 1.6rem 0; }
+/* Registrar --ring-pct como número real (no solo texto) es lo que
+   permite que el conic-gradient de abajo TRANSICIONE de verdad al
+   cambiar -sin esto, el navegador no sabe interpolar el degradado y el
+   anillo salta directo al valor final en vez de animarse. */
+@property --ring-pct {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0;
+}
 .quiz-result__ring {
   position: relative; width: 148px; height: 148px; margin: .8rem auto 1.2rem;
   border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
   background: conic-gradient(var(--ring-color, #4ade80) calc(var(--ring-pct, 0) * 1%), var(--border) 0);
+  transition: --ring-pct 1s var(--ease);
 }
 .quiz-result__ring::before { content: ''; position: absolute; inset: 10px; border-radius: 50%; background: var(--surface); }
 .quiz-result__score { position: relative; font-family: var(--font-head); font-size: 2.4rem; font-weight: 800; }
@@ -508,6 +460,34 @@ body.tour-activo { overflow: hidden; }
   box-shadow: 0 4px 10px rgba(217,119,6,.3);
 }
 .game-timer--urgente { background: linear-gradient(135deg, #dc2626, #f87171); animation: micPulse 1s ease-in-out infinite; }
+
+/* Barra de tiempo del quiz de teoría -deliberadamente una BARRA, no la
+   cápsula del juego, para que se note de un vistazo que es un contador
+   distinto (18s por pregunta, no el contrarreloj de 30s del Juego). */
+.theory-quiz-timer { height: 8px; border-radius: 999px; background: var(--border); overflow: hidden; margin-bottom: 1.4rem; }
+.theory-quiz-timer__fill {
+  height: 100%; border-radius: 999px;
+  background: linear-gradient(90deg, #22c55e, #4ade80);
+  transition: width 1s linear, background .4s ease;
+}
+.theory-quiz-timer__fill--ambar { background: linear-gradient(90deg, #d97706, #fbbf24); }
+.theory-quiz-timer__fill--rojo { background: linear-gradient(90deg, #dc2626, #f87171); animation: micPulse 1s ease-in-out infinite; }
+
+/* Temblor en respuesta incorrecta del quiz de teoría. */
+@keyframes shakeX {
+  10%, 90% { transform: translateX(-1px); }
+  20%, 80% { transform: translateX(2px); }
+  30%, 50%, 70% { transform: translateX(-4px); }
+  40%, 60% { transform: translateX(4px); }
+}
+.quiz-option--shake { animation: shakeX .5s ease; }
+
+/* Transición deslizante entre preguntas del quiz de teoría. */
+.theory-quiz-slide-enter { animation: theoryQuizSlideIn .3s var(--ease); }
+@keyframes theoryQuizSlideIn {
+  from { opacity: 0; transform: translateX(24px); }
+  to { opacity: 1; transform: translateX(0); }
+}
 .game-streak {
   display: flex; align-items: center; gap: .4rem;
   font-size: .85rem; font-weight: 800; color: #b45309;
@@ -1119,6 +1099,101 @@ body.tour-activo { overflow: hidden; }
   animation: examenGlow 2.4s ease-in-out infinite;
 }
 
+/* ---------- Hub de nivel ("¿Qué quieres hacer?") ----------
+   4 accesos por nivel: Conceptos esenciales / Práctica / La Sed / Mi
+   progreso. Mismo lenguaje visual que .seccion-tile (ficha de color
+   sólido), pero cada tarjeta tiene un color FIJO según su función, no
+   un color que cicla -Práctica reutiliza el color real del nivel
+   (--level-a/--level-b), las otras 3 tienen su propio color estable en
+   toda la app: teoría en rosa (igual que .course-row--teoria), libro en
+   verde azulado (igual que .course-row--libro), progreso en índigo
+   (nuevo, sin colisionar con nada). */
+.nivel-hub-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.4rem; margin-bottom: 2rem; }
+.nivel-hub-tile {
+  position: relative;
+  display: flex; flex-direction: column; gap: .5rem;
+  padding: 1.8rem 1.7rem;
+  border-radius: var(--radius-lg);
+  color: #fff;
+  min-height: 150px;
+  box-shadow: 0 10px 28px rgba(30,27,46,.16);
+  transition: transform .3s var(--ease), box-shadow .3s var(--ease);
+  overflow: hidden;
+}
+.nivel-hub-tile::after {
+  content: ''; position: absolute; z-index: 0; top: -30%; right: -20%; width: 65%; height: 140%;
+  background: rgba(255,255,255,.1); border-radius: 50%; pointer-events: none;
+}
+.nivel-hub-tile__icon, .nivel-hub-tile__title, .nivel-hub-tile__sub { position: relative; z-index: 1; }
+.nivel-hub-tile:not(.locked):hover { transform: translateY(-6px) scale(1.015); box-shadow: 0 16px 36px rgba(30,27,46,.24); }
+.nivel-hub-tile.locked { opacity: .5; cursor: not-allowed; }
+.nivel-hub-tile__icon {
+  width: 52px; height: 52px; border-radius: 14px; font-size: 1.6rem;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(255,255,255,.22); backdrop-filter: blur(4px);
+  margin-bottom: .4rem;
+}
+.nivel-hub-tile__title { font-size: 1.2rem; font-weight: 800; }
+.nivel-hub-tile__sub { font-size: .84rem; opacity: .92; line-height: 1.4; }
+.nivel-hub-tile--practica { background: linear-gradient(150deg, var(--level-a, var(--blue-500)), var(--level-b, var(--cyan-400))); }
+.nivel-hub-tile--teoria { background: linear-gradient(150deg, #e11d48, #fb7185); }
+.nivel-hub-tile--libro { background: linear-gradient(150deg, #0d9488, #14b8a6); }
+.nivel-hub-tile--progreso { background: linear-gradient(150deg, #4338ca, #818cf8); }
+
+/* ---------- Lecciones de teoría (teoria.html / teoria-leccion.html) ---------- */
+.teoria-toc { display: flex; flex-direction: column; gap: .6rem; margin-bottom: 2rem; }
+.teoria-toc__item {
+  display: flex; align-items: center; gap: 1rem;
+  padding: 1em 1.1em;
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md);
+  transition: all .2s ease;
+}
+.teoria-toc__item:hover { border-color: #e11d48; transform: translateX(3px); }
+.teoria-toc__item--visitada { border-color: rgba(34,197,94,.4); }
+.teoria-toc__num {
+  width: 30px; height: 30px; border-radius: 50%; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: .8rem; font-weight: 800; font-family: var(--font-head);
+  background: var(--bg-alt); color: var(--gray-400);
+}
+.teoria-toc__item--visitada .teoria-toc__num { background: linear-gradient(135deg, #22c55e, #4ade80); color: #fff; }
+.teoria-toc__title { flex: 1; font-weight: 700; }
+
+.teoria-seccion-card { margin-bottom: 2rem; }
+.teoria-seccion-card__body { color: var(--text); line-height: 1.7; margin-bottom: 1.4rem; white-space: pre-line; }
+.teoria-seccion-card__examples { display: flex; flex-direction: column; gap: .8rem; margin-bottom: 1.4rem; }
+.teoria-seccion-card__example {
+  padding: 1em 1.2em; border-radius: var(--radius-md);
+  background: var(--bg-alt); border-left: 3px solid #e11d48;
+}
+.teoria-seccion-card__example strong { display: block; font-family: var(--font-head); font-size: 1.05rem; margin-bottom: .25rem; }
+.teoria-seccion-card__example span { color: var(--gray-400); font-size: .88rem; }
+.teoria-seccion-card__table-wrap { overflow-x: auto; margin-bottom: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border); }
+.teoria-seccion-card__table { width: 100%; border-collapse: collapse; font-size: .88rem; }
+.teoria-seccion-card__table th, .teoria-seccion-card__table td { padding: .7em 1em; text-align: left; border-bottom: 1px solid var(--border); white-space: nowrap; }
+.teoria-seccion-card__table th { background: var(--bg-alt); font-weight: 800; font-size: .76rem; text-transform: uppercase; letter-spacing: .04em; color: var(--gray-500); }
+.teoria-seccion-card__table tr:last-child td { border-bottom: none; }
+
+/* ---------- "Mi progreso" (progreso.html) ---------- */
+.progreso-ring-row { display: flex; align-items: center; justify-content: center; gap: 2.4rem; flex-wrap: wrap; margin-bottom: 1rem; }
+.progreso-tier-badge {
+  display: inline-flex; align-items: center; gap: .4em;
+  font-size: .78rem; font-weight: 800; padding: .4em 1em; border-radius: 999px;
+  margin-top: .6rem;
+}
+.progreso-tier-badge--principiante { background: rgba(148,163,184,.15); color: var(--gray-400); }
+.progreso-tier-badge--intermedio { background: rgba(56,189,248,.15); color: #0ea5e9; }
+.progreso-tier-badge--avanzado { background: rgba(139,92,246,.15); color: #7c3aed; }
+.progreso-tier-badge--experto { background: rgba(251,191,36,.18); color: #d97706; }
+.progreso-chips { display: flex; flex-wrap: wrap; gap: .7rem; margin-bottom: 1.6rem; }
+.progreso-chip {
+  display: inline-flex; align-items: center; gap: .5em;
+  padding: .6em 1.1em; border-radius: 999px; font-size: .86rem; font-weight: 700;
+  border: 1.5px solid transparent;
+}
+.progreso-chip--weak { background: rgba(239,68,68,.1); border-color: rgba(239,68,68,.3); color: #dc2626; }
+.progreso-chip--mastered { background: rgba(34,197,94,.1); border-color: rgba(34,197,94,.3); color: #16a34a; }
+
 /* "Al terminar esta sección" -repaso/capítulo que pertenece a esta
    sección, aparte de sus lecciones pero dentro de la misma pantalla. */
 .seccion-extras { margin-top: 1.8rem; padding-top: 1.6rem; border-top: 2px dashed var(--border); }
@@ -1208,6 +1283,33 @@ a.course-row--lg:hover { transform: translateY(-3px); box-shadow: var(--shadow-c
 }
 .course-row--completo.course-row--libro { border-color: rgba(34,197,94,.35); border-left-color: #22c55e; background: linear-gradient(90deg, rgba(34,197,94,.1), transparent 70%); }
 .course-row--completo.course-row--libro .course-row__icon { background: linear-gradient(135deg, #22c55e, #16a34a); color: #fff; box-shadow: 0 4px 12px rgba(34,197,94,.3); animation: none; }
+
+/* Lección de teoría ("Conceptos esenciales") -mismo tratamiento que
+   examen/libro (franja + fondo + icono grande + badge), en rosa para no
+   pisar el dorado del examen, el verde azulado del libro, ni el morado
+   de nivel 2/membresía. */
+.course-row--teoria {
+  border: 1.5px solid rgba(225,29,72,.3);
+  border-left: 5px solid #e11d48;
+  background: linear-gradient(90deg, rgba(225,29,72,.12), rgba(225,29,72,.03) 70%);
+  padding-top: 1.1em; padding-bottom: 1.1em;
+}
+.course-row--teoria:hover { border-color: rgba(225,29,72,.5); border-left-color: #e11d48; }
+.course-row--teoria .course-row__icon {
+  background: linear-gradient(135deg, #e11d48, #fb7185); color: #fff;
+  width: 52px; height: 52px; font-size: 1.3rem;
+  box-shadow: 0 4px 12px rgba(225,29,72,.3);
+}
+.course-row--teoria .course-row__info strong { font-size: 1.12rem; }
+.course-row--teoria .course-row__info strong::after {
+  content: 'TEORÍA'; margin-left: .6em;
+  font-size: .6em; font-weight: 800; letter-spacing: .05em;
+  color: #fff; background: linear-gradient(135deg, #e11d48, #fb7185);
+  padding: .3em .7em; border-radius: 999px; vertical-align: middle;
+  box-shadow: 0 2px 6px rgba(225,29,72,.35);
+}
+.course-row--completo.course-row--teoria { border-color: rgba(34,197,94,.35); border-left-color: #22c55e; background: linear-gradient(90deg, rgba(34,197,94,.1), transparent 70%); }
+.course-row--completo.course-row--teoria .course-row__icon { background: linear-gradient(135deg, #22c55e, #16a34a); color: #fff; box-shadow: 0 4px 12px rgba(34,197,94,.3); }
 
 /* ---------- LISTA DE CURSO (currículo real, muchas lecciones) ----------
    Cada nivel tiene su propio color de acento (--level-a/--level-b, inline

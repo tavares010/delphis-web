@@ -61,12 +61,9 @@ function nodoSub(nodo) {
   return '';
 }
 
-function nodoGroupId(nodo, nivel) {
-  if (nivel === 1) return nodo.bloqueId;
-  if (nivel === 2) return nodo.parejaId;
-  if (nivel === 3) return nodo.verboId; // en Nivel 3 cada estructura ES su propia sección
-  return null;
-}
+// nodoGroupId() y seccionesDeNivel() viven ahora en js/curriculo-builder.js
+// (con sus mapas de iconos) -leccion.html carga ese archivo pero no este,
+// y el rastreador de fallos por sección (js/progress.js) las necesita ahí.
 
 function rowClasses(nodo, estado) {
   const cls = ['course-row'];
@@ -93,40 +90,6 @@ function renderRow(nodo, estado, content, big) {
     <div class="course-row__info"><strong>${nodoNombre(nodo, content)}</strong><span>${nodoSub(nodo)}</span></div>
     ${badge ? `<span class="course-row__badge">${badge}</span>` : ''}
   </${tag}>`;
-}
-
-// ---------- Secciones de un nivel (bloques / parejas / estructuras) ----------
-// Sin foto de portada a propósito: una sección agrupa VARIOS verbos o
-// estructuras distintos (8 en Nivel 1, por ejemplo), así que ninguna foto
-// suelta puede representarlos a todos -antes usábamos la del primer verbo
-// nada más, y quedaba una foto sin relación real con el resto del grupo.
-// Un icono por sección según lo que de verdad enseña -antes todas las
-// secciones de un nivel compartían el mismo icono genérico (🔤/🧱/🎓),
-// así que aunque cada tarjeta tuviera un color distinto, todas se veían
-// iguales de un vistazo.
-const NIVEL1_BLOQUE_ICONOS = ['🔑', '🏆', '💬', '🚶', '👀', '🏠', '🧠', '📢'];
-const NIVEL2_PAREJA_ICONOS = { 'be-have': '👤', 'can-know': '🧠', 'want-need': '❤️', 'go-do': '🏃' };
-const NIVEL3_ESTRUCTURA_ICONOS = {
-  'zero-conditional': '🔁', 'first-conditional': '🎯', 'second-conditional': '💭',
-  'third-conditional': '⏮️', 'mixed-conditional': '🔗',
-  'present-perfect-continuous': '⏳', 'past-perfect': '⏪', 'future-continuous': '🔮',
-};
-
-function seccionesDeNivel(nivel, content) {
-  if (nivel === 1) {
-    return content.nivel1.bloques.map((b, i) => ({ id: b.id, num: i + 1, nombre: b.nombre, icono: NIVEL1_BLOQUE_ICONOS[i] || '🔤' }));
-  }
-  if (nivel === 2) {
-    return NIVEL2_PAREJAS.map((p, i) => ({
-      id: p.id, num: i + 1,
-      nombre: p.verbos.map(v => traducirVerbo(v, content.curso.id)).join(' / '),
-      icono: NIVEL2_PAREJA_ICONOS[p.id] || '🧱',
-    }));
-  }
-  return content.nivel3.orden.map((id, i) => {
-    const est = content.nivel3.porEstructura[id];
-    return { id, num: i + 1, nombre: est.nombre, icono: NIVEL3_ESTRUCTURA_ICONOS[id] || '🎓' };
-  });
 }
 
 // Paleta que se cicla por sección -pura variedad visual, como las
@@ -290,6 +253,63 @@ function renderVistaNiveles(wrap, caminos, content, { n1Completo, n2Completo, de
   bindLocked(wrap);
 }
 
+// ---------- PASO 1.5: hub del nivel ("¿Qué quieres hacer?") ----------
+// Entre la lista de niveles y las secciones de práctica -antes tocar un
+// nivel llevaba directo a practicar; ahora hay 4 accesos: teoría,
+// práctica (lo de siempre), el libro y el progreso/puntos débiles.
+function renderVistaHub(wrap, nivel, caminos, content) {
+  document.getElementById('continueBanner').style.display = 'none';
+  document.getElementById('courseSummaryStrip').style.display = 'none';
+  const meta = NIVEL_META[nivel];
+  const camino = caminos[`nivel${nivel}`];
+
+  const leccionesTeoria = (content.theoryLessons && content.theoryLessons[`nivel${nivel}`]) || [];
+  const capsDelNivel = camino.filter(n => n.tipo === 'libro').map(n => n.capIndex);
+  const libroOk = content.libroDisponible && capsDelNivel.length > 0;
+  const capElegido = libroOk ? (capsDelNivel.find(c => !libroLeido(c)) ?? capsDelNivel[0]) : null;
+
+  wrap.innerHTML = `
+    <a href="curriculo.html" class="breadcrumb-back">← El curso</a>
+    <div class="seccion-head-row" style="--level-a:${meta.a}; --level-b:${meta.b};">
+      <div class="seccion-head-row__icon">${meta.icono}</div>
+      <div><h2>${meta.titulo}</h2><p>¿Qué quieres hacer?</p></div>
+    </div>
+    <div class="nivel-hub-grid">
+      <a class="nivel-hub-tile nivel-hub-tile--teoria ${leccionesTeoria.length ? '' : 'locked'}" href="${leccionesTeoria.length ? `teoria.html?nivel=${nivel}` : '#'}">
+        <div class="nivel-hub-tile__icon">🎓</div>
+        <div class="nivel-hub-tile__title">Conceptos esenciales</div>
+        <div class="nivel-hub-tile__sub">${leccionesTeoria.length ? `${leccionesTeoria.length} lecciones de gramática, con quiz` : 'Próximamente'}</div>
+      </a>
+      <a class="nivel-hub-tile nivel-hub-tile--practica" href="curriculo.html?nivel=${nivel}&modo=practica">
+        <div class="nivel-hub-tile__icon">${meta.icono}</div>
+        <div class="nivel-hub-tile__title">Práctica</div>
+        <div class="nivel-hub-tile__sub">${meta.resumen}</div>
+      </a>
+      <a class="nivel-hub-tile nivel-hub-tile--libro ${libroOk ? '' : 'locked'}" href="${libroOk ? `libro.html?cap=${capElegido}` : '#'}">
+        <div class="nivel-hub-tile__icon">📖</div>
+        <div class="nivel-hub-tile__title">La Sed</div>
+        <div class="nivel-hub-tile__sub">${libroOk ? 'Sigue leyendo la novela' : 'Próximamente'}</div>
+      </a>
+      <a class="nivel-hub-tile nivel-hub-tile--progreso" href="progreso.html?nivel=${nivel}">
+        <div class="nivel-hub-tile__icon">📊</div>
+        <div class="nivel-hub-tile__title">Mi progreso</div>
+        <div class="nivel-hub-tile__sub">Tu nivel de dominio y tus puntos débiles</div>
+      </a>
+    </div>
+  `;
+  wrap.querySelectorAll('.nivel-hub-tile.locked').forEach(tile => {
+    tile.addEventListener('click', e => { e.preventDefault(); showToast('Próximamente en este nivel.'); });
+  });
+
+  if (typeof ofrecerTour === 'function') {
+    ofrecerTour('curriculo-hub', [
+      { selector: '.nivel-hub-tile--practica', titulo: 'Empieza por aquí', texto: 'Lecciones, exámenes y el libro intercalado -lo de siempre, organizado por secciones.' },
+      { selector: '.nivel-hub-tile--teoria', titulo: 'La regla, explicada', texto: 'Si algo no te queda claro practicando, aquí está la explicación con ejemplos y un quiz corto.' },
+      { selector: '.nivel-hub-tile--progreso', titulo: 'Tus puntos débiles', texto: 'No solo lo que falta -también lo que aprobaste a base de fallar mucho.' },
+    ]);
+  }
+}
+
 // ---------- PASO 2: secciones de un nivel ----------
 function renderVistaSecciones(wrap, nivel, caminos, content) {
   document.getElementById('continueBanner').style.display = 'none';
@@ -300,7 +320,7 @@ function renderVistaSecciones(wrap, nivel, caminos, content) {
   const extrasPorSec = extrasPorSeccion(camino, nivel, secciones);
 
   let html = `
-    <a href="curriculo.html" class="breadcrumb-back">← El curso</a>
+    <a href="curriculo.html?nivel=${nivel}" class="breadcrumb-back">← ${meta.titulo.split('·')[0].trim()}</a>
     <div class="seccion-head-row" style="--level-a:${meta.a}; --level-b:${meta.b};">
       <div class="seccion-head-row__icon">${meta.icono}</div>
       <div><h2>${meta.titulo}</h2><p>Elige una sección para ver sus lecciones -el repaso y el capítulo del libro se estudian dentro de la sección a la que siguen.</p></div>
@@ -337,7 +357,7 @@ function renderVistaLecciones(wrap, nivel, seccionId, caminos, content) {
   extras.forEach(nodo => { extrasHtml += renderRow(nodo, estados[indicesPorNodo.get(nodo)], content, true); });
 
   wrap.innerHTML = `
-    <a href="curriculo.html?nivel=${nivel}" class="breadcrumb-back">← ${meta.titulo.split('·')[0].trim()}</a>
+    <a href="curriculo.html?nivel=${nivel}&modo=practica" class="breadcrumb-back">← ${meta.titulo.split('·')[0].trim()}</a>
     <div class="seccion-head-row" style="--level-a:${meta.a}; --level-b:${meta.b};">
       <div class="seccion-head-row__icon">${seccion.icono}</div>
       <div><h2>${seccion.nombre}</h2><p>Sección ${seccion.num} · ${meta.titulo}</p></div>
@@ -365,6 +385,7 @@ async function initCurriculo() {
       const params = new URLSearchParams(location.search);
       const nivel = parseInt(params.get('nivel'), 10);
       const seccion = params.get('seccion');
+      const modo = params.get('modo');
 
       if (!nivel) { renderVistaNiveles(wrap, caminos, content, { n1Completo, n2Completo, dev }); return; }
       const locked = nivel === 2 ? (!dev && !n1Completo) : nivel === 3 ? (!dev && !n2Completo) : false;
@@ -375,7 +396,8 @@ async function initCurriculo() {
         return;
       }
       if (seccion) renderVistaLecciones(wrap, nivel, seccion, caminos, content);
-      else renderVistaSecciones(wrap, nivel, caminos, content);
+      else if (modo === 'practica') renderVistaSecciones(wrap, nivel, caminos, content);
+      else renderVistaHub(wrap, nivel, caminos, content);
       window.scrollTo({ top: 0 });
     }
 
@@ -390,9 +412,9 @@ async function initCurriculo() {
     // ofrece dentro de una sección o lista de lecciones concreta.
     if (typeof ofrecerTour === 'function' && !new URLSearchParams(location.search).get('nivel')) {
       ofrecerTour('curriculo', [
-        { selector: '[data-progress-chip]', titulo: 'Tu progreso, siempre a la vista', texto: 'Racha de días, puntos y el curso que tienes activo ahora mismo. Puedes cambiar de idioma desde aquí.' },
+        { selector: '[data-progress-chip]', titulo: 'Tu progreso, siempre a la vista', texto: 'Racha de días, tus puntos y tus monedas, siempre visibles arriba.' },
         { selector: '#courseSummaryStrip', titulo: 'Así está organizado el curso', texto: '3 niveles, cada uno con sus lecciones, repasos acumulativos y, si ya está traducido, capítulos del libro "La Sed".' },
-        { selector: '.nivel-card', titulo: 'Cada nivel se desbloquea al anterior', texto: 'Toca un nivel para ver sus secciones. Dentro de cada sección están las lecciones, el examen y el capítulo del libro que le corresponde.' },
+        { selector: '.nivel-card', titulo: 'Cada nivel se desbloquea al anterior', texto: 'Toca un nivel para elegir qué hacer: practicar, repasar la teoría, leer el libro o ver tu progreso.' },
         { selector: '#continueBanner', titulo: 'Sigue justo donde lo dejaste', texto: 'Este botón te lleva directo a tu siguiente lección pendiente -no hace falta que busques por dónde ibas.' },
       ]);
     }

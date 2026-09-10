@@ -39,6 +39,48 @@ function interleave(lessonNodes, { reviewEvery, chapterInsertions, prefix }) {
   return out;
 }
 
+// nodoGroupId()/seccionesDeNivel() (+ sus mapas de iconos) vivían en
+// js/curriculo.js, pero leccion.html no carga ese archivo -el rastreador
+// de fallos por sección necesita nodoGroupId() ahí, y las páginas nuevas
+// de teoría/progreso necesitan seccionesDeNivel() sin tener que cargar
+// todo curriculo.js (que además hace su propio initAuthUI() al final,
+// que no se puede cargar dos veces en la misma página).
+function nodoGroupId(nodo, nivel) {
+  if (nivel === 1) return nodo.bloqueId;
+  if (nivel === 2) return nodo.parejaId;
+  if (nivel === 3) return nodo.verboId; // en Nivel 3 cada estructura ES su propia sección
+  return null;
+}
+
+// Sin foto de portada a propósito: una sección agrupa VARIOS verbos o
+// estructuras distintos (8 en Nivel 1, por ejemplo), así que ninguna foto
+// suelta puede representarlos a todos. Un icono por sección según lo que
+// de verdad enseña.
+const NIVEL1_BLOQUE_ICONOS = ['🔑', '🏆', '💬', '🚶', '👀', '🏠', '🧠', '📢'];
+const NIVEL2_PAREJA_ICONOS = { 'be-have': '👤', 'can-know': '🧠', 'want-need': '❤️', 'go-do': '🏃' };
+const NIVEL3_ESTRUCTURA_ICONOS = {
+  'zero-conditional': '🔁', 'first-conditional': '🎯', 'second-conditional': '💭',
+  'third-conditional': '⏮️', 'mixed-conditional': '🔗',
+  'present-perfect-continuous': '⏳', 'past-perfect': '⏪', 'future-continuous': '🔮',
+};
+
+function seccionesDeNivel(nivel, content) {
+  if (nivel === 1) {
+    return content.nivel1.bloques.map((b, i) => ({ id: b.id, num: i + 1, nombre: b.nombre, icono: NIVEL1_BLOQUE_ICONOS[i] || '🔤' }));
+  }
+  if (nivel === 2) {
+    return NIVEL2_PAREJAS.map((p, i) => ({
+      id: p.id, num: i + 1,
+      nombre: p.verbos.map(v => traducirVerbo(v, content.curso.id)).join(' / '),
+      icono: NIVEL2_PAREJA_ICONOS[p.id] || '🧱',
+    }));
+  }
+  return content.nivel3.orden.map((id, i) => {
+    const est = content.nivel3.porEstructura[id];
+    return { id, num: i + 1, nombre: est.nombre, icono: NIVEL3_ESTRUCTURA_ICONOS[id] || '🎓' };
+  });
+}
+
 function nivelDesbloqueado(caminos, nivel) {
   if (typeof DEV_MODE !== 'undefined' && DEV_MODE) return true;
   if (nivel === 1) return true;

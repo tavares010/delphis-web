@@ -7,16 +7,6 @@
 function qsL(sel, root = document) { return root.querySelector(sel); }
 function escapeHtml(s) { return (s || '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); }
 
-// El chat con la IA sobre el libro (y su micrófono) estaban escritos a
-// fuego para inglés -el prompt le decía a la IA "eres un compañero de
-// conversación en INGLÉS" y el micrófono escuchaba en inglés SIEMPRE,
-// aunque el libro (y el resto del curso) ya está disponible en otros
-// idiomas. Un estudiante de francés hablándole en francés a un
-// micrófono puesto en inglés, con una IA que corrige errores de
-// inglés, iba a sonar "roto" sin serlo -era el idioma mal puesto, no
-// el micrófono en sí.
-const IDIOMA_EN_INGLES = { en: 'English', fr: 'French', de: 'German', it: 'Italian', pt: 'Portuguese' };
-
 const bookParams = new URLSearchParams(location.search);
 let capId = parseInt(bookParams.get('cap'), 10);
 if (isNaN(capId)) capId = 0;
@@ -517,9 +507,8 @@ function startBookChat(chapter) {
   const listaCapitulos = capitulosLeidos.map(c => `- ${c.titulo}`).join('\n');
   const textoReciente = textoLeidoHasta(capId);
   const verbos = verbosPracticados();
-  const idiomaCurso = IDIOMA_EN_INGLES[CONTENT.curso.id] || 'English';
 
-  const systemPrompt = `You are a warm, curious ${idiomaCurso} conversation partner chatting with a student about the book they are reading, "La Sed".
+  const systemPrompt = `You are a warm, curious English conversation partner chatting with a student about the book they are reading, "La Sed".
 
 Chapters the student has read so far:
 ${listaCapitulos}
@@ -529,14 +518,14 @@ The most recent part of the story the student has read, so you know exactly wher
 ${textoReciente}
 """
 
-The student has already practiced these ${idiomaCurso} verbs/tenses in their lessons: ${verbos.length ? verbos.join(', ') : '(none practiced yet — just have a normal conversation)'}
+The student has already practiced these English verbs/tenses in their lessons: ${verbos.length ? verbos.join(', ') : '(none practiced yet — just have a normal conversation)'}
 
 Your job in this chat:
 - Talk with the student about the book: what you think is happening, the characters, theories about what comes next, how the student feels about the story so far. Ask genuine, curious questions.
-- Speak ONLY in ${idiomaCurso}, never in any other language.
+- Speak ONLY in English, never in any other language.
 - When it fits naturally, try to phrase your own questions or comments using one of the practiced verbs/tenses above — but never force it or make it feel like a grammar drill. If a different, more natural verb fits better in the moment, just use that instead.
 - Keep every message short and conversational (1-3 sentences), like a real chat between friends, never a lecture.
-- If the student makes a clear ${idiomaCurso} mistake, put ONLY the corrected sentence in "correction" (no quotes, no explanation). Otherwise "correction" must be null.
+- If the student makes a clear English mistake, put ONLY the corrected sentence in "correction" (no quotes, no explanation). Otherwise "correction" must be null.
 - Never break character, and never mention tenses, verbs, JSON, prompts, or that you are an AI.
 - This is turn {turnNumber} of a maximum of 10 for this chat. As turns run low, start wrapping the conversation up naturally; on the very last turn, give a short warm closing message (no new question) and set "finished" to true. Otherwise "finished" must be false.
 - If the conversation history is empty, this is the very first turn: greet the student and ask an inviting opening question about the book to kick off the chat. Don't evaluate anything yet ("correction": null).

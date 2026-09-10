@@ -1,0 +1,1662 @@
+{
+  "nivel1": [
+    {
+      "id": "n1-pronombres-personales",
+      "emoji": "🙋",
+      "titulo": "Pronombres personales",
+      "secciones": [
+        {
+          "id": "sujeto",
+          "titulo": "Pronombres de sujeto",
+          "cuerpo": "En inglés, el pronombre de sujeto es SIEMPRE obligatorio, a diferencia del español, donde se puede omitir porque el verbo ya indica quién actúa (\"como\" ya deja claro que es \"yo\"). En inglés, si quitas el pronombre, la frase deja de tener sentido gramatical.\n\nLos pronombres de sujeto son: I (yo), you (tú/usted), he (él), she (ella), it (ello, para cosas/animales), we (nosotros), you (vosotros/ustedes), they (ellos/ellas). Nota que \"you\" sirve tanto para singular como para plural — el inglés no distingue \"tú\" de \"vosotros\".",
+          "ejemplos": [
+            {
+              "frase": "I am a teacher.",
+              "traduccion": "Yo soy profesor.",
+              "tenseRaw": "Present simple"
+            },
+            {
+              "frase": "She works here.",
+              "traduccion": "Ella trabaja aquí.",
+              "tenseRaw": "Present simple"
+            },
+            {
+              "frase": "They are happy.",
+              "traduccion": "Ellos están felices.",
+              "tenseRaw": "Present simple"
+            }
+          ]
+        },
+        {
+          "id": "posesivos",
+          "titulo": "Possessive adjectives (adjetivos posesivos)",
+          "cuerpo": "Los adjetivos posesivos (my, your, his, her, its, our, their) van SIEMPRE antes de un sustantivo para indicar de quién es algo -a diferencia del pronombre de sujeto, no sustituyen al sustantivo, lo acompañan. Cada pronombre de sujeto tiene su propio posesivo: I→my, you→your, he→his, she→her, it→its, we→our, they→their.\n\nUn error común es confundir \"his\" y \"her\": a diferencia del español, donde \"su\" no indica el género del dueño, en inglés el posesivo SIEMPRE concuerda con quién posee la cosa, no con la cosa en sí.",
+          "ejemplos": [
+            {
+              "frase": "This is my book.",
+              "traduccion": "Este es mi libro."
+            },
+            {
+              "frase": "She loves her job.",
+              "traduccion": "Ella ama su trabajo (el trabajo de ella)."
+            },
+            {
+              "frase": "They forgot their keys.",
+              "traduccion": "Ellos olvidaron sus llaves."
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "pregunta": "¿Cuál de estas frases es gramaticalmente correcta?",
+          "tipo": "spot-the-error",
+          "opciones": [
+            "Is a doctor.",
+            "She is a doctor.",
+            "Doctor is she.",
+            "She a doctor is."
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Qué pronombre de sujeto usarías para hablar de \"la mesa\"?",
+          "tipo": "direct",
+          "opciones": [
+            "He",
+            "She",
+            "It",
+            "They"
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "Completa: \"___ works in a hospital\" (hablando de tu hermana).",
+          "tipo": "fill-in-context",
+          "opciones": [
+            "He",
+            "She",
+            "They",
+            "It"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "\"You\" en inglés puede significar en español:",
+          "tipo": "contrast",
+          "opciones": [
+            "Solo \"tú\"",
+            "Solo \"vosotros\"",
+            "\"Tú\" y \"vosotros/ustedes\" a la vez",
+            "Solo \"usted\""
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "¿Cuál es el pronombre de sujeto correcto para \"el perro\"?",
+          "tipo": "direct",
+          "opciones": [
+            "He",
+            "She",
+            "It",
+            "You"
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "¿Por qué en inglés no se puede decir simplemente \"Am a teacher\"?",
+          "tipo": "contrast",
+          "opciones": [
+            "Porque falta un artículo",
+            "Porque el pronombre de sujeto es obligatorio",
+            "Porque \"teacher\" está mal escrito",
+            "Porque falta \"the\""
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "Elige el pronombre de sujeto correcto para \"tú y yo\" (nosotros):",
+          "tipo": "direct",
+          "opciones": [
+            "You",
+            "They",
+            "We",
+            "It"
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "Completa: \"This is ___ book.\" (hablando de un libro tuyo)",
+          "tipo": "fill-in-context",
+          "opciones": [
+            "my",
+            "I",
+            "mine",
+            "me"
+          ],
+          "correcta": 0
+        },
+        {
+          "pregunta": "¿Cuál es el adjetivo posesivo correspondiente a \"she\"?",
+          "tipo": "direct",
+          "opciones": [
+            "him",
+            "his",
+            "her",
+            "hers"
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "Completa: \"They forgot ___ keys.\" (hablando de las llaves de ellos)",
+          "tipo": "fill-in-context",
+          "opciones": [
+            "they",
+            "them",
+            "their",
+            "theirs"
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "María es una chica. ¿Cuál de estas frases usa mal el posesivo al hablar de su gato?",
+          "tipo": "spot-the-error",
+          "opciones": [
+            "Maria loves her cat.",
+            "Maria loves his cat.",
+            "Maria loves their cat.",
+            "Maria's cat is happy."
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Qué diferencia a un adjetivo posesivo (my, her...) de un pronombre de sujeto (I, she...)?",
+          "tipo": "contrast",
+          "opciones": [
+            "No hay ninguna diferencia",
+            "El posesivo va antes de un sustantivo y no lo sustituye, el pronombre de sujeto sí sustituye al sustantivo",
+            "El posesivo solo existe en plural",
+            "El pronombre de sujeto nunca se usa con nombres propios"
+          ],
+          "correcta": 1
+        }
+      ]
+    },
+    {
+      "id": "n1-tiempos-verbales",
+      "emoji": "⏳",
+      "titulo": "Tiempos verbales",
+      "secciones": [
+        {
+          "id": "present-simple",
+          "titulo": "Present simple",
+          "cuerpo": "Se usa para hábitos, rutinas y hechos generales — cosas que pasan siempre o repetidamente, no en este momento concreto. Se forma con el verbo en su forma base, añadiendo \"-s\" (o \"-es\") solo con he/she/it.\n\nPalabras clave típicas: always, usually, every day, never.",
+          "ejemplos": [
+            {
+              "frase": "I work every day.",
+              "traduccion": "Trabajo todos los días.",
+              "tenseRaw": "Present simple"
+            },
+            {
+              "frase": "She works every day.",
+              "traduccion": "Ella trabaja todos los días.",
+              "tenseRaw": "Present simple"
+            }
+          ]
+        },
+        {
+          "id": "present-continuous",
+          "titulo": "Present continuous",
+          "cuerpo": "Se usa para algo que está pasando AHORA MISMO, en el momento de hablar (o en un periodo temporal a su alrededor). Se forma con \"am/is/are\" + el verbo terminado en \"-ing\".\n\nPalabras clave típicas: now, right now, at the moment.",
+          "ejemplos": [
+            {
+              "frase": "We are studying English.",
+              "traduccion": "Estamos estudiando inglés ahora mismo.",
+              "tenseRaw": "Present continuous"
+            }
+          ]
+        },
+        {
+          "id": "present-perfect",
+          "titulo": "Present perfect",
+          "cuerpo": "Conecta el pasado con el presente: algo que empezó antes y sigue siendo relevante ahora, o una experiencia sin decir cuándo exactamente pasó. Se forma con \"have/has\" + el participio del verbo.\n\nA diferencia del español, donde \"he vivido\" y \"viví\" a veces se confunden, en inglés present perfect NUNCA lleva una fecha o momento concreto (para eso está el past simple).",
+          "ejemplos": [
+            {
+              "frase": "I have lived here for 5 years.",
+              "traduccion": "He vivido aquí durante 5 años.",
+              "tenseRaw": "Present perfect"
+            }
+          ]
+        },
+        {
+          "id": "past-simple",
+          "titulo": "Past simple",
+          "cuerpo": "Se usa para algo que pasó en un momento CONCRETO y ya terminado del pasado — casi siempre acompañado de cuándo pasó (yesterday, last year, in 2020...). Se forma añadiendo \"-ed\" a verbos regulares, o usando la forma irregular correspondiente.\n\nA diferencia del present perfect, el past simple SIEMPRE puede llevar una fecha o momento concreto.",
+          "ejemplos": [
+            {
+              "frase": "I worked yesterday.",
+              "traduccion": "Trabajé ayer.",
+              "tenseRaw": "Past simple"
+            },
+            {
+              "frase": "She went to Paris in 2020.",
+              "traduccion": "Ella fue a París en 2020.",
+              "tenseRaw": "Past simple"
+            }
+          ]
+        },
+        {
+          "id": "future-simple",
+          "titulo": "Future simple",
+          "cuerpo": "Se usa para decisiones espontáneas (tomadas en el mismo momento de hablar) y para predicciones sobre el futuro. Se forma con \"will\" + el verbo en su forma base, igual para todas las personas.",
+          "ejemplos": [
+            {
+              "frase": "I will call you later.",
+              "traduccion": "Te llamaré más tarde.",
+              "tenseRaw": "Future simple"
+            }
+          ]
+        },
+        {
+          "id": "going-to",
+          "titulo": "Going to",
+          "cuerpo": "Se usa para planes ya decididos de antemano (no espontáneos, a diferencia de \"will\") o cuando hay evidencia visible de que algo va a pasar. Se forma con \"am/is/are\" + \"going to\" + el verbo en su forma base.\n\nCompara: \"I will travel\" (decisión que tomas ahora mismo) frente a \"We are going to travel next month\" (ya lo tenías planeado).",
+          "ejemplos": [
+            {
+              "frase": "We are going to travel next month.",
+              "traduccion": "Vamos a viajar el mes que viene.",
+              "tenseRaw": "Going to"
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "pregunta": "\"I work every day\" es un ejemplo de:",
+          "tipo": "direct",
+          "opciones": [
+            "Present continuous",
+            "Present simple",
+            "Past simple",
+            "Future simple"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "Completa con la forma correcta: \"She ___ (work) every day.\"",
+          "tipo": "fill-in-context",
+          "opciones": [
+            "work",
+            "works",
+            "working",
+            "worked"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Qué tiempo usarías para algo que está pasando en este momento mientras hablas?",
+          "tipo": "fill-in-context",
+          "opciones": [
+            "Past simple",
+            "Present continuous",
+            "Future simple",
+            "Present perfect"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Cuál de estas frases NO puede llevar una fecha concreta como \"in 2020\"?",
+          "tipo": "contrast",
+          "opciones": [
+            "Past simple",
+            "Present perfect",
+            "Ambas pueden",
+            "Ninguna puede"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "\"I have lived here for 5 years\" usa:",
+          "tipo": "direct",
+          "opciones": [
+            "Past simple",
+            "Present perfect",
+            "Present continuous",
+            "Future simple"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "Ves el cielo negro y dices: \"Look at those clouds, it ___ rain.\"",
+          "tipo": "fill-in-context",
+          "opciones": [
+            "will",
+            "is going to",
+            "is",
+            "was"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "Acabas de decidir llamar a tu amigo AHORA MISMO. Dices:",
+          "tipo": "fill-in-context",
+          "opciones": [
+            "I am going to call him.",
+            "I will call him.",
+            "I call him.",
+            "I called him."
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Cuál es la diferencia clave entre \"will\" y \"going to\"?",
+          "tipo": "contrast",
+          "opciones": [
+            "No hay ninguna diferencia",
+            "\"will\" es para decisiones espontáneas, \"going to\" para planes ya decididos",
+            "\"will\" es solo para el pasado",
+            "\"going to\" es más formal"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "Transforma a present continuous: \"I study\" →",
+          "tipo": "transformation",
+          "opciones": [
+            "I studying",
+            "I am studying",
+            "I studies",
+            "I was studying"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "\"She went to Paris in 2020\" — ¿por qué no se usa present perfect aquí?",
+          "tipo": "contrast",
+          "opciones": [
+            "Porque \"went\" es incorrecto",
+            "Porque lleva una fecha concreta (2020)",
+            "Porque \"Paris\" es un nombre propio",
+            "No hay ninguna razón, ambas formas valen igual"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "Elige la frase correcta para un plan que ya tenías decidido desde hace semanas:",
+          "tipo": "spot-the-error",
+          "opciones": [
+            "I will travel next month.",
+            "I am going to travel next month.",
+            "I travel next month.",
+            "I am travel next month."
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Qué palabra clave suele acompañar al present simple?",
+          "tipo": "direct",
+          "opciones": [
+            "now",
+            "yesterday",
+            "every day",
+            "next week"
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "Completa: \"We ___ (study) English right now.\"",
+          "tipo": "fill-in-context",
+          "opciones": [
+            "study",
+            "studies",
+            "are studying",
+            "studied"
+          ],
+          "correcta": 2
+        }
+      ]
+    },
+    {
+      "id": "n1-verbos-irregulares",
+      "emoji": "🔀",
+      "titulo": "Verbos irregulares",
+      "secciones": [
+        {
+          "id": "tabla",
+          "titulo": "Tabla de verbos irregulares",
+          "cuerpo": "Muchos verbos en inglés no siguen la regla de añadir \"-ed\" para el pasado — tienen formas propias que hay que memorizar. Esta tabla reúne los verbos irregulares que ya aparecen entre los 64 verbos del curso, con su forma base, su pasado simple, su participio (para present perfect / past perfect / voz pasiva) y su significado.\n\nFíjate en los patrones: algunos verbos cambian igual en pasado y participio (bring→brought→brought), otros tienen las 3 formas distintas (go→went→gone), y unos pocos no cambian nunca (read→read→read, aunque se pronuncian distinto).",
+          "ejemplos": [
+            {
+              "frase": "I go to the gym. Yesterday I went to the gym. I have never gone to that gym before.",
+              "traduccion": "Voy al gimnasio. Ayer fui al gimnasio. Nunca he ido a ese gimnasio antes."
+            }
+          ],
+          "tabla": [
+            [
+              "Base",
+              "Pasado",
+              "Participio",
+              "Significado"
+            ],
+            [
+              "be",
+              "was/were",
+              "been",
+              "ser/estar"
+            ],
+            [
+              "have",
+              "had",
+              "had",
+              "tener"
+            ],
+            [
+              "know",
+              "knew",
+              "known",
+              "saber/conocer"
+            ],
+            [
+              "go",
+              "went",
+              "gone",
+              "ir"
+            ],
+            [
+              "do",
+              "did",
+              "done",
+              "hacer"
+            ],
+            [
+              "get",
+              "got",
+              "got/gotten",
+              "conseguir/llegar"
+            ],
+            [
+              "make",
+              "made",
+              "made",
+              "hacer/fabricar"
+            ],
+            [
+              "take",
+              "took",
+              "taken",
+              "tomar/llevar"
+            ],
+            [
+              "begin",
+              "began",
+              "begun",
+              "empezar"
+            ],
+            [
+              "come",
+              "came",
+              "come",
+              "venir"
+            ],
+            [
+              "give",
+              "gave",
+              "given",
+              "dar"
+            ],
+            [
+              "find",
+              "found",
+              "found",
+              "encontrar"
+            ],
+            [
+              "tell",
+              "told",
+              "told",
+              "contar/decir"
+            ],
+            [
+              "become",
+              "became",
+              "become",
+              "convertirse en"
+            ],
+            [
+              "leave",
+              "left",
+              "left",
+              "dejar/salir"
+            ],
+            [
+              "feel",
+              "felt",
+              "felt",
+              "sentir"
+            ],
+            [
+              "fly",
+              "flew",
+              "flown",
+              "volar"
+            ],
+            [
+              "fall",
+              "fell",
+              "fallen",
+              "caer"
+            ],
+            [
+              "hold",
+              "held",
+              "held",
+              "sostener"
+            ],
+            [
+              "see",
+              "saw",
+              "seen",
+              "ver"
+            ],
+            [
+              "let",
+              "let",
+              "let",
+              "dejar/permitir"
+            ],
+            [
+              "bring",
+              "brought",
+              "brought",
+              "traer"
+            ],
+            [
+              "forget",
+              "forgot",
+              "forgotten",
+              "olvidar"
+            ],
+            [
+              "pay",
+              "paid",
+              "paid",
+              "pagar"
+            ],
+            [
+              "hear",
+              "heard",
+              "heard",
+              "oír"
+            ],
+            [
+              "sit",
+              "sat",
+              "sat",
+              "sentarse"
+            ],
+            [
+              "lead",
+              "led",
+              "led",
+              "liderar/guiar"
+            ],
+            [
+              "meet",
+              "met",
+              "met",
+              "conocer/reunirse"
+            ],
+            [
+              "run",
+              "ran",
+              "run",
+              "correr"
+            ],
+            [
+              "show",
+              "showed",
+              "shown",
+              "mostrar"
+            ],
+            [
+              "think",
+              "thought",
+              "thought",
+              "pensar"
+            ],
+            [
+              "write",
+              "wrote",
+              "written",
+              "escribir"
+            ],
+            [
+              "read",
+              "read",
+              "read",
+              "leer"
+            ],
+            [
+              "speak",
+              "spoke",
+              "spoken",
+              "hablar"
+            ],
+            [
+              "lose",
+              "lost",
+              "lost",
+              "perder"
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "pregunta": "¿Cuál es el pasado de \"go\"?",
+          "tipo": "direct",
+          "opciones": [
+            "goed",
+            "went",
+            "gone",
+            "going"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Cuál es el participio de \"go\"?",
+          "tipo": "direct",
+          "opciones": [
+            "went",
+            "goed",
+            "gone",
+            "going"
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "Completa: \"I have never ___ (see) that movie.\"",
+          "tipo": "fill-in-context",
+          "opciones": [
+            "saw",
+            "seen",
+            "see",
+            "seeing"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Cuál de estas frases usa mal el pasado de \"write\"?",
+          "tipo": "spot-the-error",
+          "opciones": [
+            "She wrote a letter.",
+            "She writed a letter.",
+            "She has written a letter.",
+            "She writes letters every day."
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Qué verbo tiene la MISMA forma en base, pasado y participio?",
+          "tipo": "direct",
+          "opciones": [
+            "go",
+            "read",
+            "speak",
+            "take"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "El participio de \"speak\" es:",
+          "tipo": "direct",
+          "opciones": [
+            "spoke",
+            "speaked",
+            "spoken",
+            "speaking"
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "Completa: \"They ___ (bring) food to the party last night.\"",
+          "tipo": "fill-in-context",
+          "opciones": [
+            "bring",
+            "bringed",
+            "brought",
+            "brings"
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "¿Cuál es el pasado de \"think\"?",
+          "tipo": "direct",
+          "opciones": [
+            "thinked",
+            "thought",
+            "thinks",
+            "thinking"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Cuál de estas frases está bien formada?",
+          "tipo": "spot-the-error",
+          "opciones": [
+            "I have forgot my keys.",
+            "I have forgotten my keys.",
+            "I have forgetted my keys.",
+            "I have forget my keys."
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "El pasado de \"pay\" es:",
+          "tipo": "direct",
+          "opciones": [
+            "payed",
+            "paid",
+            "pays",
+            "paying"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "Completa: \"He ___ (lose) his phone yesterday.\"",
+          "tipo": "fill-in-context",
+          "opciones": [
+            "loses",
+            "lost",
+            "losed",
+            "losing"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Cuál es el participio de \"take\"?",
+          "tipo": "direct",
+          "opciones": [
+            "took",
+            "taked",
+            "taken",
+            "taking"
+          ],
+          "correcta": 2
+        }
+      ]
+    }
+  ],
+  "nivel2": [
+    {
+      "id": "n2-preguntas-negacion",
+      "emoji": "❓",
+      "titulo": "Preguntas y negación",
+      "secciones": [
+        {
+          "id": "preguntas",
+          "titulo": "Preguntas (Yes/No questions)",
+          "cuerpo": "Con el verbo \"to be\", la pregunta se forma invirtiendo el orden de sujeto y verbo: \"You are ready\" → \"Are you ready?\". No hace falta ningún auxiliar extra.\n\nCon el resto de verbos, hace falta un auxiliar (\"do\"/\"does\" en presente, \"did\" en pasado) delante del sujeto, y el verbo principal se queda en su forma base — nunca se conjuga dos veces.",
+          "ejemplos": [
+            {
+              "frase": "Are you ready?",
+              "traduccion": "¿Estás listo?"
+            },
+            {
+              "frase": "Does she work here?",
+              "traduccion": "¿Ella trabaja aquí?"
+            },
+            {
+              "frase": "Did they call you?",
+              "traduccion": "¿Te llamaron?"
+            }
+          ]
+        },
+        {
+          "id": "wh-questions",
+          "titulo": "Preguntas con partícula interrogativa (WH-questions)",
+          "cuerpo": "Además de las preguntas de sí/no, en inglés hay preguntas que empiezan con una partícula interrogativa: what (qué), where (dónde), when (cuándo), why (por qué), who (quién), how (cómo). El orden es: partícula + auxiliar (do/does/did, o \"to be\" cuando no hace falta otro auxiliar) + sujeto + verbo en forma base.\n\nEl auxiliar sigue siendo obligatorio con verbos normales -la partícula interrogativa NO lo sustituye, va delante de él.",
+          "ejemplos": [
+            {
+              "frase": "What do you want?",
+              "traduccion": "¿Qué quieres?"
+            },
+            {
+              "frase": "Where does she live?",
+              "traduccion": "¿Dónde vive ella?"
+            },
+            {
+              "frase": "Why are you late?",
+              "traduccion": "¿Por qué llegas tarde?"
+            },
+            {
+              "frase": "When did they arrive?",
+              "traduccion": "¿Cuándo llegaron?"
+            }
+          ]
+        },
+        {
+          "id": "negacion",
+          "titulo": "Negación",
+          "cuerpo": "La negación se forma añadiendo \"not\" justo después del auxiliar (o de \"to be\"), casi siempre contraído en el habla y la escritura natural: isn't, don't, doesn't, didn't, haven't, won't.\n\nUn error típico es intentar añadir \"not\" directamente al verbo principal, como se haría en español poniendo \"no\" antes del verbo — en inglés, \"not\" siempre se pega al auxiliar, nunca al verbo principal solo.",
+          "ejemplos": [
+            {
+              "frase": "She isn't ready.",
+              "traduccion": "Ella no está lista."
+            },
+            {
+              "frase": "I don't like coffee.",
+              "traduccion": "No me gusta el café."
+            },
+            {
+              "frase": "He didn't call.",
+              "traduccion": "Él no llamó."
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "pregunta": "¿Cómo se forma la pregunta de \"You are ready\"?",
+          "tipo": "transformation",
+          "opciones": [
+            "You are ready?",
+            "Are you ready?",
+            "Do you are ready?",
+            "Ready you are?"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Qué auxiliar necesita esta pregunta: \"___ she work here?\"",
+          "tipo": "fill-in-context",
+          "opciones": [
+            "Is",
+            "Does",
+            "Do",
+            "Did"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Cuál de estas preguntas está mal formada?",
+          "tipo": "spot-the-error",
+          "opciones": [
+            "Does he like pizza?",
+            "Does he likes pizza?",
+            "Did you see her?",
+            "Are they happy?"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "Completa la negación: \"I ___ like coffee.\"",
+          "tipo": "fill-in-context",
+          "opciones": [
+            "no",
+            "not",
+            "don't",
+            "isn't"
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "¿Con qué verbo NO hace falta ningún auxiliar para hacer una pregunta?",
+          "tipo": "direct",
+          "opciones": [
+            "work",
+            "go",
+            "to be",
+            "like"
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "Transforma a negativa: \"He called.\" →",
+          "tipo": "transformation",
+          "opciones": [
+            "He not called.",
+            "He didn't called.",
+            "He didn't call.",
+            "He don't call."
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "¿Cuál de estas frases comete el error típico de poner \"not\" pegado al verbo principal?",
+          "tipo": "spot-the-error",
+          "opciones": [
+            "I don't like coffee.",
+            "I like not coffee.",
+            "I do not like coffee.",
+            "I dislike coffee."
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "Completa: \"___ they call you yesterday?\"",
+          "tipo": "fill-in-context",
+          "opciones": [
+            "Do",
+            "Does",
+            "Did",
+            "Is"
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "La forma contraída de \"is not\" es:",
+          "tipo": "direct",
+          "opciones": [
+            "isn't",
+            "doesn't",
+            "aren't",
+            "isnt't"
+          ],
+          "correcta": 0
+        },
+        {
+          "pregunta": "¿Cuál es la forma correcta del verbo principal en \"Does she ___ (work) here?\"",
+          "tipo": "fill-in-context",
+          "opciones": [
+            "works",
+            "work",
+            "working",
+            "worked"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Qué auxiliar usarías para negar en pasado?",
+          "tipo": "direct",
+          "opciones": [
+            "don't",
+            "doesn't",
+            "didn't",
+            "isn't"
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "Transforma a pregunta: \"They live here.\" →",
+          "tipo": "transformation",
+          "opciones": [
+            "Live they here?",
+            "Do they live here?",
+            "Are they live here?",
+            "They do live here?"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "Completa: \"___ do you live?\" (preguntando el lugar)",
+          "tipo": "fill-in-context",
+          "opciones": [
+            "What",
+            "Where",
+            "Why",
+            "Who"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Qué auxiliar hace falta en: \"___ does she want?\"",
+          "tipo": "direct",
+          "opciones": [
+            "Ya está completa, no falta nada",
+            "does ya es el auxiliar correcto",
+            "need",
+            "is"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Cuál de estas preguntas con partícula interrogativa está mal formada?",
+          "tipo": "spot-the-error",
+          "opciones": [
+            "Where do you work?",
+            "Where you do work?",
+            "What does he want?",
+            "Why are you late?"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "Transforma a pregunta con \"when\": \"They arrived yesterday.\" → ¿Cuándo llegaron?",
+          "tipo": "transformation",
+          "opciones": [
+            "When they arrived?",
+            "When did they arrive?",
+            "When did they arrived?",
+            "When arrived they?"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Con qué verbo NO hace falta el auxiliar do/does/did en una pregunta con partícula interrogativa?",
+          "tipo": "direct",
+          "opciones": [
+            "work",
+            "like",
+            "to be",
+            "want"
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "Completa: \"___ is your name?\"",
+          "tipo": "fill-in-context",
+          "opciones": [
+            "Who",
+            "What",
+            "Where",
+            "When"
+          ],
+          "correcta": 1
+        }
+      ]
+    }
+  ],
+  "nivel3": [
+    {
+      "id": "n3-condicionales",
+      "emoji": "🔀",
+      "titulo": "Condicionales",
+      "secciones": [
+        {
+          "id": "zero",
+          "titulo": "Zero Conditional — verdades generales",
+          "cuerpo": "Se usa para verdades generales, hechos científicos o cosas que siempre son ciertas: \"if\" + presente simple, presente simple. Ninguna de las dos partes lleva \"will\" — no habla de un caso hipotético futuro, sino de algo que SIEMPRE pasa.",
+          "ejemplos": [
+            {
+              "frase": "If you heat ice, it melts.",
+              "traduccion": "Si calientas el hielo, se derrite.",
+              "tenseRaw": "Zero Conditional"
+            }
+          ]
+        },
+        {
+          "id": "first",
+          "titulo": "First Conditional — futuro posible",
+          "cuerpo": "Se usa para una condición real y posible en el futuro: \"if\" + presente simple, \"will\" + base. Un error muy común es poner \"will\" también después de \"if\" — eso nunca se hace en inglés estándar.",
+          "ejemplos": [
+            {
+              "frase": "If it rains, we will stay home.",
+              "traduccion": "Si llueve, nos quedaremos en casa.",
+              "tenseRaw": "First Conditional"
+            }
+          ]
+        },
+        {
+          "id": "second",
+          "titulo": "Second Conditional — hipotético presente",
+          "cuerpo": "Se usa para algo hipotético o poco probable en el presente/futuro: \"if\" + pasado simple, \"would\" + base. Importante: el pasado simple aquí NO indica que algo ya ocurrió — es solo la forma gramatical para hablar de lo hipotético o irreal ahora mismo.",
+          "ejemplos": [
+            {
+              "frase": "If I had more time, I would travel more.",
+              "traduccion": "Si tuviera más tiempo, viajaría más.",
+              "tenseRaw": "Second Conditional"
+            }
+          ]
+        },
+        {
+          "id": "third",
+          "titulo": "Third Conditional — hipotético pasado",
+          "cuerpo": "Se usa para hablar de algo que NO pasó en el pasado, y su resultado imaginario (que tampoco pasó): \"if\" + past perfect, \"would have\" + participio. Es puramente hipotético sobre algo que ya no se puede cambiar.",
+          "ejemplos": [
+            {
+              "frase": "If I had studied, I would have passed.",
+              "traduccion": "Si hubiera estudiado, habría aprobado.",
+              "tenseRaw": "Third Conditional"
+            }
+          ]
+        },
+        {
+          "id": "mixed",
+          "titulo": "Mixed Conditional — pasado con resultado presente",
+          "cuerpo": "Mezcla las dos ideas anteriores: una condición irreal en el PASADO con un resultado en el PRESENTE: \"if\" + past perfect, \"would\" + base (sin \"have\"). Se usa cuando algo que no pasó en el pasado seguiría afectando a cómo son las cosas ahora.",
+          "ejemplos": [
+            {
+              "frase": "If I hadn't left, I would be there now.",
+              "traduccion": "Si no me hubiera ido, estaría allí ahora.",
+              "tenseRaw": "Mixed Conditional"
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "pregunta": "\"If you heat ice, it melts\" es un ejemplo de:",
+          "tipo": "direct",
+          "opciones": [
+            "First Conditional",
+            "Zero Conditional",
+            "Second Conditional",
+            "Third Conditional"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Cuál de estas frases comete el error típico de poner \"will\" después de \"if\"?",
+          "tipo": "spot-the-error",
+          "opciones": [
+            "If it rains, we will stay home.",
+            "If it will rain, we will stay home.",
+            "If it rains, we stay home.",
+            "We will stay home if it rains."
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "Completa el First Conditional: \"If she ___ (study), she will pass.\"",
+          "tipo": "fill-in-context",
+          "opciones": [
+            "studies",
+            "will study",
+            "studied",
+            "would study"
+          ],
+          "correcta": 0
+        },
+        {
+          "pregunta": "En el Second Conditional, ¿qué indica el pasado simple después de \"if\"?",
+          "tipo": "contrast",
+          "opciones": [
+            "Que algo ya ocurrió de verdad",
+            "Algo hipotético o irreal en el presente, no un hecho pasado",
+            "Que la acción ya terminó",
+            "Nada especial, es un error común"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "\"If I had studied, I would have passed\" es:",
+          "tipo": "direct",
+          "opciones": [
+            "Second Conditional",
+            "Third Conditional",
+            "Mixed Conditional",
+            "First Conditional"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Qué diferencia al Mixed Conditional del Third Conditional?",
+          "tipo": "contrast",
+          "opciones": [
+            "No hay ninguna diferencia",
+            "El Mixed tiene el resultado en presente (\"would\" + base), no en pasado",
+            "El Mixed nunca usa \"if\"",
+            "El Third es siempre más corto"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "Completa el Second Conditional: \"If I ___ (have) more money, I would travel.\"",
+          "tipo": "fill-in-context",
+          "opciones": [
+            "have",
+            "had",
+            "will have",
+            "would have"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "Transforma a Third Conditional la idea: \"I didn't study, so I didn't pass.\" →",
+          "tipo": "transformation",
+          "opciones": [
+            "If I study, I pass.",
+            "If I studied, I would pass.",
+            "If I had studied, I would have passed.",
+            "If I have studied, I pass."
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "¿Cuál de los 5 condicionales usarías para una verdad científica como \"el agua hierve a 100°C\"?",
+          "tipo": "contrast",
+          "opciones": [
+            "First Conditional",
+            "Second Conditional",
+            "Zero Conditional",
+            "Mixed Conditional"
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "\"If I hadn't left, I would be there now\" — ¿por qué no lleva \"have\" después de \"would\"?",
+          "tipo": "contrast",
+          "opciones": [
+            "Es un error en la frase",
+            "Porque el resultado está en el presente, no en el pasado (es un Mixed Conditional)",
+            "\"have\" nunca se usa con \"would\"",
+            "Porque \"leave\" es un verbo irregular"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "Completa el Zero Conditional: \"If you don't water plants, they ___ (die).\"",
+          "tipo": "fill-in-context",
+          "opciones": [
+            "die",
+            "will die",
+            "died",
+            "would die"
+          ],
+          "correcta": 0
+        },
+        {
+          "pregunta": "¿Qué estructura usa la parte principal (no la de \"if\") del First Conditional?",
+          "tipo": "direct",
+          "opciones": [
+            "would + base",
+            "will + base",
+            "would have + participio",
+            "presente simple"
+          ],
+          "correcta": 1
+        }
+      ]
+    },
+    {
+      "id": "n3-tiempos-avanzados",
+      "emoji": "⏰",
+      "titulo": "Tiempos avanzados",
+      "secciones": [
+        {
+          "id": "present-perfect-continuous",
+          "titulo": "Present perfect continuous",
+          "cuerpo": "Se forma con \"have/has been\" + el verbo terminado en \"-ing\". Pone el foco en la DURACIÓN de una acción que empezó en el pasado y sigue (o acaba de terminar) ahora — a diferencia del present perfect simple, que se centra más en el resultado.",
+          "ejemplos": [
+            {
+              "frase": "I've been working here for three years.",
+              "traduccion": "Llevo tres años trabajando aquí.",
+              "tenseRaw": "Present Perfect Continuous"
+            }
+          ]
+        },
+        {
+          "id": "past-perfect",
+          "titulo": "Past perfect",
+          "cuerpo": "Se forma con \"had\" + el participio del verbo. Es el \"pasado del pasado\": se usa para dejar claro que algo ocurrió ANTES de otro momento pasado del que también se está hablando.",
+          "ejemplos": [
+            {
+              "frase": "When I arrived, she had already left.",
+              "traduccion": "Cuando llegué, ella ya se había ido.",
+              "tenseRaw": "Past Perfect"
+            }
+          ]
+        },
+        {
+          "id": "future-continuous",
+          "titulo": "Future continuous",
+          "cuerpo": "Se forma con \"will be\" + el verbo terminado en \"-ing\". Describe una acción que estará en curso en un momento concreto del futuro — como mirar el futuro \"desde dentro\", en mitad de la acción.",
+          "ejemplos": [
+            {
+              "frase": "This time tomorrow, I will be flying to Madrid.",
+              "traduccion": "A esta hora mañana, estaré volando a Madrid.",
+              "tenseRaw": "Future Continuous"
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "pregunta": "¿Cómo se forma el present perfect continuous?",
+          "tipo": "direct",
+          "opciones": [
+            "have/has + participio",
+            "have/has been + verbo-ing",
+            "will be + verbo-ing",
+            "had + participio"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "\"I've been working here for three years\" pone el foco en:",
+          "tipo": "contrast",
+          "opciones": [
+            "El resultado final",
+            "La duración de la acción",
+            "Un momento concreto del pasado",
+            "Un plan futuro"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Cómo se forma el past perfect?",
+          "tipo": "direct",
+          "opciones": [
+            "have + participio",
+            "had + participio",
+            "was/were + verbo-ing",
+            "would have + participio"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "\"When I arrived, she had already left\" — ¿qué pasó primero?",
+          "tipo": "contrast",
+          "opciones": [
+            "Llegar yo",
+            "Que ella se fuera",
+            "Pasaron al mismo tiempo",
+            "No se puede saber"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "Completa con future continuous: \"This time tomorrow, I ___ (fly) to Madrid.\"",
+          "tipo": "fill-in-context",
+          "opciones": [
+            "will fly",
+            "will be flying",
+            "am flying",
+            "flew"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Cuál de estos tiempos describe una acción EN CURSO en un momento futuro concreto?",
+          "tipo": "direct",
+          "opciones": [
+            "Present perfect continuous",
+            "Past perfect",
+            "Future continuous",
+            "Third Conditional"
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "Completa con past perfect: \"By the time we arrived, the movie ___ (start).\"",
+          "tipo": "fill-in-context",
+          "opciones": [
+            "started",
+            "has started",
+            "had started",
+            "starts"
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "¿Cuál de estas frases usa mal el present perfect continuous?",
+          "tipo": "spot-the-error",
+          "opciones": [
+            "I have been studying for two hours.",
+            "I have being studying for two hours.",
+            "She has been waiting for a long time.",
+            "They have been playing football."
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Qué distingue al past perfect de un past simple normal?",
+          "tipo": "contrast",
+          "opciones": [
+            "No hay ninguna diferencia real",
+            "El past perfect deja claro que algo pasó ANTES que otro momento pasado",
+            "El past perfect es solo para preguntas",
+            "El past perfect nunca se usa con \"already\""
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "Completa: \"At 8pm tonight, we ___ (have) dinner.\"",
+          "tipo": "fill-in-context",
+          "opciones": [
+            "have",
+            "will have",
+            "will be having",
+            "had"
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "¿Cuál de estas frases es un ejemplo correcto de future continuous?",
+          "tipo": "spot-the-error",
+          "opciones": [
+            "I will be work tomorrow.",
+            "I will be working tomorrow.",
+            "I am will working tomorrow.",
+            "I will working tomorrow."
+          ],
+          "correcta": 1
+        }
+      ]
+    },
+    {
+      "id": "n3-phrasal-verbs",
+      "emoji": "🔗",
+      "titulo": "Phrasal verbs",
+      "secciones": [
+        {
+          "id": "que-son",
+          "titulo": "Qué son los phrasal verbs",
+          "cuerpo": "Un phrasal verb es un verbo + una partícula (una preposición o un adverbio, como up, off, on, out, into) que juntos forman un significado nuevo -a veces totalmente distinto del verbo por separado. \"Give\" significa \"dar\", pero \"give up\" significa \"rendirse\" o \"dejar un hábito\"; no tiene nada que ver con dar.\n\nSon muy comunes en el inglés hablado, y hay que aprenderlos como si fueran una palabra nueva -traducir cada parte por separado no suele funcionar.",
+          "ejemplos": [
+            {
+              "frase": "I gave up smoking last year.",
+              "traduccion": "Dejé de fumar el año pasado."
+            },
+            {
+              "frase": "She looks after her little brother.",
+              "traduccion": "Ella cuida a su hermano pequeño."
+            }
+          ]
+        },
+        {
+          "id": "separables",
+          "titulo": "Separables e inseparables",
+          "cuerpo": "Algunos phrasal verbs son SEPARABLES: el objeto puede ir entre el verbo y la partícula, o después de la partícula -ambas formas son correctas (\"turn off the light\" = \"turn the light off\"). Pero si el objeto es un PRONOMBRE (it, him, her...), la separación es OBLIGATORIA: se dice \"turn it off\", nunca \"turn off it\".\n\nOtros phrasal verbs son INSEPARABLES: el objeto siempre va después de la partícula, sin excepción (\"look after the kids\", nunca \"look the kids after\").",
+          "ejemplos": [
+            {
+              "frase": "Turn off the light. / Turn the light off. / Turn it off.",
+              "traduccion": "Apaga la luz. / Apágala."
+            },
+            {
+              "frase": "She looks after the kids every day.",
+              "traduccion": "Ella cuida a los niños todos los días."
+            }
+          ]
+        },
+        {
+          "id": "tabla",
+          "titulo": "Phrasal verbs más comunes",
+          "cuerpo": "Algunos de los phrasal verbs más usados en el inglés cotidiano, con su significado y un ejemplo real de cada uno.",
+          "ejemplos": [],
+          "tabla": [
+            [
+              "Phrasal verb",
+              "Significado",
+              "Ejemplo"
+            ],
+            [
+              "give up",
+              "rendirse / dejar (un hábito)",
+              "I gave up sugar."
+            ],
+            [
+              "look for",
+              "buscar",
+              "I'm looking for my keys."
+            ],
+            [
+              "look after",
+              "cuidar de",
+              "She looks after her sister."
+            ],
+            [
+              "turn on / off",
+              "encender / apagar",
+              "Turn on the TV."
+            ],
+            [
+              "get up",
+              "levantarse",
+              "I get up at 7am."
+            ],
+            [
+              "take off",
+              "despegar (avión) / quitarse (ropa)",
+              "The plane took off."
+            ],
+            [
+              "put on",
+              "ponerse (ropa)",
+              "Put on your coat."
+            ],
+            [
+              "run into",
+              "encontrarse con alguien por casualidad",
+              "I ran into an old friend."
+            ],
+            [
+              "find out",
+              "descubrir / averiguar",
+              "I found out the truth."
+            ],
+            [
+              "look forward to",
+              "tener ganas de",
+              "I look forward to seeing you."
+            ],
+            [
+              "get along with",
+              "llevarse bien con",
+              "He gets along with everyone."
+            ],
+            [
+              "break down",
+              "averiarse / venirse abajo",
+              "The car broke down."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "pregunta": "¿Qué significa \"give up\"?",
+          "tipo": "direct",
+          "opciones": [
+            "Dar algo",
+            "Rendirse / dejar un hábito",
+            "Subir",
+            "Recoger"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Qué significa \"look after\"?",
+          "tipo": "direct",
+          "opciones": [
+            "Buscar",
+            "Mirar hacia atrás",
+            "Cuidar de alguien",
+            "Parecerse a"
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "Completa con el pronombre en la posición correcta (phrasal verb separable): \"Turn ___ off.\" (la luz)",
+          "tipo": "fill-in-context",
+          "opciones": [
+            "it",
+            "off it",
+            "her",
+            "this"
+          ],
+          "correcta": 0
+        },
+        {
+          "pregunta": "¿Cuál de estas frases usa mal un phrasal verb inseparable?",
+          "tipo": "spot-the-error",
+          "opciones": [
+            "She looks after the kids.",
+            "She looks the kids after.",
+            "He gets along with everyone.",
+            "I ran into an old friend."
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Qué significa \"find out\"?",
+          "tipo": "direct",
+          "opciones": [
+            "Encontrar un objeto perdido",
+            "Descubrir / averiguar",
+            "Salir de un lugar",
+            "Rellenar un formulario"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "Con un pronombre como objeto, ¿cuál de estas opciones es obligatoria en un phrasal verb separable?",
+          "tipo": "contrast",
+          "opciones": [
+            "\"turn off it\"",
+            "\"turn it off\"",
+            "Ambas son igual de correctas",
+            "Ninguna, el pronombre nunca se usa aquí"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "Completa: \"I always ___ my keys.\" (las pierdo y las busco todo el rato)",
+          "tipo": "fill-in-context",
+          "opciones": [
+            "look for",
+            "look after",
+            "look forward to",
+            "look up"
+          ],
+          "correcta": 0
+        },
+        {
+          "pregunta": "¿Qué significa \"take off\" cuando se habla de un avión?",
+          "tipo": "contrast",
+          "opciones": [
+            "Aterrizar",
+            "Despegar",
+            "Retrasarse",
+            "Averiarse"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Qué significa \"take off\" cuando se habla de ropa?",
+          "tipo": "contrast",
+          "opciones": [
+            "Ponerse algo",
+            "Quitarse algo",
+            "Lavar algo",
+            "Comprar algo"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "Transforma usando un phrasal verb: \"I am excited about seeing you.\" →",
+          "tipo": "transformation",
+          "opciones": [
+            "I look for seeing you.",
+            "I look after seeing you.",
+            "I look forward to seeing you.",
+            "I look up seeing you."
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "¿Por qué no se puede traducir un phrasal verb palabra por palabra?",
+          "tipo": "contrast",
+          "opciones": [
+            "Porque el significado del conjunto suele ser distinto al de las palabras por separado",
+            "Porque los phrasal verbs no tienen traducción posible",
+            "Porque son siempre errores gramaticales",
+            "Sí se puede, siempre funciona traducir cada palabra"
+          ],
+          "correcta": 0
+        }
+      ]
+    }
+  ]
+}

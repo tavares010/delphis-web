@@ -1,19 +1,13 @@
 /* ===========================================================
-   DELPHIS METHOD — CURSOS (idiomas)
-   El mismo método y el mismo currículo (Nivel 1/2/3), en varios
-   idiomas de destino. El español de los prompts es siempre el
-   mismo — lo que cambia es el idioma que se está aprendiendo.
+   DELPHIS METHOD — CURSO (idioma)
+   La app enseña un único idioma de destino: inglés. Hubo soporte
+   multi-idioma (francés/alemán/italiano/portugués) que se quitó por
+   completo -este array se queda con 1 solo curso a propósito, no es un
+   descuido. getCursoActivo()/aplicarTemaCurso() se dejan tal cual:
+   funcionan igual con 1 curso que con varios, no hacía falta reescribirlos.
    =========================================================== */
-
-// Cada curso tiene su propio par de acento (a=principal, b=degradado) —
-// pintan var(--blue-500)/var(--cyan-400) en tiempo real (ver aplicarTemaCurso)
-// para que la app entera se sienta distinta según el idioma activo.
 const CURSOS = [
   { id: 'en', nombre: 'Inglés', bandera: '🇬🇧', speechLang: 'en-US', sufijo: '', disponible: true, colorA: '#0369a1', colorB: '#0ea5e9' },
-  { id: 'fr', nombre: 'Francés', bandera: '🇫🇷', speechLang: 'fr-FR', sufijo: '_fr', disponible: true, colorA: '#1d4ed8', colorB: '#3b82f6' },
-  { id: 'de', nombre: 'Alemán', bandera: '🇩🇪', speechLang: 'de-DE', sufijo: '_de', disponible: true, colorA: '#d97706', colorB: '#fbbf24' },
-  { id: 'it', nombre: 'Italiano', bandera: '🇮🇹', speechLang: 'it-IT', sufijo: '_it', disponible: true, colorA: '#059669', colorB: '#a3e635' },
-  { id: 'pt', nombre: 'Portugués', bandera: '🇵🇹', speechLang: 'pt-PT', sufijo: '_pt', disponible: true, colorA: '#dc2626', colorB: '#16a34a' },
 ];
 
 const CURSO_ACTIVO_KEY = 'delphis_curso_activo';

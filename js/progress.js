@@ -226,6 +226,8 @@ function curriculumLoad() {
   if (!d.lecciones) d.lecciones = {};
   if (!d.repasos) d.repasos = {};
   if (!d.libro) d.libro = {};
+  if (!d.teoria) d.teoria = {};
+  if (!d.mistakes) d.mistakes = {};
   return d;
 }
 
@@ -285,6 +287,47 @@ function marcarLibroLeido(capIndex) {
   const data = curriculumLoad();
   if (!data.libro) data.libro = {};
   data.libro[capIndex] = true;
+  curriculumSave(data);
+}
+
+// ---------- Rastreador de fallos por sección (para "Mi progreso") ----------
+// Paralelo al de aprobado/no aprobado -no lo toca ni lo reemplaza. Se
+// alimenta desde las respuestas incorrectas del Quiz y el Juego
+// (js/leccion.js), con categoriaId = nodoGroupId(nodo, nivel) -el mismo
+// grano que usa seccionesDeNivel(), así que "Mi progreso" puede pedir
+// directamente mistakeCountFor(seccion.id) sin agregar nada aparte. Una
+// sección aprobada a base de fallar mucho sigue contando como punto
+// débil real, no solo "lo que falta por completar".
+function recordMistake(categoriaId) {
+  if (!categoriaId) return;
+  const data = curriculumLoad();
+  if (!data.mistakes) data.mistakes = {};
+  data.mistakes[categoriaId] = (data.mistakes[categoriaId] || 0) + 1;
+  curriculumSave(data);
+}
+function getMistakeCounts() { return curriculumLoad().mistakes || {}; }
+function mistakeCountFor(categoriaId) { return getMistakeCounts()[categoriaId] || 0; }
+
+// ---------- Lecciones de teoría ("Conceptos esenciales") ----------
+function teoriaEstado(id) {
+  const data = curriculumLoad();
+  return (data.teoria && data.teoria[id]) || { vista: false, quizAprobado: false, mejorPct: 0, mejorRacha: 0 };
+}
+function marcarTeoriaVista(id) {
+  const data = curriculumLoad();
+  data.teoria[id] = { ...teoriaEstado(id), vista: true };
+  curriculumSave(data);
+}
+function marcarTeoriaQuizResultado(id, pct, racha) {
+  const data = curriculumLoad();
+  const previo = teoriaEstado(id);
+  data.teoria[id] = {
+    ...previo,
+    vista: true,
+    quizAprobado: previo.quizAprobado || pct >= 70,
+    mejorPct: Math.max(previo.mejorPct, pct),
+    mejorRacha: Math.max(previo.mejorRacha, racha),
+  };
   curriculumSave(data);
 }
 
