@@ -7,9 +7,9 @@
    =========================================================== */
 
 const NIVEL_META = {
-  1: { titulo: 'Nivel 1 · Verbos básicos', icono: '🔤', resumen: '64 verbos esenciales en 8 bloques de 8.', a: '#2563eb', b: '#38bdf8' },
-  2: { titulo: 'Nivel 2 · Estructuras', icono: '🧱', resumen: '8 verbos practicados a fondo en 6 tiempos verbales cada uno.', a: '#7c3aed', b: '#c084fc' },
-  3: { titulo: 'Nivel 3 · Avanzado', icono: '🎓', resumen: '5 condicionales + 3 tiempos avanzados.', a: '#d97706', b: '#fbbf24' },
+  1: { titulo: 'Nivel 1 · Verbos básicos', icono: '🔤', resumen: '64 verbos esenciales en 8 bloques de 8.', a: '#3b82f6', b: '#60a5fa' },
+  2: { titulo: 'Nivel 2 · Estructuras', icono: '🧱', resumen: '8 verbos practicados a fondo en 6 tiempos verbales cada uno.', a: '#4f46e5', b: '#818cf8' },
+  3: { titulo: 'Nivel 3 · Avanzado', icono: '🎓', resumen: '5 condicionales + 3 tiempos avanzados.', a: '#0ea5e9', b: '#22d3ee' },
 };
 
 // Icono por verbo (Nivel 1 y 2 comparten estos mismos 8-64 verbos, ver
@@ -92,12 +92,13 @@ function renderRow(nodo, estado, content, big) {
   </${tag}>`;
 }
 
-// Paleta que se cicla por sección -pura variedad visual, como las
-// portadas de color de "Popular Courses" en el UI kit de referencia.
+// Paleta que se cicla por sección -variedad visual dentro de la familia
+// azul/cian/índigo de la marca (nada de rosa/ámbar/verde sueltos), para
+// que cada sección se distinga de un vistazo sin salirse del sistema.
 const SECCION_COLORES = [
-  ['#60a5fa', '#3b82f6'], ['#c084fc', '#8b5cf6'], ['#fbbf24', '#d97706'],
-  ['#4ade80', '#059669'], ['#f472b6', '#e11d48'], ['#5eead4', '#0d9488'],
-  ['#fb923c', '#ea580c'], ['#a5b4fc', '#6366f1'],
+  ['#3b82f6', '#1d4ed8'], ['#22d3ee', '#0891b2'], ['#6366f1', '#4338ca'],
+  ['#0ea5e9', '#0369a1'], ['#14b8a6', '#0f766e'], ['#60a5fa', '#2563eb'],
+  ['#38bdf8', '#0284c7'], ['#818cf8', '#4f46e5'],
 ];
 
 // Portada de tarjeta: foto real (con velo de color de marca encima para que
@@ -209,8 +210,23 @@ function bindLocked(root) {
   });
 }
 
+// El bloque de texto de arriba (ojo de aguja + H1 + párrafo) tiene sentido
+// en la lista de niveles, pero apilado ENCIMA de la cabecera propia del hub/
+// secciones/lecciones deja demasiado texto antes del contenido de verdad,
+// sobre todo en móvil -se oculta en cuanto hay un ?nivel= en la URL.
+function ocultarIntroCurso() {
+  const intro = document.getElementById('cursoIntro');
+  if (intro) intro.style.display = 'none';
+  const heroSection = document.getElementById('cursoHeroSection');
+  if (heroSection) heroSection.classList.add('page-hero--tight');
+}
+
 // ---------- PASO 1: niveles ----------
 function renderVistaNiveles(wrap, caminos, content, { n1Completo, n2Completo, dev }) {
+  const intro = document.getElementById('cursoIntro');
+  if (intro) intro.style.display = '';
+  const heroSection = document.getElementById('cursoHeroSection');
+  if (heroSection) heroSection.classList.remove('page-hero--tight');
   document.getElementById('continueBanner').style.display = '';
   document.getElementById('courseSummaryStrip').style.display = '';
   renderContinueBanner(caminos, content);
@@ -259,6 +275,7 @@ function renderVistaNiveles(wrap, caminos, content, { n1Completo, n2Completo, de
 // práctica (lo de siempre), el libro y el progreso/puntos débiles.
 function renderVistaHub(wrap, nivel, caminos, content) {
   document.getElementById('continueBanner').style.display = 'none';
+  ocultarIntroCurso();
   document.getElementById('courseSummaryStrip').style.display = 'none';
   const meta = NIVEL_META[nivel];
   const camino = caminos[`nivel${nivel}`];
@@ -313,6 +330,7 @@ function renderVistaHub(wrap, nivel, caminos, content) {
 // ---------- PASO 2: secciones de un nivel ----------
 function renderVistaSecciones(wrap, nivel, caminos, content) {
   document.getElementById('continueBanner').style.display = 'none';
+  ocultarIntroCurso();
   document.getElementById('courseSummaryStrip').style.display = 'none';
   const camino = caminos[`nivel${nivel}`];
   const meta = NIVEL_META[nivel];
@@ -335,6 +353,7 @@ function renderVistaSecciones(wrap, nivel, caminos, content) {
 // ---------- PASO 3: lecciones de una sección ----------
 function renderVistaLecciones(wrap, nivel, seccionId, caminos, content) {
   document.getElementById('continueBanner').style.display = 'none';
+  ocultarIntroCurso();
   document.getElementById('courseSummaryStrip').style.display = 'none';
   const camino = caminos[`nivel${nivel}`];
   const meta = NIVEL_META[nivel];

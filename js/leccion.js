@@ -154,6 +154,7 @@ function renderStudy(ctx) {
   if (typeof ofrecerTour === 'function') {
     ofrecerTour('leccion', [
       { selector: '#lessonSteps', titulo: '3 pasos por lección', texto: 'Estudiar → Quiz → Juego. Ahora estás en Estudiar: lee cada frase antes de pasar al quiz.' },
+      { selector: '.estructura-verbal', titulo: 'Fíjate en lo que brilla', texto: 'Esa parte de la frase es la estructura o tiempo verbal que estás practicando en esta lección.' },
       { selector: '.phrase-card', titulo: 'Escucha la pronunciación real', texto: 'Toca "Escuchar" para oír la frase, o "Más lento" si necesitas oírla más despacio.' },
       { selector: '.lesson-nav', titulo: 'Avanza frase a frase', texto: 'Cuando termines todas las frases de la lección, pasas directo al quiz.' },
     ]);

@@ -8,13 +8,11 @@
 <link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/course.css">
 </head>
 <body>
-
-<div class="cursor-glow" id="cursorGlow"></div>
 
 <div class="progress-bar" id="progressBar"></div>
 
@@ -97,10 +95,7 @@
     <div class="blob blob--1"></div>
     <div class="blob blob--2"></div>
     <div class="blob blob--3"></div>
-    <div class="grid-overlay"></div>
-    <canvas id="waveCanvas"></canvas>
   </div>
-
   <div class="container hero__inner">
     <div class="hero__text reveal-up">
       <div class="badge">
@@ -146,33 +141,25 @@
     </div>
 
     <div class="hero__art reveal-up delay-2">
-      <div class="orbit-ring orbit-ring--1"></div>
-      <div class="orbit-ring orbit-ring--2"></div>
-      <div class="logo-halo">
-        <img src="assets/logo.png" alt="Delphis Method logo" class="hero__logo">
-      </div>
-
-      <div class="float-card float-card--1">
-        <div class="float-card__icon">🧠</div>
-        <div>
-          <strong>Repetición espaciada</strong>
-          <span>6 niveles, de verdad</span>
+      <div class="hero__mockup">
+        <div class="hero__mockup-bar"><span></span><span></span><span></span></div>
+        <div class="hero__mockup-row hero__mockup-row--active">
+          <div class="hero__mockup-icon">🧍</div>
+          <div class="hero__mockup-lines"><span></span><span></span></div>
+          <div class="hero__mockup-badge">Continuar</div>
         </div>
-      </div>
-      <div class="float-card float-card--2">
-        <div class="float-card__icon">📖</div>
-        <div>
-          <strong>Una novela real</strong>
-          <span>"La Sed", capítulo a capítulo</span>
+        <div class="hero__mockup-row">
+          <div class="hero__mockup-icon">📖</div>
+          <div class="hero__mockup-lines"><span></span><span></span></div>
         </div>
-      </div>
-      <div class="float-card float-card--3">
-        <div class="float-card__icon">🎮</div>
-        <div>
-          <strong>Produce, no reconozcas</strong>
-          <span>Escribe la respuesta tú solo</span>
+        <div class="hero__mockup-row">
+          <div class="hero__mockup-icon">🔁</div>
+          <div class="hero__mockup-lines"><span></span><span></span></div>
         </div>
+        <div class="hero__mockup-progress"><div class="hero__mockup-progress-fill"></div></div>
       </div>
+      <div class="hero__float-chip hero__float-chip--1">🔥 <strong>12 días</strong> de racha</div>
+      <div class="hero__float-chip hero__float-chip--2">🏆 Rango <strong>Oro</strong></div>
     </div>
   </div>
 
@@ -184,14 +171,19 @@
 
 <!-- ===== LOGOS / TRUST BAR ===== -->
 <section class="trustbar reveal-up">
-  <div class="container trustbar__inner">
-    <p>Metodología inspirada en investigación de:</p>
-    <div class="trustbar__logos">
-      <span>Neurociencia Cognitiva</span>
-      <span>Spaced Repetition Systems</span>
-      <span>Linguística Aplicada</span>
-      <span>Curva del olvido (Ebbinghaus)</span>
-      <span>Input comprensible (Krashen)</span>
+  <p class="trustbar__label">Metodología inspirada en investigación de:</p>
+  <div class="marquee">
+    <div class="marquee__track">
+      <span class="trustbar__logo-item"><span data-emoji>🧠</span>Neurociencia Cognitiva</span>
+      <span class="trustbar__logo-item"><span data-emoji>🔁</span>Spaced Repetition Systems</span>
+      <span class="trustbar__logo-item"><span data-emoji>🗣️</span>Linguística Aplicada</span>
+      <span class="trustbar__logo-item"><span data-emoji>📉</span>Curva del olvido (Ebbinghaus)</span>
+      <span class="trustbar__logo-item"><span data-emoji>💬</span>Input comprensible (Krashen)</span>
+      <span class="trustbar__logo-item" aria-hidden="true"><span data-emoji>🧠</span>Neurociencia Cognitiva</span>
+      <span class="trustbar__logo-item" aria-hidden="true"><span data-emoji>🔁</span>Spaced Repetition Systems</span>
+      <span class="trustbar__logo-item" aria-hidden="true"><span data-emoji>🗣️</span>Linguística Aplicada</span>
+      <span class="trustbar__logo-item" aria-hidden="true"><span data-emoji>📉</span>Curva del olvido (Ebbinghaus)</span>
+      <span class="trustbar__logo-item" aria-hidden="true"><span data-emoji>💬</span>Input comprensible (Krashen)</span>
     </div>
   </div>
 </section>
@@ -240,33 +232,33 @@
     </div>
 
     <div class="feature-grid">
-      <div class="feature-card reveal-up">
-        <div class="feature-card__icon" style="background:rgba(37,99,235,.1); color:#2563eb;">🗺️</div>
+      <div class="feature-card feature-card--wide reveal-up">
+        <div class="feature-card__icon">🗺️</div>
         <h4>Un solo camino</h4>
         <p>Nada de menú libre: 3 niveles, 64 verbos y 16 estructuras se desbloquean en orden, mezclados con el libro y repasos acumulativos.</p>
       </div>
       <div class="feature-card reveal-up delay-1">
-        <div class="feature-card__icon" style="background:rgba(124,58,237,.1); color:#7c3aed;">🎯</div>
+        <div class="feature-card__icon">🎯</div>
         <h4>Repetición espaciada real</h4>
         <p>Sistema Leitner de 6 niveles: cada palabra tiene su propio calendario de repaso, y siempre se repasa primero lo que ya venció.</p>
       </div>
       <div class="feature-card reveal-up delay-2">
-        <div class="feature-card__icon" style="background:rgba(217,119,6,.1); color:#d97706;">📖</div>
+        <div class="feature-card__icon">📖</div>
         <h4>Una novela, no una lista</h4>
         <p>"La Sed" se lee dentro del propio currículo. Tocas una palabra que no conoces y queda guardada automáticamente para repasar.</p>
       </div>
       <div class="feature-card reveal-up delay-3">
-        <div class="feature-card__icon" style="background:rgba(2,132,199,.1); color:#0284c7;">🗣️</div>
+        <div class="feature-card__icon">🗣️</div>
         <h4>Producción activa</h4>
         <p>El paso final siempre es escribir la respuesta tú solo, sin pistas — reconocer una opción no es lo mismo que producir el idioma.</p>
       </div>
       <div class="feature-card reveal-up">
-        <div class="feature-card__icon" style="background:rgba(219,39,119,.1); color:#db2777;">🧩</div>
+        <div class="feature-card__icon">🧩</div>
         <h4>Paquetes temáticos</h4>
         <p>Vocabulario de contextos reales (hostelería, viajes, deportes...) siempre disponible, fuera del camino principal.</p>
       </div>
-      <div class="feature-card reveal-up delay-1">
-        <div class="feature-card__icon" style="background:rgba(22,163,74,.1); color:#16a34a;">🏆</div>
+      <div class="feature-card feature-card--wide reveal-up delay-1">
+        <div class="feature-card__icon">🏆</div>
         <h4>Gamificación real</h4>
         <p>Puntos, rango, monedas y racha diaria calculados de verdad a partir de tu progreso — no son solo decoración.</p>
       </div>
@@ -331,7 +323,6 @@
       <div class="nosotros__glow"></div>
       <img src="https://images.pexels.com/photos/5553954/pexels-photo-5553954.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=500&w=420" alt="Estudiantes aprendiendo con Delphis Method" class="nosotros__photo">
       <img src="assets/logo.png" alt="Delphis Method" class="nosotros__logo--badge">
-      <div class="orbit-ring orbit-ring--1 small"></div>
     </div>
 
     <div class="nosotros__text reveal-right">

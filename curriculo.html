@@ -8,14 +8,13 @@
 <link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/course.css">
 <link rel="stylesheet" href="css/bottom-nav.css">
 </head>
 <body>
 
-<div class="cursor-glow" id="cursorGlow"></div>
 <div class="progress-bar" id="progressBar"></div>
 
 <!-- ===== NAVBAR ===== -->
@@ -28,7 +27,7 @@
 
     <nav class="navbar__links" id="navLinks">
       <a href="index.html" class="nav-link">Inicio</a>
-      <a href="curriculo.html" class="nav-link active">Lenguaje</a>
+      <a href="curriculo.html" class="nav-link active">El Curso</a>
       <div class="nav-dropdown">
         <span class="nav-dropdown__trigger">
           Contenido
@@ -67,7 +66,7 @@
 
 <div class="mobile-menu" id="mobileMenu">
   <a href="index.html" class="mobile-link">Inicio</a>
-  <a href="curriculo.html" class="mobile-link active">Lenguaje</a>
+  <a href="curriculo.html" class="mobile-link active">El Curso</a>
   <a href="libro.html" class="mobile-link">El Libro</a>
   <a href="paquetes.html" class="mobile-link">Paquetes</a>
   <a href="repaso.html" class="mobile-link">Repaso</a>
@@ -77,20 +76,21 @@
 </div>
 
 <main>
-<section class="app-hero page-hero">
+<section class="app-hero page-hero" id="cursoHeroSection">
   <div class="hero__bg">
     <div class="blob blob--1"></div>
     <div class="blob blob--2"></div>
-    <div class="grid-overlay"></div>
   </div>
   <div class="container page-hero__inner">
-    <span class="eyebrow reveal-up" id="cursoEyebrow">El curso</span>
-    <h1 class="reveal-up">Un solo camino, <span class="text-gradient">paso a paso</span></h1>
-    <p class="reveal-up delay-1">
-      Nada de menús libres. Cada verbo, capítulo del libro y repaso se desbloquea en orden,
-      exactamente como en la app original: estudias, demuestras que aprendiste con un quiz,
-      y lo produces tú solo en el juego antes de avanzar.
-    </p>
+    <div id="cursoIntro">
+      <span class="eyebrow reveal-up" id="cursoEyebrow">El curso</span>
+      <h1 class="reveal-up">Un solo camino, <span class="text-gradient">paso a paso</span></h1>
+      <p style="color: white;"class="reveal-up delay-1">
+        Nada de menús libres. Cada verbo, capítulo del libro y repaso se desbloquea en orden,
+        exactamente como en la app original: estudias, demuestras que aprendiste con un quiz,
+        y lo produces tú solo en el juego antes de avanzar.
+      </p>
+    </div>
     <div id="continueBanner"></div>
     <div class="course-summary-strip" id="courseSummaryStrip"></div>
   </div>
