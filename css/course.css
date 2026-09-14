@@ -1214,7 +1214,7 @@ body.tour-activo { overflow: hidden; }
 .nivel-hub-tile--practica { background: linear-gradient(150deg, var(--level-a, var(--blue-500)), var(--level-b, var(--cyan-400))); }
 .nivel-hub-tile--teoria { background: linear-gradient(150deg, #8a3a4a, #c2596d); }
 .nivel-hub-tile--libro { background: linear-gradient(150deg, #1f6b60, #34a693); }
-.nivel-hub-tile--progreso { background: linear-gradient(150deg, var(--indigo-600), #818cf8); }
+.nivel-hub-tile--progreso { background: linear-gradient(150deg, #b45309, #fbbf24); }
 
 /* ---------- Lecciones de teoría (teoria.html / teoria-leccion.html) ---------- */
 .teoria-toc { display: flex; flex-direction: column; gap: .6rem; margin-bottom: 2rem; }
