@@ -92,20 +92,22 @@ function renderRow(nodo, estado, content, big) {
   </${tag}>`;
 }
 
-// Paleta que se cicla por sección -variedad visual dentro de la familia
-// azul/cian/índigo de la marca (nada de rosa/ámbar/verde sueltos), para
-// que cada sección se distinga de un vistazo sin salirse del sistema.
+// Paleta que se cicla por sección -variedad de verdad (violeta, rosa,
+// esmeralda, ámbar...) en vez de quedarse solo en tonos de azul, para que
+// la rejilla de secciones no se vea monocroma. Cada par es tono medio ->
+// tono oscuro, mismo criterio de contraste que ya usaba la paleta azul
+// original, para que el texto blanco de la ficha se siga leyendo bien.
 const SECCION_COLORES = [
-  ['#3b82f6', '#1d4ed8'], ['#22d3ee', '#0891b2'], ['#6366f1', '#4338ca'],
-  ['#0ea5e9', '#0369a1'], ['#14b8a6', '#0f766e'], ['#60a5fa', '#2563eb'],
-  ['#38bdf8', '#0284c7'], ['#818cf8', '#4f46e5'],
+  ['#3b82f6', '#1d4ed8'], ['#22d3ee', '#0891b2'], ['#a855f7', '#6d28d9'],
+  ['#fb7185', '#9f1239'], ['#2dd4bf', '#0f766e'], ['#f59e0b', '#92400e'],
+  ['#0ea5e9', '#0369a1'], ['#e879f9', '#86198f'],
 ];
 
 // Portada de tarjeta: foto real (con velo de color de marca encima para que
 // el icono/badge se lean bien) si hay imagen, o solo el degradado si no.
 function coverStyle(imagen, ca, cb) {
   if (imagen) return `background:linear-gradient(160deg, ${ca}c2, ${cb}8c), url('${imagen}') center/cover;`;
-  return `background:linear-gradient(135deg, ${ca}, ${cb});`;
+  return `background:linear-gradient(135deg, ${ca} 0%, ${cb} 65%, ${ca}cc 100%);`;
 }
 
 // Para cada sección, qué nodos de repaso/libro caen justo después de ella
@@ -251,6 +253,7 @@ function renderVistaNiveles(wrap, caminos, content, { n1Completo, n2Completo, de
          style="--level-a:${meta.a}; --level-b:${meta.b};">
         <div class="nivel-card__cover" style="${coverStyle(null, meta.a, meta.b)}">
           <span class="nivel-card__icon-big">${meta.icono}</span>
+          ${locked ? '<span class="nivel-card__lock-badge">🔒</span>' : ''}
         </div>
         <div class="nivel-card__body">
           <h3>${meta.titulo}</h3>
