@@ -1022,13 +1022,13 @@ body.tour-activo { overflow: hidden; }
   --level-b: var(--cyan-400);
   display: block;
   background: var(--surface);
-  border: 1px solid var(--border);
+  border: 1px solid color-mix(in srgb, var(--level-a) 22%, var(--border));
   border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: var(--shadow-card);
-  transition: transform .35s var(--ease), box-shadow .35s;
+  box-shadow: 0 10px 30px color-mix(in srgb, var(--level-a) 10%, rgba(15,23,42,.08));
+  transition: transform .35s var(--ease), box-shadow .35s, border-color .35s;
 }
-.nivel-card:not(.locked):hover { transform: translateY(-6px); box-shadow: 0 22px 46px color-mix(in srgb, var(--level-a) 28%, rgba(15,23,42,.12)); }
+.nivel-card:not(.locked):hover { transform: translateY(-6px); border-color: color-mix(in srgb, var(--level-a) 45%, var(--border)); box-shadow: 0 22px 46px color-mix(in srgb, var(--level-a) 28%, rgba(15,23,42,.12)); }
 .nivel-card:not(.locked):hover .nivel-card__icon-glass { transform: scale(1.08); }
 .nivel-card.locked { opacity: .55; cursor: not-allowed; }
 .nivel-card__cover { position: relative; height: 118px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
@@ -1135,7 +1135,8 @@ body.tour-activo { overflow: hidden; }
   border-radius: var(--radius-md);
   color: #fff;
   min-height: 190px;
-  box-shadow: 0 10px 28px rgba(6,13,31,.2);
+  border: 1px solid rgba(255,255,255,.3);
+  box-shadow: 0 10px 28px rgba(6,13,31,.28), inset 0 1px 0 rgba(255,255,255,.35);
   transition: transform .3s var(--ease), box-shadow .3s var(--ease);
   overflow: hidden;
 }
@@ -1191,8 +1192,8 @@ body.tour-activo { overflow: hidden; }
   border-radius: var(--radius-md);
   color: #fff;
   min-height: 150px;
-  background: linear-gradient(150deg, var(--navy-800), var(--navy-950));
-  box-shadow: 0 10px 28px rgba(11,18,32,.25);
+  border: 1px solid rgba(255,255,255,.3);
+  box-shadow: 0 10px 28px rgba(11,18,32,.3), inset 0 1px 0 rgba(255,255,255,.35);
   transition: transform .3s var(--ease), box-shadow .3s var(--ease);
   overflow: hidden;
 }
@@ -1202,15 +1203,18 @@ body.tour-activo { overflow: hidden; }
 .nivel-hub-tile__icon {
   width: 50px; height: 50px; border-radius: var(--radius-sm); font-size: 1.5rem;
   display: flex; align-items: center; justify-content: center;
-  background: rgba(255,255,255,.14);
+  background: rgba(255,255,255,.22); backdrop-filter: blur(4px);
   margin-bottom: .4rem;
 }
 .nivel-hub-tile__title { font-family: var(--font-head); font-size: 1.2rem; font-weight: 600; }
 .nivel-hub-tile__sub { font-size: .84rem; opacity: .85; line-height: 1.4; }
-.nivel-hub-tile--practica .nivel-hub-tile__icon { background: var(--gradient-royal); color: #fff; }
-.nivel-hub-tile--teoria .nivel-hub-tile__icon { background: #8a3a4a; }
-.nivel-hub-tile--libro .nivel-hub-tile__icon { background: #1f6b60; }
-.nivel-hub-tile--progreso .nivel-hub-tile__icon { background: var(--navy-600); }
+/* Cada ficha tiene un color FIJO de verdad -degradado a toda la ficha,
+   no solo en el icono, para que combine con el resto de la app (fichas
+   de sección/nivel), en vez del bloque navy plano compartido de antes. */
+.nivel-hub-tile--practica { background: linear-gradient(150deg, var(--level-a, var(--blue-500)), var(--level-b, var(--cyan-400))); }
+.nivel-hub-tile--teoria { background: linear-gradient(150deg, #8a3a4a, #c2596d); }
+.nivel-hub-tile--libro { background: linear-gradient(150deg, #1f6b60, #34a693); }
+.nivel-hub-tile--progreso { background: linear-gradient(150deg, var(--indigo-600), #818cf8); }
 
 /* ---------- Lecciones de teoría (teoria.html / teoria-leccion.html) ---------- */
 .teoria-toc { display: flex; flex-direction: column; gap: .6rem; margin-bottom: 2rem; }

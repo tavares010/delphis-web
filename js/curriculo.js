@@ -294,7 +294,7 @@ function renderVistaHub(wrap, nivel, caminos, content) {
       <div class="seccion-head-row__icon">${meta.icono}</div>
       <div><h2>${meta.titulo}</h2><p>¿Qué quieres hacer?</p></div>
     </div>
-    <div class="nivel-hub-grid">
+    <div class="nivel-hub-grid" style="--level-a:${meta.a}; --level-b:${meta.b};">
       <a class="nivel-hub-tile nivel-hub-tile--teoria ${leccionesTeoria.length ? '' : 'locked'}" href="${leccionesTeoria.length ? `teoria.html?nivel=${nivel}` : '#'}">
         <div class="nivel-hub-tile__icon">🎓</div>
         <div class="nivel-hub-tile__title">Conceptos esenciales</div>
