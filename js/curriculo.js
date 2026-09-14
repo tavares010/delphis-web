@@ -252,7 +252,7 @@ function renderVistaNiveles(wrap, caminos, content, { n1Completo, n2Completo, de
       <a class="nivel-card ${locked ? 'locked' : ''}" href="${locked ? '#' : `curriculo.html?nivel=${n}`}" data-locked="${locked}"
          style="--level-a:${meta.a}; --level-b:${meta.b};">
         <div class="nivel-card__cover" style="${coverStyle(null, meta.a, meta.b)}">
-          <span class="nivel-card__icon-big">${meta.icono}</span>
+          <span class="nivel-card__icon-glass"><span class="nivel-card__icon-big">${meta.icono}</span></span>
           ${locked ? '<span class="nivel-card__lock-badge">🔒</span>' : ''}
         </div>
         <div class="nivel-card__body">

@@ -1029,7 +1029,7 @@ body.tour-activo { overflow: hidden; }
   transition: transform .35s var(--ease), box-shadow .35s;
 }
 .nivel-card:not(.locked):hover { transform: translateY(-6px); box-shadow: 0 22px 46px color-mix(in srgb, var(--level-a) 28%, rgba(15,23,42,.12)); }
-.nivel-card:not(.locked):hover .nivel-card__icon-big { transform: scale(1.08); }
+.nivel-card:not(.locked):hover .nivel-card__icon-glass { transform: scale(1.08); }
 .nivel-card.locked { opacity: .55; cursor: not-allowed; }
 .nivel-card__cover { position: relative; height: 118px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
 .nivel-card__cover::after {
@@ -1037,18 +1037,32 @@ body.tour-activo { overflow: hidden; }
   background: radial-gradient(120% 140% at 15% -10%, rgba(255,255,255,.4), transparent 55%);
   pointer-events: none;
 }
-.nivel-card__icon-big {
+/* Efecto cristal (glassmorphism): mismo lenguaje visual que .hero__mockup
+   y .seccion-tile__icon -vidrio esmerilado semitransparente con blur y
+   borde de luz fina, en vez del emoji flotando suelto en el degradado. */
+.nivel-card__icon-glass {
   position: relative; z-index: 1;
-  font-size: 3rem; filter: drop-shadow(0 4px 10px rgba(0,0,0,.15));
+  width: 74px; height: 74px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: var(--radius-md);
+  background: rgba(255,255,255,.2);
+  border: 1px solid rgba(255,255,255,.4);
+  backdrop-filter: blur(10px) saturate(160%);
+  -webkit-backdrop-filter: blur(10px) saturate(160%);
+  box-shadow: 0 8px 22px rgba(0,0,0,.14), inset 0 1px 0 rgba(255,255,255,.3);
   animation: nivelIconFloat 3.4s ease-in-out infinite;
   transition: transform .3s var(--ease);
+}
+.nivel-card__icon-big {
+  position: relative;
+  font-size: 2.4rem; filter: drop-shadow(0 4px 8px rgba(0,0,0,.2));
 }
 @keyframes nivelIconFloat {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-6px); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .nivel-card__icon-big { animation: none; }
+  .nivel-card__icon-glass { animation: none; }
 }
 .nivel-card__lock-badge {
   position: absolute; z-index: 1; top: .6rem; right: .6rem;
