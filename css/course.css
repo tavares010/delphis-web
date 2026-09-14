@@ -1016,22 +1016,37 @@ body.tour-activo { overflow: hidden; }
 }
 .breadcrumb-back:hover { color: var(--blue-600); }
 
-.nivel-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; }
+/* "Un solo camino": la línea punteada (mismo truco que .steps__line en la
+   portada) conecta los 3 niveles como pasos de una misma ruta, mientras
+   que el hueco más grande entre tarjetas + la sombra propia de cada una
+   dejan claro que son bloques independientes, no una fila continua. */
+.nivel-grid { position: relative; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.4rem; padding-top: 1.6rem; }
+.nivel-grid__line {
+  position: absolute; z-index: 0; top: 3.4rem; left: 16%; right: 16%; height: 2px;
+  background: repeating-linear-gradient(90deg, rgba(37,99,235,.35) 0 10px, transparent 10px 20px);
+}
 .nivel-card {
   --level-a: var(--blue-500);
   --level-b: var(--cyan-400);
+  position: relative; z-index: 1;
   display: block;
   background: var(--surface);
   border: 1px solid color-mix(in srgb, var(--level-a) 22%, var(--border));
   border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: 0 10px 30px color-mix(in srgb, var(--level-a) 10%, rgba(15,23,42,.08));
+  box-shadow: 0 16px 36px color-mix(in srgb, var(--level-a) 16%, rgba(15,23,42,.14));
   transition: transform .35s var(--ease), box-shadow .35s, border-color .35s;
 }
-.nivel-card:not(.locked):hover { transform: translateY(-6px); border-color: color-mix(in srgb, var(--level-a) 45%, var(--border)); box-shadow: 0 22px 46px color-mix(in srgb, var(--level-a) 28%, rgba(15,23,42,.12)); }
+.nivel-card:not(.locked):hover { transform: translateY(-8px) scale(1.015); border-color: color-mix(in srgb, var(--level-a) 45%, var(--border)); box-shadow: 0 26px 52px color-mix(in srgb, var(--level-a) 32%, rgba(15,23,42,.16)); }
 .nivel-card:not(.locked):hover .nivel-card__icon-glass { transform: scale(1.08); }
 .nivel-card.locked { opacity: .55; cursor: not-allowed; }
 .nivel-card__cover { position: relative; height: 118px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.nivel-card__ordinal {
+  position: absolute; z-index: 1; top: .7rem; left: .8rem;
+  font-family: var(--font-head); font-weight: 800; font-size: 2.4rem;
+  color: rgba(255,255,255,.4);
+  line-height: 1;
+}
 .nivel-card__cover::after {
   content: ''; position: absolute; inset: 0;
   background: radial-gradient(120% 140% at 15% -10%, rgba(255,255,255,.4), transparent 55%);
@@ -1567,6 +1582,7 @@ a.course-row:hover { background: rgba(11,26,58,.05); }
   .avatar-grid { grid-template-columns: repeat(6, 1fr); }
   .block-grid { grid-template-columns: repeat(2, 1fr); }
   .nivel-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+  .nivel-grid__line { display: none; }
 }
 @media (max-width: 720px) {
   /* Grids de la app: horizontal con scroll-snap en vez de columna vertical.

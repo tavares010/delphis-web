@@ -240,7 +240,7 @@ function renderVistaNiveles(wrap, caminos, content, { n1Completo, n2Completo, de
     { n: 3, camino: caminos.nivel3, locked: !dev && !n2Completo },
   ];
 
-  wrap.innerHTML = `<div class="nivel-grid">${niveles.map(({ n, camino, locked }) => {
+  wrap.innerHTML = `<div class="nivel-grid"><div class="nivel-grid__line"></div>${niveles.map(({ n, camino, locked }) => {
     const meta = NIVEL_META[n];
     const estados = estadoCamino(camino);
     const completos = estados.filter(e => e === 'completo').length;
@@ -252,6 +252,7 @@ function renderVistaNiveles(wrap, caminos, content, { n1Completo, n2Completo, de
       <a class="nivel-card ${locked ? 'locked' : ''}" href="${locked ? '#' : `curriculo.html?nivel=${n}`}" data-locked="${locked}"
          style="--level-a:${meta.a}; --level-b:${meta.b};">
         <div class="nivel-card__cover" style="${coverStyle(null, meta.a, meta.b)}">
+          <span class="nivel-card__ordinal">0${n}</span>
           <span class="nivel-card__icon-glass"><span class="nivel-card__icon-big">${meta.icono}</span></span>
           ${locked ? '<span class="nivel-card__lock-badge">🔒</span>' : ''}
         </div>
