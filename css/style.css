@@ -461,7 +461,8 @@ h1, h2, h3, h4, h5 { font-family: var(--font-head); font-weight: 700; line-heigh
 
 .hero .eyebrow { color: #fff; background: rgba(255,255,255,.14); border-color: rgba(255,255,255,.3); }
 .hero__title { font-size: clamp(2.5rem, 5.2vw, 3.9rem); margin-bottom: 1.4rem; color: #fff; }
-.hero__title .text-gradient, .hero__title .hero__typing { background: linear-gradient(90deg, #fff, #dbeafe); -webkit-background-clip: text; background-clip: text; color: transparent; animation: none; }
+.hero__title .text-gradient, .hero__title .hero__typing,
+.page-hero .text-gradient, .page-hero .hero__typing { background: linear-gradient(90deg, #fff, #dbeafe); -webkit-background-clip: text; background-clip: text; color: transparent; animation: none; }
 .hero__subtitle { font-size: 1.12rem; color: rgba(255,255,255,.85); max-width: 540px; margin-bottom: 2.2rem; }
 .hero__cta { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem; }
 

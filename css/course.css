@@ -1028,7 +1028,7 @@ body.tour-activo { overflow: hidden; }
   box-shadow: var(--shadow-card);
   transition: transform .35s var(--ease), box-shadow .35s;
 }
-.nivel-card:not(.locked):hover { transform: translateY(-6px); box-shadow: var(--shadow-card-hover); }
+.nivel-card:not(.locked):hover { transform: translateY(-6px); box-shadow: 0 22px 46px color-mix(in srgb, var(--level-a) 28%, rgba(15,23,42,.12)); }
 .nivel-card:not(.locked):hover .nivel-card__icon-big { transform: scale(1.08); }
 .nivel-card.locked { opacity: .55; cursor: not-allowed; }
 .nivel-card__cover { position: relative; height: 118px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
@@ -1057,10 +1057,19 @@ body.tour-activo { overflow: hidden; }
   display: flex; align-items: center; justify-content: center;
   font-size: .95rem;
 }
-.nivel-card__body { padding: 1.7rem 1.8rem 1.8rem; }
+.nivel-card__body {
+  padding: 1.7rem 1.8rem 1.8rem;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--level-a) 9%, transparent), var(--surface) 65%);
+}
 .nivel-card h3 { font-size: 1.28rem; margin-bottom: .6rem; }
 .nivel-card p { color: var(--gray-400); font-size: .92rem; min-height: 2.6em; margin-bottom: 1.2rem; }
-.nivel-card__meta { display: flex; gap: 1.1rem; flex-wrap: wrap; margin-bottom: 1.1rem; font-size: .84rem; color: var(--gray-300); font-weight: 600; }
+.nivel-card__meta { display: flex; gap: .6rem; flex-wrap: wrap; margin-bottom: 1.1rem; font-size: .84rem; font-weight: 700; }
+.nivel-card__meta span {
+  background: color-mix(in srgb, var(--level-a) 12%, transparent);
+  color: color-mix(in srgb, var(--level-a) 60%, black);
+  padding: .35em .8em;
+  border-radius: 999px;
+}
 .nivel-card__progress-bar { height: 8px; border-radius: 999px; background: var(--border); overflow: hidden; margin-bottom: .8rem; }
 .nivel-card__progress-fill { height: 100%; background: linear-gradient(90deg, var(--level-a), var(--level-b)); border-radius: 999px; }
 .nivel-card__foot { display: flex; align-items: center; justify-content: space-between; font-size: .92rem; font-weight: 800; color: var(--gray-300); }
