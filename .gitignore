@@ -10,6 +10,7 @@
 # cover images) stays tracked since it's what makes the content reviewable.
 web_export/assets/audio/
 web_export/assets/*_stories/*.mp4
+web_export/assets/teoria_videos/*.mp4
 
 # OS junk
 .DS_Store

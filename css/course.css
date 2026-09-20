@@ -1252,6 +1252,15 @@ body.tour-activo { overflow: hidden; }
 
 .teoria-seccion-card { margin-bottom: 2rem; }
 .teoria-seccion-card__body { color: var(--text); line-height: 1.7; margin-bottom: 1.4rem; white-space: pre-line; }
+.teoria-seccion-card__video {
+  margin-bottom: 1.4rem;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-card);
+  background: var(--navy-950);
+}
+.teoria-seccion-card__video video { display: block; width: 100%; max-height: 420px; background: var(--navy-950); }
 .teoria-seccion-card__examples { display: flex; flex-direction: column; gap: .8rem; margin-bottom: 1.4rem; }
 .teoria-seccion-card__example {
   padding: 1em 1.2em; border-radius: var(--radius-md);

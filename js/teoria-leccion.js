@@ -75,6 +75,12 @@ function renderSeccion(ctx, idx) {
     </div>
   `).join('');
 
+  const videoHtml = s.video ? `
+    <div class="teoria-seccion-card__video">
+      <video controls preload="metadata" playsinline src="${WEB_EXPORT_BASE}${s.video}"></video>
+    </div>
+  ` : '';
+
   const tablaHtml = s.tabla ? `
     <div class="teoria-seccion-card__table-wrap">
       <table class="teoria-seccion-card__table">
@@ -93,6 +99,7 @@ function renderSeccion(ctx, idx) {
       </div>
       <h2 style="margin:1.2rem 0 .8rem;">${s.titulo}</h2>
       <div class="teoria-seccion-card__body">${s.cuerpo}</div>
+      ${videoHtml}
       ${tablaHtml}
       <div class="teoria-seccion-card__examples">${ejemplosHtml}</div>
     </div>
