@@ -13,6 +13,18 @@ const content_el = document.getElementById('teoriaLeccionContent');
 const QUIZ_TEORIA_DURACION_S = 18;
 const QUIZ_LETRAS = ['A', 'B', 'C', 'D', 'E'];
 
+// Vídeos interactivos de gramática: servidos desde jsDelivr (CDN gratuito
+// para repos públicos de GitHub), no desde Firebase Hosting -el repo ya
+// los tiene commiteados en web_export/assets/teoria_videos/ (son solo
+// ~38MB, a diferencia del audio/vídeo pesado del libro que sí está
+// excluido de git). Así no cuentan para la cuota de almacenamiento de
+// Hosting, que ya se agota solo con el resto de contenido.
+// Fijado a un commit concreto (no a "main") porque jsDelivr cachea las
+// referencias a rama durante horas -un commit es inmutable, así que la
+// URL nunca sirve una versión vieja ni tarda en reflejar un cambio real
+// (un vídeo nuevo simplemente usa un nombre de archivo nuevo).
+const TEORIA_VIDEO_BASE = 'https://cdn.jsdelivr.net/gh/tavares010/delphis-web@main/web_export/assets/teoria_videos/';
+
 function buscarLeccionTeoria(theoryLessons, id) {
   for (const nivel of ['nivel1', 'nivel2', 'nivel3']) {
     const lista = (theoryLessons && theoryLessons[nivel]) || [];
@@ -77,7 +89,7 @@ function renderSeccion(ctx, idx) {
 
   const videoHtml = s.video ? `
     <div class="teoria-seccion-card__video">
-      <video controls preload="metadata" playsinline src="${WEB_EXPORT_BASE}${s.video}"></video>
+      <video controls preload="metadata" playsinline src="${TEORIA_VIDEO_BASE}${s.video}"></video>
     </div>
   ` : '';
 

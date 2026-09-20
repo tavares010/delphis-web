@@ -10,7 +10,8 @@
       "**/*.apk",
       "**/*.ipa",
       "web_export/PROMPT.md",
-      "web_export/README.md"
+      "web_export/README.md",
+      "web_export/assets/teoria_videos/**"
     ],
     "headers": [
       {

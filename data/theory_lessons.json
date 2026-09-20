@@ -8,7 +8,7 @@
         {
           "id": "sujeto",
           "titulo": "Pronombres de sujeto",
-          "video": "assets/teoria_videos/pronombres-interactivo.mp4",
+          "video": "pronombres-interactivo.mp4",
           "cuerpo": "En inglés, el pronombre de sujeto es SIEMPRE obligatorio, a diferencia del español, donde se puede omitir porque el verbo ya indica quién actúa (\"como\" ya deja claro que es \"yo\"). En inglés, si quitas el pronombre, la frase deja de tener sentido gramatical.\n\nLos pronombres de sujeto son: I (yo), you (tú/usted), he (él), she (ella), it (ello, para cosas/animales), we (nosotros), you (vosotros/ustedes), they (ellos/ellas). Nota que \"you\" sirve tanto para singular como para plural — el inglés no distingue \"tú\" de \"vosotros\".",
           "ejemplos": [
             {
@@ -31,7 +31,7 @@
         {
           "id": "posesivos",
           "titulo": "Possessive adjectives (adjetivos posesivos)",
-          "video": "assets/teoria_videos/adjetivos-posesivos-interactivo.mp4",
+          "video": "adjetivos-posesivos-interactivo.mp4",
           "cuerpo": "Los adjetivos posesivos (my, your, his, her, its, our, their) van SIEMPRE antes de un sustantivo para indicar de quién es algo -a diferencia del pronombre de sujeto, no sustituyen al sustantivo, lo acompañan. Cada pronombre de sujeto tiene su propio posesivo: I→my, you→your, he→his, she→her, it→its, we→our, they→their.\n\nUn error común es confundir \"his\" y \"her\": a diferencia del español, donde \"su\" no indica el género del dueño, en inglés el posesivo SIEMPRE concuerda con quién posee la cosa, no con la cosa en sí.",
           "ejemplos": [
             {
@@ -192,7 +192,7 @@
         {
           "id": "present-simple",
           "titulo": "Present simple",
-          "video": "assets/teoria_videos/tiempos-verbales-1-present-simple.mp4",
+          "video": "tiempos-verbales-1-present-simple.mp4",
           "cuerpo": "Se usa para hábitos, rutinas y hechos generales — cosas que pasan siempre o repetidamente, no en este momento concreto. Se forma con el verbo en su forma base, añadiendo \"-s\" (o \"-es\") solo con he/she/it.\n\nPalabras clave típicas: always, usually, every day, never.",
           "ejemplos": [
             {
