@@ -23,7 +23,7 @@ const QUIZ_LETRAS = ['A', 'B', 'C', 'D', 'E'];
 // referencias a rama durante horas -un commit es inmutable, así que la
 // URL nunca sirve una versión vieja ni tarda en reflejar un cambio real
 // (un vídeo nuevo simplemente usa un nombre de archivo nuevo).
-const TEORIA_VIDEO_BASE = 'https://cdn.jsdelivr.net/gh/tavares010/delphis-web@main/web_export/assets/teoria_videos/';
+const TEORIA_VIDEO_BASE = 'https://cdn.jsdelivr.net/gh/tavares010/delphis-web@3894b2fa45f47416668520d411fa14637764bbd6/web_export/assets/teoria_videos/';
 
 function buscarLeccionTeoria(theoryLessons, id) {
   for (const nivel of ['nivel1', 'nivel2', 'nivel3']) {
