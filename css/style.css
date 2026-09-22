@@ -60,7 +60,14 @@
   --ease: cubic-bezier(.16,1,.3,1);
 }
 
-html { scroll-behavior: smooth; overflow-x: hidden; width: 100%; }
+/* overflow-x aquí NUNCA puede ser "hidden": con overflow-y sin especificar
+   (su valor por defecto es "visible"), la spec de CSS convierte overflow-y
+   en "auto" en cuanto overflow-x deja de ser "visible" -eso hace que
+   html/body pasen a ser su propio contenedor de scroll, lo que puede
+   romper position:sticky en toda la página (confirmado en una prueba
+   aislada). "clip" evita el desbordamiento horizontal igual que "hidden"
+   pero no fuerza ese efecto secundario. */
+html { scroll-behavior: smooth; overflow-x: clip; width: 100%; }
 
 body {
   background-color: var(--bg);
@@ -69,7 +76,7 @@ body {
   color: var(--text);
   font-family: var(--font-body);
   line-height: 1.6;
-  overflow-x: hidden;
+  overflow-x: clip;
   width: 100%;
   -webkit-font-smoothing: antialiased;
 }
